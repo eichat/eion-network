@@ -158,10 +158,10 @@ nav {
   background: rgba(6,18,32,0.97);
   border: 1px solid rgba(0,212,255,0.2);
   border-radius: 6px;
-  padding: 6px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 4px;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
   min-width: 180px;
   opacity: 0;
   pointer-events: none;
@@ -183,12 +183,16 @@ nav {
   font-family: 'Syne', sans-serif;
   font-size: 0.75rem;
   letter-spacing: 1px;
-  padding: 7px 10px;
+  padding: 7px 12px;
   cursor: none;
   border-radius: 3px;
   transition: all 0.2s;
-  text-align: center;
+  text-align: left;
   white-space: nowrap;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 .lang-opt:hover {
   border-color: rgba(0,212,255,0.3);
@@ -822,18 +826,18 @@ footer {
   </ul>
   <div class="lang-switcher" id="langSwitcher">
     <button class="lang-toggle" onclick="toggleLangMenu()" id="langToggleBtn">
-      🌐 <span id="langLabel">EN</span> <i class="arrow-icon">▼</i>
+      <span id="langLabel">🇬🇧 EN</span> <i class="arrow-icon">▼</i>
     </button>
     <div class="lang-dropdown" id="langDropdown">
-      <button class="lang-opt active" onclick="setLang('en')" data-lang="en">EN</button>
-      <button class="lang-opt" onclick="setLang('de')" data-lang="de">DE</button>
-      <button class="lang-opt" onclick="setLang('fr')" data-lang="fr">FR</button>
-      <button class="lang-opt" onclick="setLang('it')" data-lang="it">IT</button>
-      <button class="lang-opt" onclick="setLang('es')" data-lang="es">ES</button>
-      <button class="lang-opt" onclick="setLang('uk')" data-lang="uk">UA</button>
-      <button class="lang-opt" onclick="setLang('ru')" data-lang="ru">RU</button>
-      <button class="lang-opt" onclick="setLang('pt')" data-lang="pt">PT</button>
-      <button class="lang-opt" onclick="setLang('zh')" data-lang="zh">中文</button>
+      <button class="lang-opt active" onclick="setLang('en')" data-lang="en"><span>🇬🇧</span> English</button>
+      <button class="lang-opt" onclick="setLang('es')" data-lang="es"><span>🇪🇸</span> Español</button>
+      <button class="lang-opt" onclick="setLang('fr')" data-lang="fr"><span>🇫🇷</span> Français</button>
+      <button class="lang-opt" onclick="setLang('de')" data-lang="de"><span>🇩🇪</span> Deutsch</button>
+      <button class="lang-opt" onclick="setLang('pt')" data-lang="pt"><span>🇧🇷</span> Português</button>
+      <button class="lang-opt" onclick="setLang('it')" data-lang="it"><span>🇮🇹</span> Italiano</button>
+      <button class="lang-opt" onclick="setLang('zh')" data-lang="zh"><span>🇨🇳</span> 中文</button>
+      <button class="lang-opt" onclick="setLang('ru')" data-lang="ru"><span>🇷🇺</span> Русский</button>
+      <button class="lang-opt" onclick="setLang('uk')" data-lang="uk"><span>🇺🇦</span> Українська</button>
     </div>
   </div>
 </nav>
@@ -1544,7 +1548,7 @@ const i18n = {
 // ─── LANG ENGINE ────────────────────────────────────────────────────────────
 let currentLang = 'en';
 
-const langLabels = {en:'EN',de:'DE',fr:'FR',it:'IT',es:'ES',uk:'UA',ru:'RU',pt:'PT',zh:'中文'};
+const langLabels = {en:'🇬🇧 EN',es:'🇪🇸 ES',fr:'🇫🇷 FR',de:'🇩🇪 DE',pt:'🇧🇷 PT',it:'🇮🇹 IT',zh:'🇨🇳 中文',ru:'🇷🇺 RU',uk:'🇺🇦 UA'};
 
 function toggleLangMenu() {
   document.getElementById('langSwitcher').classList.toggle('open');
