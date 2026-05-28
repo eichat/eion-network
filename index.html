@@ -1,19 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DFJQ94KWWY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-DFJQ94KWWY');
-</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>EION — Decentralized Messenger</title>
+
+<!-- Latin fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Syne:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Syne:wght@300;400;600&family=Noto+Sans+Arabic:wght@300;400;600&family=Noto+Sans+Devanagari:wght@300;400;600&family=Noto+Sans+Bengali:wght@300;400;600&family=Noto+Sans+JP:wght@300;400;600&family=Noto+Sans+KR:wght@300;400;600&family=Noto+Sans+SC:wght@300;400;600&family=Noto+Sans+Thai:wght@300;400;600&display=swap" rel="stylesheet">
+
 <style>
 :root {
   --neon: #00d4ff;
@@ -26,801 +21,224 @@
   --text2: #7ab8cc;
   --accent: #003a5c;
   --gold: #ffd700;
+  --font-main: 'Syne', sans-serif;
 }
 
+/* RTL support */
+[dir="rtl"] { font-family: 'Noto Sans Arabic', 'Syne', sans-serif; }
+.lang-ja [dir="ltr"], .ja-font { font-family: 'Noto Sans JP', 'Syne', sans-serif; }
+.lang-ko [dir="ltr"], .ko-font { font-family: 'Noto Sans KR', 'Syne', sans-serif; }
+.lang-zh [dir="ltr"], .zh-font { font-family: 'Noto Sans SC', 'Syne', sans-serif; }
+.lang-hi [dir="ltr"], .hi-font { font-family: 'Noto Sans Devanagari', 'Syne', sans-serif; }
+.lang-bn [dir="ltr"], .bn-font { font-family: 'Noto Sans Bengali', 'Syne', sans-serif; }
+.lang-th [dir="ltr"], .th-font { font-family: 'Noto Sans Thai', 'Syne', sans-serif; }
+
+[dir="rtl"] .nav-links { flex-direction: row-reverse; }
+[dir="rtl"] .hero-btns { flex-direction: row-reverse; }
+[dir="rtl"] .token-stat { flex-direction: row-reverse; }
+[dir="rtl"] .tnom-item { flex-direction: row-reverse; }
+[dir="rtl"] .rm-item { padding-left: 0; padding-right: 40px; }
+[dir="rtl"] .roadmap-line { padding-left: 0; padding-right: 40px; }
+[dir="rtl"] .roadmap-line::before { left: auto; right: 8px; }
+[dir="rtl"] .rm-item::before { left: auto; right: -36px; }
+[dir="rtl"] .rm-item ul li { padding-left: 0; padding-right: 16px; }
+[dir="rtl"] .rm-item ul li::before { left: auto; right: 0; }
+[dir="rtl"] .faq-q { flex-direction: row-reverse; }
+[dir="rtl"] .faq-q .arrow { margin-left: 0; margin-right: 16px; }
+[dir="rtl"] .premium-card ul li { padding-left: 0; padding-right: 20px; }
+[dir="rtl"] .premium-card ul li::before { left: auto; right: 0; }
+[dir="rtl"] .lang-dropdown { right: auto; left: 0; }
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
 html { scroll-behavior: smooth; }
-
 body {
-  font-family: 'Syne', sans-serif;
+  font-family: var(--font-main);
   background: var(--bg);
   color: var(--text);
   overflow-x: hidden;
   cursor: none;
 }
 
-/* CUSTOM CURSOR */
-.cursor {
-  width: 12px; height: 12px;
-  background: var(--neon);
-  border-radius: 50%;
-  position: fixed;
-  pointer-events: none;
-  z-index: 9999;
-  transition: transform 0.1s;
-  box-shadow: 0 0 10px var(--neon), 0 0 20px var(--neon);
-  mix-blend-mode: screen;
-}
-.cursor-ring {
-  width: 36px; height: 36px;
-  border: 1px solid var(--neon);
-  border-radius: 50%;
-  position: fixed;
-  pointer-events: none;
-  z-index: 9998;
-  transition: all 0.15s ease;
-  opacity: 0.5;
-}
+/* CURSOR */
+.cursor { width:12px;height:12px;background:var(--neon);border-radius:50%;position:fixed;pointer-events:none;z-index:9999;transition:transform 0.1s;box-shadow:0 0 10px var(--neon),0 0 20px var(--neon);mix-blend-mode:screen; }
+.cursor-ring { width:36px;height:36px;border:1px solid var(--neon);border-radius:50%;position:fixed;pointer-events:none;z-index:9998;transition:all 0.15s ease;opacity:0.5; }
 
-/* STARS BACKGROUND */
-.stars {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  pointer-events: none;
-  z-index: 0;
-  overflow: hidden;
-}
-.stars span {
-  position: absolute;
-  display: block;
-  background: var(--neon);
-  border-radius: 50%;
-  animation: twinkle var(--d, 3s) ease-in-out infinite var(--delay, 0s);
-  opacity: 0;
-}
-@keyframes twinkle {
-  0%,100%{opacity:0;transform:scale(0.5)}
-  50%{opacity:var(--op,0.6);transform:scale(1)}
-}
+/* STARS */
+.stars { position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;overflow:hidden; }
+.stars span { position:absolute;display:block;background:var(--neon);border-radius:50%;animation:twinkle var(--d,3s) ease-in-out infinite var(--delay,0s);opacity:0; }
+@keyframes twinkle { 0%,100%{opacity:0;transform:scale(0.5)} 50%{opacity:var(--op,0.6);transform:scale(1)} }
 
-/* SCROLLBAR */
-::-webkit-scrollbar { width: 4px; }
-::-webkit-scrollbar-track { background: var(--bg); }
-::-webkit-scrollbar-thumb { background: var(--neon); border-radius: 2px; }
+::-webkit-scrollbar{width:4px} ::-webkit-scrollbar-track{background:var(--bg)} ::-webkit-scrollbar-thumb{background:var(--neon);border-radius:2px}
 
 /* NAV */
-nav {
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  z-index: 100;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 16px 48px;
-  background: rgba(2,12,20,0.85);
-  backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(0,212,255,0.1);
-}
-.nav-logo {
-  font-family: 'Orbitron', monospace;
-  font-weight: 900;
-  font-size: 1.4rem;
-  color: var(--neon);
-  text-shadow: 0 0 20px var(--neon);
-  letter-spacing: 4px;
-  text-decoration: none;
-  cursor: none;
-}
-.nav-links {
-  display: flex;
-  gap: 32px;
-  list-style: none;
-}
-.nav-links a {
-  color: var(--text2);
-  text-decoration: none;
-  font-size: 0.8rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  transition: color 0.3s;
-}
-.nav-links a:hover { color: var(--neon); text-shadow: 0 0 10px var(--neon); }
+nav { position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:16px 48px;background:rgba(2,12,20,0.85);backdrop-filter:blur(20px);border-bottom:1px solid rgba(0,212,255,0.1); }
+.nav-logo { font-family:'Orbitron',monospace;font-weight:900;font-size:1.4rem;color:var(--neon);text-shadow:0 0 20px var(--neon);letter-spacing:4px;text-decoration:none;cursor:none; }
+.nav-links { display:flex;gap:32px;list-style:none; }
+.nav-links a { color:var(--text2);text-decoration:none;font-size:0.8rem;letter-spacing:2px;text-transform:uppercase;transition:color 0.3s; }
+.nav-links a:hover { color:var(--neon);text-shadow:0 0 10px var(--neon); }
 
-/* LANG SWITCHER */
-.lang-switcher {
-  position: relative;
-}
-.lang-toggle {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(0,212,255,0.06);
-  border: 1px solid rgba(0,212,255,0.25);
-  color: var(--neon);
-  font-family: 'Orbitron', monospace;
-  font-size: 0.7rem;
-  letter-spacing: 2px;
-  padding: 7px 14px;
-  cursor: none;
-  border-radius: 4px;
-  transition: all 0.25s;
-  white-space: nowrap;
-}
-.lang-toggle:hover {
-  background: rgba(0,212,255,0.12);
-  box-shadow: 0 0 14px rgba(0,212,255,0.25);
-}
-.lang-toggle .arrow-icon {
-  display: inline-block;
-  transition: transform 0.3s;
-  font-style: normal;
-  font-size: 0.6rem;
-}
-.lang-switcher.open .lang-toggle .arrow-icon { transform: rotate(180deg); }
-.lang-dropdown {
-  position: absolute;
-  top: calc(100% + 8px);
-  right: 0;
-  background: rgba(6,18,32,0.97);
-  border: 1px solid rgba(0,212,255,0.2);
-  border-radius: 6px;
-  padding: 4px;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  min-width: 180px;
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(-8px);
-  transition: opacity 0.25s, transform 0.25s;
-  z-index: 200;
-  backdrop-filter: blur(20px);
-  box-shadow: 0 8px 32px rgba(0,0,0,0.6), 0 0 24px rgba(0,212,255,0.08);
-}
-.lang-switcher.open .lang-dropdown {
-  opacity: 1;
-  pointer-events: all;
-  transform: translateY(0);
-}
-.lang-opt {
-  background: none;
-  border: 1px solid transparent;
-  color: var(--text2);
-  font-family: 'Syne', sans-serif;
-  font-size: 0.75rem;
-  letter-spacing: 1px;
-  padding: 7px 12px;
-  cursor: none;
-  border-radius: 3px;
-  transition: all 0.2s;
-  text-align: left;
-  white-space: nowrap;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.lang-opt:hover {
-  border-color: rgba(0,212,255,0.3);
-  color: var(--neon);
-  background: rgba(0,212,255,0.08);
-}
-.lang-opt.active {
-  border-color: var(--neon);
-  color: var(--neon);
-  background: rgba(0,212,255,0.1);
-  box-shadow: 0 0 8px rgba(0,212,255,0.15);
-}
+/* LANG DROPDOWN */
+.lang-switcher { position:relative; }
+.lang-toggle { display:flex;align-items:center;gap:8px;background:rgba(0,212,255,0.06);border:1px solid rgba(0,212,255,0.25);color:var(--neon);font-family:'Orbitron',monospace;font-size:0.7rem;letter-spacing:2px;padding:7px 14px;cursor:none;border-radius:4px;transition:all 0.25s;white-space:nowrap; }
+.lang-toggle:hover { background:rgba(0,212,255,0.12);box-shadow:0 0 14px rgba(0,212,255,0.25); }
+.lang-toggle .arrow-icon { display:inline-block;transition:transform 0.3s;font-style:normal;font-size:0.6rem; }
+.lang-switcher.open .lang-toggle .arrow-icon { transform:rotate(180deg); }
+.lang-dropdown { position:absolute;top:calc(100% + 8px);right:0;background:rgba(6,18,32,0.97);border:1px solid rgba(0,212,255,0.2);border-radius:6px;padding:6px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px;min-width:200px;opacity:0;pointer-events:none;transform:translateY(-8px);transition:opacity 0.25s,transform 0.25s;z-index:200;backdrop-filter:blur(20px);box-shadow:0 8px 32px rgba(0,0,0,0.6),0 0 24px rgba(0,212,255,0.08); }
+.lang-switcher.open .lang-dropdown { opacity:1;pointer-events:all;transform:translateY(0); }
+.lang-opt { background:none;border:1px solid transparent;color:var(--text2);font-family:'Syne',sans-serif;font-size:0.75rem;letter-spacing:1px;padding:7px 10px;cursor:none;border-radius:3px;transition:all 0.2s;text-align:center;white-space:nowrap; }
+.lang-opt:hover { border-color:rgba(0,212,255,0.3);color:var(--neon);background:rgba(0,212,255,0.08); }
+.lang-opt.active { border-color:var(--neon);color:var(--neon);background:rgba(0,212,255,0.1);box-shadow:0 0 8px rgba(0,212,255,0.15); }
 
-/* SECTIONS WRAPPER */
-main { position: relative; z-index: 1; }
+main { position:relative;z-index:1; }
 
 /* HERO */
-#hero {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 120px 24px 80px;
-  position: relative;
-  overflow: hidden;
-}
+#hero { min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:120px 24px 80px;position:relative;overflow:hidden; }
+.hero-grid { position:absolute;inset:0;background-image:linear-gradient(rgba(0,212,255,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(0,212,255,0.04) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse 80% 60% at 50% 50%,black,transparent); }
+.hero-orb { position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(0,212,255,0.08) 0%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);animation:pulse-orb 4s ease-in-out infinite; }
+@keyframes pulse-orb { 0%,100%{transform:translate(-50%,-50%) scale(1);opacity:0.5} 50%{transform:translate(-50%,-50%) scale(1.1);opacity:1} }
+.logo-wrap { position:relative;width:140px;height:140px;margin:0 auto 40px;animation:float 6s ease-in-out infinite; }
+@keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
+.logo-wrap img { width:100%;height:100%;border-radius:28px;filter:drop-shadow(0 0 30px rgba(0,212,255,0.6)) drop-shadow(0 0 60px rgba(0,212,255,0.3)); }
+.logo-ring { position:absolute;inset:-20px;border:1px solid rgba(0,212,255,0.3);border-radius:50%;animation:spin-ring 12s linear infinite; }
+.logo-ring::before { content:'';position:absolute;width:8px;height:8px;background:var(--neon);border-radius:50%;top:-4px;left:50%;margin-left:-4px;box-shadow:0 0 12px var(--neon); }
+@keyframes spin-ring { to{transform:rotate(360deg)} }
+h1 { font-family:'Orbitron',monospace;font-size:clamp(3rem,8vw,6rem);font-weight:900;letter-spacing:8px;color:var(--neon);text-shadow:0 0 40px var(--neon),0 0 80px rgba(0,212,255,0.4);margin-bottom:8px;animation:hero-appear 1s ease both; }
+.hero-sub { font-family:'Orbitron',monospace;font-size:clamp(0.7rem,2vw,0.9rem);letter-spacing:6px;color:var(--text2);margin-bottom:28px;animation:hero-appear 1s 0.2s ease both; }
+@keyframes hero-appear { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+.hero-desc { font-size:clamp(0.85rem,1.6vw,1rem);color:var(--text2);max-width:860px;line-height:1.8;margin:0 auto 48px;font-weight:300;animation:hero-appear 1s 0.4s ease both; }
+.hero-btns { display:flex;gap:16px;flex-wrap:wrap;justify-content:center;animation:hero-appear 1s 0.6s ease both; }
+.btn-primary { display:inline-flex;align-items:center;gap:10px;padding:14px 32px;background:linear-gradient(135deg,var(--neon),var(--neon2));color:var(--bg);font-family:'Orbitron',monospace;font-size:0.8rem;font-weight:700;letter-spacing:2px;text-decoration:none;border-radius:4px;text-transform:uppercase;transition:all 0.3s;box-shadow:0 0 20px rgba(0,212,255,0.4);cursor:none; }
+.btn-primary:hover { transform:translateY(-2px);box-shadow:0 0 40px rgba(0,212,255,0.7),0 8px 24px rgba(0,212,255,0.3); }
+.btn-secondary { display:inline-flex;align-items:center;gap:10px;padding:14px 32px;background:transparent;color:var(--neon);font-family:'Orbitron',monospace;font-size:0.8rem;font-weight:700;letter-spacing:2px;text-decoration:none;border-radius:4px;border:1px solid var(--neon);text-transform:uppercase;transition:all 0.3s;cursor:none; }
+.btn-secondary:hover { background:rgba(0,212,255,0.08);transform:translateY(-2px);box-shadow:0 0 20px rgba(0,212,255,0.3); }
 
-.hero-grid {
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(0,212,255,0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0,212,255,0.04) 1px, transparent 1px);
-  background-size: 60px 60px;
-  mask-image: radial-gradient(ellipse 80% 60% at 50% 50%, black, transparent);
-}
-
-.hero-orb {
-  position: absolute;
-  width: 600px; height: 600px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(0,212,255,0.08) 0%, transparent 70%);
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  animation: pulse-orb 4s ease-in-out infinite;
-}
-@keyframes pulse-orb {
-  0%,100%{transform:translate(-50%,-50%) scale(1);opacity:0.5}
-  50%{transform:translate(-50%,-50%) scale(1.1);opacity:1}
-}
-
-.logo-wrap {
-  position: relative;
-  width: 140px; height: 140px;
-  margin: 0 auto 40px;
-  animation: float 6s ease-in-out infinite;
-}
-@keyframes float {
-  0%,100%{transform:translateY(0)}
-  50%{transform:translateY(-12px)}
-}
-.logo-wrap img {
-  width: 100%; height: 100%;
-  border-radius: 28px;
-  filter: drop-shadow(0 0 30px rgba(0,212,255,0.6)) drop-shadow(0 0 60px rgba(0,212,255,0.3));
-}
-.logo-ring {
-  position: absolute;
-  inset: -20px;
-  border: 1px solid rgba(0,212,255,0.3);
-  border-radius: 50%;
-  animation: spin-ring 12s linear infinite;
-}
-.logo-ring::before {
-  content:'';
-  position: absolute;
-  width: 8px; height: 8px;
-  background: var(--neon);
-  border-radius: 50%;
-  top: -4px; left: 50%;
-  margin-left: -4px;
-  box-shadow: 0 0 12px var(--neon);
-}
-@keyframes spin-ring { to { transform: rotate(360deg); } }
-
-h1 {
-  font-family: 'Orbitron', monospace;
-  font-size: clamp(3rem, 8vw, 6rem);
-  font-weight: 900;
-  letter-spacing: 8px;
-  color: var(--neon);
-  text-shadow: 0 0 40px var(--neon), 0 0 80px rgba(0,212,255,0.4);
-  margin-bottom: 8px;
-  animation: hero-appear 1s ease both;
-}
-.hero-sub {
-  font-family: 'Orbitron', monospace;
-  font-size: clamp(0.7rem, 2vw, 0.9rem);
-  letter-spacing: 6px;
-  color: var(--text2);
-  margin-bottom: 28px;
-  animation: hero-appear 1s 0.2s ease both;
-}
-@keyframes hero-appear {
-  from{opacity:0;transform:translateY(20px)}
-  to{opacity:1;transform:translateY(0)}
-}
-.hero-desc {
-  font-size: clamp(0.85rem, 1.6vw, 1rem);
-  color: var(--text2);
-  max-width: 860px;
-  line-height: 1.8;
-  margin: 0 auto 48px;
-  font-weight: 300;
-  animation: hero-appear 1s 0.4s ease both;
-}
-
-.hero-btns {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-  justify-content: center;
-  animation: hero-appear 1s 0.6s ease both;
-}
-
-.btn-primary {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 14px 32px;
-  background: linear-gradient(135deg, var(--neon), var(--neon2));
-  color: var(--bg);
-  font-family: 'Orbitron', monospace;
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-decoration: none;
-  border-radius: 4px;
-  text-transform: uppercase;
-  transition: all 0.3s;
-  box-shadow: 0 0 20px rgba(0,212,255,0.4);
-  cursor: none;
-}
-.btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 0 40px rgba(0,212,255,0.7), 0 8px 24px rgba(0,212,255,0.3);
-}
-.btn-secondary {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 14px 32px;
-  background: transparent;
-  color: var(--neon);
-  font-family: 'Orbitron', monospace;
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-decoration: none;
-  border-radius: 4px;
-  border: 1px solid var(--neon);
-  text-transform: uppercase;
-  transition: all 0.3s;
-  cursor: none;
-}
-.btn-secondary:hover {
-  background: rgba(0,212,255,0.08);
-  transform: translateY(-2px);
-  box-shadow: 0 0 20px rgba(0,212,255,0.3);
-}
-
-/* SECTION STYLES */
-section {
-  padding: 100px 24px;
-  position: relative;
-  z-index: 1;
-}
-.section-inner { max-width: 1100px; margin: 0 auto; }
-.section-label {
-  font-family: 'Orbitron', monospace;
-  font-size: 0.65rem;
-  letter-spacing: 5px;
-  color: var(--neon);
-  text-transform: uppercase;
-  margin-bottom: 12px;
-  opacity: 0.7;
-}
-.section-title {
-  font-family: 'Orbitron', monospace;
-  font-size: clamp(1.6rem, 4vw, 2.4rem);
-  font-weight: 700;
-  color: var(--text);
-  margin-bottom: 48px;
-  line-height: 1.3;
-}
-.section-title span { color: var(--neon); }
+/* SECTIONS */
+section { padding:100px 24px;position:relative;z-index:1; }
+.section-inner { max-width:1100px;margin:0 auto; }
+.section-label { font-family:'Orbitron',monospace;font-size:0.65rem;letter-spacing:5px;color:var(--neon);text-transform:uppercase;margin-bottom:12px;opacity:0.7; }
+.section-title { font-family:'Orbitron',monospace;font-size:clamp(1.6rem,4vw,2.4rem);font-weight:700;color:var(--text);margin-bottom:48px;line-height:1.3; }
+.section-title span { color:var(--neon); }
 
 /* FEATURES */
-#features { background: linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%); }
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
-}
-.feature-card {
-  background: rgba(10,22,40,0.8);
-  border: 1px solid rgba(0,212,255,0.12);
-  border-radius: 8px;
-  padding: 32px 28px;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.4s;
-}
-.feature-card::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--neon), transparent);
-  transform: scaleX(0);
-  transition: transform 0.4s;
-}
-.feature-card:hover::before { transform: scaleX(1); }
-.feature-card:hover {
-  border-color: rgba(0,212,255,0.3);
-  transform: translateY(-4px);
-  box-shadow: 0 8px 32px rgba(0,212,255,0.1);
-}
-.feature-icon {
-  font-size: 2rem;
-  margin-bottom: 16px;
-  display: block;
-}
-.feature-card h3 {
-  font-family: 'Orbitron', monospace;
-  font-size: 0.9rem;
-  letter-spacing: 2px;
-  color: var(--neon);
-  margin-bottom: 10px;
-}
-.feature-card p {
-  font-size: 0.9rem;
-  color: var(--text2);
-  line-height: 1.7;
-  font-weight: 300;
-}
+#features { background:linear-gradient(180deg,var(--bg) 0%,var(--bg2) 100%); }
+.features-grid { display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px; }
+.feature-card { background:rgba(10,22,40,0.8);border:1px solid rgba(0,212,255,0.12);border-radius:8px;padding:32px 28px;position:relative;overflow:hidden;transition:all 0.4s; }
+.feature-card::before { content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--neon),transparent);transform:scaleX(0);transition:transform 0.4s; }
+.feature-card:hover::before { transform:scaleX(1); }
+.feature-card:hover { border-color:rgba(0,212,255,0.3);transform:translateY(-4px);box-shadow:0 8px 32px rgba(0,212,255,0.1); }
+.feature-icon { font-size:2rem;margin-bottom:16px;display:block; }
+.feature-card h3 { font-family:'Orbitron',monospace;font-size:0.9rem;letter-spacing:2px;color:var(--neon);margin-bottom:10px; }
+.feature-card p { font-size:0.9rem;color:var(--text2);line-height:1.7;font-weight:300; }
 
 /* DOWNLOAD */
-#download { background: var(--bg2); }
-.download-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
-  margin-bottom: 40px;
-}
-.dl-card {
-  background: rgba(0,212,255,0.04);
-  border: 1px solid rgba(0,212,255,0.15);
-  border-radius: 8px;
-  padding: 28px 24px;
-  text-align: center;
-  transition: all 0.3s;
-  cursor: none;
-}
-.dl-card:hover {
-  border-color: var(--neon);
-  background: rgba(0,212,255,0.08);
-  transform: translateY(-3px);
-  box-shadow: 0 0 24px rgba(0,212,255,0.15);
-}
-.dl-card .platform-icon { font-size: 2.5rem; margin-bottom: 12px; display: block; }
-.dl-card h3 {
-  font-family: 'Orbitron', monospace;
-  font-size: 0.85rem;
-  letter-spacing: 2px;
-  color: var(--text);
-  margin-bottom: 6px;
-}
-.dl-card .status {
-  font-size: 0.75rem;
-  color: var(--text2);
-  margin-bottom: 16px;
-}
-.dl-card .status.ready { color: #44ff88; }
-.dl-card .status.soon { color: var(--gold); }
-.dl-card a, .dl-card span.disabled {
-  display: inline-block;
-  padding: 8px 20px;
-  font-family: 'Orbitron', monospace;
-  font-size: 0.7rem;
-  letter-spacing: 1px;
-  border-radius: 3px;
-  text-decoration: none;
-  transition: all 0.3s;
-  text-transform: uppercase;
-  cursor: none;
-}
-.dl-card a {
-  background: linear-gradient(135deg, var(--neon), var(--neon2));
-  color: var(--bg);
-  font-weight: 700;
-}
-.dl-card span.disabled {
-  border: 1px solid rgba(0,212,255,0.2);
-  color: var(--text2);
-  cursor: default;
-}
+#download { background:var(--bg2); }
+.download-grid { display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-bottom:40px; }
+.dl-card { background:rgba(0,212,255,0.04);border:1px solid rgba(0,212,255,0.15);border-radius:8px;padding:28px 24px;text-align:center;transition:all 0.3s;cursor:none; }
+.dl-card:hover { border-color:var(--neon);background:rgba(0,212,255,0.08);transform:translateY(-3px);box-shadow:0 0 24px rgba(0,212,255,0.15); }
+.dl-card .platform-icon { font-size:2.5rem;margin-bottom:12px;display:block; }
+.dl-card h3 { font-family:'Orbitron',monospace;font-size:0.85rem;letter-spacing:2px;color:var(--text);margin-bottom:6px; }
+.dl-card .status { font-size:0.75rem;color:var(--text2);margin-bottom:16px; }
+.dl-card .status.soon { color:var(--gold); }
+.dl-card span.disabled { display:inline-block;padding:8px 20px;font-family:'Orbitron',monospace;font-size:0.7rem;letter-spacing:1px;border-radius:3px;border:1px solid rgba(0,212,255,0.2);color:var(--text2);cursor:default;text-transform:uppercase; }
 
 /* TOKEN */
-#token { background: var(--bg); }
-.token-hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: start;
-  margin-bottom: 60px;
-}
+#token { background:var(--bg); }
+.token-hero { display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;margin-bottom:60px; }
 @media(max-width:768px){.token-hero{grid-template-columns:1fr}}
-.token-info-block {
-  background: rgba(10,22,40,0.8);
-  border: 1px solid rgba(0,212,255,0.12);
-  border-radius: 8px;
-  padding: 32px;
-}
-.token-info-block h3 {
-  font-family: 'Orbitron', monospace;
-  font-size: 0.8rem;
-  letter-spacing: 3px;
-  color: var(--neon);
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
-.token-stat {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 0;
-  border-bottom: 1px solid rgba(0,212,255,0.07);
-}
-.token-stat:last-child { border-bottom: none; }
-.token-stat .label { font-size: 0.85rem; color: var(--text2); font-weight: 300; }
-.token-stat .value { font-family: 'Orbitron', monospace; font-size: 0.85rem; color: var(--text); }
-
-/* PIE CHART */
-.tokenomics-chart {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 12px;
-}
-.tnom-item {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 14px 16px;
-  background: rgba(0,212,255,0.04);
-  border-radius: 6px;
-  border: 1px solid rgba(0,212,255,0.08);
-  transition: all 0.3s;
-}
-.tnom-item:hover {
-  border-color: rgba(0,212,255,0.25);
-  background: rgba(0,212,255,0.08);
-}
-.tnom-dot {
-  width: 12px; height: 12px;
-  border-radius: 50%;
-  flex-shrink: 0;
-}
-.tnom-info .pct {
-  font-family: 'Orbitron', monospace;
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--text);
-}
-.tnom-info .name { font-size: 0.8rem; color: var(--text2); font-weight: 300; }
+.token-info-block { background:rgba(10,22,40,0.8);border:1px solid rgba(0,212,255,0.12);border-radius:8px;padding:32px; }
+.token-info-block h3 { font-family:'Orbitron',monospace;font-size:0.8rem;letter-spacing:3px;color:var(--neon);margin-bottom:20px;text-transform:uppercase; }
+.token-stat { display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid rgba(0,212,255,0.07); }
+.token-stat:last-child { border-bottom:none; }
+.token-stat .label { font-size:0.85rem;color:var(--text2);font-weight:300; }
+.token-stat .value { font-family:'Orbitron',monospace;font-size:0.85rem;color:var(--text); }
+.tokenomics-chart { display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px; }
+.tnom-item { display:flex;align-items:center;gap:12px;padding:14px 16px;background:rgba(0,212,255,0.04);border-radius:6px;border:1px solid rgba(0,212,255,0.08);transition:all 0.3s; }
+.tnom-item:hover { border-color:rgba(0,212,255,0.25);background:rgba(0,212,255,0.08); }
+.tnom-dot { width:12px;height:12px;border-radius:50%;flex-shrink:0; }
+.tnom-info .pct { font-family:'Orbitron',monospace;font-size:1.1rem;font-weight:700;color:var(--text); }
+.tnom-info .name { font-size:0.8rem;color:var(--text2);font-weight:300; }
 
 /* EARN */
-#earn { background: linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%); }
-.earn-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 20px;
-}
-.earn-card {
-  background: rgba(0,212,255,0.03);
-  border: 1px solid rgba(0,212,255,0.12);
-  border-radius: 8px;
-  padding: 32px 24px;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.4s;
-}
-.earn-card:hover {
-  border-color: rgba(0,212,255,0.3);
-  transform: translateY(-4px);
-  box-shadow: 0 8px 32px rgba(0,212,255,0.1);
-}
-.earn-amount {
-  font-family: 'Orbitron', monospace;
-  font-size: 1.6rem;
-  font-weight: 900;
-  color: var(--neon);
-  text-shadow: 0 0 20px rgba(0,212,255,0.5);
-  margin-bottom: 4px;
-}
-.earn-card h3 { font-size: 0.9rem; font-weight: 600; color: var(--text); margin-bottom: 10px; letter-spacing: 1px; }
-.earn-card p { font-size: 0.85rem; color: var(--text2); line-height: 1.7; font-weight: 300; }
-
-/* ROADMAP */
-#roadmap { background: var(--bg2); }
-.roadmap-line {
-  position: relative;
-  padding-left: 40px;
-}
-.roadmap-line::before {
-  content: '';
-  position: absolute;
-  left: 8px; top: 0; bottom: 0;
-  width: 1px;
-  background: linear-gradient(180deg, var(--neon), transparent);
-}
-.rm-item {
-  position: relative;
-  margin-bottom: 40px;
-  opacity: 0.5;
-  transition: opacity 0.3s;
-}
-.rm-item.active { opacity: 1; }
-.rm-item::before {
-  content: '';
-  position: absolute;
-  left: -36px; top: 6px;
-  width: 14px; height: 14px;
-  border-radius: 50%;
-  border: 2px solid rgba(0,212,255,0.3);
-  background: var(--bg);
-}
-.rm-item.active::before {
-  border-color: var(--neon);
-  background: var(--neon);
-  box-shadow: 0 0 12px var(--neon);
-}
-.rm-phase {
-  font-family: 'Orbitron', monospace;
-  font-size: 0.65rem;
-  letter-spacing: 3px;
-  color: var(--neon);
-  text-transform: uppercase;
-  margin-bottom: 6px;
-  opacity: 0.7;
-}
-.rm-item h3 { font-family: 'Orbitron', monospace; font-size: 1rem; color: var(--text); margin-bottom: 10px; }
-.rm-item ul { list-style: none; }
-.rm-item ul li {
-  font-size: 0.875rem;
-  color: var(--text2);
-  padding: 3px 0;
-  padding-left: 16px;
-  position: relative;
-  font-weight: 300;
-}
-.rm-item ul li::before { content: '›'; position: absolute; left: 0; color: var(--neon); }
+#earn { background:linear-gradient(180deg,var(--bg) 0%,var(--bg2) 100%); }
+.earn-grid { display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px; }
+.earn-card { background:rgba(0,212,255,0.03);border:1px solid rgba(0,212,255,0.12);border-radius:8px;padding:32px 24px;transition:all 0.4s; }
+.earn-card:hover { border-color:rgba(0,212,255,0.3);transform:translateY(-4px);box-shadow:0 8px 32px rgba(0,212,255,0.1); }
+.earn-amount { font-family:'Orbitron',monospace;font-size:1.6rem;font-weight:900;color:var(--neon);text-shadow:0 0 20px rgba(0,212,255,0.5);margin-bottom:4px; }
+.earn-card h3 { font-size:0.9rem;font-weight:600;color:var(--text);margin-bottom:10px;letter-spacing:1px; }
+.earn-card p { font-size:0.85rem;color:var(--text2);line-height:1.7;font-weight:300; }
 
 /* PREMIUM */
-#premium { background: var(--bg); }
-.premium-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 24px;
-}
-.premium-card {
-  background: rgba(10,22,40,0.9);
-  border: 1px solid rgba(0,212,255,0.15);
-  border-radius: 10px;
-  padding: 40px 32px;
-  text-align: center;
-  transition: all 0.4s;
-  position: relative;
-  overflow: hidden;
-}
-.premium-card.featured {
-  border-color: var(--neon);
-  box-shadow: 0 0 40px rgba(0,212,255,0.15);
-}
-.premium-card.featured::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(ellipse at top, rgba(0,212,255,0.06), transparent 60%);
-  pointer-events: none;
-}
-.premium-card:hover { transform: translateY(-6px); box-shadow: 0 12px 40px rgba(0,212,255,0.15); }
-.premium-tag {
-  font-family: 'Orbitron', monospace;
-  font-size: 0.65rem;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--neon);
-  margin-bottom: 20px;
-  opacity: 0.8;
-}
-.premium-price {
-  font-family: 'Orbitron', monospace;
-  font-size: 2.4rem;
-  font-weight: 900;
-  color: var(--neon);
-  text-shadow: 0 0 24px rgba(0,212,255,0.5);
-  margin-bottom: 4px;
-}
-.premium-period { font-size: 0.8rem; color: var(--text2); margin-bottom: 24px; }
-.premium-card ul { list-style: none; text-align: left; margin-bottom: 28px; }
-.premium-card ul li {
-  padding: 7px 0;
-  font-size: 0.875rem;
-  color: var(--text2);
-  border-bottom: 1px solid rgba(0,212,255,0.07);
-  padding-left: 20px;
-  position: relative;
-  font-weight: 300;
-}
-.premium-card ul li::before { content: '✓'; position: absolute; left: 0; color: var(--neon); font-weight: 700; }
+#premium { background:var(--bg); }
+.premium-grid { display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px; }
+.premium-card { background:rgba(10,22,40,0.9);border:1px solid rgba(0,212,255,0.15);border-radius:10px;padding:40px 32px;text-align:center;transition:all 0.4s;position:relative;overflow:hidden; }
+.premium-card.featured { border-color:var(--neon);box-shadow:0 0 40px rgba(0,212,255,0.15); }
+.premium-card.featured::after { content:'';position:absolute;inset:0;background:radial-gradient(ellipse at top,rgba(0,212,255,0.06),transparent 60%);pointer-events:none; }
+.premium-card:hover { transform:translateY(-6px);box-shadow:0 12px 40px rgba(0,212,255,0.15); }
+.premium-tag { font-family:'Orbitron',monospace;font-size:0.65rem;letter-spacing:3px;text-transform:uppercase;color:var(--neon);margin-bottom:20px;opacity:0.8; }
+.premium-price { font-family:'Orbitron',monospace;font-size:2.4rem;font-weight:900;color:var(--neon);text-shadow:0 0 24px rgba(0,212,255,0.5);margin-bottom:4px; }
+.premium-period { font-size:0.8rem;color:var(--text2);margin-bottom:24px; }
+.premium-card ul { list-style:none;text-align:left;margin-bottom:28px; }
+.premium-card ul li { padding:7px 0;font-size:0.875rem;color:var(--text2);border-bottom:1px solid rgba(0,212,255,0.07);padding-left:20px;position:relative;font-weight:300; }
+.premium-card ul li::before { content:'✓';position:absolute;left:0;color:var(--neon);font-weight:700; }
+
+/* ROADMAP */
+#roadmap { background:var(--bg2); }
+.roadmap-line { position:relative;padding-left:40px; }
+.roadmap-line::before { content:'';position:absolute;left:8px;top:0;bottom:0;width:1px;background:linear-gradient(180deg,var(--neon),transparent); }
+.rm-item { position:relative;margin-bottom:40px;opacity:0.5;transition:opacity 0.3s; }
+.rm-item.active { opacity:1; }
+.rm-item::before { content:'';position:absolute;left:-36px;top:6px;width:14px;height:14px;border-radius:50%;border:2px solid rgba(0,212,255,0.3);background:var(--bg); }
+.rm-item.active::before { border-color:var(--neon);background:var(--neon);box-shadow:0 0 12px var(--neon); }
+.rm-phase { font-family:'Orbitron',monospace;font-size:0.65rem;letter-spacing:3px;color:var(--neon);text-transform:uppercase;margin-bottom:6px;opacity:0.7; }
+.rm-item h3 { font-family:'Orbitron',monospace;font-size:1rem;color:var(--text);margin-bottom:10px; }
+.rm-item ul { list-style:none; }
+.rm-item ul li { font-size:0.875rem;color:var(--text2);padding:3px 0;padding-left:16px;position:relative;font-weight:300; }
+.rm-item ul li::before { content:'›';position:absolute;left:0;color:var(--neon); }
 
 /* FAQ */
-#faq { background: var(--bg2); }
-.faq-list { max-width: 800px; }
-.faq-item {
-  border-bottom: 1px solid rgba(0,212,255,0.1);
-}
-.faq-q {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 22px 0;
-  cursor: none;
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: var(--text);
-  transition: color 0.3s;
-}
-.faq-q:hover { color: var(--neon); }
-.faq-q .arrow {
-  font-family: 'Orbitron', monospace;
-  color: var(--neon);
-  transition: transform 0.3s;
-  font-size: 1.2rem;
-  line-height: 1;
-  flex-shrink: 0;
-  margin-left: 16px;
-}
-.faq-item.open .faq-q .arrow { transform: rotate(45deg); }
-.faq-a {
-  font-size: 0.875rem;
-  color: var(--text2);
-  line-height: 1.8;
-  font-weight: 300;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease, padding 0.3s;
-}
-.faq-item.open .faq-a { max-height: 300px; padding-bottom: 20px; }
+#faq { background:var(--bg); }
+.faq-list { max-width:800px; }
+.faq-item { border-bottom:1px solid rgba(0,212,255,0.1); }
+.faq-q { display:flex;justify-content:space-between;align-items:center;padding:22px 0;cursor:none;font-size:0.95rem;font-weight:600;color:var(--text);transition:color 0.3s; }
+.faq-q:hover { color:var(--neon); }
+.faq-q .arrow { font-family:'Orbitron',monospace;color:var(--neon);transition:transform 0.3s;font-size:1.2rem;line-height:1;flex-shrink:0;margin-left:16px; }
+.faq-item.open .faq-q .arrow { transform:rotate(45deg); }
+.faq-a { font-size:0.875rem;color:var(--text2);line-height:1.8;font-weight:300;max-height:0;overflow:hidden;transition:max-height 0.4s ease,padding 0.3s; }
+.faq-item.open .faq-a { max-height:300px;padding-bottom:20px; }
 
 /* FOOTER */
-footer {
-  background: var(--bg);
-  border-top: 1px solid rgba(0,212,255,0.1);
-  padding: 60px 24px 40px;
-  text-align: center;
-}
-.footer-logo {
-  font-family: 'Orbitron', monospace;
-  font-size: 1.8rem;
-  font-weight: 900;
-  color: var(--neon);
-  text-shadow: 0 0 20px var(--neon);
-  letter-spacing: 6px;
-  margin-bottom: 16px;
-}
-.footer-tagline { font-size: 0.8rem; color: var(--text2); letter-spacing: 3px; margin-bottom: 32px; }
-.footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 32px;
-  flex-wrap: wrap;
-  margin-bottom: 32px;
-}
-.footer-links a {
-  color: var(--text2);
-  text-decoration: none;
-  font-size: 0.8rem;
-  letter-spacing: 1px;
-  transition: color 0.3s;
-}
-.footer-links a:hover { color: var(--neon); }
-.footer-copy { font-size: 0.75rem; color: rgba(122,184,204,0.4); letter-spacing: 1px; }
+footer { background:var(--bg);border-top:1px solid rgba(0,212,255,0.1);padding:60px 24px 40px;text-align:center; }
+.footer-logo { font-family:'Orbitron',monospace;font-size:1.8rem;font-weight:900;color:var(--neon);text-shadow:0 0 20px var(--neon);letter-spacing:6px;margin-bottom:16px; }
+.footer-tagline { font-size:0.8rem;color:var(--text2);letter-spacing:3px;margin-bottom:32px; }
+.footer-links { display:flex;justify-content:center;gap:32px;flex-wrap:wrap;margin-bottom:32px; }
+.footer-links a { color:var(--text2);text-decoration:none;font-size:0.8rem;letter-spacing:1px;transition:color 0.3s; }
+.footer-links a:hover { color:var(--neon); }
+.footer-copy { font-size:0.75rem;color:rgba(122,184,204,0.4);letter-spacing:1px; }
 
-/* SCROLL REVEAL */
-.reveal {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
-}
-.reveal.visible { opacity: 1; transform: none; }
+/* REVEAL */
+.reveal { opacity:0;transform:translateY(30px);transition:opacity 0.7s ease,transform 0.7s ease; }
+.reveal.visible { opacity:1;transform:none; }
 
 /* MOBILE */
 @media(max-width:768px){
-  nav { padding: 14px 20px; }
-  .nav-links { display: none; }
-  .lang-switcher { flex-wrap: wrap; gap: 4px; }
-  .lang-btn { padding: 3px 6px; font-size: 0.65rem; }
-  section { padding: 70px 16px; }
+  nav{padding:14px 20px;}
+  .nav-links{display:none;}
+  .lang-dropdown{grid-template-columns:1fr 1fr 1fr;}
+  section{padding:70px 16px;}
 }
+
+/* Loading */
+#loader { position:fixed;inset:0;background:var(--bg);z-index:9999;display:flex;align-items:center;justify-content:center;transition:opacity 0.4s; }
+#loader .logo-text { font-family:'Orbitron',monospace;font-size:2rem;font-weight:900;color:var(--neon);text-shadow:0 0 30px var(--neon);letter-spacing:8px;animation:pulse-orb 1s ease-in-out infinite; }
+#loader.hide { opacity:0;pointer-events:none; }
 </style>
 </head>
 <body>
 
+<div id="loader"><div class="logo-text">EION</div></div>
+
 <div class="cursor" id="cursor"></div>
 <div class="cursor-ring" id="cursorRing"></div>
-
 <div class="stars" id="stars"></div>
 
 <nav>
@@ -834,31 +252,40 @@ footer {
   </ul>
   <div class="lang-switcher" id="langSwitcher">
     <button class="lang-toggle" onclick="toggleLangMenu()" id="langToggleBtn">
-      <span id="langLabel">🇬🇧 EN</span> <i class="arrow-icon">▼</i>
+      🌐 <span id="langLabel">EN</span> <i class="arrow-icon">▼</i>
     </button>
     <div class="lang-dropdown" id="langDropdown">
-      <button class="lang-opt active" onclick="setLang('en')" data-lang="en"><span>🇬🇧</span> English</button>
-      <button class="lang-opt" onclick="setLang('es')" data-lang="es"><span>🇪🇸</span> Español</button>
-      <button class="lang-opt" onclick="setLang('fr')" data-lang="fr"><span>🇫🇷</span> Français</button>
-      <button class="lang-opt" onclick="setLang('de')" data-lang="de"><span>🇩🇪</span> Deutsch</button>
-      <button class="lang-opt" onclick="setLang('pt')" data-lang="pt"><span>🇧🇷</span> Português</button>
-      <button class="lang-opt" onclick="setLang('it')" data-lang="it"><span>🇮🇹</span> Italiano</button>
-      <button class="lang-opt" onclick="setLang('zh')" data-lang="zh"><span>🇨🇳</span> 中文</button>
-      <button class="lang-opt" onclick="setLang('ru')" data-lang="ru"><span>🇷🇺</span> Русский</button>
-      <button class="lang-opt" onclick="setLang('uk')" data-lang="uk"><span>🇺🇦</span> Українська</button>
+      <button class="lang-opt" onclick="setLang('en')" data-lang="en">EN</button>
+      <button class="lang-opt" onclick="setLang('fr')" data-lang="fr">FR</button>
+      <button class="lang-opt" onclick="setLang('de')" data-lang="de">DE</button>
+      <button class="lang-opt" onclick="setLang('ja')" data-lang="ja">日本語</button>
+      <button class="lang-opt" onclick="setLang('ko')" data-lang="ko">한국어</button>
+      <button class="lang-opt" onclick="setLang('zh')" data-lang="zh">中文</button>
+      <button class="lang-opt" onclick="setLang('es')" data-lang="es">ES</button>
+      <button class="lang-opt" onclick="setLang('ar')" data-lang="ar">العربية</button>
+      <button class="lang-opt" onclick="setLang('pt')" data-lang="pt">PT</button>
+      <button class="lang-opt" onclick="setLang('ru')" data-lang="ru">RU</button>
+      <button class="lang-opt" onclick="setLang('tr')" data-lang="tr">TR</button>
+      <button class="lang-opt" onclick="setLang('hi')" data-lang="hi">हिन्दी</button>
+      <button class="lang-opt" onclick="setLang('vi')" data-lang="vi">VI</button>
+      <button class="lang-opt" onclick="setLang('uk')" data-lang="uk">UA</button>
+      <button class="lang-opt" onclick="setLang('id')" data-lang="id">ID</button>
+      <button class="lang-opt" onclick="setLang('th')" data-lang="th">ไทย</button>
+      <button class="lang-opt" onclick="setLang('tl')" data-lang="tl">TL</button>
+      <button class="lang-opt" onclick="setLang('nl')" data-lang="nl">NL</button>
+      <button class="lang-opt" onclick="setLang('pl')" data-lang="pl">PL</button>
+      <button class="lang-opt" onclick="setLang('it')" data-lang="it">IT</button>
+      <button class="lang-opt" onclick="setLang('bn')" data-lang="bn">বাংলা</button>
     </div>
   </div>
 </nav>
 
 <main>
-
-<!-- HERO -->
 <section id="hero">
   <div class="hero-grid"></div>
   <div class="hero-orb"></div>
   <div class="logo-wrap">
-    <img src="EION-256.png" alt="EION Logo" onerror="this.style.display='none';this.parentNode.querySelector('.logo-fallback').style.display='flex'">
-    <div class="logo-fallback" style="display:none;width:100%;height:100%;background:var(--bg2);border:2px solid var(--neon);border-radius:28px;align-items:center;justify-content:center;font-family:'Orbitron',monospace;font-size:1.6rem;font-weight:900;color:var(--neon);text-shadow:0 0 20px var(--neon);">E</div>
+    <img src="EION-256.png" alt="EION Logo" onerror="this.style.display='none'">
     <div class="logo-ring"></div>
   </div>
   <h1>EION</h1>
@@ -870,81 +297,34 @@ footer {
   </div>
 </section>
 
-<!-- FEATURES -->
 <section id="features">
   <div class="section-inner">
     <div class="section-label" data-i18n="feat_label">Application</div>
     <h2 class="section-title" data-i18n="feat_title">Everything you need <span>in one app</span></h2>
     <div class="features-grid">
-      <div class="feature-card reveal">
-        <span class="feature-icon">💬</span>
-        <h3 data-i18n="f1_title">Live Chat</h3>
-        <p data-i18n="f1_desc">Instant encrypted messaging with groups, media, and files.</p>
-      </div>
-      <div class="feature-card reveal">
-        <span class="feature-icon">🤖</span>
-        <h3 data-i18n="f2_title">AI Assistant</h3>
-        <p data-i18n="f2_desc">Built-in AI chat powered by advanced language models, available anytime.</p>
-      </div>
-      <div class="feature-card reveal">
-        <span class="feature-icon">📹</span>
-        <h3 data-i18n="f3_title">HD Video Calls</h3>
-        <p data-i18n="f3_desc">Crystal-clear audio and video calls via WebRTC — no intermediaries.</p>
-      </div>
-      <div class="feature-card reveal">
-        <span class="feature-icon">👥</span>
-        <h3 data-i18n="f4_title">Groups</h3>
-        <p data-i18n="f4_desc">Create communities, channels, and group chats with flexible permissions.</p>
-      </div>
-      <div class="feature-card reveal">
-        <span class="feature-icon">🔐</span>
-        <h3 data-i18n="f5_title">E2E Encryption</h3>
-        <p data-i18n="f5_desc">All messages and calls protected end-to-end. Your data stays yours.</p>
-      </div>
-      <div class="feature-card reveal">
-        <span class="feature-icon">💎</span>
-        <h3 data-i18n="f6_title">EION Token</h3>
-        <p data-i18n="f6_desc">Earn crypto by using the network. Premium features, rewards, staking.</p>
-      </div>
+      <div class="feature-card reveal"><span class="feature-icon">💬</span><h3 data-i18n="f1_title">Live Chat</h3><p data-i18n="f1_desc">Instant encrypted messaging with groups, media, and files.</p></div>
+      <div class="feature-card reveal"><span class="feature-icon">🤖</span><h3 data-i18n="f2_title">AI Assistant</h3><p data-i18n="f2_desc">Built-in AI chat powered by advanced language models, available anytime.</p></div>
+      <div class="feature-card reveal"><span class="feature-icon">📹</span><h3 data-i18n="f3_title">HD Video Calls</h3><p data-i18n="f3_desc">Crystal-clear audio and video calls via WebRTC — no intermediaries.</p></div>
+      <div class="feature-card reveal"><span class="feature-icon">👥</span><h3 data-i18n="f4_title">Groups</h3><p data-i18n="f4_desc">Create communities, channels, and group chats with flexible permissions.</p></div>
+      <div class="feature-card reveal"><span class="feature-icon">🔐</span><h3 data-i18n="f5_title">E2E Encryption</h3><p data-i18n="f5_desc">All messages and calls protected end-to-end. Your data stays yours.</p></div>
+      <div class="feature-card reveal"><span class="feature-icon">💎</span><h3 data-i18n="f6_title">EION Token</h3><p data-i18n="f6_desc">Earn crypto by using the network. Premium features, rewards, staking.</p></div>
     </div>
   </div>
 </section>
 
-<!-- DOWNLOAD -->
 <section id="download">
   <div class="section-inner">
     <div class="section-label" data-i18n="dl_label">Get the App</div>
     <h2 class="section-title" data-i18n="dl_title">Download <span>EION</span></h2>
     <div class="download-grid">
-      <div class="dl-card reveal">
-        <span class="platform-icon">🤖</span>
-        <h3>Android</h3>
-        <div class="status soon" data-i18n="dl_soon">⏳ Coming soon</div>
-        <span class="disabled" data-i18n="dl_notify">Notify me</span>
-      </div>
-      <div class="dl-card reveal">
-        <span class="platform-icon">🐧</span>
-        <h3>Linux</h3>
-        <div class="status soon" data-i18n="dl_soon">⏳ Coming soon</div>
-        <span class="disabled" data-i18n="dl_notify">Notify me</span>
-      </div>
-      <div class="dl-card reveal">
-        <span class="platform-icon">🍎</span>
-        <h3>iOS</h3>
-        <div class="status soon" data-i18n="dl_soon">⏳ Coming soon</div>
-        <span class="disabled" data-i18n="dl_notify">Notify me</span>
-      </div>
-      <div class="dl-card reveal">
-        <span class="platform-icon">🪟</span>
-        <h3>Windows</h3>
-        <div class="status soon" data-i18n="dl_soon">⏳ Coming soon</div>
-        <span class="disabled" data-i18n="dl_notify">Notify me</span>
-      </div>
+      <div class="dl-card reveal"><span class="platform-icon">🤖</span><h3>Android</h3><div class="status soon" data-i18n="dl_soon">⏳ Coming soon</div><span class="disabled" data-i18n="dl_notify">Notify me</span></div>
+      <div class="dl-card reveal"><span class="platform-icon">🐧</span><h3>Linux</h3><div class="status soon" data-i18n="dl_soon">⏳ Coming soon</div><span class="disabled" data-i18n="dl_notify">Notify me</span></div>
+      <div class="dl-card reveal"><span class="platform-icon">🍎</span><h3>iOS</h3><div class="status soon" data-i18n="dl_soon">⏳ Coming soon</div><span class="disabled" data-i18n="dl_notify">Notify me</span></div>
+      <div class="dl-card reveal"><span class="platform-icon">🪟</span><h3>Windows</h3><div class="status soon" data-i18n="dl_soon">⏳ Coming soon</div><span class="disabled" data-i18n="dl_notify">Notify me</span></div>
     </div>
   </div>
 </section>
 
-<!-- TOKEN -->
 <section id="token">
   <div class="section-inner">
     <div class="section-label" data-i18n="tok_label">Cryptocurrency</div>
@@ -952,30 +332,12 @@ footer {
     <div class="token-hero">
       <div class="token-info-block reveal">
         <h3 data-i18n="tok_params">Token Parameters</h3>
-        <div class="token-stat">
-          <span class="label" data-i18n="tok_network">Network</span>
-          <span class="value">TON (Jetton)</span>
-        </div>
-        <div class="token-stat">
-          <span class="label" data-i18n="tok_supply">Total Supply</span>
-          <span class="value">10,000,000,000 EION</span>
-        </div>
-        <div class="token-stat">
-          <span class="label" data-i18n="tok_halving">Halving</span>
-          <span class="value" data-i18n="tok_halving_val">Every 2 years</span>
-        </div>
-        <div class="token-stat">
-          <span class="label" data-i18n="tok_burn">Transaction Fees</span>
-          <span class="value" data-i18n="tok_burn_val">🔥 100% Burned</span>
-        </div>
-        <div class="token-stat">
-          <span class="label" data-i18n="tok_future">Future</span>
-          <span class="value" data-i18n="tok_future_val">Own Blockchain</span>
-        </div>
-        <div class="token-stat">
-          <span class="label" data-i18n="tok_register">Registration Bonus</span>
-          <span class="value" style="color:var(--neon)">+50 EION</span>
-        </div>
+        <div class="token-stat"><span class="label" data-i18n="tok_network">Network</span><span class="value">TON (Jetton)</span></div>
+        <div class="token-stat"><span class="label" data-i18n="tok_supply">Total Supply</span><span class="value">10,000,000,000 EION</span></div>
+        <div class="token-stat"><span class="label" data-i18n="tok_halving">Halving</span><span class="value" data-i18n="tok_halving_val">Every 2 years</span></div>
+        <div class="token-stat"><span class="label" data-i18n="tok_burn">Transaction Fees</span><span class="value" data-i18n="tok_burn_val">🔥 50% Burned</span></div>
+        <div class="token-stat"><span class="label" data-i18n="tok_future">Future Network</span><span class="value" data-i18n="tok_future_val">Own Blockchain</span></div>
+        <div class="token-stat"><span class="label" data-i18n="tok_register">Registration Bonus</span><span class="value" style="color:var(--neon)">+50 EION</span></div>
       </div>
       <div class="reveal">
         <h3 style="font-family:'Orbitron',monospace;font-size:0.8rem;letter-spacing:3px;color:var(--neon);margin-bottom:20px;text-transform:uppercase;" data-i18n="tok_distribution">Token Distribution</h3>
@@ -991,37 +353,19 @@ footer {
   </div>
 </section>
 
-<!-- EARN -->
 <section id="earn">
   <div class="section-inner">
     <div class="section-label" data-i18n="earn_label">Earn</div>
     <h2 class="section-title" data-i18n="earn_title">How to earn <span>EION</span></h2>
     <div class="earn-grid">
-      <div class="earn-card reveal">
-        <div class="earn-amount">+50</div>
-        <h3 data-i18n="earn1_title">Registration</h3>
-        <p data-i18n="earn1_desc">Sign up and get 50 EION tokens instantly as a welcome bonus.</p>
-      </div>
-      <div class="earn-card reveal">
-        <div class="earn-amount">∞</div>
-        <h3 data-i18n="earn2_title">Network Storage</h3>
-        <p data-i18n="earn2_desc">Provide disk space for distributed network data and earn continuously.</p>
-      </div>
-      <div class="earn-card reveal">
-        <div class="earn-amount">⚡</div>
-        <h3 data-i18n="earn3_title">Run a Node</h3>
-        <p data-i18n="earn3_desc">Run an EION network node and receive regular token rewards.</p>
-      </div>
-      <div class="earn-card reveal">
-        <div class="earn-amount">✓</div>
-        <h3 data-i18n="earn4_title">Validate Transactions</h3>
-        <p data-i18n="earn4_desc">Participate in transaction confirmation and earn validator rewards.</p>
-      </div>
+      <div class="earn-card reveal"><div class="earn-amount">+50</div><h3 data-i18n="earn1_title">Registration</h3><p data-i18n="earn1_desc">Sign up and get 50 EION tokens instantly as a welcome bonus.</p></div>
+      <div class="earn-card reveal"><div class="earn-amount">∞</div><h3 data-i18n="earn2_title">Network Storage</h3><p data-i18n="earn2_desc">Provide disk space for distributed network data and earn continuously.</p></div>
+      <div class="earn-card reveal"><div class="earn-amount">⚡</div><h3 data-i18n="earn3_title">Run a Node</h3><p data-i18n="earn3_desc">Run an EION network node and receive regular token rewards.</p></div>
+      <div class="earn-card reveal"><div class="earn-amount">✓</div><h3 data-i18n="earn4_title">Validate Transactions</h3><p data-i18n="earn4_desc">Participate in transaction confirmation and earn validator rewards.</p></div>
     </div>
   </div>
 </section>
 
-<!-- PREMIUM -->
 <section id="premium">
   <div class="section-inner">
     <div class="section-label" data-i18n="prem_label">Premium</div>
@@ -1054,7 +398,6 @@ footer {
   </div>
 </section>
 
-<!-- ROADMAP -->
 <section id="roadmap">
   <div class="section-inner">
     <div class="section-label" data-i18n="rm_label">Roadmap</div>
@@ -1104,7 +447,6 @@ footer {
   </div>
 </section>
 
-<!-- FAQ -->
 <section id="faq">
   <div class="section-inner">
     <div class="section-label" data-i18n="faq_label">FAQ</div>
@@ -1112,7 +454,6 @@ footer {
     <div class="faq-list" id="faqList"></div>
   </div>
 </section>
-
 </main>
 
 <footer>
@@ -1121,524 +462,133 @@ footer {
   <div class="footer-links">
     <a href="https://eion.network">eion.network</a>
     <a href="mailto:support@eion.network" data-i18n="footer_support">Support</a>
-    
   </div>
-  <div class="footer-copy">© 2026 EION Network. All rights reserved.</div>
+  <div class="footer-copy">© 2025 EION Network. All rights reserved.</div>
 </footer>
 
 <script>
-// ─── TRANSLATIONS ───────────────────────────────────────────────────────────
-const i18n = {
-  en: {
-    nav_features:"Features", nav_download:"Download", nav_token:"Token", nav_roadmap:"Roadmap", nav_faq:"FAQ",
-    hero_sub:"Decentralized Communication Network",
-    hero_desc:"The next-generation messenger with end-to-end encryption, AI assistant,<br>HD video calls and a built-in cryptocurrency token — all in one app.",
-    hero_btn1:"↓ Download", hero_btn2:"EION Token →",
-    feat_label:"Application", feat_title:"Everything you need <span>in one app</span>",
-    f1_title:"Live Chat", f1_desc:"Instant encrypted messaging with groups, media, and files.",
-    f2_title:"AI Assistant", f2_desc:"Built-in AI chat powered by advanced language models, available anytime.",
-    f3_title:"HD Video Calls", f3_desc:"Crystal-clear audio and video calls via WebRTC — no intermediaries.",
-    f4_title:"Groups", f4_desc:"Create communities, channels, and group chats with flexible permissions.",
-    f5_title:"E2E Encryption", f5_desc:"All messages and calls protected end-to-end. Your data stays yours.",
-    f6_title:"EION Token", f6_desc:"Earn crypto by using the network. Premium features, rewards, staking.",
-    dl_label:"Get the App", dl_title:"Download <span>EION</span>",
-    dl_ready:"✓ Available now", dl_soon:"⏳ Coming soon", dl_apk:"↓ Download APK", dl_linux:"↓ Download", dl_notify:"Notify me",
-    tok_label:"Cryptocurrency", tok_title:"EION <span>Token</span>",
-    tok_params:"Token Parameters", tok_network:"Network", tok_supply:"Total Supply", tok_halving:"Halving", tok_halving_val:"Every 2 years", tok_burn:"Transaction Fees", tok_burn_val:"🔥 50% Burned",
-    tok_future:"Future Network", tok_future_val:"Own Blockchain", tok_register:"Registration Bonus", tok_distribution:"Token Distribution",
-    tnom_reward:"Reward Pool", tnom_founder:"Founders", tnom_liquidity:"Liquidity", tnom_presale:"Presale", tnom_ecosystem:"Ecosystem",
-    earn_label:"Earn", earn_title:"How to earn <span>EION</span>",
-    earn1_title:"Registration", earn1_desc:"Sign up and get 50 EION tokens instantly as a welcome bonus.",
-    earn2_title:"Network Storage", earn2_desc:"Provide disk space for distributed network data and earn continuously.",
-    earn3_title:"Run a Node", earn3_desc:"Run an EION network node and receive regular token rewards.",
-    earn4_title:"Validate Transactions", earn4_desc:"Participate in transaction confirmation and earn validator rewards.",
-    prem_label:"Premium", prem_title:"Unlock <span>Premium</span>",
-    prem_monthly_tag:"Monthly", prem_monthly_period:"EION / month",
-    prem_yearly_tag:"Yearly — Best Value", prem_yearly_period:"EION / year",
-    prem_f1:"No ads", prem_f2:"Priority support", prem_f3:"Extended storage", prem_f4:"HD video calls", prem_f5:"2 months free",
-    rm_label:"Roadmap", rm_title:"What's <span>next</span>",
-    rm_ph1:"Phase 1 — Now", rm_h1:"Launch",
-    rm_1_1:"Android & Linux app", rm_1_2:"Live chat, AI, video calls", rm_1_3:"EION Token on TON", rm_1_4:"Website launch",
-    rm_ph2:"Phase 2 — 2026", rm_h2:"Expansion",
-    rm_2_1:"iOS & Windows apps", rm_2_2:"Token presale", rm_2_3:"Node network launch", rm_2_4:"Staking module",
-    rm_ph3:"Phase 3 — 2027", rm_h3:"Decentralization",
-    rm_3_1:"Own blockchain launch", rm_3_2:"Decentralized storage", rm_3_3:"DEX listing", rm_3_4:"DAO governance",
-    rm_ph4:"Phase 4 — 2028+", rm_h4:"Ecosystem",
-    rm_4_1:"DApp platform", rm_4_2:"Enterprise solutions", rm_4_3:"Cross-chain bridges", rm_4_4:"Global expansion",
-    faq_label:"FAQ", faq_title:"Frequently <span>Asked Questions</span>",
-    faq:[
-      {q:"What is EION?", a:"EION is a decentralized messenger with built-in cryptocurrency, AI assistant, and HD video calls. It combines secure communication with a Web3 economy."},
-      {q:"Is EION free?", a:"Yes, the basic version is completely free. Premium features are available for 500 EION/month or 4200 EION/year."},
-      {q:"How do I get EION tokens?", a:"You receive 50 EION upon registration. You can also earn by providing network storage, running a node, or validating transactions."},
-      {q:"Is EION open source?", a:"The server and website code are available on GitHub. The app source code will be partially opened as the project develops."},
-      {q:"On which platforms is EION available?", a:"Currently available for Android and Linux. iOS and Windows versions are in development."},
-    ],
-    footer_tagline:"Communicate. Earn. Own.", footer_github:"GitHub", footer_support:"Support",
-  },
+// ─── SUPPORTED LANGUAGES ────────────────────────────────────────────────────
+const LANGS = ['en','fr','de','ja','ko','zh','es','ar','pt','ru','tr','hi','vi','uk','id','th','tl','nl','pl','it','bn'];
+const RTL_LANGS = ['ar'];
+const LANG_LABELS = {en:'EN',fr:'FR',de:'DE',ja:'日本語',ko:'한국어',zh:'中文',es:'ES',ar:'العربية',pt:'PT',ru:'RU',tr:'TR',hi:'हिन्दी',vi:'VI',uk:'UA',id:'ID',th:'ไทย',tl:'TL',nl:'NL',pl:'PL',it:'IT',bn:'বাংলা'};
+const BROWSER_MAP = {ar:'ar',bn:'bn',de:'de',en:'en',es:'es',fr:'fr',hi:'hi',id:'id',it:'it',ja:'ja',ko:'ko',nl:'nl',pl:'pl',pt:'pt',ru:'ru',th:'th',tl:'tl',tr:'tr',uk:'uk',vi:'vi',zh:'zh'};
 
-  de: {
-    nav_features:"Funktionen", nav_download:"Download", nav_token:"Token", nav_roadmap:"Roadmap", nav_faq:"FAQ",
-    hero_sub:"Dezentrales Kommunikationsnetzwerk",
-    hero_desc:"Der Messenger der nächsten Generation mit Ende-zu-Ende-Verschlüsselung, KI-Assistent,<br>HD-Videoanrufen und einem integrierten Kryptowährungs-Token — alles in einer App.",
-    hero_btn1:"↓ Herunterladen", hero_btn2:"EION Token →",
-    feat_label:"Anwendung", feat_title:"Alles, was Sie brauchen <span>in einer App</span>",
-    f1_title:"Live-Chat", f1_desc:"Sofortige verschlüsselte Nachrichten mit Gruppen, Medien und Dateien.",
-    f2_title:"KI-Assistent", f2_desc:"Integrierter KI-Chat mit fortschrittlichen Sprachmodellen, jederzeit verfügbar.",
-    f3_title:"HD-Videoanrufe", f3_desc:"Kristallklare Audio- und Videoanrufe via WebRTC — ohne Zwischenhändler.",
-    f4_title:"Gruppen", f4_desc:"Erstellen Sie Communitys, Kanäle und Gruppen-Chats mit flexiblen Berechtigungen.",
-    f5_title:"E2E-Verschlüsselung", f5_desc:"Alle Nachrichten und Anrufe Ende-zu-Ende geschützt. Ihre Daten bleiben Ihre.",
-    f6_title:"EION Token", f6_desc:"Verdienen Sie Krypto durch die Nutzung des Netzwerks. Premium, Belohnungen, Staking.",
-    dl_label:"App herunterladen", dl_title:"<span>EION</span> herunterladen",
-    dl_ready:"✓ Jetzt verfügbar", dl_soon:"⏳ Demnächst", dl_apk:"↓ APK herunterladen", dl_linux:"↓ Herunterladen", dl_notify:"Benachrichtigen",
-    tok_label:"Kryptowährung", tok_title:"EION <span>Token</span>",
-    tok_params:"Token-Parameter", tok_network:"Netzwerk", tok_supply:"Gesamtangebot", tok_halving:"Halving", tok_halving_val:"Alle 2 Jahre", tok_burn:"Transaktionsgebühren", tok_burn_val:"🔥 50% verbrannt",
-    tok_future:"Zukünftiges Netzwerk", tok_future_val:"Eigene Blockchain", tok_register:"Registrierungsbonus", tok_distribution:"Token-Verteilung",
-    tnom_reward:"Belohnungspool", tnom_founder:"Gründer", tnom_liquidity:"Liquidität", tnom_presale:"Vorverkauf", tnom_ecosystem:"Ökosystem",
-    earn_label:"Verdienen", earn_title:"Wie man <span>EION</span> verdient",
-    earn1_title:"Registrierung", earn1_desc:"Melden Sie sich an und erhalten Sie sofort 50 EION als Willkommensbonus.",
-    earn2_title:"Netzwerk-Speicher", earn2_desc:"Stellen Sie Speicherplatz für verteilte Netzwerkdaten bereit und verdienen Sie kontinuierlich.",
-    earn3_title:"Node betreiben", earn3_desc:"Betreiben Sie einen EION-Netzwerk-Node und erhalten Sie regelmäßige Token-Belohnungen.",
-    earn4_title:"Transaktionen validieren", earn4_desc:"Nehmen Sie an der Transaktionsbestätigung teil und erhalten Sie Validator-Belohnungen.",
-    prem_label:"Premium", prem_title:"<span>Premium</span> freischalten",
-    prem_monthly_tag:"Monatlich", prem_monthly_period:"EION / Monat",
-    prem_yearly_tag:"Jährlich — Bestes Angebot", prem_yearly_period:"EION / Jahr",
-    prem_f1:"Keine Werbung", prem_f2:"Prioritätssupport", prem_f3:"Erweiterter Speicher", prem_f4:"HD-Videoanrufe", prem_f5:"2 Monate gratis",
-    rm_label:"Roadmap", rm_title:"Was kommt <span>als Nächstes</span>",
-    rm_ph1:"Phase 1 — Jetzt", rm_h1:"Start",
-    rm_1_1:"Android & Linux App", rm_1_2:"Live-Chat, KI, Videoanrufe", rm_1_3:"EION Token auf TON", rm_1_4:"Website-Start",
-    rm_ph2:"Phase 2 — 2026", rm_h2:"Expansion",
-    rm_2_1:"iOS & Windows Apps", rm_2_2:"Token-Vorverkauf", rm_2_3:"Node-Netzwerk-Start", rm_2_4:"Staking-Modul",
-    rm_ph3:"Phase 3 — 2027", rm_h3:"Dezentralisierung",
-    rm_3_1:"Eigene Blockchain-Launch", rm_3_2:"Dezentraler Speicher", rm_3_3:"DEX-Listing", rm_3_4:"DAO-Governance",
-    rm_ph4:"Phase 4 — 2028+", rm_h4:"Ökosystem",
-    rm_4_1:"DApp-Plattform", rm_4_2:"Unternehmenslösungen", rm_4_3:"Cross-Chain-Brücken", rm_4_4:"Globale Expansion",
-    faq_label:"FAQ", faq_title:"Häufig <span>gestellte Fragen</span>",
-    faq:[
-      {q:"Was ist EION?", a:"EION ist ein dezentraler Messenger mit integrierter Kryptowährung, KI-Assistenten und HD-Videoanrufen. Er verbindet sichere Kommunikation mit einer Web3-Wirtschaft."},
-      {q:"Ist EION kostenlos?", a:"Ja, die Basisversion ist völlig kostenlos. Premium-Funktionen sind für 500 EION/Monat oder 4200 EION/Jahr verfügbar."},
-      {q:"Wie bekomme ich EION-Token?", a:"Sie erhalten bei der Registrierung 50 EION. Sie können auch durch Netzwerkspeicher, Node-Betrieb oder Transaktionsvalidierung verdienen."},
-      {q:"Ist EION Open Source?", a:"Der Server- und Website-Code ist auf GitHub verfügbar. Der App-Quellcode wird im Laufe der Projektentwicklung teilweise geöffnet."},
-      {q:"Auf welchen Plattformen ist EION verfügbar?", a:"Derzeit für Android und Linux verfügbar. iOS- und Windows-Versionen befinden sich in der Entwicklung."},
-    ],
-    footer_tagline:"Kommunizieren. Verdienen. Besitzen.", footer_github:"GitHub", footer_support:"Support",
-  },
-
-  fr: {
-    nav_features:"Fonctionnalités", nav_download:"Télécharger", nav_token:"Token", nav_roadmap:"Feuille de route", nav_faq:"FAQ",
-    hero_sub:"Réseau de Communication Décentralisé",
-    hero_desc:"La messagerie de nouvelle génération avec chiffrement de bout en bout, assistant IA,<br>appels vidéo HD et un token crypto intégré — tout en une seule app.",
-    hero_btn1:"↓ Télécharger", hero_btn2:"Token EION →",
-    feat_label:"Application", feat_title:"Tout ce qu'il vous faut <span>dans une seule app</span>",
-    f1_title:"Chat en direct", f1_desc:"Messagerie chiffrée instantanée avec groupes, médias et fichiers.",
-    f2_title:"Assistant IA", f2_desc:"Chat IA intégré propulsé par des modèles de langage avancés, disponible à tout moment.",
-    f3_title:"Appels vidéo HD", f3_desc:"Appels audio et vidéo cristallins via WebRTC — sans intermédiaires.",
-    f4_title:"Groupes", f4_desc:"Créez des communautés, des canaux et des chats de groupe avec des permissions flexibles.",
-    f5_title:"Chiffrement E2E", f5_desc:"Tous les messages et appels protégés de bout en bout. Vos données vous appartiennent.",
-    f6_title:"Token EION", f6_desc:"Gagnez de la crypto en utilisant le réseau. Fonctions premium, récompenses, staking.",
-    dl_label:"Obtenir l'app", dl_title:"Télécharger <span>EION</span>",
-    dl_ready:"✓ Disponible maintenant", dl_soon:"⏳ Bientôt disponible", dl_apk:"↓ Télécharger APK", dl_linux:"↓ Télécharger", dl_notify:"Me notifier",
-    tok_label:"Cryptomonnaie", tok_title:"Token <span>EION</span>",
-    tok_params:"Paramètres du token", tok_network:"Réseau", tok_supply:"Offre totale", tok_halving:"Halving", tok_halving_val:"Tous les 2 ans", tok_burn:"Frais de transaction", tok_burn_val:"🔥 50% brûlés",
-    tok_future:"Réseau futur", tok_future_val:"Blockchain propre", tok_register:"Bonus d'inscription", tok_distribution:"Distribution des tokens",
-    tnom_reward:"Pool de récompenses", tnom_founder:"Fondateurs", tnom_liquidity:"Liquidité", tnom_presale:"Prévente", tnom_ecosystem:"Écosystème",
-    earn_label:"Gagner", earn_title:"Comment gagner <span>EION</span>",
-    earn1_title:"Inscription", earn1_desc:"Inscrivez-vous et recevez instantanément 50 EION comme bonus de bienvenue.",
-    earn2_title:"Stockage réseau", earn2_desc:"Fournissez de l'espace disque pour les données réseau distribuées et gagnez en continu.",
-    earn3_title:"Faire tourner un nœud", earn3_desc:"Faites tourner un nœud du réseau EION et recevez des récompenses régulières en tokens.",
-    earn4_title:"Valider les transactions", earn4_desc:"Participez à la confirmation des transactions et gagnez des récompenses de validateur.",
-    prem_label:"Premium", prem_title:"Débloquer <span>Premium</span>",
-    prem_monthly_tag:"Mensuel", prem_monthly_period:"EION / mois",
-    prem_yearly_tag:"Annuel — Meilleure offre", prem_yearly_period:"EION / an",
-    prem_f1:"Sans publicité", prem_f2:"Support prioritaire", prem_f3:"Stockage étendu", prem_f4:"Appels vidéo HD", prem_f5:"2 mois gratuits",
-    rm_label:"Feuille de route", rm_title:"Ce qui vient <span>ensuite</span>",
-    rm_ph1:"Phase 1 — Maintenant", rm_h1:"Lancement",
-    rm_1_1:"App Android & Linux", rm_1_2:"Chat en direct, IA, appels vidéo", rm_1_3:"Token EION sur TON", rm_1_4:"Lancement du site web",
-    rm_ph2:"Phase 2 — 2026", rm_h2:"Expansion",
-    rm_2_1:"Apps iOS & Windows", rm_2_2:"Prévente de tokens", rm_2_3:"Lancement du réseau de nœuds", rm_2_4:"Module de staking",
-    rm_ph3:"Phase 3 — 2027", rm_h3:"Décentralisation",
-    rm_3_1:"Lancement blockchain propre", rm_3_2:"Stockage décentralisé", rm_3_3:"Listing DEX", rm_3_4:"Gouvernance DAO",
-    rm_ph4:"Phase 4 — 2028+", rm_h4:"Écosystème",
-    rm_4_1:"Plateforme DApp", rm_4_2:"Solutions entreprise", rm_4_3:"Ponts cross-chain", rm_4_4:"Expansion mondiale",
-    faq_label:"FAQ", faq_title:"Questions <span>fréquemment posées</span>",
-    faq:[
-      {q:"Qu'est-ce que EION?", a:"EION est une messagerie décentralisée avec cryptomonnaie intégrée, assistant IA et appels vidéo HD. Elle combine communication sécurisée et économie Web3."},
-      {q:"EION est-il gratuit?", a:"Oui, la version de base est entièrement gratuite. Les fonctionnalités premium sont disponibles pour 500 EION/mois ou 4200 EION/an."},
-      {q:"Comment obtenir des tokens EION?", a:"Vous recevez 50 EION à l'inscription. Vous pouvez aussi gagner en fournissant du stockage réseau, en faisant tourner un nœud ou en validant des transactions."},
-      {q:"EION est-il open source?", a:"Le code du serveur et du site web est disponible sur GitHub. Le code source de l'application sera partiellement ouvert au fil du développement."},
-      {q:"Sur quelles plateformes EION est-il disponible?", a:"Actuellement disponible pour Android et Linux. Les versions iOS et Windows sont en développement."},
-    ],
-    footer_tagline:"Communiquer. Gagner. Posséder.", footer_github:"GitHub", footer_support:"Support",
-  },
-
-  it: {
-    nav_features:"Funzionalità", nav_download:"Scarica", nav_token:"Token", nav_roadmap:"Roadmap", nav_faq:"FAQ",
-    hero_sub:"Rete di Comunicazione Decentralizzata",
-    hero_desc:"Il messenger di nuova generazione con crittografia end-to-end, assistente IA,<br>videochiamate HD e un token criptovaluta integrato — tutto in una sola app.",
-    hero_btn1:"↓ Scarica", hero_btn2:"Token EION →",
-    feat_label:"Applicazione", feat_title:"Tutto ciò di cui hai bisogno <span>in una sola app</span>",
-    f1_title:"Chat dal vivo", f1_desc:"Messaggistica crittografata istantanea con gruppi, media e file.",
-    f2_title:"Assistente IA", f2_desc:"Chat IA integrata con modelli linguistici avanzati, disponibile in qualsiasi momento.",
-    f3_title:"Videochiamate HD", f3_desc:"Chiamate audio e video cristalline via WebRTC — senza intermediari.",
-    f4_title:"Gruppi", f4_desc:"Crea community, canali e chat di gruppo con permessi flessibili.",
-    f5_title:"Crittografia E2E", f5_desc:"Tutti i messaggi e le chiamate protetti end-to-end. I tuoi dati rimangono tuoi.",
-    f6_title:"Token EION", f6_desc:"Guadagna crypto usando la rete. Funzioni premium, premi, staking.",
-    dl_label:"Scarica l'app", dl_title:"Scarica <span>EION</span>",
-    dl_ready:"✓ Disponibile ora", dl_soon:"⏳ Prossimamente", dl_apk:"↓ Scarica APK", dl_linux:"↓ Scarica", dl_notify:"Notificami",
-    tok_label:"Criptovaluta", tok_title:"Token <span>EION</span>",
-    tok_params:"Parametri del token", tok_network:"Rete", tok_supply:"Offerta totale", tok_halving:"Halving", tok_halving_val:"Ogni 2 anni", tok_burn:"Commissioni", tok_burn_val:"🔥 50% bruciati",
-    tok_future:"Rete futura", tok_future_val:"Blockchain propria", tok_register:"Bonus registrazione", tok_distribution:"Distribuzione token",
-    tnom_reward:"Pool ricompense", tnom_founder:"Fondatori", tnom_liquidity:"Liquidità", tnom_presale:"Prevendita", tnom_ecosystem:"Ecosistema",
-    earn_label:"Guadagna", earn_title:"Come guadagnare <span>EION</span>",
-    earn1_title:"Registrazione", earn1_desc:"Iscriviti e ricevi istantaneamente 50 EION come bonus di benvenuto.",
-    earn2_title:"Archiviazione rete", earn2_desc:"Fornisci spazio su disco per i dati della rete distribuita e guadagna continuamente.",
-    earn3_title:"Gestisci un nodo", earn3_desc:"Gestisci un nodo della rete EION e ricevi premi regolari in token.",
-    earn4_title:"Valida transazioni", earn4_desc:"Partecipa alla conferma delle transazioni e guadagna ricompense come validatore.",
-    prem_label:"Premium", prem_title:"Sblocca <span>Premium</span>",
-    prem_monthly_tag:"Mensile", prem_monthly_period:"EION / mese",
-    prem_yearly_tag:"Annuale — Miglior offerta", prem_yearly_period:"EION / anno",
-    prem_f1:"Senza pubblicità", prem_f2:"Supporto prioritario", prem_f3:"Archiviazione estesa", prem_f4:"Videochiamate HD", prem_f5:"2 mesi gratis",
-    rm_label:"Roadmap", rm_title:"Cosa viene <span>dopo</span>",
-    rm_ph1:"Fase 1 — Ora", rm_h1:"Lancio",
-    rm_1_1:"App Android & Linux", rm_1_2:"Chat dal vivo, IA, videochiamate", rm_1_3:"Token EION su TON", rm_1_4:"Lancio sito web",
-    rm_ph2:"Fase 2 — 2026", rm_h2:"Espansione",
-    rm_2_1:"App iOS & Windows", rm_2_2:"Prevendita token", rm_2_3:"Lancio rete nodi", rm_2_4:"Modulo staking",
-    rm_ph3:"Fase 3 — 2027", rm_h3:"Decentralizzazione",
-    rm_3_1:"Lancio blockchain proprietaria", rm_3_2:"Archiviazione decentralizzata", rm_3_3:"Listing DEX", rm_3_4:"Governance DAO",
-    rm_ph4:"Fase 4 — 2028+", rm_h4:"Ecosistema",
-    rm_4_1:"Piattaforma DApp", rm_4_2:"Soluzioni enterprise", rm_4_3:"Bridge cross-chain", rm_4_4:"Espansione globale",
-    faq_label:"FAQ", faq_title:"Domande <span>frequenti</span>",
-    faq:[
-      {q:"Cos'è EION?", a:"EION è un messenger decentralizzato con criptovaluta integrata, assistente IA e videochiamate HD. Combina comunicazione sicura con un'economia Web3."},
-      {q:"EION è gratuito?", a:"Sì, la versione base è completamente gratuita. Le funzioni premium sono disponibili per 500 EION/mese o 4200 EION/anno."},
-      {q:"Come ottengo i token EION?", a:"Ricevi 50 EION alla registrazione. Puoi anche guadagnare fornendo archiviazione di rete, gestendo un nodo o validando transazioni."},
-      {q:"EION è open source?", a:"Il codice del server e del sito web è disponibile su GitHub. Il codice sorgente dell'app verrà parzialmente aperto man mano che il progetto si sviluppa."},
-      {q:"Su quali piattaforme è disponibile EION?", a:"Attualmente disponibile per Android e Linux. Le versioni iOS e Windows sono in sviluppo."},
-    ],
-    footer_tagline:"Comunica. Guadagna. Possiedi.", footer_github:"GitHub", footer_support:"Supporto",
-  },
-
-  es: {
-    nav_features:"Características", nav_download:"Descargar", nav_token:"Token", nav_roadmap:"Hoja de ruta", nav_faq:"FAQ",
-    hero_sub:"Red de Comunicación Descentralizada",
-    hero_desc:"El mensajero de próxima generación con cifrado de extremo a extremo, asistente IA,<br>videollamadas HD y un token criptográfico integrado — todo en una sola app.",
-    hero_btn1:"↓ Descargar", hero_btn2:"Token EION →",
-    feat_label:"Aplicación", feat_title:"Todo lo que necesitas <span>en una sola app</span>",
-    f1_title:"Chat en vivo", f1_desc:"Mensajería cifrada instantánea con grupos, medios y archivos.",
-    f2_title:"Asistente IA", f2_desc:"Chat IA integrado con modelos de lenguaje avanzados, disponible en cualquier momento.",
-    f3_title:"Videollamadas HD", f3_desc:"Llamadas de audio y video nítidas vía WebRTC — sin intermediarios.",
-    f4_title:"Grupos", f4_desc:"Crea comunidades, canales y chats grupales con permisos flexibles.",
-    f5_title:"Cifrado E2E", f5_desc:"Todos los mensajes y llamadas protegidos de extremo a extremo. Tus datos son tuyos.",
-    f6_title:"Token EION", f6_desc:"Gana cripto usando la red. Funciones premium, recompensas, staking.",
-    dl_label:"Obtener la app", dl_title:"Descargar <span>EION</span>",
-    dl_ready:"✓ Disponible ahora", dl_soon:"⏳ Próximamente", dl_apk:"↓ Descargar APK", dl_linux:"↓ Descargar", dl_notify:"Notificarme",
-    tok_label:"Criptomoneda", tok_title:"Token <span>EION</span>",
-    tok_params:"Parámetros del token", tok_network:"Red", tok_supply:"Oferta total", tok_halving:"Halving", tok_halving_val:"Cada 2 años", tok_burn:"Comisiones", tok_burn_val:"🔥 50% quemados",
-    tok_future:"Red futura", tok_future_val:"Blockchain propia", tok_register:"Bono de registro", tok_distribution:"Distribución de tokens",
-    tnom_reward:"Pool de recompensas", tnom_founder:"Fundadores", tnom_liquidity:"Liquidez", tnom_presale:"Preventa", tnom_ecosystem:"Ecosistema",
-    earn_label:"Ganar", earn_title:"Cómo ganar <span>EION</span>",
-    earn1_title:"Registro", earn1_desc:"Regístrate y recibe instantáneamente 50 EION como bono de bienvenida.",
-    earn2_title:"Almacenamiento de red", earn2_desc:"Proporciona espacio en disco para datos de red distribuida y gana continuamente.",
-    earn3_title:"Ejecutar un nodo", earn3_desc:"Ejecuta un nodo de la red EION y recibe recompensas regulares en tokens.",
-    earn4_title:"Validar transacciones", earn4_desc:"Participa en la confirmación de transacciones y gana recompensas de validador.",
-    prem_label:"Premium", prem_title:"Desbloquear <span>Premium</span>",
-    prem_monthly_tag:"Mensual", prem_monthly_period:"EION / mes",
-    prem_yearly_tag:"Anual — Mejor valor", prem_yearly_period:"EION / año",
-    prem_f1:"Sin anuncios", prem_f2:"Soporte prioritario", prem_f3:"Almacenamiento extendido", prem_f4:"Videollamadas HD", prem_f5:"2 meses gratis",
-    rm_label:"Hoja de ruta", rm_title:"¿Qué viene <span>después</span>?",
-    rm_ph1:"Fase 1 — Ahora", rm_h1:"Lanzamiento",
-    rm_1_1:"App Android & Linux", rm_1_2:"Chat en vivo, IA, videollamadas", rm_1_3:"Token EION en TON", rm_1_4:"Lanzamiento del sitio web",
-    rm_ph2:"Fase 2 — 2026", rm_h2:"Expansión",
-    rm_2_1:"Apps iOS & Windows", rm_2_2:"Preventa de tokens", rm_2_3:"Lanzamiento de red de nodos", rm_2_4:"Módulo de staking",
-    rm_ph3:"Fase 3 — 2027", rm_h3:"Descentralización",
-    rm_3_1:"Lanzamiento blockchain propia", rm_3_2:"Almacenamiento descentralizado", rm_3_3:"Listing en DEX", rm_3_4:"Gobernanza DAO",
-    rm_ph4:"Fase 4 — 2028+", rm_h4:"Ecosistema",
-    rm_4_1:"Plataforma DApp", rm_4_2:"Soluciones empresariales", rm_4_3:"Puentes cross-chain", rm_4_4:"Expansión global",
-    faq_label:"FAQ", faq_title:"Preguntas <span>frecuentes</span>",
-    faq:[
-      {q:"¿Qué es EION?", a:"EION es un mensajero descentralizado con criptomoneda integrada, asistente IA y videollamadas HD. Combina comunicación segura con una economía Web3."},
-      {q:"¿Es gratuito EION?", a:"Sí, la versión básica es completamente gratuita. Las funciones premium están disponibles por 500 EION/mes o 4200 EION/año."},
-      {q:"¿Cómo obtengo tokens EION?", a:"Recibes 50 EION al registrarte. También puedes ganar proporcionando almacenamiento de red, ejecutando un nodo o validando transacciones."},
-      {q:"¿Es EION de código abierto?", a:"El código del servidor y del sitio web está disponible en GitHub. El código fuente de la app se abrirá parcialmente conforme avance el proyecto."},
-      {q:"¿En qué plataformas está disponible EION?", a:"Actualmente disponible para Android y Linux. Las versiones de iOS y Windows están en desarrollo."},
-    ],
-    footer_tagline:"Comunica. Gana. Posee.", footer_github:"GitHub", footer_support:"Soporte",
-  },
-
-  uk: {
-    nav_features:"Функції", nav_download:"Завантажити", nav_token:"Токен", nav_roadmap:"Дорожня карта", nav_faq:"FAQ",
-    hero_sub:"Децентралізована мережа зв'язку",
-    hero_desc:"Месенджер нового покоління з наскрізним шифруванням, AI-асистентом,<br>HD відеодзвінками та вбудованим криптотокеном — все в одному додатку.",
-    hero_btn1:"↓ Завантажити", hero_btn2:"Токен EION →",
-    feat_label:"Додаток", feat_title:"Все що потрібно <span>в одному додатку</span>",
-    f1_title:"Живий чат", f1_desc:"Миттєве зашифроване листування з групами, медіа та файлами.",
-    f2_title:"AI-асистент", f2_desc:"Вбудований AI-чат на базі передових мовних моделей, доступний будь-коли.",
-    f3_title:"HD відеодзвінки", f3_desc:"Кристально чисті аудіо та відеодзвінки через WebRTC — без посередників.",
-    f4_title:"Групи", f4_desc:"Створюйте спільноти, канали та групові чати з гнучкими правами.",
-    f5_title:"Наскрізне шифрування", f5_desc:"Всі повідомлення та дзвінки захищені E2E. Ваші дані залишаються вашими.",
-    f6_title:"Токен EION", f6_desc:"Заробляйте крипту використовуючи мережу. Преміум, винагороди, стейкінг.",
-    dl_label:"Отримати додаток", dl_title:"Завантажити <span>EION</span>",
-    dl_ready:"✓ Доступно зараз", dl_soon:"⏳ Незабаром", dl_apk:"↓ Завантажити APK", dl_linux:"↓ Завантажити", dl_notify:"Повідомити мене",
-    tok_label:"Криптовалюта", tok_title:"Токен <span>EION</span>",
-    tok_params:"Параметри токена", tok_network:"Мережа", tok_supply:"Загальна емісія", tok_halving:"Халвінг", tok_halving_val:"Кожні 2 роки", tok_burn:"Комісії транзакцій", tok_burn_val:"🔥 50% спалюється",
-    tok_future:"Майбутня мережа", tok_future_val:"Власний блокчейн", tok_register:"Бонус за реєстрацію", tok_distribution:"Розподіл токенів",
-    tnom_reward:"Пул нагород", tnom_founder:"Засновники", tnom_liquidity:"Ліквідність", tnom_presale:"Передпродаж", tnom_ecosystem:"Екосистема",
-    earn_label:"Заробіток", earn_title:"Як заробити <span>EION</span>",
-    earn1_title:"Реєстрація", earn1_desc:"Зареєструйтесь і отримайте 50 EION миттєво як вітальний бонус.",
-    earn2_title:"Зберігання даних мережі", earn2_desc:"Надавайте місце на диску для розподілених даних мережі та заробляйте постійно.",
-    earn3_title:"Запустити ноду", earn3_desc:"Запустіть ноду мережі EION та отримуйте регулярні винагороди у токенах.",
-    earn4_title:"Підтверджувати транзакції", earn4_desc:"Беріть участь у підтвердженні транзакцій і отримуйте винагороди валідатора.",
-    prem_label:"Преміум", prem_title:"Отримати <span>Преміум</span>",
-    prem_monthly_tag:"Місячна підписка", prem_monthly_period:"EION / місяць",
-    prem_yearly_tag:"Річна підписка — Вигідніше", prem_yearly_period:"EION / рік",
-    prem_f1:"Без реклами", prem_f2:"Пріоритетна підтримка", prem_f3:"Розширене сховище", prem_f4:"HD відеодзвінки", prem_f5:"2 місяці безкоштовно",
-    rm_label:"Дорожня карта", rm_title:"Що буде <span>далі</span>",
-    rm_ph1:"Фаза 1 — Зараз", rm_h1:"Запуск",
-    rm_1_1:"Додаток Android & Linux", rm_1_2:"Живий чат, AI, відеодзвінки", rm_1_3:"Токен EION на TON", rm_1_4:"Запуск сайту",
-    rm_ph2:"Фаза 2 — 2026", rm_h2:"Розширення",
-    rm_2_1:"Додатки iOS & Windows", rm_2_2:"Передпродаж токенів", rm_2_3:"Запуск мережі нод", rm_2_4:"Модуль стейкінгу",
-    rm_ph3:"Фаза 3 — 2027", rm_h3:"Децентралізація",
-    rm_3_1:"Запуск власного блокчейну", rm_3_2:"Децентралізоване сховище", rm_3_3:"Лістинг на DEX", rm_3_4:"DAO управління",
-    rm_ph4:"Фаза 4 — 2028+", rm_h4:"Екосистема",
-    rm_4_1:"Платформа DApp", rm_4_2:"Корпоративні рішення", rm_4_3:"Кросчейн-мости", rm_4_4:"Глобальне розширення",
-    faq_label:"FAQ", faq_title:"Часті <span>запитання</span>",
-    faq:[
-      {q:"Що таке EION?", a:"EION — децентралізований месенджер із вбудованою криптовалютою, AI-асистентом та HD відеодзвінками. Поєднує безпечний зв'язок та Web3-економіку."},
-      {q:"EION безкоштовний?", a:"Так, базова версія повністю безкоштовна. Преміум-функції доступні за 500 EION/місяць або 4200 EION/рік."},
-      {q:"Як отримати токени EION?", a:"Ви отримуєте 50 EION при реєстрації. Також можна заробляти через надання сховища для мережі, запуск ноди або підтвердження транзакцій."},
-      {q:"EION є відкритим програмним забезпеченням?", a:"Код сервера та сайту доступний на GitHub. Вихідний код додатку буде частково відкритий у міру розвитку проєкту."},
-      {q:"На яких платформах доступний EION?", a:"Наразі доступний для Android та Linux. Версії для iOS та Windows в розробці."},
-    ],
-    footer_tagline:"Спілкуйся. Заробляй. Володій.", footer_github:"GitHub", footer_support:"Підтримка",
-  },
-
-  ru: {
-    nav_features:"Функции", nav_download:"Скачать", nav_token:"Токен", nav_roadmap:"Дорожная карта", nav_faq:"FAQ",
-    hero_sub:"Децентрализованная сеть связи",
-    hero_desc:"Мессенджер нового поколения со сквозным шифрованием, AI-ассистентом,<br>HD видеозвонками и встроенным криптотокеном — всё в одном приложении.",
-    hero_btn1:"↓ Скачать", hero_btn2:"Токен EION →",
-    feat_label:"Приложение", feat_title:"Всё что нужно <span>в одном приложении</span>",
-    f1_title:"Живой чат", f1_desc:"Мгновенная зашифрованная переписка с группами, медиа и файлами.",
-    f2_title:"AI-ассистент", f2_desc:"Встроенный AI-чат на базе передовых языковых моделей, доступен в любое время.",
-    f3_title:"HD видеозвонки", f3_desc:"Кристально чистые аудио и видеозвонки через WebRTC — без посредников.",
-    f4_title:"Группы", f4_desc:"Создавайте сообщества, каналы и групповые чаты с гибкими правами.",
-    f5_title:"Сквозное шифрование", f5_desc:"Все сообщения и звонки защищены E2E. Ваши данные остаются вашими.",
-    f6_title:"Токен EION", f6_desc:"Зарабатывайте крипту, используя сеть. Премиум, вознаграждения, стейкинг.",
-    dl_label:"Получить приложение", dl_title:"Скачать <span>EION</span>",
-    dl_ready:"✓ Доступно сейчас", dl_soon:"⏳ Скоро", dl_apk:"↓ Скачать APK", dl_linux:"↓ Скачать", dl_notify:"Уведомить меня",
-    tok_label:"Криптовалюта", tok_title:"Токен <span>EION</span>",
-    tok_params:"Параметры токена", tok_network:"Сеть", tok_supply:"Общая эмиссия", tok_halving:"Халвинг", tok_halving_val:"Каждые 2 года", tok_burn:"Комиссии транзакций", tok_burn_val:"🔥 50% сжигается",
-    tok_future:"Будущая сеть", tok_future_val:"Собственный блокчейн", tok_register:"Бонус за регистрацию", tok_distribution:"Распределение токенов",
-    tnom_reward:"Пул наград", tnom_founder:"Основатели", tnom_liquidity:"Ликвидность", tnom_presale:"Предпродажа", tnom_ecosystem:"Экосистема",
-    earn_label:"Заработок", earn_title:"Как заработать <span>EION</span>",
-    earn1_title:"Регистрация", earn1_desc:"Зарегистрируйтесь и получите 50 EION мгновенно как приветственный бонус.",
-    earn2_title:"Хранение данных сети", earn2_desc:"Предоставляйте место на диске для распределённых данных сети и зарабатывайте постоянно.",
-    earn3_title:"Запустить ноду", earn3_desc:"Запустите ноду сети EION и получайте регулярные вознаграждения в токенах.",
-    earn4_title:"Подтверждать транзакции", earn4_desc:"Участвуйте в подтверждении транзакций и получайте вознаграждения валидатора.",
-    prem_label:"Премиум", prem_title:"Получить <span>Премиум</span>",
-    prem_monthly_tag:"Ежемесячно", prem_monthly_period:"EION / месяц",
-    prem_yearly_tag:"Ежегодно — Выгоднее", prem_yearly_period:"EION / год",
-    prem_f1:"Без рекламы", prem_f2:"Приоритетная поддержка", prem_f3:"Расширенное хранилище", prem_f4:"HD видеозвонки", prem_f5:"2 месяца бесплатно",
-    rm_label:"Дорожная карта", rm_title:"Что будет <span>дальше</span>",
-    rm_ph1:"Фаза 1 — Сейчас", rm_h1:"Запуск",
-    rm_1_1:"Приложение Android & Linux", rm_1_2:"Живой чат, AI, видеозвонки", rm_1_3:"Токен EION на TON", rm_1_4:"Запуск сайта",
-    rm_ph2:"Фаза 2 — 2026", rm_h2:"Расширение",
-    rm_2_1:"Приложения iOS & Windows", rm_2_2:"Предпродажа токенов", rm_2_3:"Запуск сети нод", rm_2_4:"Модуль стейкинга",
-    rm_ph3:"Фаза 3 — 2027", rm_h3:"Децентрализация",
-    rm_3_1:"Запуск собственного блокчейна", rm_3_2:"Децентрализованное хранилище", rm_3_3:"Листинг на DEX", rm_3_4:"DAO управление",
-    rm_ph4:"Фаза 4 — 2028+", rm_h4:"Экосистема",
-    rm_4_1:"Платформа DApp", rm_4_2:"Корпоративные решения", rm_4_3:"Кросс-чейн мосты", rm_4_4:"Глобальное расширение",
-    faq_label:"FAQ", faq_title:"Часто <span>задаваемые вопросы</span>",
-    faq:[
-      {q:"Что такое EION?", a:"EION — децентрализованный мессенджер со встроенной криптовалютой, AI-ассистентом и HD видеозвонками. Сочетает безопасную связь и Web3-экономику."},
-      {q:"EION бесплатный?", a:"Да, базовая версия полностью бесплатна. Премиум-функции доступны за 500 EION/месяц или 4200 EION/год."},
-      {q:"Как получить токены EION?", a:"Вы получаете 50 EION при регистрации. Также можно зарабатывать через предоставление хранилища для сети, запуск ноды или подтверждение транзакций."},
-      {q:"EION является открытым программным обеспечением?", a:"Код сервера и сайта доступен на GitHub. Исходный код приложения будет частично открыт по мере развития проекта."},
-      {q:"На каких платформах доступен EION?", a:"В настоящее время доступен для Android и Linux. Версии для iOS и Windows в разработке."},
-    ],
-    footer_tagline:"Общайся. Зарабатывай. Владей.", footer_github:"GitHub", footer_support:"Поддержка",
-  },
-
-  pt: {
-    nav_features:"Funcionalidades", nav_download:"Baixar", nav_token:"Token", nav_roadmap:"Roteiro", nav_faq:"FAQ",
-    hero_sub:"Rede de Comunicação Descentralizada",
-    hero_desc:"O mensageiro de próxima geração com criptografia ponta a ponta, assistente IA,<br>videochamadas HD e um token criptográfico integrado — tudo num só app.",
-    hero_btn1:"↓ Baixar", hero_btn2:"Token EION →",
-    feat_label:"Aplicação", feat_title:"Tudo o que precisa <span>num só app</span>",
-    f1_title:"Chat ao vivo", f1_desc:"Mensagens criptografadas instantâneas com grupos, mídia e arquivos.",
-    f2_title:"Assistente IA", f2_desc:"Chat IA integrado com modelos de linguagem avançados, disponível a qualquer momento.",
-    f3_title:"Videochamadas HD", f3_desc:"Chamadas de áudio e vídeo nítidas via WebRTC — sem intermediários.",
-    f4_title:"Grupos", f4_desc:"Crie comunidades, canais e chats em grupo com permissões flexíveis.",
-    f5_title:"Criptografia E2E", f5_desc:"Todas as mensagens e chamadas protegidas ponta a ponta. Os seus dados são seus.",
-    f6_title:"Token EION", f6_desc:"Ganhe cripto usando a rede. Funções premium, recompensas, staking.",
-    dl_label:"Obter o app", dl_title:"Baixar <span>EION</span>",
-    dl_ready:"✓ Disponível agora", dl_soon:"⏳ Em breve", dl_apk:"↓ Baixar APK", dl_linux:"↓ Baixar", dl_notify:"Notificar-me",
-    tok_label:"Criptomoeda", tok_title:"Token <span>EION</span>",
-    tok_params:"Parâmetros do token", tok_network:"Rede", tok_supply:"Oferta total", tok_halving:"Halving", tok_halving_val:"A cada 2 anos", tok_burn:"Taxas de transação", tok_burn_val:"🔥 50% queimados",
-    tok_future:"Rede futura", tok_future_val:"Blockchain própria", tok_register:"Bônus de cadastro", tok_distribution:"Distribuição de tokens",
-    tnom_reward:"Pool de recompensas", tnom_founder:"Fundadores", tnom_liquidity:"Liquidez", tnom_presale:"Pré-venda", tnom_ecosystem:"Ecossistema",
-    earn_label:"Ganhar", earn_title:"Como ganhar <span>EION</span>",
-    earn1_title:"Cadastro", earn1_desc:"Cadastre-se e receba instantaneamente 50 EION como bônus de boas-vindas.",
-    earn2_title:"Armazenamento de rede", earn2_desc:"Forneça espaço em disco para dados de rede distribuída e ganhe continuamente.",
-    earn3_title:"Executar um nó", earn3_desc:"Execute um nó da rede EION e receba recompensas regulares em tokens.",
-    earn4_title:"Validar transações", earn4_desc:"Participe da confirmação de transações e ganhe recompensas de validador.",
-    prem_label:"Premium", prem_title:"Desbloquear <span>Premium</span>",
-    prem_monthly_tag:"Mensal", prem_monthly_period:"EION / mês",
-    prem_yearly_tag:"Anual — Melhor valor", prem_yearly_period:"EION / ano",
-    prem_f1:"Sem anúncios", prem_f2:"Suporte prioritário", prem_f3:"Armazenamento ampliado", prem_f4:"Videochamadas HD", prem_f5:"2 meses grátis",
-    rm_label:"Roteiro", rm_title:"O que vem <span>a seguir</span>",
-    rm_ph1:"Fase 1 — Agora", rm_h1:"Lançamento",
-    rm_1_1:"App Android & Linux", rm_1_2:"Chat ao vivo, IA, videochamadas", rm_1_3:"Token EION na TON", rm_1_4:"Lançamento do site",
-    rm_ph2:"Fase 2 — 2026", rm_h2:"Expansão",
-    rm_2_1:"Apps iOS & Windows", rm_2_2:"Pré-venda de tokens", rm_2_3:"Lançamento da rede de nós", rm_2_4:"Módulo de staking",
-    rm_ph3:"Fase 3 — 2027", rm_h3:"Descentralização",
-    rm_3_1:"Lançamento blockchain própria", rm_3_2:"Armazenamento descentralizado", rm_3_3:"Listing em DEX", rm_3_4:"Governança DAO",
-    rm_ph4:"Fase 4 — 2028+", rm_h4:"Ecossistema",
-    rm_4_1:"Plataforma DApp", rm_4_2:"Soluções empresariais", rm_4_3:"Pontes cross-chain", rm_4_4:"Expansão global",
-    faq_label:"FAQ", faq_title:"Perguntas <span>frequentes</span>",
-    faq:[
-      {q:"O que é o EION?", a:"O EION é um mensageiro descentralizado com criptomoeda integrada, assistente IA e videochamadas HD. Combina comunicação segura com uma economia Web3."},
-      {q:"O EION é gratuito?", a:"Sim, a versão básica é completamente gratuita. As funções premium estão disponíveis por 500 EION/mês ou 4200 EION/ano."},
-      {q:"Como obter tokens EION?", a:"Você recebe 50 EION ao se cadastrar. Também pode ganhar fornecendo armazenamento de rede, executando um nó ou validando transações."},
-      {q:"O EION é open source?", a:"O código do servidor e do site está disponível no GitHub. O código-fonte do app será parcialmente aberto conforme o projeto avança."},
-      {q:"Em quais plataformas o EION está disponível?", a:"Atualmente disponível para Android e Linux. As versões iOS e Windows estão em desenvolvimento."},
-    ],
-    footer_tagline:"Comunique. Ganhe. Possua.", footer_github:"GitHub", footer_support:"Suporte",
-  },
-
-  zh: {
-    nav_features:"功能", nav_download:"下载", nav_token:"代币", nav_roadmap:"路线图", nav_faq:"常见问题",
-    hero_sub:"去中心化通信网络",
-    hero_desc:"新一代即时通讯软件，集端对端加密、AI助手，<br>高清视频通话和内置加密代币于一体——一个App搞定一切。",
-    hero_btn1:"↓ 立即下载", hero_btn2:"EION 代币 →",
-    feat_label:"应用程序", feat_title:"一个App <span>满足所有需求</span>",
-    f1_title:"即时聊天", f1_desc:"支持群组、媒体和文件的即时加密消息。",
-    f2_title:"AI 助手", f2_desc:"内置先进语言模型的AI聊天，随时可用。",
-    f3_title:"高清视频通话", f3_desc:"通过WebRTC实现清晰的音视频通话——无中间商。",
-    f4_title:"群组", f4_desc:"创建社区、频道和群聊，权限灵活可配置。",
-    f5_title:"端对端加密", f5_desc:"所有消息和通话均受端对端保护。您的数据属于您。",
-    f6_title:"EION 代币", f6_desc:"使用网络即可赚取加密货币。高级功能、奖励和质押。",
-    dl_label:"获取应用", dl_title:"下载 <span>EION</span>",
-    dl_ready:"✓ 现已可用", dl_soon:"⏳ 即将推出", dl_apk:"↓ 下载 APK", dl_linux:"↓ 下载", dl_notify:"提醒我",
-    tok_label:"加密货币", tok_title:"EION <span>代币</span>",
-    tok_params:"代币参数", tok_network:"网络", tok_supply:"总供应量", tok_halving:"减半", tok_halving_val:"每2年一次", tok_burn:"交易手续费", tok_burn_val:"🔥 50% 销毁",
-    tok_future:"未来网络", tok_future_val:"自有区块链", tok_register:"注册奖励", tok_distribution:"代币分配",
-    tnom_reward:"奖励池", tnom_founder:"创始人", tnom_liquidity:"流动性", tnom_presale:"预售", tnom_ecosystem:"生态系统",
-    earn_label:"赚取", earn_title:"如何赚取 <span>EION</span>",
-    earn1_title:"注册奖励", earn1_desc:"注册即可立即获得50个EION作为欢迎奖励。",
-    earn2_title:"网络存储", earn2_desc:"为分布式网络数据提供磁盘空间，持续赚取收益。",
-    earn3_title:"运行节点", earn3_desc:"运行EION网络节点，定期获得代币奖励。",
-    earn4_title:"验证交易", earn4_desc:"参与交易确认，赚取验证者奖励。",
-    prem_label:"高级版", prem_title:"解锁 <span>高级版</span>",
-    prem_monthly_tag:"月度订阅", prem_monthly_period:"EION / 月",
-    prem_yearly_tag:"年度订阅 — 最划算", prem_yearly_period:"EION / 年",
-    prem_f1:"无广告", prem_f2:"优先客服", prem_f3:"扩展存储", prem_f4:"高清视频通话", prem_f5:"免费2个月",
-    rm_label:"路线图", rm_title:"下一步 <span>计划</span>",
-    rm_ph1:"第一阶段 — 当前", rm_h1:"发布",
-    rm_1_1:"Android & Linux 应用", rm_1_2:"即时聊天、AI、视频通话", rm_1_3:"TON 链上 EION 代币", rm_1_4:"网站上线",
-    rm_ph2:"第二阶段 — 2026", rm_h2:"扩张",
-    rm_2_1:"iOS & Windows 应用", rm_2_2:"代币预售", rm_2_3:"节点网络启动", rm_2_4:"质押模块",
-    rm_ph3:"第三阶段 — 2027", rm_h3:"去中心化",
-    rm_3_1:"自有区块链启动", rm_3_2:"去中心化存储", rm_3_3:"DEX 上市", rm_3_4:"DAO 治理",
-    rm_ph4:"第四阶段 — 2028+", rm_h4:"生态系统",
-    rm_4_1:"DApp 平台", rm_4_2:"企业解决方案", rm_4_3:"跨链桥", rm_4_4:"全球扩张",
-    faq_label:"常见问题", faq_title:"常见 <span>问题解答</span>",
-    faq:[
-      {q:"什么是EION？", a:"EION是一款去中心化即时通讯软件，内置加密货币、AI助手和高清视频通话。它将安全通信与Web3经济完美结合。"},
-      {q:"EION是免费的吗？", a:"是的，基础版完全免费。高级功能可通过500 EION/月或4200 EION/年订阅获取。"},
-      {q:"如何获得EION代币？", a:"注册时即可获得50个EION。您还可以通过提供网络存储、运行节点或验证交易来赚取更多。"},
-      {q:"EION是开源的吗？", a:"服务器和网站代码已在GitHub上开放。随着项目发展，应用程序源代码也将部分开放。"},
-      {q:"EION在哪些平台上可用？", a:"目前支持Android和Linux。iOS和Windows版本正在开发中。"},
-    ],
-    footer_tagline:"沟通。赚取。拥有。", footer_github:"GitHub", footer_support:"支持",
-  }
-};
-
-// ─── LANG ENGINE ────────────────────────────────────────────────────────────
 let currentLang = 'en';
+let cache = {};
 
-const langLabels = {en:'🇬🇧 EN',es:'🇪🇸 ES',fr:'🇫🇷 FR',de:'🇩🇪 DE',pt:'🇧🇷 PT',it:'🇮🇹 IT',zh:'🇨🇳 中文',ru:'🇷🇺 RU',uk:'🇺🇦 UA'};
-
-function toggleLangMenu() {
-  document.getElementById('langSwitcher').classList.toggle('open');
+// ─── DETECT BROWSER LANGUAGE ────────────────────────────────────────────────
+function detectLang() {
+  const saved = localStorage.getItem('eion_lang');
+  if (saved && LANGS.includes(saved)) return saved;
+  const br = (navigator.language || 'en').slice(0,2).toLowerCase();
+  return BROWSER_MAP[br] || 'en';
 }
 
-document.addEventListener('click', e => {
-  const sw = document.getElementById('langSwitcher');
-  if (!sw.contains(e.target)) sw.classList.remove('open');
-});
+// ─── LOAD LOCALE JSON ────────────────────────────────────────────────────────
+async function loadLocale(lang) {
+  if (cache[lang]) return cache[lang];
+  try {
+    const r = await fetch(`locales/${lang}.json`);
+    const data = await r.json();
+    cache[lang] = data;
+    return data;
+  } catch(e) {
+    return cache['en'] || {};
+  }
+}
 
-function setLang(lang) {
-  currentLang = lang;
-  const t = i18n[lang];
+// ─── APPLY TRANSLATIONS ──────────────────────────────────────────────────────
+function applyTranslations(t) {
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (t[key] !== undefined) el.innerHTML = t[key];
   });
+  buildFAQ(t.faq || []);
+}
+
+// ─── SET LANGUAGE ────────────────────────────────────────────────────────────
+async function setLang(lang) {
+  if (!LANGS.includes(lang)) lang = 'en';
+  currentLang = lang;
+  localStorage.setItem('eion_lang', lang);
+
+  const t = await loadLocale(lang);
+  applyTranslations(t);
+
+  // RTL
+  const isRTL = RTL_LANGS.includes(lang);
+  document.documentElement.setAttribute('dir', isRTL ? 'rtl' : 'ltr');
+  document.documentElement.lang = lang;
+
+  // Font class
+  document.body.className = `lang-${lang}`;
+
+  // Update button label
+  document.getElementById('langLabel').textContent = LANG_LABELS[lang] || lang.toUpperCase();
+
+  // Update active button
   document.querySelectorAll('.lang-opt').forEach(btn => {
     btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
   });
-  document.getElementById('langLabel').textContent = langLabels[lang] || lang.toUpperCase();
+
+  // Close dropdown
   document.getElementById('langSwitcher').classList.remove('open');
-  buildFAQ(t.faq);
-  document.documentElement.lang = lang;
 }
 
+// ─── DROPDOWN ────────────────────────────────────────────────────────────────
+function toggleLangMenu() {
+  document.getElementById('langSwitcher').classList.toggle('open');
+}
+document.addEventListener('click', e => {
+  if (!document.getElementById('langSwitcher').contains(e.target))
+    document.getElementById('langSwitcher').classList.remove('open');
+});
+
+// ─── FAQ ─────────────────────────────────────────────────────────────────────
 function buildFAQ(faqs) {
-  const container = document.getElementById('faqList');
-  container.innerHTML = faqs.map((f, i) => `
+  const c = document.getElementById('faqList');
+  c.innerHTML = faqs.map((f,i) => `
     <div class="faq-item" onclick="toggleFAQ(${i})">
       <div class="faq-q">${f.q}<span class="arrow">+</span></div>
       <div class="faq-a">${f.a}</div>
-    </div>
-  `).join('');
+    </div>`).join('');
 }
-
 function toggleFAQ(i) {
-  const items = document.querySelectorAll('.faq-item');
-  items[i].classList.toggle('open');
+  document.querySelectorAll('.faq-item')[i].classList.toggle('open');
 }
 
-// ─── STARS ──────────────────────────────────────────────────────────────────
-(function createStars() {
-  const container = document.getElementById('stars');
-  for (let i = 0; i < 80; i++) {
-    const s = document.createElement('span');
-    const size = Math.random() * 2 + 1;
-    s.style.cssText = `
-      width:${size}px;height:${size}px;
-      left:${Math.random()*100}%;top:${Math.random()*100}%;
-      --d:${2+Math.random()*4}s;
-      --delay:${-Math.random()*5}s;
-      --op:${0.3+Math.random()*0.5};
-    `;
-    container.appendChild(s);
+// ─── STARS ───────────────────────────────────────────────────────────────────
+(function(){
+  const c = document.getElementById('stars');
+  for(let i=0;i<80;i++){
+    const s=document.createElement('span');
+    const sz=Math.random()*2+1;
+    s.style.cssText=`width:${sz}px;height:${sz}px;left:${Math.random()*100}%;top:${Math.random()*100}%;--d:${2+Math.random()*4}s;--delay:${-Math.random()*5}s;--op:${0.3+Math.random()*0.5}`;
+    c.appendChild(s);
   }
 })();
 
-// ─── CURSOR ─────────────────────────────────────────────────────────────────
-const cursor = document.getElementById('cursor');
-const ring = document.getElementById('cursorRing');
+// ─── CURSOR ───────────────────────────────────────────────────────────────────
+const cursor=document.getElementById('cursor'),ring=document.getElementById('cursorRing');
 let mx=0,my=0,rx=0,ry=0;
-document.addEventListener('mousemove', e => {
-  mx = e.clientX; my = e.clientY;
-  cursor.style.left = mx-6+'px'; cursor.style.top = my-6+'px';
-});
-(function animRing(){
-  rx += (mx-rx)*0.12; ry += (my-ry)*0.12;
-  ring.style.left = rx-18+'px'; ring.style.top = ry-18+'px';
-  requestAnimationFrame(animRing);
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cursor.style.left=mx-6+'px';cursor.style.top=my-6+'px';});
+(function animRing(){rx+=(mx-rx)*0.12;ry+=(my-ry)*0.12;ring.style.left=rx-18+'px';ring.style.top=ry-18+'px';requestAnimationFrame(animRing);})();
+document.addEventListener('mousedown',()=>cursor.style.transform='scale(1.8)');
+document.addEventListener('mouseup',()=>cursor.style.transform='scale(1)');
+
+// ─── SCROLL REVEAL ────────────────────────────────────────────────────────────
+const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');}),{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+// ─── INIT ─────────────────────────────────────────────────────────────────────
+(async function init(){
+  const lang = detectLang();
+  // Preload EN as fallback
+  await loadLocale('en');
+  await setLang(lang);
+  // Hide loader
+  setTimeout(()=>document.getElementById('loader').classList.add('hide'),300);
 })();
-document.addEventListener('mousedown', () => cursor.style.transform='scale(1.8)');
-document.addEventListener('mouseup', () => cursor.style.transform='scale(1)');
-
-// ─── SCROLL REVEAL ──────────────────────────────────────────────────────────
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
-}, {threshold:0.1});
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-// ─── INIT ────────────────────────────────────────────────────────────────────
-setLang('en');
 </script>
 </body>
 </html>
