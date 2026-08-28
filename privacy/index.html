@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EION — Політика конфіденційності / Privacy Policy</title>
+<link rel="stylesheet" href="/legal.css">
+</head>
+<body>
+<div class="wrap">
+
+<header><h1>EION</h1></header>
+<div class="lang">
+  <button id="b-uk" aria-pressed="true" onclick="setLang('uk')">Українська</button>
+  <button id="b-en" aria-pressed="false" onclick="setLang('en')">English</button>
+</div>
+
+<!-- ======================= УКРАЇНСЬКА ======================= -->
+<section id="uk">
+<h1>Політика конфіденційності</h1>
+<p class="meta">Чинна з 28 серпня 2026 року. Стосується застосунку EION для Android і Linux та сервісу eion.network.</p>
+
+<p>EION — месенджер. Ця політика описує, які дані ми отримуємо, навіщо, кому передаємо і як ви можете їх видалити. Ми намагались писати простою мовою і без обіцянок, яких не виконуємо.</p>
+
+<h2>1. Хто відповідає за дані</h2>
+<p>Сервіс EION розробляє й підтримує приватна особа (незалежний розробник). Зв'язок: <a href="mailto:support@eion.network">support@eion.network</a>.</p>
+
+<h2>2. Які дані ми обробляємо</h2>
+
+<h3>2.1. Обліковий запис</h3>
+<ul>
+  <li><b>Нік</b> — обов'язковий, публічний.</li>
+  <li><b>Пароль</b> — зберігається лише як необоротний хеш (bcrypt). Ми не бачимо ваш пароль і не можемо його відновити.</li>
+  <li><b>Адреса електронної пошти</b> — необов'язкова, потрібна лише для відновлення доступу.</li>
+  <li><b>Номер телефону</b> — необов'язковий, потрібен лише щоб вас могли знайти знайомі з вашої адресної книги.</li>
+  <li><b>Аватар, колір, статус</b> — якщо ви їх задали; видимі іншим.</li>
+  <li><b>Баланс монет EION і статус преміуму</b>.</li>
+</ul>
+
+<h3>2.2. Вміст, який ви створюєте</h3>
+<ul>
+  <li>Повідомлення в діалогах, групах і каналах, коментарі, реакції, наліпки.</li>
+  <li>Файли, фотографії, відео й голосові повідомлення, які ви надсилаєте.</li>
+  <li>Записи про дзвінки: хто, кому, коли, тривалість, чи відповіли. <b>Зміст розмови не записується.</b></li>
+  <li>Скарги, які ви надсилаєте на інших користувачів.</li>
+</ul>
+
+<h3>2.3. Технічні дані</h3>
+<ul>
+  <li><b>Токен сесії</b> — щоб не вводити пароль щоразу.</li>
+  <li><b>Токен push-сповіщень</b> і ідентифікатор пристрою — щоб доставляти сповіщення.</li>
+  <li><b>Звіти про збої</b> — коли застосунок падає, надсилається технічний опис помилки. Текст помилки автоматично очищується від токенів, адрес пошти й параметрів запитів.</li>
+  <li><b>IP-адреса</b> потрапляє до службових журналів хостинг-провайдера й зберігається обмежений час.</li>
+</ul>
+
+<h3>2.4. Адресна книга</h3>
+<p>Якщо ви дозволите доступ до контактів, застосунок надсилає на сервер номери телефонів у нормалізованому вигляді, щоб перевірити, хто з ваших знайомих уже користується EION. <b>Ми не зберігаємо вашу адресну книгу</b> — номери використовуються лише для звірки під час запиту, а імена контактів на сервер не передаються взагалі.</p>
+
+<h3>2.5. Місцезнаходження</h3>
+<p>Тільки якщо ви самі обрали «Надіслати місцезнаходження». Ми не збираємо координати у фоновому режимі й не відстежуємо переміщення.</p>
+
+<h3>2.6. Чого ми НЕ робимо</h3>
+<ul>
+  <li>Не показуємо рекламу й не передаємо дані рекламним мережам.</li>
+  <li>Не продаємо дані третім особам.</li>
+  <li>Не читаємо ваші повідомлення для профілювання й не будуємо рекламних профілів.</li>
+</ul>
+
+<h3>2.7. Сайт eion.network</h3>
+<p>На сайті працює Google Analytics — він збирає знеособлену статистику відвідувань (сторінки, приблизний регіон, тип пристрою) за допомогою файлів cookie. Ці дані не пов'язуються з вашим обліковим записом у застосунку. Вимкнути збір можна засобами браузера або <a href="https://tools.google.com/dlpage/gaoptout">офіційним доповненням Google</a>. У самому застосунку EION аналітики немає.</p>
+
+<h2>3. Шифрування — чесно</h2>
+<div class="box">
+<p><b>Дзвінки шифруються наскрізно.</b> Аудіо й відео передаються за протоколом WebRTC із обов'язковим шифруванням DTLS-SRTP. Ні ми, ні проміжні сервери не мають доступу до змісту розмови.</p>
+<p><b>Повідомлення — ні.</b> Текст і файли передаються захищеним каналом (HTTPS/WSS) і зберігаються на сервері у відкритому вигляді. Це означає, що технічно ми маємо доступ до вмісту переписки. Ми не читаємо її в буденній роботі, але не можемо стверджувати, що це неможливо.</p>
+<p>Ми вважаємо чесність важливішою за маркетинг: наскрізне шифрування переписки заплановане, але поки його немає — і ми про це говоримо прямо. Якщо вам потрібна гарантована таємниця листування, використовуйте месенджер із наскрізним шифруванням.</p>
+</div>
+
+<h2>4. Кому передаються дані</h2>
+<p>Ми користуємось послугами постачальників інфраструктури. Вони обробляють дані лише для роботи сервісу.</p>
+<table>
+<tr><th>Постачальник</th><th>Для чого</th><th>Що отримує</th></tr>
+<tr><td>Supabase</td><td>База даних і сховище файлів</td><td>Обліковий запис, повідомлення, файли</td></tr>
+<tr><td>Render</td><td>Хостинг сервера</td><td>Мережевий трафік, службові журнали</td></tr>
+<tr><td>Google Firebase (FCM)</td><td>Push-сповіщення</td><td>Токен пристрою, факт і мінімальний вміст сповіщення</td></tr>
+<tr><td>Sentry (регіон ЄС)</td><td>Звіти про збої</td><td>Технічний опис помилки, модель пристрою й версія застосунку</td></tr>
+<tr><td>Brevo</td><td>Службові листи (відновлення пароля)</td><td>Адреса пошти й текст листа</td></tr>
+<tr><td>Groq</td><td>Вбудований AI-асистент</td><td>Лише те, що ви самі написали асистенту</td></tr>
+<tr><td>YouTube</td><td>Перегляд трансляцій у каналах</td><td>Стандартні дані відтворення відео</td></tr>
+<tr><td>Google Analytics</td><td>Статистика відвідувань <b>сайту</b> (не застосунку)</td><td>Знеособлені дані відвідування</td></tr>
+</table>
+<p>Ми також можемо розкрити дані на законну вимогу компетентного органу — у межах, які вимагає закон.</p>
+
+<h2>5. Скільки зберігаються дані</h2>
+<ul>
+  <li><b>Обліковий запис і переписка</b> — доки ви не видалите акаунт.</li>
+  <li><b>Файли й медіа</b> — прибираються зі сховища, коли на них більше немає посилань у переписці.</li>
+  <li><b>Коди підтвердження</b> (пошта, телефон) — 5 хвилин.</li>
+  <li><b>Звіти про збої</b> — за політикою зберігання Sentry, зазвичай до 90 днів.</li>
+</ul>
+
+<h2>6. Ваші права</h2>
+<p>Ви можете: отримати копію своїх даних, виправити їх, видалити акаунт, відкликати згоду на доступ до контактів чи місцезнаходження (у налаштуваннях системи), поскаржитись до наглядового органу з захисту даних.</p>
+
+<h3>Як видалити акаунт</h3>
+<p>У застосунку: <b>Налаштування профілю → Видалити акаунт</b>. Разом з акаунтом видаляються ваш профіль, повідомлення, файли, баланс монет і всі сесії. Дія незворотна. Якщо доступу до застосунку немає — напишіть на <a href="mailto:support@eion.network">support@eion.network</a> із адреси, вказаної в акаунті.</p>
+
+<h2>7. Діти</h2>
+<p>EION не призначений для осіб молодших за 13 років (у Європейському Союзі — молодших за 16, якщо законодавство країни не встановлює нижчий вік). Ми свідомо не збираємо дані таких осіб. Якщо ви вважаєте, що дитина створила акаунт, напишіть нам — ми його видалимо.</p>
+
+<h2>8. Безпека</h2>
+<p>Доступ до бази даних відкритий лише нашому серверу; звернення до неї потребують токена сесії. Файли зберігаються у приватному сховищі й видаються за посиланнями з обмеженим строком дії. Паролі хешуються bcrypt. Попри це, жодна система не є абсолютно захищеною.</p>
+
+<h2>9. Зміни політики</h2>
+<p>Ми можемо оновлювати цю політику. Дата вгорі показує чинну редакцію; про суттєві зміни повідомимо в застосунку.</p>
+
+<h2>10. Зв'язок</h2>
+<p><a href="mailto:support@eion.network">support@eion.network</a></p>
+</section>
+
+<!-- ======================= ENGLISH ======================= -->
+<section id="en" hidden>
+<h1>Privacy Policy</h1>
+<p class="meta">Effective 28 August 2026. Applies to the EION app for Android and Linux and to the eion.network service.</p>
+
+<p>EION is a messenger. This policy explains what data we receive, why, who we share it with, and how you can delete it. We have tried to write plainly and to avoid promises we do not keep.</p>
+
+<h2>1. Who is responsible</h2>
+<p>EION is developed and operated by an individual (an independent developer). Contact: <a href="mailto:support@eion.network">support@eion.network</a>.</p>
+
+<h2>2. What we process</h2>
+
+<h3>2.1. Account</h3>
+<ul>
+  <li><b>Nickname</b> — required, public.</li>
+  <li><b>Password</b> — stored only as an irreversible hash (bcrypt). We cannot see or recover it.</li>
+  <li><b>Email address</b> — optional, used only for account recovery.</li>
+  <li><b>Phone number</b> — optional, used only so people in your address book can find you.</li>
+  <li><b>Avatar, colour, status</b> — if you set them; visible to others.</li>
+  <li><b>EION coin balance and premium status.</b></li>
+</ul>
+
+<h3>2.2. Content you create</h3>
+<ul>
+  <li>Messages in direct chats, groups and channels; comments, reactions, stickers.</li>
+  <li>Files, photos, videos and voice messages you send.</li>
+  <li>Call records: who called whom, when, duration, whether answered. <b>Call content is never recorded.</b></li>
+  <li>Reports you submit about other users.</li>
+</ul>
+
+<h3>2.3. Technical data</h3>
+<ul>
+  <li><b>Session token</b> — so you do not re-enter your password.</li>
+  <li><b>Push notification token</b> and device identifier — to deliver notifications.</li>
+  <li><b>Crash reports</b> — when the app fails, a technical description is sent. Error text is automatically stripped of tokens, email addresses and query parameters.</li>
+  <li><b>IP address</b> appears in the hosting provider's service logs and is kept for a limited time.</li>
+</ul>
+
+<h3>2.4. Address book</h3>
+<p>If you grant contacts permission, the app sends normalised phone numbers to the server to check which of your contacts already use EION. <b>We do not store your address book</b> — numbers are used only for that comparison, and contact names are never sent.</p>
+
+<h3>2.5. Location</h3>
+<p>Only when you choose "Send location" yourself. We do not collect coordinates in the background and do not track movement.</p>
+
+<h3>2.6. What we do NOT do</h3>
+<ul>
+  <li>No advertising and no sharing with ad networks.</li>
+  <li>No selling data to third parties.</li>
+  <li>No reading your messages for profiling.</li>
+</ul>
+
+<h3>2.7. The eion.network website</h3>
+<p>The website uses Google Analytics, which collects de-identified visit statistics (pages, approximate region, device type) using cookies. This data is not linked to your app account. You can opt out through your browser settings or the <a href="https://tools.google.com/dlpage/gaoptout">official Google add-on</a>. The EION app itself contains no analytics.</p>
+
+<h2>3. Encryption — stated honestly</h2>
+<div class="box">
+<p><b>Calls are end-to-end encrypted.</b> Audio and video use WebRTC with mandatory DTLS-SRTP encryption. Neither we nor any relay server can access the content of a call.</p>
+<p><b>Messages are not.</b> Text and files travel over a secure channel (HTTPS/WSS) and are stored on the server in plain form. Technically, this means we can access message content. We do not read it in ordinary operation, but we cannot claim that it is impossible.</p>
+<p>We consider honesty more important than marketing: end-to-end encryption for messages is planned, but it does not exist yet, and we say so plainly. If you need guaranteed confidentiality of correspondence, use a messenger that provides end-to-end encryption.</p>
+</div>
+
+<h2>4. Who receives data</h2>
+<table>
+<tr><th>Provider</th><th>Purpose</th><th>What it receives</th></tr>
+<tr><td>Supabase</td><td>Database and file storage</td><td>Account, messages, files</td></tr>
+<tr><td>Render</td><td>Server hosting</td><td>Network traffic, service logs</td></tr>
+<tr><td>Google Firebase (FCM)</td><td>Push notifications</td><td>Device token, notification fact and minimal content</td></tr>
+<tr><td>Sentry (EU region)</td><td>Crash reports</td><td>Technical error description, device model, app version</td></tr>
+<tr><td>Brevo</td><td>Service emails (password recovery)</td><td>Email address and message text</td></tr>
+<tr><td>Groq</td><td>Built-in AI assistant</td><td>Only what you write to the assistant</td></tr>
+<tr><td>YouTube</td><td>Watching streams in channels</td><td>Standard video playback data</td></tr>
+<tr><td>Google Analytics</td><td>Visit statistics for the <b>website</b> (not the app)</td><td>De-identified visit data</td></tr>
+</table>
+<p>We may also disclose data upon a lawful request from a competent authority, to the extent required by law.</p>
+
+<h2>5. Retention</h2>
+<ul>
+  <li><b>Account and correspondence</b> — until you delete your account.</li>
+  <li><b>Files and media</b> — removed from storage once no message references them.</li>
+  <li><b>Verification codes</b> (email, phone) — 5 minutes.</li>
+  <li><b>Crash reports</b> — per Sentry retention, typically up to 90 days.</li>
+</ul>
+
+<h2>6. Your rights</h2>
+<p>You may obtain a copy of your data, correct it, delete your account, withdraw consent for contacts or location access (in system settings), and lodge a complaint with a data protection authority.</p>
+
+<h3>How to delete your account</h3>
+<p>In the app: <b>Profile settings → Delete account</b>. This removes your profile, messages, files, coin balance and all sessions. The action is irreversible. If you cannot access the app, write to <a href="mailto:support@eion.network">support@eion.network</a> from the address on the account.</p>
+
+<h2>7. Children</h2>
+<p>EION is not intended for people under 13 (under 16 in the European Union, unless national law sets a lower age). We do not knowingly collect their data. If you believe a child has created an account, contact us and we will delete it.</p>
+
+<h2>8. Security</h2>
+<p>Database access is limited to our server and requires a session token. Files are kept in private storage and served via time-limited links. Passwords are hashed with bcrypt. Even so, no system is perfectly secure.</p>
+
+<h2>9. Changes</h2>
+<p>We may update this policy. The date above shows the current version; we will announce material changes in the app.</p>
+
+<h2>10. Contact</h2>
+<p><a href="mailto:support@eion.network">support@eion.network</a></p>
+</section>
+
+<footer>
+  <p>EION · <a href="/terms">Умови використання / Terms of Service</a> · <a href="mailto:support@eion.network">support@eion.network</a></p>
+</footer>
+</div>
+
+<script>
+function setLang(l){
+  document.getElementById('uk').hidden = (l!=='uk');
+  document.getElementById('en').hidden = (l!=='en');
+  document.getElementById('b-uk').setAttribute('aria-pressed', l==='uk');
+  document.getElementById('b-en').setAttribute('aria-pressed', l==='en');
+  document.documentElement.lang = l;
+  try{ localStorage.setItem('eion-legal-lang', l); }catch(e){}
+}
+try{
+  var saved = localStorage.getItem('eion-legal-lang');
+  if(!saved) saved = (navigator.language||'').slice(0,2)==='uk' ? 'uk' : 'en';
+  setLang(saved);
+}catch(e){}
+</script>
+</body>
+</html>
