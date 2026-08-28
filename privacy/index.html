@@ -5,40 +5,59 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>EION — Політика конфіденційності / Privacy Policy</title>
 <style>
-:root{--bg:#fff;--fg:#1a1a1a;--muted:#666;--accent:#12B6D4;--line:#e5e5e5;--card:#fafafa}
-@media(prefers-color-scheme:dark){:root{--bg:#121416;--fg:#e8e8e8;--muted:#9aa0a6;--line:#2a2e33;--card:#1a1d21}}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;padding:0 20px}
-.wrap{max-width:760px;margin:0 auto;padding:48px 0 80px}
-header{display:flex;align-items:center;gap:12px;margin-bottom:8px}
-header img{width:40px;height:40px;border-radius:9px}
-h1{font-size:28px;margin:0;letter-spacing:-.02em}
-h2{font-size:19px;margin:34px 0 10px;letter-spacing:-.01em}
-h3{font-size:16px;margin:22px 0 6px}
-p,li{color:var(--fg)}
-ul{padding-left:22px}
-li{margin:4px 0}
-.meta{color:var(--muted);font-size:14px;margin:0 0 28px}
-.lang{display:flex;gap:8px;margin:20px 0 28px}
-.lang button{font:inherit;font-size:14px;padding:6px 14px;border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:8px;cursor:pointer}
-.lang button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
-.box{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:18px 0}
-a{color:var(--accent)}
-table{border-collapse:collapse;width:100%;margin:14px 0;font-size:15px;display:block;overflow-x:auto}
-th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
-th{background:var(--card);font-weight:600}
-footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+:root{--neon:#00d4ff;--bg:#020c14;--bg2:#0a1628;--text:#e8f4f8;--text2:#7ab8cc;--line:rgba(0,212,255,.16);--card:rgba(10,22,40,.5)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Syne',system-ui,-apple-system,sans-serif;line-height:1.72;font-size:16px}
+.glow{position:fixed;top:-40vh;left:50%;transform:translateX(-50%);width:120vw;height:80vh;pointer-events:none;z-index:0;
+  background:radial-gradient(ellipse at center,rgba(0,212,255,.08),transparent 62%)}
+.wrap{position:relative;z-index:1;max-width:780px;margin:0 auto;padding:0 22px 90px}
+nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0;gap:14px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:11px;font-family:'Orbitron',monospace;font-weight:900;font-size:20px;
+  letter-spacing:.14em;color:var(--text);text-decoration:none}
+.brand img{width:30px;height:30px;border-radius:7px}
+.brand:hover{color:var(--neon)}
+.lang{display:flex;gap:8px}
+.lang button{font:inherit;font-size:13px;padding:7px 15px;border:1px solid var(--line);background:var(--card);
+  color:var(--text2);border-radius:9px;cursor:pointer;transition:.2s}
+.lang button:hover{color:var(--neon);border-color:var(--neon)}
+.lang button[aria-pressed="true"]{background:var(--neon);border-color:var(--neon);color:#02121c;font-weight:600}
+h1{font-family:'Orbitron',monospace;font-size:clamp(24px,4.6vw,34px);font-weight:700;letter-spacing:.04em;
+  margin:26px 0 6px;line-height:1.25}
+h2{font-family:'Orbitron',monospace;font-size:clamp(15px,2.4vw,18px);font-weight:700;letter-spacing:.05em;
+  margin:40px 0 12px;color:var(--neon)}
+h3{font-size:16px;font-weight:600;margin:26px 0 7px;color:var(--text)}
+p,li{color:var(--text2)}
+p{margin-bottom:12px}
+ul,ol{padding-left:22px;margin-bottom:12px}
+li{margin:5px 0}
+b,strong{color:var(--text);font-weight:600}
+.meta{color:var(--text2);font-size:14px;opacity:.75;margin-bottom:30px}
+.box{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--neon);
+  border-radius:12px;padding:18px 22px;margin:22px 0}
+.box p:last-child{margin-bottom:0}
+a{color:var(--neon);text-decoration:none;border-bottom:1px solid rgba(0,212,255,.3)}
+a:hover{border-bottom-color:var(--neon)}
+table{border-collapse:collapse;width:100%;margin:18px 0;font-size:14.5px;display:block;overflow-x:auto;white-space:nowrap}
+th,td{border:1px solid var(--line);padding:10px 13px;text-align:left;vertical-align:top;white-space:normal}
+th{background:var(--card);color:var(--text);font-weight:600;font-size:13px;letter-spacing:.03em}
+footer{border-top:1px solid var(--line);margin-top:52px;padding-top:24px;color:var(--text2);font-size:14px;text-align:center}
+footer a{margin:0 9px;border-bottom:none;color:var(--text2)}
+footer a:hover{color:var(--neon)}
 [hidden]{display:none!important}
+@media(max-width:600px){body{font-size:15px}.wrap{padding-bottom:60px}}
 </style>
 </head>
 <body>
 <div class="wrap">
 
-<header><h1>EION</h1></header>
-<div class="lang">
+<div class="glow"></div>
+<nav><a class="brand" href="/"><img src="/EION-256.png" alt="">EION</a>
+  <div class="lang">
   <button id="b-uk" aria-pressed="true" onclick="setLang('uk')">Українська</button>
   <button id="b-en" aria-pressed="false" onclick="setLang('en')">English</button>
 </div>
+</nav>
 
 <!-- ======================= УКРАЇНСЬКА ======================= -->
 <section id="uk">
@@ -245,8 +264,10 @@ footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);color:v
 <p><a href="mailto:support@eion.network">support@eion.network</a></p>
 </section>
 
+
 <footer>
-  <p>EION · <a href="/terms">Умови використання / Terms of Service</a> · <a href="mailto:support@eion.network">support@eion.network</a></p>
+  <a href="/">eion.network</a>·<a href="/privacy">Privacy</a>·<a href="/terms">Terms</a>·<a href="/delete-account">Delete account</a>·<a href="mailto:support@eion.network">support@eion.network</a>
+  <p style="margin-top:14px;opacity:.6">© 2026 EION</p>
 </footer>
 </div>
 
