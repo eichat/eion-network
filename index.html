@@ -1,227 +1,596 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DFJQ94KWWY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-DFJQ94KWWY');
-</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EION — Coming Soon</title>
-<meta name="description" content="EION — Decentralized messenger with built-in crypto token. Coming 2026.">
+<title>EION — Decentralized Messenger</title>
+
+<!-- Latin fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Syne:wght@300;400;600&family=Noto+Sans+Arabic:wght@300;400;600&family=Noto+Sans+Devanagari:wght@300;400;600&family=Noto+Sans+Bengali:wght@300;400;600&family=Noto+Sans+JP:wght@300;400;600&family=Noto+Sans+KR:wght@300;400;600&family=Noto+Sans+SC:wght@300;400;600&family=Noto+Sans+Thai:wght@300;400;600&display=swap" rel="stylesheet">
+
 <style>
 :root {
   --neon: #00d4ff;
   --neon2: #00aadd;
+  --neon-glow: rgba(0,212,255,0.4);
   --bg: #020c14;
   --bg2: #0a1628;
+  --bg3: #0d1f38;
   --text: #e8f4f8;
   --text2: #7ab8cc;
+  --accent: #003a5c;
+  --gold: #ffd700;
+  --font-main: 'Syne', sans-serif;
 }
+
+/* RTL support */
+[dir="rtl"] { font-family: 'Noto Sans Arabic', 'Syne', sans-serif; }
+.lang-ja [dir="ltr"], .ja-font { font-family: 'Noto Sans JP', 'Syne', sans-serif; }
+.lang-ko [dir="ltr"], .ko-font { font-family: 'Noto Sans KR', 'Syne', sans-serif; }
+.lang-zh [dir="ltr"], .zh-font { font-family: 'Noto Sans SC', 'Syne', sans-serif; }
+.lang-hi [dir="ltr"], .hi-font { font-family: 'Noto Sans Devanagari', 'Syne', sans-serif; }
+.lang-bn [dir="ltr"], .bn-font { font-family: 'Noto Sans Bengali', 'Syne', sans-serif; }
+.lang-th [dir="ltr"], .th-font { font-family: 'Noto Sans Thai', 'Syne', sans-serif; }
+
+[dir="rtl"] .nav-links { flex-direction: row-reverse; }
+[dir="rtl"] .hero-btns { flex-direction: row-reverse; }
+[dir="rtl"] .token-stat { flex-direction: row-reverse; }
+[dir="rtl"] .tnom-item { flex-direction: row-reverse; }
+[dir="rtl"] .rm-item { padding-left: 0; padding-right: 40px; }
+[dir="rtl"] .roadmap-line { padding-left: 0; padding-right: 40px; }
+[dir="rtl"] .roadmap-line::before { left: auto; right: 8px; }
+[dir="rtl"] .rm-item::before { left: auto; right: -36px; }
+[dir="rtl"] .rm-item ul li { padding-left: 0; padding-right: 16px; }
+[dir="rtl"] .rm-item ul li::before { left: auto; right: 0; }
+[dir="rtl"] .faq-q { flex-direction: row-reverse; }
+[dir="rtl"] .faq-q .arrow { margin-left: 0; margin-right: 16px; }
+[dir="rtl"] .premium-card ul li { padding-left: 0; padding-right: 20px; }
+[dir="rtl"] .premium-card ul li::before { left: auto; right: 0; }
+[dir="rtl"] .lang-dropdown { right: auto; left: 0; }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html, body { height: 100%; }
-
+html { scroll-behavior: smooth; }
 body {
-  font-family: 'Syne', sans-serif;
+  font-family: var(--font-main);
   background: var(--bg);
   color: var(--text);
-  overflow: hidden;
+  overflow-x: hidden;
   cursor: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  text-align: center;
-  padding: 24px;
 }
 
-[dir="rtl"] { font-family: 'Noto Sans Arabic', 'Syne', sans-serif; }
-.lang-ja { font-family: 'Noto Sans JP', 'Syne', sans-serif; }
-.lang-ko { font-family: 'Noto Sans KR', 'Syne', sans-serif; }
-.lang-zh { font-family: 'Noto Sans SC', 'Syne', sans-serif; }
-.lang-hi { font-family: 'Noto Sans Devanagari', 'Syne', sans-serif; }
-.lang-bn { font-family: 'Noto Sans Bengali', 'Syne', sans-serif; }
-.lang-th { font-family: 'Noto Sans Thai', 'Syne', sans-serif; }
-
 /* CURSOR */
-.cursor { width:12px;height:12px;background:var(--neon);border-radius:50%;position:fixed;pointer-events:none;z-index:9999;box-shadow:0 0 10px var(--neon),0 0 20px var(--neon);mix-blend-mode:screen;transition:transform 0.1s; }
-.cursor-ring { width:36px;height:36px;border:1px solid var(--neon);border-radius:50%;position:fixed;pointer-events:none;z-index:9998;opacity:0.5;transition:all 0.15s ease; }
+.cursor { width:12px;height:12px;background:var(--neon);border-radius:50%;position:fixed;pointer-events:none;z-index:9999;transition:transform 0.1s;box-shadow:0 0 10px var(--neon),0 0 20px var(--neon);mix-blend-mode:screen; }
+.cursor-ring { width:36px;height:36px;border:1px solid var(--neon);border-radius:50%;position:fixed;pointer-events:none;z-index:9998;transition:all 0.15s ease;opacity:0.5; }
 
 /* STARS */
 .stars { position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;overflow:hidden; }
-.stars span { position:absolute;background:var(--neon);border-radius:50%;animation:twinkle var(--d,3s) ease-in-out infinite var(--delay,0s);opacity:0; }
+.stars span { position:absolute;display:block;background:var(--neon);border-radius:50%;animation:twinkle var(--d,3s) ease-in-out infinite var(--delay,0s);opacity:0; }
 @keyframes twinkle { 0%,100%{opacity:0;transform:scale(0.5)} 50%{opacity:var(--op,0.6);transform:scale(1)} }
 
-/* GRID */
-.bg-grid { position:fixed;inset:0;background-image:linear-gradient(rgba(0,212,255,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(0,212,255,0.04) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse 80% 80% at 50% 50%,black,transparent);z-index:0; }
-.bg-orb { position:fixed;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(0,212,255,0.07) 0%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);z-index:0;animation:pulse 4s ease-in-out infinite; }
-@keyframes pulse { 0%,100%{opacity:0.5;transform:translate(-50%,-50%) scale(1)} 50%{opacity:1;transform:translate(-50%,-50%) scale(1.08)} }
+::-webkit-scrollbar{width:4px} ::-webkit-scrollbar-track{background:var(--bg)} ::-webkit-scrollbar-thumb{background:var(--neon);border-radius:2px}
 
-/* CONTENT */
-.wrap { position:relative;z-index:1;max-width:640px;width:100%; }
+/* NAV */
+nav { position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:16px 48px;background:rgba(2,12,20,0.85);backdrop-filter:blur(20px);border-bottom:1px solid rgba(0,212,255,0.1); }
+.nav-logo { font-family:'Orbitron',monospace;font-weight:900;font-size:1.4rem;color:var(--neon);text-shadow:0 0 20px var(--neon);letter-spacing:4px;text-decoration:none;cursor:none; }
+.nav-links { display:flex;gap:32px;list-style:none; }
+.nav-links a { color:var(--text2);text-decoration:none;font-size:0.8rem;letter-spacing:2px;text-transform:uppercase;transition:color 0.3s; }
+.nav-links a:hover { color:var(--neon);text-shadow:0 0 10px var(--neon); }
 
-/* LOGO */
-.logo-wrap { position:relative;width:120px;height:120px;margin:0 auto 32px;animation:float 6s ease-in-out infinite; }
-@keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
-.logo-wrap img { width:100%;height:100%;border-radius:24px;filter:drop-shadow(0 0 30px rgba(0,212,255,0.7)) drop-shadow(0 0 60px rgba(0,212,255,0.3)); }
-.logo-ring { position:absolute;inset:-18px;border:1px solid rgba(0,212,255,0.3);border-radius:50%;animation:spin 12s linear infinite; }
-.logo-ring::before { content:'';position:absolute;width:8px;height:8px;background:var(--neon);border-radius:50%;top:-4px;left:50%;margin-left:-4px;box-shadow:0 0 12px var(--neon); }
-@keyframes spin { to{transform:rotate(360deg)} }
-
-/* TITLE */
-.title { font-family:'Orbitron',monospace;font-size:clamp(3rem,10vw,5.5rem);font-weight:900;letter-spacing:10px;color:var(--neon);text-shadow:0 0 40px var(--neon),0 0 80px rgba(0,212,255,0.4);margin-bottom:8px;animation:appear 1s ease both; }
-.subtitle { font-family:'Orbitron',monospace;font-size:clamp(0.55rem,2vw,0.75rem);letter-spacing:5px;color:var(--text2);margin-bottom:24px;animation:appear 1s 0.2s ease both; }
-@keyframes appear { from{opacity:0;transform:translateY(16px)} to{opacity:1;transform:none} }
-
-/* SLOGAN */
-.slogan { font-size:clamp(0.9rem,2vw,1.05rem);color:var(--text2);line-height:1.8;font-weight:300;margin-bottom:40px;animation:appear 1s 0.4s ease both; }
-
-/* YEAR */
-.year-badge { display:inline-block;font-family:'Orbitron',monospace;font-size:0.7rem;letter-spacing:4px;color:var(--neon);border:1px solid rgba(0,212,255,0.3);padding:6px 20px;border-radius:20px;margin-bottom:40px;animation:appear 1s 0.5s ease both;background:rgba(0,212,255,0.05); }
-
-/* EMAIL FORM */
-.email-form { display:flex;gap:10px;max-width:480px;margin:0 auto 16px;animation:appear 1s 0.6s ease both;flex-wrap:wrap;justify-content:center; }
-.email-input { flex:1;min-width:220px;background:rgba(0,212,255,0.06);border:1px solid rgba(0,212,255,0.25);color:var(--text);font-family:'Syne',sans-serif;font-size:0.9rem;padding:12px 20px;border-radius:4px;outline:none;transition:all 0.3s;cursor:text; }
-.email-input::placeholder { color:var(--text2);opacity:0.6; }
-.email-input:focus { border-color:var(--neon);box-shadow:0 0 16px rgba(0,212,255,0.2);background:rgba(0,212,255,0.08); }
-.email-btn { padding:12px 28px;background:linear-gradient(135deg,var(--neon),var(--neon2));color:var(--bg);font-family:'Orbitron',monospace;font-size:0.7rem;font-weight:700;letter-spacing:2px;border:none;border-radius:4px;cursor:none;transition:all 0.3s;white-space:nowrap;text-transform:uppercase; }
-.email-btn:hover { transform:translateY(-2px);box-shadow:0 0 30px rgba(0,212,255,0.5); }
-
-.form-note { font-size:0.75rem;color:var(--text2);opacity:0.5;margin-bottom:40px;animation:appear 1s 0.7s ease both; }
-.success-msg { display:none;font-family:'Orbitron',monospace;font-size:0.8rem;letter-spacing:2px;color:var(--neon);text-shadow:0 0 10px var(--neon);margin-bottom:16px;animation:appear 0.4s ease both; }
-.success-msg.show { display:block; }
-
-/* LANG */
-.lang-switcher { position:fixed;top:20px;right:20px;z-index:100; }
-[dir="rtl"] .lang-switcher { right:auto;left:20px; }
-.lang-toggle { display:flex;align-items:center;gap:8px;background:rgba(0,212,255,0.06);border:1px solid rgba(0,212,255,0.25);color:var(--neon);font-family:'Orbitron',monospace;font-size:0.65rem;letter-spacing:2px;padding:6px 12px;cursor:none;border-radius:4px;transition:all 0.25s; }
-.lang-toggle:hover { background:rgba(0,212,255,0.12); }
-.lang-toggle .arr { transition:transform 0.3s;font-size:0.55rem; }
-.lang-switcher.open .lang-toggle .arr { transform:rotate(180deg); }
-.lang-dropdown { position:absolute;top:calc(100% + 8px);right:0;background:rgba(6,18,32,0.97);border:1px solid rgba(0,212,255,0.2);border-radius:6px;padding:6px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px;min-width:210px;opacity:0;pointer-events:none;transform:translateY(-8px);transition:opacity 0.25s,transform 0.25s;backdrop-filter:blur(20px);box-shadow:0 8px 32px rgba(0,0,0,0.6); }
-[dir="rtl"] .lang-dropdown { right:auto;left:0; }
+/* LANG DROPDOWN */
+.lang-switcher { position:relative; }
+.lang-toggle { display:flex;align-items:center;gap:8px;background:rgba(0,212,255,0.06);border:1px solid rgba(0,212,255,0.25);color:var(--neon);font-family:'Orbitron',monospace;font-size:0.7rem;letter-spacing:2px;padding:7px 14px;cursor:none;border-radius:4px;transition:all 0.25s;white-space:nowrap; }
+.lang-toggle:hover { background:rgba(0,212,255,0.12);box-shadow:0 0 14px rgba(0,212,255,0.25); }
+.lang-toggle .arrow-icon { display:inline-block;transition:transform 0.3s;font-style:normal;font-size:0.6rem; }
+.lang-switcher.open .lang-toggle .arrow-icon { transform:rotate(180deg); }
+.lang-dropdown { position:absolute;top:calc(100% + 8px);right:0;background:rgba(6,18,32,0.97);border:1px solid rgba(0,212,255,0.2);border-radius:6px;padding:6px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px;min-width:200px;opacity:0;pointer-events:none;transform:translateY(-8px);transition:opacity 0.25s,transform 0.25s;z-index:200;backdrop-filter:blur(20px);box-shadow:0 8px 32px rgba(0,0,0,0.6),0 0 24px rgba(0,212,255,0.08); }
 .lang-switcher.open .lang-dropdown { opacity:1;pointer-events:all;transform:translateY(0); }
-.lang-opt { background:none;border:1px solid transparent;color:var(--text2);font-family:'Syne',sans-serif;font-size:0.72rem;padding:6px 8px;cursor:none;border-radius:3px;transition:all 0.2s;text-align:center; }
+.lang-opt { background:none;border:1px solid transparent;color:var(--text2);font-family:'Syne',sans-serif;font-size:0.75rem;letter-spacing:1px;padding:7px 10px;cursor:none;border-radius:3px;transition:all 0.2s;text-align:center;white-space:nowrap; }
 .lang-opt:hover { border-color:rgba(0,212,255,0.3);color:var(--neon);background:rgba(0,212,255,0.08); }
-.lang-opt.active { border-color:var(--neon);color:var(--neon);background:rgba(0,212,255,0.1); }
+.lang-opt.active { border-color:var(--neon);color:var(--neon);background:rgba(0,212,255,0.1);box-shadow:0 0 8px rgba(0,212,255,0.15); }
 
-::-webkit-scrollbar{width:4px} ::-webkit-scrollbar-thumb{background:var(--neon);border-radius:2px}
+main { position:relative;z-index:1; }
 
-@media(max-width:480px){
-  .lang-switcher{top:12px;right:12px;}
-  .email-form{flex-direction:column;}
-  .email-input,.email-btn{width:100%;}
+/* HERO */
+#hero { min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:120px 24px 80px;position:relative;overflow:hidden; }
+.hero-grid { position:absolute;inset:0;background-image:linear-gradient(rgba(0,212,255,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(0,212,255,0.04) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse 80% 60% at 50% 50%,black,transparent); }
+.hero-orb { position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(0,212,255,0.08) 0%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);animation:pulse-orb 4s ease-in-out infinite; }
+@keyframes pulse-orb { 0%,100%{transform:translate(-50%,-50%) scale(1);opacity:0.5} 50%{transform:translate(-50%,-50%) scale(1.1);opacity:1} }
+.logo-wrap { position:relative;width:140px;height:140px;margin:0 auto 40px;animation:float 6s ease-in-out infinite; }
+@keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
+.logo-wrap img { width:100%;height:100%;border-radius:28px;filter:drop-shadow(0 0 30px rgba(0,212,255,0.6)) drop-shadow(0 0 60px rgba(0,212,255,0.3)); }
+.logo-ring { position:absolute;inset:-20px;border:1px solid rgba(0,212,255,0.3);border-radius:50%;animation:spin-ring 12s linear infinite; }
+.logo-ring::before { content:'';position:absolute;width:8px;height:8px;background:var(--neon);border-radius:50%;top:-4px;left:50%;margin-left:-4px;box-shadow:0 0 12px var(--neon); }
+@keyframes spin-ring { to{transform:rotate(360deg)} }
+h1 { font-family:'Orbitron',monospace;font-size:clamp(3rem,8vw,6rem);font-weight:900;letter-spacing:8px;color:var(--neon);text-shadow:0 0 40px var(--neon),0 0 80px rgba(0,212,255,0.4);margin-bottom:8px;animation:hero-appear 1s ease both; }
+.hero-sub { font-family:'Orbitron',monospace;font-size:clamp(0.7rem,2vw,0.9rem);letter-spacing:6px;color:var(--text2);margin-bottom:28px;animation:hero-appear 1s 0.2s ease both; }
+@keyframes hero-appear { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+.hero-desc { font-size:clamp(0.85rem,1.6vw,1rem);color:var(--text2);max-width:860px;line-height:1.8;margin:0 auto 48px;font-weight:300;animation:hero-appear 1s 0.4s ease both; }
+.hero-btns { display:flex;gap:16px;flex-wrap:wrap;justify-content:center;animation:hero-appear 1s 0.6s ease both; }
+.btn-primary { display:inline-flex;align-items:center;gap:10px;padding:14px 32px;background:linear-gradient(135deg,var(--neon),var(--neon2));color:var(--bg);font-family:'Orbitron',monospace;font-size:0.8rem;font-weight:700;letter-spacing:2px;text-decoration:none;border-radius:4px;text-transform:uppercase;transition:all 0.3s;box-shadow:0 0 20px rgba(0,212,255,0.4);cursor:none; }
+.btn-primary:hover { transform:translateY(-2px);box-shadow:0 0 40px rgba(0,212,255,0.7),0 8px 24px rgba(0,212,255,0.3); }
+.btn-secondary { display:inline-flex;align-items:center;gap:10px;padding:14px 32px;background:transparent;color:var(--neon);font-family:'Orbitron',monospace;font-size:0.8rem;font-weight:700;letter-spacing:2px;text-decoration:none;border-radius:4px;border:1px solid var(--neon);text-transform:uppercase;transition:all 0.3s;cursor:none; }
+.btn-secondary:hover { background:rgba(0,212,255,0.08);transform:translateY(-2px);box-shadow:0 0 20px rgba(0,212,255,0.3); }
+
+/* SECTIONS */
+section { padding:100px 24px;position:relative;z-index:1; }
+.section-inner { max-width:1100px;margin:0 auto; }
+.section-label { font-family:'Orbitron',monospace;font-size:0.65rem;letter-spacing:5px;color:var(--neon);text-transform:uppercase;margin-bottom:12px;opacity:0.7; }
+.section-title { font-family:'Orbitron',monospace;font-size:clamp(1.6rem,4vw,2.4rem);font-weight:700;color:var(--text);margin-bottom:48px;line-height:1.3; }
+.section-title span { color:var(--neon); }
+
+/* FEATURES */
+#features { background:linear-gradient(180deg,var(--bg) 0%,var(--bg2) 100%); }
+.features-grid { display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px; }
+.feature-card { background:rgba(10,22,40,0.8);border:1px solid rgba(0,212,255,0.12);border-radius:8px;padding:32px 28px;position:relative;overflow:hidden;transition:all 0.4s; }
+.feature-card::before { content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--neon),transparent);transform:scaleX(0);transition:transform 0.4s; }
+.feature-card:hover::before { transform:scaleX(1); }
+.feature-card:hover { border-color:rgba(0,212,255,0.3);transform:translateY(-4px);box-shadow:0 8px 32px rgba(0,212,255,0.1); }
+.feature-icon { font-size:2rem;margin-bottom:16px;display:block; }
+.feature-card h3 { font-family:'Orbitron',monospace;font-size:0.9rem;letter-spacing:2px;color:var(--neon);margin-bottom:10px; }
+.feature-card p { font-size:0.9rem;color:var(--text2);line-height:1.7;font-weight:300; }
+
+/* DOWNLOAD */
+#download { background:var(--bg2); }
+.download-grid { display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-bottom:40px; }
+.dl-card { background:rgba(0,212,255,0.04);border:1px solid rgba(0,212,255,0.15);border-radius:8px;padding:28px 24px;text-align:center;transition:all 0.3s;cursor:none; }
+.dl-card:hover { border-color:var(--neon);background:rgba(0,212,255,0.08);transform:translateY(-3px);box-shadow:0 0 24px rgba(0,212,255,0.15); }
+.dl-card .platform-icon { font-size:2.5rem;margin-bottom:12px;display:block; }
+.dl-card h3 { font-family:'Orbitron',monospace;font-size:0.85rem;letter-spacing:2px;color:var(--text);margin-bottom:6px; }
+.dl-card .status { font-size:0.75rem;color:var(--text2);margin-bottom:16px; }
+.dl-card .status.soon { color:var(--gold); }
+.dl-card span.disabled { display:inline-block;padding:8px 20px;font-family:'Orbitron',monospace;font-size:0.7rem;letter-spacing:1px;border-radius:3px;border:1px solid rgba(0,212,255,0.2);color:var(--text2);cursor:default;text-transform:uppercase; }
+
+/* TOKEN */
+#token { background:var(--bg); }
+.token-hero { display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;margin-bottom:60px; }
+@media(max-width:768px){.token-hero{grid-template-columns:1fr}}
+.token-info-block { background:rgba(10,22,40,0.8);border:1px solid rgba(0,212,255,0.12);border-radius:8px;padding:32px; }
+.token-info-block h3 { font-family:'Orbitron',monospace;font-size:0.8rem;letter-spacing:3px;color:var(--neon);margin-bottom:20px;text-transform:uppercase; }
+.token-stat { display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid rgba(0,212,255,0.07); }
+.token-stat:last-child { border-bottom:none; }
+.token-stat .label { font-size:0.85rem;color:var(--text2);font-weight:300; }
+.token-stat .value { font-family:'Orbitron',monospace;font-size:0.85rem;color:var(--text); }
+.tokenomics-chart { display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px; }
+.tnom-item { display:flex;align-items:center;gap:12px;padding:14px 16px;background:rgba(0,212,255,0.04);border-radius:6px;border:1px solid rgba(0,212,255,0.08);transition:all 0.3s; }
+.tnom-item:hover { border-color:rgba(0,212,255,0.25);background:rgba(0,212,255,0.08); }
+.tnom-dot { width:12px;height:12px;border-radius:50%;flex-shrink:0; }
+.tnom-info .pct { font-family:'Orbitron',monospace;font-size:1.1rem;font-weight:700;color:var(--text); }
+.tnom-info .name { font-size:0.8rem;color:var(--text2);font-weight:300; }
+
+/* EARN */
+#earn { background:linear-gradient(180deg,var(--bg) 0%,var(--bg2) 100%); }
+.earn-grid { display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px; }
+.earn-card { background:rgba(0,212,255,0.03);border:1px solid rgba(0,212,255,0.12);border-radius:8px;padding:32px 24px;transition:all 0.4s; }
+.earn-card:hover { border-color:rgba(0,212,255,0.3);transform:translateY(-4px);box-shadow:0 8px 32px rgba(0,212,255,0.1); }
+.earn-amount { font-family:'Orbitron',monospace;font-size:1.6rem;font-weight:900;color:var(--neon);text-shadow:0 0 20px rgba(0,212,255,0.5);margin-bottom:4px; }
+.earn-card h3 { font-size:0.9rem;font-weight:600;color:var(--text);margin-bottom:10px;letter-spacing:1px; }
+.earn-card p { font-size:0.85rem;color:var(--text2);line-height:1.7;font-weight:300; }
+
+/* PREMIUM */
+#premium { background:var(--bg); }
+.premium-grid { display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px; }
+.premium-card { background:rgba(10,22,40,0.9);border:1px solid rgba(0,212,255,0.15);border-radius:10px;padding:40px 32px;text-align:center;transition:all 0.4s;position:relative;overflow:hidden; }
+.premium-card.featured { border-color:var(--neon);box-shadow:0 0 40px rgba(0,212,255,0.15); }
+.premium-card.featured::after { content:'';position:absolute;inset:0;background:radial-gradient(ellipse at top,rgba(0,212,255,0.06),transparent 60%);pointer-events:none; }
+.premium-card:hover { transform:translateY(-6px);box-shadow:0 12px 40px rgba(0,212,255,0.15); }
+.premium-tag { font-family:'Orbitron',monospace;font-size:0.65rem;letter-spacing:3px;text-transform:uppercase;color:var(--neon);margin-bottom:20px;opacity:0.8; }
+.premium-price { font-family:'Orbitron',monospace;font-size:2.4rem;font-weight:900;color:var(--neon);text-shadow:0 0 24px rgba(0,212,255,0.5);margin-bottom:4px; }
+.premium-period { font-size:0.8rem;color:var(--text2);margin-bottom:24px; }
+.premium-card ul { list-style:none;text-align:left;margin-bottom:28px; }
+.premium-card ul li { padding:7px 0;font-size:0.875rem;color:var(--text2);border-bottom:1px solid rgba(0,212,255,0.07);padding-left:20px;position:relative;font-weight:300; }
+.premium-card ul li::before { content:'✓';position:absolute;left:0;color:var(--neon);font-weight:700; }
+
+/* ROADMAP */
+#roadmap { background:var(--bg2); }
+.roadmap-line { position:relative;padding-left:40px; }
+.roadmap-line::before { content:'';position:absolute;left:8px;top:0;bottom:0;width:1px;background:linear-gradient(180deg,var(--neon),transparent); }
+.rm-item { position:relative;margin-bottom:40px;opacity:0.5;transition:opacity 0.3s; }
+.rm-item.active { opacity:1; }
+.rm-item::before { content:'';position:absolute;left:-36px;top:6px;width:14px;height:14px;border-radius:50%;border:2px solid rgba(0,212,255,0.3);background:var(--bg); }
+.rm-item.active::before { border-color:var(--neon);background:var(--neon);box-shadow:0 0 12px var(--neon); }
+.rm-phase { font-family:'Orbitron',monospace;font-size:0.65rem;letter-spacing:3px;color:var(--neon);text-transform:uppercase;margin-bottom:6px;opacity:0.7; }
+.rm-item h3 { font-family:'Orbitron',monospace;font-size:1rem;color:var(--text);margin-bottom:10px; }
+.rm-item ul { list-style:none; }
+.rm-item ul li { font-size:0.875rem;color:var(--text2);padding:3px 0;padding-left:16px;position:relative;font-weight:300; }
+.rm-item ul li::before { content:'›';position:absolute;left:0;color:var(--neon); }
+
+/* FAQ */
+#faq { background:var(--bg); }
+.faq-list { max-width:800px; }
+.faq-item { border-bottom:1px solid rgba(0,212,255,0.1); }
+.faq-q { display:flex;justify-content:space-between;align-items:center;padding:22px 0;cursor:none;font-size:0.95rem;font-weight:600;color:var(--text);transition:color 0.3s; }
+.faq-q:hover { color:var(--neon); }
+.faq-q .arrow { font-family:'Orbitron',monospace;color:var(--neon);transition:transform 0.3s;font-size:1.2rem;line-height:1;flex-shrink:0;margin-left:16px; }
+.faq-item.open .faq-q .arrow { transform:rotate(45deg); }
+.faq-a { font-size:0.875rem;color:var(--text2);line-height:1.8;font-weight:300;max-height:0;overflow:hidden;transition:max-height 0.4s ease,padding 0.3s; }
+.faq-item.open .faq-a { max-height:300px;padding-bottom:20px; }
+
+/* FOOTER */
+footer { background:var(--bg);border-top:1px solid rgba(0,212,255,0.1);padding:60px 24px 40px;text-align:center; }
+.footer-logo { font-family:'Orbitron',monospace;font-size:1.8rem;font-weight:900;color:var(--neon);text-shadow:0 0 20px var(--neon);letter-spacing:6px;margin-bottom:16px; }
+.footer-tagline { font-size:0.8rem;color:var(--text2);letter-spacing:3px;margin-bottom:32px; }
+.footer-links { display:flex;justify-content:center;gap:32px;flex-wrap:wrap;margin-bottom:32px; }
+.footer-links a { color:var(--text2);text-decoration:none;font-size:0.8rem;letter-spacing:1px;transition:color 0.3s; }
+.footer-links a:hover { color:var(--neon); }
+.footer-copy { font-size:0.75rem;color:rgba(122,184,204,0.4);letter-spacing:1px; }
+
+/* REVEAL */
+.reveal { opacity:0;transform:translateY(30px);transition:opacity 0.7s ease,transform 0.7s ease; }
+.reveal.visible { opacity:1;transform:none; }
+
+/* MOBILE */
+@media(max-width:768px){
+  nav{padding:14px 20px;}
+  .nav-links{display:none;}
+  .lang-dropdown{grid-template-columns:1fr 1fr 1fr;}
+  section{padding:70px 16px;}
 }
+
+/* Loading */
+#loader { position:fixed;inset:0;background:var(--bg);z-index:9999;display:flex;align-items:center;justify-content:center;transition:opacity 0.4s; }
+#loader .logo-text { font-family:'Orbitron',monospace;font-size:2rem;font-weight:900;color:var(--neon);text-shadow:0 0 30px var(--neon);letter-spacing:8px;animation:pulse-orb 1s ease-in-out infinite; }
+#loader.hide { opacity:0;pointer-events:none; }
+
+/* ── інтро: голограма планети ── */
+#loader{overflow:hidden}
+#loader #globeCv{position:absolute;inset:0;width:100%;height:100%;display:block}
+#loader .intro-title{position:absolute;left:50%;bottom:14%;transform:translateX(-50%);text-align:center;pointer-events:none;transition:opacity .55s ease,transform 1.2s cubic-bezier(.3,0,.2,1)}
+#loader .logo-text{font-size:clamp(2rem,7vw,4rem);opacity:0;animation:introFade 1.5s ease .3s forwards}
+#loader .intro-sub{color:var(--text2,#7ab8cc);letter-spacing:.34em;font-size:clamp(9px,1.6vw,12px);text-transform:uppercase;margin-top:13px;opacity:0;animation:introFade 1.4s ease .95s forwards}
+@keyframes introFade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@keyframes introIn{to{opacity:1;transform:scale(1)}}
+#loader.warp .intro-title{opacity:0;transform:translateX(-50%) translateY(26px)}
+#introFlash{position:absolute;inset:0;opacity:0;pointer-events:none;transition:opacity .45s ease;background:radial-gradient(circle at 50% 50%,rgba(190,245,255,.92),rgba(0,212,255,.30) 42%,transparent 72%)}
+#loader.warp #introFlash{opacity:1}
+.intro-skip{position:absolute;right:22px;bottom:22px;font:inherit;font-size:13px;letter-spacing:.05em;color:var(--text2,#7ab8cc);background:transparent;border:1px solid rgba(0,212,255,.25);border-radius:9px;padding:9px 16px;cursor:pointer;opacity:0;animation:introFade 1s ease 1.5s forwards;z-index:3}
+.intro-skip:hover{color:var(--neon);border-color:var(--neon)}
+
+/* ── завантаження ── */
+a.dl-card{text-decoration:none;color:inherit;display:block}
+.status.ready{color:var(--neon)}
+.dl-go{display:inline-block;margin-top:6px;font-size:.85rem;color:var(--neon);border-bottom:1px solid rgba(0,212,255,.4)}
+.dl-note{max-width:640px;margin:26px auto 0;text-align:center;color:var(--text2,#7ab8cc);font-size:.85rem;line-height:1.6}
+.notify-box{max-width:520px;margin:34px auto 0;text-align:center}
+.notify-box>p{color:var(--text2,#7ab8cc);font-size:.92rem;margin-bottom:14px}
+.notify-box form{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.notify-box input{font:inherit;font-size:.95rem;padding:12px 16px;min-width:240px;background:rgba(2,12,20,.75);border:1px solid rgba(0,212,255,.22);border-radius:10px;color:var(--text,#e8f4f8)}
+.notify-box input:focus{outline:none;border-color:var(--neon)}
+.notify-box button{font:inherit;font-size:.95rem;font-weight:600;padding:12px 22px;border-radius:10px;border:1px solid var(--neon);background:var(--neon);color:#02121c;cursor:pointer}
+.notify-box button:hover{box-shadow:0 6px 22px rgba(0,212,255,.3)}
+.notify-note,.notify-ok{color:var(--text2,#7ab8cc);font-size:.8rem;margin-top:10px}
+.notify-ok{color:var(--neon)}
+
+/* ── монети ── */
+.token-plan-text{color:var(--text2,#7ab8cc);line-height:1.7;margin-bottom:16px}
+.token-disclaimer{color:var(--text2,#7ab8cc);font-size:.8rem;line-height:1.6;opacity:.8;border-left:2px solid rgba(0,212,255,.3);padding-left:14px}
+
+/* ── cookie ── */
+#cookieBar{position:fixed;left:16px;right:16px;bottom:16px;max-width:660px;margin:0 auto;background:#08131f;border:1px solid rgba(0,212,255,.22);border-radius:13px;padding:15px 18px;display:none;align-items:center;gap:13px;flex-wrap:wrap;z-index:9998}
+#cookieBar.show{display:flex}
+#cookieBar p{flex:1;min-width:210px;color:var(--text2,#7ab8cc);font-size:.82rem;line-height:1.5}
+#cookieBar button{font:inherit;font-size:.82rem;padding:8px 15px;border-radius:8px;cursor:pointer;border:1px solid var(--neon);background:transparent;color:var(--neon)}
+#cookieBar button.ok{background:var(--neon);color:#02121c}
+
 </style>
 </head>
 <body>
 
+<div id="loader">
+  <canvas id="globeCv"></canvas>
+  <div id="introFlash"></div>
+  <div class="intro-title">
+    <div class="logo-text">EION</div>
+    <p class="intro-sub" data-i18n="intro_sub">the network that connects</p>
+  </div>
+  <button class="intro-skip" onclick="finishIntro()" data-i18n="intro_skip">skip ↓</button>
+</div>
+
 <div class="cursor" id="cursor"></div>
 <div class="cursor-ring" id="cursorRing"></div>
 <div class="stars" id="stars"></div>
-<div class="bg-grid"></div>
-<div class="bg-orb"></div>
 
-<div class="lang-switcher" id="langSwitcher">
-  <button class="lang-toggle" onclick="toggleLang()">
-    🌐 <span id="langLabel">EN</span> <i class="arr">▼</i>
-  </button>
-  <div class="lang-dropdown" id="langDropdown">
-    <button class="lang-opt" onclick="setLang('en')" data-lang="en">EN</button>
-    <button class="lang-opt" onclick="setLang('fr')" data-lang="fr">FR</button>
-    <button class="lang-opt" onclick="setLang('de')" data-lang="de">DE</button>
-    <button class="lang-opt" onclick="setLang('ja')" data-lang="ja">日本語</button>
-    <button class="lang-opt" onclick="setLang('ko')" data-lang="ko">한국어</button>
-    <button class="lang-opt" onclick="setLang('zh')" data-lang="zh">中文</button>
-    <button class="lang-opt" onclick="setLang('es')" data-lang="es">ES</button>
-    <button class="lang-opt" onclick="setLang('ar')" data-lang="ar">العربية</button>
-    <button class="lang-opt" onclick="setLang('pt')" data-lang="pt">PT</button>
-    <button class="lang-opt" onclick="setLang('ru')" data-lang="ru">RU</button>
-    <button class="lang-opt" onclick="setLang('tr')" data-lang="tr">TR</button>
-    <button class="lang-opt" onclick="setLang('hi')" data-lang="hi">हिन्दी</button>
-    <button class="lang-opt" onclick="setLang('vi')" data-lang="vi">VI</button>
-    <button class="lang-opt" onclick="setLang('uk')" data-lang="uk">UA</button>
-    <button class="lang-opt" onclick="setLang('id')" data-lang="id">ID</button>
-    <button class="lang-opt" onclick="setLang('th')" data-lang="th">ไทย</button>
-    <button class="lang-opt" onclick="setLang('tl')" data-lang="tl">TL</button>
-    <button class="lang-opt" onclick="setLang('nl')" data-lang="nl">NL</button>
-    <button class="lang-opt" onclick="setLang('pl')" data-lang="pl">PL</button>
-    <button class="lang-opt" onclick="setLang('it')" data-lang="it">IT</button>
-    <button class="lang-opt" onclick="setLang('bn')" data-lang="bn">বাংলা</button>
+<nav>
+  <a href="#hero" class="nav-logo">EION</a>
+  <ul class="nav-links">
+    <li><a href="#features" data-i18n="nav_features">Features</a></li>
+    <li><a href="#download" data-i18n="nav_download">Download</a></li>
+    <li><a href="#token" data-i18n="nav_token">Token</a></li>
+    <li><a href="#roadmap" data-i18n="nav_roadmap">Roadmap</a></li>
+    <li><a href="#faq" data-i18n="nav_faq">FAQ</a></li>
+  </ul>
+  <div class="lang-switcher" id="langSwitcher">
+    <button class="lang-toggle" onclick="toggleLangMenu()" id="langToggleBtn">
+      🌐 <span id="langLabel">EN</span> <i class="arrow-icon">▼</i>
+    </button>
+    <div class="lang-dropdown" id="langDropdown">
+      <button class="lang-opt" onclick="setLang('en')" data-lang="en">EN</button>
+      <button class="lang-opt" onclick="setLang('fr')" data-lang="fr">FR</button>
+      <button class="lang-opt" onclick="setLang('de')" data-lang="de">DE</button>
+      <button class="lang-opt" onclick="setLang('ja')" data-lang="ja">日本語</button>
+      <button class="lang-opt" onclick="setLang('ko')" data-lang="ko">한국어</button>
+      <button class="lang-opt" onclick="setLang('zh')" data-lang="zh">中文</button>
+      <button class="lang-opt" onclick="setLang('es')" data-lang="es">ES</button>
+      <button class="lang-opt" onclick="setLang('ar')" data-lang="ar">العربية</button>
+      <button class="lang-opt" onclick="setLang('pt')" data-lang="pt">PT</button>
+      <button class="lang-opt" onclick="setLang('ru')" data-lang="ru">RU</button>
+      <button class="lang-opt" onclick="setLang('tr')" data-lang="tr">TR</button>
+      <button class="lang-opt" onclick="setLang('hi')" data-lang="hi">हिन्दी</button>
+      <button class="lang-opt" onclick="setLang('vi')" data-lang="vi">VI</button>
+      <button class="lang-opt" onclick="setLang('uk')" data-lang="uk">UA</button>
+      <button class="lang-opt" onclick="setLang('id')" data-lang="id">ID</button>
+      <button class="lang-opt" onclick="setLang('th')" data-lang="th">ไทย</button>
+      <button class="lang-opt" onclick="setLang('tl')" data-lang="tl">TL</button>
+      <button class="lang-opt" onclick="setLang('nl')" data-lang="nl">NL</button>
+      <button class="lang-opt" onclick="setLang('pl')" data-lang="pl">PL</button>
+      <button class="lang-opt" onclick="setLang('it')" data-lang="it">IT</button>
+      <button class="lang-opt" onclick="setLang('bn')" data-lang="bn">বাংলা</button>
+    </div>
   </div>
-</div>
+</nav>
 
-<div class="wrap">
+<main>
+<section id="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-orb"></div>
   <div class="logo-wrap">
-    <img src="EION-256.png" alt="EION">
+    <img src="EION-256.png" alt="EION Logo" onerror="this.style.display='none'">
     <div class="logo-ring"></div>
   </div>
-  <div class="title">EION</div>
-  <div class="subtitle" id="subtitle">Decentralized Communication Network</div>
-  <div class="slogan" id="slogan">The next-generation messenger with AI, HD calls<br>and a built-in crypto token.</div>
-  <div class="year-badge">2026</div>
-  <div class="success-msg" id="successMsg">✓ You're on the list!</div>
-  <div class="email-form">
-    <input class="email-input" id="emailInput" type="email" placeholder="your@email.com">
-    <button class="email-btn" id="emailBtn" onclick="subscribe()">Notify me</button>
+  <h1>EION</h1>
+  <div class="hero-sub" data-i18n="hero_sub">Decentralized Communication Network</div>
+  <p class="hero-desc" data-i18n="hero_desc">The next-generation messenger with end-to-end encryption, AI assistant,<br>HD video calls and a built-in cryptocurrency token — all in one app.</p>
+  <div class="hero-btns">
+    <a href="#download" class="btn-primary" data-i18n="hero_btn1">↓ Download</a>
+    <a href="#token" class="btn-secondary" data-i18n="hero_btn2">EION Token →</a>
   </div>
-  <div class="form-note" id="formNote">No spam. Launch notification only.</div>
+</section>
+
+<section id="features">
+  <div class="section-inner">
+    <div class="section-label" data-i18n="feat_label">Application</div>
+    <h2 class="section-title" data-i18n="feat_title">Everything you need <span>in one app</span></h2>
+    <div class="features-grid">
+      <div class="feature-card reveal"><span class="feature-icon">💬</span><h3 data-i18n="f1_title">Live Chat</h3><p data-i18n="f1_desc">Instant encrypted messaging with groups, media, and files.</p></div>
+      <div class="feature-card reveal"><span class="feature-icon">🤖</span><h3 data-i18n="f2_title">AI Assistant</h3><p data-i18n="f2_desc">Built-in AI chat powered by advanced language models, available anytime.</p></div>
+      <div class="feature-card reveal"><span class="feature-icon">📹</span><h3 data-i18n="f3_title">HD Video Calls</h3><p data-i18n="f3_desc">Crystal-clear audio and video calls via WebRTC — no intermediaries.</p></div>
+      <div class="feature-card reveal"><span class="feature-icon">👥</span><h3 data-i18n="f4_title">Groups</h3><p data-i18n="f4_desc">Create communities, channels, and group chats with flexible permissions.</p></div>
+      <div class="feature-card reveal"><span class="feature-icon">🔐</span><h3 data-i18n="f5_title">E2E Encryption</h3><p data-i18n="f5_desc">All messages and calls protected end-to-end. Your data stays yours.</p></div>
+      <div class="feature-card reveal"><span class="feature-icon">💎</span><h3 data-i18n="f6_title">EION Token</h3><p data-i18n="f6_desc">Earn crypto by using the network. Premium features, rewards, staking.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="download">
+  <div class="section-inner">
+    <div class="section-label" data-i18n="dl_label">Get the App</div>
+    <h2 class="section-title" data-i18n="dl_title">Download <span>EION</span></h2>
+    <div class="download-grid">
+      <a class="dl-card reveal" href="https://github.com/eichat/eion-network/releases/latest" rel="noopener"><span class="platform-icon">🤖</span><h3>Android</h3><div class="status ready" data-i18n="dl_ready">✓ Beta available</div><span class="dl-go" data-i18n="dl_get">Download APK</span></a>
+      <a class="dl-card reveal" href="https://github.com/eichat/eion-network/releases/latest" rel="noopener"><span class="platform-icon">🐧</span><h3>Linux</h3><div class="status ready" data-i18n="dl_ready">✓ Beta available</div><span class="dl-go" data-i18n="dl_get_linux">Download AppImage</span></a>
+      <div class="dl-card reveal"><span class="platform-icon">🍎</span><h3>iOS</h3><div class="status soon" data-i18n="dl_soon">⏳ Coming soon</div><span class="disabled" data-i18n="dl_notify">Notify me</span></div>
+      <div class="dl-card reveal"><span class="platform-icon">🪟</span><h3>Windows</h3><div class="status soon" data-i18n="dl_soon">⏳ Coming soon</div><span class="disabled" data-i18n="dl_notify">Notify me</span></div>
+    </div>
+    <p class="dl-note reveal" data-i18n="dl_note">Android will ask for permission to install from an unknown source — that is normal outside Google Play. On Linux, make the file executable and run it.</p>
+    <div class="notify-box reveal">
+      <p data-i18n="notify_title">Get one email when EION arrives in the store</p>
+      <form id="notifyForm" action="https://formspree.io/f/xdajyyaz" method="POST">
+        <input type="email" name="email" required placeholder="your@email.com" data-i18n-ph="notify_ph">
+        <button type="submit" data-i18n="notify_btn">Notify me</button>
+      </form>
+      <p class="notify-ok" id="notifyOk" hidden data-i18n="notify_ok">✓ You're on the list!</p>
+      <p class="notify-note" data-i18n="notify_note">No spam. Launch notification only.</p>
+    </div>
+  </div>
+</section>
+
+<section id="token">
+  <div class="section-inner">
+    <div class="section-label" data-i18n="tok_label">Coins</div>
+    <h2 class="section-title" data-i18n="tok_title">EION <span>coins</span></h2>
+    <div class="token-hero">
+      <div class="token-info-block reveal">
+        <h3 data-i18n="tok_today">Today, inside the app</h3>
+        <div class="token-stat"><span class="label" data-i18n="tok_use1">Premium</span><span class="value" data-i18n="tok_use1v">no ads, extended storage</span></div>
+        <div class="token-stat"><span class="label" data-i18n="tok_use2">Sticker packs</span><span class="value" data-i18n="tok_use2v">one-off purchase</span></div>
+        <div class="token-stat"><span class="label" data-i18n="tok_use3">Paid channels</span><span class="value" data-i18n="tok_use3v">70% to the author</span></div>
+        <div class="token-stat"><span class="label" data-i18n="tok_use4">Transfers</span><span class="value" data-i18n="tok_use4v">between users, 1% fee</span></div>
+        <div class="token-stat"><span class="label" data-i18n="tok_register">Registration bonus</span><span class="value" style="color:var(--neon)">+50 EION</span></div>
+      </div>
+      <div class="token-info-block reveal">
+        <h3 data-i18n="tok_plan">The plan</h3>
+        <p class="token-plan-text" data-i18n="tok_plan_text">A long-term goal is to take EION coins beyond the app — as a token on Solana. That work has not started, and no dates are promised.</p>
+        <p class="token-disclaimer" data-i18n="tok_disclaimer">Today EION coins are an internal accounting unit of the service. They are not money, securities or cryptocurrency, cannot be exchanged for money, and this page is not an offer to invest.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="premium">
+  <div class="section-inner">
+    <div class="section-label" data-i18n="prem_label">Premium</div>
+    <h2 class="section-title" data-i18n="prem_title">Unlock <span>Premium</span></h2>
+    <div class="premium-grid">
+      <div class="premium-card reveal">
+        <div class="premium-tag" data-i18n="prem_monthly_tag">Monthly</div>
+        <div class="premium-price">500</div>
+        <div class="premium-period" data-i18n="prem_monthly_period">EION / month</div>
+        <ul>
+          <li data-i18n="prem_f1">No ads</li>
+          <li data-i18n="prem_f2">Priority support</li>
+          <li data-i18n="prem_f3">Extended storage</li>
+          <li data-i18n="prem_f4">HD video calls</li>
+        </ul>
+      </div>
+      <div class="premium-card featured reveal">
+        <div class="premium-tag" data-i18n="prem_yearly_tag">Yearly — Best Value</div>
+        <div class="premium-price">4200</div>
+        <div class="premium-period" data-i18n="prem_yearly_period">EION / year</div>
+        <ul>
+          <li data-i18n="prem_f1">No ads</li>
+          <li data-i18n="prem_f2">Priority support</li>
+          <li data-i18n="prem_f3">Extended storage</li>
+          <li data-i18n="prem_f4">HD video calls</li>
+          <li data-i18n="prem_f5">2 months free</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="roadmap">
+  <div class="section-inner">
+    <div class="section-label" data-i18n="rm_label">Roadmap</div>
+    <h2 class="section-title" data-i18n="rm_title">What's <span>next</span></h2>
+    <div class="roadmap-line">
+      <div class="rm-item active reveal">
+        <div class="rm-phase" data-i18n="rm_ph1">Phase 1 — Now</div>
+        <h3 data-i18n="rm_h1">Launch</h3>
+        <ul>
+          <li data-i18n="rm_1_1">Android & Linux app</li>
+          <li data-i18n="rm_1_2">Live chat, AI, video calls</li>
+          <li data-i18n="rm_1_3">EION Token on TON</li>
+          <li data-i18n="rm_1_4">Website launch</li>
+        </ul>
+      </div>
+      <div class="rm-item reveal">
+        <div class="rm-phase" data-i18n="rm_ph2">Phase 2 — 2026</div>
+        <h3 data-i18n="rm_h2">Expansion</h3>
+        <ul>
+          <li data-i18n="rm_2_1">iOS & Windows apps</li>
+          <li data-i18n="rm_2_2">Token presale</li>
+          <li data-i18n="rm_2_3">Node network launch</li>
+          <li data-i18n="rm_2_4">Staking module</li>
+        </ul>
+      </div>
+      <div class="rm-item reveal">
+        <div class="rm-phase" data-i18n="rm_ph3">Phase 3 — 2027</div>
+        <h3 data-i18n="rm_h3">Decentralization</h3>
+        <ul>
+          <li data-i18n="rm_3_1">Own blockchain launch</li>
+          <li data-i18n="rm_3_2">Decentralized storage</li>
+          <li data-i18n="rm_3_3">DEX listing</li>
+          <li data-i18n="rm_3_4">DAO governance</li>
+        </ul>
+      </div>
+      <div class="rm-item reveal">
+        <div class="rm-phase" data-i18n="rm_ph4">Phase 4 — 2028+</div>
+        <h3 data-i18n="rm_h4">Ecosystem</h3>
+        <ul>
+          <li data-i18n="rm_4_1">DApp platform</li>
+          <li data-i18n="rm_4_2">Enterprise solutions</li>
+          <li data-i18n="rm_4_3">Cross-chain bridges</li>
+          <li data-i18n="rm_4_4">Global expansion</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="section-inner">
+    <div class="section-label" data-i18n="faq_label">FAQ</div>
+    <h2 class="section-title" data-i18n="faq_title">Frequently <span>Asked Questions</span></h2>
+    <div class="faq-list" id="faqList"></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="footer-logo">EION</div>
+  <div class="footer-tagline" data-i18n="footer_tagline">Talk. Share. Own your data.</div>
+  <div class="footer-links">
+    <a href="/privacy" data-i18n="footer_privacy">Privacy Policy</a>
+    <a href="/terms" data-i18n="footer_terms">Terms of Service</a>
+    <a href="/delete-account" data-i18n="footer_delete">Delete account</a>
+    <a href="mailto:support@eion.network" data-i18n="footer_support">Support</a>
+  </div>
+  <div class="footer-copy">© 2026 EION</div>
+</footer>
+
+<div id="cookieBar">
+  <p data-i18n="cookie_text">We use Google Analytics to count visits to this site. The app itself contains no analytics.</p>
+  <button class="ok" onclick="cookieChoice(true)" data-i18n="cookie_ok">Accept</button>
+  <button onclick="cookieChoice(false)" data-i18n="cookie_no">Decline</button>
 </div>
 
 <script>
-const T = {
-  en: { sub:"Decentralized Communication Network", slogan:"The next-generation messenger with AI, HD calls<br>and a built-in crypto token.", btn:"Notify me", placeholder:"your@email.com", note:"No spam. Launch notification only.", success:"✓ You're on the list!" },
-  fr: { sub:"Réseau de Communication Décentralisé", slogan:"La messagerie de nouvelle génération avec IA, appels HD<br>et un token crypto intégré.", btn:"Me notifier", placeholder:"votre@email.com", note:"Pas de spam. Notification de lancement uniquement.", success:"✓ Vous êtes sur la liste!" },
-  de: { sub:"Dezentrales Kommunikationsnetzwerk", slogan:"Der Messenger der nächsten Generation mit KI, HD-Anrufen<br>und einem integrierten Krypto-Token.", btn:"Benachrichtigen", placeholder:"ihre@email.com", note:"Kein Spam. Nur Launch-Benachrichtigung.", success:"✓ Sie sind auf der Liste!" },
-  ja: { sub:"分散型コミュニケーションネットワーク", slogan:"AI・HD通話・内蔵の暗号トークンを備えた<br>次世代メッセンジャー。", btn:"通知を受け取る", placeholder:"your@email.com", note:"スパムなし。ローンチ通知のみ。", success:"✓ リストに登録されました！" },
-  ko: { sub:"탈중앙화 통신 네트워크", slogan:"AI·HD 통화·내장 암호 토큰을 갖춘<br>차세대 메신저.", btn:"알림 받기", placeholder:"your@email.com", note:"스팸 없음. 출시 알림만.", success:"✓ 목록에 추가되었습니다!" },
-  zh: { sub:"去中心化通信网络", slogan:"集AI助手、高清通话和内置加密代币于一体的<br>次世代即时通讯软件。", btn:"立即订阅", placeholder:"your@email.com", note:"无垃圾邮件，仅发送上线通知。", success:"✓ 已成功订阅！" },
-  es: { sub:"Red de Comunicación Descentralizada", slogan:"El mensajero de próxima generación con IA, llamadas HD<br>y un token criptográfico integrado.", btn:"Notificarme", placeholder:"tu@email.com", note:"Sin spam. Solo notificación de lanzamiento.", success:"✓ ¡Estás en la lista!" },
-  ar: { sub:"شبكة اتصالات لامركزية", slogan:"مراسل الجيل التالي مع ذكاء اصطناعي ومكالمات HD<br>ورمز تشفير مدمج.", btn:"أخبرني", placeholder:"your@email.com", note:"لا رسائل مزعجة. إشعار الإطلاق فقط.", success:"✓ أنت في القائمة!" },
-  pt: { sub:"Rede de Comunicação Descentralizada", slogan:"O mensageiro de próxima geração com IA, chamadas HD<br>e um token criptográfico integrado.", btn:"Notificar-me", placeholder:"seu@email.com", note:"Sem spam. Apenas notificação de lançamento.", success:"✓ Você está na lista!" },
-  ru: { sub:"Децентрализованная сеть связи", slogan:"Мессенджер нового поколения с AI, HD-звонками<br>и встроенным криптотокеном.", btn:"Уведомить меня", placeholder:"your@email.com", note:"Без спама. Только уведомление о запуске.", success:"✓ Вы в списке!" },
-  tr: { sub:"Merkezi Olmayan İletişim Ağı", slogan:"Yapay zeka, HD aramalar ve yerleşik kripto token ile<br>yeni nesil mesajlaşma uygulaması.", btn:"Beni Bildir", placeholder:"your@email.com", note:"Spam yok. Yalnızca lansman bildirimi.", success:"✓ Listedesiniz!" },
-  hi: { sub:"विकेंद्रीकृत संचार नेटवर्क", slogan:"AI, HD कॉल और अंतर्निहित क्रिप्टो टोकन के साथ<br>अगली पीढ़ी का मैसेंजर।", btn:"मुझे सूचित करें", placeholder:"your@email.com", note:"कोई स्पैम नहीं। केवल लॉन्च अधिसूचना।", success:"✓ आप सूची में हैं!" },
-  vi: { sub:"Mạng Truyền Thông Phi Tập Trung", slogan:"Ứng dụng nhắn tin thế hệ mới với AI, cuộc gọi HD<br>và token tiền mã hóa tích hợp.", btn:"Thông báo cho tôi", placeholder:"your@email.com", note:"Không spam. Chỉ thông báo ra mắt.", success:"✓ Bạn đã đăng ký thành công!" },
-  uk: { sub:"Децентралізована мережа зв'язку", slogan:"Месенджер нового покоління з AI, HD дзвінками<br>та вбудованим криптотокеном.", btn:"Повідомити мене", placeholder:"your@email.com", note:"Без спаму. Тільки сповіщення про запуск.", success:"✓ Ви в списку!" },
-  id: { sub:"Jaringan Komunikasi Terdesentralisasi", slogan:"Messenger generasi berikutnya dengan AI, panggilan HD<br>dan token kripto bawaan.", btn:"Beritahu Saya", placeholder:"your@email.com", note:"Tanpa spam. Hanya notifikasi peluncuran.", success:"✓ Anda ada di daftar!" },
-  th: { sub:"เครือข่ายการสื่อสารแบบกระจายศูนย์", slogan:"แอปส่งข้อความรุ่นใหม่ พร้อม AI โทรวิดีโอ HD<br>และโทเคนคริปโตในตัว", btn:"แจ้งเตือนฉัน", placeholder:"your@email.com", note:"ไม่มีสแปม แจ้งเตือนเฉพาะเปิดตัว", success:"✓ คุณอยู่ในรายการแล้ว!" },
-  tl: { sub:"Desentralisadong Network ng Komunikasyon", slogan:"Messenger ng susunod na henerasyon na may AI, HD calls<br>at built-in crypto token.", btn:"Abisuhan ako", placeholder:"your@email.com", note:"Walang spam. Launch notification lang.", success:"✓ Nasa listahan ka na!" },
-  nl: { sub:"Gedecentraliseerd Communicatienetwerk", slogan:"De volgende generatie messenger met AI, HD-gesprekken<br>en een ingebouwde cryptotoken.", btn:"Meld me aan", placeholder:"your@email.com", note:"Geen spam. Alleen lanceringsmelding.", success:"✓ Je staat op de lijst!" },
-  pl: { sub:"Zdecentralizowana Sieć Komunikacyjna", slogan:"Komunikator nowej generacji z AI, połączeniami HD<br>i wbudowanym tokenem krypto.", btn:"Powiadom mnie", placeholder:"your@email.com", note:"Bez spamu. Tylko powiadomienie o premierze.", success:"✓ Jesteś na liście!" },
-  it: { sub:"Rete di Comunicazione Decentralizzata", slogan:"Il messenger di nuova generazione con AI, videochiamate HD<br>e un token criptovaluta integrato.", btn:"Notificami", placeholder:"your@email.com", note:"Nessuno spam. Solo notifica di lancio.", success:"✓ Sei nella lista!" },
-  bn: { sub:"বিকেন্দ্রীভূত যোগাযোগ নেটওয়ার্ক", slogan:"AI, HD কল এবং অন্তর্নির্মিত ক্রিপ্টো টোকেন সহ<br>পরবর্তী প্রজন্মের মেসেঞ্জার।", btn:"আমাকে জানান", placeholder:"your@email.com", note:"কোনো স্প্যাম নেই। শুধু লঞ্চ বিজ্ঞপ্তি।", success:"✓ আপনি তালিকায় আছেন!" },
-};
-
-const RTL = ['ar'];
+// ─── SUPPORTED LANGUAGES ────────────────────────────────────────────────────
+const LANGS = ['en','fr','de','ja','ko','zh','es','ar','pt','ru','tr','hi','vi','uk','id','th','tl','nl','pl','it','bn'];
+const RTL_LANGS = ['ar'];
+const LANG_LABELS = {en:'EN',fr:'FR',de:'DE',ja:'日本語',ko:'한국어',zh:'中文',es:'ES',ar:'العربية',pt:'PT',ru:'RU',tr:'TR',hi:'हिन्दी',vi:'VI',uk:'UA',id:'ID',th:'ไทย',tl:'TL',nl:'NL',pl:'PL',it:'IT',bn:'বাংলা'};
 const BROWSER_MAP = {ar:'ar',bn:'bn',de:'de',en:'en',es:'es',fr:'fr',hi:'hi',id:'id',it:'it',ja:'ja',ko:'ko',nl:'nl',pl:'pl',pt:'pt',ru:'ru',th:'th',tl:'tl',tr:'tr',uk:'uk',vi:'vi',zh:'zh'};
-const LABELS = {en:'EN',fr:'FR',de:'DE',ja:'日本語',ko:'한국어',zh:'中文',es:'ES',ar:'العربية',pt:'PT',ru:'RU',tr:'TR',hi:'हिन्दी',vi:'VI',uk:'UA',id:'ID',th:'ไทย',tl:'TL',nl:'NL',pl:'PL',it:'IT',bn:'বাংলা'};
 
-function setLang(lang) {
-  const t = T[lang] || T.en;
-  document.getElementById('subtitle').innerHTML = t.sub;
-  document.getElementById('slogan').innerHTML = t.slogan;
-  document.getElementById('emailBtn').textContent = t.btn;
-  document.getElementById('emailInput').placeholder = t.placeholder;
-  document.getElementById('formNote').textContent = t.note;
-  document.getElementById('successMsg').textContent = t.success;
-  document.getElementById('langLabel').textContent = LABELS[lang] || 'EN';
-  document.querySelectorAll('.lang-opt').forEach(b => b.classList.toggle('active', b.getAttribute('data-lang') === lang));
-  document.documentElement.setAttribute('dir', RTL.includes(lang) ? 'rtl' : 'ltr');
-  document.documentElement.lang = lang;
-  document.body.className = `lang-${lang}`;
-  document.getElementById('langSwitcher').classList.remove('open');
-  localStorage.setItem('eion_lang', lang);
+let currentLang = 'en';
+let cache = {};
+
+// ─── DETECT BROWSER LANGUAGE ────────────────────────────────────────────────
+function detectLang() {
+  const saved = localStorage.getItem('eion_lang');
+  if (saved && LANGS.includes(saved)) return saved;
+  const br = (navigator.language || 'en').slice(0,2).toLowerCase();
+  return BROWSER_MAP[br] || 'en';
 }
 
-function toggleLang() {
+// ─── LOAD LOCALE JSON ────────────────────────────────────────────────────────
+async function loadLocale(lang) {
+  if (cache[lang]) return cache[lang];
+  try {
+    const r = await fetch(`locales/${lang}.json`);
+    const data = await r.json();
+    cache[lang] = data;
+    return data;
+  } catch(e) {
+    return cache['en'] || {};
+  }
+}
+
+// ─── APPLY TRANSLATIONS ──────────────────────────────────────────────────────
+function applyTranslations(t) {
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (t[key] !== undefined) el.innerHTML = t[key];
+  });
+  document.querySelectorAll('[data-i18n-ph]').forEach(el => {
+    const key = el.getAttribute('data-i18n-ph');
+    if (t[key] !== undefined) el.placeholder = t[key];
+  });
+  buildFAQ(t.faq || []);
+}
+
+// ─── SET LANGUAGE ────────────────────────────────────────────────────────────
+async function setLang(lang) {
+  if (!LANGS.includes(lang)) lang = 'en';
+  currentLang = lang;
+  localStorage.setItem('eion_lang', lang);
+
+  const t = await loadLocale(lang);
+  applyTranslations(t);
+
+  // RTL
+  const isRTL = RTL_LANGS.includes(lang);
+  document.documentElement.setAttribute('dir', isRTL ? 'rtl' : 'ltr');
+  document.documentElement.lang = lang;
+
+  // Font class
+  document.body.className = `lang-${lang}`;
+
+  // Update button label
+  document.getElementById('langLabel').textContent = LANG_LABELS[lang] || lang.toUpperCase();
+
+  // Update active button
+  document.querySelectorAll('.lang-opt').forEach(btn => {
+    btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+  });
+
+  // Close dropdown
+  document.getElementById('langSwitcher').classList.remove('open');
+}
+
+// ─── DROPDOWN ────────────────────────────────────────────────────────────────
+function toggleLangMenu() {
   document.getElementById('langSwitcher').classList.toggle('open');
 }
 document.addEventListener('click', e => {
@@ -229,68 +598,282 @@ document.addEventListener('click', e => {
     document.getElementById('langSwitcher').classList.remove('open');
 });
 
-function subscribe() {
-  const email = document.getElementById('emailInput').value.trim();
-  if (!email || !email.includes('@')) {
-    document.getElementById('emailInput').style.borderColor = '#ff6b6b';
-    setTimeout(() => document.getElementById('emailInput').style.borderColor = '', 1000);
-    return;
-  }
-  const btn = document.getElementById('emailBtn');
-  btn.disabled = true;
-  btn.style.opacity = '0.6';
-
-  fetch('https://formspree.io/f/xdajyyaz', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-    body: JSON.stringify({ email: email })
-  })
-  .then(r => r.json())
-  .then(data => {
-    if (data.ok || data.next) {
-      document.getElementById('emailInput').value = '';
-      document.getElementById('successMsg').classList.add('show');
-      document.querySelector('.email-form').style.display = 'none';
-      document.getElementById('formNote').style.display = 'none';
-    } else {
-      btn.disabled = false;
-      btn.style.opacity = '1';
-      document.getElementById('emailInput').style.borderColor = '#ff6b6b';
-    }
-  })
-  .catch(() => {
-    btn.disabled = false;
-    btn.style.opacity = '1';
-    document.getElementById('emailInput').style.borderColor = '#ff6b6b';
-  });
+// ─── FAQ ─────────────────────────────────────────────────────────────────────
+function buildFAQ(faqs) {
+  const c = document.getElementById('faqList');
+  c.innerHTML = faqs.map((f,i) => `
+    <div class="faq-item" onclick="toggleFAQ(${i})">
+      <div class="faq-q">${f.q}<span class="arrow">+</span></div>
+      <div class="faq-a">${f.a}</div>
+    </div>`).join('');
+}
+function toggleFAQ(i) {
+  document.querySelectorAll('.faq-item')[i].classList.toggle('open');
 }
 
-// Stars
+// ─── STARS ───────────────────────────────────────────────────────────────────
 (function(){
   const c = document.getElementById('stars');
-  for(let i=0;i<100;i++){
+  for(let i=0;i<80;i++){
     const s=document.createElement('span');
-    const sz=Math.random()*2+0.5;
-    s.style.cssText=`width:${sz}px;height:${sz}px;left:${Math.random()*100}%;top:${Math.random()*100}%;--d:${2+Math.random()*5}s;--delay:${-Math.random()*6}s;--op:${0.3+Math.random()*0.6}`;
+    const sz=Math.random()*2+1;
+    s.style.cssText=`width:${sz}px;height:${sz}px;left:${Math.random()*100}%;top:${Math.random()*100}%;--d:${2+Math.random()*4}s;--delay:${-Math.random()*5}s;--op:${0.3+Math.random()*0.5}`;
     c.appendChild(s);
   }
 })();
 
-// Cursor
-const cur=document.getElementById('cursor'),ring=document.getElementById('cursorRing');
+// ─── CURSOR ───────────────────────────────────────────────────────────────────
+const cursor=document.getElementById('cursor'),ring=document.getElementById('cursorRing');
 let mx=0,my=0,rx=0,ry=0;
-document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cur.style.left=mx-6+'px';cur.style.top=my-6+'px';});
-(function anim(){rx+=(mx-rx)*0.12;ry+=(my-ry)*0.12;ring.style.left=rx-18+'px';ring.style.top=ry-18+'px';requestAnimationFrame(anim);})();
-document.addEventListener('mousedown',()=>cur.style.transform='scale(1.8)');
-document.addEventListener('mouseup',()=>cur.style.transform='scale(1)');
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cursor.style.left=mx-6+'px';cursor.style.top=my-6+'px';});
+(function animRing(){rx+=(mx-rx)*0.12;ry+=(my-ry)*0.12;ring.style.left=rx-18+'px';ring.style.top=ry-18+'px';requestAnimationFrame(animRing);})();
+document.addEventListener('mousedown',()=>cursor.style.transform='scale(1.8)');
+document.addEventListener('mouseup',()=>cursor.style.transform='scale(1)');
 
-// Enter key
-document.getElementById('emailInput').addEventListener('keypress', e => { if(e.key==='Enter') subscribe(); });
+// ─── SCROLL REVEAL ────────────────────────────────────────────────────────────
+const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');}),{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 
-// Auto-detect language
-const saved = localStorage.getItem('eion_lang');
-const br = (navigator.language || 'en').slice(0,2).toLowerCase();
-setLang(saved || BROWSER_MAP[br] || 'en');
+// ─── INIT ─────────────────────────────────────────────────────────────────────
+(async function init(){
+  const lang = detectLang();
+  // Preload EN as fallback
+  await loadLocale('en');
+  await setLang(lang);
+  startIntro();
+})();
+
+/* ═══════════ ІНТРО: голограма Землі ═══════════ */
+var MW=144, MH=72, MB="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AAAAAAAAAAAAAAAAAAAAAA//wAAAAAAAAAAAAAAAAAAAAB//4AAAAAAAAAAAAAAAAAAAAA//4AAAAAAf+AAAAAAAAAD/+A//8AAAAD/////4AAAAf////A//4AAHx///////wAAP/////w//AAA//////////AAf/////4/8AAD//////////gAD/////+fgAAf//////////AAAD/////AAAB//////////8AAAAf////AAAD//////////4AAAAP////gAAD//////////gAAAAH////wAACf/////////AAAAAD////gAAAf/7//////8AAAAAD///+AAAAf/h//////4AAAAAD///4AAAA/+B//////gAAAAAD///wAAAB/4A//////EAAAAAB///gAAAD/AAP////+IAAAAAA///AAAAMOAAD////8YAAAAAAf/+AAAAH/wAB////5AAAAAAAP/+AAAAf//gB////wAAAAAAAP/8AAAA///wB////gAAAAAAAH/8AAAB///4A////AAAAAAAADwAAAAB///4Af///AAAAAAAABwAAAAB///8AD//+AAAAAAAAAcAAAAB///8AB+/8AAAAAAAAAHAAAAB///8AA8f4AAAAAAAAABwAAAA///+AA4PwAAAAAAAAAAY4AAAf///wAYHgAAAAAAAAAAP/gAAf///wAAGAAAAAAAAAAAD/4AAP///gAAAAAAAAAAAAAAD/+AAAH//AAAMAAAAAAAAAAAD//AAAH//AAAD4AAAAAAAAAAD//wAAD/+AAAB/wAAAAAAAAAD//4AAD/+AAAA//AAAAAAAAAD//8AAD/+AAAAf/AAAAAAAAAB//8AAD/8AAAAAAAAAAAAAAAA//4AAD/8AAAAAAYAAAAAAAAAf/4AAD/9gAAAAP8AAAAAAAAAf/wAAB/9wAAAAf8AAAAAAAAAP/gAAB/4wAAAB/+AAAAAAAAAP/AAAB/4gAAAD//AAAAAAAAAP+AAAA/wgAAAD//AAAAAAAAAf8AAAA/gAAAAD//gAAAAAAAAf4AAAA/AAAAAB//gAAAAAAAAfwAAAAeAAAAAB//AAAAAAAAAfgAAAAcAAAAAA/+AAAAAAAAAfAAAAAAAAAAAAAOAAAAAAAAA/AAAAAAAAAAAAAAAGAAAAAAA+AAAAAAAAAAAAAAAMAAAAAAA8AAAAAAAAAAAAAAAYAAAAAAA8AAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////";
+var _bin=atob(MB), _land=new Uint8Array(MW*MH);
+for(var _i=0;_i<MW*MH;_i++){ _land[_i]=(_bin.charCodeAt(_i>>3)>>(7-(_i&7)))&1; }
+function isLand(lat,lon){
+  var r=Math.floor((90-lat)/180*MH), c=Math.floor((lon+180)/360*MW);
+  if(r<0)r=0; if(r>=MH)r=MH-1; if(c<0)c+=MW; if(c>=MW)c-=MW;
+  return _land[r*MW+c]===1;
+}
+var gcv, gctx, GW=0, GH=0, GR0=0, GR=0, gcx=0, gcy=0;
+var gPts=[], gHubs=[], gTracers=[], gRot=0, gTilt=-0.40, gT0=0, gRaf=0, gZoom=1, gWarp=false, gWarpT=0;
+var REDUCED = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var SMALL = window.innerWidth < 700;
+
+function gResize(){
+  if(!gcv) return;
+  var dpr=Math.min(window.devicePixelRatio||1,2);
+  GW=gcv.clientWidth; GH=gcv.clientHeight;
+  gcv.width=GW*dpr; gcv.height=GH*dpr; gctx.setTransform(dpr,0,0,dpr,0,0);
+  GR0=Math.min(GW,GH)*0.27; gcx=GW/2; gcy=GH*0.43;
+}
+function gBuild(){
+  var TRY = SMALL?2200:4200, GOLD=Math.PI*(3-Math.sqrt(5));
+  gPts=[];
+  for(var i=0;i<TRY;i++){
+    var y=1-(i/(TRY-1))*2, r=Math.sqrt(Math.max(0,1-y*y)), th=GOLD*i;
+    var x=Math.cos(th)*r, z=Math.sin(th)*r;
+    if(!isLand(Math.asin(y)*180/Math.PI, Math.atan2(z,x)*180/Math.PI)) continue;
+    gPts.push({x:x,y:y,z:z,ph:Math.random()*6.283,sp:0.5+Math.random()*1.5});
+  }
+  var CITIES=[[50.45,30.52],[40.71,-74.01],[51.51,-0.13],[35.68,139.69],[-23.55,-46.63],[-33.87,151.21],[19.08,72.88],[-33.92,18.42],[1.35,103.82],[55.75,37.62],[37.77,-122.42],[25.20,55.27]];
+  gHubs=CITIES.map(function(c){
+    var la=c[0]*Math.PI/180, lo=c[1]*Math.PI/180;
+    return {x:Math.cos(la)*Math.cos(lo), y:Math.sin(la), z:Math.cos(la)*Math.sin(lo), pulse:Math.random()*3};
+  });
+}
+function gSlerp(a,b,t){
+  var d=Math.max(-1,Math.min(1,a.x*b.x+a.y*b.y+a.z*b.z));
+  var o=Math.acos(d), so=Math.sin(o);
+  if(so<1e-4) return {x:a.x,y:a.y,z:a.z};
+  var s1=Math.sin((1-t)*o)/so, s2=Math.sin(t*o)/so;
+  return {x:a.x*s1+b.x*s2,y:a.y*s1+b.y*s2,z:a.z*s1+b.z*s2};
+}
+function gProj(p,ry){
+  var cr=Math.cos(ry), sr=Math.sin(ry);
+  var x=p.x*cr+p.z*sr, z=-p.x*sr+p.z*cr, y=p.y;
+  var ct=Math.cos(gTilt), st=Math.sin(gTilt);
+  return {sx:gcx+x*GR, sy:gcy+(y*ct-z*st)*GR, z:y*st+z*ct};
+}
+function gAddTracer(){
+  var a=gHubs[(Math.random()*gHubs.length)|0];
+  var b=Math.random()<0.7 ? gHubs[(Math.random()*gHubs.length)|0] : gPts[(Math.random()*gPts.length)|0];
+  if(!a||!b) return;
+  var d=a.x*b.x+a.y*b.y+a.z*b.z;
+  // тільки помірні відстані: надто довгі дуги читаються як хаос,
+  // надто короткі — як тремтіння на місці
+  if(d>0.80||d<-0.30) return;
+  // обидва кінці мають бути на видимій півсфері, інакше траса «виринає нізвідки»
+  var sa=gProj(a,gRot), sb=gProj(b,gRot);
+  if(sa.z<0.05||sb.z<0.05) return;
+  gTracers.push({a:a,b:b,t:0,life:1.9+Math.random()*0.7,bright:Math.random()<0.2});
+}
+// висота точки над поверхнею вздовж дуги — одна формула для лінії й для голови
+function gLift(u){ return 1+0.13*Math.sin(Math.PI*u); }
+function gFrame(now){
+  var time=(now-gT0)/1000;
+  if(!REDUCED) gRot+=0.0019;
+  if(gWarp){ gWarpT+=0.016; gZoom=1+Math.pow(gWarpT,2.4)*13; gRot+=0.010*gWarpT; }
+  GR=GR0*gZoom;
+  gctx.clearRect(0,0,GW,GH);
+
+  var atmo=Math.min(1,gZoom*0.55);
+  var g=gctx.createRadialGradient(gcx,gcy,GR*0.55,gcx,gcy,GR*1.45);
+  g.addColorStop(0,'rgba(0,212,255,'+(0.055*atmo)+')');
+  g.addColorStop(0.6,'rgba(0,150,220,'+(0.045*atmo)+')');
+  g.addColorStop(1,'rgba(0,212,255,0)');
+  gctx.fillStyle=g; gctx.beginPath(); gctx.arc(gcx,gcy,GR*1.45,0,6.283); gctx.fill();
+
+  gctx.strokeStyle='rgba(0,212,255,0.20)'; gctx.lineWidth=1;
+  gctx.beginPath(); gctx.arc(gcx,gcy,GR,0,6.283); gctx.stroke();
+
+  gctx.strokeStyle='rgba(0,212,255,0.055)';
+  for(var k=-2;k<=2;k++){
+    var lat=k*0.36, rr=Math.cos(lat), yy=Math.sin(lat);
+    gctx.beginPath();
+    for(var q=0;q<=60;q++){
+      var a1=(q/60)*6.283, s1=gProj({x:Math.cos(a1)*rr,y:yy,z:Math.sin(a1)*rr},gRot);
+      if(q===0)gctx.moveTo(s1.sx,s1.sy); else gctx.lineTo(s1.sx,s1.sy);
+    }
+    gctx.stroke();
+  }
+  for(var m=0;m<6;m++){
+    gctx.beginPath();
+    for(var q2=0;q2<=40;q2++){
+      var a2=-1.5708+(q2/40)*3.1416, lo2=m*Math.PI/6;
+      var s2=gProj({x:Math.cos(a2)*Math.cos(lo2),y:Math.sin(a2),z:Math.cos(a2)*Math.sin(lo2)},gRot);
+      if(q2===0)gctx.moveTo(s2.sx,s2.sy); else gctx.lineTo(s2.sx,s2.sy);
+    }
+    gctx.stroke();
+  }
+
+  for(var i2=0;i2<gPts.length;i2++){
+    var p=gPts[i2], s3=gProj(p,gRot);
+    if(s3.z<-0.08) continue;
+    var depth=(s3.z+1)/2, tw=0.6+0.4*Math.sin(time*p.sp+p.ph);
+    gctx.fillStyle='rgba(0,212,255,'+((0.18+0.62*depth)*tw).toFixed(3)+')';
+    var sz=(0.8+depth*1.2)*Math.min(2.2,Math.sqrt(gZoom));
+    gctx.fillRect(s3.sx-sz/2,s3.sy-sz/2,sz,sz);
+  }
+
+  for(var h=0;h<gHubs.length;h++){
+    var hb=gHubs[h], sh=gProj(hb,gRot);
+    if(sh.z<0) continue;
+    var ph=(time*0.55+hb.pulse)%2;
+    var rad=6+ph*22*Math.sqrt(gZoom), al=Math.max(0,(1-ph/2))*0.5;
+    gctx.strokeStyle='rgba(120,235,255,'+al.toFixed(3)+')'; gctx.lineWidth=1;
+    gctx.beginPath(); gctx.arc(sh.sx,sh.sy,rad,0,6.283); gctx.stroke();
+    gctx.fillStyle='rgba(200,250,255,0.95)';
+    gctx.beginPath(); gctx.arc(sh.sx,sh.sy,2.1*Math.min(2,Math.sqrt(gZoom)),0,6.283); gctx.fill();
+  }
+
+  if(!REDUCED && gTracers.length<(SMALL?6:10) && Math.random()<0.25) gAddTracer();
+  gctx.lineCap='round';
+  for(var ti=gTracers.length-1;ti>=0;ti--){
+    var tr=gTracers[ti]; tr.t+=0.0085;
+    if(tr.t>tr.life){ gTracers.splice(ti,1); continue; }
+    // політ займає 62% життя, решта — згасання сліду
+    var prog=Math.min(1, tr.t/(tr.life*0.62));
+    var fade=tr.t>tr.life*0.72 ? 1-(tr.t-tr.life*0.72)/(tr.life*0.28) : 1;
+    var from=Math.max(0, prog-0.30);
+    var SEG=26, base=tr.bright?[205,255,248]:[0,212,255];
+    var prev=null;
+    // сегментами: до голови яскравіше й товще, у хвості тонше — слід, а не палиця
+    for(var kk=0;kk<=SEG;kk++){
+      var u=from+(prog-from)*(kk/SEG);
+      var sp=gSlerp(tr.a,tr.b,u), lf=gLift(u);
+      var s4=gProj({x:sp.x*lf,y:sp.y*lf,z:sp.z*lf}, gRot);
+      if(s4.z<-0.12){ prev=null; continue; }
+      if(prev){
+        var w=kk/SEG;                       // 0 — хвіст, 1 — голова
+        var a4=(0.10+0.62*w*w)*fade;
+        gctx.strokeStyle='rgba('+base[0]+','+base[1]+','+base[2]+','+a4.toFixed(3)+')';
+        gctx.lineWidth=(tr.bright?0.7:0.5)+1.15*w;
+        gctx.beginPath(); gctx.moveTo(prev.sx,prev.sy); gctx.lineTo(s4.sx,s4.sy); gctx.stroke();
+      }
+      prev=s4;
+    }
+    // голова — рівно на тій самій дузі (раніше висіла на сталій висоті збоку від лінії)
+    if(prog<1 && prev){
+      var hp=gSlerp(tr.a,tr.b,prog), hl=gLift(prog);
+      var hs=gProj({x:hp.x*hl,y:hp.y*hl,z:hp.z*hl}, gRot);
+      if(hs.z>-0.12){
+        var hg=gctx.createRadialGradient(hs.sx,hs.sy,0,hs.sx,hs.sy,5.5);
+        hg.addColorStop(0,'rgba(235,253,255,'+(0.95*fade)+')');
+        hg.addColorStop(1,'rgba(0,212,255,0)');
+        gctx.fillStyle=hg;
+        gctx.beginPath(); gctx.arc(hs.sx,hs.sy,5.5,0,6.283); gctx.fill();
+      }
+    }
+    // спалах у точці прибуття
+    if(prog>=1 && tr.t<tr.life*0.86){
+      var ep=gProj(tr.b,gRot);
+      if(ep.z>0){
+        var k2=(tr.t-tr.life*0.62)/(tr.life*0.24);
+        gctx.strokeStyle='rgba(200,250,255,'+(Math.max(0,(1-k2))*0.5).toFixed(3)+')';
+        gctx.lineWidth=1;
+        gctx.beginPath(); gctx.arc(ep.sx,ep.sy,3+k2*13,0,6.283); gctx.stroke();
+      }
+    }
+  }
+  gRaf=requestAnimationFrame(gFrame);
+}
+function startWarp(){
+  if(gWarp) return;
+  gWarp=true; gWarpT=0;
+  document.getElementById('loader').classList.add('warp');
+  setTimeout(finishIntro, 1100);
+}
+function startIntro(){
+  var seen=null; try{ seen=sessionStorage.getItem('eion_intro'); }catch(e){}
+  gcv=document.getElementById('globeCv');
+  if(seen || REDUCED || !gcv){ finishIntro(true); return; }
+  gctx=gcv.getContext('2d');
+  document.body.style.overflow='hidden';
+  gResize(); gBuild();
+  window.addEventListener('resize', gResize);
+  gT0=performance.now(); gRaf=requestAnimationFrame(gFrame);
+  window._introTimer=setTimeout(startWarp, 4200);
+}
+function finishIntro(instant){
+  clearTimeout(window._introTimer);
+  var l=document.getElementById('loader');
+  if(l) l.classList.add('hide');
+  document.body.style.overflow='';
+  setTimeout(function(){ cancelAnimationFrame(gRaf); }, instant?0:1000);
+  try{ sessionStorage.setItem('eion_intro','1'); }catch(e){}
+}
+
+/* ═══════════ підписка ═══════════ */
+(function(){
+  var f=document.getElementById('notifyForm');
+  if(!f) return;
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    fetch(f.action,{method:'POST',body:new FormData(f),headers:{Accept:'application/json'}})
+      .then(function(){ f.hidden=true; var ok=document.getElementById('notifyOk'); if(ok) ok.hidden=false; })
+      .catch(function(){ f.submit(); });
+  });
+})();
+
+/* ═══════════ аналітика лише за згодою ═══════════ */
+function loadGA(){
+  var sc=document.createElement('script');
+  sc.async=true; sc.src='https://www.googletagmanager.com/gtag/js?id=G-DFJQ94KWWY';
+  document.head.appendChild(sc);
+  window.dataLayer=window.dataLayer||[];
+  window.gtag=function(){dataLayer.push(arguments);};
+  gtag('js',new Date()); gtag('config','G-DFJQ94KWWY',{anonymize_ip:true});
+}
+function cookieChoice(ok){
+  try{ localStorage.setItem('eion_ga', ok?'1':'0'); }catch(e){}
+  var b=document.getElementById('cookieBar'); if(b) b.classList.remove('show');
+  if(ok) loadGA();
+}
+(function(){
+  var c=null; try{ c=localStorage.getItem('eion_ga'); }catch(e){}
+  if(c==='1') loadGA();
+  else if(c!=='0') setTimeout(function(){
+    var b=document.getElementById('cookieBar'); if(b) b.classList.add('show');
+  }, 6000);
+})();
 </script>
 </body>
 </html>
