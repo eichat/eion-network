@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EION — Видалення акаунта / Account Deletion</title>
+<link rel="stylesheet" href="/legal.css">
+</head>
+<body>
+<div class="wrap">
+
+<header><h1>EION</h1></header>
+<div class="lang">
+  <button id="b-uk" aria-pressed="true" onclick="setLang('uk')">Українська</button>
+  <button id="b-en" aria-pressed="false" onclick="setLang('en')">English</button>
+</div>
+
+<section id="uk">
+<h1>Видалення акаунта й даних</h1>
+<p class="meta">Застосунок: EION. Розробник: незалежний розробник, support@eion.network</p>
+
+<h2>Спосіб 1 — у застосунку</h2>
+<ol>
+  <li>Відкрийте EION і увійдіть у свій акаунт.</li>
+  <li>Перейдіть у <b>налаштування профілю</b> (значок профілю).</li>
+  <li>Оберіть <b>«Видалити акаунт»</b> і підтвердіть паролем.</li>
+</ol>
+
+<h2>Спосіб 2 — на запит</h2>
+<p>Якщо доступу до застосунку немає, надішліть листа на <a href="mailto:support@eion.network">support@eion.network</a> із адреси, вказаної в акаунті, зазначивши свій нік. Ми видалимо акаунт протягом 30 днів і повідомимо вас.</p>
+
+<h2>Що видаляється</h2>
+<ul>
+  <li>Профіль: нік, адреса пошти, номер телефону, аватар, статус.</li>
+  <li>Ваші повідомлення, коментарі, реакції та надіслані файли.</li>
+  <li>Баланс монет EION і статус преміуму — <b>без компенсації</b>.</li>
+  <li>Токени сесій і push-сповіщень, підписки на канали, членство в групах.</li>
+</ul>
+
+<h2>Що може лишитись</h2>
+<ul>
+  <li>Копії повідомлень, збережені на пристроях інших користувачів, — ми не маємо до них доступу.</li>
+  <li>Знеособлені технічні журнали й звіти про збої — зберігаються обмежений час і не містять вашого імені.</li>
+  <li>Записи, які ми зобов'язані зберігати за законом.</li>
+</ul>
+
+<div class="box"><p><b>Видалення незворотне.</b> Відновити акаунт, переписку чи монети після цього неможливо.</p></div>
+
+<p><a href="/privacy">Політика конфіденційності</a> · <a href="/terms">Умови використання</a></p>
+</section>
+
+<section id="en" hidden>
+<h1>Account and Data Deletion</h1>
+<p class="meta">App: EION. Developer: independent developer, support@eion.network</p>
+
+<h2>Option 1 — in the app</h2>
+<ol>
+  <li>Open EION and sign in to your account.</li>
+  <li>Go to <b>profile settings</b> (profile icon).</li>
+  <li>Choose <b>"Delete account"</b> and confirm with your password.</li>
+</ol>
+
+<h2>Option 2 — by request</h2>
+<p>If you cannot access the app, email <a href="mailto:support@eion.network">support@eion.network</a> from the address on the account, stating your nickname. We will delete the account within 30 days and confirm to you.</p>
+
+<h2>What is deleted</h2>
+<ul>
+  <li>Profile: nickname, email, phone number, avatar, status.</li>
+  <li>Your messages, comments, reactions and uploaded files.</li>
+  <li>EION coin balance and premium status — <b>without compensation</b>.</li>
+  <li>Session and push tokens, channel subscriptions, group memberships.</li>
+</ul>
+
+<h2>What may remain</h2>
+<ul>
+  <li>Copies of messages stored on other users' devices — we have no access to those.</li>
+  <li>De-identified technical logs and crash reports — kept for a limited time, without your name.</li>
+  <li>Records we are required by law to retain.</li>
+</ul>
+
+<div class="box"><p><b>Deletion is irreversible.</b> Accounts, correspondence and coins cannot be restored afterwards.</p></div>
+
+<p><a href="/privacy">Privacy Policy</a> · <a href="/terms">Terms of Service</a></p>
+</section>
+
+<footer><p>EION · <a href="mailto:support@eion.network">support@eion.network</a></p></footer>
+</div>
+
+<script>
+function setLang(l){
+  document.getElementById('uk').hidden = (l!=='uk');
+  document.getElementById('en').hidden = (l!=='en');
+  document.getElementById('b-uk').setAttribute('aria-pressed', l==='uk');
+  document.getElementById('b-en').setAttribute('aria-pressed', l==='en');
+  document.documentElement.lang = l;
+  try{ localStorage.setItem('eion-legal-lang', l); }catch(e){}
+}
+try{
+  var saved = localStorage.getItem('eion-legal-lang');
+  if(!saved) saved = (navigator.language||'').slice(0,2)==='uk' ? 'uk' : 'en';
+  setLang(saved);
+}catch(e){}
+</script>
+</body>
+</html>
