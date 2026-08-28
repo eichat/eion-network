@@ -3,7 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EION — Decentralized Messenger</title>
+<title>EION — Messenger</title>
+<meta name="description" content="EION — a messenger for Android and Linux: chats, groups, channels, end-to-end encrypted calls, an AI assistant and in-app coins. No ads, no tracking.">
+<meta property="og:title" content="EION — Messenger">
+<meta property="og:description" content="Chats, groups and channels, end-to-end encrypted calls, an AI assistant and in-app coins. For Android and Linux.">
+<meta property="og:image" content="https://eion.network/EION-256.png">
+<meta property="og:url" content="https://eion.network/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
 
 <!-- Latin fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,7 +43,6 @@
 [dir="rtl"] .nav-links { flex-direction: row-reverse; }
 [dir="rtl"] .hero-btns { flex-direction: row-reverse; }
 [dir="rtl"] .token-stat { flex-direction: row-reverse; }
-[dir="rtl"] .tnom-item { flex-direction: row-reverse; }
 [dir="rtl"] .rm-item { padding-left: 0; padding-right: 40px; }
 [dir="rtl"] .roadmap-line { padding-left: 0; padding-right: 40px; }
 [dir="rtl"] .roadmap-line::before { left: auto; right: 8px; }
@@ -151,19 +157,10 @@ section { padding:100px 24px;position:relative;z-index:1; }
 .token-stat:last-child { border-bottom:none; }
 .token-stat .label { font-size:0.85rem;color:var(--text2);font-weight:300; }
 .token-stat .value { font-family:'Orbitron',monospace;font-size:0.85rem;color:var(--text); }
-.tokenomics-chart { display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px; }
-.tnom-item { display:flex;align-items:center;gap:12px;padding:14px 16px;background:rgba(0,212,255,0.04);border-radius:6px;border:1px solid rgba(0,212,255,0.08);transition:all 0.3s; }
-.tnom-item:hover { border-color:rgba(0,212,255,0.25);background:rgba(0,212,255,0.08); }
-.tnom-dot { width:12px;height:12px;border-radius:50%;flex-shrink:0; }
-.tnom-info .pct { font-family:'Orbitron',monospace;font-size:1.1rem;font-weight:700;color:var(--text); }
-.tnom-info .name { font-size:0.8rem;color:var(--text2);font-weight:300; }
 
 /* EARN */
 #earn { background:linear-gradient(180deg,var(--bg) 0%,var(--bg2) 100%); }
-.earn-grid { display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px; }
-.earn-card { background:rgba(0,212,255,0.03);border:1px solid rgba(0,212,255,0.12);border-radius:8px;padding:32px 24px;transition:all 0.4s; }
 .earn-card:hover { border-color:rgba(0,212,255,0.3);transform:translateY(-4px);box-shadow:0 8px 32px rgba(0,212,255,0.1); }
-.earn-amount { font-family:'Orbitron',monospace;font-size:1.6rem;font-weight:900;color:var(--neon);text-shadow:0 0 20px rgba(0,212,255,0.5);margin-bottom:4px; }
 .earn-card h3 { font-size:0.9rem;font-weight:600;color:var(--text);margin-bottom:10px;letter-spacing:1px; }
 .earn-card p { font-size:0.85rem;color:var(--text2);line-height:1.7;font-weight:300; }
 
@@ -338,11 +335,11 @@ a.dl-card{text-decoration:none;color:inherit;display:block}
     <div class="logo-ring"></div>
   </div>
   <h1>EION</h1>
-  <div class="hero-sub" data-i18n="hero_sub">Decentralized Communication Network</div>
-  <p class="hero-desc" data-i18n="hero_desc">The next-generation messenger with end-to-end encryption, AI assistant,<br>HD video calls and a built-in cryptocurrency token — all in one app.</p>
+  <div class="hero-sub" data-i18n="hero_sub">A messenger that belongs to you</div>
+  <p class="hero-desc" data-i18n="hero_desc">Chats, groups and channels, end-to-end encrypted calls, an AI assistant<br>and in-app coins. For Android and Linux. No ads, no tracking.</p>
   <div class="hero-btns">
     <a href="#download" class="btn-primary" data-i18n="hero_btn1">↓ Download</a>
-    <a href="#token" class="btn-secondary" data-i18n="hero_btn2">EION Token →</a>
+    <a href="#token" class="btn-secondary" data-i18n="hero_btn2">EION coins →</a>
   </div>
 </section>
 
@@ -351,12 +348,12 @@ a.dl-card{text-decoration:none;color:inherit;display:block}
     <div class="section-label" data-i18n="feat_label">Application</div>
     <h2 class="section-title" data-i18n="feat_title">Everything you need <span>in one app</span></h2>
     <div class="features-grid">
-      <div class="feature-card reveal"><span class="feature-icon">💬</span><h3 data-i18n="f1_title">Live Chat</h3><p data-i18n="f1_desc">Instant encrypted messaging with groups, media, and files.</p></div>
+      <div class="feature-card reveal"><span class="feature-icon">💬</span><h3 data-i18n="f1_title">Live Chat</h3><p data-i18n="f1_desc">Text, photos, video, documents and voice messages with captions. Replies, forwarding, reactions and delivery status.</p></div>
       <div class="feature-card reveal"><span class="feature-icon">🤖</span><h3 data-i18n="f2_title">AI Assistant</h3><p data-i18n="f2_desc">Built-in AI chat powered by advanced language models, available anytime.</p></div>
-      <div class="feature-card reveal"><span class="feature-icon">📹</span><h3 data-i18n="f3_title">HD Video Calls</h3><p data-i18n="f3_desc">Crystal-clear audio and video calls via WebRTC — no intermediaries.</p></div>
-      <div class="feature-card reveal"><span class="feature-icon">👥</span><h3 data-i18n="f4_title">Groups</h3><p data-i18n="f4_desc">Create communities, channels, and group chats with flexible permissions.</p></div>
-      <div class="feature-card reveal"><span class="feature-icon">🔐</span><h3 data-i18n="f5_title">E2E Encryption</h3><p data-i18n="f5_desc">All messages and calls protected end-to-end. Your data stays yours.</p></div>
-      <div class="feature-card reveal"><span class="feature-icon">💎</span><h3 data-i18n="f6_title">EION Token</h3><p data-i18n="f6_desc">Earn crypto by using the network. Premium features, rewards, staking.</p></div>
+      <div class="feature-card reveal"><span class="feature-icon">📹</span><h3 data-i18n="f3_title">HD Video Calls</h3><p data-i18n="f3_desc">Audio and video calls over WebRTC — no intermediaries.</p></div>
+      <div class="feature-card reveal"><span class="feature-icon">👥</span><h3 data-i18n="f4_title">Groups</h3><p data-i18n="f4_desc">Groups and channels with roles, comments, reactions and paid subscriptions. Live streams play inside the app.</p></div>
+      <div class="feature-card reveal"><span class="feature-icon">🔐</span><h3 data-i18n="f5_title">Encrypted calls</h3><p data-i18n="f5_desc">Calls are end-to-end encrypted by WebRTC — their content is not available to the server. For messages, end-to-end encryption is planned and does not exist yet.</p></div>
+      <div class="feature-card reveal"><span class="feature-icon">💎</span><h3 data-i18n="f6_title">EION coins</h3><p data-i18n="f6_desc">An in-app currency for premium, sticker packs and paid channels. Transfers between users included.</p></div>
     </div>
   </div>
 </section>
@@ -371,7 +368,7 @@ a.dl-card{text-decoration:none;color:inherit;display:block}
       <div class="dl-card reveal"><span class="platform-icon">🍎</span><h3>iOS</h3><div class="status soon" data-i18n="dl_soon">⏳ Coming soon</div><span class="disabled" data-i18n="dl_notify">Notify me</span></div>
       <div class="dl-card reveal"><span class="platform-icon">🪟</span><h3>Windows</h3><div class="status soon" data-i18n="dl_soon">⏳ Coming soon</div><span class="disabled" data-i18n="dl_notify">Notify me</span></div>
     </div>
-    <p class="dl-note reveal" data-i18n="dl_note">Android will ask for permission to install from an unknown source — that is normal outside Google Play. On Linux, make the file executable and run it.</p>
+    <p class="dl-note reveal" data-i18n="dl_note">Android will ask for permission to install an app from an unknown source — that is normal outside Google Play. On Linux, make the file executable and run it.</p>
     <div class="notify-box reveal">
       <p data-i18n="notify_title">Get one email when EION arrives in the store</p>
       <form id="notifyForm" action="https://formspree.io/f/xdajyyaz" method="POST">
@@ -446,43 +443,43 @@ a.dl-card{text-decoration:none;color:inherit;display:block}
     <h2 class="section-title" data-i18n="rm_title">What's <span>next</span></h2>
     <div class="roadmap-line">
       <div class="rm-item active reveal">
-        <div class="rm-phase" data-i18n="rm_ph1">Phase 1 — Now</div>
-        <h3 data-i18n="rm_h1">Launch</h3>
+        <div class="rm-phase" data-i18n="rm_ph1">Phase 1 — now</div>
+        <h3 data-i18n="rm_h1">Beta</h3>
         <ul>
-          <li data-i18n="rm_1_1">Android & Linux app</li>
-          <li data-i18n="rm_1_2">Live chat, AI, video calls</li>
-          <li data-i18n="rm_1_3">EION Token on TON</li>
-          <li data-i18n="rm_1_4">Website launch</li>
+          <li data-i18n="rm_1_1">Android and Linux apps</li>
+          <li data-i18n="rm_1_2">Chats, groups, channels, streams</li>
+          <li data-i18n="rm_1_3">Encrypted calls, AI assistant</li>
+          <li data-i18n="rm_1_4">Coins, premium, sticker shop</li>
         </ul>
       </div>
       <div class="rm-item reveal">
-        <div class="rm-phase" data-i18n="rm_ph2">Phase 2 — 2026</div>
-        <h3 data-i18n="rm_h2">Expansion</h3>
+        <div class="rm-phase" data-i18n="rm_ph2">Phase 2 — next</div>
+        <h3 data-i18n="rm_h2">Store release</h3>
         <ul>
-          <li data-i18n="rm_2_1">iOS & Windows apps</li>
-          <li data-i18n="rm_2_2">Token presale</li>
-          <li data-i18n="rm_2_3">Node network launch</li>
-          <li data-i18n="rm_2_4">Staking module</li>
+          <li data-i18n="rm_2_1">Publication on Google Play</li>
+          <li data-i18n="rm_2_2">Automatic updates</li>
+          <li data-i18n="rm_2_3">Smaller download size</li>
+          <li data-i18n="rm_2_4">Password recovery by email</li>
         </ul>
       </div>
       <div class="rm-item reveal">
-        <div class="rm-phase" data-i18n="rm_ph3">Phase 3 — 2027</div>
-        <h3 data-i18n="rm_h3">Decentralization</h3>
+        <div class="rm-phase" data-i18n="rm_ph3">Phase 3 — planned</div>
+        <h3 data-i18n="rm_h3">Privacy</h3>
         <ul>
-          <li data-i18n="rm_3_1">Own blockchain launch</li>
-          <li data-i18n="rm_3_2">Decentralized storage</li>
-          <li data-i18n="rm_3_3">DEX listing</li>
-          <li data-i18n="rm_3_4">DAO governance</li>
+          <li data-i18n="rm_3_1">End-to-end encrypted messages</li>
+          <li data-i18n="rm_3_2">Verification codes for calls</li>
+          <li data-i18n="rm_3_3">Secret chats</li>
+          <li data-i18n="rm_3_4">Windows and iOS apps</li>
         </ul>
       </div>
       <div class="rm-item reveal">
-        <div class="rm-phase" data-i18n="rm_ph4">Phase 4 — 2028+</div>
-        <h3 data-i18n="rm_h4">Ecosystem</h3>
+        <div class="rm-phase" data-i18n="rm_ph4">Phase 4 — long term</div>
+        <h3 data-i18n="rm_h4">Beyond the app</h3>
         <ul>
-          <li data-i18n="rm_4_1">DApp platform</li>
-          <li data-i18n="rm_4_2">Enterprise solutions</li>
-          <li data-i18n="rm_4_3">Cross-chain bridges</li>
-          <li data-i18n="rm_4_4">Global expansion</li>
+          <li data-i18n="rm_4_1">EION token on Solana</li>
+          <li data-i18n="rm_4_2">Coins outside the messenger</li>
+          <li data-i18n="rm_4_3">Open API</li>
+          <li data-i18n="rm_4_4">Independent infrastructure</li>
         </ul>
       </div>
     </div>
