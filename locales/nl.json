@@ -28,6 +28,10 @@
   "dl_notify": "Meld me aan",
   "tok_label": "Munten",
   "tok_title": "EION-<span>munten</span>",
+  "tok_free": "Gratis daglimiet",
+  "tok_free_v": "AI 15 · 200 MB · 10 gesprekken",
+  "tok_over": "Boven het daglimiet",
+  "tok_over_v": "3 · 1 / MB · 2 munten",
   "tok_register": "Registratiebonus",
   "prem_label": "Premium",
   "prem_title": "<span>Premium</span> Ontgrendelen",
@@ -35,11 +39,12 @@
   "prem_monthly_period": "EION / maand",
   "prem_yearly_tag": "Jaarlijks — Beste Waarde",
   "prem_yearly_period": "EION / jaar",
-  "prem_f1": "Geen advertenties",
-  "prem_f2": "Prioriteitsondersteuning",
-  "prem_f3": "Uitgebreide opslag",
-  "prem_f4": "HD-videogesprekken",
-  "prem_f5": "2 maanden gratis",
+  "prem_f1": "Bestanden tot 20 MB in plaats van 5",
+  "prem_f2": "AI-assistent: 100 verzoeken per dag in plaats van 15",
+  "prem_f3": "Uploads: 1 GB per dag in plaats van 200 MB",
+  "prem_f4": "Gesprekken via relay: 50 per dag in plaats van 10",
+  "prem_f5": "Gekleurde nickname en avatarring",
+  "prem_f6": "Bespaart 1800 munten — ruim drie maanden gratis",
   "rm_label": "Routekaart",
   "rm_title": "Wat komt er <span>volgende</span>",
   "rm_ph1": "Fase 1 — nu",
@@ -53,7 +58,7 @@
   "rm_2_1": "Publicatie in Google Play",
   "rm_2_2": "Automatische updates",
   "rm_2_3": "Kleinere download",
-  "rm_2_4": "Wachtwoordherstel via e-mail",
+  "rm_2_4": "Beloningen voor activiteit",
   "rm_ph3": "Fase 3 — gepland",
   "rm_h3": "Privacy",
   "rm_3_1": "End-to-end versleutelde berichten",
@@ -75,7 +80,7 @@
     },
     {
       "q": "Is EION gratis?",
-      "a": "Ja. De messenger is volledig gratis. Premium — geen advertenties, meer opslag — kost 500 EION per maand of 4200 EION per jaar, betaald met munten in de app."
+      "a": "Ja. De messenger is volledig gratis. Elke dag geldt een gratis limiet: 15 AI-verzoeken, 200 MB uploads en 10 gesprekken via relay; daarboven betaal je met munten. Premium verruimt het limiet en verhoogt de bestandslimiet naar 20 MB: 500 EION per maand of 4200 EION per jaar."
     },
     {
       "q": "Zijn mijn berichten versleuteld?",
@@ -83,7 +88,7 @@
     },
     {
       "q": "Wat zijn EION-munten?",
-      "a": "Een interne munt van de app: premium, stickerpakketten, betaalde kanaalabonnementen en overboekingen tussen gebruikers. Bij registratie krijg je 50 munten. Het is geen geld en geen cryptovaluta en ze kunnen niet worden ingewisseld voor geld."
+      "a": "Een interne valuta van de app: premium, stickerpakketten, betaalde kanaalabonnementen, overboekingen tussen gebruikers en alles boven het gratis daglimiet — AI-verzoeken, uploads, gesprekken via relay. Bij registratie krijg je 50 munten. Het is geen geld en geen cryptovaluta en het is niet inwisselbaar voor geld."
     },
     {
       "q": "Welke platforms worden ondersteund?",
@@ -114,6 +119,7 @@
   "tok_use4v": "tussen gebruikers, 1% kosten",
   "tok_plan": "Het plan",
   "tok_plan_text": "Een langetermijndoel is om EION-munten buiten de app te brengen — als token op Solana. Dat werk is nog niet begonnen en er worden geen data beloofd.",
+  "tok_burn_text": "Een deel van elke betaling aan het platform wordt definitief verbrand — 30% bij gesprekken en uploads, 40% bij de AI-assistent en stickerpakketten, 50% bij premium. Verbrande munten verdwijnen uit omloop en komen op geen enkele rekening terecht.",
   "tok_disclaimer": "Vandaag zijn EION-munten een interne rekeneenheid van de dienst. Het is geen geld, geen effect en geen cryptovaluta, ze kunnen niet worden ingewisseld voor geld, en deze pagina is geen investeringsaanbod.",
   "footer_privacy": "Privacybeleid",
   "footer_terms": "Gebruiksvoorwaarden",

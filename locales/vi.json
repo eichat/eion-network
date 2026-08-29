@@ -28,6 +28,10 @@
   "dl_notify": "Thông báo cho tôi",
   "tok_label": "Xu",
   "tok_title": "Xu <span>EION</span>",
+  "tok_free": "Hạn mức miễn phí mỗi ngày",
+  "tok_free_v": "AI 15 · 200 MB · 10 cuộc gọi",
+  "tok_over": "Vượt hạn mức",
+  "tok_over_v": "3 · 1 / MB · 2 xu",
   "tok_register": "Thưởng đăng ký",
   "prem_label": "Premium",
   "prem_title": "Mở khóa <span>Premium</span>",
@@ -35,11 +39,12 @@
   "prem_monthly_period": "EION / tháng",
   "prem_yearly_tag": "Hàng năm — Giá trị nhất",
   "prem_yearly_period": "EION / năm",
-  "prem_f1": "Không quảng cáo",
-  "prem_f2": "Hỗ trợ ưu tiên",
-  "prem_f3": "Lưu trữ mở rộng",
-  "prem_f4": "Cuộc gọi video HD",
-  "prem_f5": "2 tháng miễn phí",
+  "prem_f1": "Tệp tới 20 MB thay vì 5",
+  "prem_f2": "Trợ lý AI: 100 yêu cầu mỗi ngày thay vì 15",
+  "prem_f3": "Tải lên: 1 GB mỗi ngày thay vì 200 MB",
+  "prem_f4": "Cuộc gọi qua relay: 50 mỗi ngày thay vì 10",
+  "prem_f5": "Biệt danh màu và viền ảnh đại diện",
+  "prem_f6": "Tiết kiệm 1800 xu — hơn ba tháng miễn phí",
   "rm_label": "Lộ trình",
   "rm_title": "<span>Tiếp theo</span> là gì",
   "rm_ph1": "Giai đoạn 1 — hiện tại",
@@ -53,7 +58,7 @@
   "rm_2_1": "Đăng tải lên Google Play",
   "rm_2_2": "Cập nhật tự động",
   "rm_2_3": "Dung lượng tải nhỏ hơn",
-  "rm_2_4": "Khôi phục mật khẩu qua email",
+  "rm_2_4": "Phần thưởng cho hoạt động",
   "rm_ph3": "Giai đoạn 3 — dự kiến",
   "rm_h3": "Quyền riêng tư",
   "rm_3_1": "Tin nhắn mã hóa đầu cuối",
@@ -75,7 +80,7 @@
     },
     {
       "q": "EION có miễn phí không?",
-      "a": "Có. Ứng dụng nhắn tin hoàn toàn miễn phí. Gói cao cấp — không quảng cáo, nhiều dung lượng hơn — là 500 EION mỗi tháng hoặc 4200 EION mỗi năm, trả bằng xu trong ứng dụng."
+      "a": "Có. Ứng dụng nhắn tin hoàn toàn miễn phí. Mỗi ngày có một hạn mức miễn phí: 15 yêu cầu AI, 200 MB tải lên và 10 cuộc gọi qua relay; vượt quá đó bạn trả bằng xu. Premium mở rộng hạn mức và nâng giới hạn tệp lên 20 MB: 500 EION mỗi tháng hoặc 4200 EION mỗi năm."
     },
     {
       "q": "Tin nhắn của tôi có được mã hóa không?",
@@ -83,7 +88,7 @@
     },
     {
       "q": "Xu EION là gì?",
-      "a": "Đơn vị tiền nội bộ của ứng dụng: gói cao cấp, bộ nhãn dán, đăng ký kênh trả phí và chuyển khoản giữa người dùng. Khi đăng ký bạn nhận 50 xu. Đây không phải tiền hay tiền mã hóa và không thể đổi ra tiền mặt."
+      "a": "Tiền tệ nội bộ của ứng dụng: premium, gói nhãn dán, đăng ký kênh trả phí, chuyển khoản giữa người dùng và mọi thứ vượt hạn mức miễn phí hằng ngày — yêu cầu AI, tải lên, cuộc gọi qua relay. Khi đăng ký bạn nhận 50 xu. Đây không phải tiền hay tiền mã hoá và không thể đổi ra tiền."
     },
     {
       "q": "Hỗ trợ những nền tảng nào?",
@@ -114,6 +119,7 @@
   "tok_use4v": "giữa người dùng, phí 1%",
   "tok_plan": "Kế hoạch",
   "tok_plan_text": "Mục tiêu dài hạn là đưa xu EION ra ngoài ứng dụng — dưới dạng token trên Solana. Công việc này chưa bắt đầu và chúng tôi không hứa hẹn thời hạn nào.",
+  "tok_burn_text": "Một phần của mỗi khoản thanh toán cho nền tảng bị đốt vĩnh viễn — 30% với cuộc gọi và tải lên, 40% với trợ lý AI và gói nhãn dán, 50% với premium. Xu đã đốt rời khỏi lưu thông và không vào bất kỳ tài khoản nào.",
   "tok_disclaimer": "Hiện nay xu EION là đơn vị hạch toán nội bộ của dịch vụ. Chúng không phải tiền, chứng khoán hay tiền mã hóa, không thể đổi ra tiền mặt, và trang này không phải lời mời đầu tư.",
   "footer_privacy": "Chính sách quyền riêng tư",
   "footer_terms": "Điều khoản sử dụng",

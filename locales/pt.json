@@ -28,6 +28,10 @@
   "dl_notify": "Notificar-me",
   "tok_label": "Moedas",
   "tok_title": "Moedas <span>EION</span>",
+  "tok_free": "Quota diária gratuita",
+  "tok_free_v": "IA 15 · 200 MB · 10 chamadas",
+  "tok_over": "Acima da quota",
+  "tok_over_v": "3 · 1 / MB · 2 moedas",
   "tok_register": "Bônus de registro",
   "prem_label": "Premium",
   "prem_title": "Desbloquear <span>Premium</span>",
@@ -35,11 +39,12 @@
   "prem_monthly_period": "EION / mês",
   "prem_yearly_tag": "Anual — Melhor valor",
   "prem_yearly_period": "EION / ano",
-  "prem_f1": "Sem anúncios",
-  "prem_f2": "Suporte prioritário",
-  "prem_f3": "Armazenamento ampliado",
-  "prem_f4": "Videochamadas HD",
-  "prem_f5": "2 meses grátis",
+  "prem_f1": "Ficheiros até 20 MB em vez de 5",
+  "prem_f2": "Assistente de IA: 100 pedidos por dia em vez de 15",
+  "prem_f3": "Envios: 1 GB por dia em vez de 200 MB",
+  "prem_f4": "Chamadas por relay: 50 por dia em vez de 10",
+  "prem_f5": "Nome colorido e anel do avatar",
+  "prem_f6": "Poupa 1800 moedas — mais de três meses grátis",
   "rm_label": "Roteiro",
   "rm_title": "O que vem <span>a seguir</span>",
   "rm_ph1": "Fase 1 — agora",
@@ -53,7 +58,7 @@
   "rm_2_1": "Publicação na Google Play",
   "rm_2_2": "Atualizações automáticas",
   "rm_2_3": "Download menor",
-  "rm_2_4": "Recuperação de senha por e-mail",
+  "rm_2_4": "Recompensas por atividade",
   "rm_ph3": "Fase 3 — planejado",
   "rm_h3": "Privacidade",
   "rm_3_1": "Mensagens com criptografia de ponta a ponta",
@@ -75,7 +80,7 @@
     },
     {
       "q": "O EION é gratuito?",
-      "a": "Sim. O mensageiro é totalmente gratuito. O premium — sem anúncios e com mais armazenamento — custa 500 EION por mês ou 4200 EION por ano, pagos com as moedas internas."
+      "a": "Sim. O mensageiro é totalmente gratuito. Todos os dias há uma quota gratuita: 15 pedidos de IA, 200 MB de envios e 10 chamadas por relay; acima disso paga com moedas. O premium alarga a quota e sobe o limite de ficheiro para 20 MB: 500 EION por mês ou 4200 EION por ano."
     },
     {
       "q": "Minhas mensagens são criptografadas?",
@@ -83,7 +88,7 @@
     },
     {
       "q": "O que são as moedas EION?",
-      "a": "Uma moeda interna do aplicativo: premium, pacotes de figurinhas, assinaturas pagas de canais e transferências entre usuários. No registro você recebe 50 moedas. Não são dinheiro nem criptomoeda e não podem ser trocadas por dinheiro."
+      "a": "Uma moeda interna da aplicação: premium, pacotes de autocolantes, subscrições pagas de canais, transferências entre utilizadores e tudo acima da quota diária gratuita — pedidos de IA, envios, chamadas por relay. No registo recebe 50 moedas. Não são dinheiro nem criptomoeda e não se trocam por dinheiro."
     },
     {
       "q": "Quais plataformas são suportadas?",
@@ -114,6 +119,7 @@
   "tok_use4v": "entre usuários, taxa de 1%",
   "tok_plan": "O plano",
   "tok_plan_text": "Um objetivo de longo prazo é levar as moedas EION para além do aplicativo — como um token na Solana. Esse trabalho ainda não começou e nenhuma data é prometida.",
+  "tok_burn_text": "Parte de cada pagamento à plataforma é queimada para sempre: 30% em chamadas e envios, 40% no assistente de IA e nos pacotes de autocolantes, 50% no premium. As moedas queimadas saem de circulação e não chegam a nenhuma conta.",
   "tok_disclaimer": "Hoje as moedas EION são uma unidade de conta interna do serviço. Não são dinheiro, valores mobiliários nem criptomoeda, não podem ser trocadas por dinheiro, e esta página não é uma oferta de investimento.",
   "footer_privacy": "Política de Privacidade",
   "footer_terms": "Termos de Uso",

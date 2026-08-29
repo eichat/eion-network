@@ -28,6 +28,10 @@
   "dl_notify": "Powiadom mnie",
   "tok_label": "Monety",
   "tok_title": "Monety <span>EION</span>",
+  "tok_free": "Bezpłatny limit dzienny",
+  "tok_free_v": "AI 15 · 200 MB · 10 połączeń",
+  "tok_over": "Powyżej limitu",
+  "tok_over_v": "3 · 1 / MB · 2 monety",
   "tok_register": "Bonus za rejestrację",
   "prem_label": "Premium",
   "prem_title": "Odblokuj <span>Premium</span>",
@@ -35,11 +39,12 @@
   "prem_monthly_period": "EION / miesiąc",
   "prem_yearly_tag": "Rocznie — Najlepsza wartość",
   "prem_yearly_period": "EION / rok",
-  "prem_f1": "Bez reklam",
-  "prem_f2": "Priorytetowe wsparcie",
-  "prem_f3": "Rozszerzone przechowywanie",
-  "prem_f4": "Połączenia wideo HD",
-  "prem_f5": "2 miesiące gratis",
+  "prem_f1": "Pliki do 20 MB zamiast 5",
+  "prem_f2": "Asystent AI: 100 zapytań dziennie zamiast 15",
+  "prem_f3": "Wysyłanie: 1 GB dziennie zamiast 200 MB",
+  "prem_f4": "Połączenia przez relay: 50 dziennie zamiast 10",
+  "prem_f5": "Kolorowy nick i obwódka awatara",
+  "prem_f6": "Oszczędność 1800 monet — ponad trzy miesiące gratis",
   "rm_label": "Plan działania",
   "rm_title": "Co <span>dalej</span>",
   "rm_ph1": "Etap 1 — teraz",
@@ -53,7 +58,7 @@
   "rm_2_1": "Publikacja w Google Play",
   "rm_2_2": "Automatyczne aktualizacje",
   "rm_2_3": "Mniejszy rozmiar pobierania",
-  "rm_2_4": "Odzyskiwanie hasła przez e-mail",
+  "rm_2_4": "Nagrody za aktywność",
   "rm_ph3": "Etap 3 — planowane",
   "rm_h3": "Prywatność",
   "rm_3_1": "Wiadomości szyfrowane end-to-end",
@@ -75,7 +80,7 @@
     },
     {
       "q": "Czy EION jest darmowy?",
-      "a": "Tak. Komunikator jest w pełni darmowy. Premium — bez reklam i z większą przestrzenią — kosztuje 500 EION miesięcznie lub 4200 EION rocznie, płatne monetami w aplikacji."
+      "a": "Tak. Komunikator jest w pełni bezpłatny. Codziennie obowiązuje bezpłatny limit: 15 zapytań do AI, 200 MB wysyłania i 10 połączeń przez relay; powyżej płacisz monetami. Premium poszerza limit i podnosi limit pliku do 20 MB: 500 EION miesięcznie lub 4200 EION rocznie."
     },
     {
       "q": "Czy moje wiadomości są szyfrowane?",
@@ -83,7 +88,7 @@
     },
     {
       "q": "Czym są monety EION?",
-      "a": "Wewnętrzną walutą aplikacji: premium, paczki naklejek, płatne subskrypcje kanałów i przelewy między użytkownikami. Po rejestracji otrzymujesz 50 monet. To nie są pieniądze ani kryptowaluta i nie podlegają wymianie na pieniądze."
+      "a": "Wewnętrzna waluta aplikacji: premium, paczki naklejek, płatne subskrypcje kanałów, przelewy między użytkownikami i wszystko powyżej bezpłatnego limitu dziennego — zapytania do AI, wysyłanie, połączenia przez relay. Za rejestrację otrzymujesz 50 monet. To nie są pieniądze ani kryptowaluta i nie wymienia się ich na pieniądze."
     },
     {
       "q": "Jakie platformy są wspierane?",
@@ -114,6 +119,7 @@
   "tok_use4v": "między użytkownikami, prowizja 1%",
   "tok_plan": "Plan",
   "tok_plan_text": "Długoterminowym celem jest wyprowadzenie monet EION poza aplikację — jako token na Solanie. Ta praca jeszcze się nie zaczęła i nie obiecujemy żadnych terminów.",
+  "tok_burn_text": "Część każdej płatności dla platformy jest bezpowrotnie spalana — 30% za połączenia i wysyłanie, 40% za asystenta AI i paczki naklejek, 50% za premium. Spalone monety znikają z obiegu i nie trafiają na żadne konto.",
   "tok_disclaimer": "Dziś monety EION są wewnętrzną jednostką rozliczeniową serwisu. Nie są pieniędzmi, papierami wartościowymi ani kryptowalutą, nie podlegają wymianie na pieniądze, a ta strona nie jest ofertą inwestycyjną.",
   "footer_privacy": "Polityka prywatności",
   "footer_terms": "Warunki korzystania",

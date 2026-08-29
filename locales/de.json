@@ -28,6 +28,10 @@
   "dl_notify": "Benachrichtigen",
   "tok_label": "Coins",
   "tok_title": "EION <span>Coins</span>",
+  "tok_free": "Kostenloses Tageskontingent",
+  "tok_free_v": "KI 15 · 200 MB · 10 Anrufe",
+  "tok_over": "Über dem Kontingent",
+  "tok_over_v": "3 · 1 / MB · 2 Coins",
   "tok_register": "Registrierungsbonus",
   "prem_label": "Premium",
   "prem_title": "<span>Premium</span> freischalten",
@@ -35,11 +39,12 @@
   "prem_monthly_period": "EION / Monat",
   "prem_yearly_tag": "Jährlich — Bestes Angebot",
   "prem_yearly_period": "EION / Jahr",
-  "prem_f1": "Keine Werbung",
-  "prem_f2": "Prioritätssupport",
-  "prem_f3": "Erweiterter Speicher",
-  "prem_f4": "HD-Videoanrufe",
-  "prem_f5": "2 Monate gratis",
+  "prem_f1": "Dateien bis 20 MB statt 5",
+  "prem_f2": "KI-Assistent: 100 Anfragen pro Tag statt 15",
+  "prem_f3": "Uploads: 1 GB pro Tag statt 200 MB",
+  "prem_f4": "Anrufe über Relay: 50 pro Tag statt 10",
+  "prem_f5": "Farbiger Nickname und Avatar-Ring",
+  "prem_f6": "Spart 1800 Coins — über drei Monate gratis",
   "rm_label": "Roadmap",
   "rm_title": "Was kommt <span>als Nächstes</span>",
   "rm_ph1": "Phase 1 — jetzt",
@@ -53,7 +58,7 @@
   "rm_2_1": "Veröffentlichung bei Google Play",
   "rm_2_2": "Automatische Updates",
   "rm_2_3": "Kleinere Downloadgröße",
-  "rm_2_4": "Passwort-Wiederherstellung per E-Mail",
+  "rm_2_4": "Belohnungen für Aktivität",
   "rm_ph3": "Phase 3 — geplant",
   "rm_h3": "Privatsphäre",
   "rm_3_1": "Ende-zu-Ende-verschlüsselte Nachrichten",
@@ -75,7 +80,7 @@
     },
     {
       "q": "Ist EION kostenlos?",
-      "a": "Ja. Der Messenger ist vollständig kostenlos. Premium — keine Werbung, mehr Speicher — kostet 500 EION pro Monat oder 4200 EION pro Jahr, bezahlt mit In-App-Coins."
+      "a": "Ja. Der Messenger ist vollständig kostenlos. Täglich gibt es ein kostenloses Kontingent — 15 KI-Anfragen, 200 MB Uploads und 10 Anrufe über Relay; darüber hinaus zahlen Sie mit Coins. Premium erweitert das Kontingent und hebt das Dateilimit auf 20 MB: 500 EION pro Monat oder 4200 EION pro Jahr."
     },
     {
       "q": "Sind meine Nachrichten verschlüsselt?",
@@ -83,7 +88,7 @@
     },
     {
       "q": "Was sind EION-Coins?",
-      "a": "Eine interne Währung der App: Premium, Sticker-Pakete, bezahlte Kanal-Abos und Überweisungen zwischen Nutzern. Bei der Registrierung erhalten Sie 50 Coins. Sie sind kein Geld und keine Kryptowährung und können nicht in Geld getauscht werden."
+      "a": "Eine interne Währung der App: Premium, Sticker-Pakete, kostenpflichtige Kanal-Abos, Überweisungen zwischen Nutzern und alles über dem kostenlosen Tageskontingent — KI-Anfragen, Uploads, Anrufe über Relay. Bei der Registrierung erhalten Sie 50 Coins. Sie sind weder Geld noch Kryptowährung und können nicht in Geld getauscht werden."
     },
     {
       "q": "Welche Plattformen werden unterstützt?",
@@ -114,6 +119,7 @@
   "tok_use4v": "zwischen Nutzern, 1% Gebühr",
   "tok_plan": "Der Plan",
   "tok_plan_text": "Ein langfristiges Ziel ist es, EION-Coins über die App hinaus zu bringen — als Token auf Solana. Diese Arbeit hat noch nicht begonnen, und es werden keine Termine versprochen.",
+  "tok_burn_text": "Ein Teil jeder Zahlung an die Plattform wird endgültig verbrannt — 30% bei Anrufen und Uploads, 40% beim KI-Assistenten und bei Sticker-Paketen, 50% bei Premium. Verbrannte Coins verlassen den Umlauf und landen auf keinem Konto.",
   "tok_disclaimer": "Heute sind EION-Coins eine interne Verrechnungseinheit des Dienstes. Sie sind kein Geld, keine Wertpapiere und keine Kryptowährung, können nicht in Geld getauscht werden, und diese Seite ist kein Investitionsangebot.",
   "footer_privacy": "Datenschutzerklärung",
   "footer_terms": "Nutzungsbedingungen",

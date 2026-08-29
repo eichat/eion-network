@@ -28,6 +28,10 @@
   "dl_notify": "Beritahu Saya",
   "tok_label": "Koin",
   "tok_title": "Koin <span>EION</span>",
+  "tok_free": "Jatah gratis harian",
+  "tok_free_v": "AI 15 · 200 MB · 10 panggilan",
+  "tok_over": "Di atas jatah",
+  "tok_over_v": "3 · 1 / MB · 2 koin",
   "tok_register": "Bonus pendaftaran",
   "prem_label": "Premium",
   "prem_title": "Buka <span>Premium</span>",
@@ -35,11 +39,12 @@
   "prem_monthly_period": "EION / bulan",
   "prem_yearly_tag": "Tahunan — Nilai Terbaik",
   "prem_yearly_period": "EION / tahun",
-  "prem_f1": "Tanpa iklan",
-  "prem_f2": "Dukungan prioritas",
-  "prem_f3": "Penyimpanan diperluas",
-  "prem_f4": "Panggilan video HD",
-  "prem_f5": "2 bulan gratis",
+  "prem_f1": "File hingga 20 MB, bukan 5",
+  "prem_f2": "Asisten AI: 100 permintaan per hari, bukan 15",
+  "prem_f3": "Unggahan: 1 GB per hari, bukan 200 MB",
+  "prem_f4": "Panggilan lewat relay: 50 per hari, bukan 10",
+  "prem_f5": "Nama berwarna dan cincin avatar",
+  "prem_f6": "Hemat 1800 koin — lebih dari tiga bulan gratis",
   "rm_label": "Peta Jalan",
   "rm_title": "Apa <span>selanjutnya</span>",
   "rm_ph1": "Fase 1 — sekarang",
@@ -53,7 +58,7 @@
   "rm_2_1": "Publikasi di Google Play",
   "rm_2_2": "Pembaruan otomatis",
   "rm_2_3": "Ukuran unduhan lebih kecil",
-  "rm_2_4": "Pemulihan kata sandi lewat email",
+  "rm_2_4": "Hadiah untuk aktivitas",
   "rm_ph3": "Fase 3 — direncanakan",
   "rm_h3": "Privasi",
   "rm_3_1": "Pesan terenkripsi ujung-ke-ujung",
@@ -75,7 +80,7 @@
     },
     {
       "q": "Apakah EION gratis?",
-      "a": "Ya. Aplikasinya sepenuhnya gratis. Premium — tanpa iklan dan penyimpanan lebih besar — seharga 500 EION per bulan atau 4200 EION per tahun, dibayar dengan koin dalam aplikasi."
+      "a": "Ya. Aplikasi pesan ini sepenuhnya gratis. Setiap hari ada jatah gratis: 15 permintaan AI, 200 MB unggahan, dan 10 panggilan lewat relay; di atas itu Anda membayar dengan koin. Premium memperluas jatah dan menaikkan batas berkas menjadi 20 MB: 500 EION per bulan atau 4200 EION per tahun."
     },
     {
       "q": "Apakah pesan saya terenkripsi?",
@@ -83,7 +88,7 @@
     },
     {
       "q": "Apa itu koin EION?",
-      "a": "Mata uang internal aplikasi: premium, paket stiker, langganan kanal berbayar, dan transfer antarpengguna. Saat mendaftar Anda menerima 50 koin. Ini bukan uang maupun mata uang kripto dan tidak dapat ditukar dengan uang."
+      "a": "Mata uang internal aplikasi: premium, paket stiker, langganan kanal berbayar, transfer antar pengguna, dan segala sesuatu di atas jatah gratis harian — permintaan AI, unggahan, panggilan lewat relay. Saat mendaftar Anda menerima 50 koin. Ini bukan uang maupun mata uang kripto dan tidak dapat ditukar dengan uang."
     },
     {
       "q": "Platform apa saja yang didukung?",
@@ -114,6 +119,7 @@
   "tok_use4v": "antarpengguna, biaya 1%",
   "tok_plan": "Rencana",
   "tok_plan_text": "Tujuan jangka panjang adalah membawa koin EION keluar dari aplikasi — sebagai token di Solana. Pekerjaan itu belum dimulai dan tidak ada tanggal yang dijanjikan.",
+  "tok_burn_text": "Sebagian dari setiap pembayaran ke platform dibakar selamanya — 30% untuk panggilan dan unggahan, 40% untuk asisten AI dan paket stiker, 50% untuk premium. Koin yang dibakar keluar dari peredaran dan tidak masuk ke akun mana pun.",
   "tok_disclaimer": "Saat ini koin EION adalah satuan pembukuan internal layanan. Koin ini bukan uang, bukan efek, bukan mata uang kripto, tidak dapat ditukar dengan uang, dan halaman ini bukan penawaran investasi.",
   "footer_privacy": "Kebijakan Privasi",
   "footer_terms": "Ketentuan Penggunaan",

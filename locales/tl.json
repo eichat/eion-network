@@ -28,6 +28,10 @@
   "dl_notify": "Abisuhan ako",
   "tok_label": "Mga coin",
   "tok_title": "EION <span>coins</span>",
+  "tok_free": "Libreng arawang alawans",
+  "tok_free_v": "AI 15 · 200 MB · 10 tawag",
+  "tok_over": "Lampas sa alawans",
+  "tok_over_v": "3 · 1 / MB · 2 barya",
   "tok_register": "Bonus sa pagpaparehistro",
   "prem_label": "Premium",
   "prem_title": "I-unlock ang <span>Premium</span>",
@@ -35,11 +39,12 @@
   "prem_monthly_period": "EION / buwan",
   "prem_yearly_tag": "Taunan — Pinakamainam",
   "prem_yearly_period": "EION / taon",
-  "prem_f1": "Walang ads",
-  "prem_f2": "Priyoridad na suporta",
-  "prem_f3": "Mas malaking imbakan",
-  "prem_f4": "Mga HD video call",
-  "prem_f5": "2 buwang libre",
+  "prem_f1": "Mga file hanggang 20 MB sa halip na 5",
+  "prem_f2": "AI assistant: 100 kahilingan bawat araw sa halip na 15",
+  "prem_f3": "Upload: 1 GB bawat araw sa halip na 200 MB",
+  "prem_f4": "Tawag sa pamamagitan ng relay: 50 bawat araw sa halip na 10",
+  "prem_f5": "May kulay na palayaw at singsing ng avatar",
+  "prem_f6": "Nakakatipid ng 1800 barya — mahigit tatlong buwang libre",
   "rm_label": "Mga plano",
   "rm_title": "Ano ang <span>susunod</span>",
   "rm_ph1": "Yugto 1 — ngayon",
@@ -53,7 +58,7 @@
   "rm_2_1": "Paglalathala sa Google Play",
   "rm_2_2": "Awtomatikong update",
   "rm_2_3": "Mas maliit na laki ng download",
-  "rm_2_4": "Pagbawi ng password sa email",
+  "rm_2_4": "Gantimpala para sa aktibidad",
   "rm_ph3": "Yugto 3 — nakaplano",
   "rm_h3": "Pagkapribado",
   "rm_3_1": "Mga mensaheng end-to-end encrypted",
@@ -75,7 +80,7 @@
     },
     {
       "q": "Libre ba ang EION?",
-      "a": "Oo. Libre nang buo ang messenger. Ang premium — walang ads, mas malaking imbakan — ay 500 EION kada buwan o 4200 EION kada taon, binabayaran gamit ang coins sa app."
+      "a": "Oo. Libre ang buong messenger. Araw-araw may libreng alawans: 15 kahilingan sa AI, 200 MB na upload at 10 tawag sa pamamagitan ng relay; lampas doon ay babayaran mo ng barya. Pinalalawak ng premium ang alawans at itinataas ang limitasyon ng file sa 20 MB: 500 EION bawat buwan o 4200 EION bawat taon."
     },
     {
       "q": "Naka-encrypt ba ang mga mensahe ko?",
@@ -83,7 +88,7 @@
     },
     {
       "q": "Ano ang EION coins?",
-      "a": "Panloob na pera ng app: premium, sticker pack, bayad na subscription sa channel at paglilipat sa pagitan ng mga user. Makakakuha ka ng 50 coins sa pagpaparehistro. Hindi ito pera o cryptocurrency at hindi maipapalit sa pera."
+      "a": "Panloob na pera ng app: premium, mga sticker pack, bayad na subscription sa channel, paglilipat sa pagitan ng mga user, at lahat ng lampas sa libreng arawang alawans — kahilingan sa AI, upload, tawag sa pamamagitan ng relay. Sa pagrehistro makakakuha ka ng 50 barya. Hindi ito pera o cryptocurrency at hindi ito maaaring ipalit sa pera."
     },
     {
       "q": "Anong mga platform ang suportado?",
@@ -114,6 +119,7 @@
   "tok_use4v": "sa pagitan ng mga user, 1% bayad",
   "tok_plan": "Ang plano",
   "tok_plan_text": "Pangmatagalang layunin na dalhin ang EION coins sa labas ng app — bilang token sa Solana. Hindi pa nagsisimula ang gawaing ito at walang ipinapangakong petsa.",
+  "tok_burn_text": "Bahagi ng bawat bayad sa plataporma ay tuluyang sinusunog — 30% sa mga tawag at upload, 40% sa AI assistant at mga sticker pack, 50% sa premium. Ang sinunog na barya ay nawawala sa sirkulasyon at hindi napupunta sa anumang account.",
   "tok_disclaimer": "Sa ngayon, ang EION coins ay panloob na yunit ng pagtutuos ng serbisyo. Hindi ito pera, sekyuridad o cryptocurrency, hindi maipapalit sa pera, at ang pahinang ito ay hindi alok na mamuhunan.",
   "footer_privacy": "Patakaran sa Privacy",
   "footer_terms": "Mga Tuntunin ng Paggamit",

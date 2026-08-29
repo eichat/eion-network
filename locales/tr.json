@@ -28,6 +28,10 @@
   "dl_notify": "Beni Bildir",
   "tok_label": "Coin",
   "tok_title": "EION <span>coin</span>",
+  "tok_free": "Günlük ücretsiz hak",
+  "tok_free_v": "YZ 15 · 200 MB · 10 arama",
+  "tok_over": "Hakkın üzerinde",
+  "tok_over_v": "3 · 1 / MB · 2 coin",
   "tok_register": "Kayıt bonusu",
   "prem_label": "Premium",
   "prem_title": "<span>Premium</span>'u Aç",
@@ -35,11 +39,12 @@
   "prem_monthly_period": "EION / ay",
   "prem_yearly_tag": "Yıllık — En İyi Değer",
   "prem_yearly_period": "EION / yıl",
-  "prem_f1": "Reklamsız",
-  "prem_f2": "Öncelikli destek",
-  "prem_f3": "Genişletilmiş depolama",
-  "prem_f4": "HD görüntülü aramalar",
-  "prem_f5": "2 ay ücretsiz",
+  "prem_f1": "5 MB yerine 20 MB'a kadar dosya",
+  "prem_f2": "Yapay zekâ asistanı: günde 15 yerine 100 istek",
+  "prem_f3": "Yükleme: günde 200 MB yerine 1 GB",
+  "prem_f4": "Relay üzerinden arama: günde 10 yerine 50",
+  "prem_f5": "Renkli takma ad ve avatar halkası",
+  "prem_f6": "1800 coin tasarruf — üç aydan fazlası bedava",
   "rm_label": "Yol Haritası",
   "rm_title": "<span>Sırada</span> Ne Var",
   "rm_ph1": "Aşama 1 — şimdi",
@@ -53,7 +58,7 @@
   "rm_2_1": "Google Play’de yayınlama",
   "rm_2_2": "Otomatik güncellemeler",
   "rm_2_3": "Daha küçük indirme boyutu",
-  "rm_2_4": "E-posta ile parola kurtarma",
+  "rm_2_4": "Etkinlik ödülleri",
   "rm_ph3": "Aşama 3 — planlanan",
   "rm_h3": "Gizlilik",
   "rm_3_1": "Uçtan uca şifreli mesajlar",
@@ -75,7 +80,7 @@
     },
     {
       "q": "EION ücretsiz mi?",
-      "a": "Evet. Mesajlaşma tamamen ücretsizdir. Premium — reklamsız, daha fazla alan — uygulama içi coin’lerle ödenmek üzere ayda 500 EION veya yılda 4200 EION’dur."
+      "a": "Evet. Mesajlaşma uygulaması tamamen ücretsiz. Her gün ücretsiz bir hak tanınır: 15 yapay zekâ isteği, 200 MB yükleme ve relay üzerinden 10 arama; bunun üzerinde coin ile ödersiniz. Premium bu hakkı genişletir ve dosya sınırını 20 MB'a çıkarır: ayda 500 EION veya yılda 4200 EION."
     },
     {
       "q": "Mesajlarım şifreli mi?",
@@ -83,7 +88,7 @@
     },
     {
       "q": "EION coin nedir?",
-      "a": "Uygulamanın dâhilî para birimi: premium, çıkartma paketleri, ücretli kanal abonelikleri ve kullanıcılar arası transferler. Kayıtta 50 coin verilir. Para veya kripto para değildir ve paraya çevrilemez."
+      "a": "Uygulamanın iç para birimi: premium, çıkartma paketleri, ücretli kanal abonelikleri, kullanıcılar arası transferler ve günlük ücretsiz hakkın üzerindeki her şey — yapay zekâ istekleri, yüklemeler, relay üzerinden aramalar. Kayıt olduğunuzda 50 coin alırsınız. Bunlar para veya kripto para değildir ve paraya çevrilemez."
     },
     {
       "q": "Hangi platformlar destekleniyor?",
@@ -114,6 +119,7 @@
   "tok_use4v": "kullanıcılar arası, %1 komisyon",
   "tok_plan": "Plan",
   "tok_plan_text": "Uzun vadeli hedef, EION coin’lerini uygulamanın dışına taşımak — Solana üzerinde bir token olarak. Bu çalışma henüz başlamadı ve herhangi bir tarih vaat edilmiyor.",
+  "tok_burn_text": "Platforma yapılan her ödemenin bir kısmı kalıcı olarak yakılır — aramalar ve yüklemelerde %30, yapay zekâ asistanı ve çıkartma paketlerinde %40, premiumda %50. Yakılan coinler dolaşımdan çıkar ve hiçbir hesaba geçmez.",
   "tok_disclaimer": "Bugün EION coin’leri hizmetin dâhilî hesap birimidir. Para, menkul kıymet veya kripto para değildir, paraya çevrilemez ve bu sayfa bir yatırım teklifi değildir.",
   "footer_privacy": "Gizlilik Politikası",
   "footer_terms": "Kullanım Şartları",
