@@ -103,7 +103,7 @@
   "dl_ready": "✓ ベータ版あり",
   "dl_get": "APK をダウンロード",
   "dl_get_linux": "AppImage をダウンロード",
-  "dl_note": "Android では提供元不明のアプリをインストールする許可を求められます。Google Play 以外では通常のことです。Linux ではファイルに実行権限を付けて起動してください。",
+  "dl_note": "準備を整えているため、ベータ版は一時的に受付を停止しています。メールを登録いただければ、公開時にご連絡します。",
   "notify_title": "ストアに登場したら一度だけお知らせします",
   "notify_ph": "your@email.com",
   "notify_btn": "知らせる",

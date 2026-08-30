@@ -103,7 +103,7 @@
   "dl_ready": "✓ 测试版可用",
   "dl_get": "下载 APK",
   "dl_get_linux": "下载 AppImage",
-  "dl_note": "Android 会请求安装未知来源应用的权限 — 在 Google Play 之外这是正常的。在 Linux 上请为文件添加可执行权限后运行。",
+  "dl_note": "我们正在完善最后的准备，测试版暂时关闭。留下邮箱，开放时第一时间通知你。",
   "notify_title": "EION 上架时只发一封邮件通知你",
   "notify_ph": "your@email.com",
   "notify_btn": "通知我",
