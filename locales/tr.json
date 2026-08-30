@@ -103,7 +103,7 @@
   "dl_ready": "✓ Beta mevcut",
   "dl_get": "APK indir",
   "dl_get_linux": "AppImage indir",
-  "dl_note": "Android, bilinmeyen kaynaktan uygulama yüklemek için izin isteyecek — Google Play dışında bu normaldir. Linux’ta dosyayı çalıştırılabilir yapıp açın.",
+  "dl_note": "Hazırlıkları tamamlarken beta geçici olarak kapalı. E-postanı bırak, açılır açılmaz yazalım.",
   "notify_title": "EION mağazaya geldiğinde tek bir e-posta",
   "notify_ph": "sizin@eposta.com",
   "notify_btn": "Haber ver",

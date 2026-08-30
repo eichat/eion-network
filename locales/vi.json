@@ -103,7 +103,7 @@
   "dl_ready": "✓ Có bản beta",
   "dl_get": "Tải APK",
   "dl_get_linux": "Tải AppImage",
-  "dl_note": "Android sẽ hỏi quyền cài ứng dụng từ nguồn không xác định — điều này bình thường ngoài Google Play. Trên Linux, hãy cấp quyền thực thi cho tệp rồi chạy.",
+  "dl_note": "Bản beta tạm đóng trong lúc chúng tôi hoàn thiện. Hãy để lại email, chúng tôi sẽ báo ngay khi mở lại.",
   "notify_title": "Một email duy nhất khi EION lên cửa hàng",
   "notify_ph": "email@cua-ban.com",
   "notify_btn": "Báo cho tôi",

@@ -103,7 +103,7 @@
   "dl_ready": "✓ Beta disponível",
   "dl_get": "Baixar APK",
   "dl_get_linux": "Baixar AppImage",
-  "dl_note": "O Android pedirá permissão para instalar um aplicativo de origem desconhecida — isso é normal fora da Google Play. No Linux, torne o arquivo executável e execute-o.",
+  "dl_note": "O beta está temporariamente fechado enquanto finalizamos tudo. Deixe seu e-mail e avisaremos assim que abrir.",
   "notify_title": "Um e-mail quando o EION chegar à loja",
   "notify_ph": "seu@email.com",
   "notify_btn": "Avise-me",
