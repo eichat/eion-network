@@ -1,0 +1,12 @@
+{
+  "name": "EION",
+  "symbol": "EION",
+  "description": "In-app unit of the EION messenger. Today it pays for premium, sticker packs and paid channels inside the app. This token is a devnet rehearsal: it is not for sale and has no monetary value.",
+  "image": "https://eion.network/EION-256.png",
+  "external_url": "https://eion.network",
+  "attributes": [],
+  "properties": {
+    "files": [{ "uri": "https://eion.network/EION-256.png", "type": "image/png" }],
+    "category": "image"
+  }
+}
