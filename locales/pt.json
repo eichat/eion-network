@@ -137,5 +137,20 @@
   "tok_withdraw": "Levantável",
   "tok_withdraw_v": "apenas moedas que alguém lhe pagou",
   "tok_wallet": "Carteira",
-  "tok_wallet_v": "criada à mão, a chave fica no dispositivo"
+  "tok_wallet_v": "criada à mão, a chave fica no dispositivo",
+  "don_label": "Apoio",
+  "don_title": "Apoiar o <span>desenvolvimento</span>",
+  "don_copy": "Copiar",
+  "don_intro": "O EION é feito por um programador independente, sem investidores. Os donativos pagam servidores, armazenamento e as taxas de rede que a app cobre pelos utilizadores. Isto é apoio ao desenvolvimento — não é compra de moedas EION, venda de tokens nem investimento.",
+  "don_note": "Verifique o endereço antes de enviar: deve coincidir com o mostrado na app (Definições → Apoio). Os donativos não são reembolsáveis e não dão direitos, participações ou tokens futuros.",
+  "don_net_btc": "Bitcoin",
+  "don_net_usdt": "TRON (TRC-20)",
+  "don_net_sol": "Solana",
+  "don_net_eth": "Ethereum (ERC-20)",
+  "don_w_btc": "Envie apenas BTC na rede Bitcoin.",
+  "don_w_usdt": "Envie apenas USDT (TRC-20) na TRON. USDT do Ethereum ou BNB Chain será perdido.",
+  "don_w_sol": "Rede Solana: SOL e qualquer token SPL (USDC, USDT) vão para este mesmo endereço.",
+  "don_w_eth": "Apenas rede Ethereum: ETH e tokens ERC-20. Não envie TRC-20 nem BEP-20.",
+  "nav_support": "Apoio",
+  "footer_donate": "Apoiar o desenvolvimento"
 }

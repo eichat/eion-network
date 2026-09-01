@@ -137,5 +137,20 @@
   "tok_withdraw": "Bisa ditarik",
   "tok_withdraw_v": "hanya koin yang dibayarkan orang lain",
   "tok_wallet": "Dompet",
-  "tok_wallet_v": "dibuat manual, kunci tetap di perangkat"
+  "tok_wallet_v": "dibuat manual, kunci tetap di perangkat",
+  "don_label": "Dukungan",
+  "don_title": "Dukung <span>pengembangan</span>",
+  "don_copy": "Salin",
+  "don_intro": "EION dibuat oleh pengembang independen, tanpa investor. Donasi membayar server, penyimpanan, dan biaya jaringan yang ditanggung aplikasi untuk penggunanya. Ini dukungan untuk pengembangan — bukan pembelian koin EION, bukan penjualan token, dan bukan investasi.",
+  "don_note": "Periksa alamatnya sebelum mengirim: harus sama dengan yang ditampilkan di aplikasi (Pengaturan → Dukungan). Donasi tidak dapat dikembalikan dan tidak memberi hak, saham, atau token di masa depan.",
+  "don_net_btc": "Bitcoin",
+  "don_net_usdt": "TRON (TRC-20)",
+  "don_net_sol": "Solana",
+  "don_net_eth": "Ethereum (ERC-20)",
+  "don_w_btc": "Kirim hanya BTC di jaringan Bitcoin.",
+  "don_w_usdt": "Kirim hanya USDT (TRC-20) di TRON. USDT dari Ethereum atau BNB Chain akan hilang.",
+  "don_w_sol": "Jaringan Solana: SOL dan token SPL apa pun (USDC, USDT) masuk ke alamat yang sama.",
+  "don_w_eth": "Hanya jaringan Ethereum: ETH dan token ERC-20. Jangan kirim TRC-20 atau BEP-20.",
+  "nav_support": "Dukungan",
+  "footer_donate": "Dukung pengembangan"
 }

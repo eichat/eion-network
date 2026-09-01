@@ -137,5 +137,20 @@
   "tok_withdraw": "Maaaring i-withdraw",
   "tok_withdraw_v": "mga baryang binayad sa iyo lamang",
   "tok_wallet": "Wallet",
-  "tok_wallet_v": "ginagawa nang manu-mano, nasa device ang susi"
+  "tok_wallet_v": "ginagawa nang manu-mano, nasa device ang susi",
+  "don_label": "Suporta",
+  "don_title": "Suportahan ang <span>pagbuo</span>",
+  "don_copy": "Kopyahin",
+  "don_intro": "Ginagawa ang EION ng isang malayang developer, walang investor. Ang mga donasyon ay para sa server, storage at sa mga bayarin sa network na sinasagot ng app para sa mga user. Suporta ito sa pagbuo — hindi pagbili ng EION coins, hindi pagbebenta ng token at hindi pamumuhunan.",
+  "don_note": "Suriin ang address bago magpadala: dapat tugma ito sa ipinapakita sa app (Mga Setting → Suporta). Hindi maibabalik ang mga donasyon at walang ibinibigay na karapatan, bahagi o token sa hinaharap.",
+  "don_net_btc": "Bitcoin",
+  "don_net_usdt": "TRON (TRC-20)",
+  "don_net_sol": "Solana",
+  "don_net_eth": "Ethereum (ERC-20)",
+  "don_w_btc": "BTC lamang sa Bitcoin network ang ipadala.",
+  "don_w_usdt": "USDT (TRC-20) lamang sa TRON ang ipadala. Mawawala ang USDT mula sa Ethereum o BNB Chain.",
+  "don_w_sol": "Solana network: SOL at anumang SPL token (USDC, USDT) ay papunta sa parehong address.",
+  "don_w_eth": "Ethereum network lang: ETH at ERC-20 tokens. Huwag magpadala ng TRC-20 o BEP-20.",
+  "nav_support": "Suporta",
+  "footer_donate": "Suportahan ang pagbuo"
 }

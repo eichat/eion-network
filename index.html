@@ -277,6 +277,23 @@ a.dl-card{text-decoration:none;color:inherit;display:block}
 #cookieBar button{font:inherit;font-size:.82rem;padding:8px 15px;border-radius:8px;cursor:pointer;border:1px solid var(--neon);background:transparent;color:var(--neon)}
 #cookieBar button.ok{background:var(--neon);color:#02121c}
 
+
+#support { background:var(--bg2); }
+.don-intro { max-width:760px;margin:-24px 0 36px;color:var(--text2);font-size:0.95rem;line-height:1.8;font-weight:300; }
+.don-grid { display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px; }
+.don-card { display:flex;gap:14px;align-items:flex-start;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:14px; }
+.don-card:hover { border-color:rgba(0,212,255,0.3); }
+.don-qr { flex:0 0 88px;width:88px;height:88px;background:#fff;border-radius:8px;padding:4px; }
+.don-qr svg { display:block;width:100%;height:100%; }
+.don-body { min-width:0;flex:1; }
+.don-asset { font-family:'Orbitron',monospace;font-size:0.95rem;font-weight:700;color:var(--text);letter-spacing:1px; }
+.don-net { font-size:0.78rem;color:var(--neon);margin:2px 0 8px;letter-spacing:0.5px; }
+.don-addr-row { display:flex;align-items:center;gap:8px; }
+.don-addr { font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.72rem;color:var(--text2);word-break:break-all;line-height:1.5; }
+.don-copy { flex:0 0 auto;background:transparent;border:1px solid rgba(0,212,255,0.4);color:var(--neon);border-radius:6px;padding:4px 10px;font-size:0.7rem;cursor:pointer;font-family:inherit; }
+.don-copy:hover { background:rgba(0,212,255,0.1); }
+.don-warn { font-size:0.72rem;color:#e0a355;margin-top:8px;line-height:1.5; }
+.don-note { max-width:760px;margin-top:28px;color:var(--text2);font-size:0.82rem;line-height:1.8;font-weight:300;opacity:0.85; }
 </style>
 </head>
 <body>
@@ -302,6 +319,7 @@ a.dl-card{text-decoration:none;color:inherit;display:block}
     <li><a href="#download" data-i18n="nav_download">Download</a></li>
     <li><a href="#token" data-i18n="nav_token">Token</a></li>
     <li><a href="#roadmap" data-i18n="nav_roadmap">Roadmap</a></li>
+    <li><a href="#support" data-i18n="nav_support">Support</a></li>
     <li><a href="#faq" data-i18n="nav_faq">FAQ</a></li>
   </ul>
   <div class="lang-switcher" id="langSwitcher">
@@ -512,6 +530,66 @@ a.dl-card{text-decoration:none;color:inherit;display:block}
   </div>
 </section>
 
+
+<section id="support">
+  <div class="section-inner">
+    <div class="section-label" data-i18n="don_label">Support</div>
+    <h2 class="section-title" data-i18n="don_title">Support <span>development</span></h2>
+    <p class="don-intro" data-i18n="don_intro"></p>
+    <div class="don-grid">
+      <div class="don-card reveal">
+        <div class="don-qr"><svg viewBox="0 0 31 31" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges"><rect width="31" height="31" fill="#fff"/><path fill="#000" d="M1 1h7v1h-7zM9 1h3v1h-3zM13 1h4v1h-4zM18 1h1v1h-1zM20 1h2v1h-2zM23 1h7v1h-7zM1 2h1v1h-1zM7 2h1v1h-1zM9 2h1v1h-1zM11 2h4v1h-4zM17 2h2v1h-2zM21 2h1v1h-1zM23 2h1v1h-1zM29 2h1v1h-1zM1 3h1v1h-1zM3 3h3v1h-3zM7 3h1v1h-1zM11 3h1v1h-1zM13 3h1v1h-1zM17 3h1v1h-1zM23 3h1v1h-1zM25 3h3v1h-3zM29 3h1v1h-1zM1 4h1v1h-1zM3 4h3v1h-3zM7 4h1v1h-1zM9 4h5v1h-5zM15 4h2v1h-2zM18 4h1v1h-1zM20 4h1v1h-1zM23 4h1v1h-1zM25 4h3v1h-3zM29 4h1v1h-1zM1 5h1v1h-1zM3 5h3v1h-3zM7 5h1v1h-1zM11 5h2v1h-2zM15 5h1v1h-1zM17 5h4v1h-4zM23 5h1v1h-1zM25 5h3v1h-3zM29 5h1v1h-1zM1 6h1v1h-1zM7 6h1v1h-1zM14 6h1v1h-1zM16 6h5v1h-5zM23 6h1v1h-1zM29 6h1v1h-1zM1 7h7v1h-7zM9 7h1v1h-1zM11 7h1v1h-1zM13 7h1v1h-1zM15 7h1v1h-1zM17 7h1v1h-1zM19 7h1v1h-1zM21 7h1v1h-1zM23 7h7v1h-7zM9 8h2v1h-2zM12 8h2v1h-2zM16 8h3v1h-3zM20 8h2v1h-2zM1 9h1v1h-1zM3 9h2v1h-2zM6 9h3v1h-3zM11 9h2v1h-2zM14 9h1v1h-1zM16 9h2v1h-2zM19 9h1v1h-1zM21 9h1v1h-1zM23 9h1v1h-1zM26 9h1v1h-1zM28 9h2v1h-2zM2 10h1v1h-1zM5 10h2v1h-2zM9 10h1v1h-1zM11 10h6v1h-6zM18 10h1v1h-1zM21 10h5v1h-5zM27 10h2v1h-2zM3 11h2v1h-2zM6 11h3v1h-3zM13 11h2v1h-2zM21 11h2v1h-2zM24 11h1v1h-1zM26 11h1v1h-1zM28 11h1v1h-1zM1 12h1v1h-1zM3 12h2v1h-2zM6 12h1v1h-1zM10 12h1v1h-1zM12 12h2v1h-2zM16 12h1v1h-1zM20 12h1v1h-1zM22 12h3v1h-3zM28 12h1v1h-1zM2 13h1v1h-1zM5 13h1v1h-1zM7 13h1v1h-1zM9 13h2v1h-2zM12 13h1v1h-1zM15 13h2v1h-2zM18 13h1v1h-1zM20 13h1v1h-1zM25 13h1v1h-1zM27 13h2v1h-2zM2 14h1v1h-1zM5 14h1v1h-1zM8 14h2v1h-2zM12 14h1v1h-1zM15 14h6v1h-6zM23 14h1v1h-1zM27 14h1v1h-1zM3 15h2v1h-2zM6 15h2v1h-2zM9 15h1v1h-1zM11 15h4v1h-4zM18 15h4v1h-4zM24 15h1v1h-1zM28 15h2v1h-2zM3 16h1v1h-1zM6 16h1v1h-1zM8 16h3v1h-3zM12 16h2v1h-2zM15 16h1v1h-1zM17 16h1v1h-1zM21 16h3v1h-3zM25 16h2v1h-2zM1 17h2v1h-2zM6 17h3v1h-3zM11 17h1v1h-1zM15 17h1v1h-1zM17 17h1v1h-1zM22 17h1v1h-1zM26 17h3v1h-3zM3 18h2v1h-2zM9 18h1v1h-1zM11 18h2v1h-2zM15 18h2v1h-2zM19 18h4v1h-4zM24 18h1v1h-1zM28 18h1v1h-1zM1 19h1v1h-1zM4 19h4v1h-4zM13 19h4v1h-4zM24 19h2v1h-2zM28 19h1v1h-1zM5 20h2v1h-2zM8 20h3v1h-3zM12 20h4v1h-4zM18 20h1v1h-1zM20 20h2v1h-2zM23 20h6v1h-6zM2 21h3v1h-3zM7 21h6v1h-6zM14 21h5v1h-5zM20 21h6v1h-6zM27 21h1v1h-1zM29 21h1v1h-1zM9 22h1v1h-1zM12 22h1v1h-1zM17 22h1v1h-1zM21 22h1v1h-1zM25 22h1v1h-1zM29 22h1v1h-1zM1 23h7v1h-7zM9 23h3v1h-3zM13 23h1v1h-1zM15 23h1v1h-1zM19 23h3v1h-3zM23 23h1v1h-1zM25 23h1v1h-1zM27 23h1v1h-1zM1 24h1v1h-1zM7 24h1v1h-1zM9 24h1v1h-1zM11 24h1v1h-1zM13 24h3v1h-3zM17 24h1v1h-1zM21 24h1v1h-1zM25 24h1v1h-1zM1 25h1v1h-1zM3 25h3v1h-3zM7 25h1v1h-1zM11 25h1v1h-1zM16 25h2v1h-2zM21 25h6v1h-6zM28 25h1v1h-1zM1 26h1v1h-1zM3 26h3v1h-3zM7 26h1v1h-1zM9 26h1v1h-1zM11 26h4v1h-4zM16 26h2v1h-2zM19 26h2v1h-2zM22 26h1v1h-1zM25 26h3v1h-3zM29 26h1v1h-1zM1 27h1v1h-1zM3 27h3v1h-3zM7 27h1v1h-1zM9 27h2v1h-2zM14 27h2v1h-2zM20 27h1v1h-1zM22 27h1v1h-1zM24 27h1v1h-1zM26 27h1v1h-1zM29 27h1v1h-1zM1 28h1v1h-1zM7 28h1v1h-1zM10 28h1v1h-1zM14 28h2v1h-2zM17 28h1v1h-1zM22 28h1v1h-1zM26 28h1v1h-1zM28 28h1v1h-1zM1 29h7v1h-7zM9 29h3v1h-3zM14 29h1v1h-1zM17 29h1v1h-1zM20 29h3v1h-3zM24 29h1v1h-1zM26 29h3v1h-3z"/></svg></div>
+        <div class="don-body">
+          <div class="don-asset">Bitcoin</div>
+          <div class="don-net" data-i18n="don_net_btc">Bitcoin</div>
+          <div class="don-addr-row">
+            <code class="don-addr" id="addr-btc">15CKaTpTRyQDejvqCbUhZjxvZw46Y7phwf</code>
+            <button class="don-copy" type="button" data-addr="15CKaTpTRyQDejvqCbUhZjxvZw46Y7phwf" data-i18n="don_copy">Copy</button>
+          </div>
+          <div class="don-warn" data-i18n="don_w_btc"></div>
+        </div>
+      </div>
+      <div class="don-card reveal">
+        <div class="don-qr"><svg viewBox="0 0 31 31" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges"><rect width="31" height="31" fill="#fff"/><path fill="#000" d="M1 1h7v1h-7zM9 1h3v1h-3zM18 1h2v1h-2zM23 1h7v1h-7zM1 2h1v1h-1zM7 2h1v1h-1zM10 2h1v1h-1zM12 2h2v1h-2zM17 2h1v1h-1zM20 2h2v1h-2zM23 2h1v1h-1zM29 2h1v1h-1zM1 3h1v1h-1zM3 3h3v1h-3zM7 3h1v1h-1zM12 3h3v1h-3zM16 3h4v1h-4zM23 3h1v1h-1zM25 3h3v1h-3zM29 3h1v1h-1zM1 4h1v1h-1zM3 4h3v1h-3zM7 4h1v1h-1zM9 4h1v1h-1zM11 4h1v1h-1zM15 4h5v1h-5zM21 4h1v1h-1zM23 4h1v1h-1zM25 4h3v1h-3zM29 4h1v1h-1zM1 5h1v1h-1zM3 5h3v1h-3zM7 5h1v1h-1zM9 5h2v1h-2zM12 5h4v1h-4zM17 5h1v1h-1zM19 5h1v1h-1zM23 5h1v1h-1zM25 5h3v1h-3zM29 5h1v1h-1zM1 6h1v1h-1zM7 6h1v1h-1zM9 6h1v1h-1zM13 6h4v1h-4zM20 6h1v1h-1zM23 6h1v1h-1zM29 6h1v1h-1zM1 7h7v1h-7zM9 7h1v1h-1zM11 7h1v1h-1zM13 7h1v1h-1zM15 7h1v1h-1zM17 7h1v1h-1zM19 7h1v1h-1zM21 7h1v1h-1zM23 7h7v1h-7zM9 8h1v1h-1zM11 8h1v1h-1zM15 8h1v1h-1zM18 8h1v1h-1zM20 8h2v1h-2zM1 9h1v1h-1zM5 9h1v1h-1zM7 9h4v1h-4zM12 9h5v1h-5zM18 9h1v1h-1zM20 9h1v1h-1zM22 9h5v1h-5zM29 9h1v1h-1zM1 10h2v1h-2zM6 10h1v1h-1zM9 10h1v1h-1zM11 10h1v1h-1zM19 10h2v1h-2zM24 10h6v1h-6zM1 11h1v1h-1zM3 11h1v1h-1zM6 11h2v1h-2zM9 11h1v1h-1zM11 11h1v1h-1zM13 11h5v1h-5zM24 11h1v1h-1zM27 11h1v1h-1zM29 11h1v1h-1zM2 12h2v1h-2zM6 12h1v1h-1zM11 12h4v1h-4zM17 12h2v1h-2zM20 12h2v1h-2zM23 12h1v1h-1zM26 12h1v1h-1zM28 12h1v1h-1zM1 13h2v1h-2zM4 13h4v1h-4zM10 13h5v1h-5zM20 13h1v1h-1zM22 13h1v1h-1zM25 13h4v1h-4zM1 14h2v1h-2zM5 14h2v1h-2zM9 14h2v1h-2zM12 14h1v1h-1zM14 14h2v1h-2zM17 14h1v1h-1zM19 14h1v1h-1zM21 14h1v1h-1zM24 14h6v1h-6zM4 15h1v1h-1zM7 15h1v1h-1zM9 15h1v1h-1zM11 15h1v1h-1zM13 15h1v1h-1zM16 15h2v1h-2zM19 15h1v1h-1zM21 15h1v1h-1zM24 15h1v1h-1zM26 15h1v1h-1zM28 15h2v1h-2zM2 16h1v1h-1zM5 16h1v1h-1zM8 16h3v1h-3zM12 16h1v1h-1zM15 16h1v1h-1zM18 16h2v1h-2zM22 16h1v1h-1zM26 16h1v1h-1zM28 16h1v1h-1zM2 17h1v1h-1zM7 17h1v1h-1zM10 17h1v1h-1zM13 17h3v1h-3zM17 17h4v1h-4zM22 17h1v1h-1zM25 17h2v1h-2zM29 17h1v1h-1zM1 18h3v1h-3zM6 18h1v1h-1zM10 18h1v1h-1zM16 18h2v1h-2zM21 18h1v1h-1zM23 18h4v1h-4zM6 19h4v1h-4zM12 19h1v1h-1zM14 19h6v1h-6zM24 19h1v1h-1zM26 19h1v1h-1zM29 19h1v1h-1zM4 20h2v1h-2zM9 20h1v1h-1zM12 20h1v1h-1zM14 20h1v1h-1zM16 20h3v1h-3zM20 20h1v1h-1zM23 20h1v1h-1zM26 20h1v1h-1zM28 20h2v1h-2zM1 21h5v1h-5zM7 21h1v1h-1zM13 21h2v1h-2zM17 21h9v1h-9zM27 21h2v1h-2zM9 22h2v1h-2zM12 22h1v1h-1zM14 22h2v1h-2zM17 22h1v1h-1zM20 22h2v1h-2zM25 22h1v1h-1zM27 22h2v1h-2zM1 23h7v1h-7zM9 23h2v1h-2zM12 23h2v1h-2zM16 23h2v1h-2zM19 23h3v1h-3zM23 23h1v1h-1zM25 23h3v1h-3zM29 23h1v1h-1zM1 24h1v1h-1zM7 24h1v1h-1zM10 24h1v1h-1zM12 24h1v1h-1zM15 24h4v1h-4zM20 24h2v1h-2zM25 24h2v1h-2zM28 24h1v1h-1zM1 25h1v1h-1zM3 25h3v1h-3zM7 25h1v1h-1zM9 25h2v1h-2zM12 25h1v1h-1zM14 25h4v1h-4zM20 25h6v1h-6zM27 25h1v1h-1zM1 26h1v1h-1zM3 26h3v1h-3zM7 26h1v1h-1zM11 26h1v1h-1zM16 26h1v1h-1zM19 26h1v1h-1zM21 26h2v1h-2zM25 26h3v1h-3zM29 26h1v1h-1zM1 27h1v1h-1zM3 27h3v1h-3zM7 27h1v1h-1zM10 27h1v1h-1zM12 27h1v1h-1zM14 27h3v1h-3zM18 27h1v1h-1zM22 27h1v1h-1zM28 27h2v1h-2zM1 28h1v1h-1zM7 28h1v1h-1zM10 28h2v1h-2zM13 28h1v1h-1zM15 28h2v1h-2zM18 28h3v1h-3zM23 28h1v1h-1zM25 28h2v1h-2zM28 28h2v1h-2zM1 29h7v1h-7zM9 29h1v1h-1zM12 29h1v1h-1zM14 29h1v1h-1zM17 29h2v1h-2zM21 29h1v1h-1zM25 29h1v1h-1zM28 29h1v1h-1z"/></svg></div>
+        <div class="don-body">
+          <div class="don-asset">USDT</div>
+          <div class="don-net" data-i18n="don_net_usdt">TRON (TRC-20)</div>
+          <div class="don-addr-row">
+            <code class="don-addr" id="addr-usdt">TJ6rAiWPsDDDMNmdQb16WpmDbG46Au8PvB</code>
+            <button class="don-copy" type="button" data-addr="TJ6rAiWPsDDDMNmdQb16WpmDbG46Au8PvB" data-i18n="don_copy">Copy</button>
+          </div>
+          <div class="don-warn" data-i18n="don_w_usdt"></div>
+        </div>
+      </div>
+      <div class="don-card reveal">
+        <div class="don-qr"><svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges"><rect width="35" height="35" fill="#fff"/><path fill="#000" d="M1 1h7v1h-7zM10 1h1v1h-1zM12 1h2v1h-2zM23 1h1v1h-1zM27 1h7v1h-7zM1 2h1v1h-1zM7 2h1v1h-1zM9 2h2v1h-2zM12 2h4v1h-4zM18 2h1v1h-1zM22 2h2v1h-2zM25 2h1v1h-1zM27 2h1v1h-1zM33 2h1v1h-1zM1 3h1v1h-1zM3 3h3v1h-3zM7 3h1v1h-1zM9 3h6v1h-6zM17 3h5v1h-5zM27 3h1v1h-1zM29 3h3v1h-3zM33 3h1v1h-1zM1 4h1v1h-1zM3 4h3v1h-3zM7 4h1v1h-1zM9 4h3v1h-3zM13 4h1v1h-1zM20 4h1v1h-1zM25 4h1v1h-1zM27 4h1v1h-1zM29 4h3v1h-3zM33 4h1v1h-1zM1 5h1v1h-1zM3 5h3v1h-3zM7 5h1v1h-1zM10 5h1v1h-1zM14 5h1v1h-1zM16 5h1v1h-1zM19 5h1v1h-1zM22 5h1v1h-1zM25 5h1v1h-1zM27 5h1v1h-1zM29 5h3v1h-3zM33 5h1v1h-1zM1 6h1v1h-1zM7 6h1v1h-1zM10 6h1v1h-1zM12 6h1v1h-1zM17 6h1v1h-1zM21 6h1v1h-1zM25 6h1v1h-1zM27 6h1v1h-1zM33 6h1v1h-1zM1 7h7v1h-7zM9 7h1v1h-1zM11 7h1v1h-1zM13 7h1v1h-1zM15 7h1v1h-1zM17 7h1v1h-1zM19 7h1v1h-1zM21 7h1v1h-1zM23 7h1v1h-1zM25 7h1v1h-1zM27 7h7v1h-7zM9 8h3v1h-3zM13 8h1v1h-1zM15 8h1v1h-1zM23 8h1v1h-1zM25 8h1v1h-1zM1 9h1v1h-1zM7 9h1v1h-1zM9 9h3v1h-3zM13 9h4v1h-4zM18 9h1v1h-1zM23 9h2v1h-2zM26 9h2v1h-2zM30 9h3v1h-3zM1 10h1v1h-1zM3 10h1v1h-1zM5 10h2v1h-2zM8 10h1v1h-1zM10 10h1v1h-1zM12 10h1v1h-1zM19 10h2v1h-2zM23 10h3v1h-3zM27 10h3v1h-3zM31 10h3v1h-3zM1 11h1v1h-1zM3 11h5v1h-5zM10 11h1v1h-1zM16 11h2v1h-2zM19 11h1v1h-1zM22 11h1v1h-1zM25 11h1v1h-1zM27 11h1v1h-1zM30 11h3v1h-3zM2 12h1v1h-1zM5 12h2v1h-2zM8 12h2v1h-2zM13 12h1v1h-1zM15 12h3v1h-3zM23 12h1v1h-1zM25 12h2v1h-2zM28 12h1v1h-1zM30 12h2v1h-2zM5 13h7v1h-7zM13 13h7v1h-7zM21 13h3v1h-3zM27 13h1v1h-1zM31 13h2v1h-2zM1 14h1v1h-1zM3 14h4v1h-4zM8 14h1v1h-1zM12 14h1v1h-1zM15 14h1v1h-1zM17 14h2v1h-2zM21 14h1v1h-1zM23 14h2v1h-2zM27 14h2v1h-2zM30 14h2v1h-2zM33 14h1v1h-1zM3 15h1v1h-1zM5 15h5v1h-5zM13 15h2v1h-2zM18 15h3v1h-3zM22 15h2v1h-2zM25 15h2v1h-2zM29 15h4v1h-4zM1 16h1v1h-1zM4 16h1v1h-1zM11 16h3v1h-3zM16 16h1v1h-1zM19 16h2v1h-2zM24 16h3v1h-3zM30 16h4v1h-4zM1 17h2v1h-2zM7 17h2v1h-2zM11 17h2v1h-2zM14 17h1v1h-1zM20 17h2v1h-2zM26 17h1v1h-1zM30 17h3v1h-3zM3 18h1v1h-1zM6 18h1v1h-1zM8 18h1v1h-1zM10 18h2v1h-2zM13 18h1v1h-1zM17 18h2v1h-2zM20 18h1v1h-1zM22 18h2v1h-2zM27 18h2v1h-2zM30 18h2v1h-2zM33 18h1v1h-1zM1 19h1v1h-1zM7 19h1v1h-1zM9 19h1v1h-1zM11 19h2v1h-2zM14 19h1v1h-1zM16 19h2v1h-2zM20 19h1v1h-1zM24 19h1v1h-1zM26 19h1v1h-1zM28 19h2v1h-2zM31 19h1v1h-1zM33 19h1v1h-1zM1 20h4v1h-4zM8 20h1v1h-1zM10 20h2v1h-2zM13 20h1v1h-1zM16 20h1v1h-1zM18 20h2v1h-2zM22 20h1v1h-1zM25 20h1v1h-1zM27 20h1v1h-1zM29 20h3v1h-3zM1 21h2v1h-2zM5 21h1v1h-1zM7 21h3v1h-3zM11 21h3v1h-3zM15 21h1v1h-1zM17 21h1v1h-1zM20 21h5v1h-5zM26 21h1v1h-1zM28 21h2v1h-2zM32 21h1v1h-1zM1 22h2v1h-2zM4 22h1v1h-1zM6 22h1v1h-1zM10 22h1v1h-1zM13 22h1v1h-1zM17 22h3v1h-3zM21 22h1v1h-1zM23 22h1v1h-1zM28 22h5v1h-5zM1 23h1v1h-1zM4 23h1v1h-1zM6 23h7v1h-7zM15 23h3v1h-3zM19 23h1v1h-1zM21 23h3v1h-3zM26 23h2v1h-2zM29 23h1v1h-1zM31 23h1v1h-1zM1 24h1v1h-1zM3 24h1v1h-1zM5 24h1v1h-1zM10 24h1v1h-1zM13 24h1v1h-1zM15 24h1v1h-1zM24 24h2v1h-2zM27 24h2v1h-2zM31 24h1v1h-1zM1 25h2v1h-2zM7 25h1v1h-1zM9 25h1v1h-1zM11 25h1v1h-1zM13 25h1v1h-1zM16 25h3v1h-3zM20 25h3v1h-3zM24 25h6v1h-6zM9 26h1v1h-1zM11 26h2v1h-2zM15 26h3v1h-3zM19 26h3v1h-3zM23 26h1v1h-1zM25 26h1v1h-1zM29 26h1v1h-1zM32 26h2v1h-2zM1 27h7v1h-7zM10 27h2v1h-2zM13 27h2v1h-2zM16 27h1v1h-1zM19 27h1v1h-1zM22 27h1v1h-1zM24 27h2v1h-2zM27 27h1v1h-1zM29 27h4v1h-4zM1 28h1v1h-1zM7 28h1v1h-1zM10 28h1v1h-1zM12 28h5v1h-5zM20 28h1v1h-1zM24 28h2v1h-2zM29 28h5v1h-5zM1 29h1v1h-1zM3 29h3v1h-3zM7 29h1v1h-1zM10 29h2v1h-2zM14 29h1v1h-1zM16 29h1v1h-1zM19 29h1v1h-1zM22 29h1v1h-1zM25 29h5v1h-5zM33 29h1v1h-1zM1 30h1v1h-1zM3 30h3v1h-3zM7 30h1v1h-1zM11 30h2v1h-2zM15 30h1v1h-1zM17 30h2v1h-2zM21 30h1v1h-1zM23 30h1v1h-1zM28 30h4v1h-4zM33 30h1v1h-1zM1 31h1v1h-1zM3 31h3v1h-3zM7 31h1v1h-1zM10 31h1v1h-1zM14 31h1v1h-1zM17 31h2v1h-2zM21 31h1v1h-1zM25 31h1v1h-1zM29 31h1v1h-1zM31 31h3v1h-3zM1 32h1v1h-1zM7 32h1v1h-1zM10 32h1v1h-1zM13 32h5v1h-5zM19 32h3v1h-3zM23 32h1v1h-1zM25 32h2v1h-2zM29 32h3v1h-3zM1 33h7v1h-7zM9 33h1v1h-1zM12 33h1v1h-1zM15 33h1v1h-1zM17 33h4v1h-4zM23 33h3v1h-3zM29 33h4v1h-4z"/></svg></div>
+        <div class="don-body">
+          <div class="don-asset">SOL · USDC</div>
+          <div class="don-net" data-i18n="don_net_sol">Solana</div>
+          <div class="don-addr-row">
+            <code class="don-addr" id="addr-sol">5aUinxUGn6iX4ae4Wfi8nujYL6jGFyythUT5WkyjdCRx</code>
+            <button class="don-copy" type="button" data-addr="5aUinxUGn6iX4ae4Wfi8nujYL6jGFyythUT5WkyjdCRx" data-i18n="don_copy">Copy</button>
+          </div>
+          <div class="don-warn" data-i18n="don_w_sol"></div>
+        </div>
+      </div>
+      <div class="don-card reveal">
+        <div class="don-qr"><svg viewBox="0 0 31 31" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges"><rect width="31" height="31" fill="#fff"/><path fill="#000" d="M1 1h7v1h-7zM15 1h1v1h-1zM20 1h1v1h-1zM23 1h7v1h-7zM1 2h1v1h-1zM7 2h1v1h-1zM10 2h3v1h-3zM16 2h1v1h-1zM18 2h1v1h-1zM23 2h1v1h-1zM29 2h1v1h-1zM1 3h1v1h-1zM3 3h3v1h-3zM7 3h1v1h-1zM9 3h1v1h-1zM11 3h1v1h-1zM13 3h1v1h-1zM19 3h2v1h-2zM23 3h1v1h-1zM25 3h3v1h-3zM29 3h1v1h-1zM1 4h1v1h-1zM3 4h3v1h-3zM7 4h1v1h-1zM9 4h4v1h-4zM14 4h1v1h-1zM16 4h4v1h-4zM21 4h1v1h-1zM23 4h1v1h-1zM25 4h3v1h-3zM29 4h1v1h-1zM1 5h1v1h-1zM3 5h3v1h-3zM7 5h1v1h-1zM9 5h1v1h-1zM11 5h1v1h-1zM13 5h1v1h-1zM15 5h1v1h-1zM20 5h1v1h-1zM23 5h1v1h-1zM25 5h3v1h-3zM29 5h1v1h-1zM1 6h1v1h-1zM7 6h1v1h-1zM9 6h3v1h-3zM13 6h2v1h-2zM16 6h3v1h-3zM21 6h1v1h-1zM23 6h1v1h-1zM29 6h1v1h-1zM1 7h7v1h-7zM9 7h1v1h-1zM11 7h1v1h-1zM13 7h1v1h-1zM15 7h1v1h-1zM17 7h1v1h-1zM19 7h1v1h-1zM21 7h1v1h-1zM23 7h7v1h-7zM9 8h2v1h-2zM12 8h1v1h-1zM15 8h3v1h-3zM19 8h1v1h-1zM1 9h1v1h-1zM3 9h5v1h-5zM10 9h1v1h-1zM12 9h3v1h-3zM16 9h3v1h-3zM21 9h1v1h-1zM23 9h5v1h-5zM1 10h2v1h-2zM4 10h2v1h-2zM9 10h1v1h-1zM11 10h1v1h-1zM13 10h1v1h-1zM15 10h1v1h-1zM19 10h2v1h-2zM23 10h1v1h-1zM25 10h1v1h-1zM29 10h1v1h-1zM1 11h1v1h-1zM5 11h4v1h-4zM12 11h3v1h-3zM16 11h4v1h-4zM24 11h2v1h-2zM27 11h2v1h-2zM4 12h1v1h-1zM9 12h3v1h-3zM15 12h2v1h-2zM20 12h6v1h-6zM29 12h1v1h-1zM1 13h1v1h-1zM3 13h3v1h-3zM7 13h3v1h-3zM11 13h4v1h-4zM17 13h3v1h-3zM22 13h1v1h-1zM24 13h1v1h-1zM26 13h3v1h-3zM1 14h3v1h-3zM5 14h2v1h-2zM8 14h5v1h-5zM15 14h1v1h-1zM20 14h2v1h-2zM23 14h1v1h-1zM25 14h1v1h-1zM28 14h2v1h-2zM1 15h2v1h-2zM7 15h3v1h-3zM11 15h6v1h-6zM21 15h2v1h-2zM25 15h3v1h-3zM1 16h2v1h-2zM4 16h3v1h-3zM8 16h1v1h-1zM10 16h2v1h-2zM16 16h1v1h-1zM19 16h1v1h-1zM25 16h1v1h-1zM28 16h1v1h-1zM1 17h1v1h-1zM7 17h2v1h-2zM11 17h1v1h-1zM13 17h6v1h-6zM22 17h1v1h-1zM24 17h1v1h-1zM26 17h4v1h-4zM1 18h5v1h-5zM8 18h1v1h-1zM10 18h1v1h-1zM12 18h1v1h-1zM19 18h3v1h-3zM23 18h1v1h-1zM25 18h2v1h-2zM29 18h1v1h-1zM1 19h1v1h-1zM3 19h1v1h-1zM5 19h1v1h-1zM7 19h2v1h-2zM12 19h1v1h-1zM15 19h2v1h-2zM22 19h1v1h-1zM24 19h4v1h-4zM1 20h1v1h-1zM4 20h1v1h-1zM6 20h1v1h-1zM8 20h1v1h-1zM15 20h3v1h-3zM22 20h2v1h-2zM25 20h2v1h-2zM28 20h1v1h-1zM1 21h1v1h-1zM4 21h2v1h-2zM7 21h1v1h-1zM9 21h2v1h-2zM13 21h6v1h-6zM21 21h5v1h-5zM27 21h2v1h-2zM9 22h1v1h-1zM11 22h1v1h-1zM19 22h3v1h-3zM25 22h2v1h-2zM29 22h1v1h-1zM1 23h7v1h-7zM15 23h3v1h-3zM19 23h3v1h-3zM23 23h1v1h-1zM25 23h2v1h-2zM28 23h1v1h-1zM1 24h1v1h-1zM7 24h1v1h-1zM9 24h1v1h-1zM11 24h3v1h-3zM15 24h1v1h-1zM21 24h1v1h-1zM25 24h1v1h-1zM28 24h2v1h-2zM1 25h1v1h-1zM3 25h3v1h-3zM7 25h1v1h-1zM9 25h2v1h-2zM13 25h1v1h-1zM16 25h4v1h-4zM21 25h9v1h-9zM1 26h1v1h-1zM3 26h3v1h-3zM7 26h1v1h-1zM9 26h1v1h-1zM11 26h1v1h-1zM14 26h1v1h-1zM24 26h1v1h-1zM28 26h2v1h-2zM1 27h1v1h-1zM3 27h3v1h-3zM7 27h1v1h-1zM9 27h2v1h-2zM13 27h2v1h-2zM16 27h1v1h-1zM19 27h2v1h-2zM22 27h2v1h-2zM25 27h4v1h-4zM1 28h1v1h-1zM7 28h1v1h-1zM10 28h3v1h-3zM14 28h1v1h-1zM16 28h2v1h-2zM20 28h2v1h-2zM24 28h2v1h-2zM28 28h1v1h-1zM1 29h7v1h-7zM9 29h3v1h-3zM13 29h2v1h-2zM16 29h1v1h-1zM18 29h1v1h-1zM24 29h4v1h-4z"/></svg></div>
+        <div class="don-body">
+          <div class="don-asset">ETH · USDT · USDC</div>
+          <div class="don-net" data-i18n="don_net_eth">Ethereum (ERC-20)</div>
+          <div class="don-addr-row">
+            <code class="don-addr" id="addr-eth">0xc237e35105612e40af1266c4ea1d3409520336ee</code>
+            <button class="don-copy" type="button" data-addr="0xc237e35105612e40af1266c4ea1d3409520336ee" data-i18n="don_copy">Copy</button>
+          </div>
+          <div class="don-warn" data-i18n="don_w_eth"></div>
+        </div>
+      </div>
+    </div>
+    <p class="don-note" data-i18n="don_note"></p>
+  </div>
+</section>
+
 <section id="faq">
   <div class="section-inner">
     <div class="section-label" data-i18n="faq_label">FAQ</div>
@@ -528,6 +606,7 @@ a.dl-card{text-decoration:none;color:inherit;display:block}
     <a href="/privacy" data-i18n="footer_privacy">Privacy Policy</a>
     <a href="/terms" data-i18n="footer_terms">Terms of Service</a>
     <a href="/delete-account" data-i18n="footer_delete">Delete account</a>
+    <a href="#support" data-i18n="footer_donate">Support development</a>
     <a href="mailto:support@eion.network" data-i18n="footer_support">Support</a>
   </div>
   <div class="footer-copy">© 2026 EION</div>
@@ -958,6 +1037,25 @@ function cookieChoice(ok){
     });
   });
 })();
+
+  document.querySelectorAll('.don-copy').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var a = b.getAttribute('data-addr');
+      var done = function () {
+        var old = b.textContent; b.textContent = '✓';
+        setTimeout(function () { b.textContent = old; }, 1400);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(a).then(done, done);
+      } else {
+        // Старі браузери й сторінки без дозволу на буфер: виділяємо адресу,
+        // щоб її бодай можна було скопіювати вручну, а не лишати ні з чим.
+        var r = document.createRange();
+        r.selectNodeContents(b.previousElementSibling);
+        var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(r);
+      }
+    });
+  });
 </script>
 </body>
 </html>

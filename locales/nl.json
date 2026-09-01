@@ -137,5 +137,20 @@
   "tok_withdraw": "Opneembaar",
   "tok_withdraw_v": "alleen munten die iemand je betaalde",
   "tok_wallet": "Wallet",
-  "tok_wallet_v": "handmatig aangemaakt, sleutel blijft op het apparaat"
+  "tok_wallet_v": "handmatig aangemaakt, sleutel blijft op het apparaat",
+  "don_label": "Steun",
+  "don_title": "Steun de <span>ontwikkeling</span>",
+  "don_copy": "Kopiëren",
+  "don_intro": "EION wordt gebouwd door een onafhankelijke ontwikkelaar, zonder investeerders. Donaties betalen servers, opslag en de netwerkkosten die de app voor gebruikers dekt. Dit is steun voor de ontwikkeling — geen aankoop van EION-munten, geen tokenverkoop en geen investering.",
+  "don_note": "Controleer het adres voor je verzendt: het moet overeenkomen met dat in de app (Instellingen → Steun). Donaties zijn niet terugvorderbaar en geven geen rechten, aandelen of toekomstige tokens.",
+  "don_net_btc": "Bitcoin",
+  "don_net_usdt": "TRON (TRC-20)",
+  "don_net_sol": "Solana",
+  "don_net_eth": "Ethereum (ERC-20)",
+  "don_w_btc": "Stuur alleen BTC via het Bitcoin-netwerk.",
+  "don_w_usdt": "Stuur alleen USDT (TRC-20) via TRON. USDT van Ethereum of BNB Chain gaat verloren.",
+  "don_w_sol": "Solana-netwerk: SOL en elke SPL-token (USDC, USDT) gaan naar hetzelfde adres.",
+  "don_w_eth": "Alleen Ethereum-netwerk: ETH en ERC-20-tokens. Stuur geen TRC-20 of BEP-20.",
+  "nav_support": "Steun",
+  "footer_donate": "Steun de ontwikkeling"
 }
