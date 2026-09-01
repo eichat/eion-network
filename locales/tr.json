@@ -11,11 +11,11 @@
  "feat_label": "Uygulama",
  "feat_title": "İhtiyacınız olan her şey <span>tek uygulamada</span>",
  "f1_title": "Canlı Sohbet",
- "f1_desc": "Metin, fotoğraf, video, belge ve açıklamalı sesli mesajlar. Yanıtlar, iletme, tepkiler ve iletim durumları.",
+ "f1_desc": "Metin, fotoğraf, video ve açıklamalı belgeler, ayrıca sesli mesajlar. Yanıtlar, iletme, tepkiler ve teslim durumları.",
  "f2_title": "Yapay Zeka Asistanı",
  "f2_desc": "Gelişmiş dil modelleriyle desteklenen yerleşik yapay zeka sohbeti, her zaman kullanılabilir.",
  "f3_title": "HD Görüntülü Aramalar",
- "f3_desc": "WebRTC üzerinden sesli ve görüntülü aramalar — aracı yok.",
+ "f3_desc": "WebRTC üzerinden sesli ve görüntülü aramalar — mümkün olduğunda cihazlar arasında doğrudan, aksi hâlde aktarma üzerinden.",
  "f4_title": "Gruplar",
  "f4_desc": "Rolleri, yorumları, tepkileri ve ücretli abonelikleri olan gruplar ve kanallar. Canlı yayınlar uygulama içinde açılır.",
  "f5_title": "Şifreli aramalar",
@@ -59,7 +59,7 @@
  "rm_2_1": "Google Play’de yayınlama",
  "rm_2_2": "Otomatik güncellemeler",
  "rm_2_3": "Daha küçük indirme boyutu",
- "rm_2_4": "Etkinlik ödülleri",
+ "rm_2_4": "Telefon numarası doğrulama",
  "rm_ph3": "Aşama 3 — planlanan",
  "rm_h3": "Gizlilik",
  "rm_3_1": "Uçtan uca şifreli mesajlar",
@@ -81,7 +81,7 @@
   },
   {
    "q": "EION ücretsiz mi?",
-   "a": "Evet. Mesajlaşma uygulaması tamamen ücretsiz. Her gün ücretsiz bir hak tanınır: 15 yapay zekâ isteği, 200 MB yükleme ve relay üzerinden 10 arama; bunun üzerinde coin ile ödersiniz. Premium bu hakkı genişletir ve dosya sınırını 20 MB'a çıkarır: ayda 1000 EION veya yılda 8400 EION."
+   "a": "Evet. Mesajlaşma uygulaması tamamen ücretsiz. Her gün ücretsiz bir hak tanınır: 15 yapay zekâ isteği, 200 MB yükleme, 10 aktarmalı arama ve 200 otomatik çeviri; bunun üstü jetonla ödenir. Premium hakkı genişletir ve dosya sınırını 20 MB’a çıkarır: ayda 🪙 1000 veya yılda 🪙 8400."
   },
   {
    "q": "Mesajlarım şifreli mi?",
@@ -89,11 +89,11 @@
   },
   {
    "q": "Jeton nedir?",
-   "a": "Uygulamanın iç para birimi: premium, çıkartma paketleri, ücretli kanal abonelikleri, kullanıcılar arası transferler ve günlük ücretsiz hakkın üzerindeki her şey — yapay zekâ istekleri, yüklemeler, relay üzerinden aramalar. Kayıt olduğunuzda 50 coin alırsınız. Bunlar para veya kripto para değildir ve paraya çevrilemez."
+   "a": "Uygulamanın iç para birimi: premium, çıkartma paketleri, ücretli kanal abonelikleri, kullanıcılar arası transferler ve günlük ücretsiz hakkın üstündeki her şey — yapay zekâ istekleri, yüklemeler, aktarmalı aramalar, otomatik çeviri. Kayıt olunca 🪙 200 verilir. Bunlar para da kripto para da değildir ve paraya çevrilmez."
   },
   {
    "q": "Hangi platformlar destekleniyor?",
-   "a": "Android ve Linux — ikisi de şu anda beta olarak mevcut. iOS ve Windows planlanıyor."
+   "a": "Android ve Linux. Beta geçici olarak kapalı — her şeyi düzene sokuyoruz ve indirmeleri yeniden açacağız. iOS ve Windows planlanıyor."
   }
  ],
  "footer_tagline": "Konuşun. Paylaşın. Verileriniz sizin.",
@@ -119,7 +119,7 @@
  "tok_use4": "Transferler",
  "tok_use4v": "kullanıcılar arası, %1 komisyon",
  "tok_plan": "Plan",
- "tok_plan_text": "Uzun vadeli hedef, madeni paraları uygulama dışına Solana üzerindeki EION token’ı olarak taşımak. Test ağında bir deneme sürümü zaten var: değeri yok ve satın alınamaz. Gerçek bir lansman için tarih yok.",
+ "tok_plan_text": "Cüzdan ve jetonların EION token’ına dönüştürülmesi uygulamaya çoktan eklendi — ve çalışıyor. Şimdilik bir Solana test ağında: orada token’ın değeri yok, alınıp satılamıyor. Gerçek bir başlangıç olup olmayacağı kaynaklara bağlı. Tarih yok.",
  "tok_burn_text": "Platforma yapılan her ödemenin bir kısmı kalıcı olarak yakılır — aramalar ve yüklemelerde %30, yapay zekâ asistanı ve çıkartma paketlerinde %40, premiumda %50. Yakılan coinler dolaşımdan çıkar ve hiçbir hesaba geçmez.",
  "tok_disclaimer": "Bugün jetonlar hizmetin dâhilî hesap birimidir. Para, menkul kıymet veya kripto para değildir, paraya çevrilemez ve bu sayfa bir yatırım teklifi değildir.",
  "tok_live_title": "Coinler şu anda",

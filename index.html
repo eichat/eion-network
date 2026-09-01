@@ -374,9 +374,9 @@ a.dl-card{text-decoration:none;color:inherit;display:block}
     <div class="section-label" data-i18n="feat_label">Application</div>
     <h2 class="section-title" data-i18n="feat_title">Everything you need <span>in one app</span></h2>
     <div class="features-grid">
-      <div class="feature-card reveal"><span class="feature-icon">💬</span><h3 data-i18n="f1_title">Live Chat</h3><p data-i18n="f1_desc">Text, photos, video, documents and voice messages with captions. Replies, forwarding, reactions and delivery status.</p></div>
+      <div class="feature-card reveal"><span class="feature-icon">💬</span><h3 data-i18n="f1_title">Live Chat</h3><p data-i18n="f1_desc">Text, photos, videos and documents with captions, plus voice messages. Replies, forwarding, reactions and delivery status.</p></div>
       <div class="feature-card reveal"><span class="feature-icon">🤖</span><h3 data-i18n="f2_title">AI Assistant</h3><p data-i18n="f2_desc">Built-in AI chat powered by advanced language models, available anytime.</p></div>
-      <div class="feature-card reveal"><span class="feature-icon">📹</span><h3 data-i18n="f3_title">HD Video Calls</h3><p data-i18n="f3_desc">Audio and video calls over WebRTC — no intermediaries.</p></div>
+      <div class="feature-card reveal"><span class="feature-icon">📹</span><h3 data-i18n="f3_title">HD Video Calls</h3><p data-i18n="f3_desc">Audio and video calls over WebRTC — directly between devices when possible, otherwise via a relay.</p></div>
       <div class="feature-card reveal"><span class="feature-icon">👥</span><h3 data-i18n="f4_title">Groups</h3><p data-i18n="f4_desc">Groups and channels with roles, comments, reactions and paid subscriptions. Live streams play inside the app.</p></div>
       <div class="feature-card reveal"><span class="feature-icon">🔐</span><h3 data-i18n="f5_title">Encrypted calls</h3><p data-i18n="f5_desc">Calls are end-to-end encrypted by WebRTC — their content is not available to the server. For messages, end-to-end encryption is planned and does not exist yet.</p></div>
       <div class="feature-card reveal"><span class="feature-icon">💎</span><h3 data-i18n="f6_title">Coins</h3><p data-i18n="f6_desc">An in-app currency for premium, sticker packs and paid channels. Transfers between users included.</p></div>
@@ -428,7 +428,7 @@ a.dl-card{text-decoration:none;color:inherit;display:block}
       </div>
       <div class="token-info-block reveal">
         <h3 data-i18n="tok_plan">The plan</h3>
-        <p class="token-plan-text" data-i18n="tok_plan_text">A long-term goal is to take coins beyond the app — as an EION token on Solana. A test version already exists on a test network: it has no value and cannot be bought. There are no dates for a real launch.</p>
+        <p class="token-plan-text" data-i18n="tok_plan_text">The wallet and the exchange of coins for the EION token are already built into the app — and they work. For now on a Solana test network: there the token has no value and can be neither bought nor sold. Whether a real launch happens depends on resources. There are no dates.</p>
         <p class="token-plan-text" data-i18n="tok_burn_text">Part of every payment to the platform is burned for good — 30% on calls and uploads, 40% on the AI assistant and sticker packs, 50% on premium. Burned coins leave circulation and land in no account.</p>
         <p class="token-disclaimer" data-i18n="tok_disclaimer">Today coins are an internal accounting unit of the service. They are not money, securities or cryptocurrency, cannot be exchanged for money, and this page is not an offer to invest.</p>
       </div>
@@ -509,7 +509,7 @@ a.dl-card{text-decoration:none;color:inherit;display:block}
           <li data-i18n="rm_2_1">Publication on Google Play</li>
           <li data-i18n="rm_2_2">Automatic updates</li>
           <li data-i18n="rm_2_3">Smaller download size</li>
-          <li data-i18n="rm_2_4">Rewards for activity</li>
+          <li data-i18n="rm_2_4">Phone number verification</li>
         </ul>
       </div>
       <div class="rm-item reveal">
@@ -746,6 +746,12 @@ document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 // ─── СТАН МОНЕТИ (живий) ──────────────────────────────────────────────────────
 // Дані з публічного /coin/supply. Якщо сервер спить або недоступний — блок
 // просто не показуємо: краще без нього, ніж із прочерками чи помилкою.
+//
+// 🔴 ВИМКНЕНО до справжнього запуску токена (рішення 01.09.2026). Показувати
+// «випущено 0 / спалено 80» ще до запуску — це числа без сенсу для читача, а
+// в них до того ж сидять сліди наших власних перевірок. Щоб увімкнути назад:
+// SUPPLY_ENABLED = true, більше нічого міняти не треба.
+const SUPPLY_ENABLED = false;
 const SUPPLY_URL = 'https://ei-server.onrender.com/coin/supply';
 let supplyData = null;
 
@@ -760,6 +766,7 @@ function renderSupply() {
 }
 
 async function fetchSupply() {
+  if (!SUPPLY_ENABLED) return;   // блок лишається прихованим (display:none)
   try {
     const c = JSON.parse(sessionStorage.getItem('eion_supply') || 'null');
     if (c && Date.now() - c.at < 300000) { supplyData = c.d; renderSupply(); return; }

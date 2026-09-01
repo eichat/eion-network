@@ -11,11 +11,11 @@
  "feat_label": "Aplikacja",
  "feat_title": "Wszystko czego potrzebujesz <span>w jednej aplikacji</span>",
  "f1_title": "Czat na żywo",
- "f1_desc": "Tekst, zdjęcia, wideo, dokumenty i wiadomości głosowe z podpisami. Odpowiedzi, przekazywanie, reakcje i statusy dostarczenia.",
+ "f1_desc": "Tekst, zdjęcia, filmy i dokumenty z podpisami oraz wiadomości głosowe. Odpowiedzi, przekazywanie, reakcje i statusy dostarczenia.",
  "f2_title": "Asystent AI",
  "f2_desc": "Wbudowany czat AI oparty na zaawansowanych modelach językowych, dostępny zawsze.",
  "f3_title": "Połączenia wideo HD",
- "f3_desc": "Połączenia audio i wideo przez WebRTC — bez pośredników.",
+ "f3_desc": "Połączenia audio i wideo przez WebRTC — bezpośrednio między urządzeniami, gdy to możliwe, w innym razie przez przekaźnik.",
  "f4_title": "Grupy",
  "f4_desc": "Grupy i kanały z rolami, komentarzami, reakcjami i płatnymi subskrypcjami. Transmisje odtwarzają się w aplikacji.",
  "f5_title": "Szyfrowane połączenia",
@@ -59,7 +59,7 @@
  "rm_2_1": "Publikacja w Google Play",
  "rm_2_2": "Automatyczne aktualizacje",
  "rm_2_3": "Mniejszy rozmiar pobierania",
- "rm_2_4": "Nagrody za aktywność",
+ "rm_2_4": "Weryfikacja numeru telefonu",
  "rm_ph3": "Etap 3 — planowane",
  "rm_h3": "Prywatność",
  "rm_3_1": "Wiadomości szyfrowane end-to-end",
@@ -81,7 +81,7 @@
   },
   {
    "q": "Czy EION jest darmowy?",
-   "a": "Tak. Komunikator jest w pełni bezpłatny. Codziennie obowiązuje bezpłatny limit: 15 zapytań do AI, 200 MB wysyłania i 10 połączeń przez relay; powyżej płacisz monetami. Premium poszerza limit i podnosi limit pliku do 20 MB: 1000 EION miesięcznie lub 8400 EION rocznie."
+   "a": "Tak. Komunikator jest w pełni bezpłatny. Codziennie obowiązuje bezpłatny limit: 15 zapytań do AI, 200 MB wysyłek, 10 połączeń przez przekaźnik i 200 automatycznych tłumaczeń; powyżej płacisz monetami. Premium poszerza limit i podnosi limit pliku do 20 MB: 🪙 1000 miesięcznie lub 🪙 8400 rocznie."
   },
   {
    "q": "Czy moje wiadomości są szyfrowane?",
@@ -89,11 +89,11 @@
   },
   {
    "q": "Czym są monety EION?",
-   "a": "Wewnętrzna waluta aplikacji: premium, paczki naklejek, płatne subskrypcje kanałów, przelewy między użytkownikami i wszystko powyżej bezpłatnego limitu dziennego — zapytania do AI, wysyłanie, połączenia przez relay. Za rejestrację otrzymujesz 50 monet. To nie są pieniądze ani kryptowaluta i nie wymienia się ich na pieniądze."
+   "a": "Wewnętrzna waluta aplikacji: premium, paczki naklejek, płatne subskrypcje kanałów, przelewy między użytkownikami i wszystko powyżej bezpłatnego limitu dziennego — zapytania do AI, wysyłki, połączenia przez przekaźnik, autotłumaczenie. Za rejestrację otrzymujesz 🪙 200. To nie są pieniądze ani kryptowaluta i nie wymienia się ich na pieniądze."
   },
   {
    "q": "Jakie platformy są wspierane?",
-   "a": "Android i Linux — obie już dostępne w wersji beta. iOS i Windows są planowane."
+   "a": "Android i Linux. Beta jest tymczasowo zamknięta — dopracowujemy wszystko i ponownie otworzymy pobieranie. iOS i Windows są w planach."
   }
  ],
  "footer_tagline": "Rozmawiaj. Dziel się. Twoje dane należą do ciebie.",
@@ -119,7 +119,7 @@
  "tok_use4": "Przelewy",
  "tok_use4v": "między użytkownikami, prowizja 1%",
  "tok_plan": "Plan",
- "tok_plan_text": "Długofalowym celem jest wyprowadzenie monet poza aplikację jako token EION na Solanie. Wersja testowa już istnieje w sieci testowej: nie ma wartości i nie można jej kupić. Nie ma dat prawdziwego startu.",
+ "tok_plan_text": "Portfel i wymiana monet na token EION są już wbudowane w aplikację — i działają. Na razie w sieci testowej Solany: tam token nic nie jest wart i nie można go kupić ani sprzedać. Czy dojdzie do prawdziwego startu, zależy od środków. Nie ma dat.",
  "tok_burn_text": "Część każdej płatności dla platformy jest bezpowrotnie spalana — 30% za połączenia i wysyłanie, 40% za asystenta AI i paczki naklejek, 50% za premium. Spalone monety znikają z obiegu i nie trafiają na żadne konto.",
  "tok_disclaimer": "Dziś monety są wewnętrzną jednostką rozliczeniową serwisu. Nie są pieniędzmi, papierami wartościowymi ani kryptowalutą, nie podlegają wymianie na pieniądze, a ta strona nie jest ofertą inwestycyjną.",
  "tok_live_title": "Monety teraz",

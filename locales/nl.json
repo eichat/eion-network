@@ -11,11 +11,11 @@
  "feat_label": "Applicatie",
  "feat_title": "Alles wat je nodig hebt <span>in één app</span>",
  "f1_title": "Live chat",
- "f1_desc": "Tekst, foto’s, video, documenten en spraakberichten met bijschrift. Antwoorden, doorsturen, reacties en bezorgstatus.",
+ "f1_desc": "Tekst, foto’s, video’s en documenten met bijschriften, plus spraakberichten. Antwoorden, doorsturen, reacties en bezorgstatus.",
  "f2_title": "AI-assistent",
  "f2_desc": "Ingebouwde AI-chat aangedreven door geavanceerde taalmodellen, altijd beschikbaar.",
  "f3_title": "HD-videogesprekken",
- "f3_desc": "Audio- en videogesprekken via WebRTC — zonder tussenpersonen.",
+ "f3_desc": "Audio- en videogesprekken via WebRTC — rechtstreeks tussen apparaten waar het kan, anders via een relay.",
  "f4_title": "Groepen",
  "f4_desc": "Groepen en kanalen met rollen, reacties, commentaren en betaalde abonnementen. Livestreams spelen in de app zelf.",
  "f5_title": "Versleutelde gesprekken",
@@ -59,7 +59,7 @@
  "rm_2_1": "Publicatie in Google Play",
  "rm_2_2": "Automatische updates",
  "rm_2_3": "Kleinere download",
- "rm_2_4": "Beloningen voor activiteit",
+ "rm_2_4": "Verificatie van telefoonnummer",
  "rm_ph3": "Fase 3 — gepland",
  "rm_h3": "Privacy",
  "rm_3_1": "End-to-end versleutelde berichten",
@@ -81,7 +81,7 @@
   },
   {
    "q": "Is EION gratis?",
-   "a": "Ja. De messenger is volledig gratis. Elke dag geldt een gratis limiet: 15 AI-verzoeken, 200 MB uploads en 10 gesprekken via relay; daarboven betaal je met munten. Premium verruimt het limiet en verhoogt de bestandslimiet naar 20 MB: 1000 EION per maand of 8400 EION per jaar."
+   "a": "Ja. De messenger is volledig gratis. Elke dag geldt een gratis limiet: 15 AI-verzoeken, 200 MB uploads, 10 doorgeschakelde gesprekken en 200 automatische vertalingen; daarboven betaal je met munten. Premium verruimt de limiet en verhoogt de bestandslimiet naar 20 MB: 🪙 1000 per maand of 🪙 8400 per jaar."
   },
   {
    "q": "Zijn mijn berichten versleuteld?",
@@ -89,11 +89,11 @@
   },
   {
    "q": "Wat zijn munten?",
-   "a": "Een interne valuta van de app: premium, stickerpakketten, betaalde kanaalabonnementen, overboekingen tussen gebruikers en alles boven het gratis daglimiet — AI-verzoeken, uploads, gesprekken via relay. Bij registratie krijg je 50 munten. Het is geen geld en geen cryptovaluta en het is niet inwisselbaar voor geld."
+   "a": "Een interne valuta van de app: premium, stickerpakketten, betaalde kanaalabonnementen, overboekingen tussen gebruikers en alles boven de gratis daglimiet — AI-verzoeken, uploads, doorgeschakelde gesprekken, automatisch vertalen. Registratie geeft 🪙 200. Het is geen geld en geen cryptovaluta en het is niet inwisselbaar voor geld."
   },
   {
    "q": "Welke platforms worden ondersteund?",
-   "a": "Android en Linux — beide nu beschikbaar als bèta. iOS en Windows zijn gepland."
+   "a": "Android en Linux. De bèta is tijdelijk gesloten — we werken alles bij en openen de downloads weer. iOS en Windows staan gepland."
   }
  ],
  "footer_tagline": "Praat. Deel. Jouw data blijft van jou.",
@@ -119,7 +119,7 @@
  "tok_use4": "Overboekingen",
  "tok_use4v": "tussen gebruikers, 1% kosten",
  "tok_plan": "Het plan",
- "tok_plan_text": "Een langetermijndoel is om munten buiten de app te brengen als EION-token op Solana. Er bestaat al een testversie op een testnetwerk: die heeft geen waarde en is niet te koop. Er zijn geen datums voor een echte lancering.",
+ "tok_plan_text": "De portemonnee en het omwisselen van munten voor de EION-token zitten al in de app — en werken. Voorlopig op een Solana-testnetwerk: daar is de token niets waard en kan hij niet worden gekocht of verkocht. Of er een echte lancering komt, hangt af van de middelen. Er zijn geen data.",
  "tok_burn_text": "Een deel van elke betaling aan het platform wordt definitief verbrand — 30% bij gesprekken en uploads, 40% bij de AI-assistent en stickerpakketten, 50% bij premium. Verbrande munten verdwijnen uit omloop en komen op geen enkele rekening terecht.",
  "tok_disclaimer": "Vandaag zijn munten een interne rekeneenheid van de dienst. Het is geen geld, geen effect en geen cryptovaluta, ze kunnen niet worden ingewisseld voor geld, en deze pagina is geen investeringsaanbod.",
  "tok_live_title": "Munten op dit moment",

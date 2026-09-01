@@ -11,11 +11,11 @@
  "feat_label": "Aplikasi",
  "feat_title": "Semua yang Anda butuhkan <span>dalam satu aplikasi</span>",
  "f1_title": "Obrolan langsung",
- "f1_desc": "Teks, foto, video, dokumen, dan pesan suara dengan keterangan. Balasan, penerusan, reaksi, dan status pengiriman.",
+ "f1_desc": "Teks, foto, video, dan dokumen dengan keterangan, ditambah pesan suara. Balasan, penerusan, reaksi, dan status pengiriman.",
  "f2_title": "Asisten AI",
  "f2_desc": "Chat AI bawaan dengan model bahasa canggih, tersedia kapan saja.",
  "f3_title": "Panggilan Video HD",
- "f3_desc": "Panggilan suara dan video melalui WebRTC — tanpa perantara.",
+ "f3_desc": "Panggilan suara dan video lewat WebRTC — langsung antar perangkat bila memungkinkan, jika tidak lewat relay.",
  "f4_title": "Grup",
  "f4_desc": "Grup dan kanal dengan peran, komentar, reaksi, serta langganan berbayar. Siaran langsung diputar di dalam aplikasi.",
  "f5_title": "Panggilan terenkripsi",
@@ -59,7 +59,7 @@
  "rm_2_1": "Publikasi di Google Play",
  "rm_2_2": "Pembaruan otomatis",
  "rm_2_3": "Ukuran unduhan lebih kecil",
- "rm_2_4": "Hadiah untuk aktivitas",
+ "rm_2_4": "Verifikasi nomor telepon",
  "rm_ph3": "Fase 3 — direncanakan",
  "rm_h3": "Privasi",
  "rm_3_1": "Pesan terenkripsi ujung-ke-ujung",
@@ -81,7 +81,7 @@
   },
   {
    "q": "Apakah EION gratis?",
-   "a": "Ya. Aplikasi pesan ini sepenuhnya gratis. Setiap hari ada jatah gratis: 15 permintaan AI, 200 MB unggahan, dan 10 panggilan lewat relay; di atas itu Anda membayar dengan koin. Premium memperluas jatah dan menaikkan batas berkas menjadi 20 MB: 1000 EION per bulan atau 8400 EION per tahun."
+   "a": "Ya. Aplikasi pesan ini sepenuhnya gratis. Setiap hari ada jatah gratis: 15 permintaan AI, 200 MB unggahan, 10 panggilan lewat relay, dan 200 terjemahan otomatis; di atas itu Anda membayar dengan koin. Premium memperluas jatah dan menaikkan batas berkas ke 20 MB: 🪙 1000 per bulan atau 🪙 8400 per tahun."
   },
   {
    "q": "Apakah pesan saya terenkripsi?",
@@ -89,11 +89,11 @@
   },
   {
    "q": "Apa itu koin EION?",
-   "a": "Mata uang internal aplikasi: premium, paket stiker, langganan kanal berbayar, transfer antar pengguna, dan segala sesuatu di atas jatah gratis harian — permintaan AI, unggahan, panggilan lewat relay. Saat mendaftar Anda menerima 50 koin. Ini bukan uang maupun mata uang kripto dan tidak dapat ditukar dengan uang."
+   "a": "Mata uang internal aplikasi: premium, paket stiker, langganan kanal berbayar, transfer antar pengguna, dan segala sesuatu di atas jatah gratis harian — permintaan AI, unggahan, panggilan lewat relay, terjemahan otomatis. Pendaftaran memberi 🪙 200. Ini bukan uang dan bukan mata uang kripto, serta tidak dapat ditukar dengan uang."
   },
   {
    "q": "Platform apa saja yang didukung?",
-   "a": "Android dan Linux — keduanya kini tersedia sebagai beta. iOS dan Windows direncanakan."
+   "a": "Android dan Linux. Beta ditutup sementara — kami sedang merapikan semuanya dan akan membuka unduhan lagi. iOS dan Windows direncanakan."
   }
  ],
  "footer_tagline": "Bicara. Berbagi. Datamu milikmu.",
@@ -119,7 +119,7 @@
  "tok_use4": "Transfer",
  "tok_use4v": "antarpengguna, biaya 1%",
  "tok_plan": "Rencana",
- "tok_plan_text": "Tujuan jangka panjang adalah membawa koin ke luar aplikasi sebagai token EION di Solana. Versi uji sudah ada di jaringan uji: tidak bernilai dan tidak bisa dibeli. Tidak ada tanggal peluncuran sungguhan.",
+ "tok_plan_text": "Dompet dan penukaran koin menjadi token EION sudah tertanam di aplikasi — dan berfungsi. Untuk saat ini di jaringan uji Solana: di sana token tidak bernilai dan tidak bisa dibeli maupun dijual. Apakah peluncuran sungguhan terjadi bergantung pada sumber daya. Tidak ada tanggal.",
  "tok_burn_text": "Sebagian dari setiap pembayaran ke platform dibakar selamanya — 30% untuk panggilan dan unggahan, 40% untuk asisten AI dan paket stiker, 50% untuk premium. Koin yang dibakar keluar dari peredaran dan tidak masuk ke akun mana pun.",
  "tok_disclaimer": "Saat ini koin adalah satuan pembukuan internal layanan. Koin ini bukan uang, bukan efek, bukan mata uang kripto, tidak dapat ditukar dengan uang, dan halaman ini bukan penawaran investasi.",
  "tok_live_title": "Koin saat ini",

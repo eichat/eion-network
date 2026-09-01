@@ -11,11 +11,11 @@
  "feat_label": "Aplicación",
  "feat_title": "Todo lo que necesitas <span>en una sola app</span>",
  "f1_title": "Chat en vivo",
- "f1_desc": "Texto, fotos, vídeo, documentos y mensajes de voz con descripción. Respuestas, reenvíos, reacciones y estados de entrega.",
+ "f1_desc": "Texto, fotos, vídeos y documentos con pie de texto, además de mensajes de voz. Respuestas, reenvíos, reacciones y estados de entrega.",
  "f2_title": "Asistente IA",
  "f2_desc": "Chat IA integrado con modelos de lenguaje avanzados, disponible en cualquier momento.",
  "f3_title": "Videollamadas HD",
- "f3_desc": "Llamadas de audio y vídeo mediante WebRTC — sin intermediarios.",
+ "f3_desc": "Llamadas de audio y vídeo por WebRTC: directas entre dispositivos cuando es posible, si no, por relé.",
  "f4_title": "Grupos",
  "f4_desc": "Grupos y canales con roles, comentarios, reacciones y suscripciones de pago. Las transmisiones se ven dentro de la app.",
  "f5_title": "Llamadas cifradas",
@@ -59,7 +59,7 @@
  "rm_2_1": "Publicación en Google Play",
  "rm_2_2": "Actualizaciones automáticas",
  "rm_2_3": "Descarga más ligera",
- "rm_2_4": "Recompensas por actividad",
+ "rm_2_4": "Verificación del número de teléfono",
  "rm_ph3": "Fase 3 — planeado",
  "rm_h3": "Privacidad",
  "rm_3_1": "Mensajes cifrados de extremo a extremo",
@@ -81,7 +81,7 @@
   },
   {
    "q": "¿EION es gratis?",
-   "a": "Sí. El mensajero es totalmente gratuito. Cada día hay una cuota gratuita: 15 consultas de IA, 200 MB de subidas y 10 llamadas por relay; por encima de ella pagas con monedas. Premium amplía la cuota y sube el límite de archivo a 20 MB: 1000 EION al mes o 8400 EION al año."
+   "a": "Sí. El mensajero es totalmente gratuito. Cada día hay una cuota gratuita: 15 consultas de IA, 200 MB de subidas, 10 llamadas por relé y 200 traducciones automáticas; por encima de ella pagas con monedas. Premium amplía la cuota y sube el límite de archivo a 20 MB: 🪙 1000 al mes o 🪙 8400 al año."
   },
   {
    "q": "¿Están cifrados mis mensajes?",
@@ -89,11 +89,11 @@
   },
   {
    "q": "¿Qué son las monedas EION?",
-   "a": "Una moneda interna de la aplicación: premium, packs de stickers, suscripciones de pago a canales, transferencias entre usuarios y todo lo que supere la cuota diaria gratuita: consultas de IA, subidas, llamadas por relay. Al registrarte recibes 50 monedas. No son dinero ni criptomoneda y no se cambian por dinero."
+   "a": "Una moneda interna de la aplicación: premium, packs de stickers, suscripciones de pago a canales, transferencias entre usuarios y todo lo que supere la cuota diaria gratuita: consultas de IA, subidas, llamadas por relé, traducción automática. Por registrarte recibes 🪙 200. No son dinero ni criptomoneda y no se cambian por dinero."
   },
   {
    "q": "¿Qué plataformas son compatibles?",
-   "a": "Android y Linux — ambas disponibles ya en beta. iOS y Windows están planeados."
+   "a": "Android y Linux. La beta está cerrada temporalmente: estamos puliendo todo y volveremos a abrir las descargas. iOS y Windows están planeados."
   }
  ],
  "footer_tagline": "Habla. Comparte. Tus datos son tuyos.",
@@ -119,7 +119,7 @@
  "tok_use4": "Transferencias",
  "tok_use4v": "entre usuarios, 1% de comisión",
  "tok_plan": "El plan",
- "tok_plan_text": "Un objetivo a largo plazo es llevar las monedas fuera de la app como token EION en Solana. Ya existe una versión de prueba en una red de pruebas: no tiene valor ni se puede comprar. No hay fechas para un lanzamiento real.",
+ "tok_plan_text": "La cartera y el cambio de monedas por el token EION ya están integrados en la aplicación, y funcionan. Por ahora en una red de prueba de Solana: allí el token no vale nada y no se puede comprar ni vender. Que haya un lanzamiento real depende de los recursos. No hay fechas.",
  "tok_burn_text": "Una parte de cada pago a la plataforma se quema para siempre: 30% en llamadas y subidas, 40% en el asistente de IA y los packs de stickers, 50% en premium. Las monedas quemadas salen de circulación y no llegan a ninguna cuenta.",
  "tok_disclaimer": "Hoy las monedas son una unidad de cuenta interna del servicio. No son dinero, ni valores, ni criptomoneda, no pueden cambiarse por dinero, y esta página no es una oferta de inversión.",
  "tok_live_title": "Las monedas ahora",

@@ -11,11 +11,11 @@
  "feat_label": "Application",
  "feat_title": "Everything you need <span>in one app</span>",
  "f1_title": "Live Chat",
- "f1_desc": "Text, photos, video, documents and voice messages with captions. Replies, forwarding, reactions and delivery status.",
+ "f1_desc": "Text, photos, videos and documents with captions, plus voice messages. Replies, forwarding, reactions and delivery status.",
  "f2_title": "AI Assistant",
  "f2_desc": "Built-in AI chat powered by advanced language models, available anytime.",
  "f3_title": "HD Video Calls",
- "f3_desc": "Audio and video calls over WebRTC — no intermediaries.",
+ "f3_desc": "Audio and video calls over WebRTC — directly between devices when possible, otherwise via a relay.",
  "f4_title": "Groups",
  "f4_desc": "Groups and channels with roles, comments, reactions and paid subscriptions. Live streams play inside the app.",
  "f5_title": "Encrypted calls",
@@ -59,7 +59,7 @@
  "rm_2_1": "Publication on Google Play",
  "rm_2_2": "Automatic updates",
  "rm_2_3": "Smaller download size",
- "rm_2_4": "Rewards for activity",
+ "rm_2_4": "Phone number verification",
  "rm_ph3": "Phase 3 — planned",
  "rm_h3": "Privacy",
  "rm_3_1": "End-to-end encrypted messages",
@@ -81,7 +81,7 @@
   },
   {
    "q": "Is EION free?",
-   "a": "Yes. The full messenger is free. Every day you get a free allowance — 15 AI requests, 200 MB of uploads and 10 relayed calls; beyond it you pay with coins. Premium widens the allowance and raises the file limit to 20 MB: 1000 EION per month or 8400 EION per year."
+   "a": "Yes. The full messenger is free. Every day you get a free allowance — 15 AI requests, 200 MB of uploads, 10 relayed calls and 200 auto-translations; beyond it you pay in coins. Premium widens the allowance and raises the file limit to 20 MB: 🪙 1000 a month or 🪙 8400 a year."
   },
   {
    "q": "Are my messages encrypted?",
@@ -89,11 +89,11 @@
   },
   {
    "q": "What are coins?",
-   "a": "An internal currency of the app: premium, sticker packs, paid channel subscriptions, transfers between users, and anything beyond the free daily allowance — AI requests, uploads, relayed calls. You get 50 coins on registration. They are not money or cryptocurrency and cannot be exchanged for money."
+   "a": "An internal currency of the app: premium, sticker packs, paid channel subscriptions, transfers between users, and everything beyond the free daily allowance — AI requests, uploads, relayed calls, auto-translation. Registration grants 🪙 200. They are not money and not cryptocurrency, and cannot be exchanged for money."
   },
   {
    "q": "Which platforms are supported?",
-   "a": "Android and Linux — both available now as a beta. iOS and Windows are planned."
+   "a": "Android and Linux. The beta is temporarily closed — we are polishing things and will reopen downloads. iOS and Windows are planned."
   }
  ],
  "footer_tagline": "Talk. Share. Own your data.",
@@ -119,7 +119,7 @@
  "tok_use4": "Transfers",
  "tok_use4v": "between users, 1% fee",
  "tok_plan": "The plan",
- "tok_plan_text": "A long-term goal is to take coins beyond the app — as an EION token on Solana. A test version already exists on a test network: it has no value and cannot be bought. There are no dates for a real launch.",
+ "tok_plan_text": "The wallet and the exchange of coins for the EION token are already built into the app — and they work. For now on a Solana test network: there the token has no value and can be neither bought nor sold. Whether a real launch happens depends on resources. There are no dates.",
  "tok_burn_text": "Part of every payment to the platform is burned for good — 30% on calls and uploads, 40% on the AI assistant and sticker packs, 50% on premium. Burned coins leave circulation and land in no account.",
  "tok_disclaimer": "Today coins are an internal accounting unit of the service. They are not money, securities or cryptocurrency, cannot be exchanged for money, and this page is not an offer to invest.",
  "tok_live_title": "Coins right now",
