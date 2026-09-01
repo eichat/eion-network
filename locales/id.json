@@ -36,9 +36,9 @@
  "prem_label": "Premium",
  "prem_title": "Buka <span>Premium</span>",
  "prem_monthly_tag": "Bulanan",
- "prem_monthly_period": "EION / bulan",
+ "prem_monthly_period": "🪙 / bulan",
  "prem_yearly_tag": "Tahunan — Nilai Terbaik",
- "prem_yearly_period": "EION / tahun",
+ "prem_yearly_period": "🪙 / tahun",
  "prem_f1": "File hingga 20 MB, bukan 5",
  "prem_f2": "Asisten AI: 100 permintaan per hari, bukan 15",
  "prem_f3": "Unggahan: 1 GB per hari, bukan 200 MB",
@@ -137,7 +137,7 @@
  "tok_withdraw": "Bisa ditarik",
  "tok_withdraw_v": "hanya koin yang dibayarkan orang lain",
  "tok_wallet": "Dompet",
- "tok_wallet_v": "dibuat manual, kunci tetap di perangkat",
+ "tok_wallet_v": "dibuat manual, kunci tetap di perangkat, membuka 🪙 50",
  "don_label": "Dukungan",
  "don_title": "Dukung <span>pengembangan</span>",
  "don_copy": "Salin",
@@ -154,5 +154,9 @@
  "nav_support": "Dukungan",
  "footer_donate": "Dukung pengembangan",
  "tok_protect": "Perlindungan",
- "tok_protect_v": "memindahkan koin butuh kata sandi akun"
+ "tok_protect_v": "memindahkan koin butuh kata sandi akun",
+ "tok_translate": "Terjemahan otomatis",
+ "tok_translate_v": "200 per hari, lalu 🪙 1",
+ "prem_f8": "Terjemahan otomatis: 1000 per hari, bukan 200",
+ "prem_f9": "Membuka dompet gratis"
 }

@@ -36,9 +36,9 @@
  "prem_label": "Premium",
  "prem_title": "Desbloquear <span>Premium</span>",
  "prem_monthly_tag": "Mensual",
- "prem_monthly_period": "EION / mes",
+ "prem_monthly_period": "🪙 / mes",
  "prem_yearly_tag": "Anual — Mejor valor",
- "prem_yearly_period": "EION / año",
+ "prem_yearly_period": "🪙 / año",
  "prem_f1": "Archivos de hasta 20 MB en vez de 5",
  "prem_f2": "Asistente de IA: 100 consultas al día en vez de 15",
  "prem_f3": "Subidas: 1 GB al día en vez de 200 MB",
@@ -137,7 +137,7 @@
  "tok_withdraw": "Retirable",
  "tok_withdraw_v": "solo monedas que alguien te pagó",
  "tok_wallet": "Billetera",
- "tok_wallet_v": "se crea a mano, la clave queda en el dispositivo",
+ "tok_wallet_v": "se crea a mano, la clave queda en el dispositivo, abrirla cuesta 🪙 50",
  "don_label": "Apoyo",
  "don_title": "Apoya el <span>desarrollo</span>",
  "don_copy": "Copiar",
@@ -154,5 +154,9 @@
  "nav_support": "Apoyo",
  "footer_donate": "Apoyar el desarrollo",
  "tok_protect": "Protección",
- "tok_protect_v": "mover monedas exige la contraseña de la cuenta"
+ "tok_protect_v": "mover monedas exige la contraseña de la cuenta",
+ "tok_translate": "Traducción automática",
+ "tok_translate_v": "200 al día, luego 🪙 1",
+ "prem_f8": "Traducción automática: 1000 al día en lugar de 200",
+ "prem_f9": "Abrir la cartera es gratis"
 }

@@ -36,9 +36,9 @@
  "prem_label": "Premium",
  "prem_title": "<span>Premium</span> freischalten",
  "prem_monthly_tag": "Monatlich",
- "prem_monthly_period": "EION / Monat",
+ "prem_monthly_period": "🪙 / Monat",
  "prem_yearly_tag": "Jährlich — Bestes Angebot",
- "prem_yearly_period": "EION / Jahr",
+ "prem_yearly_period": "🪙 / Jahr",
  "prem_f1": "Dateien bis 20 MB statt 5",
  "prem_f2": "KI-Assistent: 100 Anfragen pro Tag statt 15",
  "prem_f3": "Uploads: 1 GB pro Tag statt 200 MB",
@@ -137,7 +137,7 @@
  "tok_withdraw": "Auszahlbar",
  "tok_withdraw_v": "nur Coins, die dir jemand gezahlt hat",
  "tok_wallet": "Wallet",
- "tok_wallet_v": "manuell erstellt, Schlüssel bleibt auf dem Gerät",
+ "tok_wallet_v": "manuell erstellt, Schlüssel bleibt auf dem Gerät, Eröffnung 🪙 50",
  "don_label": "Unterstützung",
  "don_title": "Entwicklung <span>unterstützen</span>",
  "don_copy": "Kopieren",
@@ -154,5 +154,9 @@
  "nav_support": "Unterstützen",
  "footer_donate": "Entwicklung unterstützen",
  "tok_protect": "Schutz",
- "tok_protect_v": "Coins bewegen verlangt das Konto-Passwort"
+ "tok_protect_v": "Coins bewegen verlangt das Konto-Passwort",
+ "tok_translate": "Auto-Übersetzung",
+ "tok_translate_v": "200 pro Tag, danach 🪙 1",
+ "prem_f8": "Auto-Übersetzung: 1000 pro Tag statt 200",
+ "prem_f9": "Wallet-Eröffnung kostenlos"
 }

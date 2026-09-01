@@ -36,9 +36,9 @@
  "prem_label": "Premium",
  "prem_title": "Débloquer <span>Premium</span>",
  "prem_monthly_tag": "Mensuel",
- "prem_monthly_period": "EION / mois",
+ "prem_monthly_period": "🪙 / mois",
  "prem_yearly_tag": "Annuel — Meilleure offre",
- "prem_yearly_period": "EION / an",
+ "prem_yearly_period": "🪙 / an",
  "prem_f1": "Fichiers jusqu'à 20 Mo au lieu de 5",
  "prem_f2": "Assistant IA : 100 requêtes par jour au lieu de 15",
  "prem_f3": "Envois : 1 Go par jour au lieu de 200 Mo",
@@ -137,7 +137,7 @@
  "tok_withdraw": "Retirable",
  "tok_withdraw_v": "seules les pièces qu’on vous a versées",
  "tok_wallet": "Portefeuille",
- "tok_wallet_v": "créé à la main, la clé reste sur l’appareil",
+ "tok_wallet_v": "créé à la main, la clé reste sur l’appareil, ouverture 🪙 50",
  "don_label": "Soutien",
  "don_title": "Soutenir le <span>développement</span>",
  "don_copy": "Copier",
@@ -154,5 +154,9 @@
  "nav_support": "Soutien",
  "footer_donate": "Soutenir le développement",
  "tok_protect": "Protection",
- "tok_protect_v": "déplacer des pièces exige le mot de passe du compte"
+ "tok_protect_v": "déplacer des pièces exige le mot de passe du compte",
+ "tok_translate": "Traduction auto",
+ "tok_translate_v": "200 par jour, puis 🪙 1",
+ "prem_f8": "Traduction auto : 1000 par jour au lieu de 200",
+ "prem_f9": "Ouverture du portefeuille gratuite"
 }

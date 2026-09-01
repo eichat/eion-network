@@ -36,9 +36,9 @@
  "prem_label": "高级版",
  "prem_title": "解锁 <span>高级版</span>",
  "prem_monthly_tag": "月度订阅",
- "prem_monthly_period": "EION / 月",
+ "prem_monthly_period": "🪙 / 月",
  "prem_yearly_tag": "年度订阅 — 最划算",
- "prem_yearly_period": "EION / 年",
+ "prem_yearly_period": "🪙 / 年",
  "prem_f1": "文件上限 20 MB，而非 5 MB",
  "prem_f2": "AI 助手：每天 100 次请求，而非 15 次",
  "prem_f3": "上传：每天 1 GB，而非 200 MB",
@@ -137,7 +137,7 @@
  "tok_withdraw": "可提取",
  "tok_withdraw_v": "仅限他人支付给你的金币",
  "tok_wallet": "钱包",
- "tok_wallet_v": "手动创建，密钥留在设备上",
+ "tok_wallet_v": "手动创建，密钥留在设备上，开通 🪙 50",
  "don_label": "支持",
  "don_title": "支持<span>开发</span>",
  "don_copy": "复制",
@@ -154,5 +154,9 @@
  "nav_support": "支持",
  "footer_donate": "支持开发",
  "tok_protect": "保护",
- "tok_protect_v": "转移金币需要账户密码"
+ "tok_protect_v": "转移金币需要账户密码",
+ "tok_translate": "自动翻译",
+ "tok_translate_v": "每天 200 次，之后 🪙 1",
+ "prem_f8": "自动翻译：每天 1000 次而非 200 次",
+ "prem_f9": "免费开通钱包"
 }

@@ -36,9 +36,9 @@
  "prem_label": "مميز",
  "prem_title": "فتح <span>المميز</span>",
  "prem_monthly_tag": "شهري",
- "prem_monthly_period": "EION / شهر",
+ "prem_monthly_period": "🪙 / شهر",
  "prem_yearly_tag": "سنوي — الأفضل قيمة",
- "prem_yearly_period": "EION / سنة",
+ "prem_yearly_period": "🪙 / سنة",
  "prem_f1": "ملفات حتى 20 ميغابايت بدل 5",
  "prem_f2": "مساعد الذكاء الاصطناعي: 100 طلب يوميًا بدل 15",
  "prem_f3": "الرفع: 1 غيغابايت يوميًا بدل 200 ميغابايت",
@@ -137,7 +137,7 @@
  "tok_withdraw": "قابل للسحب",
  "tok_withdraw_v": "فقط العملات التي دفعها لك أحد",
  "tok_wallet": "المحفظة",
- "tok_wallet_v": "تُنشأ يدويًا، ويبقى المفتاح على الجهاز",
+ "tok_wallet_v": "تُنشأ يدويًا، ويبقى المفتاح على الجهاز، والفتح 🪙 50",
  "don_label": "الدعم",
  "don_title": "ادعم <span>التطوير</span>",
  "don_copy": "نسخ",
@@ -154,5 +154,9 @@
  "nav_support": "الدعم",
  "footer_donate": "ادعم التطوير",
  "tok_protect": "الحماية",
- "tok_protect_v": "نقل العملات يتطلب كلمة مرور الحساب"
+ "tok_protect_v": "نقل العملات يتطلب كلمة مرور الحساب",
+ "tok_translate": "الترجمة التلقائية",
+ "tok_translate_v": "200 يوميًا، ثم 🪙 1",
+ "prem_f8": "الترجمة التلقائية: 1000 يوميًا بدل 200",
+ "prem_f9": "فتح المحفظة مجانًا"
 }
