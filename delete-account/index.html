@@ -129,7 +129,7 @@ footer a:hover{color:var(--neon)}
 
 
 <footer>
-  <a href="/">eion.network</a>·<a href="/privacy">Privacy</a>·<a href="/terms">Terms</a>·<a href="/delete-account">Delete account</a>·<a href="mailto:support@eion.network">support@eion.network</a>
+  <a href="/">eion.network</a>·<a href="/privacy" data-uk="Політика конфіденційності" data-en="Privacy">Privacy</a>·<a href="/terms" data-uk="Умови використання" data-en="Terms">Terms</a>·<a href="/delete-account" data-uk="Видалити акаунт" data-en="Delete account">Delete account</a>·<a href="mailto:support@eion.network">support@eion.network</a>
   <p style="margin-top:14px;opacity:.6">© 2026 EION</p>
 </footer>
 </div>
@@ -141,11 +141,24 @@ function setLang(l){
   document.getElementById('b-uk').setAttribute('aria-pressed', l==='uk');
   document.getElementById('b-en').setAttribute('aria-pressed', l==='en');
   document.documentElement.lang = l;
+  // Написи навколо тексту мають бути тією ж мовою, що й сам текст: раніше
+  // підвал лишався англійським навіть під українською політикою.
+  document.querySelectorAll('[data-uk][data-en]').forEach(function(el){
+    el.textContent = el.getAttribute('data-' + l);
+  });
   try{ localStorage.setItem('eion-legal-lang', l); }catch(e){}
 }
 try{
   var saved = localStorage.getItem('eion-legal-lang');
-  if(!saved) saved = (navigator.language||'').slice(0,2)==='uk' ? 'uk' : 'en';
+  // Мова головного сайту (eion_lang) має перевагу над мовою браузера: людина
+  // прийшла сюди з уже обраної мови, і кидати її в англійську — несподіванка.
+  // Документи двомовні, тож усе, крім української, лишається англійським.
+  if(!saved){
+    var site = null;
+    try{ site = localStorage.getItem('eion_lang'); }catch(e){}
+    var pick = site || (navigator.language||'').slice(0,2);
+    saved = (pick === 'uk') ? 'uk' : 'en';
+  }
   setLang(saved);
 }catch(e){}
 </script>
