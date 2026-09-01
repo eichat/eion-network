@@ -80,7 +80,7 @@ footer a:hover{color:var(--neon)}
 <h2>3. Правила поведінки</h2>
 <p>Через EION заборонено:</p>
 <ul>
-  <li>поширювати незаконний вміст, зокрема матеріали сексуального насильства над дітьми, заклики до насильства чи тероризму;</li>
+  <li>поширювати незаконний або жорстокий вміст: матеріали сексуального насильства над дітьми, сцени реального насильства чи катування людей, жорстоке поводження з тваринами, інтимні зображення, оприлюднені без згоди зображеної особи, а також заклики до насильства, тероризму чи розпалювання ворожнечі;</li>
   <li>переслідувати, погрожувати, цькувати інших користувачів;</li>
   <li>розсилати спам, шахрайські схеми, фішинг, шкідливе програмне забезпечення;</li>
   <li>порушувати авторські чи інші права третіх осіб;</li>
@@ -100,6 +100,7 @@ footer a:hover{color:var(--neon)}
 <ul>
   <li>Монети використовуються для преміуму, наборів наліпок, платних підписок на канали, переказів між користувачами, разового відкриття гаманця, а також для всього, що перевищує безкоштовні денні норми — запитів до AI-асистента, вивантажень, дзвінків через релей і автоперекладу.</li>
 <li><b>Обміняти на токен можна не всі монети, а лише зароблені</b> — ті, які вам заплатила інша людина: переказ від користувача, ваша частка з платної підписки чи з платного звернення як власника каналу, а також поповнення токеном. Монети, нараховані нами самими (бонус за реєстрацію, повернення, компенсації), витрачаються всередині EION, але не виводяться.</li>
+<li><b>Переказ переносить клас монет, а не створює його.</b> Якщо відправник платить нарахованими нами монетами, отримувач так само дістає їх нарахованими; виведеними вони стають лише в тій частині, у якій відправник заплатив своїми заробленими. Те саме діє для частки власника каналу. Усередині акаунта нараховані монети витрачаються першими, тож зароблена частина залишається за вами.</li>
   <li>З переказів між користувачами утримується комісія сервісу 1%.</li>
   <li>З платних підписок і платних звернень до власника каналу власник отримує 70%, сервіс — 30%.</li>
   <li>Ми можемо змінювати ціни й правила нарахування, повідомивши про це в застосунку.</li>
@@ -160,7 +161,7 @@ footer a:hover{color:var(--neon)}
 <h2>3. Rules of conduct</h2>
 <p>You may not use EION to:</p>
 <ul>
-  <li>distribute unlawful content, including child sexual abuse material or incitement to violence or terrorism;</li>
+  <li>distribute unlawful or violent content: child sexual abuse material, depictions of real violence or torture of people, cruelty to animals, intimate images published without the consent of the person shown, and incitement to violence, terrorism or hatred;</li>
   <li>harass, threaten or bully other users;</li>
   <li>send spam, fraudulent schemes, phishing or malware;</li>
   <li>infringe copyright or other rights of third parties;</li>
@@ -180,6 +181,7 @@ footer a:hover{color:var(--neon)}
 <ul>
   <li>Coins are used for premium, sticker packs, paid channel subscriptions, transfers between users, a one-off wallet opening, and for everything beyond the free daily allowances — AI assistant requests, uploads, relayed calls and auto-translation.</li>
 <li><b>Not all coins can be converted into the token — only earned ones</b>: those another person paid you, namely a transfer from a user, your share of a paid subscription or of paid contact as a channel owner, and a deposit of tokens. Coins we granted ourselves (the signup bonus, refunds, compensation) can be spent inside EION but not withdrawn.</li>
+<li><b>A transfer carries the class over; it does not create it.</b> If the sender pays with coins we granted, the recipient also receives granted coins; they become withdrawable only to the extent the sender paid with their own earned coins. The same applies to a channel owner's share. Within an account, granted coins are always spent first, so your earned part stays with you.</li>
   <li>A 1% service fee applies to transfers between users.</li>
   <li>For paid subscriptions and paid contact with a channel owner, the owner receives 70% and the service 30%.</li>
   <li>We may change prices and rules, announcing this in the app.</li>
@@ -221,7 +223,7 @@ footer a:hover{color:var(--neon)}
 
 
 <footer>
-  <a href="/">eion.network</a>·<a href="/privacy">Privacy</a>·<a href="/terms">Terms</a>·<a href="/delete-account">Delete account</a>·<a href="mailto:support@eion.network">support@eion.network</a>
+  <a href="/">eion.network</a>·<a href="/privacy" data-uk="Політика конфіденційності" data-en="Privacy">Privacy</a>·<a href="/terms" data-uk="Умови використання" data-en="Terms">Terms</a>·<a href="/delete-account" data-uk="Видалити акаунт" data-en="Delete account">Delete account</a>·<a href="mailto:support@eion.network">support@eion.network</a>
   <p style="margin-top:14px;opacity:.6">© 2026 EION</p>
 </footer>
 </div>
@@ -233,11 +235,24 @@ function setLang(l){
   document.getElementById('b-uk').setAttribute('aria-pressed', l==='uk');
   document.getElementById('b-en').setAttribute('aria-pressed', l==='en');
   document.documentElement.lang = l;
+  // Написи навколо тексту мають бути тією ж мовою, що й сам текст: раніше
+  // підвал лишався англійським навіть під українською політикою.
+  document.querySelectorAll('[data-uk][data-en]').forEach(function(el){
+    el.textContent = el.getAttribute('data-' + l);
+  });
   try{ localStorage.setItem('eion-legal-lang', l); }catch(e){}
 }
 try{
   var saved = localStorage.getItem('eion-legal-lang');
-  if(!saved) saved = (navigator.language||'').slice(0,2)==='uk' ? 'uk' : 'en';
+  // Мова головного сайту (eion_lang) має перевагу над мовою браузера: людина
+  // прийшла сюди з уже обраної мови, і кидати її в англійську — несподіванка.
+  // Документи двомовні, тож усе, крім української, лишається англійським.
+  if(!saved){
+    var site = null;
+    try{ site = localStorage.getItem('eion_lang'); }catch(e){}
+    var pick = site || (navigator.language||'').slice(0,2);
+    saved = (pick === 'uk') ? 'uk' : 'en';
+  }
   setLang(saved);
 }catch(e){}
 </script>
