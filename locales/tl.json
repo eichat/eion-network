@@ -11,11 +11,11 @@
  "feat_label": "Aplikasyon",
  "feat_title": "Lahat ng kailangan mo <span>sa isang app</span>",
  "f1_title": "Mga chat",
- "f1_desc": "Teksto, larawan, video, dokumento at voice message na may caption. Mga sagot, pagpapasa, reaksyon at katayuan ng paghahatid.",
+ "f1_desc": "Teksto, larawan, video at dokumento na may caption, pati mga voice message. Sagot, pagpapasa, reaksyon at status ng paghahatid.",
  "f2_title": "Katulong na AI",
  "f2_desc": "Built-in na AI chat na pinapagana ng mga advanced na language model, laging available.",
  "f3_title": "Mga HD video call",
- "f3_desc": "Mga tawag na audio at video sa pamamagitan ng WebRTC — walang tagapamagitan.",
+ "f3_desc": "Audio at video na tawag sa WebRTC — direkta sa pagitan ng mga device kung kaya, kung hindi ay sa pamamagitan ng relay.",
  "f4_title": "Mga Grupo",
  "f4_desc": "Mga grupo at channel na may roles, komento, reaksyon at bayad na subscription. Ang live stream ay nanonood sa loob mismo ng app.",
  "f5_title": "Mga naka-encrypt na tawag",
@@ -59,7 +59,7 @@
  "rm_2_1": "Paglalathala sa Google Play",
  "rm_2_2": "Awtomatikong update",
  "rm_2_3": "Mas maliit na laki ng download",
- "rm_2_4": "Gantimpala para sa aktibidad",
+ "rm_2_4": "Pagpapatunay ng numero ng telepono",
  "rm_ph3": "Yugto 3 — nakaplano",
  "rm_h3": "Pagkapribado",
  "rm_3_1": "Mga mensaheng end-to-end encrypted",
@@ -81,7 +81,7 @@
   },
   {
    "q": "Libre ba ang EION?",
-   "a": "Oo. Libre ang buong messenger. Araw-araw may libreng alawans: 15 kahilingan sa AI, 200 MB na upload at 10 tawag sa pamamagitan ng relay; lampas doon ay babayaran mo ng barya. Pinalalawak ng premium ang alawans at itinataas ang limitasyon ng file sa 20 MB: 1000 EION bawat buwan o 8400 EION bawat taon."
+   "a": "Oo. Libre ang buong messenger. Araw-araw may libreng alawans: 15 kahilingan sa AI, 200 MB na upload, 10 tawag sa relay at 200 awtomatikong pagsasalin; lampas doon ay babayaran mo sa coins. Pinapalawak ng premium ang alawans at itinataas ang limitasyon ng file sa 20 MB: 🪙 1000 kada buwan o 🪙 8400 kada taon."
   },
   {
    "q": "Naka-encrypt ba ang mga mensahe ko?",
@@ -89,11 +89,11 @@
   },
   {
    "q": "Ano ang coins?",
-   "a": "Panloob na pera ng app: premium, mga sticker pack, bayad na subscription sa channel, paglilipat sa pagitan ng mga user, at lahat ng lampas sa libreng arawang alawans — kahilingan sa AI, upload, tawag sa pamamagitan ng relay. Sa pagrehistro makakakuha ka ng 50 barya. Hindi ito pera o cryptocurrency at hindi ito maaaring ipalit sa pera."
+   "a": "Panloob na pera ng app: premium, mga sticker pack, bayad na subscription sa channel, paglilipat sa pagitan ng mga user, at lahat ng lampas sa libreng pang-araw-araw na alawans — kahilingan sa AI, upload, tawag sa relay, awtomatikong pagsasalin. Sa pagpaparehistro ay 🪙 200. Hindi ito pera ni cryptocurrency, at hindi ito mapapalitan ng pera."
   },
   {
    "q": "Anong mga platform ang suportado?",
-   "a": "Android at Linux — pareho nang available bilang beta. Nakaplano ang iOS at Windows."
+   "a": "Android at Linux. Pansamantalang sarado ang beta — inaayos namin ang lahat at muling bubuksan ang download. Nakaplano ang iOS at Windows."
   }
  ],
  "footer_tagline": "Mag-usap. Magbahagi. Sa iyo ang datos mo.",
@@ -119,7 +119,7 @@
  "tok_use4": "Paglilipat",
  "tok_use4v": "sa pagitan ng mga user, 1% bayad",
  "tok_plan": "Ang plano",
- "tok_plan_text": "Isang pangmatagalang layunin ang ilabas ang mga barya mula sa app bilang EION token sa Solana. May test na bersyon na sa isang test network: wala itong halaga at hindi mabibili. Walang petsa para sa totoong paglulunsad.",
+ "tok_plan_text": "Nasa app na ang wallet at ang palitan ng coins para sa EION token — at gumagana ito. Sa ngayon ay nasa test network ng Solana: doon ay walang halaga ang token at hindi ito mabibili o maibebenta. Kung magkakaroon ng tunay na paglulunsad ay depende sa rekursos. Walang petsa.",
  "tok_burn_text": "Bahagi ng bawat bayad sa plataporma ay tuluyang sinusunog — 30% sa mga tawag at upload, 40% sa AI assistant at mga sticker pack, 50% sa premium. Ang sinunog na barya ay nawawala sa sirkulasyon at hindi napupunta sa anumang account.",
  "tok_disclaimer": "Sa ngayon, ang coins ay panloob na yunit ng pagtutuos ng serbisyo. Hindi ito pera, sekyuridad o cryptocurrency, hindi maipapalit sa pera, at ang pahinang ito ay hindi alok na mamuhunan.",
  "tok_live_title": "Ang barya ngayon",

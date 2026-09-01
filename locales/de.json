@@ -11,11 +11,11 @@
  "feat_label": "Anwendung",
  "feat_title": "Alles, was Sie brauchen <span>in einer App</span>",
  "f1_title": "Live-Chat",
- "f1_desc": "Text, Fotos, Videos, Dokumente und Sprachnachrichten mit Bildunterschriften. Antworten, Weiterleiten, Reaktionen und Zustellstatus.",
+ "f1_desc": "Text, Fotos, Videos und Dokumente mit Bildunterschriften sowie Sprachnachrichten. Antworten, Weiterleiten, Reaktionen und Zustellstatus.",
  "f2_title": "KI-Assistent",
  "f2_desc": "Integrierter KI-Chat mit fortschrittlichen Sprachmodellen, jederzeit verfügbar.",
  "f3_title": "HD-Videoanrufe",
- "f3_desc": "Audio- und Videoanrufe über WebRTC — ohne Zwischenstellen.",
+ "f3_desc": "Audio- und Videoanrufe über WebRTC — direkt zwischen den Geräten, wenn möglich, sonst über einen Relay.",
  "f4_title": "Gruppen",
  "f4_desc": "Gruppen und Kanäle mit Rollen, Kommentaren, Reaktionen und bezahlten Abos. Livestreams laufen direkt in der App.",
  "f5_title": "Verschlüsselte Anrufe",
@@ -59,7 +59,7 @@
  "rm_2_1": "Veröffentlichung bei Google Play",
  "rm_2_2": "Automatische Updates",
  "rm_2_3": "Kleinere Downloadgröße",
- "rm_2_4": "Belohnungen für Aktivität",
+ "rm_2_4": "Telefonnummer-Bestätigung",
  "rm_ph3": "Phase 3 — geplant",
  "rm_h3": "Privatsphäre",
  "rm_3_1": "Ende-zu-Ende-verschlüsselte Nachrichten",
@@ -81,7 +81,7 @@
   },
   {
    "q": "Ist EION kostenlos?",
-   "a": "Ja. Der Messenger ist vollständig kostenlos. Täglich gibt es ein kostenloses Kontingent — 15 KI-Anfragen, 200 MB Uploads und 10 Anrufe über Relay; darüber hinaus zahlen Sie mit Coins. Premium erweitert das Kontingent und hebt das Dateilimit auf 20 MB: 1000 EION pro Monat oder 8400 EION pro Jahr."
+   "a": "Ja. Der Messenger ist vollständig kostenlos. Täglich gibt es ein kostenloses Kontingent — 15 KI-Anfragen, 200 MB Uploads, 10 weitergeleitete Anrufe und 200 Auto-Übersetzungen; darüber hinaus zahlen Sie mit Coins. Premium erweitert das Kontingent und hebt das Dateilimit auf 20 MB: 🪙 1000 pro Monat oder 🪙 8400 pro Jahr."
   },
   {
    "q": "Sind meine Nachrichten verschlüsselt?",
@@ -89,11 +89,11 @@
   },
   {
    "q": "Was sind Coins?",
-   "a": "Eine interne Währung der App: Premium, Sticker-Pakete, kostenpflichtige Kanal-Abos, Überweisungen zwischen Nutzern und alles über dem kostenlosen Tageskontingent — KI-Anfragen, Uploads, Anrufe über Relay. Bei der Registrierung erhalten Sie 50 Coins. Sie sind weder Geld noch Kryptowährung und können nicht in Geld getauscht werden."
+   "a": "Eine interne Währung der App: Premium, Sticker-Pakete, kostenpflichtige Kanal-Abos, Überweisungen zwischen Nutzern und alles über dem kostenlosen Tageskontingent — KI-Anfragen, Uploads, weitergeleitete Anrufe, Auto-Übersetzung. Für die Registrierung gibt es 🪙 200. Sie sind kein Geld und keine Kryptowährung und lassen sich nicht in Geld tauschen."
   },
   {
    "q": "Welche Plattformen werden unterstützt?",
-   "a": "Android und Linux — beide jetzt als Beta verfügbar. iOS und Windows sind geplant."
+   "a": "Android und Linux. Die Beta ist vorübergehend geschlossen — wir bringen alles in Ordnung und öffnen die Downloads wieder. iOS und Windows sind geplant."
   }
  ],
  "footer_tagline": "Reden. Teilen. Ihre Daten gehören Ihnen.",
@@ -119,7 +119,7 @@
  "tok_use4": "Überweisungen",
  "tok_use4v": "zwischen Nutzern, 1% Gebühr",
  "tok_plan": "Der Plan",
- "tok_plan_text": "Ein langfristiges Ziel ist es, Coins als EION-Token auf Solana aus der App herauszuführen. Eine Testversion existiert bereits in einem Testnetz: sie hat keinen Wert und ist nicht käuflich. Termine für einen echten Start gibt es nicht.",
+ "tok_plan_text": "Wallet und Umtausch von Coins in den EION-Token sind bereits in der App eingebaut — und funktionieren. Vorerst in einem Solana-Testnetz: dort hat der Token keinen Wert und lässt sich weder kaufen noch verkaufen. Ob es zu einem echten Start kommt, hängt von den Mitteln ab. Termine gibt es nicht.",
  "tok_burn_text": "Ein Teil jeder Zahlung an die Plattform wird endgültig verbrannt — 30% bei Anrufen und Uploads, 40% beim KI-Assistenten und bei Sticker-Paketen, 50% bei Premium. Verbrannte Coins verlassen den Umlauf und landen auf keinem Konto.",
  "tok_disclaimer": "Heute sind Coins eine interne Verrechnungseinheit des Dienstes. Sie sind kein Geld, keine Wertpapiere und keine Kryptowährung, können nicht in Geld getauscht werden, und diese Seite ist kein Investitionsangebot.",
  "tok_live_title": "Coins gerade jetzt",

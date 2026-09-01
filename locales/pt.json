@@ -11,11 +11,11 @@
  "feat_label": "Aplicação",
  "feat_title": "Tudo o que precisa <span>num só app</span>",
  "f1_title": "Chat ao vivo",
- "f1_desc": "Texto, fotos, vídeo, documentos e mensagens de voz com legendas. Respostas, encaminhamentos, reações e status de entrega.",
+ "f1_desc": "Texto, fotos, vídeos e documentos com legendas, além de mensagens de voz. Respostas, reencaminhamento, reações e estados de entrega.",
  "f2_title": "Assistente IA",
  "f2_desc": "Chat IA integrado com modelos de linguagem avançados, disponível a qualquer momento.",
  "f3_title": "Videochamadas HD",
- "f3_desc": "Chamadas de áudio e vídeo via WebRTC — sem intermediários.",
+ "f3_desc": "Chamadas de áudio e vídeo por WebRTC — diretas entre dispositivos quando possível, caso contrário por relé.",
  "f4_title": "Grupos",
  "f4_desc": "Grupos e canais com funções, comentários, reações e assinaturas pagas. As transmissões abrem dentro do aplicativo.",
  "f5_title": "Chamadas criptografadas",
@@ -59,7 +59,7 @@
  "rm_2_1": "Publicação na Google Play",
  "rm_2_2": "Atualizações automáticas",
  "rm_2_3": "Download menor",
- "rm_2_4": "Recompensas por atividade",
+ "rm_2_4": "Verificação do número de telefone",
  "rm_ph3": "Fase 3 — planejado",
  "rm_h3": "Privacidade",
  "rm_3_1": "Mensagens com criptografia de ponta a ponta",
@@ -81,7 +81,7 @@
   },
   {
    "q": "O EION é gratuito?",
-   "a": "Sim. O mensageiro é totalmente gratuito. Todos os dias há uma quota gratuita: 15 pedidos de IA, 200 MB de envios e 10 chamadas por relay; acima disso paga com moedas. O premium alarga a quota e sobe o limite de ficheiro para 20 MB: 1000 EION por mês ou 8400 EION por ano."
+   "a": "Sim. O mensageiro é totalmente gratuito. Todos os dias há uma quota gratuita: 15 pedidos de IA, 200 MB de envios, 10 chamadas por relé e 200 traduções automáticas; acima dela paga com moedas. O premium amplia a quota e sobe o limite de ficheiro para 20 MB: 🪙 1000 por mês ou 🪙 8400 por ano."
   },
   {
    "q": "Minhas mensagens são criptografadas?",
@@ -89,11 +89,11 @@
   },
   {
    "q": "O que são as moedas EION?",
-   "a": "Uma moeda interna da aplicação: premium, pacotes de autocolantes, subscrições pagas de canais, transferências entre utilizadores e tudo acima da quota diária gratuita — pedidos de IA, envios, chamadas por relay. No registo recebe 50 moedas. Não são dinheiro nem criptomoeda e não se trocam por dinheiro."
+   "a": "Uma moeda interna da aplicação: premium, pacotes de autocolantes, subscrições pagas de canais, transferências entre utilizadores e tudo acima da quota diária gratuita — pedidos de IA, envios, chamadas por relé, tradução automática. O registo concede 🪙 200. Não são dinheiro nem criptomoeda e não se trocam por dinheiro."
   },
   {
    "q": "Quais plataformas são suportadas?",
-   "a": "Android e Linux — ambas já disponíveis em beta. iOS e Windows estão planejados."
+   "a": "Android e Linux. A beta está temporariamente fechada — estamos a afinar tudo e vamos reabrir as transferências. iOS e Windows estão planeados."
   }
  ],
  "footer_tagline": "Converse. Compartilhe. Seus dados são seus.",
@@ -119,7 +119,7 @@
  "tok_use4": "Transferências",
  "tok_use4v": "entre usuários, taxa de 1%",
  "tok_plan": "O plano",
- "tok_plan_text": "Um objetivo a longo prazo é levar as moedas para fora da app como token EION na Solana. Já existe uma versão de teste numa rede de testes: não tem valor e não pode ser comprada. Não há datas para um lançamento real.",
+ "tok_plan_text": "A carteira e a troca de moedas pelo token EION já estão integradas no aplicativo — e funcionam. Por enquanto numa rede de teste da Solana: ali o token não vale nada e não pode ser comprado nem vendido. Se haverá um lançamento real depende dos recursos. Não há datas.",
  "tok_burn_text": "Parte de cada pagamento à plataforma é queimada para sempre: 30% em chamadas e envios, 40% no assistente de IA e nos pacotes de autocolantes, 50% no premium. As moedas queimadas saem de circulação e não chegam a nenhuma conta.",
  "tok_disclaimer": "Hoje as moedas são uma unidade de conta interna do serviço. Não são dinheiro, valores mobiliários nem criptomoeda, não podem ser trocadas por dinheiro, e esta página não é uma oferta de investimento.",
  "tok_live_title": "As moedas agora",

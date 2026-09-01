@@ -11,11 +11,11 @@
  "feat_label": "Ứng dụng",
  "feat_title": "Tất cả những gì bạn cần <span>trong một ứng dụng</span>",
  "f1_title": "Trò chuyện trực tiếp",
- "f1_desc": "Văn bản, ảnh, video, tài liệu và tin nhắn thoại kèm chú thích. Trả lời, chuyển tiếp, biểu cảm và trạng thái gửi.",
+ "f1_desc": "Văn bản, ảnh, video và tài liệu kèm chú thích, cùng tin nhắn thoại. Trả lời, chuyển tiếp, biểu cảm và trạng thái gửi.",
  "f2_title": "Trợ lý AI",
  "f2_desc": "Chat AI tích hợp với các mô hình ngôn ngữ tiên tiến, luôn sẵn sàng.",
  "f3_title": "Cuộc gọi video HD",
- "f3_desc": "Cuộc gọi thoại và video qua WebRTC — không qua trung gian.",
+ "f3_desc": "Cuộc gọi thoại và video qua WebRTC — trực tiếp giữa các thiết bị khi có thể, nếu không thì qua relay.",
  "f4_title": "Nhóm",
  "f4_desc": "Nhóm và kênh với vai trò, bình luận, biểu cảm và đăng ký trả phí. Phát trực tiếp xem ngay trong ứng dụng.",
  "f5_title": "Cuộc gọi mã hóa",
@@ -59,7 +59,7 @@
  "rm_2_1": "Đăng tải lên Google Play",
  "rm_2_2": "Cập nhật tự động",
  "rm_2_3": "Dung lượng tải nhỏ hơn",
- "rm_2_4": "Phần thưởng cho hoạt động",
+ "rm_2_4": "Xác minh số điện thoại",
  "rm_ph3": "Giai đoạn 3 — dự kiến",
  "rm_h3": "Quyền riêng tư",
  "rm_3_1": "Tin nhắn mã hóa đầu cuối",
@@ -81,7 +81,7 @@
   },
   {
    "q": "EION có miễn phí không?",
-   "a": "Có. Ứng dụng nhắn tin hoàn toàn miễn phí. Mỗi ngày có một hạn mức miễn phí: 15 yêu cầu AI, 200 MB tải lên và 10 cuộc gọi qua relay; vượt quá đó bạn trả bằng xu. Premium mở rộng hạn mức và nâng giới hạn tệp lên 20 MB: 1000 EION mỗi tháng hoặc 8400 EION mỗi năm."
+   "a": "Có. Ứng dụng nhắn tin hoàn toàn miễn phí. Mỗi ngày có một hạn mức miễn phí: 15 yêu cầu AI, 200 MB tải lên, 10 cuộc gọi qua relay và 200 lần dịch tự động; vượt quá thì bạn trả bằng xu. Premium mở rộng hạn mức và nâng giới hạn tệp lên 20 MB: 🪙 1000 mỗi tháng hoặc 🪙 8400 mỗi năm."
   },
   {
    "q": "Tin nhắn của tôi có được mã hóa không?",
@@ -89,11 +89,11 @@
   },
   {
    "q": "Xu EION là gì?",
-   "a": "Tiền tệ nội bộ của ứng dụng: premium, gói nhãn dán, đăng ký kênh trả phí, chuyển khoản giữa người dùng và mọi thứ vượt hạn mức miễn phí hằng ngày — yêu cầu AI, tải lên, cuộc gọi qua relay. Khi đăng ký bạn nhận 50 xu. Đây không phải tiền hay tiền mã hoá và không thể đổi ra tiền."
+   "a": "Tiền tệ nội bộ của ứng dụng: premium, gói nhãn dán, đăng ký kênh trả phí, chuyển khoản giữa người dùng và mọi thứ vượt hạn mức miễn phí hằng ngày — yêu cầu AI, tải lên, cuộc gọi qua relay, dịch tự động. Đăng ký được tặng 🪙 200. Đây không phải tiền và không phải tiền mã hoá, không đổi được ra tiền."
   },
   {
    "q": "Hỗ trợ những nền tảng nào?",
-   "a": "Android và Linux — cả hai đã có bản beta. iOS và Windows đang trong kế hoạch."
+   "a": "Android và Linux. Bản beta tạm đóng — chúng tôi đang hoàn thiện và sẽ mở lại phần tải về. iOS và Windows nằm trong kế hoạch."
   }
  ],
  "footer_tagline": "Trò chuyện. Chia sẻ. Dữ liệu là của bạn.",
@@ -119,7 +119,7 @@
  "tok_use4": "Chuyển khoản",
  "tok_use4v": "giữa người dùng, phí 1%",
  "tok_plan": "Kế hoạch",
- "tok_plan_text": "Mục tiêu dài hạn là đưa xu ra khỏi ứng dụng dưới dạng token EION trên Solana. Một phiên bản thử nghiệm đã tồn tại trên mạng thử nghiệm: nó không có giá trị và không thể mua. Chưa có ngày ra mắt thật.",
+ "tok_plan_text": "Ví và việc đổi xu lấy token EION đã được tích hợp sẵn trong ứng dụng — và hoạt động. Hiện tại trên mạng thử nghiệm Solana: ở đó token không có giá trị, không thể mua cũng không thể bán. Việc có ra mắt thật hay không phụ thuộc vào nguồn lực. Không có thời hạn.",
  "tok_burn_text": "Một phần của mỗi khoản thanh toán cho nền tảng bị đốt vĩnh viễn — 30% với cuộc gọi và tải lên, 40% với trợ lý AI và gói nhãn dán, 50% với premium. Xu đã đốt rời khỏi lưu thông và không vào bất kỳ tài khoản nào.",
  "tok_disclaimer": "Hiện nay xu là đơn vị hạch toán nội bộ của dịch vụ. Chúng không phải tiền, chứng khoán hay tiền mã hóa, không thể đổi ra tiền mặt, và trang này không phải lời mời đầu tư.",
  "tok_live_title": "Xu ngay lúc này",

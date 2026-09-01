@@ -11,11 +11,11 @@
  "feat_label": "Applicazione",
  "feat_title": "Tutto ciò di cui hai bisogno <span>in una sola app</span>",
  "f1_title": "Chat dal vivo",
- "f1_desc": "Testo, foto, video, documenti e messaggi vocali con didascalie. Risposte, inoltri, reazioni e stati di consegna.",
+ "f1_desc": "Testo, foto, video e documenti con didascalie, oltre ai messaggi vocali. Risposte, inoltro, reazioni e stati di consegna.",
  "f2_title": "Assistente IA",
  "f2_desc": "Chat IA integrata con modelli linguistici avanzati, disponibile in qualsiasi momento.",
  "f3_title": "Videochiamate HD",
- "f3_desc": "Chiamate audio e video tramite WebRTC — senza intermediari.",
+ "f3_desc": "Chiamate audio e video via WebRTC — dirette tra i dispositivi quando è possibile, altrimenti tramite relay.",
  "f4_title": "Gruppi",
  "f4_desc": "Gruppi e canali con ruoli, commenti, reazioni e abbonamenti a pagamento. Le dirette si guardano nell’app.",
  "f5_title": "Chiamate cifrate",
@@ -59,7 +59,7 @@
  "rm_2_1": "Pubblicazione su Google Play",
  "rm_2_2": "Aggiornamenti automatici",
  "rm_2_3": "Download più leggero",
- "rm_2_4": "Ricompense per l'attività",
+ "rm_2_4": "Verifica del numero di telefono",
  "rm_ph3": "Fase 3 — previsto",
  "rm_h3": "Riservatezza",
  "rm_3_1": "Messaggi cifrati end-to-end",
@@ -81,7 +81,7 @@
   },
   {
    "q": "EION è gratuito?",
-   "a": "Sì. Il messenger è completamente gratuito. Ogni giorno c'è una quota gratuita: 15 richieste IA, 200 MB di caricamenti e 10 chiamate tramite relay; oltre quella paghi con le monete. Il premium amplia la quota e alza il limite dei file a 20 MB: 1000 EION al mese o 8400 EION all'anno."
+   "a": "Sì. Il messenger è completamente gratuito. Ogni giorno c’è una quota gratuita: 15 richieste IA, 200 MB di caricamenti, 10 chiamate via relay e 200 traduzioni automatiche; oltre questa paghi in monete. Premium amplia la quota e alza il limite dei file a 20 MB: 🪙 1000 al mese o 🪙 8400 all’anno."
   },
   {
    "q": "I miei messaggi sono cifrati?",
@@ -89,11 +89,11 @@
   },
   {
    "q": "Che cosa sono le monete EION?",
-   "a": "Una valuta interna dell'app: premium, pacchetti di adesivi, abbonamenti a pagamento ai canali, trasferimenti tra utenti e tutto ciò che supera la quota giornaliera gratuita — richieste IA, caricamenti, chiamate tramite relay. Alla registrazione ricevi 50 monete. Non sono denaro né criptovaluta e non si scambiano con denaro."
+   "a": "Una valuta interna dell’app: premium, pacchetti di adesivi, abbonamenti a pagamento ai canali, trasferimenti tra utenti e tutto ciò che supera la quota giornaliera gratuita — richieste IA, caricamenti, chiamate via relay, traduzione automatica. La registrazione dà 🪙 200. Non sono denaro né criptovaluta e non si cambiano in denaro."
   },
   {
    "q": "Quali piattaforme sono supportate?",
-   "a": "Android e Linux — entrambe già disponibili in beta. iOS e Windows sono previsti."
+   "a": "Android e Linux. La beta è temporaneamente chiusa: stiamo sistemando tutto e riapriremo i download. iOS e Windows sono in programma."
   }
  ],
  "footer_tagline": "Parla. Condividi. I tuoi dati restano tuoi.",
@@ -119,7 +119,7 @@
  "tok_use4": "Trasferimenti",
  "tok_use4v": "tra utenti, 1% di commissione",
  "tok_plan": "Il piano",
- "tok_plan_text": "Un obiettivo a lungo termine è portare le monete fuori dall’app come token EION su Solana. Una versione di prova esiste già su una rete di test: non ha valore e non è acquistabile. Non ci sono date per un lancio reale.",
+ "tok_plan_text": "Il portafoglio e il cambio delle monete in token EION sono già integrati nell’app — e funzionano. Per ora su una rete di test Solana: lì il token non vale nulla e non si può né comprare né vendere. Se si arriverà a un lancio reale dipende dalle risorse. Non ci sono date.",
  "tok_burn_text": "Una parte di ogni pagamento alla piattaforma viene bruciata per sempre: 30% su chiamate e caricamenti, 40% sull'assistente IA e sui pacchetti di adesivi, 50% sul premium. Le monete bruciate escono dalla circolazione e non finiscono su alcun conto.",
  "tok_disclaimer": "Oggi le monete sono un’unità di conto interna al servizio. Non sono denaro, titoli o criptovaluta, non possono essere scambiate con denaro, e questa pagina non è un’offerta di investimento.",
  "tok_live_title": "Le monete adesso",

@@ -11,11 +11,11 @@
  "feat_label": "Application",
  "feat_title": "Tout ce qu'il vous faut <span>dans une seule app</span>",
  "f1_title": "Chat en direct",
- "f1_desc": "Texte, photos, vidéos, documents et messages vocaux avec légendes. Réponses, transferts, réactions et statuts de livraison.",
+ "f1_desc": "Texte, photos, vidéos et documents avec légendes, plus les messages vocaux. Réponses, transferts, réactions et statuts de remise.",
  "f2_title": "Assistant IA",
  "f2_desc": "Chat IA intégré propulsé par des modèles de langage avancés, disponible à tout moment.",
  "f3_title": "Appels vidéo HD",
- "f3_desc": "Appels audio et vidéo via WebRTC — sans intermédiaires.",
+ "f3_desc": "Appels audio et vidéo via WebRTC — directement entre appareils quand c’est possible, sinon par relais.",
  "f4_title": "Groupes",
  "f4_desc": "Groupes et canaux avec rôles, commentaires, réactions et abonnements payants. Les directs se lisent dans l’application.",
  "f5_title": "Appels chiffrés",
@@ -59,7 +59,7 @@
  "rm_2_1": "Publication sur Google Play",
  "rm_2_2": "Mises à jour automatiques",
  "rm_2_3": "Téléchargement plus léger",
- "rm_2_4": "Récompenses pour l'activité",
+ "rm_2_4": "Vérification du numéro de téléphone",
  "rm_ph3": "Phase 3 — prévu",
  "rm_h3": "Confidentialité",
  "rm_3_1": "Messages chiffrés de bout en bout",
@@ -81,7 +81,7 @@
   },
   {
    "q": "EION est-il gratuit ?",
-   "a": "Oui. La messagerie est entièrement gratuite. Chaque jour, un quota gratuit s'applique : 15 requêtes IA, 200 Mo d'envois et 10 appels via relais ; au-delà, vous payez en pièces. Le premium élargit le quota et porte la limite de fichier à 20 Mo : 1000 EION par mois ou 8400 EION par an."
+   "a": "Oui. La messagerie est entièrement gratuite. Chaque jour, un quota gratuit s’applique : 15 requêtes IA, 200 Mo d’envois, 10 appels relayés et 200 traductions automatiques ; au-delà, vous payez en pièces. Premium élargit le quota et porte la limite de fichier à 20 Mo : 🪙 1000 par mois ou 🪙 8400 par an."
   },
   {
    "q": "Mes messages sont-ils chiffrés ?",
@@ -89,11 +89,11 @@
   },
   {
    "q": "Que sont les pièces EION ?",
-   "a": "Une monnaie interne de l'application : premium, packs d'autocollants, abonnements payants aux canaux, transferts entre utilisateurs et tout ce qui dépasse le quota quotidien gratuit — requêtes IA, envois, appels via relais. À l'inscription, vous recevez 50 pièces. Ce n'est ni de l'argent ni une cryptomonnaie, et elles ne s'échangent pas contre de l'argent."
+   "a": "Une monnaie interne de l’application : premium, packs d’autocollants, abonnements payants aux canaux, transferts entre utilisateurs et tout ce qui dépasse le quota gratuit quotidien — requêtes IA, envois, appels relayés, traduction automatique. L’inscription donne 🪙 200. Ce n’est ni de l’argent ni une cryptomonnaie, et cela ne s’échange pas contre de l’argent."
   },
   {
    "q": "Quelles plateformes sont prises en charge ?",
-   "a": "Android et Linux — les deux sont disponibles dès maintenant en bêta. iOS et Windows sont prévus."
+   "a": "Android et Linux. La bêta est temporairement fermée — nous peaufinons tout et rouvrirons les téléchargements. iOS et Windows sont prévus."
   }
  ],
  "footer_tagline": "Parlez. Partagez. Vos données restent à vous.",
@@ -119,7 +119,7 @@
  "tok_use4": "Transferts",
  "tok_use4v": "entre utilisateurs, 1% de frais",
  "tok_plan": "Le projet",
- "tok_plan_text": "Un objectif à long terme est de faire sortir les pièces de l’application sous forme de jeton EION sur Solana. Une version de test existe déjà sur un réseau de test : elle n’a aucune valeur et ne s’achète pas. Aucune date n’est annoncée.",
+ "tok_plan_text": "Le portefeuille et l’échange de pièces contre le jeton EION sont déjà intégrés à l’application — et ils fonctionnent. Pour l’instant sur un réseau de test Solana : le jeton n’y a aucune valeur et ne peut être ni acheté ni vendu. Un vrai lancement dépendra des moyens. Il n’y a pas de dates.",
  "tok_burn_text": "Une partie de chaque paiement à la plateforme est brûlée définitivement : 30% pour les appels et les envois, 40% pour l'assistant IA et les packs d'autocollants, 50% pour le premium. Les pièces brûlées quittent la circulation et n'arrivent sur aucun compte.",
  "tok_disclaimer": "Aujourd’hui, les pièces sont une unité de compte interne au service. Elles ne sont ni de la monnaie, ni des titres, ni une cryptomonnaie, ne peuvent être échangées contre de l’argent, et cette page ne constitue pas une offre d’investissement.",
  "tok_live_title": "Les pièces maintenant",
