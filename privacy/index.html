@@ -62,7 +62,7 @@ footer a:hover{color:var(--neon)}
 <!-- ======================= УКРАЇНСЬКА ======================= -->
 <section id="uk">
 <h1>Політика конфіденційності</h1>
-<p class="meta">Чинна з 28 серпня 2026 року. Стосується застосунку EION для Android і Linux та сервісу eion.network.</p>
+<p class="meta">Чинна з 1 вересня 2026 року. Стосується застосунку EION для Android і Linux та сервісу eion.network.</p>
 
 <p>EION — месенджер. Ця політика описує, які дані ми отримуємо, навіщо, кому передаємо і як ви можете їх видалити. Ми намагались писати простою мовою і без обіцянок, яких не виконуємо.</p>
 
@@ -78,7 +78,9 @@ footer a:hover{color:var(--neon)}
   <li><b>Адреса електронної пошти</b> — необов'язкова, потрібна лише для відновлення доступу.</li>
   <li><b>Номер телефону</b> — необов'язковий, потрібен лише щоб вас могли знайти знайомі з вашої адресної книги.</li>
   <li><b>Аватар, колір, статус</b> — якщо ви їх задали; видимі іншим.</li>
-  <li><b>Баланс монет і статус преміуму</b>.</li>
+  <li><b>Баланс монет і статус преміуму</b>, а також журнал операцій з монетами.</li>
+  <li><b>Публічна адреса гаманця Solana</b> — якщо ви створили гаманець у застосунку. Це лише адреса: приватний ключ і резервна фраза залишаються на вашому пристрої й до нас не потрапляють. Адреса та операції з нею видимі в публічному блокчейні.</li>
+  <li><b>Дата створення акаунта й час останнього входу</b> — службові поля.</li>
 </ul>
 
 <h3>2.2. Вміст, який ви створюєте</h3>
@@ -129,7 +131,9 @@ footer a:hover{color:var(--neon)}
 <tr><td>Google Firebase (FCM)</td><td>Push-сповіщення</td><td>Токен пристрою, факт і мінімальний вміст сповіщення</td></tr>
 <tr><td>Sentry (регіон ЄС)</td><td>Звіти про збої</td><td>Технічний опис помилки, модель пристрою й версія застосунку</td></tr>
 <tr><td>Brevo</td><td>Службові листи (відновлення пароля)</td><td>Адреса пошти й текст листа</td></tr>
-<tr><td>Groq</td><td>Вбудований AI-асистент</td><td>Лише те, що ви самі написали асистенту</td></tr>
+<tr><td>Groq</td><td>Вбудований AI-асистент і автопереклад</td><td>Ваші запити до асистента, а якщо ви ввімкнули автопереклад — текст повідомлень, які перекладаються (зокрема надісланих вам)</td></tr>
+<tr><td>Google (Gemini)</td><td>Запасний постачальник AI, коли основний недоступний; пошук по довідці асистента</td><td>Те саме, що отримує Groq</td></tr>
+<tr><td>Публічний вузол мережі Solana</td><td>Показ балансу токена й перекази</td><td>Публічну адресу вашого гаманця</td></tr>
 <tr><td>YouTube</td><td>Перегляд трансляцій у каналах</td><td>Стандартні дані відтворення відео</td></tr>
 <tr><td>Google Analytics</td><td>Статистика відвідувань <b>сайту</b> (не застосунку)</td><td>Знеособлені дані відвідування</td></tr>
 </table>
@@ -137,9 +141,10 @@ footer a:hover{color:var(--neon)}
 
 <h2>5. Скільки зберігаються дані</h2>
 <ul>
-  <li><b>Обліковий запис і переписка</b> — доки ви не видалите акаунт.</li>
-  <li><b>Файли й медіа</b> — прибираються зі сховища, коли на них більше немає посилань у переписці.</li>
-  <li><b>Коди підтвердження</b> (пошта, телефон) — 5 хвилин.</li>
+  <li><b>Обліковий запис</b> — доки ви його не видалите.</li>
+  <li><b>Переписка на сервері</b> — доставлені повідомлення в діалогах видаляються через 7 днів, у групах через 30; недоставлені чекають на отримувача. Копія переписки залишається на ваших пристроях і від нас не залежить. Пости й коментарі в каналах зберігаються, доки їх не видалить автор або власник каналу.</li>
+  <li><b>Файли й медіа</b> — прибираються зі сховища, коли на них більше немає посилань у переписці, але не раніше ніж через 7 днів після завантаження.</li>
+  <li><b>Коди підтвердження</b> — 15 хвилин для пошти, 5 хвилин для телефону.</li>
   <li><b>Звіти про збої</b> — за політикою зберігання Sentry, зазвичай до 90 днів.</li>
 </ul>
 
@@ -147,7 +152,7 @@ footer a:hover{color:var(--neon)}
 <p>Ви можете: отримати копію своїх даних, виправити їх, видалити акаунт, відкликати згоду на доступ до контактів чи місцезнаходження (у налаштуваннях системи), поскаржитись до наглядового органу з захисту даних.</p>
 
 <h3>Як видалити акаунт</h3>
-<p>У застосунку: <b>Налаштування профілю → Видалити акаунт</b>. Разом з акаунтом видаляються ваш профіль, повідомлення, файли, баланс монет і всі сесії. Дія незворотна. Якщо доступу до застосунку немає — напишіть на <a href="mailto:support@eion.network">support@eion.network</a> із адреси, вказаної в акаунті.</p>
+<p>У застосунку: <b>Налаштування профілю → Видалити акаунт</b>. Разом з акаунтом видаляються ваш профіль, баланс монет, адреса гаманця, повідомлення в діалогах і всі сесії; пуш-сповіщення припиняються. Ваші повідомлення в групах, а також пости й коментарі в каналах залишаються видимими їх учасникам — як і в інших месенджерах; файли прибирає звичайна чистка, коли на них більше немає посилань. Дія незворотна. Токени на вашій адресі в блокчейні нам не належать і видаленням акаунта не зачіпаються — доступ до них дає лише резервна фраза. Якщо доступу до застосунку немає — напишіть на <a href="mailto:support@eion.network">support@eion.network</a> із адреси, вказаної в акаунті.</p>
 
 <h2>7. Діти</h2>
 <p>EION не призначений для осіб молодших за 13 років (у Європейському Союзі — молодших за 16, якщо законодавство країни не встановлює нижчий вік). Ми свідомо не збираємо дані таких осіб. Якщо ви вважаєте, що дитина створила акаунт, напишіть нам — ми його видалимо.</p>
@@ -165,7 +170,7 @@ footer a:hover{color:var(--neon)}
 <!-- ======================= ENGLISH ======================= -->
 <section id="en" hidden>
 <h1>Privacy Policy</h1>
-<p class="meta">Effective 28 August 2026. Applies to the EION app for Android and Linux and to the eion.network service.</p>
+<p class="meta">Effective 1 September 2026. Applies to the EION app for Android and Linux and to the eion.network service.</p>
 
 <p>EION is a messenger. This policy explains what data we receive, why, who we share it with, and how you can delete it. We have tried to write plainly and to avoid promises we do not keep.</p>
 
@@ -181,7 +186,9 @@ footer a:hover{color:var(--neon)}
   <li><b>Email address</b> — optional, used only for account recovery.</li>
   <li><b>Phone number</b> — optional, used only so people in your address book can find you.</li>
   <li><b>Avatar, colour, status</b> — if you set them; visible to others.</li>
-  <li><b>EION coin balance and premium status.</b></li>
+  <li><b>Coin balance and premium status</b>, along with a log of coin operations.</li>
+  <li><b>The public address of your Solana wallet</b> — if you created a wallet in the app. Only the address: the private key and the recovery phrase stay on your device and never reach us. The address and its transactions are visible on the public blockchain.</li>
+  <li><b>Account creation date and last sign-in time</b> — service fields.</li>
 </ul>
 
 <h3>2.2. Content you create</h3>
@@ -198,6 +205,8 @@ footer a:hover{color:var(--neon)}
   <li><b>Push notification token</b> and device identifier — to deliver notifications.</li>
   <li><b>Crash reports</b> — when the app fails, a technical description is sent. Error text is automatically stripped of tokens, email addresses and query parameters.</li>
   <li><b>IP address</b> appears in the hosting provider's service logs and is kept for a limited time.</li>
+  <li><b>Daily allowance counters</b> — how many AI requests, uploads, relayed calls and translations you made in a day; needed to count the free allowance.</li>
+  <li><b>The assistant's answer memory.</b> So the model is not asked the same thing twice, we store general questions about EION together with their answers, and this memory is shared across users. Only a first question of a conversation gets in — without numbers, addresses or links, answered without touching your data and containing no nickname of yours. Entries live up to 30 days.</li>
 </ul>
 
 <h3>2.4. Address book</h3>
@@ -231,7 +240,9 @@ footer a:hover{color:var(--neon)}
 <tr><td>Google Firebase (FCM)</td><td>Push notifications</td><td>Device token, notification fact and minimal content</td></tr>
 <tr><td>Sentry (EU region)</td><td>Crash reports</td><td>Technical error description, device model, app version</td></tr>
 <tr><td>Brevo</td><td>Service emails (password recovery)</td><td>Email address and message text</td></tr>
-<tr><td>Groq</td><td>Built-in AI assistant</td><td>Only what you write to the assistant</td></tr>
+<tr><td>Groq</td><td>Built-in AI assistant and auto-translation</td><td>Your requests to the assistant and, if you enabled auto-translation, the text of the messages being translated (including those sent to you)</td></tr>
+<tr><td>Google (Gemini)</td><td>Fallback AI provider when the main one is unavailable; search across the assistant's knowledge base</td><td>The same as Groq receives</td></tr>
+<tr><td>A public Solana network node</td><td>Showing the token balance and making transfers</td><td>The public address of your wallet</td></tr>
 <tr><td>YouTube</td><td>Watching streams in channels</td><td>Standard video playback data</td></tr>
 <tr><td>Google Analytics</td><td>Visit statistics for the <b>website</b> (not the app)</td><td>De-identified visit data</td></tr>
 </table>
@@ -239,9 +250,10 @@ footer a:hover{color:var(--neon)}
 
 <h2>5. Retention</h2>
 <ul>
-  <li><b>Account and correspondence</b> — until you delete your account.</li>
-  <li><b>Files and media</b> — removed from storage once no message references them.</li>
-  <li><b>Verification codes</b> (email, phone) — 5 minutes.</li>
+  <li><b>Account</b> — until you delete it.</li>
+  <li><b>Correspondence on the server</b> — delivered direct messages are removed after 7 days, group messages after 30; undelivered ones wait for the recipient. A copy of your correspondence stays on your devices and does not depend on us. Channel posts and comments are kept until the author or the channel owner deletes them.</li>
+  <li><b>Files and media</b> — removed from storage once no message references them, but no sooner than 7 days after upload.</li>
+  <li><b>Verification codes</b> — 15 minutes for email, 5 minutes for phone.</li>
   <li><b>Crash reports</b> — per Sentry retention, typically up to 90 days.</li>
 </ul>
 
@@ -249,7 +261,7 @@ footer a:hover{color:var(--neon)}
 <p>You may obtain a copy of your data, correct it, delete your account, withdraw consent for contacts or location access (in system settings), and lodge a complaint with a data protection authority.</p>
 
 <h3>How to delete your account</h3>
-<p>In the app: <b>Profile settings → Delete account</b>. This removes your profile, messages, files, coin balance and all sessions. The action is irreversible. If you cannot access the app, write to <a href="mailto:support@eion.network">support@eion.network</a> from the address on the account.</p>
+<p>In the app: <b>Profile settings → Delete account</b>. This removes your profile, coin balance, wallet address, direct messages and all sessions, and stops push notifications. Your messages in groups, along with channel posts and comments, remain visible to their participants — as in other messengers; files are removed by the usual cleanup once nothing references them. The action is irreversible. Tokens at your blockchain address do not belong to us and are not affected by deleting the account — only the recovery phrase gives access to them. If you cannot access the app, write to <a href="mailto:support@eion.network">support@eion.network</a> from the address on the account.</p>
 
 <h2>7. Children</h2>
 <p>EION is not intended for people under 13 (under 16 in the European Union, unless national law sets a lower age). We do not knowingly collect their data. If you believe a child has created an account, contact us and we will delete it.</p>
