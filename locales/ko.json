@@ -36,9 +36,9 @@
  "prem_label": "프리미엄",
  "prem_title": "<span>프리미엄</span> 잠금 해제",
  "prem_monthly_tag": "월간",
- "prem_monthly_period": "EION / 월",
+ "prem_monthly_period": "🪙 / 월",
  "prem_yearly_tag": "연간 — 최고의 가치",
- "prem_yearly_period": "EION / 년",
+ "prem_yearly_period": "🪙 / 년",
  "prem_f1": "파일 5 MB 대신 20 MB까지",
  "prem_f2": "AI 어시스턴트: 하루 15회 대신 100회",
  "prem_f3": "업로드: 하루 200 MB 대신 1 GB",
@@ -137,7 +137,7 @@
  "tok_withdraw": "출금 가능",
  "tok_withdraw_v": "누군가가 지급한 코인만",
  "tok_wallet": "지갑",
- "tok_wallet_v": "직접 생성, 키는 기기에 남습니다",
+ "tok_wallet_v": "직접 생성, 키는 기기에 남습니다, 개설 🪙 50",
  "don_label": "후원",
  "don_title": "<span>개발</span> 후원",
  "don_copy": "복사",
@@ -154,5 +154,9 @@
  "nav_support": "후원",
  "footer_donate": "개발 후원",
  "tok_protect": "보호",
- "tok_protect_v": "코인 이동에는 계정 비밀번호가 필요"
+ "tok_protect_v": "코인 이동에는 계정 비밀번호가 필요",
+ "tok_translate": "자동 번역",
+ "tok_translate_v": "하루 200회, 이후 🪙 1",
+ "prem_f8": "자동 번역: 하루 200회 대신 1000회",
+ "prem_f9": "지갑 개설 무료"
 }

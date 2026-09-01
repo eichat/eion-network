@@ -36,9 +36,9 @@
  "prem_label": "Premium",
  "prem_title": "Mở khóa <span>Premium</span>",
  "prem_monthly_tag": "Hàng tháng",
- "prem_monthly_period": "EION / tháng",
+ "prem_monthly_period": "🪙 / tháng",
  "prem_yearly_tag": "Hàng năm — Giá trị nhất",
- "prem_yearly_period": "EION / năm",
+ "prem_yearly_period": "🪙 / năm",
  "prem_f1": "Tệp tới 20 MB thay vì 5",
  "prem_f2": "Trợ lý AI: 100 yêu cầu mỗi ngày thay vì 15",
  "prem_f3": "Tải lên: 1 GB mỗi ngày thay vì 200 MB",
@@ -137,7 +137,7 @@
  "tok_withdraw": "Có thể rút",
  "tok_withdraw_v": "chỉ xu do người khác trả cho bạn",
  "tok_wallet": "Ví",
- "tok_wallet_v": "tạo thủ công, khoá nằm trên thiết bị",
+ "tok_wallet_v": "tạo thủ công, khoá nằm trên thiết bị, mở ví 🪙 50",
  "don_label": "Ủng hộ",
  "don_title": "Ủng hộ <span>phát triển</span>",
  "don_copy": "Sao chép",
@@ -154,5 +154,9 @@
  "nav_support": "Ủng hộ",
  "footer_donate": "Ủng hộ phát triển",
  "tok_protect": "Bảo vệ",
- "tok_protect_v": "chuyển xu cần mật khẩu tài khoản"
+ "tok_protect_v": "chuyển xu cần mật khẩu tài khoản",
+ "tok_translate": "Dịch tự động",
+ "tok_translate_v": "200 mỗi ngày, sau đó 🪙 1",
+ "prem_f8": "Dịch tự động: 1000 mỗi ngày thay vì 200",
+ "prem_f9": "Mở ví miễn phí"
 }

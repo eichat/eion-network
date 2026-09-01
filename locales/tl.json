@@ -36,9 +36,9 @@
  "prem_label": "Premium",
  "prem_title": "I-unlock ang <span>Premium</span>",
  "prem_monthly_tag": "Buwanan",
- "prem_monthly_period": "EION / buwan",
+ "prem_monthly_period": "🪙 / buwan",
  "prem_yearly_tag": "Taunan — Pinakamainam",
- "prem_yearly_period": "EION / taon",
+ "prem_yearly_period": "🪙 / taon",
  "prem_f1": "Mga file hanggang 20 MB sa halip na 5",
  "prem_f2": "AI assistant: 100 kahilingan bawat araw sa halip na 15",
  "prem_f3": "Upload: 1 GB bawat araw sa halip na 200 MB",
@@ -137,7 +137,7 @@
  "tok_withdraw": "Maaaring i-withdraw",
  "tok_withdraw_v": "mga baryang binayad sa iyo lamang",
  "tok_wallet": "Wallet",
- "tok_wallet_v": "ginagawa nang manu-mano, nasa device ang susi",
+ "tok_wallet_v": "ginagawa nang manu-mano, nasa device ang susi, pagbubukas 🪙 50",
  "don_label": "Suporta",
  "don_title": "Suportahan ang <span>pagbuo</span>",
  "don_copy": "Kopyahin",
@@ -154,5 +154,9 @@
  "nav_support": "Suporta",
  "footer_donate": "Suportahan ang pagbuo",
  "tok_protect": "Proteksyon",
- "tok_protect_v": "ang paglilipat ng coins ay nangangailangan ng password ng account"
+ "tok_protect_v": "ang paglilipat ng coins ay nangangailangan ng password ng account",
+ "tok_translate": "Awtomatikong pagsasalin",
+ "tok_translate_v": "200 kada araw, tapos 🪙 1",
+ "prem_f8": "Awtomatikong pagsasalin: 1000 kada araw sa halip na 200",
+ "prem_f9": "Libre ang pagbubukas ng wallet"
 }

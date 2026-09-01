@@ -36,9 +36,9 @@
  "prem_label": "Premium",
  "prem_title": "<span>Premium</span> Ontgrendelen",
  "prem_monthly_tag": "Maandelijks",
- "prem_monthly_period": "EION / maand",
+ "prem_monthly_period": "🪙 / maand",
  "prem_yearly_tag": "Jaarlijks — Beste Waarde",
- "prem_yearly_period": "EION / jaar",
+ "prem_yearly_period": "🪙 / jaar",
  "prem_f1": "Bestanden tot 20 MB in plaats van 5",
  "prem_f2": "AI-assistent: 100 verzoeken per dag in plaats van 15",
  "prem_f3": "Uploads: 1 GB per dag in plaats van 200 MB",
@@ -137,7 +137,7 @@
  "tok_withdraw": "Opneembaar",
  "tok_withdraw_v": "alleen munten die iemand je betaalde",
  "tok_wallet": "Wallet",
- "tok_wallet_v": "handmatig aangemaakt, sleutel blijft op het apparaat",
+ "tok_wallet_v": "handmatig aangemaakt, sleutel blijft op het apparaat, openen 🪙 50",
  "don_label": "Steun",
  "don_title": "Steun de <span>ontwikkeling</span>",
  "don_copy": "Kopiëren",
@@ -154,5 +154,9 @@
  "nav_support": "Steun",
  "footer_donate": "Steun de ontwikkeling",
  "tok_protect": "Beveiliging",
- "tok_protect_v": "munten verplaatsen vereist het accountwachtwoord"
+ "tok_protect_v": "munten verplaatsen vereist het accountwachtwoord",
+ "tok_translate": "Automatisch vertalen",
+ "tok_translate_v": "200 per dag, daarna 🪙 1",
+ "prem_f8": "Automatisch vertalen: 1000 per dag in plaats van 200",
+ "prem_f9": "Portemonnee openen is gratis"
 }

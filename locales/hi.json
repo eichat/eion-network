@@ -36,9 +36,9 @@
  "prem_label": "प्रीमियम",
  "prem_title": "<span>प्रीमियम</span> अनलॉक करें",
  "prem_monthly_tag": "मासिक",
- "prem_monthly_period": "EION / माह",
+ "prem_monthly_period": "🪙 / माह",
  "prem_yearly_tag": "वार्षिक — सर्वोत्तम मूल्य",
- "prem_yearly_period": "EION / वर्ष",
+ "prem_yearly_period": "🪙 / वर्ष",
  "prem_f1": "फ़ाइलें 5 MB नहीं, 20 MB तक",
  "prem_f2": "AI सहायक: रोज़ 15 नहीं, 100 अनुरोध",
  "prem_f3": "अपलोड: रोज़ 200 MB नहीं, 1 GB",
@@ -137,7 +137,7 @@
  "tok_withdraw": "निकासी योग्य",
  "tok_withdraw_v": "केवल वे सिक्के जो किसी ने आपको दिए",
  "tok_wallet": "वॉलेट",
- "tok_wallet_v": "हाथ से बनता है, कुंजी डिवाइस पर रहती है",
+ "tok_wallet_v": "हाथ से बनता है, कुंजी डिवाइस पर रहती है, खोलने पर 🪙 50",
  "don_label": "सहयोग",
  "don_title": "<span>विकास</span> को सहयोग दें",
  "don_copy": "कॉपी",
@@ -154,5 +154,9 @@
  "nav_support": "सहयोग",
  "footer_donate": "विकास को सहयोग दें",
  "tok_protect": "सुरक्षा",
- "tok_protect_v": "सिक्के भेजने के लिए खाते का पासवर्ड चाहिए"
+ "tok_protect_v": "सिक्के भेजने के लिए खाते का पासवर्ड चाहिए",
+ "tok_translate": "स्वतः अनुवाद",
+ "tok_translate_v": "प्रतिदिन 200, फिर 🪙 1",
+ "prem_f8": "स्वतः अनुवाद: 200 के बजाय 1000 प्रतिदिन",
+ "prem_f9": "वॉलेट खोलना मुफ़्त"
 }

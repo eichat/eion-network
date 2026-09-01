@@ -36,9 +36,9 @@
  "prem_label": "প্রিমিয়াম",
  "prem_title": "<span>প্রিমিয়াম</span> আনলক করুন",
  "prem_monthly_tag": "মাসিক",
- "prem_monthly_period": "EION / মাস",
+ "prem_monthly_period": "🪙 / মাস",
  "prem_yearly_tag": "বার্ষিক — সেরা মূল্য",
- "prem_yearly_period": "EION / বছর",
+ "prem_yearly_period": "🪙 / বছর",
  "prem_f1": "ফাইল ৫ MB নয়, ২০ MB পর্যন্ত",
  "prem_f2": "AI সহকারী: দিনে ১৫ নয়, ১০০টি অনুরোধ",
  "prem_f3": "আপলোড: দিনে ২০০ MB নয়, ১ GB",
@@ -137,7 +137,7 @@
  "tok_withdraw": "উত্তোলনযোগ্য",
  "tok_withdraw_v": "শুধু অন্যের দেওয়া কয়েন",
  "tok_wallet": "ওয়ালেট",
- "tok_wallet_v": "হাতে তৈরি, চাবি ডিভাইসেই থাকে",
+ "tok_wallet_v": "হাতে তৈরি, চাবি ডিভাইসেই থাকে, খুলতে 🪙 ৫০",
  "don_label": "সহায়তা",
  "don_title": "<span>উন্নয়নে</span> সহায়তা করুন",
  "don_copy": "কপি",
@@ -154,5 +154,9 @@
  "nav_support": "সহায়তা",
  "footer_donate": "উন্নয়নে সহায়তা",
  "tok_protect": "সুরক্ষা",
- "tok_protect_v": "কয়েন সরাতে অ্যাকাউন্টের পাসওয়ার্ড লাগে"
+ "tok_protect_v": "কয়েন সরাতে অ্যাকাউন্টের পাসওয়ার্ড লাগে",
+ "tok_translate": "স্বয়ংক্রিয় অনুবাদ",
+ "tok_translate_v": "দিনে ২০০, এরপর 🪙 ১",
+ "prem_f8": "স্বয়ংক্রিয় অনুবাদ: ২০০-এর বদলে ১০০০ প্রতিদিন",
+ "prem_f9": "ওয়ালেট খোলা বিনামূল্যে"
 }

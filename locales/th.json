@@ -36,9 +36,9 @@
  "prem_label": "พรีเมียม",
  "prem_title": "ปลดล็อก <span>พรีเมียม</span>",
  "prem_monthly_tag": "รายเดือน",
- "prem_monthly_period": "EION / เดือน",
+ "prem_monthly_period": "🪙 / เดือน",
  "prem_yearly_tag": "รายปี — คุ้มที่สุด",
- "prem_yearly_period": "EION / ปี",
+ "prem_yearly_period": "🪙 / ปี",
  "prem_f1": "ไฟล์ได้ถึง 20 MB แทน 5 MB",
  "prem_f2": "ผู้ช่วย AI: 100 คำขอต่อวัน แทน 15",
  "prem_f3": "อัปโหลด: 1 GB ต่อวัน แทน 200 MB",
@@ -137,7 +137,7 @@
  "tok_withdraw": "ถอนได้",
  "tok_withdraw_v": "เฉพาะเหรียญที่มีคนจ่ายให้คุณ",
  "tok_wallet": "กระเป๋า",
- "tok_wallet_v": "สร้างเอง กุญแจอยู่บนอุปกรณ์",
+ "tok_wallet_v": "สร้างเอง กุญแจอยู่บนอุปกรณ์ เปิดใช้ 🪙 50",
  "don_label": "สนับสนุน",
  "don_title": "สนับสนุน<span>การพัฒนา</span>",
  "don_copy": "คัดลอก",
@@ -154,5 +154,9 @@
  "nav_support": "สนับสนุน",
  "footer_donate": "สนับสนุนการพัฒนา",
  "tok_protect": "การป้องกัน",
- "tok_protect_v": "การย้ายเหรียญต้องใช้รหัสผ่านบัญชี"
+ "tok_protect_v": "การย้ายเหรียญต้องใช้รหัสผ่านบัญชี",
+ "tok_translate": "แปลอัตโนมัติ",
+ "tok_translate_v": "วันละ 200 จากนั้น 🪙 1",
+ "prem_f8": "แปลอัตโนมัติ: วันละ 1000 แทน 200",
+ "prem_f9": "เปิดกระเป๋าเงินฟรี"
 }

@@ -36,9 +36,9 @@
  "prem_label": "Premium",
  "prem_title": "<span>Premium</span>'u Aç",
  "prem_monthly_tag": "Aylık",
- "prem_monthly_period": "EION / ay",
+ "prem_monthly_period": "🪙 / ay",
  "prem_yearly_tag": "Yıllık — En İyi Değer",
- "prem_yearly_period": "EION / yıl",
+ "prem_yearly_period": "🪙 / yıl",
  "prem_f1": "5 MB yerine 20 MB'a kadar dosya",
  "prem_f2": "Yapay zekâ asistanı: günde 15 yerine 100 istek",
  "prem_f3": "Yükleme: günde 200 MB yerine 1 GB",
@@ -137,7 +137,7 @@
  "tok_withdraw": "Çekilebilir",
  "tok_withdraw_v": "yalnızca birinin size ödediği paralar",
  "tok_wallet": "Cüzdan",
- "tok_wallet_v": "elle oluşturulur, anahtar cihazda kalır",
+ "tok_wallet_v": "elle oluşturulur, anahtar cihazda kalır, açılış 🪙 50",
  "don_label": "Destek",
  "don_title": "<span>Geliştirmeyi</span> destekle",
  "don_copy": "Kopyala",
@@ -154,5 +154,9 @@
  "nav_support": "Destek",
  "footer_donate": "Geliştirmeyi destekle",
  "tok_protect": "Koruma",
- "tok_protect_v": "jeton taşımak hesap şifresi ister"
+ "tok_protect_v": "jeton taşımak hesap şifresi ister",
+ "tok_translate": "Otomatik çeviri",
+ "tok_translate_v": "günde 200, sonra 🪙 1",
+ "prem_f8": "Otomatik çeviri: 200 yerine günde 1000",
+ "prem_f9": "Cüzdan açmak ücretsiz"
 }

@@ -36,9 +36,9 @@
  "prem_label": "プレミアム",
  "prem_title": "<span>プレミアム</span>を解放",
  "prem_monthly_tag": "月額",
- "prem_monthly_period": "EION / 月",
+ "prem_monthly_period": "🪙 / 月",
  "prem_yearly_tag": "年額 — お得",
- "prem_yearly_period": "EION / 年",
+ "prem_yearly_period": "🪙 / 年",
  "prem_f1": "ファイルは5 MBではなく20 MBまで",
  "prem_f2": "AIアシスタント：1日15回ではなく100回",
  "prem_f3": "アップロード：1日200 MBではなく1 GB",
@@ -137,7 +137,7 @@
  "tok_withdraw": "出金可能",
  "tok_withdraw_v": "誰かがあなたに支払ったコインのみ",
  "tok_wallet": "ウォレット",
- "tok_wallet_v": "手動で作成、鍵は端末に残ります",
+ "tok_wallet_v": "手動で作成、鍵は端末に残ります、開設 🪙 50",
  "don_label": "サポート",
  "don_title": "<span>開発</span>を支援",
  "don_copy": "コピー",
@@ -154,5 +154,9 @@
  "nav_support": "支援",
  "footer_donate": "開発を支援",
  "tok_protect": "保護",
- "tok_protect_v": "コインの移動にはアカウントのパスワードが必要"
+ "tok_protect_v": "コインの移動にはアカウントのパスワードが必要",
+ "tok_translate": "自動翻訳",
+ "tok_translate_v": "1日200件、以降 🪙 1",
+ "prem_f8": "自動翻訳：1日200件から1000件へ",
+ "prem_f9": "ウォレットの開設が無料"
 }
