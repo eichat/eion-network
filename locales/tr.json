@@ -137,5 +137,20 @@
   "tok_withdraw": "Çekilebilir",
   "tok_withdraw_v": "yalnızca birinin size ödediği paralar",
   "tok_wallet": "Cüzdan",
-  "tok_wallet_v": "elle oluşturulur, anahtar cihazda kalır"
+  "tok_wallet_v": "elle oluşturulur, anahtar cihazda kalır",
+  "don_label": "Destek",
+  "don_title": "<span>Geliştirmeyi</span> destekle",
+  "don_copy": "Kopyala",
+  "don_intro": "EION bağımsız bir geliştirici tarafından yapılıyor, yatırımcısı yok. Bağışlar sunucuları, depolamayı ve uygulamanın kullanıcılar adına ödediği ağ ücretlerini karşılar. Bu, geliştirmeye destektir — EION parası satın almak, token satışı ya da yatırım değildir.",
+  "don_note": "Göndermeden önce adresi karşılaştırın: uygulamada (Ayarlar → Destek) görünenle aynı olmalı. Bağışlar iade edilmez ve hiçbir hak, pay ya da gelecekteki token vermez.",
+  "don_net_btc": "Bitcoin",
+  "don_net_usdt": "TRON (TRC-20)",
+  "don_net_sol": "Solana",
+  "don_net_eth": "Ethereum (ERC-20)",
+  "don_w_btc": "Yalnızca Bitcoin ağında BTC gönderin.",
+  "don_w_usdt": "Yalnızca TRON ağında USDT (TRC-20) gönderin. Ethereum veya BNB Chain’den gelen USDT kaybolur.",
+  "don_w_sol": "Solana ağı: SOL ve her SPL token (USDC, USDT) aynı adrese gider.",
+  "don_w_eth": "Yalnızca Ethereum ağı: ETH ve ERC-20 tokenlar. TRC-20 veya BEP-20 göndermeyin.",
+  "nav_support": "Destek",
+  "footer_donate": "Geliştirmeyi destekle"
 }

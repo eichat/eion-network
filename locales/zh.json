@@ -137,5 +137,20 @@
   "tok_withdraw": "可提取",
   "tok_withdraw_v": "仅限他人支付给你的金币",
   "tok_wallet": "钱包",
-  "tok_wallet_v": "手动创建，密钥留在设备上"
+  "tok_wallet_v": "手动创建，密钥留在设备上",
+  "don_label": "支持",
+  "don_title": "支持<span>开发</span>",
+  "don_copy": "复制",
+  "don_intro": "EION 由一位独立开发者构建，没有投资人。捐赠用于服务器、存储，以及应用替用户承担的网络手续费。这是对开发的支持——不是购买 EION 金币，不是代币销售，也不是投资。",
+  "don_note": "发送前请核对地址：必须与应用内（设置 → 支持）显示的一致。捐赠不可退还，也不带来任何权利、股份或未来代币。",
+  "don_net_btc": "Bitcoin",
+  "don_net_usdt": "TRON (TRC-20)",
+  "don_net_sol": "Solana",
+  "don_net_eth": "Ethereum (ERC-20)",
+  "don_w_btc": "仅可发送 Bitcoin 网络的 BTC。",
+  "don_w_usdt": "仅可发送 TRON 网络的 USDT（TRC-20）。来自 Ethereum 或 BNB Chain 的 USDT 将永久丢失。",
+  "don_w_sol": "Solana 网络：SOL 与任意 SPL 代币（USDC、USDT）都发往同一地址。",
+  "don_w_eth": "仅限 Ethereum 网络：ETH 与 ERC-20 代币。请勿发送 TRC-20 或 BEP-20。",
+  "nav_support": "支持",
+  "footer_donate": "支持开发"
 }

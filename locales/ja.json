@@ -137,5 +137,20 @@
   "tok_withdraw": "出金可能",
   "tok_withdraw_v": "誰かがあなたに支払ったコインのみ",
   "tok_wallet": "ウォレット",
-  "tok_wallet_v": "手動で作成、鍵は端末に残ります"
+  "tok_wallet_v": "手動で作成、鍵は端末に残ります",
+  "don_label": "サポート",
+  "don_title": "<span>開発</span>を支援",
+  "don_copy": "コピー",
+  "don_intro": "EION は独立した開発者が作っており、投資家はいません。寄付はサーバー、ストレージ、アプリが利用者の代わりに負担するネットワーク手数料に使われます。これは開発への支援であり、EION コインの購入でもトークン販売でも投資でもありません。",
+  "don_note": "送る前にアドレスを照合してください。アプリ（設定 → サポート）に表示されているものと一致する必要があります。寄付は返金されず、いかなる権利・持分・将来のトークンも生じません。",
+  "don_net_btc": "Bitcoin",
+  "don_net_usdt": "TRON (TRC-20)",
+  "don_net_sol": "Solana",
+  "don_net_eth": "Ethereum (ERC-20)",
+  "don_w_btc": "Bitcoin ネットワークの BTC のみ送ってください。",
+  "don_w_usdt": "TRON の USDT（TRC-20）のみ送ってください。Ethereum や BNB Chain の USDT は失われます。",
+  "don_w_sol": "Solana ネットワーク：SOL と任意の SPL トークン（USDC、USDT）は同じアドレスに届きます。",
+  "don_w_eth": "Ethereum ネットワークのみ：ETH と ERC-20 トークン。TRC-20 や BEP-20 は送らないでください。",
+  "nav_support": "支援",
+  "footer_donate": "開発を支援"
 }

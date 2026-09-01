@@ -137,5 +137,20 @@
   "tok_withdraw": "Có thể rút",
   "tok_withdraw_v": "chỉ xu do người khác trả cho bạn",
   "tok_wallet": "Ví",
-  "tok_wallet_v": "tạo thủ công, khoá nằm trên thiết bị"
+  "tok_wallet_v": "tạo thủ công, khoá nằm trên thiết bị",
+  "don_label": "Ủng hộ",
+  "don_title": "Ủng hộ <span>phát triển</span>",
+  "don_copy": "Sao chép",
+  "don_intro": "EION do một nhà phát triển độc lập xây dựng, không có nhà đầu tư. Các khoản ủng hộ trả cho máy chủ, lưu trữ và phí mạng mà ứng dụng trả thay người dùng. Đây là ủng hộ phát triển — không phải mua xu EION, không phải bán token và không phải đầu tư.",
+  "don_note": "Hãy đối chiếu địa chỉ trước khi gửi: nó phải trùng với địa chỉ hiển thị trong ứng dụng (Cài đặt → Ủng hộ). Khoản ủng hộ không hoàn lại và không đem lại quyền lợi, cổ phần hay token tương lai.",
+  "don_net_btc": "Bitcoin",
+  "don_net_usdt": "TRON (TRC-20)",
+  "don_net_sol": "Solana",
+  "don_net_eth": "Ethereum (ERC-20)",
+  "don_w_btc": "Chỉ gửi BTC trên mạng Bitcoin.",
+  "don_w_usdt": "Chỉ gửi USDT (TRC-20) trên TRON. USDT từ Ethereum hay BNB Chain sẽ mất.",
+  "don_w_sol": "Mạng Solana: SOL và mọi token SPL (USDC, USDT) đều vào cùng địa chỉ này.",
+  "don_w_eth": "Chỉ mạng Ethereum: ETH và token ERC-20. Đừng gửi TRC-20 hay BEP-20.",
+  "nav_support": "Ủng hộ",
+  "footer_donate": "Ủng hộ phát triển"
 }
