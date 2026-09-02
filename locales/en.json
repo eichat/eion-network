@@ -18,8 +18,8 @@
  "f3_desc": "Audio and video calls over WebRTC — directly between devices when possible, otherwise via a relay.",
  "f4_title": "Groups",
  "f4_desc": "Groups and channels with roles, comments, reactions and paid subscriptions. Live streams play inside the app.",
- "f5_title": "Encrypted calls",
- "f5_desc": "Calls are end-to-end encrypted by WebRTC — their content is not available to the server. For messages, end-to-end encryption is planned and does not exist yet.",
+ "f5_title": "End-to-end encryption",
+ "f5_desc": "Calls and the text of direct chats are end-to-end encrypted: the key stays on your device and the server sees only ciphertext. Groups, channels and attachments are not yet — we say so plainly.",
  "f6_title": "Coins",
  "f6_desc": "An in-app currency for premium, sticker packs and paid channels. Transfers between users included.",
  "dl_label": "Get the App",
@@ -62,8 +62,8 @@
  "rm_2_4": "Phone number verification",
  "rm_ph3": "Phase 3 — planned",
  "rm_h3": "Privacy",
- "rm_3_1": "End-to-end encrypted messages",
- "rm_3_2": "Verification codes for calls",
+ "rm_3_1": "Encryption for groups and attachments",
+ "rm_3_2": "Verification codes for chats and calls",
  "rm_3_3": "Secret chats",
  "rm_3_4": "Windows and iOS apps",
  "rm_ph4": "Phase 4 — long term",
@@ -85,7 +85,7 @@
   },
   {
    "q": "Are my messages encrypted?",
-   "a": "Calls are end-to-end encrypted by WebRTC, and their content is not available to the server. Messages travel over a secure channel but are stored on the server in plain form — end-to-end encryption for them is planned and does not exist yet. We prefer to say this plainly."
+   "a": "Partly — and we say exactly where. Calls are end-to-end encrypted via WebRTC. So is the text of direct chats: the key is created on your device and never leaves it, so the server holds only ciphertext, and we cannot read or restore it even at your request. Messages in groups and channels, along with photos, videos and voice messages, are still stored on the server in the clear — that is the next step. One more honest caveat: our server distributes the public keys, so until verification codes exist, the encryption protects against database theft and outside access, but formally not against us."
   },
   {
    "q": "What are coins?",

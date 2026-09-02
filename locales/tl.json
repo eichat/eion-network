@@ -18,8 +18,8 @@
  "f3_desc": "Audio at video na tawag sa WebRTC — direkta sa pagitan ng mga device kung kaya, kung hindi ay sa pamamagitan ng relay.",
  "f4_title": "Mga Grupo",
  "f4_desc": "Mga grupo at channel na may roles, komento, reaksyon at bayad na subscription. Ang live stream ay nanonood sa loob mismo ng app.",
- "f5_title": "Mga naka-encrypt na tawag",
- "f5_desc": "Ang mga tawag ay end-to-end encrypted sa pamamagitan ng WebRTC — hindi naaabot ng server ang laman nito. Para sa mga mensahe, nakaplano pa lamang ang end-to-end encryption at wala pa ito.",
+ "f5_title": "End-to-end na pag-encrypt",
+ "f5_desc": "Ang mga tawag at ang teksto ng mga pribadong chat ay end-to-end na naka-encrypt: nasa device ang susi at bantayog lang na naka-encrypt ang nakikita ng server. Hindi pa ang mga grupo, channel at attachment — sinasabi namin ito nang tapat.",
  "f6_title": "Coins",
  "f6_desc": "Panloob na pera para sa premium, sticker pack at bayad na channel. Kasama ang paglilipat sa pagitan ng mga user.",
  "dl_label": "Kunin ang App",
@@ -62,8 +62,8 @@
  "rm_2_4": "Pagpapatunay ng numero ng telepono",
  "rm_ph3": "Yugto 3 — nakaplano",
  "rm_h3": "Pagkapribado",
- "rm_3_1": "Mga mensaheng end-to-end encrypted",
- "rm_3_2": "Mga verification code para sa tawag",
+ "rm_3_1": "Pag-encrypt para sa mga grupo at attachment",
+ "rm_3_2": "Mga verification code para sa chat at tawag",
  "rm_3_3": "Mga lihim na chat",
  "rm_3_4": "Mga app para sa Windows at iOS",
  "rm_ph4": "Yugto 4 — pangmatagalan",
@@ -85,7 +85,7 @@
   },
   {
    "q": "Naka-encrypt ba ang mga mensahe ko?",
-   "a": "Ang mga tawag ay end-to-end encrypted sa pamamagitan ng WebRTC at hindi naaabot ng server ang laman nito. Ang mga mensahe ay dumadaan sa ligtas na channel ngunit nakaimbak nang bukas sa server — nakaplano pa lamang ang end-to-end encryption para sa kanila. Mas gusto naming sabihin ito nang tapat."
+   "a": "Bahagya — at sinasabi namin kung saan eksakto. Ang mga tawag ay end-to-end na naka-encrypt sa WebRTC. Ganoon din ang teksto ng mga pribadong chat: ang susi ay nalilikha sa inyong device at hindi ito umaalis doon, kaya naka-encrypt lang ang nasa server at hindi namin ito mabasa o maibalik kahit hilingin ninyo. Ang mga mensahe sa grupo at channel, pati larawan, video at voice message, ay nakaimbak pa ring bukas sa server — iyon ang susunod na hakbang. Isa pang tapat na paalala: ang aming server ang namamahagi ng mga pampublikong susi, kaya hangga’t walang verification code, ang pag-encrypt ay proteksyon laban sa pagnanakaw ng database at panlabas na access, ngunit pormal na hindi laban sa amin."
   },
   {
    "q": "Ano ang coins?",

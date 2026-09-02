@@ -18,8 +18,8 @@
  "f3_desc": "Chiamate audio e video via WebRTC — dirette tra i dispositivi quando è possibile, altrimenti tramite relay.",
  "f4_title": "Gruppi",
  "f4_desc": "Gruppi e canali con ruoli, commenti, reazioni e abbonamenti a pagamento. Le dirette si guardano nell’app.",
- "f5_title": "Chiamate cifrate",
- "f5_desc": "Le chiamate sono cifrate end-to-end da WebRTC — il loro contenuto non è accessibile al server. Per i messaggi la cifratura end-to-end è prevista e non esiste ancora.",
+ "f5_title": "Crittografia end-to-end",
+ "f5_desc": "Le chiamate e il testo delle chat private sono cifrati end-to-end: la chiave resta sul dispositivo e il server vede solo testo cifrato. Gruppi, canali e allegati non ancora — lo diciamo apertamente.",
  "f6_title": "Monete",
  "f6_desc": "Una valuta interna per premium, pacchetti di adesivi e canali a pagamento. Inclusi i trasferimenti tra utenti.",
  "dl_label": "Scarica l'app",
@@ -62,8 +62,8 @@
  "rm_2_4": "Verifica del numero di telefono",
  "rm_ph3": "Fase 3 — previsto",
  "rm_h3": "Riservatezza",
- "rm_3_1": "Messaggi cifrati end-to-end",
- "rm_3_2": "Codici di verifica per le chiamate",
+ "rm_3_1": "Crittografia di gruppi e allegati",
+ "rm_3_2": "Codici di verifica per chat e chiamate",
  "rm_3_3": "Chat segrete",
  "rm_3_4": "App per Windows e iOS",
  "rm_ph4": "Fase 4 — lungo termine",
@@ -85,7 +85,7 @@
   },
   {
    "q": "I miei messaggi sono cifrati?",
-   "a": "Le chiamate sono cifrate end-to-end da WebRTC e il loro contenuto non è accessibile al server. I messaggi viaggiano su un canale sicuro ma sono conservati in chiaro sul server — la cifratura end-to-end per essi è prevista e non esiste ancora. Preferiamo dirlo apertamente."
+   "a": "In parte — e diciamo esattamente dove. Le chiamate sono cifrate end-to-end tramite WebRTC. Anche il testo delle chat private: la chiave nasce sul tuo dispositivo e non lo lascia mai, quindi il server conserva solo testo cifrato e non possiamo leggerlo né ripristinarlo nemmeno su tua richiesta. I messaggi nei gruppi e nei canali, insieme a foto, video e messaggi vocali, restano archiviati in chiaro — è il passo successivo. Un’altra avvertenza onesta: le chiavi pubbliche le distribuisce il nostro server, quindi finché non ci sono codici di verifica la cifratura protegge dal furto del database e da accessi esterni, ma formalmente non da noi."
   },
   {
    "q": "Che cosa sono le monete EION?",

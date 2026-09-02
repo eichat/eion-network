@@ -18,8 +18,8 @@
  "f3_desc": "Panggilan suara dan video lewat WebRTC — langsung antar perangkat bila memungkinkan, jika tidak lewat relay.",
  "f4_title": "Grup",
  "f4_desc": "Grup dan kanal dengan peran, komentar, reaksi, serta langganan berbayar. Siaran langsung diputar di dalam aplikasi.",
- "f5_title": "Panggilan terenkripsi",
- "f5_desc": "Panggilan dienkripsi ujung-ke-ujung oleh WebRTC — isinya tidak dapat diakses server. Untuk pesan, enkripsi ujung-ke-ujung masih direncanakan dan belum ada.",
+ "f5_title": "Enkripsi ujung ke ujung",
+ "f5_desc": "Panggilan dan teks obrolan pribadi dienkripsi ujung ke ujung: kunci tetap di perangkat dan server hanya melihat teks tersandi. Grup, kanal, dan lampiran belum — kami mengatakannya terus terang.",
  "f6_title": "Koin",
  "f6_desc": "Mata uang dalam aplikasi untuk premium, paket stiker, dan kanal berbayar. Termasuk transfer antarpengguna.",
  "dl_label": "Dapatkan Aplikasi",
@@ -62,8 +62,8 @@
  "rm_2_4": "Verifikasi nomor telepon",
  "rm_ph3": "Fase 3 — direncanakan",
  "rm_h3": "Privasi",
- "rm_3_1": "Pesan terenkripsi ujung-ke-ujung",
- "rm_3_2": "Kode verifikasi untuk panggilan",
+ "rm_3_1": "Enkripsi grup dan lampiran",
+ "rm_3_2": "Kode verifikasi untuk obrolan dan panggilan",
  "rm_3_3": "Obrolan rahasia",
  "rm_3_4": "Aplikasi Windows dan iOS",
  "rm_ph4": "Fase 4 — jangka panjang",
@@ -85,7 +85,7 @@
   },
   {
    "q": "Apakah pesan saya terenkripsi?",
-   "a": "Panggilan dienkripsi ujung-ke-ujung oleh WebRTC dan isinya tidak dapat diakses server. Pesan dikirim melalui saluran aman tetapi disimpan di server dalam bentuk terbuka — enkripsi ujung-ke-ujung untuk pesan masih direncanakan dan belum ada. Kami memilih mengatakannya terus terang."
+   "a": "Sebagian — dan kami menyebutkan persisnya di mana. Panggilan dienkripsi ujung ke ujung lewat WebRTC. Begitu pula teks obrolan pribadi: kuncinya dibuat di perangkat Anda dan tidak pernah keluar, jadi server hanya menyimpan teks tersandi dan kami tidak bisa membacanya atau memulihkannya bahkan atas permintaan Anda. Pesan di grup dan kanal, serta foto, video dan pesan suara, masih tersimpan terbuka di server — itu langkah berikutnya. Satu catatan jujur lagi: server kami yang membagikan kunci publik, jadi selama belum ada kode verifikasi, enkripsi melindungi dari pencurian basis data dan akses luar, tetapi secara formal bukan dari kami."
   },
   {
    "q": "Apa itu koin EION?",

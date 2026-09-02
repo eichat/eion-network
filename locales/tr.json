@@ -18,8 +18,8 @@
  "f3_desc": "WebRTC üzerinden sesli ve görüntülü aramalar — mümkün olduğunda cihazlar arasında doğrudan, aksi hâlde aktarma üzerinden.",
  "f4_title": "Gruplar",
  "f4_desc": "Rolleri, yorumları, tepkileri ve ücretli abonelikleri olan gruplar ve kanallar. Canlı yayınlar uygulama içinde açılır.",
- "f5_title": "Şifreli aramalar",
- "f5_desc": "Aramalar WebRTC tarafından uçtan uca şifrelenir — içerikleri sunucuya açık değildir. Mesajlar için uçtan uca şifreleme planlanmaktadır ve henüz mevcut değildir.",
+ "f5_title": "Uçtan uca şifreleme",
+ "f5_desc": "Aramalar ve özel sohbetlerin metni uçtan uca şifrelenir: anahtar cihazda kalır, sunucu yalnızca şifreli metni görür. Gruplar, kanallar ve ekler henüz değil — bunu açıkça söylüyoruz.",
  "f6_title": "Jeton",
  "f6_desc": "Premium, çıkartma paketleri ve ücretli kanallar için uygulama içi para birimi. Kullanıcılar arası transferler dâhil.",
  "dl_label": "Uygulamayı Al",
@@ -62,8 +62,8 @@
  "rm_2_4": "Telefon numarası doğrulama",
  "rm_ph3": "Aşama 3 — planlanan",
  "rm_h3": "Gizlilik",
- "rm_3_1": "Uçtan uca şifreli mesajlar",
- "rm_3_2": "Aramalar için doğrulama kodları",
+ "rm_3_1": "Gruplar ve ekler için şifreleme",
+ "rm_3_2": "Sohbetler ve aramalar için doğrulama kodları",
  "rm_3_3": "Gizli sohbetler",
  "rm_3_4": "Windows ve iOS uygulamaları",
  "rm_ph4": "Aşama 4 — uzun vade",
@@ -85,7 +85,7 @@
   },
   {
    "q": "Mesajlarım şifreli mi?",
-   "a": "Aramalar WebRTC tarafından uçtan uca şifrelenir ve içerikleri sunucuya açık değildir. Mesajlar güvenli bir kanal üzerinden iletilir ancak sunucuda açık biçimde saklanır — onlar için uçtan uca şifreleme planlanmaktadır ve henüz yoktur. Bunu açıkça söylemeyi tercih ediyoruz."
+   "a": "Kısmen — ve tam olarak nerede olduğunu söylüyoruz. Aramalar WebRTC ile uçtan uca şifrelenir. Özel sohbetlerin metni de öyle: anahtar cihazınızda oluşturulur ve oradan hiç çıkmaz, bu yüzden sunucuda yalnızca şifreli metin durur ve isteseniz bile onu okuyamaz ya da geri getiremeyiz. Gruplardaki ve kanallardaki mesajlar ile fotoğraflar, videolar ve sesli mesajlar hâlâ sunucuda açık duruyor — sıradaki adım bu. Bir dürüst uyarı daha: açık anahtarları bizim sunucumuz dağıtıyor, dolayısıyla doğrulama kodları gelene kadar şifreleme veritabanı hırsızlığına ve dışarıdan erişime karşı korur, ama biçimsel olarak bize karşı korumaz."
   },
   {
    "q": "Jeton nedir?",
