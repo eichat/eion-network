@@ -18,8 +18,8 @@
  "f3_desc": "Audio- en videogesprekken via WebRTC — rechtstreeks tussen apparaten waar het kan, anders via een relay.",
  "f4_title": "Groepen",
  "f4_desc": "Groepen en kanalen met rollen, reacties, commentaren en betaalde abonnementen. Livestreams spelen in de app zelf.",
- "f5_title": "Versleutelde gesprekken",
- "f5_desc": "Gesprekken zijn end-to-end versleuteld door WebRTC — de inhoud is niet toegankelijk voor de server. Voor berichten is end-to-end-versleuteling gepland en bestaat nog niet.",
+ "f5_title": "End-to-end-versleuteling",
+ "f5_desc": "Gesprekken en de tekst van directe chats zijn end-to-end versleuteld: de sleutel blijft op het apparaat en de server ziet alleen cijfertekst. Groepen, kanalen en bijlagen nog niet — dat zeggen we eerlijk.",
  "f6_title": "Munten",
  "f6_desc": "Een munt in de app voor premium, stickerpakketten en betaalde kanalen. Inclusief overboekingen tussen gebruikers.",
  "dl_label": "App Ophalen",
@@ -62,8 +62,8 @@
  "rm_2_4": "Verificatie van telefoonnummer",
  "rm_ph3": "Fase 3 — gepland",
  "rm_h3": "Privacy",
- "rm_3_1": "End-to-end versleutelde berichten",
- "rm_3_2": "Verificatiecodes voor gesprekken",
+ "rm_3_1": "Versleuteling voor groepen en bijlagen",
+ "rm_3_2": "Verificatiecodes voor chats en gesprekken",
  "rm_3_3": "Geheime chats",
  "rm_3_4": "Apps voor Windows en iOS",
  "rm_ph4": "Fase 4 — lange termijn",
@@ -85,7 +85,7 @@
   },
   {
    "q": "Zijn mijn berichten versleuteld?",
-   "a": "Gesprekken zijn end-to-end versleuteld door WebRTC en de inhoud is niet toegankelijk voor de server. Berichten gaan over een beveiligd kanaal, maar worden onversleuteld op de server bewaard — end-to-end-versleuteling daarvoor is gepland en bestaat nog niet. Wij zeggen dat liever eerlijk."
+   "a": "Gedeeltelijk — en we zeggen precies waar. Gesprekken zijn end-to-end versleuteld via WebRTC. De tekst van directe chats ook: de sleutel ontstaat op je apparaat en verlaat het nooit, dus de server bewaart alleen cijfertekst en wij kunnen die zelfs op jouw verzoek niet lezen of herstellen. Berichten in groepen en kanalen, net als foto’s, video’s en spraakberichten, staan nog onversleuteld op de server — dat is de volgende stap. Nog een eerlijke kanttekening: onze server verdeelt de publieke sleutels, dus zolang er geen verificatiecodes zijn, beschermt de versleuteling tegen diefstal van de database en toegang van buitenaf, maar formeel niet tegen ons."
   },
   {
    "q": "Wat zijn munten?",

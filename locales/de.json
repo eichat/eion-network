@@ -18,8 +18,8 @@
  "f3_desc": "Audio- und Videoanrufe über WebRTC — direkt zwischen den Geräten, wenn möglich, sonst über einen Relay.",
  "f4_title": "Gruppen",
  "f4_desc": "Gruppen und Kanäle mit Rollen, Kommentaren, Reaktionen und bezahlten Abos. Livestreams laufen direkt in der App.",
- "f5_title": "Verschlüsselte Anrufe",
- "f5_desc": "Anrufe sind durch WebRTC Ende-zu-Ende verschlüsselt — ihr Inhalt ist dem Server nicht zugänglich. Für Nachrichten ist Ende-zu-Ende-Verschlüsselung geplant und existiert noch nicht.",
+ "f5_title": "Ende-zu-Ende-Verschlüsselung",
+ "f5_desc": "Anrufe und der Text von Direktchats sind Ende-zu-Ende verschlüsselt: Der Schlüssel bleibt auf dem Gerät, der Server sieht nur Chiffretext. Gruppen, Kanäle und Anhänge noch nicht — das sagen wir offen.",
  "f6_title": "Coins",
  "f6_desc": "Eine In-App-Währung für Premium, Sticker-Pakete und bezahlte Kanäle. Überweisungen zwischen Nutzern inklusive.",
  "dl_label": "App herunterladen",
@@ -62,8 +62,8 @@
  "rm_2_4": "Telefonnummer-Bestätigung",
  "rm_ph3": "Phase 3 — geplant",
  "rm_h3": "Privatsphäre",
- "rm_3_1": "Ende-zu-Ende-verschlüsselte Nachrichten",
- "rm_3_2": "Prüfcodes für Anrufe",
+ "rm_3_1": "Verschlüsselung für Gruppen und Anhänge",
+ "rm_3_2": "Prüfcodes für Chats und Anrufe",
  "rm_3_3": "Geheime Chats",
  "rm_3_4": "Apps für Windows und iOS",
  "rm_ph4": "Phase 4 — langfristig",
@@ -85,7 +85,7 @@
   },
   {
    "q": "Sind meine Nachrichten verschlüsselt?",
-   "a": "Anrufe sind durch WebRTC Ende-zu-Ende verschlüsselt, ihr Inhalt ist dem Server nicht zugänglich. Nachrichten werden über einen gesicherten Kanal übertragen, aber im Klartext auf dem Server gespeichert — Ende-zu-Ende-Verschlüsselung dafür ist geplant und existiert noch nicht. Wir sagen das lieber offen."
+   "a": "Teilweise — und wir sagen genau wo. Anrufe sind über WebRTC Ende-zu-Ende verschlüsselt. Der Text von Direktchats ebenfalls: Der Schlüssel entsteht auf Ihrem Gerät und verlässt es nie, der Server hält also nur Chiffretext, und wir können ihn selbst auf Ihre Bitte weder lesen noch wiederherstellen. Nachrichten in Gruppen und Kanälen sowie Fotos, Videos und Sprachnachrichten liegen weiterhin unverschlüsselt auf dem Server — das ist der nächste Schritt. Noch ein ehrlicher Hinweis: Unser Server verteilt die öffentlichen Schlüssel, solange es keine Prüfcodes gibt, schützt die Verschlüsselung also vor Datenbankdiebstahl und fremdem Zugriff, formal aber nicht vor uns."
   },
   {
    "q": "Was sind Coins?",

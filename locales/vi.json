@@ -18,8 +18,8 @@
  "f3_desc": "Cuộc gọi thoại và video qua WebRTC — trực tiếp giữa các thiết bị khi có thể, nếu không thì qua relay.",
  "f4_title": "Nhóm",
  "f4_desc": "Nhóm và kênh với vai trò, bình luận, biểu cảm và đăng ký trả phí. Phát trực tiếp xem ngay trong ứng dụng.",
- "f5_title": "Cuộc gọi mã hóa",
- "f5_desc": "Cuộc gọi được mã hóa đầu cuối bằng WebRTC — nội dung không hiển thị với máy chủ. Với tin nhắn, mã hóa đầu cuối đang trong kế hoạch và chưa có.",
+ "f5_title": "Mã hoá đầu cuối",
+ "f5_desc": "Cuộc gọi và văn bản trong trò chuyện riêng được mã hoá đầu cuối: khoá nằm trên thiết bị, máy chủ chỉ thấy bản mã. Nhóm, kênh và tệp đính kèm thì chưa — chúng tôi nói thẳng điều đó.",
  "f6_title": "Xu",
  "f6_desc": "Đơn vị tiền trong ứng dụng dùng cho gói cao cấp, bộ nhãn dán và kênh trả phí. Bao gồm chuyển khoản giữa người dùng.",
  "dl_label": "Tải ứng dụng",
@@ -62,8 +62,8 @@
  "rm_2_4": "Xác minh số điện thoại",
  "rm_ph3": "Giai đoạn 3 — dự kiến",
  "rm_h3": "Quyền riêng tư",
- "rm_3_1": "Tin nhắn mã hóa đầu cuối",
- "rm_3_2": "Mã xác minh cho cuộc gọi",
+ "rm_3_1": "Mã hoá nhóm và tệp đính kèm",
+ "rm_3_2": "Mã xác minh cho trò chuyện và cuộc gọi",
  "rm_3_3": "Trò chuyện bí mật",
  "rm_3_4": "Ứng dụng Windows và iOS",
  "rm_ph4": "Giai đoạn 4 — dài hạn",
@@ -85,7 +85,7 @@
   },
   {
    "q": "Tin nhắn của tôi có được mã hóa không?",
-   "a": "Cuộc gọi được mã hóa đầu cuối bằng WebRTC và nội dung không hiển thị với máy chủ. Tin nhắn đi qua kênh bảo mật nhưng được lưu dưới dạng rõ trên máy chủ — mã hóa đầu cuối cho tin nhắn đang trong kế hoạch và chưa có. Chúng tôi muốn nói thẳng điều đó."
+   "a": "Một phần — và chúng tôi nói rõ ở đâu. Cuộc gọi được mã hoá đầu cuối qua WebRTC. Văn bản trong trò chuyện riêng cũng vậy: khoá được tạo trên thiết bị của bạn và không bao giờ rời khỏi đó, nên máy chủ chỉ giữ bản mã, và ngay cả khi bạn yêu cầu chúng tôi cũng không thể đọc hay khôi phục. Tin nhắn trong nhóm và kênh, cùng ảnh, video và tin nhắn thoại, vẫn được lưu ở dạng rõ trên máy chủ — đó là bước tiếp theo. Một lưu ý thành thật nữa: máy chủ của chúng tôi phân phối khoá công khai, nên khi chưa có mã xác minh, việc mã hoá bảo vệ khỏi trộm cơ sở dữ liệu và truy cập bên ngoài, nhưng về hình thức thì không bảo vệ khỏi chính chúng tôi."
   },
   {
    "q": "Xu EION là gì?",

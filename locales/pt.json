@@ -18,8 +18,8 @@
  "f3_desc": "Chamadas de áudio e vídeo por WebRTC — diretas entre dispositivos quando possível, caso contrário por relé.",
  "f4_title": "Grupos",
  "f4_desc": "Grupos e canais com funções, comentários, reações e assinaturas pagas. As transmissões abrem dentro do aplicativo.",
- "f5_title": "Chamadas criptografadas",
- "f5_desc": "As chamadas têm criptografia de ponta a ponta pelo WebRTC — seu conteúdo não fica acessível ao servidor. Para as mensagens, a criptografia de ponta a ponta está planejada e ainda não existe.",
+ "f5_title": "Encriptação ponta a ponta",
+ "f5_desc": "As chamadas e o texto das conversas privadas têm encriptação ponta a ponta: a chave fica no dispositivo e o servidor só vê texto cifrado. Grupos, canais e anexos ainda não — dizemo-lo abertamente.",
  "f6_title": "Moedas",
  "f6_desc": "Uma moeda interna para premium, pacotes de figurinhas e canais pagos. Inclui transferências entre usuários.",
  "dl_label": "Obter o app",
@@ -62,8 +62,8 @@
  "rm_2_4": "Verificação do número de telefone",
  "rm_ph3": "Fase 3 — planejado",
  "rm_h3": "Privacidade",
- "rm_3_1": "Mensagens com criptografia de ponta a ponta",
- "rm_3_2": "Códigos de verificação para chamadas",
+ "rm_3_1": "Encriptação de grupos e anexos",
+ "rm_3_2": "Códigos de verificação para conversas e chamadas",
  "rm_3_3": "Conversas secretas",
  "rm_3_4": "Aplicativos para Windows e iOS",
  "rm_ph4": "Fase 4 — longo prazo",
@@ -85,7 +85,7 @@
   },
   {
    "q": "Minhas mensagens são criptografadas?",
-   "a": "As chamadas têm criptografia de ponta a ponta pelo WebRTC e seu conteúdo não fica acessível ao servidor. As mensagens trafegam por um canal seguro, mas são armazenadas no servidor em texto aberto — a criptografia de ponta a ponta para elas está planejada e ainda não existe. Preferimos dizer isso com clareza."
+   "a": "Em parte — e dizemos exatamente onde. As chamadas têm encriptação ponta a ponta via WebRTC. O texto das conversas privadas também: a chave é criada no seu dispositivo e nunca sai dele, por isso o servidor guarda apenas texto cifrado e não conseguimos lê-lo nem recuperá-lo, mesmo a seu pedido. As mensagens em grupos e canais, bem como fotografias, vídeos e mensagens de voz, continuam guardadas sem cifra — é o passo seguinte. Mais uma ressalva honesta: o nosso servidor distribui as chaves públicas, por isso enquanto não houver códigos de verificação a encriptação protege do roubo da base de dados e de acessos externos, mas formalmente não de nós."
   },
   {
    "q": "O que são as moedas EION?",
