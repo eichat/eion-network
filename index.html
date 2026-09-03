@@ -219,7 +219,7 @@ section { padding:100px 24px;position:relative;z-index:1; }
 /* Завершений етап не тьмяніє: він зроблений, а не менш важливий. Але й не
    світиться, як поточний — крапка зелена, у тон позначкам «✓» на пунктах. */
 .rm-item.done { opacity:1; }
-.rm-item.done::before { border-color:#39e08a;background:#39e08a;box-shadow:0 0 10px rgba(57,224,138,.55); }
+.rm-item.done::before { border-color:var(--neon);background:var(--neon);opacity:0.55;box-shadow:none; }
 .rm-phase { font-family:'Orbitron',monospace;font-size:0.65rem;letter-spacing:3px;color:var(--neon);text-transform:uppercase;margin-bottom:6px;opacity:0.7; }
 .rm-item h3 { font-family:'Orbitron',monospace;font-size:1rem;color:var(--text);margin-bottom:10px; }
 .rm-item ul { list-style:none; }
@@ -228,12 +228,12 @@ section { padding:100px 24px;position:relative;z-index:1; }
 /* Стан кожного пункту, а не лише етапу: у другому й четвертому етапах частина
    вже працює, і мітка «заплановано» на всьому етапі була б неправдою. */
 .rm-item ul li.done { color:var(--text); }
-.rm-item ul li.done::before { content:'✓';color:#39e08a;opacity:1;font-weight:700; }
-.rm-item ul li.wip::before { content:'◐';color:var(--neon);opacity:1; }
+.rm-item ul li.done::before { content:'✓';color:var(--neon);opacity:1;font-weight:700;text-shadow:0 0 8px var(--neon-glow); }
+.rm-item ul li.wip::before { content:'◐';color:var(--neon2);opacity:0.85; }
 .rm-legend { display:flex;gap:18px;flex-wrap:wrap;font-size:0.8rem;color:var(--text2);margin:0 0 26px;padding-left:40px; }
 .rm-legend span { display:inline-flex;align-items:center;gap:6px; }
 .rm-legend i { font-style:normal;font-weight:700 }
-.rm-legend .d i{color:#39e08a} .rm-legend .w i{color:var(--neon)} .rm-legend .p i{opacity:.7}
+.rm-legend .d i{color:var(--neon);text-shadow:0 0 8px var(--neon-glow)} .rm-legend .w i{color:var(--neon2)} .rm-legend .p i{color:var(--text2);opacity:.7}
 
 /* FAQ */
 #faq { background:var(--bg); }
