@@ -165,10 +165,20 @@ section { padding:100px 24px;position:relative;z-index:1; }
 @media(max-width:768px){.token-hero{grid-template-columns:1fr}}
 .token-info-block { background:rgba(10,22,40,0.8);border:1px solid rgba(0,212,255,0.12);border-radius:8px;padding:32px; }
 .token-info-block h3 { font-family:'Orbitron',monospace;font-size:0.8rem;letter-spacing:3px;color:var(--neon);margin-bottom:20px;text-transform:uppercase; }
-.token-stat { display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid rgba(0,212,255,0.07); }
+/* Значення тут — не числа, а цілі фрази («ключ лишається на пристрої»).
+   Orbitron — шрифт для заголовків: у ньому такі рядки читаються по літері.
+   Тому значення набираємо основним шрифтом, а Orbitron лишаємо заголовкам. */
+.token-stat { display:flex;justify-content:space-between;align-items:baseline;gap:18px;
+  padding:11px 0;border-bottom:1px solid rgba(0,212,255,0.07);flex-wrap:wrap; }
 .token-stat:last-child { border-bottom:none; }
-.token-stat .label { font-size:0.85rem;color:var(--text2);font-weight:300; }
-.token-stat .value { font-family:'Orbitron',monospace;font-size:0.85rem;color:var(--text); }
+.token-stat .label { font-size:0.9rem;color:var(--text2);font-weight:400;flex:0 0 auto; }
+.token-stat .value { font-size:0.95rem;line-height:1.45;color:var(--text);font-weight:400;
+  text-align:right;flex:1 1 220px;min-width:0; }
+@media (max-width:560px){
+  .token-stat{gap:2px}
+  .token-stat .label{flex:1 1 100%}
+  .token-stat .value{text-align:left;flex:1 1 100%}
+}
 .token-live { display:none;background:rgba(10,22,40,0.8);border:1px solid rgba(0,212,255,0.12);border-radius:8px;padding:32px;margin-bottom:60px; }
 .token-live h3 { font-family:'Orbitron',monospace;font-size:0.8rem;letter-spacing:3px;color:var(--neon);margin-bottom:24px;text-transform:uppercase; }
 .token-live-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:24px; }
@@ -209,8 +219,17 @@ section { padding:100px 24px;position:relative;z-index:1; }
 .rm-phase { font-family:'Orbitron',monospace;font-size:0.65rem;letter-spacing:3px;color:var(--neon);text-transform:uppercase;margin-bottom:6px;opacity:0.7; }
 .rm-item h3 { font-family:'Orbitron',monospace;font-size:1rem;color:var(--text);margin-bottom:10px; }
 .rm-item ul { list-style:none; }
-.rm-item ul li { font-size:0.875rem;color:var(--text2);padding:3px 0;padding-left:16px;position:relative;font-weight:300; }
-.rm-item ul li::before { content:'›';position:absolute;left:0;color:var(--neon); }
+.rm-item ul li { font-size:0.9rem;color:var(--text2);padding:4px 0;padding-left:24px;position:relative;font-weight:400; }
+.rm-item ul li::before { content:'○';position:absolute;left:0;color:var(--text2);opacity:.7; }
+/* Стан кожного пункту, а не лише етапу: у другому й четвертому етапах частина
+   вже працює, і мітка «заплановано» на всьому етапі була б неправдою. */
+.rm-item ul li.done { color:var(--text); }
+.rm-item ul li.done::before { content:'✓';color:#39e08a;opacity:1;font-weight:700; }
+.rm-item ul li.wip::before { content:'◐';color:var(--neon);opacity:1; }
+.rm-legend { display:flex;gap:18px;flex-wrap:wrap;font-size:0.8rem;color:var(--text2);margin:0 0 26px;padding-left:40px; }
+.rm-legend span { display:inline-flex;align-items:center;gap:6px; }
+.rm-legend i { font-style:normal;font-weight:700 }
+.rm-legend .d i{color:#39e08a} .rm-legend .w i{color:var(--neon)} .rm-legend .p i{opacity:.7}
 
 /* FAQ */
 #faq { background:var(--bg); }
@@ -503,15 +522,20 @@ a.dl-card{text-decoration:none;color:inherit;display:block}
   <div class="section-inner">
     <div class="section-label" data-i18n="rm_label">Roadmap</div>
     <h2 class="section-title" data-i18n="rm_title">What's <span>next</span></h2>
+    <div class="rm-legend">
+      <span class="d"><i>✓</i> <span data-i18n="rm_done">works now</span></span>
+      <span class="w"><i>◐</i> <span data-i18n="rm_wip">in progress</span></span>
+      <span class="p"><i>○</i> <span data-i18n="rm_todo">planned</span></span>
+    </div>
     <div class="roadmap-line">
       <div class="rm-item active reveal">
         <div class="rm-phase" data-i18n="rm_ph1">Phase 1 — now</div>
         <h3 data-i18n="rm_h1">Beta</h3>
         <ul>
-          <li data-i18n="rm_1_1">Android and Linux apps</li>
-          <li data-i18n="rm_1_2">Chats, groups, channels, streams</li>
-          <li data-i18n="rm_1_3">Encrypted calls, AI assistant</li>
-          <li data-i18n="rm_1_4">Coins, premium, sticker shop</li>
+          <li class="done" data-i18n="rm_1_1">Android and Linux apps</li>
+          <li class="done" data-i18n="rm_1_2">Chats, groups, channels, streams</li>
+          <li class="done" data-i18n="rm_1_3">Encrypted calls, AI assistant</li>
+          <li class="done" data-i18n="rm_1_4">Coins, premium, sticker shop</li>
         </ul>
       </div>
       <div class="rm-item reveal">
@@ -519,9 +543,9 @@ a.dl-card{text-decoration:none;color:inherit;display:block}
         <h3 data-i18n="rm_h2">Store release</h3>
         <ul>
           <li data-i18n="rm_2_1">Publication on Google Play</li>
-          <li data-i18n="rm_2_2">Automatic updates</li>
+          <li class="done" data-i18n="rm_2_2">Automatic updates</li>
           <li data-i18n="rm_2_3">Smaller download size</li>
-          <li data-i18n="rm_2_4">Phone number verification</li>
+          <li class="wip" data-i18n="rm_2_4">Phone number verification</li>
         </ul>
       </div>
       <div class="rm-item reveal">
@@ -538,7 +562,7 @@ a.dl-card{text-decoration:none;color:inherit;display:block}
         <div class="rm-phase" data-i18n="rm_ph4">Phase 4 — long term</div>
         <h3 data-i18n="rm_h4">Beyond the app</h3>
         <ul>
-          <li data-i18n="rm_4_1">EION token on Solana</li>
+          <li class="wip" data-i18n="rm_4_1">EION token on Solana</li>
           <li data-i18n="rm_4_2">Coins outside the messenger</li>
           <li data-i18n="rm_4_3">Open API</li>
           <li data-i18n="rm_4_4">Independent infrastructure</li>
