@@ -102,12 +102,15 @@ main { position:relative;z-index:1; }
 .hero-grid { position:absolute;inset:0;background-image:linear-gradient(rgba(0,212,255,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(0,212,255,0.04) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse 80% 60% at 50% 50%,black,transparent); }
 .hero-orb { position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(0,212,255,0.08) 0%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);animation:pulse-orb 4s ease-in-out infinite; }
 @keyframes pulse-orb { 0%,100%{transform:translate(-50%,-50%) scale(1);opacity:0.5} 50%{transform:translate(-50%,-50%) scale(1.1);opacity:1} }
-.logo-wrap { position:relative;width:140px;height:140px;margin:0 auto 40px;animation:float 6s ease-in-out infinite; }
+/* Знак лежить на тій самій голограмі, що в інтро, лише зменшеній.
+   `EION-mark.png` — той самий логотип із вирізаною підкладкою: у вихідному
+   PNG вона непрозора, тож на планеті читалась би квадратом. */
+.logo-wrap { position:relative;width:200px;height:200px;margin:0 auto 34px;animation:float 6s ease-in-out infinite; }
 @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
-.logo-wrap img { width:100%;height:100%;border-radius:28px;filter:drop-shadow(0 0 30px rgba(0,212,255,0.6)) drop-shadow(0 0 60px rgba(0,212,255,0.3)); }
-.logo-ring { position:absolute;inset:-20px;border:1px solid rgba(0,212,255,0.3);border-radius:50%;animation:spin-ring 12s linear infinite; }
-.logo-ring::before { content:'';position:absolute;width:8px;height:8px;background:var(--neon);border-radius:50%;top:-4px;left:50%;margin-left:-4px;box-shadow:0 0 12px var(--neon); }
-@keyframes spin-ring { to{transform:rotate(360deg)} }
+.logo-wrap canvas { position:absolute;inset:0;width:100%;height:100%; }
+.logo-wrap img { position:absolute;top:50%;left:50%;width:158px;height:158px;transform:translate(-50%,-50%);
+  filter:drop-shadow(0 0 24px rgba(0,212,255,0.55)) drop-shadow(0 0 52px rgba(0,212,255,0.28)); }
+@media (max-width:520px){ .logo-wrap{width:168px;height:168px} .logo-wrap img{width:132px;height:132px} }
 h1 { font-family:'Orbitron',monospace;font-size:clamp(3rem,8vw,6rem);font-weight:900;letter-spacing:8px;color:var(--neon);text-shadow:0 0 40px var(--neon),0 0 80px rgba(0,212,255,0.4);margin-bottom:8px;animation:hero-appear 1s ease both; }
 .hero-sub { font-family:'Orbitron',monospace;font-size:clamp(0.7rem,2vw,0.9rem);letter-spacing:6px;color:var(--text2);margin-bottom:28px;animation:hero-appear 1s 0.2s ease both; }
 @keyframes hero-appear { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
@@ -357,8 +360,8 @@ a.dl-card{text-decoration:none;color:inherit;display:block}
   <div class="hero-grid"></div>
   <div class="hero-orb"></div>
   <div class="logo-wrap">
-    <img src="EION-256.png" alt="EION Logo" onerror="this.style.display='none'">
-    <div class="logo-ring"></div>
+    <canvas id="logoGlobe" aria-hidden="true"></canvas>
+    <img src="EION-mark.png" alt="EION" onerror="this.src='EION-256.png'">
   </div>
   <h1>EION</h1>
   <div class="hero-sub" data-i18n="hero_sub">A messenger that belongs to you</div>
@@ -794,6 +797,7 @@ async function fetchSupply() {
   await setLang(lang);
   fetchSupply();
   startIntro();
+  var lg=document.getElementById('logoGlobe'); if(lg) miniGlobe(lg);
 })();
 
 /* ═══════════ ІНТРО: голограма Землі ═══════════ */
@@ -984,6 +988,108 @@ function startIntro(){
   window.addEventListener('resize', gResize);
   gT0=performance.now(); gRaf=requestAnimationFrame(gFrame);
   window._introTimer=setTimeout(startWarp, 4200);
+}
+/* Міні-голограма за логотипом. Власний стан на полотно — глобальні змінні
+   інтро (gcv, gRot, gZoom…) належать одному екземпляру, і другий рендер у них
+   не поміститься. Спільними лишаються тільки чисті помічники: маска суші. */
+function miniGlobe(cv){
+  var ctx=cv.getContext('2d'), W=0,H=0,R=0,cx=0,cy=0,rot=Math.random()*6.283,tilt=-0.38,raf=0,live=false;
+  var pts=[],hubs=[],tr=[];
+  function resize(){
+    var dpr=Math.min(window.devicePixelRatio||1,2);
+    W=cv.clientWidth; H=cv.clientHeight; if(!W||!H) return;
+    cv.width=W*dpr; cv.height=H*dpr; ctx.setTransform(dpr,0,0,dpr,0,0);
+    R=Math.min(W,H)*0.36; cx=W/2; cy=H/2;
+  }
+  function build(){
+    var TRY=1100, GOLD=Math.PI*(3-Math.sqrt(5)); pts=[];
+    for(var i=0;i<TRY;i++){
+      var y=1-(i/(TRY-1))*2, r=Math.sqrt(Math.max(0,1-y*y)), th=GOLD*i;
+      var x=Math.cos(th)*r, z=Math.sin(th)*r;
+      if(!isLand(Math.asin(y)*180/Math.PI, Math.atan2(z,x)*180/Math.PI)) continue;
+      pts.push({x:x,y:y,z:z,ph:Math.random()*6.283,sp:0.5+Math.random()*1.5});
+    }
+    var C=[[50.45,30.52],[40.71,-74.01],[35.68,139.69],[-23.55,-46.63],[-33.87,151.21],[1.35,103.82]];
+    hubs=C.map(function(c){var la=c[0]*Math.PI/180,lo=c[1]*Math.PI/180;
+      return {x:Math.cos(la)*Math.cos(lo),y:Math.sin(la),z:Math.cos(la)*Math.sin(lo),pulse:Math.random()*3};});
+  }
+  function proj(p){
+    var cr=Math.cos(rot),sr=Math.sin(rot);
+    var x=p.x*cr+p.z*sr, z=-p.x*sr+p.z*cr, y=p.y;
+    var ct=Math.cos(tilt),st=Math.sin(tilt);
+    return {sx:cx+x*R, sy:cy+(y*ct-z*st)*R, z:y*st+z*ct};
+  }
+  function lift(u){ return 1+0.10*Math.sin(Math.PI*u); }
+  function addTracer(){
+    var a=hubs[(Math.random()*hubs.length)|0], b=hubs[(Math.random()*hubs.length)|0];
+    if(!a||!b||a===b) return;
+    var sa=proj(a), sb=proj(b); if(sa.z<0.05||sb.z<0.05) return;
+    tr.push({a:a,b:b,t:0,life:2.4+Math.random()*0.8});
+  }
+  function frame(now){
+    rot+=0.0011;
+    ctx.clearRect(0,0,W,H);
+    var g=ctx.createRadialGradient(cx,cy,R*0.5,cx,cy,R*1.5);
+    g.addColorStop(0,'rgba(0,212,255,0.07)'); g.addColorStop(0.6,'rgba(0,150,220,0.05)');
+    g.addColorStop(1,'rgba(0,212,255,0)');
+    ctx.fillStyle=g; ctx.beginPath(); ctx.arc(cx,cy,R*1.5,0,6.283); ctx.fill();
+    ctx.strokeStyle='rgba(0,212,255,0.18)'; ctx.lineWidth=1;
+    ctx.beginPath(); ctx.arc(cx,cy,R,0,6.283); ctx.stroke();
+    ctx.strokeStyle='rgba(0,212,255,0.05)';
+    for(var k=-1;k<=1;k++){
+      var lat=k*0.45, rr=Math.cos(lat), yy=Math.sin(lat);
+      ctx.beginPath();
+      for(var q=0;q<=48;q++){ var a1=(q/48)*6.283, s1=proj({x:Math.cos(a1)*rr,y:yy,z:Math.sin(a1)*rr});
+        if(q===0)ctx.moveTo(s1.sx,s1.sy); else ctx.lineTo(s1.sx,s1.sy); }
+      ctx.stroke();
+    }
+    for(var i=0;i<pts.length;i++){
+      var p=pts[i], s=proj(p); if(s.z<=0) continue;
+      var tw=0.55+0.45*Math.sin(now/1000*p.sp+p.ph);
+      ctx.fillStyle='rgba(0,212,255,'+(s.z*tw*0.75).toFixed(3)+')';
+      ctx.fillRect(s.sx-0.7,s.sy-0.7,1.4,1.4);
+    }
+    for(var h=0;h<hubs.length;h++){
+      var hb=hubs[h], sh=proj(hb); if(sh.z<=0) continue;
+      var pu=(Math.sin(now/1000*1.1+hb.pulse)+1)/2;
+      ctx.fillStyle='rgba(120,240,255,'+(sh.z*0.85).toFixed(3)+')';
+      ctx.beginPath(); ctx.arc(sh.sx,sh.sy,1.7,0,6.283); ctx.fill();
+      ctx.strokeStyle='rgba(0,212,255,'+(sh.z*0.28*(1-pu)).toFixed(3)+')';
+      ctx.beginPath(); ctx.arc(sh.sx,sh.sy,2+pu*6,0,6.283); ctx.stroke();
+    }
+    if(!REDUCED && tr.length<2 && Math.random()<0.09) addTracer();
+    for(var ti=tr.length-1;ti>=0;ti--){
+      var t=tr[ti]; t.t+=0.010; if(t.t>t.life){ tr.splice(ti,1); continue; }
+      var u=Math.min(1,t.t/(t.life*0.62));
+      ctx.lineWidth=1;
+      for(var seg=0;seg<14;seg++){
+        var u1=u*seg/14, u2=u*(seg+1)/14;
+        var p1=gSlerp(t.a,t.b,u1), p2=gSlerp(t.a,t.b,u2);
+        var l1=lift(u1), l2=lift(u2);
+        var q1=proj({x:p1.x*l1,y:p1.y*l1,z:p1.z*l1}), q2=proj({x:p2.x*l2,y:p2.y*l2,z:p2.z*l2});
+        if(q1.z<0&&q2.z<0) continue;
+        ctx.strokeStyle='rgba(140,235,255,'+(0.30*(seg/14)).toFixed(3)+')';
+        ctx.beginPath(); ctx.moveTo(q1.sx,q1.sy); ctx.lineTo(q2.sx,q2.sy); ctx.stroke();
+      }
+      var ph=gSlerp(t.a,t.b,u), lf=lift(u);
+      var hp=proj({x:ph.x*lf,y:ph.y*lf,z:ph.z*lf});
+      if(hp.z>0){ ctx.fillStyle='rgba(210,250,255,0.9)';
+        ctx.beginPath(); ctx.arc(hp.sx,hp.sy,1.6,0,6.283); ctx.fill(); }
+    }
+    raf=requestAnimationFrame(frame);
+  }
+  resize(); build();
+  window.addEventListener('resize',resize);
+  function start(){ if(live) return; live=true; raf=requestAnimationFrame(frame); }
+  function stop(){ live=false; cancelAnimationFrame(raf); }
+  if(REDUCED){ frame(0); cancelAnimationFrame(raf); return; }
+  // Крутити лише поки логотип на екрані: інакше вкладка на іншій секції
+  // або у фоні даремно гріла б процесор і їла батарею.
+  if(window.IntersectionObserver){
+    new IntersectionObserver(function(es){ es[0].isIntersecting ? start() : stop(); },
+      {threshold:0.05}).observe(cv);
+  } else start();
+  document.addEventListener('visibilitychange',function(){ document.hidden ? stop() : start(); });
 }
 function finishIntro(instant){
   clearTimeout(window._introTimer);
