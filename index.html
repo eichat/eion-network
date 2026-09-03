@@ -216,6 +216,10 @@ section { padding:100px 24px;position:relative;z-index:1; }
 .rm-item.active { opacity:1; }
 .rm-item::before { content:'';position:absolute;left:-36px;top:6px;width:14px;height:14px;border-radius:50%;border:2px solid rgba(0,212,255,0.3);background:var(--bg); }
 .rm-item.active::before { border-color:var(--neon);background:var(--neon);box-shadow:0 0 12px var(--neon); }
+/* Завершений етап не тьмяніє: він зроблений, а не менш важливий. Але й не
+   світиться, як поточний — крапка зелена, у тон позначкам «✓» на пунктах. */
+.rm-item.done { opacity:1; }
+.rm-item.done::before { border-color:#39e08a;background:#39e08a;box-shadow:0 0 10px rgba(57,224,138,.55); }
 .rm-phase { font-family:'Orbitron',monospace;font-size:0.65rem;letter-spacing:3px;color:var(--neon);text-transform:uppercase;margin-bottom:6px;opacity:0.7; }
 .rm-item h3 { font-family:'Orbitron',monospace;font-size:1rem;color:var(--text);margin-bottom:10px; }
 .rm-item ul { list-style:none; }
@@ -528,8 +532,8 @@ a.dl-card{text-decoration:none;color:inherit;display:block}
       <span class="p"><i>○</i> <span data-i18n="rm_todo">planned</span></span>
     </div>
     <div class="roadmap-line">
-      <div class="rm-item active reveal">
-        <div class="rm-phase" data-i18n="rm_ph1">Phase 1 — now</div>
+      <div class="rm-item done reveal">
+        <div class="rm-phase" data-i18n="rm_ph1">Phase 1 — done</div>
         <h3 data-i18n="rm_h1">Beta</h3>
         <ul>
           <li class="done" data-i18n="rm_1_1">Android and Linux apps</li>
@@ -538,8 +542,8 @@ a.dl-card{text-decoration:none;color:inherit;display:block}
           <li class="done" data-i18n="rm_1_4">Coins, premium, sticker shop</li>
         </ul>
       </div>
-      <div class="rm-item reveal">
-        <div class="rm-phase" data-i18n="rm_ph2">Phase 2 — next</div>
+      <div class="rm-item active reveal">
+        <div class="rm-phase" data-i18n="rm_ph2">Phase 2 — now</div>
         <h3 data-i18n="rm_h2">Store release</h3>
         <ul>
           <li data-i18n="rm_2_1">Publication on Google Play</li>
@@ -549,7 +553,7 @@ a.dl-card{text-decoration:none;color:inherit;display:block}
         </ul>
       </div>
       <div class="rm-item reveal">
-        <div class="rm-phase" data-i18n="rm_ph3">Phase 3 — planned</div>
+        <div class="rm-phase" data-i18n="rm_ph3">Phase 3 — next</div>
         <h3 data-i18n="rm_h3">Privacy</h3>
         <ul>
           <li data-i18n="rm_3_1">Encryption for groups and attachments</li>
