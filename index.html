@@ -98,7 +98,11 @@ nav { position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:c
 main { position:relative;z-index:1; }
 
 /* HERO */
-#hero { min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:120px 24px 80px;position:relative;overflow:hidden; }
+/* Верхній відступ зменшено разом зі збільшенням логотипа: блок виріс на 80 px,
+   і на невисоких екранах нижня кнопка вже не вміщалась (її ще й перекриває
+   банер згоди, який висить унизу). Піднімаємо ВЕСЬ вміст — логотип і заголовок
+   рухаються на однакову відстань, тож проміжок між ними не міняється. */
+#hero { min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:76px 24px 56px;position:relative;overflow:hidden; }
 .hero-grid { position:absolute;inset:0;background-image:linear-gradient(rgba(0,212,255,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(0,212,255,0.04) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse 80% 60% at 50% 50%,black,transparent); }
 .hero-orb { position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(0,212,255,0.08) 0%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);animation:pulse-orb 4s ease-in-out infinite; }
 @keyframes pulse-orb { 0%,100%{transform:translate(-50%,-50%) scale(1);opacity:0.5} 50%{transform:translate(-50%,-50%) scale(1.1);opacity:1} }
@@ -111,6 +115,11 @@ main { position:relative;z-index:1; }
 .logo-wrap img { position:absolute;top:50%;left:50%;width:222px;height:222px;transform:translate(-50%,-50%);
   filter:drop-shadow(0 0 24px rgba(0,212,255,0.55)) drop-shadow(0 0 52px rgba(0,212,255,0.28)); }
 @media (max-width:520px){ .logo-wrap{width:224px;height:224px} .logo-wrap img{width:178px;height:178px} }
+/* Низькі вікна: перший екран має вміщати обидві кнопки, а не лише половину
+   нижньої. Тому зменшуємо саме логотип — він найбільший елемент і найлегше
+   віддає висоту, тоді як текст лишається читабельним. */
+@media (max-height:860px){ #hero{padding-top:60px;padding-bottom:44px} .logo-wrap{width:224px;height:224px;margin-bottom:22px} .logo-wrap img{width:178px;height:178px} }
+@media (max-height:730px){ .logo-wrap{width:176px;height:176px;margin-bottom:16px} .logo-wrap img{width:140px;height:140px} h1{font-size:clamp(2.2rem,6vw,3.6rem)} .hero-desc{margin-bottom:30px} }
 h1 { font-family:'Orbitron',monospace;font-size:clamp(3rem,8vw,6rem);font-weight:900;letter-spacing:8px;color:var(--neon);text-shadow:0 0 40px var(--neon),0 0 80px rgba(0,212,255,0.4);margin-bottom:8px;animation:hero-appear 1s ease both; }
 .hero-sub { font-family:'Orbitron',monospace;font-size:clamp(0.7rem,2vw,0.9rem);letter-spacing:6px;color:var(--text2);margin-bottom:28px;animation:hero-appear 1s 0.2s ease both; }
 @keyframes hero-appear { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
