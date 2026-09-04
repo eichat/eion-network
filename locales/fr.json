@@ -19,7 +19,7 @@
   "f4_title": "Groupes",
   "f4_desc": "Groupes et canaux avec rôles, commentaires, réactions et abonnements payants. Les directs se lisent dans l’application.",
   "f5_title": "Chiffrement de bout en bout",
-  "f5_desc": "Les appels et le texte des discussions privées sont chiffrés de bout en bout : la clé reste sur l’appareil et le serveur ne voit que du texte chiffré. Les groupes, canaux et pièces jointes pas encore — nous le disons franchement.",
+  "f5_desc": "Les appels, le texte et les pièces jointes des discussions privées sont chiffrés de bout en bout : la clé reste sur votre appareil et le serveur ne voit que du texte chiffré. Les groupes et les canaux pas encore — nous le disons franchement.",
   "f6_title": "Pièces",
   "f6_desc": "Une monnaie interne pour le premium, les packs d’autocollants et les canaux payants. Transferts entre utilisateurs inclus.",
   "dl_label": "Obtenir l'app",
@@ -62,7 +62,7 @@
   "rm_2_4": "Vérification du numéro de téléphone",
   "rm_ph3": "Phase 3 — ensuite",
   "rm_h3": "Confidentialité",
-  "rm_3_1": "Chiffrement des groupes et des pièces jointes",
+  "rm_3_1": "Chiffrement des groupes et des canaux",
   "rm_3_2": "Codes de vérification pour discussions et appels",
   "rm_3_3": "Discussions secrètes",
   "rm_3_4": "Applications Windows et iOS",
@@ -85,7 +85,7 @@
     },
     {
       "q": "Mes messages sont-ils chiffrés ?",
-      "a": "En partie — et nous disons précisément où. Les appels sont chiffrés de bout en bout via WebRTC. Le texte des discussions privées aussi : la clé est créée sur votre appareil et n’en sort jamais, le serveur ne conserve donc que du texte chiffré, et nous ne pouvons ni le lire ni le restaurer, même à votre demande. Les messages dans les groupes et les canaux, ainsi que les photos, vidéos et messages vocaux, restent stockés en clair — c’est l’étape suivante. Autre réserve honnête : notre serveur distribue les clés publiques ; tant qu’il n’y a pas de codes de vérification, le chiffrement protège du vol de la base et des accès extérieurs, mais formellement pas de nous."
+      "a": "En partie — et nous disons précisément où. Les appels sont chiffrés de bout en bout via WebRTC. Dans les discussions privées, le texte et les pièces jointes sont chiffrés — photos, vidéos, messages vocaux et documents, ainsi que leurs légendes : la clé est créée sur votre appareil et n'en sort jamais, le serveur ne détient donc que du texte chiffré, que nous ne pouvons ni lire ni restaurer, même à votre demande. Les messages des groupes et des canaux sont encore stockés en clair — c'est la prochaine étape. Deux réserves honnêtes : le nom du fichier, sa taille et la durée d'un message vocal restent visibles pour le serveur, car la distribution et le nettoyage en dépendent ; et les clés publiques sont distribuées par notre serveur, donc tant qu'il n'existe pas de codes de vérification, le chiffrement protège du vol de la base et d'un accès extérieur, mais formellement pas de nous."
     },
     {
       "q": "Que sont les pièces EION ?",

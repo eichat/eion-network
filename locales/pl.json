@@ -19,7 +19,7 @@
   "f4_title": "Grupy",
   "f4_desc": "Grupy i kanały z rolami, komentarzami, reakcjami i płatnymi subskrypcjami. Transmisje odtwarzają się w aplikacji.",
   "f5_title": "Szyfrowanie end-to-end",
-  "f5_desc": "Połączenia i tekst czatów prywatnych są szyfrowane end-to-end: klucz zostaje na urządzeniu, a serwer widzi tylko szyfrogram. Grupy, kanały i załączniki jeszcze nie — mówimy o tym wprost.",
+  "f5_desc": "Połączenia, tekst i załączniki w czatach prywatnych są szyfrowane end-to-end: klucz zostaje na urządzeniu, a serwer widzi tylko szyfrogram. Grupy i kanały jeszcze nie — mówimy o tym wprost.",
   "f6_title": "Monety",
   "f6_desc": "Waluta w aplikacji na premium, paczki naklejek i płatne kanały. Wraz z przelewami między użytkownikami.",
   "dl_label": "Pobierz aplikację",
@@ -62,7 +62,7 @@
   "rm_2_4": "Weryfikacja numeru telefonu",
   "rm_ph3": "Etap 3 — następnie",
   "rm_h3": "Prywatność",
-  "rm_3_1": "Szyfrowanie grup i załączników",
+  "rm_3_1": "Szyfrowanie grup i kanałów",
   "rm_3_2": "Kody weryfikacyjne dla czatów i połączeń",
   "rm_3_3": "Tajne czaty",
   "rm_3_4": "Aplikacje na Windows i iOS",
@@ -85,7 +85,7 @@
     },
     {
       "q": "Czy moje wiadomości są szyfrowane?",
-      "a": "Częściowo — i mówimy dokładnie gdzie. Połączenia są szyfrowane end-to-end przez WebRTC. Tekst czatów prywatnych również: klucz powstaje na Twoim urządzeniu i nigdy go nie opuszcza, więc serwer przechowuje tylko szyfrogram i nie możemy go odczytać ani odtworzyć nawet na Twoją prośbę. Wiadomości w grupach i kanałach, a także zdjęcia, filmy i wiadomości głosowe, wciąż leżą na serwerze otwartym tekstem — to kolejny krok. Jeszcze jedno uczciwe zastrzeżenie: klucze publiczne rozdaje nasz serwer, więc dopóki nie ma kodów weryfikacyjnych, szyfrowanie chroni przed kradzieżą bazy i dostępem z zewnątrz, ale formalnie nie przed nami."
+      "a": "Częściowo — i mówimy dokładnie gdzie. Połączenia są szyfrowane end-to-end przez WebRTC. W czatach prywatnych szyfrowane są zarówno tekst, jak i załączniki — zdjęcia, filmy, wiadomości głosowe i dokumenty wraz z podpisami: klucz powstaje na Twoim urządzeniu i nigdy go nie opuszcza, więc na serwerze leży wyłącznie szyfrogram, którego nie możemy odczytać ani odtworzyć nawet na Twoją prośbę. Wiadomości w grupach i kanałach są jeszcze przechowywane jawnie — to następny krok. Dwa uczciwe zastrzeżenia: nazwa pliku, jego rozmiar i długość wiadomości głosowej pozostają widoczne dla serwera, bo opierają się na nich dostarczanie i sprzątanie; a klucze publiczne rozdaje nasz serwer, więc dopóki nie ma kodów weryfikacyjnych, szyfrowanie chroni przed kradzieżą bazy i dostępem z zewnątrz, ale formalnie nie przed nami."
     },
     {
       "q": "Czym są monety EION?",

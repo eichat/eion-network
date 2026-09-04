@@ -19,7 +19,7 @@
   "f4_title": "Gruppen",
   "f4_desc": "Gruppen und Kanäle mit Rollen, Kommentaren, Reaktionen und bezahlten Abos. Livestreams laufen direkt in der App.",
   "f5_title": "Ende-zu-Ende-Verschlüsselung",
-  "f5_desc": "Anrufe und der Text von Direktchats sind Ende-zu-Ende verschlüsselt: Der Schlüssel bleibt auf dem Gerät, der Server sieht nur Chiffretext. Gruppen, Kanäle und Anhänge noch nicht — das sagen wir offen.",
+  "f5_desc": "Anrufe, Text und Anhänge in Direktchats sind Ende-zu-Ende-verschlüsselt: Der Schlüssel bleibt auf dem Gerät, der Server sieht nur Chiffretext. Gruppen und Kanäle noch nicht — das sagen wir offen.",
   "f6_title": "Coins",
   "f6_desc": "Eine In-App-Währung für Premium, Sticker-Pakete und bezahlte Kanäle. Überweisungen zwischen Nutzern inklusive.",
   "dl_label": "App herunterladen",
@@ -62,7 +62,7 @@
   "rm_2_4": "Telefonnummer-Bestätigung",
   "rm_ph3": "Phase 3 — als Nächstes",
   "rm_h3": "Privatsphäre",
-  "rm_3_1": "Verschlüsselung für Gruppen und Anhänge",
+  "rm_3_1": "Verschlüsselung für Gruppen und Kanäle",
   "rm_3_2": "Prüfcodes für Chats und Anrufe",
   "rm_3_3": "Geheime Chats",
   "rm_3_4": "Apps für Windows und iOS",
@@ -85,7 +85,7 @@
     },
     {
       "q": "Sind meine Nachrichten verschlüsselt?",
-      "a": "Teilweise — und wir sagen genau wo. Anrufe sind über WebRTC Ende-zu-Ende verschlüsselt. Der Text von Direktchats ebenfalls: Der Schlüssel entsteht auf Ihrem Gerät und verlässt es nie, der Server hält also nur Chiffretext, und wir können ihn selbst auf Ihre Bitte weder lesen noch wiederherstellen. Nachrichten in Gruppen und Kanälen sowie Fotos, Videos und Sprachnachrichten liegen weiterhin unverschlüsselt auf dem Server — das ist der nächste Schritt. Noch ein ehrlicher Hinweis: Unser Server verteilt die öffentlichen Schlüssel, solange es keine Prüfcodes gibt, schützt die Verschlüsselung also vor Datenbankdiebstahl und fremdem Zugriff, formal aber nicht vor uns."
+      "a": "Teilweise — und wir sagen genau, wo. Anrufe sind über WebRTC Ende-zu-Ende verschlüsselt. In Direktchats sind sowohl der Text als auch die Anhänge verschlüsselt — Fotos, Videos, Sprachnachrichten und Dokumente samt ihren Bildunterschriften: Der Schlüssel entsteht auf Ihrem Gerät und verlässt es nie, daher liegt auf dem Server nur Chiffretext, den wir auch auf Ihre Bitte hin weder lesen noch wiederherstellen können. Nachrichten in Gruppen und Kanälen werden noch im Klartext gespeichert — das ist der nächste Schritt. Zwei ehrliche Einschränkungen: Dateiname, Größe und die Länge einer Sprachnachricht bleiben für den Server sichtbar, weil Zustellung und Aufräumen darauf beruhen; und die öffentlichen Schlüssel verteilt unser Server, solange es keine Sicherheitsnummern gibt, schützt die Verschlüsselung also vor Datenbankdiebstahl und fremdem Zugriff, formal aber nicht vor uns selbst."
     },
     {
       "q": "Was sind Coins?",

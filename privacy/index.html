@@ -62,7 +62,7 @@ footer a:hover{color:var(--neon)}
 <!-- ======================= УКРАЇНСЬКА ======================= -->
 <section id="uk">
 <h1>Політика конфіденційності</h1>
-<p class="meta">Чинна з 2 вересня 2026 року. Стосується застосунку EION для Android і Linux та сервісу eion.network.</p>
+<p class="meta">Чинна з 4 вересня 2026 року. Стосується застосунку EION для Android і Linux та сервісу eion.network.</p>
 
 <p>EION — месенджер. Ця політика описує, які дані ми отримуємо, навіщо, кому передаємо і як ви можете їх видалити. Ми намагались писати простою мовою і без обіцянок, яких не виконуємо.</p>
 
@@ -119,7 +119,9 @@ footer a:hover{color:var(--neon)}
 <div class="box">
 <p><b>Дзвінки шифруються наскрізно.</b> Аудіо й відео передаються за протоколом WebRTC із обов'язковим шифруванням DTLS-SRTP. Ні ми, ні проміжні сервери не мають доступу до змісту розмови.</p>
 <p><b>Текст особистих чатів — теж.</b> Ключ створюється на вашому пристрої й ніколи його не залишає; на сервері зберігається лише шифротекст. Ми не можемо прочитати ці повідомлення й не можемо їх відновити — навіть на ваш власний запит, навіть на вимогу закону. Ключ не резервується: якщо ви перевстановите застосунок, недоставлені повідомлення, зашифровані для попереднього ключа, стануть недоступними. Це свідома ціна за те, що копії ключа не існує ніде, крім вашого пристрою.</p>
-<p><b>Групи, канали та вкладення — поки ні.</b> Повідомлення в групах і каналах, а також фотографії, відео, голосові й документи зберігаються у відкритому вигляді (файли — у приватному сховищі, за посиланнями з обмеженим строком дії). Технічно ми маємо до них доступ. Ми не читаємо їх у буденній роботі, але не стверджуємо, що це неможливо. Шифрування груп і вкладень — наступний крок.</p>
+<p><b>Вкладення особистих чатів — теж.</b> Фотографії, відео, голосові й документи шифруються на вашому пристрої перед вивантаженням, разом із підписами до них. У сховище потрапляє лише шифротекст: ні ми, ні хостинг сховища не бачимо вмісту навіть за посиланням. Кожен файл зашифрований для двох ключів — вашого й співрозмовника, тож своє надіслане ви прочитаєте й на іншому пристрої.</p>
+<p><b>Що видно серверу навіть у зашифрованих чатах.</b> Імʼя файла, його розмір, тривалість голосового й форма звукової хвилі передаються відкрито — на них тримається доставка, показ у списку чатів і автоматичне прибирання файлів. Тобто ми не знаємо, що на фотографії, але знаємо, що ви надіслали файл із такою назвою й такого розміру. Хто з ким і коли листується, ми бачимо теж — це метадані, потрібні для роботи месенджера.</p>
+<p><b>Групи й канали — поки ні.</b> Повідомлення та вкладення в групах і каналах зберігаються у відкритому вигляді (файли — у приватному сховищі, за посиланнями з обмеженим строком дії). Технічно ми маємо до них доступ. Ми не читаємо їх у буденній роботі, але не стверджуємо, що це неможливо. Шифрування груп і каналів — наступний крок; воно складніше, бо історію треба віддавати будь-якому новому пристрою учасника.</p>
 <p><b>Дві межі, про які варто знати.</b> По-перше, публічні ключі роздає наш сервер, тож поки в застосунку немає кодів звірки, шифрування захищає від крадіжки бази даних, від інсайдера й від стороннього доступу — але формально не від нас самих. По-друге, ключ сталий: якщо він колись витече, з ним можна прочитати те, що сервер ще зберігає (до 7 днів для особистих чатів).</p>
 <p>Ми вважаємо чесність важливішою за маркетинг і тому пишемо, де саме шифрування вже є, а де ще ні. Якщо вам потрібна гарантована таємниця листування в групах, використовуйте месенджер, який це забезпечує.</p>
 </div>
@@ -172,7 +174,7 @@ footer a:hover{color:var(--neon)}
 <!-- ======================= ENGLISH ======================= -->
 <section id="en" hidden>
 <h1>Privacy Policy</h1>
-<p class="meta">Effective 2 September 2026. Applies to the EION app for Android and Linux and to the eion.network service.</p>
+<p class="meta">Effective 4 September 2026. Applies to the EION app for Android and Linux and to the eion.network service.</p>
 
 <p>EION is a messenger. This policy explains what data we receive, why, who we share it with, and how you can delete it. We have tried to write plainly and to avoid promises we do not keep.</p>
 
@@ -231,7 +233,9 @@ footer a:hover{color:var(--neon)}
 <div class="box">
 <p><b>Calls are end-to-end encrypted.</b> Audio and video use WebRTC with mandatory DTLS-SRTP encryption. Neither we nor any relay server can access the content of a call.</p>
 <p><b>The text of direct chats is too.</b> The key is created on your device and never leaves it; the server stores only ciphertext. We cannot read those messages and cannot restore them — not even at your own request, and not on a legal demand. The key is not backed up: if you reinstall the app, undelivered messages encrypted for the previous key become unreadable. That is the deliberate price of no copy of the key existing anywhere but your device.</p>
-<p><b>Groups, channels and attachments are not yet.</b> Messages in groups and channels, along with photos, videos, voice messages and documents, are stored in the clear (files in private storage, served via time-limited links). Technically we can access them. We do not read them in ordinary operation, but we do not claim it is impossible. Encryption for groups and attachments is the next step.</p>
+<p><b>So are attachments in direct chats.</b> Photos, videos, voice messages and documents are encrypted on your device before upload, together with their captions. Only ciphertext reaches the storage: neither we nor the storage provider can see the contents, even with the link. Every file is encrypted for two keys — yours and your correspondent's — so you can still open what you sent from another device.</p>
+<p><b>What the server sees even in encrypted chats.</b> The file name, its size, the length of a voice message and its waveform travel in the clear — delivery, the chat list preview and automatic file cleanup rely on them. So we do not know what is in a photo, but we do know that you sent a file with that name and that size. We also see who talks to whom and when: that is the metadata a messenger needs to work.</p>
+<p><b>Groups and channels are not yet.</b> Messages and attachments in groups and channels are stored in the clear (files in private storage, served via time-limited links). Technically we can access them. We do not read them in ordinary operation, but we do not claim it is impossible. Encryption for groups and channels is the next step; it is harder, because the history has to be delivered to any new device a member signs in from.</p>
 <p><b>Two limits worth knowing.</b> First, our server distributes the public keys, so until the app has verification codes, the encryption protects against database theft, an insider and outside access — but formally not against us. Second, the key is static: if it ever leaks, it can decrypt whatever the server still holds (up to 7 days for direct chats).</p>
 <p>We consider honesty more important than marketing, so we state exactly where encryption already exists and where it does not. If you need guaranteed confidentiality in group chats, use a messenger that provides it.</p>
 </div>
