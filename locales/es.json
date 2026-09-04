@@ -19,7 +19,7 @@
   "f4_title": "Grupos",
   "f4_desc": "Grupos y canales con roles, comentarios, reacciones y suscripciones de pago. Las transmisiones se ven dentro de la app.",
   "f5_title": "Cifrado de extremo a extremo",
-  "f5_desc": "Las llamadas y el texto de los chats privados se cifran de extremo a extremo: la clave permanece en el dispositivo y el servidor solo ve texto cifrado. Los grupos, canales y adjuntos aún no; lo decimos claramente.",
+  "f5_desc": "Las llamadas, el texto y los archivos adjuntos de los chats privados están cifrados de extremo a extremo: la clave permanece en tu dispositivo y el servidor solo ve texto cifrado. Los grupos y canales aún no, y lo decimos claramente.",
   "f6_title": "Monedas",
   "f6_desc": "Una moneda interna para premium, packs de pegatinas y canales de pago. Incluye transferencias entre usuarios.",
   "dl_label": "Obtener la app",
@@ -62,7 +62,7 @@
   "rm_2_4": "Verificación del número de teléfono",
   "rm_ph3": "Fase 3 — a continuación",
   "rm_h3": "Privacidad",
-  "rm_3_1": "Cifrado de grupos y adjuntos",
+  "rm_3_1": "Cifrado para grupos y canales",
   "rm_3_2": "Códigos de verificación para chats y llamadas",
   "rm_3_3": "Chats secretos",
   "rm_3_4": "Apps para Windows e iOS",
@@ -85,7 +85,7 @@
     },
     {
       "q": "¿Están cifrados mis mensajes?",
-      "a": "En parte, y decimos exactamente dónde. Las llamadas se cifran de extremo a extremo con WebRTC. El texto de los chats privados también: la clave se crea en tu dispositivo y nunca sale de él, así que el servidor guarda solo texto cifrado y no podemos leerlo ni restaurarlo ni siquiera a petición tuya. Los mensajes en grupos y canales, junto con fotos, vídeos y notas de voz, siguen guardándose sin cifrar — ese es el siguiente paso. Otra advertencia honesta: nuestro servidor distribuye las claves públicas, así que mientras no existan códigos de verificación, el cifrado protege del robo de la base de datos y de accesos ajenos, pero formalmente no de nosotros."
+      "a": "En parte, y decimos exactamente dónde. Las llamadas están cifradas de extremo a extremo mediante WebRTC. En los chats privados se cifran tanto el texto como los archivos adjuntos —fotos, vídeos, mensajes de voz y documentos, junto con sus descripciones—: la clave se crea en tu dispositivo y nunca sale de él, así que en el servidor solo hay texto cifrado y no podemos leerlo ni recuperarlo ni siquiera a petición tuya. Los mensajes de grupos y canales aún se guardan sin cifrar: ese es el siguiente paso. Dos advertencias honestas: el nombre del archivo, su tamaño y la duración de un mensaje de voz siguen siendo visibles para el servidor, porque de ellos dependen la entrega y la limpieza; y las claves públicas las distribuye nuestro servidor, así que mientras no existan códigos de verificación, el cifrado protege frente al robo de la base de datos y el acceso externo, pero formalmente no frente a nosotros."
     },
     {
       "q": "¿Qué son las monedas EION?",

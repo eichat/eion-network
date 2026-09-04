@@ -19,7 +19,7 @@
   "f4_title": "Mga Grupo",
   "f4_desc": "Mga grupo at channel na may roles, komento, reaksyon at bayad na subscription. Ang live stream ay nanonood sa loob mismo ng app.",
   "f5_title": "End-to-end na pag-encrypt",
-  "f5_desc": "Ang mga tawag at ang teksto ng mga pribadong chat ay end-to-end na naka-encrypt: nasa device ang susi at bantayog lang na naka-encrypt ang nakikita ng server. Hindi pa ang mga grupo, channel at attachment — sinasabi namin ito nang tapat.",
+  "f5_desc": "Ang mga tawag, teksto at attachment sa personal na chat ay end-to-end encrypted: nananatili sa device mo ang susi at ciphertext lang ang nakikita ng server. Hindi pa ang mga grupo at channel — sinasabi namin ito nang tapat.",
   "f6_title": "Coins",
   "f6_desc": "Panloob na pera para sa premium, sticker pack at bayad na channel. Kasama ang paglilipat sa pagitan ng mga user.",
   "dl_label": "Kunin ang App",
@@ -62,7 +62,7 @@
   "rm_2_4": "Pagpapatunay ng numero ng telepono",
   "rm_ph3": "Yugto 3 — susunod",
   "rm_h3": "Pagkapribado",
-  "rm_3_1": "Pag-encrypt para sa mga grupo at attachment",
+  "rm_3_1": "Pag-encrypt para sa mga grupo at channel",
   "rm_3_2": "Mga verification code para sa chat at tawag",
   "rm_3_3": "Mga lihim na chat",
   "rm_3_4": "Mga app para sa Windows at iOS",
@@ -85,7 +85,7 @@
     },
     {
       "q": "Naka-encrypt ba ang mga mensahe ko?",
-      "a": "Bahagya — at sinasabi namin kung saan eksakto. Ang mga tawag ay end-to-end na naka-encrypt sa WebRTC. Ganoon din ang teksto ng mga pribadong chat: ang susi ay nalilikha sa inyong device at hindi ito umaalis doon, kaya naka-encrypt lang ang nasa server at hindi namin ito mabasa o maibalik kahit hilingin ninyo. Ang mga mensahe sa grupo at channel, pati larawan, video at voice message, ay nakaimbak pa ring bukas sa server — iyon ang susunod na hakbang. Isa pang tapat na paalala: ang aming server ang namamahagi ng mga pampublikong susi, kaya hangga’t walang verification code, ang pag-encrypt ay proteksyon laban sa pagnanakaw ng database at panlabas na access, ngunit pormal na hindi laban sa amin."
+      "a": "Bahagya — at sinasabi namin nang eksakto kung saan. End-to-end encrypted ang mga tawag sa pamamagitan ng WebRTC. Sa mga personal na chat, naka-encrypt ang teksto at ang mga attachment — mga larawan, video, voice message at dokumento, kasama ang caption ng mga ito: ang susi ay nalilikha sa iyong device at hindi kailanman umaalis doon, kaya ciphertext lamang ang nasa server, na hindi namin mabasa o maibalik kahit hilingin mo. Ang mga mensahe sa grupo at channel ay nakaimbak pa ring bukas — iyon ang susunod na hakbang. Dalawang tapat na paalala: nananatiling nakikita ng server ang pangalan ng file, laki nito at haba ng voice message, dahil doon nakasalalay ang paghahatid at paglilinis; at ang mga pampublikong susi ay ipinamamahagi ng aming server, kaya hangga't walang safety numbers, pinoprotektahan ka ng encryption laban sa pagnanakaw ng database at panlabas na access, ngunit pormal na hindi laban sa amin."
     },
     {
       "q": "Ano ang coins?",

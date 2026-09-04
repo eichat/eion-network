@@ -19,7 +19,7 @@
   "f4_title": "Grup",
   "f4_desc": "Grup dan kanal dengan peran, komentar, reaksi, serta langganan berbayar. Siaran langsung diputar di dalam aplikasi.",
   "f5_title": "Enkripsi ujung ke ujung",
-  "f5_desc": "Panggilan dan teks obrolan pribadi dienkripsi ujung ke ujung: kunci tetap di perangkat dan server hanya melihat teks tersandi. Grup, kanal, dan lampiran belum — kami mengatakannya terus terang.",
+  "f5_desc": "Panggilan, teks, dan lampiran pada obrolan pribadi terenkripsi end-to-end: kuncinya tetap di perangkat Anda dan server hanya melihat teks tersandi. Grup dan kanal belum — kami mengatakannya terus terang.",
   "f6_title": "Koin",
   "f6_desc": "Mata uang dalam aplikasi untuk premium, paket stiker, dan kanal berbayar. Termasuk transfer antarpengguna.",
   "dl_label": "Dapatkan Aplikasi",
@@ -62,7 +62,7 @@
   "rm_2_4": "Verifikasi nomor telepon",
   "rm_ph3": "Fase 3 — berikutnya",
   "rm_h3": "Privasi",
-  "rm_3_1": "Enkripsi grup dan lampiran",
+  "rm_3_1": "Enkripsi untuk grup dan kanal",
   "rm_3_2": "Kode verifikasi untuk obrolan dan panggilan",
   "rm_3_3": "Obrolan rahasia",
   "rm_3_4": "Aplikasi Windows dan iOS",
@@ -85,7 +85,7 @@
     },
     {
       "q": "Apakah pesan saya terenkripsi?",
-      "a": "Sebagian — dan kami menyebutkan persisnya di mana. Panggilan dienkripsi ujung ke ujung lewat WebRTC. Begitu pula teks obrolan pribadi: kuncinya dibuat di perangkat Anda dan tidak pernah keluar, jadi server hanya menyimpan teks tersandi dan kami tidak bisa membacanya atau memulihkannya bahkan atas permintaan Anda. Pesan di grup dan kanal, serta foto, video dan pesan suara, masih tersimpan terbuka di server — itu langkah berikutnya. Satu catatan jujur lagi: server kami yang membagikan kunci publik, jadi selama belum ada kode verifikasi, enkripsi melindungi dari pencurian basis data dan akses luar, tetapi secara formal bukan dari kami."
+      "a": "Sebagian — dan kami menyebut persis di mana. Panggilan dienkripsi end-to-end lewat WebRTC. Pada obrolan pribadi, teks maupun lampiran dienkripsi — foto, video, pesan suara, dan dokumen, berikut keterangannya: kuncinya dibuat di perangkat Anda dan tidak pernah meninggalkannya, jadi di server hanya ada teks tersandi yang tidak bisa kami baca atau pulihkan bahkan atas permintaan Anda. Pesan di grup dan kanal masih disimpan terbuka — itu langkah berikutnya. Dua catatan jujur: nama berkas, ukurannya, dan durasi pesan suara tetap terlihat oleh server, karena pengiriman dan pembersihan bergantung padanya; dan kunci publik dibagikan oleh server kami, sehingga selama belum ada kode verifikasi, enkripsi melindungi dari pencurian basis data dan akses luar, tetapi secara formal bukan dari kami."
     },
     {
       "q": "Apa itu koin EION?",

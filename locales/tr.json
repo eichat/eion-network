@@ -19,7 +19,7 @@
   "f4_title": "Gruplar",
   "f4_desc": "Rolleri, yorumları, tepkileri ve ücretli abonelikleri olan gruplar ve kanallar. Canlı yayınlar uygulama içinde açılır.",
   "f5_title": "Uçtan uca şifreleme",
-  "f5_desc": "Aramalar ve özel sohbetlerin metni uçtan uca şifrelenir: anahtar cihazda kalır, sunucu yalnızca şifreli metni görür. Gruplar, kanallar ve ekler henüz değil — bunu açıkça söylüyoruz.",
+  "f5_desc": "Aramalar, özel sohbetlerdeki metin ve ekler uçtan uca şifrelenir: anahtar cihazınızda kalır, sunucu yalnızca şifreli metni görür. Gruplar ve kanallar henüz değil — bunu açıkça söylüyoruz.",
   "f6_title": "Jeton",
   "f6_desc": "Premium, çıkartma paketleri ve ücretli kanallar için uygulama içi para birimi. Kullanıcılar arası transferler dâhil.",
   "dl_label": "Uygulamayı Al",
@@ -62,7 +62,7 @@
   "rm_2_4": "Telefon numarası doğrulama",
   "rm_ph3": "Aşama 3 — sırada",
   "rm_h3": "Gizlilik",
-  "rm_3_1": "Gruplar ve ekler için şifreleme",
+  "rm_3_1": "Gruplar ve kanallar için şifreleme",
   "rm_3_2": "Sohbetler ve aramalar için doğrulama kodları",
   "rm_3_3": "Gizli sohbetler",
   "rm_3_4": "Windows ve iOS uygulamaları",
@@ -85,7 +85,7 @@
     },
     {
       "q": "Mesajlarım şifreli mi?",
-      "a": "Kısmen — ve tam olarak nerede olduğunu söylüyoruz. Aramalar WebRTC ile uçtan uca şifrelenir. Özel sohbetlerin metni de öyle: anahtar cihazınızda oluşturulur ve oradan hiç çıkmaz, bu yüzden sunucuda yalnızca şifreli metin durur ve isteseniz bile onu okuyamaz ya da geri getiremeyiz. Gruplardaki ve kanallardaki mesajlar ile fotoğraflar, videolar ve sesli mesajlar hâlâ sunucuda açık duruyor — sıradaki adım bu. Bir dürüst uyarı daha: açık anahtarları bizim sunucumuz dağıtıyor, dolayısıyla doğrulama kodları gelene kadar şifreleme veritabanı hırsızlığına ve dışarıdan erişime karşı korur, ama biçimsel olarak bize karşı korumaz."
+      "a": "Kısmen — ve nerede olduğunu tam olarak söylüyoruz. Aramalar WebRTC ile uçtan uca şifrelenir. Özel sohbetlerde hem metin hem de ekler şifrelenir: fotoğraflar, videolar, sesli mesajlar ve belgeler, açıklamalarıyla birlikte. Anahtar cihazınızda oluşturulur ve oradan hiç çıkmaz; bu yüzden sunucuda yalnızca şifreli metin bulunur ve talebiniz üzerine bile onu okuyamaz ya da geri getiremeyiz. Gruplardaki ve kanallardaki mesajlar hâlâ açık saklanıyor — sıradaki adım bu. İki dürüst uyarı: dosya adı, boyutu ve sesli mesajın süresi sunucuya görünür kalır, çünkü teslimat ve temizlik bunlara dayanır; ayrıca açık anahtarları sunucumuz dağıtır, dolayısıyla doğrulama kodları olmadığı sürece şifreleme veritabanı hırsızlığına ve dışarıdan erişime karşı korur, ama biçimsel olarak bize karşı korumaz."
     },
     {
       "q": "Jeton nedir?",

@@ -19,7 +19,7 @@
   "f4_title": "Gruppi",
   "f4_desc": "Gruppi e canali con ruoli, commenti, reazioni e abbonamenti a pagamento. Le dirette si guardano nell’app.",
   "f5_title": "Crittografia end-to-end",
-  "f5_desc": "Le chiamate e il testo delle chat private sono cifrati end-to-end: la chiave resta sul dispositivo e il server vede solo testo cifrato. Gruppi, canali e allegati non ancora — lo diciamo apertamente.",
+  "f5_desc": "Chiamate, testo e allegati delle chat private sono cifrati end-to-end: la chiave resta sul dispositivo e il server vede solo testo cifrato. Gruppi e canali non ancora — lo diciamo apertamente.",
   "f6_title": "Monete",
   "f6_desc": "Una valuta interna per premium, pacchetti di adesivi e canali a pagamento. Inclusi i trasferimenti tra utenti.",
   "dl_label": "Scarica l'app",
@@ -62,7 +62,7 @@
   "rm_2_4": "Verifica del numero di telefono",
   "rm_ph3": "Fase 3 — poi",
   "rm_h3": "Riservatezza",
-  "rm_3_1": "Crittografia di gruppi e allegati",
+  "rm_3_1": "Cifratura di gruppi e canali",
   "rm_3_2": "Codici di verifica per chat e chiamate",
   "rm_3_3": "Chat segrete",
   "rm_3_4": "App per Windows e iOS",
@@ -85,7 +85,7 @@
     },
     {
       "q": "I miei messaggi sono cifrati?",
-      "a": "In parte — e diciamo esattamente dove. Le chiamate sono cifrate end-to-end tramite WebRTC. Anche il testo delle chat private: la chiave nasce sul tuo dispositivo e non lo lascia mai, quindi il server conserva solo testo cifrato e non possiamo leggerlo né ripristinarlo nemmeno su tua richiesta. I messaggi nei gruppi e nei canali, insieme a foto, video e messaggi vocali, restano archiviati in chiaro — è il passo successivo. Un’altra avvertenza onesta: le chiavi pubbliche le distribuisce il nostro server, quindi finché non ci sono codici di verifica la cifratura protegge dal furto del database e da accessi esterni, ma formalmente non da noi."
+      "a": "In parte — e diciamo esattamente dove. Le chiamate sono cifrate end-to-end tramite WebRTC. Nelle chat private sono cifrati sia il testo sia gli allegati — foto, video, messaggi vocali e documenti, insieme alle relative didascalie: la chiave nasce sul tuo dispositivo e non lo lascia mai, quindi sul server resta solo testo cifrato che non possiamo leggere né recuperare, nemmeno su tua richiesta. I messaggi in gruppi e canali sono ancora conservati in chiaro: è il passo successivo. Due avvertenze oneste: il nome del file, la sua dimensione e la durata di un messaggio vocale restano visibili al server, perché consegna e pulizia si basano su di essi; e le chiavi pubbliche le distribuisce il nostro server, quindi finché non esistono codici di verifica la cifratura protegge dal furto del database e da accessi esterni, ma formalmente non da noi."
     },
     {
       "q": "Che cosa sono le monete EION?",
