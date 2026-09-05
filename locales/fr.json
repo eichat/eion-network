@@ -5,7 +5,7 @@
   "nav_roadmap": "Feuille de route",
   "nav_faq": "FAQ",
   "hero_sub": "Une messagerie qui vous appartient",
-  "hero_desc": "Discussions, groupes et canaux, appels chiffrés de bout en bout, un assistant IA<br>et des pièces intégrées. Pour Android et Linux. Sans publicité ni pistage.",
+  "hero_desc": "Discussions, groupes et canaux, appels chiffrés de bout en bout, un assistant IA<br>et des pièces intégrées. Sans publicité ni pistage.",
   "hero_btn1": "↓ Télécharger",
   "hero_btn2": "Pièces →",
   "feat_label": "Application",
@@ -77,7 +77,7 @@
   "faq": [
     {
       "q": "Qu’est-ce qu’EION ?",
-      "a": "Une messagerie pour Android et Linux : discussions, groupes, canaux avec commentaires et directs, appels chiffrés, un assistant IA intégré et des pièces internes. Sans publicité ni pistage."
+      "a": "Une messagerie : discussions, groupes, canaux avec commentaires et directs, appels chiffrés, un assistant IA intégré et des pièces internes. Sans publicité ni pistage."
     },
     {
       "q": "EION est-il gratuit ?",
@@ -141,7 +141,7 @@
   "don_label": "Soutien",
   "don_title": "Soutenir le <span>développement</span>",
   "don_copy": "Copier",
-  "don_intro": "EION est développé par une personne indépendante, sans investisseurs. Les dons paient les serveurs, le stockage et les frais de réseau que l’application prend en charge pour ses utilisateurs. C’est un soutien au développement — ni un achat de pièces EION, ni une vente de jetons, ni un investissement.",
+  "don_intro": "EION est développé par une équipe indépendante, sans investisseurs. Les dons paient les serveurs, le stockage et les frais de réseau que l’application prend en charge pour ses utilisateurs. C’est un soutien au développement — ni un achat de pièces EION, ni une vente de jetons, ni un investissement.",
   "don_note": "Vérifiez l’adresse avant d’envoyer : elle doit correspondre à celle affichée dans l’application (Réglages → Soutien). Les dons ne sont pas remboursables et ne donnent aucun droit, part ou jeton futur.",
   "don_net_btc": "Bitcoin",
   "don_net_usdt": "TRON (TRC-20)",

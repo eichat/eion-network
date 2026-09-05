@@ -5,7 +5,7 @@
   "nav_roadmap": "Routekaart",
   "nav_faq": "FAQ",
   "hero_sub": "Een messenger die van jou is",
-  "hero_desc": "Chats, groepen en kanalen, end-to-end versleutelde gesprekken, een AI-assistent<br>en munten in de app. Voor Android en Linux. Geen advertenties, geen tracking.",
+  "hero_desc": "Chats, groepen en kanalen, end-to-end versleutelde gesprekken, een AI-assistent<br>en munten in de app. Geen advertenties, geen tracking.",
   "hero_btn1": "↓ Downloaden",
   "hero_btn2": "Munten →",
   "feat_label": "Applicatie",
@@ -77,7 +77,7 @@
   "faq": [
     {
       "q": "Wat is EION?",
-      "a": "Een messenger voor Android en Linux: chats, groepen, kanalen met reacties en streams, versleutelde gesprekken, een ingebouwde AI-assistent en munten in de app. Geen advertenties, geen tracking."
+      "a": "Een messenger: chats, groepen, kanalen met reacties en streams, versleutelde gesprekken, een ingebouwde AI-assistent en munten in de app. Geen advertenties, geen tracking."
     },
     {
       "q": "Is EION gratis?",
@@ -141,7 +141,7 @@
   "don_label": "Steun",
   "don_title": "Steun de <span>ontwikkeling</span>",
   "don_copy": "Kopiëren",
-  "don_intro": "EION wordt gebouwd door een onafhankelijke ontwikkelaar, zonder investeerders. Donaties betalen servers, opslag en de netwerkkosten die de app voor gebruikers dekt. Dit is steun voor de ontwikkeling — geen aankoop van EION-munten, geen tokenverkoop en geen investering.",
+  "don_intro": "EION wordt gebouwd door een onafhankelijk team, zonder investeerders. Donaties betalen servers, opslag en de netwerkkosten die de app voor gebruikers dekt. Dit is steun voor de ontwikkeling — geen aankoop van EION-munten, geen tokenverkoop en geen investering.",
   "don_note": "Controleer het adres voor je verzendt: het moet overeenkomen met dat in de app (Instellingen → Steun). Donaties zijn niet terugvorderbaar en geven geen rechten, aandelen of toekomstige tokens.",
   "don_net_btc": "Bitcoin",
   "don_net_usdt": "TRON (TRC-20)",

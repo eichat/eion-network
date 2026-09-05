@@ -5,7 +5,7 @@
   "nav_roadmap": "Roadmap",
   "nav_faq": "FAQ",
   "hero_sub": "Una messaggistica che ti appartiene",
-  "hero_desc": "Chat, gruppi e canali, chiamate cifrate end-to-end, un assistente IA<br>e monete interne. Per Android e Linux. Senza pubblicità né tracciamento.",
+  "hero_desc": "Chat, gruppi e canali, chiamate cifrate end-to-end, un assistente IA<br>e monete interne. Senza pubblicità né tracciamento.",
   "hero_btn1": "↓ Scarica",
   "hero_btn2": "Monete →",
   "feat_label": "Applicazione",
@@ -77,7 +77,7 @@
   "faq": [
     {
       "q": "Che cos’è EION?",
-      "a": "Una messaggistica per Android e Linux: chat, gruppi, canali con commenti e dirette, chiamate cifrate, un assistente IA integrato e monete interne. Senza pubblicità né tracciamento."
+      "a": "Una messaggistica: chat, gruppi, canali con commenti e dirette, chiamate cifrate, un assistente IA integrato e monete interne. Senza pubblicità né tracciamento."
     },
     {
       "q": "EION è gratuito?",
@@ -141,7 +141,7 @@
   "don_label": "Sostegno",
   "don_title": "Sostieni lo <span>sviluppo</span>",
   "don_copy": "Copia",
-  "don_intro": "EION è sviluppato da uno sviluppatore indipendente, senza investitori. Le donazioni pagano server, archiviazione e le commissioni di rete che l’app copre per gli utenti. È sostegno allo sviluppo: non è un acquisto di monete EION, né una vendita di token, né un investimento.",
+  "don_intro": "EION è sviluppato da un team indipendente, senza investitori. Le donazioni pagano server, archiviazione e le commissioni di rete che l’app copre per gli utenti. È sostegno allo sviluppo: non è un acquisto di monete EION, né una vendita di token, né un investimento.",
   "don_note": "Controlla l’indirizzo prima di inviare: deve coincidere con quello mostrato nell’app (Impostazioni → Sostegno). Le donazioni non sono rimborsabili e non danno diritti, quote o token futuri.",
   "don_net_btc": "Bitcoin",
   "don_net_usdt": "TRON (TRC-20)",

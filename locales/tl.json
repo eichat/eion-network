@@ -5,7 +5,7 @@
   "nav_roadmap": "Mga plano",
   "nav_faq": "FAQ",
   "hero_sub": "Isang messenger na sa iyo",
-  "hero_desc": "Mga chat, grupo at channel, mga tawag na end-to-end encrypted, AI assistant<br>at coins sa loob ng app. Para sa Android at Linux. Walang ads, walang pagsubaybay.",
+  "hero_desc": "Mga chat, grupo at channel, mga tawag na end-to-end encrypted, AI assistant<br>at coins sa loob ng app. Walang ads, walang pagsubaybay.",
   "hero_btn1": "↓ I-download",
   "hero_btn2": "Coins →",
   "feat_label": "Aplikasyon",
@@ -77,7 +77,7 @@
   "faq": [
     {
       "q": "Ano ang EION?",
-      "a": "Isang messenger para sa Android at Linux: mga chat, grupo, channel na may komento at stream, naka-encrypt na tawag, built-in na AI assistant at coins sa loob ng app. Walang ads at walang pagsubaybay."
+      "a": "Isang messenger: mga chat, grupo, channel na may komento at stream, naka-encrypt na tawag, built-in na AI assistant at coins sa loob ng app. Walang ads at walang pagsubaybay."
     },
     {
       "q": "Libre ba ang EION?",
@@ -141,7 +141,7 @@
   "don_label": "Suporta",
   "don_title": "Suportahan ang <span>pagbuo</span>",
   "don_copy": "Kopyahin",
-  "don_intro": "Ginagawa ang EION ng isang malayang developer, walang investor. Ang mga donasyon ay para sa server, storage at sa mga bayarin sa network na sinasagot ng app para sa mga user. Suporta ito sa pagbuo — hindi pagbili ng EION coins, hindi pagbebenta ng token at hindi pamumuhunan.",
+  "don_intro": "Ginagawa ang EION ng isang malayang team, walang investor. Ang mga donasyon ay para sa server, storage at sa mga bayarin sa network na sinasagot ng app para sa mga user. Suporta ito sa pagbuo — hindi pagbili ng EION coins, hindi pagbebenta ng token at hindi pamumuhunan.",
   "don_note": "Suriin ang address bago magpadala: dapat tugma ito sa ipinapakita sa app (Mga Setting → Suporta). Hindi maibabalik ang mga donasyon at walang ibinibigay na karapatan, bahagi o token sa hinaharap.",
   "don_net_btc": "Bitcoin",
   "don_net_usdt": "TRON (TRC-20)",
