@@ -5,7 +5,7 @@
   "nav_roadmap": "Yol Haritası",
   "nav_faq": "SSS",
   "hero_sub": "Size ait bir mesajlaşma uygulaması",
-  "hero_desc": "Sohbetler, gruplar ve kanallar, uçtan uca şifreli aramalar, yapay zekâ asistanı<br>ve uygulama içi coin’ler. Android ve Linux için. Reklam ve takip yok.",
+  "hero_desc": "Sohbetler, gruplar ve kanallar, uçtan uca şifreli aramalar, yapay zekâ asistanı<br>ve uygulama içi coin’ler. Reklam ve takip yok.",
   "hero_btn1": "↓ İndir",
   "hero_btn2": "Jeton →",
   "feat_label": "Uygulama",
@@ -77,7 +77,7 @@
   "faq": [
     {
       "q": "EION nedir?",
-      "a": "Android ve Linux için bir mesajlaşma uygulaması: sohbetler, gruplar, yorumlu ve yayınlı kanallar, şifreli aramalar, yerleşik yapay zekâ asistanı ve uygulama içi coin’ler. Reklam ve takip yok."
+      "a": "Bir mesajlaşma uygulaması: sohbetler, gruplar, yorumlu ve yayınlı kanallar, şifreli aramalar, yerleşik yapay zekâ asistanı ve uygulama içi coin’ler. Reklam ve takip yok."
     },
     {
       "q": "EION ücretsiz mi?",
@@ -141,7 +141,7 @@
   "don_label": "Destek",
   "don_title": "<span>Geliştirmeyi</span> destekle",
   "don_copy": "Kopyala",
-  "don_intro": "EION bağımsız bir geliştirici tarafından yapılıyor, yatırımcısı yok. Bağışlar sunucuları, depolamayı ve uygulamanın kullanıcılar adına ödediği ağ ücretlerini karşılar. Bu, geliştirmeye destektir — EION parası satın almak, token satışı ya da yatırım değildir.",
+  "don_intro": "EION bağımsız bir ekip tarafından yapılıyor, yatırımcısı yok. Bağışlar sunucuları, depolamayı ve uygulamanın kullanıcılar adına ödediği ağ ücretlerini karşılar. Bu, geliştirmeye destektir — EION parası satın almak, token satışı ya da yatırım değildir.",
   "don_note": "Göndermeden önce adresi karşılaştırın: uygulamada (Ayarlar → Destek) görünenle aynı olmalı. Bağışlar iade edilmez ve hiçbir hak, pay ya da gelecekteki token vermez.",
   "don_net_btc": "Bitcoin",
   "don_net_usdt": "TRON (TRC-20)",

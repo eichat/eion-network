@@ -5,7 +5,7 @@
   "nav_roadmap": "Peta Jalan",
   "nav_faq": "FAQ",
   "hero_sub": "Aplikasi pesan yang menjadi milikmu",
-  "hero_desc": "Obrolan, grup, dan kanal, panggilan terenkripsi ujung-ke-ujung, asisten AI<br>serta koin di dalam aplikasi. Untuk Android dan Linux. Tanpa iklan, tanpa pelacakan.",
+  "hero_desc": "Obrolan, grup, dan kanal, panggilan terenkripsi ujung-ke-ujung, asisten AI<br>serta koin di dalam aplikasi. Tanpa iklan, tanpa pelacakan.",
   "hero_btn1": "↓ Unduh",
   "hero_btn2": "Koin →",
   "feat_label": "Aplikasi",
@@ -77,7 +77,7 @@
   "faq": [
     {
       "q": "Apa itu EION?",
-      "a": "Aplikasi pesan untuk Android dan Linux: obrolan, grup, kanal dengan komentar dan siaran, panggilan terenkripsi, asisten AI bawaan, serta koin dalam aplikasi. Tanpa iklan dan tanpa pelacakan."
+      "a": "Aplikasi pesan: obrolan, grup, kanal dengan komentar dan siaran, panggilan terenkripsi, asisten AI bawaan, serta koin dalam aplikasi. Tanpa iklan dan tanpa pelacakan."
     },
     {
       "q": "Apakah EION gratis?",
@@ -141,7 +141,7 @@
   "don_label": "Dukungan",
   "don_title": "Dukung <span>pengembangan</span>",
   "don_copy": "Salin",
-  "don_intro": "EION dibuat oleh pengembang independen, tanpa investor. Donasi membayar server, penyimpanan, dan biaya jaringan yang ditanggung aplikasi untuk penggunanya. Ini dukungan untuk pengembangan — bukan pembelian koin EION, bukan penjualan token, dan bukan investasi.",
+  "don_intro": "EION dibuat oleh tim independen, tanpa investor. Donasi membayar server, penyimpanan, dan biaya jaringan yang ditanggung aplikasi untuk penggunanya. Ini dukungan untuk pengembangan — bukan pembelian koin EION, bukan penjualan token, dan bukan investasi.",
   "don_note": "Periksa alamatnya sebelum mengirim: harus sama dengan yang ditampilkan di aplikasi (Pengaturan → Dukungan). Donasi tidak dapat dikembalikan dan tidak memberi hak, saham, atau token di masa depan.",
   "don_net_btc": "Bitcoin",
   "don_net_usdt": "TRON (TRC-20)",

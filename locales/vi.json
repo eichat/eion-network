@@ -5,7 +5,7 @@
   "nav_roadmap": "Lộ trình",
   "nav_faq": "Câu hỏi thường gặp",
   "hero_sub": "Một ứng dụng nhắn tin thuộc về bạn",
-  "hero_desc": "Trò chuyện, nhóm và kênh, cuộc gọi mã hóa đầu cuối, trợ lý AI<br>và xu trong ứng dụng. Cho Android và Linux. Không quảng cáo, không theo dõi.",
+  "hero_desc": "Trò chuyện, nhóm và kênh, cuộc gọi mã hóa đầu cuối, trợ lý AI<br>và xu trong ứng dụng. Không quảng cáo, không theo dõi.",
   "hero_btn1": "↓ Tải xuống",
   "hero_btn2": "Xu →",
   "feat_label": "Ứng dụng",
@@ -77,7 +77,7 @@
   "faq": [
     {
       "q": "EION là gì?",
-      "a": "Một ứng dụng nhắn tin cho Android và Linux: trò chuyện, nhóm, kênh có bình luận và phát trực tiếp, cuộc gọi mã hóa, trợ lý AI tích hợp và xu trong ứng dụng. Không quảng cáo, không theo dõi."
+      "a": "Một ứng dụng nhắn tin: trò chuyện, nhóm, kênh có bình luận và phát trực tiếp, cuộc gọi mã hóa, trợ lý AI tích hợp và xu trong ứng dụng. Không quảng cáo, không theo dõi."
     },
     {
       "q": "EION có miễn phí không?",
@@ -141,7 +141,7 @@
   "don_label": "Ủng hộ",
   "don_title": "Ủng hộ <span>phát triển</span>",
   "don_copy": "Sao chép",
-  "don_intro": "EION do một nhà phát triển độc lập xây dựng, không có nhà đầu tư. Các khoản ủng hộ trả cho máy chủ, lưu trữ và phí mạng mà ứng dụng trả thay người dùng. Đây là ủng hộ phát triển — không phải mua xu EION, không phải bán token và không phải đầu tư.",
+  "don_intro": "EION do một nhóm phát triển độc lập xây dựng, không có nhà đầu tư. Các khoản ủng hộ trả cho máy chủ, lưu trữ và phí mạng mà ứng dụng trả thay người dùng. Đây là ủng hộ phát triển — không phải mua xu EION, không phải bán token và không phải đầu tư.",
   "don_note": "Hãy đối chiếu địa chỉ trước khi gửi: nó phải trùng với địa chỉ hiển thị trong ứng dụng (Cài đặt → Ủng hộ). Khoản ủng hộ không hoàn lại và không đem lại quyền lợi, cổ phần hay token tương lai.",
   "don_net_btc": "Bitcoin",
   "don_net_usdt": "TRON (TRC-20)",
