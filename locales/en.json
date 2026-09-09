@@ -89,21 +89,21 @@
   },
   {
    "q": "What are coins?",
-   "a": "An internal currency of the app: premium, sticker packs, paid channel subscriptions, transfers between users, and everything beyond the free daily allowance — AI requests, uploads, relayed calls, auto-translation. Registration grants 🪙 200. They are not money and not cryptocurrency, and cannot be exchanged for money."
+   "a": "An internal currency of the app: premium, sticker packs, paid channel subscriptions, transfers between users, and everything beyond the free daily allowance — AI requests, uploads, relayed calls, auto-translation. Registration grants 🪙 2000. They are not money and not cryptocurrency, and cannot be exchanged for money."
   },
   {
    "q": "Which platforms are supported?",
-   "a": "Android and Linux. The beta is temporarily closed — we are polishing things and will reopen downloads. iOS and Windows are planned."
+   "a": "Android and Linux — downloads are open. The app is in test mode: we are still polishing it, so expect bugs, and data from the test period may be reset. iOS and Windows are planned."
   }
  ],
  "footer_tagline": "Talk. Share. Own your data.",
  "footer_support": "Support",
  "intro_sub": "the network that connects",
  "intro_skip": "skip ↓",
- "dl_ready": "✓ Beta available",
+ "dl_ready": "✓ Test build",
  "dl_get": "Download APK",
  "dl_get_linux": "Download AppImage",
- "dl_note": "The beta is temporarily closed while we finish setting things up. Leave your email and we’ll write as soon as it opens.",
+ "dl_note": "Android will ask for permission to install an app from an unknown source — that is normal outside Google Play. On Linux, make the file executable and run it. The app is in test mode: expect bugs, and data from the test period may be reset.",
  "notify_title": "Get one email when EION arrives in the store",
  "notify_ph": "your@email.com",
  "notify_btn": "Notify me",
@@ -161,5 +161,6 @@
  "prem_f9": "Opening a wallet is free",
  "rm_done": "works now",
  "rm_wip": "in progress",
- "rm_todo": "planned"
+ "rm_todo": "planned",
+ "test_banner": "EION is running in test mode. Expect bugs and downtime; data and balances from the test period may be reset."
 }

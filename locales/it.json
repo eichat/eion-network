@@ -89,21 +89,21 @@
   },
   {
    "q": "Che cosa sono le monete EION?",
-   "a": "Una valuta interna dell’app: premium, pacchetti di adesivi, abbonamenti a pagamento ai canali, trasferimenti tra utenti e tutto ciò che supera la quota giornaliera gratuita — richieste IA, caricamenti, chiamate via relay, traduzione automatica. La registrazione dà 🪙 200. Non sono denaro né criptovaluta e non si cambiano in denaro."
+   "a": "Una valuta interna dell’app: premium, pacchetti di adesivi, abbonamenti a pagamento ai canali, trasferimenti tra utenti e tutto ciò che supera la quota giornaliera gratuita — richieste IA, caricamenti, chiamate via relay, traduzione automatica. La registrazione dà 🪙 2000. Non sono denaro né criptovaluta e non si cambiano in denaro."
   },
   {
    "q": "Quali piattaforme sono supportate?",
-   "a": "Android e Linux. La beta è temporaneamente chiusa: stiamo sistemando tutto e riapriremo i download. iOS e Windows sono in programma."
+   "a": "Android e Linux: i download sono aperti. L’app è in modalità di prova: la stiamo ancora rifinendo, quindi sono possibili errori e i dati del periodo di prova possono essere azzerati. iOS e Windows sono in programma."
   }
  ],
  "footer_tagline": "Parla. Condividi. I tuoi dati restano tuoi.",
  "footer_support": "Supporto",
  "intro_sub": "la rete che collega",
  "intro_skip": "salta ↓",
- "dl_ready": "✓ Beta disponibile",
+ "dl_ready": "✓ Versione di prova",
  "dl_get": "Scarica APK",
  "dl_get_linux": "Scarica AppImage",
- "dl_note": "La beta è temporaneamente chiusa mentre finiamo di sistemare tutto. Lascia la tua email e ti scriviamo appena riapre.",
+ "dl_note": "Android chiederà il permesso di installare un’app da origine sconosciuta: fuori da Google Play è normale. Su Linux rendi il file eseguibile e avvialo. L’app è in modalità di prova: sono possibili errori e i dati del periodo di prova possono essere azzerati.",
  "notify_title": "Una sola email quando EION arriverà sullo store",
  "notify_ph": "tua@email.com",
  "notify_btn": "Avvisami",
@@ -161,5 +161,6 @@
  "prem_f9": "Apertura del portafoglio gratuita",
  "rm_done": "funziona",
  "rm_wip": "in corso",
- "rm_todo": "previsto"
+ "rm_todo": "previsto",
+ "test_banner": "EION è in modalità di prova. Sono possibili errori e interruzioni; i dati e i saldi del periodo di prova possono essere azzerati."
 }

@@ -89,21 +89,21 @@
   },
   {
    "q": "Apa itu koin EION?",
-   "a": "Mata uang internal aplikasi: premium, paket stiker, langganan kanal berbayar, transfer antar pengguna, dan segala sesuatu di atas jatah gratis harian — permintaan AI, unggahan, panggilan lewat relay, terjemahan otomatis. Pendaftaran memberi 🪙 200. Ini bukan uang dan bukan mata uang kripto, serta tidak dapat ditukar dengan uang."
+   "a": "Mata uang internal aplikasi: premium, paket stiker, langganan kanal berbayar, transfer antar pengguna, dan segala sesuatu di atas jatah gratis harian — permintaan AI, unggahan, panggilan lewat relay, terjemahan otomatis. Pendaftaran memberi 🪙 2000. Ini bukan uang dan bukan mata uang kripto, serta tidak dapat ditukar dengan uang."
   },
   {
    "q": "Platform apa saja yang didukung?",
-   "a": "Android dan Linux. Beta ditutup sementara — kami sedang merapikan semuanya dan akan membuka unduhan lagi. iOS dan Windows direncanakan."
+   "a": "Android dan Linux — unduhan terbuka. Aplikasi dalam mode uji: kami masih menyempurnakannya, jadi mungkin ada kesalahan dan data periode uji dapat direset. iOS dan Windows direncanakan."
   }
  ],
  "footer_tagline": "Bicara. Berbagi. Datamu milikmu.",
  "footer_support": "Dukungan",
  "intro_sub": "jaringan yang menghubungkan",
  "intro_skip": "lewati ↓",
- "dl_ready": "✓ Beta tersedia",
+ "dl_ready": "✓ Versi uji",
  "dl_get": "Unduh APK",
  "dl_get_linux": "Unduh AppImage",
- "dl_note": "Beta ditutup sementara sementara kami merampungkan persiapan. Tinggalkan email, kami kabari begitu dibuka.",
+ "dl_note": "Android akan meminta izin memasang aplikasi dari sumber tidak dikenal — di luar Google Play itu normal. Di Linux, jadikan berkas dapat dieksekusi lalu jalankan. Aplikasi dalam mode uji: mungkin ada kesalahan dan data periode uji dapat direset.",
  "notify_title": "Satu email saat EION hadir di toko",
  "notify_ph": "email@anda.com",
  "notify_btn": "Beri tahu saya",
@@ -161,5 +161,6 @@
  "prem_f9": "Membuka dompet gratis",
  "rm_done": "sudah jalan",
  "rm_wip": "sedang dikerjakan",
- "rm_todo": "direncanakan"
+ "rm_todo": "direncanakan",
+ "test_banner": "EION berjalan dalam mode uji. Kesalahan dan gangguan mungkin terjadi; data dan saldo dari periode uji dapat direset."
 }

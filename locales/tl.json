@@ -89,21 +89,21 @@
   },
   {
    "q": "Ano ang coins?",
-   "a": "Panloob na pera ng app: premium, mga sticker pack, bayad na subscription sa channel, paglilipat sa pagitan ng mga user, at lahat ng lampas sa libreng pang-araw-araw na alawans — kahilingan sa AI, upload, tawag sa relay, awtomatikong pagsasalin. Sa pagpaparehistro ay 🪙 200. Hindi ito pera ni cryptocurrency, at hindi ito mapapalitan ng pera."
+   "a": "Panloob na pera ng app: premium, mga sticker pack, bayad na subscription sa channel, paglilipat sa pagitan ng mga user, at lahat ng lampas sa libreng pang-araw-araw na alawans — kahilingan sa AI, upload, tawag sa relay, awtomatikong pagsasalin. Sa pagpaparehistro ay 🪙 2000. Hindi ito pera ni cryptocurrency, at hindi ito mapapalitan ng pera."
   },
   {
    "q": "Anong mga platform ang suportado?",
-   "a": "Android at Linux. Pansamantalang sarado ang beta — inaayos namin ang lahat at muling bubuksan ang download. Nakaplano ang iOS at Windows."
+   "a": "Android at Linux — bukas na ang download. Nasa test mode ang app: pinipino pa namin ito, kaya posibleng may bug at maaaring i-reset ang data ng test period. Nakaplano ang iOS at Windows."
   }
  ],
  "footer_tagline": "Mag-usap. Magbahagi. Sa iyo ang datos mo.",
  "footer_support": "Suporta",
  "intro_sub": "ang network na nag-uugnay",
  "intro_skip": "laktawan ↓",
- "dl_ready": "✓ May beta",
+ "dl_ready": "✓ Test build",
  "dl_get": "I-download ang APK",
  "dl_get_linux": "I-download ang AppImage",
- "dl_note": "Pansamantalang sarado ang beta habang tinatapos namin ang paghahanda. Iwan ang email at susulatan ka namin pagbukas.",
+ "dl_note": "Hihingi ang Android ng pahintulot na mag-install ng app mula sa hindi kilalang pinagmulan — normal iyon sa labas ng Google Play. Sa Linux, gawing executable ang file at patakbuhin. Nasa test mode ang app: posibleng may bug at maaaring i-reset ang data ng test period.",
  "notify_title": "Isang email lang kapag nasa store na ang EION",
  "notify_ph": "iyong@email.com",
  "notify_btn": "Abisuhan ako",
@@ -161,5 +161,6 @@
  "prem_f9": "Libre ang pagbubukas ng wallet",
  "rm_done": "gumagana na",
  "rm_wip": "ginagawa",
- "rm_todo": "nakaplano"
+ "rm_todo": "nakaplano",
+ "test_banner": "Tumatakbo ang EION sa test mode. Posibleng magkaroon ng bug at downtime; maaaring i-reset ang data at balanse mula sa test period."
 }

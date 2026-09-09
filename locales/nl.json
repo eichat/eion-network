@@ -89,21 +89,21 @@
   },
   {
    "q": "Wat zijn munten?",
-   "a": "Een interne valuta van de app: premium, stickerpakketten, betaalde kanaalabonnementen, overboekingen tussen gebruikers en alles boven de gratis daglimiet — AI-verzoeken, uploads, doorgeschakelde gesprekken, automatisch vertalen. Registratie geeft 🪙 200. Het is geen geld en geen cryptovaluta en het is niet inwisselbaar voor geld."
+   "a": "Een interne valuta van de app: premium, stickerpakketten, betaalde kanaalabonnementen, overboekingen tussen gebruikers en alles boven de gratis daglimiet — AI-verzoeken, uploads, doorgeschakelde gesprekken, automatisch vertalen. Registratie geeft 🪙 2000. Het is geen geld en geen cryptovaluta en het is niet inwisselbaar voor geld."
   },
   {
    "q": "Welke platforms worden ondersteund?",
-   "a": "Android en Linux. De bèta is tijdelijk gesloten — we werken alles bij en openen de downloads weer. iOS en Windows staan gepland."
+   "a": "Android en Linux — downloads zijn open. De app draait in testmodus: we werken er nog aan, dus fouten zijn mogelijk en gegevens uit de testperiode kunnen worden gewist. iOS en Windows staan gepland."
   }
  ],
  "footer_tagline": "Praat. Deel. Jouw data blijft van jou.",
  "footer_support": "Ondersteuning",
  "intro_sub": "het netwerk dat verbindt",
  "intro_skip": "overslaan ↓",
- "dl_ready": "✓ Bèta beschikbaar",
+ "dl_ready": "✓ Testversie",
  "dl_get": "APK downloaden",
  "dl_get_linux": "AppImage downloaden",
- "dl_note": "De bèta is tijdelijk gesloten terwijl we alles afronden. Laat je e-mail achter, we schrijven zodra hij opengaat.",
+ "dl_note": "Android vraagt toestemming om een app uit een onbekende bron te installeren — buiten Google Play is dat normaal. Maak het bestand op Linux uitvoerbaar en start het. De app draait in testmodus: fouten zijn mogelijk en gegevens uit de testperiode kunnen worden gewist.",
  "notify_title": "Eén e-mail zodra EION in de store staat",
  "notify_ph": "jouw@email.com",
  "notify_btn": "Waarschuw mij",
@@ -161,5 +161,6 @@
  "prem_f9": "Portemonnee openen is gratis",
  "rm_done": "werkt",
  "rm_wip": "in uitvoering",
- "rm_todo": "gepland"
+ "rm_todo": "gepland",
+ "test_banner": "EION draait in testmodus. Fouten en storingen zijn mogelijk; gegevens en saldi uit de testperiode kunnen worden gewist."
 }

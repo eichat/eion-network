@@ -89,21 +89,21 @@
   },
   {
    "q": "¿Qué son las monedas EION?",
-   "a": "Una moneda interna de la aplicación: premium, packs de stickers, suscripciones de pago a canales, transferencias entre usuarios y todo lo que supere la cuota diaria gratuita: consultas de IA, subidas, llamadas por relé, traducción automática. Por registrarte recibes 🪙 200. No son dinero ni criptomoneda y no se cambian por dinero."
+   "a": "Una moneda interna de la aplicación: premium, packs de stickers, suscripciones de pago a canales, transferencias entre usuarios y todo lo que supere la cuota diaria gratuita: consultas de IA, subidas, llamadas por relé, traducción automática. Por registrarte recibes 🪙 2000. No son dinero ni criptomoneda y no se cambian por dinero."
   },
   {
    "q": "¿Qué plataformas son compatibles?",
-   "a": "Android y Linux. La beta está cerrada temporalmente: estamos puliendo todo y volveremos a abrir las descargas. iOS y Windows están planeados."
+   "a": "Android y Linux: las descargas están abiertas. La app está en modo de prueba: aún la estamos puliendo, así que puede haber errores y los datos del período de prueba pueden restablecerse. iOS y Windows están planeados."
   }
  ],
  "footer_tagline": "Habla. Comparte. Tus datos son tuyos.",
  "footer_support": "Soporte",
  "intro_sub": "la red que conecta",
  "intro_skip": "saltar ↓",
- "dl_ready": "✓ Beta disponible",
+ "dl_ready": "✓ Versión de prueba",
  "dl_get": "Descargar APK",
  "dl_get_linux": "Descargar AppImage",
- "dl_note": "La beta está cerrada temporalmente mientras terminamos los ajustes. Deja tu correo y te escribimos en cuanto abra.",
+ "dl_note": "Android pedirá permiso para instalar una app de origen desconocido: fuera de Google Play es normal. En Linux, haz el archivo ejecutable y ejecútalo. La app está en modo de prueba: puede haber errores y los datos del período de prueba pueden restablecerse.",
  "notify_title": "Un correo cuando EION llegue a la tienda",
  "notify_ph": "tu@correo.com",
  "notify_btn": "Avisarme",
@@ -161,5 +161,6 @@
  "prem_f9": "Abrir la cartera es gratis",
  "rm_done": "ya funciona",
  "rm_wip": "en curso",
- "rm_todo": "previsto"
+ "rm_todo": "previsto",
+ "test_banner": "EION funciona en modo de prueba. Puede haber errores e interrupciones, y los datos y saldos del período de prueba pueden restablecerse."
 }
