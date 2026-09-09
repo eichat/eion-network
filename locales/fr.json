@@ -89,21 +89,21 @@
   },
   {
    "q": "Que sont les pièces EION ?",
-   "a": "Une monnaie interne de l’application : premium, packs d’autocollants, abonnements payants aux canaux, transferts entre utilisateurs et tout ce qui dépasse le quota gratuit quotidien — requêtes IA, envois, appels relayés, traduction automatique. L’inscription donne 🪙 200. Ce n’est ni de l’argent ni une cryptomonnaie, et cela ne s’échange pas contre de l’argent."
+   "a": "Une monnaie interne de l’application : premium, packs d’autocollants, abonnements payants aux canaux, transferts entre utilisateurs et tout ce qui dépasse le quota gratuit quotidien — requêtes IA, envois, appels relayés, traduction automatique. L’inscription donne 🪙 2000. Ce n’est ni de l’argent ni une cryptomonnaie, et cela ne s’échange pas contre de l’argent."
   },
   {
    "q": "Quelles plateformes sont prises en charge ?",
-   "a": "Android et Linux. La bêta est temporairement fermée — nous peaufinons tout et rouvrirons les téléchargements. iOS et Windows sont prévus."
+   "a": "Android et Linux — les téléchargements sont ouverts. L’application est en mode test : nous la peaufinons encore, des bugs sont donc possibles et les données de la période de test peuvent être réinitialisées. iOS et Windows sont prévus."
   }
  ],
  "footer_tagline": "Parlez. Partagez. Vos données restent à vous.",
  "footer_support": "Assistance",
  "intro_sub": "le réseau qui relie",
  "intro_skip": "passer ↓",
- "dl_ready": "✓ Bêta disponible",
+ "dl_ready": "✓ Version de test",
  "dl_get": "Télécharger l’APK",
  "dl_get_linux": "Télécharger l’AppImage",
- "dl_note": "La bêta est temporairement fermée, le temps de tout finaliser. Laissez votre e-mail, nous vous écrirons dès l’ouverture.",
+ "dl_note": "Android demandera l’autorisation d’installer une application de source inconnue — c’est normal hors Google Play. Sous Linux, rendez le fichier exécutable et lancez-le. L’application est en mode test : des bugs sont possibles et les données de la période de test peuvent être réinitialisées.",
  "notify_title": "Un seul e-mail quand EION arrivera sur le store",
  "notify_ph": "votre@email.com",
  "notify_btn": "Me prévenir",
@@ -161,5 +161,6 @@
  "prem_f9": "Ouverture du portefeuille gratuite",
  "rm_done": "fonctionne",
  "rm_wip": "en cours",
- "rm_todo": "prévu"
+ "rm_todo": "prévu",
+ "test_banner": "EION fonctionne en mode test. Des bugs et des interruptions sont possibles ; les données et les soldes de la période de test peuvent être réinitialisés."
 }

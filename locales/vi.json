@@ -89,21 +89,21 @@
   },
   {
    "q": "Xu EION là gì?",
-   "a": "Tiền tệ nội bộ của ứng dụng: premium, gói nhãn dán, đăng ký kênh trả phí, chuyển khoản giữa người dùng và mọi thứ vượt hạn mức miễn phí hằng ngày — yêu cầu AI, tải lên, cuộc gọi qua relay, dịch tự động. Đăng ký được tặng 🪙 200. Đây không phải tiền và không phải tiền mã hoá, không đổi được ra tiền."
+   "a": "Tiền tệ nội bộ của ứng dụng: premium, gói nhãn dán, đăng ký kênh trả phí, chuyển khoản giữa người dùng và mọi thứ vượt hạn mức miễn phí hằng ngày — yêu cầu AI, tải lên, cuộc gọi qua relay, dịch tự động. Đăng ký được tặng 🪙 2000. Đây không phải tiền và không phải tiền mã hoá, không đổi được ra tiền."
   },
   {
    "q": "Hỗ trợ những nền tảng nào?",
-   "a": "Android và Linux. Bản beta tạm đóng — chúng tôi đang hoàn thiện và sẽ mở lại phần tải về. iOS và Windows nằm trong kế hoạch."
+   "a": "Android và Linux — đã mở tải xuống. Ứng dụng đang ở chế độ thử nghiệm: chúng tôi vẫn đang hoàn thiện nên có thể có lỗi và dữ liệu giai đoạn thử nghiệm có thể bị đặt lại. iOS và Windows nằm trong kế hoạch."
   }
  ],
  "footer_tagline": "Trò chuyện. Chia sẻ. Dữ liệu là của bạn.",
  "footer_support": "Hỗ trợ",
  "intro_sub": "mạng lưới kết nối",
  "intro_skip": "bỏ qua ↓",
- "dl_ready": "✓ Có bản beta",
+ "dl_ready": "✓ Bản thử nghiệm",
  "dl_get": "Tải APK",
  "dl_get_linux": "Tải AppImage",
- "dl_note": "Bản beta tạm đóng trong lúc chúng tôi hoàn thiện. Hãy để lại email, chúng tôi sẽ báo ngay khi mở lại.",
+ "dl_note": "Android sẽ hỏi quyền cài ứng dụng từ nguồn không xác định — ngoài Google Play điều đó là bình thường. Trên Linux, cấp quyền thực thi cho tệp rồi chạy. Ứng dụng đang ở chế độ thử nghiệm: có thể có lỗi và dữ liệu giai đoạn thử nghiệm có thể bị đặt lại.",
  "notify_title": "Một email duy nhất khi EION lên cửa hàng",
  "notify_ph": "email@cua-ban.com",
  "notify_btn": "Báo cho tôi",
@@ -161,5 +161,6 @@
  "prem_f9": "Mở ví miễn phí",
  "rm_done": "đã chạy",
  "rm_wip": "đang làm",
- "rm_todo": "dự kiến"
+ "rm_todo": "dự kiến",
+ "test_banner": "EION đang chạy ở chế độ thử nghiệm. Có thể xảy ra lỗi và gián đoạn; dữ liệu và số dư trong giai đoạn thử nghiệm có thể bị đặt lại."
 }

@@ -89,21 +89,21 @@
   },
   {
    "q": "O que são as moedas EION?",
-   "a": "Uma moeda interna da aplicação: premium, pacotes de autocolantes, subscrições pagas de canais, transferências entre utilizadores e tudo acima da quota diária gratuita — pedidos de IA, envios, chamadas por relé, tradução automática. O registo concede 🪙 200. Não são dinheiro nem criptomoeda e não se trocam por dinheiro."
+   "a": "Uma moeda interna da aplicação: premium, pacotes de autocolantes, subscrições pagas de canais, transferências entre utilizadores e tudo acima da quota diária gratuita — pedidos de IA, envios, chamadas por relé, tradução automática. O registo concede 🪙 2000. Não são dinheiro nem criptomoeda e não se trocam por dinheiro."
   },
   {
    "q": "Quais plataformas são suportadas?",
-   "a": "Android e Linux. A beta está temporariamente fechada — estamos a afinar tudo e vamos reabrir as transferências. iOS e Windows estão planeados."
+   "a": "Android e Linux — as transferências estão abertas. A app está em modo de teste: ainda a estamos a afinar, por isso podem ocorrer erros e os dados do período de teste podem ser repostos. iOS e Windows estão planeados."
   }
  ],
  "footer_tagline": "Converse. Compartilhe. Seus dados são seus.",
  "footer_support": "Suporte",
  "intro_sub": "a rede que conecta",
  "intro_skip": "pular ↓",
- "dl_ready": "✓ Beta disponível",
+ "dl_ready": "✓ Versão de teste",
  "dl_get": "Baixar APK",
  "dl_get_linux": "Baixar AppImage",
- "dl_note": "O beta está temporariamente fechado enquanto finalizamos tudo. Deixe seu e-mail e avisaremos assim que abrir.",
+ "dl_note": "O Android vai pedir permissão para instalar uma app de origem desconhecida — fora da Google Play isso é normal. No Linux, torne o ficheiro executável e execute-o. A app está em modo de teste: podem ocorrer erros e os dados do período de teste podem ser repostos.",
  "notify_title": "Um e-mail quando o EION chegar à loja",
  "notify_ph": "seu@email.com",
  "notify_btn": "Avise-me",
@@ -161,5 +161,6 @@
  "prem_f9": "Abrir a carteira é grátis",
  "rm_done": "já funciona",
  "rm_wip": "em andamento",
- "rm_todo": "planeado"
+ "rm_todo": "planeado",
+ "test_banner": "O EION está em modo de teste. Podem ocorrer erros e interrupções, e os dados e saldos do período de teste podem ser repostos."
 }

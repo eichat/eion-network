@@ -77,7 +77,7 @@ body {
 ::-webkit-scrollbar{width:4px} ::-webkit-scrollbar-track{background:var(--bg)} ::-webkit-scrollbar-thumb{background:var(--neon);border-radius:2px}
 
 /* NAV */
-nav { position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:16px 48px;background:rgba(2,12,20,0.85);backdrop-filter:blur(20px);border-bottom:1px solid rgba(0,212,255,0.1); }
+nav { position:fixed;top:var(--tb,0px);left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:16px 48px;background:rgba(2,12,20,0.85);backdrop-filter:blur(20px);border-bottom:1px solid rgba(0,212,255,0.1); }
 .nav-logo { font-family:'Orbitron',monospace;font-weight:900;font-size:1.4rem;color:var(--neon);text-shadow:0 0 20px var(--neon);letter-spacing:4px;text-decoration:none;cursor:none; }
 .nav-links { display:flex;gap:32px;list-style:none; }
 .nav-links a { color:var(--text2);text-decoration:none;font-size:0.8rem;letter-spacing:2px;text-transform:uppercase;transition:color 0.3s; }
@@ -102,7 +102,7 @@ main { position:relative;z-index:1; }
    і на невисоких екранах нижня кнопка вже не вміщалась (її ще й перекриває
    банер згоди, який висить унизу). Піднімаємо ВЕСЬ вміст — логотип і заголовок
    рухаються на однакову відстань, тож проміжок між ними не міняється. */
-#hero { min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:76px 24px 56px;position:relative;overflow:hidden; }
+#hero { min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:calc(76px + var(--tb,0px)) 24px 56px;position:relative;overflow:hidden; }
 .hero-grid { position:absolute;inset:0;background-image:linear-gradient(rgba(0,212,255,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(0,212,255,0.04) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse 80% 60% at 50% 50%,black,transparent); }
 .hero-orb { position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(0,212,255,0.08) 0%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);animation:pulse-orb 4s ease-in-out infinite; }
 @keyframes pulse-orb { 0%,100%{transform:translate(-50%,-50%) scale(1);opacity:0.5} 50%{transform:translate(-50%,-50%) scale(1.1);opacity:1} }
@@ -118,7 +118,7 @@ main { position:relative;z-index:1; }
 /* Низькі вікна: перший екран має вміщати обидві кнопки, а не лише половину
    нижньої. Тому зменшуємо саме логотип — він найбільший елемент і найлегше
    віддає висоту, тоді як текст лишається читабельним. */
-@media (max-height:860px){ #hero{padding-top:60px;padding-bottom:44px} .logo-wrap{width:224px;height:224px;margin-bottom:22px} .logo-wrap img{width:178px;height:178px} }
+@media (max-height:860px){ #hero{padding-top:calc(60px + var(--tb,0px));padding-bottom:44px} .logo-wrap{width:224px;height:224px;margin-bottom:22px} .logo-wrap img{width:178px;height:178px} }
 @media (max-height:730px){ .logo-wrap{width:176px;height:176px;margin-bottom:16px} .logo-wrap img{width:140px;height:140px} h1{font-size:clamp(2.2rem,6vw,3.6rem)} .hero-desc{margin-bottom:30px} }
 h1 { font-family:'Orbitron',monospace;font-size:clamp(3rem,8vw,6rem);font-weight:900;letter-spacing:8px;color:var(--neon);text-shadow:0 0 40px var(--neon),0 0 80px rgba(0,212,255,0.4);margin-bottom:8px;animation:hero-appear 1s ease both; }
 .hero-sub { font-family:'Orbitron',monospace;font-size:clamp(0.7rem,2vw,0.9rem);letter-spacing:6px;color:var(--text2);margin-bottom:28px;animation:hero-appear 1s 0.2s ease both; }
@@ -157,6 +157,8 @@ section { padding:100px 24px;position:relative;z-index:1; }
 .dl-card h3 { font-family:'Orbitron',monospace;font-size:0.85rem;letter-spacing:2px;color:var(--text);margin-bottom:6px; }
 .dl-card .status { font-size:0.75rem;color:var(--text2);margin-bottom:16px; }
 .dl-card .status.soon { color:var(--gold); }
+.dl-card .dl-go { display:inline-block;padding:8px 20px;font-family:'Orbitron',monospace;font-size:0.7rem;letter-spacing:1px;border-radius:3px;border:1px solid var(--neon);color:var(--neon);text-transform:uppercase; }
+.dl-card:hover .dl-go { background:var(--neon);color:var(--bg); }
 .dl-card span.disabled { display:inline-block;padding:8px 20px;font-family:'Orbitron',monospace;font-size:0.7rem;letter-spacing:1px;border-radius:3px;border:1px solid rgba(0,212,255,0.2);color:var(--text2);cursor:default;text-transform:uppercase; }
 
 /* TOKEN */
@@ -297,6 +299,8 @@ footer { background:var(--bg);border-top:1px solid rgba(0,212,255,0.1);padding:6
 a.dl-card{text-decoration:none;color:inherit;display:block}
 .status.ready{color:var(--neon)}
 .dl-go{display:inline-block;margin-top:6px;font-size:.85rem;color:var(--neon);border-bottom:1px solid rgba(0,212,255,.4)}
+.testbanner{position:fixed;top:0;left:0;right:0;z-index:101;display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap;padding:9px 18px;background:rgba(217,154,43,.14);backdrop-filter:blur(20px);border-bottom:1px solid rgba(217,154,43,.35);color:#e0ae4e;font-size:.82rem;line-height:1.45;text-align:center}
+@media(max-width:600px){.testbanner{font-size:.75rem;padding:8px 12px}}
 .dl-note{max-width:640px;margin:26px auto 0;text-align:center;color:var(--text2,#7ab8cc);font-size:.85rem;line-height:1.6}
 .notify-box{max-width:520px;margin:34px auto 0;text-align:center}
 .notify-box>p{color:var(--text2,#7ab8cc);font-size:.92rem;margin-bottom:14px}
@@ -353,6 +357,8 @@ a.dl-card{text-decoration:none;color:inherit;display:block}
 <div class="cursor" id="cursor"></div>
 <div class="cursor-ring" id="cursorRing"></div>
 <div class="stars" id="stars"></div>
+
+<div class="testbanner"><span>🧪</span><span data-i18n="test_banner">EION is running in test mode. Expect bugs and downtime; data and balances from the test period may be reset.</span></div>
 
 <nav>
   <a href="#hero" class="nav-logo">EION</a>
@@ -431,12 +437,12 @@ a.dl-card{text-decoration:none;color:inherit;display:block}
     <div class="section-label" data-i18n="dl_label">Get the App</div>
     <h2 class="section-title" data-i18n="dl_title">Download <span>EION</span></h2>
     <div class="download-grid">
-      <div class="dl-card reveal"><span class="platform-icon">🤖</span><h3>Android</h3><div class="status soon" data-i18n="dl_soon">⏳ Coming soon</div><span class="disabled" data-i18n="dl_notify">Notify me</span></div>
-      <div class="dl-card reveal"><span class="platform-icon">🐧</span><h3>Linux</h3><div class="status soon" data-i18n="dl_soon">⏳ Coming soon</div><span class="disabled" data-i18n="dl_notify">Notify me</span></div>
+      <a class="dl-card reveal" data-dl="apk" href="https://github.com/eichat/eion-network/releases/latest/download/EION.apk" rel="noopener"><span class="platform-icon">🤖</span><h3>Android</h3><div class="status ready" data-i18n="dl_ready">✓ Test build</div><span class="dl-go" data-i18n="dl_get">Download APK</span></a>
+      <a class="dl-card reveal" data-dl="appimage" href="https://github.com/eichat/eion-network/releases/latest/download/EION-x86_64.AppImage" rel="noopener"><span class="platform-icon">🐧</span><h3>Linux</h3><div class="status ready" data-i18n="dl_ready">✓ Test build</div><span class="dl-go" data-i18n="dl_get_linux">Download AppImage</span></a>
       <div class="dl-card reveal"><span class="platform-icon">🍎</span><h3>iOS</h3><div class="status soon" data-i18n="dl_soon">⏳ Coming soon</div><span class="disabled" data-i18n="dl_notify">Notify me</span></div>
       <div class="dl-card reveal"><span class="platform-icon">🪟</span><h3>Windows</h3><div class="status soon" data-i18n="dl_soon">⏳ Coming soon</div><span class="disabled" data-i18n="dl_notify">Notify me</span></div>
     </div>
-    <p class="dl-note reveal" data-i18n="dl_note">The beta is temporarily closed while we finish setting things up. Leave your email and we’ll write as soon as it opens.</p>
+    <p class="dl-note reveal" data-i18n="dl_note">Android will ask for permission to install an app from an unknown source — that is normal outside Google Play. On Linux, make the file executable and run it. The app is in test mode: expect bugs, and data from the test period may be reset.</p>
     <div class="notify-box reveal">
       <p data-i18n="notify_title">Get one email when EION arrives in the store</p>
       <form id="notifyForm" action="https://formspree.io/f/xdajyyaz" method="POST">
@@ -462,9 +468,9 @@ a.dl-card{text-decoration:none;color:inherit;display:block}
         <div class="token-stat"><span class="label" data-i18n="tok_use4">Transfers</span><span class="value" data-i18n="tok_use4v">between users, 1% fee</span></div>
         <div class="token-stat"><span class="label" data-i18n="tok_free">Free daily allowance</span><span class="value" data-i18n="tok_free_v">AI 15 · 200 MB · 10 calls</span></div>
           <div class="token-stat"><span class="label" data-i18n="tok_over">Beyond the allowance</span><span class="value" data-i18n="tok_over_v">3 · 1 / MB · 2 coins</span></div>
-          <div class="token-stat"><span class="label" data-i18n="tok_register">Registration bonus</span><span class="value" style="color:var(--neon)">+200 🪙</span></div>
+          <div class="token-stat"><span class="label" data-i18n="tok_register">Registration bonus</span><span class="value" style="color:var(--neon)">+2000 🪙</span></div>
           <div class="token-stat"><span class="label" data-i18n="tok_withdraw">Can be withdrawn</span><span class="value" data-i18n="tok_withdraw_v">only coins someone paid you</span></div>
-          <div class="token-stat"><span class="label" data-i18n="tok_wallet">Wallet</span><span class="value" data-i18n="tok_wallet_v">created by hand, key stays on the device</span></div>
+          <div class="token-stat"><span class="label" data-i18n="tok_wallet">Wallet</span><span class="value" data-i18n="tok_wallet_v">created by hand, key stays on the device, opening costs 🪙 50</span></div>
           <div class="token-stat"><span class="label" data-i18n="tok_translate">Auto-translate</span><span class="value" data-i18n="tok_translate_v">200 a day, then 🪙 1</span></div>
           <div class="token-stat"><span class="label" data-i18n="tok_protect">Protection</span><span class="value" data-i18n="tok_protect_v">moving coins requires the account password</span></div>
       </div>
@@ -752,6 +758,10 @@ async function setLang(lang) {
 
   // Close dropdown
   document.getElementById('langSwitcher').classList.remove('open');
+
+  // Текст банера щойно змінився — його висота могла стати іншою (в одних мовах
+  // фраза в один рядок, в інших у два), а від неї залежить зсув навігації.
+  if (window.eFitBanner) window.eFitBanner();
 }
 
 // ─── DROPDOWN ────────────────────────────────────────────────────────────────
@@ -1187,6 +1197,24 @@ function cookieChoice(ok){
   }, 6000);
 })();
 </script>
+<script>
+/* Висота банера тестового режиму — у CSS-змінну: текст переноситься по-різному
+   залежно від мови й ширини екрана, тож зашите число рано чи пізно наїхало б
+   на навігацію. Викликається і при зміні мови (перемальовує текст). */
+(function(){
+  function fitBanner(){
+    var b=document.querySelector('.testbanner');
+    if(!b) return;
+    document.documentElement.style.setProperty('--tb', b.offsetHeight+'px');
+  }
+  window.eFitBanner=fitBanner;
+  if(document.readyState!=='loading') fitBanner();
+  document.addEventListener('DOMContentLoaded',fitBanner);
+  window.addEventListener('load',fitBanner);
+  window.addEventListener('resize',fitBanner);
+})();
+</script>
+
 <script>
 /* Лічильник завантажень. Посилання ведуть ПРЯМО на GitHub, тож завантаження
    починається одразу; сюди летить лише beacon — він переживає перехід на іншу

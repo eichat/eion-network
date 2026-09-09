@@ -89,21 +89,21 @@
   },
   {
    "q": "Czym są monety EION?",
-   "a": "Wewnętrzna waluta aplikacji: premium, paczki naklejek, płatne subskrypcje kanałów, przelewy między użytkownikami i wszystko powyżej bezpłatnego limitu dziennego — zapytania do AI, wysyłki, połączenia przez przekaźnik, autotłumaczenie. Za rejestrację otrzymujesz 🪙 200. To nie są pieniądze ani kryptowaluta i nie wymienia się ich na pieniądze."
+   "a": "Wewnętrzna waluta aplikacji: premium, paczki naklejek, płatne subskrypcje kanałów, przelewy między użytkownikami i wszystko powyżej bezpłatnego limitu dziennego — zapytania do AI, wysyłki, połączenia przez przekaźnik, autotłumaczenie. Za rejestrację otrzymujesz 🪙 2000. To nie są pieniądze ani kryptowaluta i nie wymienia się ich na pieniądze."
   },
   {
    "q": "Jakie platformy są wspierane?",
-   "a": "Android i Linux. Beta jest tymczasowo zamknięta — dopracowujemy wszystko i ponownie otworzymy pobieranie. iOS i Windows są w planach."
+   "a": "Android i Linux — pobieranie jest otwarte. Aplikacja działa w trybie testowym: wciąż ją dopracowujemy, więc możliwe są błędy, a dane z okresu testowego mogą zostać wyzerowane. iOS i Windows są w planach."
   }
  ],
  "footer_tagline": "Rozmawiaj. Dziel się. Twoje dane należą do ciebie.",
  "footer_support": "Wsparcie",
  "intro_sub": "sieć, która łączy",
  "intro_skip": "pomiń ↓",
- "dl_ready": "✓ Beta dostępna",
+ "dl_ready": "✓ Wersja testowa",
  "dl_get": "Pobierz APK",
  "dl_get_linux": "Pobierz AppImage",
- "dl_note": "Beta jest chwilowo zamknięta — kończymy przygotowania. Zostaw e-mail, napiszemy, gdy tylko ruszy.",
+ "dl_note": "Android poprosi o zgodę na instalację aplikacji z nieznanego źródła — poza Google Play to normalne. W Linuksie nadaj plikowi prawo wykonywania i uruchom go. Aplikacja działa w trybie testowym: możliwe są błędy, a dane z okresu testowego mogą zostać wyzerowane.",
  "notify_title": "Jeden e-mail, gdy EION pojawi się w sklepie",
  "notify_ph": "twoj@email.com",
  "notify_btn": "Powiadom mnie",
@@ -161,5 +161,6 @@
  "prem_f9": "Otwarcie portfela za darmo",
  "rm_done": "działa",
  "rm_wip": "w toku",
- "rm_todo": "zaplanowane"
+ "rm_todo": "zaplanowane",
+ "test_banner": "EION działa w trybie testowym. Możliwe są błędy i przerwy, a dane oraz salda z okresu testowego mogą zostać wyzerowane."
 }
