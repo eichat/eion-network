@@ -19,7 +19,7 @@
   "f4_title": "Gruplar",
   "f4_desc": "Rolleri, yorumları, tepkileri ve ücretli abonelikleri olan gruplar ve kanallar. Canlı yayınlar uygulama içinde açılır.",
   "f5_title": "Uçtan uca şifreleme",
-  "f5_desc": "Aramalar, özel sohbetlerdeki metin ve ekler uçtan uca şifrelenir: anahtar cihazınızda kalır, sunucu yalnızca şifreli metni görür. Gruplar ve kanallar henüz değil — bunu açıkça söylüyoruz.",
+  "f5_desc": "Aramalar, özel sohbetlerdeki metin ve ekler uçtan uca şifrelenir: anahtar cihazınızda kalır, sunucu yalnızca şifreli metni görür. Gruplar ve kanallar henüz değil — bunu açıkça söylüyoruz. Ayrıca uygulama başkalarının sitelerinden hiçbir şey çekmez: size bağlantı gönderen kişi IP adresinizi öğrenemez.",
   "f6_title": "Jeton",
   "f6_desc": "Premium, çıkartma paketleri ve ücretli kanallar için uygulama içi para birimi. Kullanıcılar arası transferler dâhil.",
   "dl_label": "Uygulamayı Al",

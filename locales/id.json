@@ -19,7 +19,7 @@
   "f4_title": "Grup",
   "f4_desc": "Grup dan kanal dengan peran, komentar, reaksi, serta langganan berbayar. Siaran langsung diputar di dalam aplikasi.",
   "f5_title": "Enkripsi ujung ke ujung",
-  "f5_desc": "Panggilan, teks, dan lampiran pada obrolan pribadi terenkripsi end-to-end: kuncinya tetap di perangkat Anda dan server hanya melihat teks tersandi. Grup dan kanal belum — kami mengatakannya terus terang.",
+  "f5_desc": "Panggilan, teks, dan lampiran pada obrolan pribadi terenkripsi end-to-end: kuncinya tetap di perangkat Anda dan server hanya melihat teks tersandi. Grup dan kanal belum — kami mengatakannya terus terang. Dan aplikasi tidak mengambil apa pun dari situs orang lain: pengirim tautan tidak mengetahui alamat IP Anda.",
   "f6_title": "Koin",
   "f6_desc": "Mata uang dalam aplikasi untuk premium, paket stiker, dan kanal berbayar. Termasuk transfer antarpengguna.",
   "dl_label": "Dapatkan Aplikasi",

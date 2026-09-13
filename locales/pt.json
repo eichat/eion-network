@@ -19,7 +19,7 @@
   "f4_title": "Grupos",
   "f4_desc": "Grupos e canais com funções, comentários, reações e assinaturas pagas. As transmissões abrem dentro do aplicativo.",
   "f5_title": "Encriptação ponta a ponta",
-  "f5_desc": "Chamadas, texto e anexos das conversas privadas têm criptografia de ponta a ponta: a chave fica no seu aparelho e o servidor vê apenas texto cifrado. Grupos e canais ainda não — dizemos isso com clareza.",
+  "f5_desc": "Chamadas, texto e anexos das conversas privadas têm criptografia de ponta a ponta: a chave fica no seu aparelho e o servidor vê apenas texto cifrado. Grupos e canais ainda não — dizemos isso com clareza. E o app não carrega nada de sites de terceiros: quem envia um link não descobre o seu endereço IP.",
   "f6_title": "Moedas",
   "f6_desc": "Uma moeda interna para premium, pacotes de figurinhas e canais pagos. Inclui transferências entre usuários.",
   "dl_label": "Obter o app",

@@ -19,7 +19,7 @@
   "f4_title": "Groups",
   "f4_desc": "Groups and channels with roles, comments, reactions and paid subscriptions. Live streams play inside the app.",
   "f5_title": "End-to-end encryption",
-  "f5_desc": "Calls, text and attachments in direct chats are end-to-end encrypted: the key stays on your device and the server sees only ciphertext. Groups and channels are not yet — we say so plainly.",
+  "f5_desc": "Calls, text and attachments in direct chats are end-to-end encrypted: the key stays on your device and the server sees only ciphertext. Groups and channels are not yet — we say so plainly. And the app fetches nothing from other people’s sites: whoever sent you a link does not learn your IP address.",
   "f6_title": "Coins",
   "f6_desc": "An in-app currency for premium, sticker packs and paid channels. Transfers between users included.",
   "dl_label": "Get the App",

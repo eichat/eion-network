@@ -19,7 +19,7 @@
   "f4_title": "Grupy",
   "f4_desc": "Grupy i kanały z rolami, komentarzami, reakcjami i płatnymi subskrypcjami. Transmisje odtwarzają się w aplikacji.",
   "f5_title": "Szyfrowanie end-to-end",
-  "f5_desc": "Połączenia, tekst i załączniki w czatach prywatnych są szyfrowane end-to-end: klucz zostaje na urządzeniu, a serwer widzi tylko szyfrogram. Grupy i kanały jeszcze nie — mówimy o tym wprost.",
+  "f5_desc": "Połączenia, tekst i załączniki w czatach prywatnych są szyfrowane end-to-end: klucz zostaje na urządzeniu, a serwer widzi tylko szyfrogram. Grupy i kanały jeszcze nie — mówimy o tym wprost. A aplikacja nie pobiera niczego z cudzych stron: nadawca linku nie pozna Twojego adresu IP.",
   "f6_title": "Monety",
   "f6_desc": "Waluta w aplikacji na premium, paczki naklejek i płatne kanały. Wraz z przelewami między użytkownikami.",
   "dl_label": "Pobierz aplikację",
