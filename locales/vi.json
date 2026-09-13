@@ -19,7 +19,7 @@
   "f4_title": "Nhóm",
   "f4_desc": "Nhóm và kênh với vai trò, bình luận, biểu cảm và đăng ký trả phí. Phát trực tiếp xem ngay trong ứng dụng.",
   "f5_title": "Mã hoá đầu cuối",
-  "f5_desc": "Cuộc gọi, văn bản và tệp đính kèm trong trò chuyện riêng được mã hoá đầu cuối: khoá nằm trên thiết bị của bạn và máy chủ chỉ thấy bản mã. Nhóm và kênh thì chưa — chúng tôi nói thẳng điều đó. Và ứng dụng không tải bất cứ thứ gì từ trang của người khác: người gửi liên kết không biết được địa chỉ IP của bạn.",
+  "f5_desc": "Cuộc gọi, trò chuyện riêng và nhóm được mã hóa đầu cuối — cả văn bản lẫn tệp đính kèm: khóa ở lại trên thiết bị của bạn, máy chủ chỉ thấy bản mã. Kênh được để mở có chủ ý vì chúng công khai. Ứng dụng cũng không tải gì từ trang của người khác: người gửi liên kết không biết địa chỉ IP của bạn.",
   "f6_title": "Xu",
   "f6_desc": "Đơn vị tiền trong ứng dụng dùng cho gói cao cấp, bộ nhãn dán và kênh trả phí. Bao gồm chuyển khoản giữa người dùng.",
   "dl_label": "Tải ứng dụng",
@@ -61,7 +61,7 @@
   "rm_2_4": "Xác minh số điện thoại",
   "rm_ph3": "Giai đoạn 3 — tiếp theo",
   "rm_h3": "Quyền riêng tư",
-  "rm_3_1": "Mã hoá cho nhóm và kênh",
+  "rm_3_1": "Mã hóa nhóm",
   "rm_3_2": "Mã xác minh cho trò chuyện và cuộc gọi",
   "rm_3_3": "Trò chuyện bí mật",
   "rm_3_4": "Ứng dụng Windows và iOS",
@@ -84,7 +84,7 @@
     },
     {
       "q": "Tin nhắn của tôi có được mã hóa không?",
-      "a": "Một phần — và chúng tôi nói rõ ở đâu. Cuộc gọi được mã hoá đầu cuối qua WebRTC. Trong trò chuyện riêng, cả văn bản lẫn tệp đính kèm đều được mã hoá — ảnh, video, tin nhắn thoại và tài liệu, cùng với chú thích của chúng: khoá được tạo trên thiết bị của bạn và không bao giờ rời khỏi đó, nên máy chủ chỉ giữ bản mã mà chúng tôi không thể đọc hay khôi phục, kể cả khi bạn yêu cầu. Tin nhắn trong nhóm và kênh vẫn được lưu ở dạng rõ — đó là bước tiếp theo. Hai lưu ý thành thật: tên tệp, kích thước và độ dài tin nhắn thoại vẫn hiển thị với máy chủ, vì việc gửi và dọn dẹp dựa vào chúng; và khoá công khai do máy chủ của chúng tôi phân phát, nên khi chưa có mã xác thực, mã hoá bảo vệ bạn khỏi việc lộ cơ sở dữ liệu và truy cập từ bên ngoài, nhưng về hình thức thì không bảo vệ khỏi chính chúng tôi."
+      "a": "Có, trừ kênh — và chúng tôi nói rõ những gì được mã hóa. Cuộc gọi được mã hóa đầu cuối qua WebRTC. Trong trò chuyện riêng và nhóm, văn bản, trả lời và tệp đính kèm được mã hóa — ảnh, video, tin nhắn thoại và tài liệu cùng chú thích. Khóa được tạo trên thiết bị của bạn và không bao giờ rời khỏi đó, nên máy chủ chỉ lưu bản mã mà chúng tôi không thể đọc hay khôi phục, kể cả khi bạn yêu cầu. Thành viên mới của nhóm chỉ thấy tin nhắn gửi sau khi tham gia. Kênh có chủ ý không được mã hóa: chúng công khai và ai cũng có thể theo dõi. Lưu ý: tên tệp, kích thước và thời lượng tin nhắn thoại hiển thị với máy chủ; và máy chủ của chúng tôi phân phối khóa công khai, nên cho đến khi có mã xác minh, mã hóa bảo vệ khỏi việc đánh cắp cơ sở dữ liệu và truy cập từ bên ngoài, nhưng về hình thức thì không bảo vệ khỏi chính chúng tôi."
     },
     {
       "q": "Xu EION là gì?",
