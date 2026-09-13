@@ -246,7 +246,7 @@ section { padding:100px 24px;position:relative;z-index:1; }
 .faq-q .arrow { font-family:'Orbitron',monospace;color:var(--neon);transition:transform 0.3s;font-size:1.2rem;line-height:1;flex-shrink:0;margin-left:16px; }
 .faq-item.open .faq-q .arrow { transform:rotate(45deg); }
 .faq-a { font-size:0.875rem;color:var(--text2);line-height:1.8;font-weight:300;max-height:0;overflow:hidden;transition:max-height 0.4s ease,padding 0.3s; }
-.faq-item.open .faq-a { max-height:300px;padding-bottom:20px; }
+.faq-item.open .faq-a { max-height:1400px;padding-bottom:20px; }
 
 /* FOOTER */
 footer { background:var(--bg);border-top:1px solid rgba(0,212,255,0.1);padding:60px 24px 40px;text-align:center; }
@@ -426,7 +426,7 @@ a.dl-card{text-decoration:none;color:inherit;display:block}
       <div class="feature-card reveal"><span class="feature-icon">🤖</span><h3 data-i18n="f2_title">AI Assistant</h3><p data-i18n="f2_desc">Built-in AI chat powered by advanced language models, available anytime.</p></div>
       <div class="feature-card reveal"><span class="feature-icon">📹</span><h3 data-i18n="f3_title">HD Video Calls</h3><p data-i18n="f3_desc">Audio and video calls over WebRTC — directly between devices when possible, otherwise via a relay.</p></div>
       <div class="feature-card reveal"><span class="feature-icon">👥</span><h3 data-i18n="f4_title">Groups</h3><p data-i18n="f4_desc">Groups and channels with roles, comments, reactions and paid subscriptions. Live streams play inside the app.</p></div>
-      <div class="feature-card reveal"><span class="feature-icon">🔐</span><h3 data-i18n="f5_title">End-to-end encryption</h3><p data-i18n="f5_desc">Calls, text and attachments in direct chats are end-to-end encrypted: the key stays on your device and the server sees only ciphertext. Groups and channels are not yet — we say so plainly. And the app fetches nothing from other people’s sites: whoever sent you a link does not learn your IP address.</p></div>
+      <div class="feature-card reveal"><span class="feature-icon">🔐</span><h3 data-i18n="f5_title">End-to-end encryption</h3><p data-i18n="f5_desc">Calls, direct chats and groups are end-to-end encrypted — text and attachments alike: the key stays on your device and the server sees only ciphertext. Channels are deliberately open, since they are public. And the app fetches nothing from other people’s sites: whoever sent you a link does not learn your IP address.</p></div>
       <div class="feature-card reveal"><span class="feature-icon">💎</span><h3 data-i18n="f6_title">Coins</h3><p data-i18n="f6_desc">An in-app currency for premium, sticker packs and paid channels. Transfers between users included.</p></div>
       <div class="feature-card reveal"><span class="feature-icon">📱</span><h3 data-i18n="f7_title">Multiple devices</h3><p data-i18n="f7_desc">One account on your phone and computer at once. Messages, read state, deletions, stickers and muted chats stay the same everywhere.</p></div>
     </div>
@@ -561,7 +561,7 @@ a.dl-card{text-decoration:none;color:inherit;display:block}
         <div class="rm-phase" data-i18n="rm_ph3">Phase 3 — next</div>
         <h3 data-i18n="rm_h3">Privacy</h3>
         <ul>
-          <li data-i18n="rm_3_1">Encryption for groups and channels</li>
+          <li class="done" data-i18n="rm_3_1">Encryption for groups</li>
           <li data-i18n="rm_3_2">Verification codes for chats and calls</li>
           <li data-i18n="rm_3_3">Secret chats</li>
           <li data-i18n="rm_3_4">Windows and iOS apps</li>
