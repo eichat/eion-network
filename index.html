@@ -159,7 +159,7 @@ section { padding:100px 24px;position:relative;z-index:1; }
 .dl-card .status.soon { color:var(--gold); }
 .dl-card .dl-go { display:inline-block;padding:8px 20px;font-family:'Orbitron',monospace;font-size:0.7rem;letter-spacing:1px;border-radius:3px;border:1px solid var(--neon);color:var(--neon);text-transform:uppercase; }
 .dl-card:hover .dl-go { background:var(--neon);color:var(--bg); }
-.dl-card span.disabled { display:inline-block;padding:8px 20px;font-family:'Orbitron',monospace;font-size:0.7rem;letter-spacing:1px;border-radius:3px;border:1px solid rgba(0,212,255,0.2);color:var(--text2);cursor:default;text-transform:uppercase; }
+
 
 /* TOKEN */
 #token { background:var(--bg); }
@@ -302,15 +302,15 @@ a.dl-card{text-decoration:none;color:inherit;display:block}
 .testbanner{position:fixed;top:0;left:0;right:0;z-index:101;display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap;padding:9px 18px;background:rgba(217,154,43,.14);backdrop-filter:blur(20px);border-bottom:1px solid rgba(217,154,43,.35);color:#e0ae4e;font-size:.82rem;line-height:1.45;text-align:center}
 @media(max-width:600px){.testbanner{font-size:.75rem;padding:8px 12px}}
 .dl-note{max-width:640px;margin:26px auto 0;text-align:center;color:var(--text2,#7ab8cc);font-size:.85rem;line-height:1.6}
-.notify-box{max-width:520px;margin:34px auto 0;text-align:center}
-.notify-box>p{color:var(--text2,#7ab8cc);font-size:.92rem;margin-bottom:14px}
-.notify-box form{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
-.notify-box input{font:inherit;font-size:.95rem;padding:12px 16px;min-width:240px;background:rgba(2,12,20,.75);border:1px solid rgba(0,212,255,.22);border-radius:10px;color:var(--text,#e8f4f8)}
-.notify-box input:focus{outline:none;border-color:var(--neon)}
-.notify-box button{font:inherit;font-size:.95rem;font-weight:600;padding:12px 22px;border-radius:10px;border:1px solid var(--neon);background:var(--neon);color:#02121c;cursor:pointer}
-.notify-box button:hover{box-shadow:0 6px 22px rgba(0,212,255,.3)}
-.notify-note,.notify-ok{color:var(--text2,#7ab8cc);font-size:.8rem;margin-top:10px}
-.notify-ok{color:var(--neon)}
+
+
+
+
+
+
+
+
+
 
 /* ── монети ── */
 .token-plan-text{color:var(--text2,#7ab8cc);line-height:1.7;margin-bottom:16px}
@@ -440,19 +440,10 @@ a.dl-card{text-decoration:none;color:inherit;display:block}
     <div class="download-grid">
       <a class="dl-card reveal" data-dl="apk" href="https://github.com/eichat/eion-network/releases/latest/download/EION.apk" rel="noopener"><span class="platform-icon">🤖</span><h3>Android</h3><div class="status ready" data-i18n="dl_ready">✓ Test build</div><span class="dl-go" data-i18n="dl_get">Download APK</span></a>
       <a class="dl-card reveal" data-dl="appimage" href="https://github.com/eichat/eion-network/releases/latest/download/EION-x86_64.AppImage" rel="noopener"><span class="platform-icon">🐧</span><h3>Linux</h3><div class="status ready" data-i18n="dl_ready">✓ Test build</div><span class="dl-go" data-i18n="dl_get_linux">Download AppImage</span></a>
-      <div class="dl-card reveal"><span class="platform-icon">🍎</span><h3>iOS</h3><div class="status soon" data-i18n="dl_soon">⏳ Coming soon</div><span class="disabled" data-i18n="dl_notify">Notify me</span></div>
-      <div class="dl-card reveal"><span class="platform-icon">🪟</span><h3>Windows</h3><div class="status soon" data-i18n="dl_soon">⏳ Coming soon</div><span class="disabled" data-i18n="dl_notify">Notify me</span></div>
+      <div class="dl-card reveal"><span class="platform-icon">🍎</span><h3>iOS</h3><div class="status soon" data-i18n="dl_soon">⏳ Coming soon</div></div>
+      <div class="dl-card reveal"><span class="platform-icon">🪟</span><h3>Windows</h3><div class="status soon" data-i18n="dl_soon">⏳ Coming soon</div></div>
     </div>
     <p class="dl-note reveal" data-i18n="dl_note">Android will ask for permission to install an app from an unknown source — that is normal outside Google Play. On Linux, make the file executable and run it. The app is in test mode: expect bugs, and data from the test period may be reset.</p>
-    <div class="notify-box reveal">
-      <p data-i18n="notify_title">Get one email when EION arrives in the store</p>
-      <form id="notifyForm" action="https://formspree.io/f/xdajyyaz" method="POST">
-        <input type="email" name="email" required placeholder="your@email.com" data-i18n-ph="notify_ph">
-        <button type="submit" data-i18n="notify_btn">Notify me</button>
-      </form>
-      <p class="notify-ok" id="notifyOk" hidden data-i18n="notify_ok">✓ You're on the list!</p>
-      <p class="notify-note" data-i18n="notify_note">No spam. Launch notification only.</p>
-    </div>
   </div>
 </section>
 
@@ -1163,18 +1154,6 @@ function finishIntro(instant){
   setTimeout(function(){ cancelAnimationFrame(gRaf); }, instant?0:1000);
   try{ sessionStorage.setItem('eion_intro','1'); }catch(e){}
 }
-
-/* ═══════════ підписка ═══════════ */
-(function(){
-  var f=document.getElementById('notifyForm');
-  if(!f) return;
-  f.addEventListener('submit',function(e){
-    e.preventDefault();
-    fetch(f.action,{method:'POST',body:new FormData(f),headers:{Accept:'application/json'}})
-      .then(function(){ f.hidden=true; var ok=document.getElementById('notifyOk'); if(ok) ok.hidden=false; })
-      .catch(function(){ f.submit(); });
-  });
-})();
 
 /* ═══════════ аналітика лише за згодою ═══════════ */
 function loadGA(){
