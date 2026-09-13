@@ -19,7 +19,7 @@
   "f4_title": "Nhóm",
   "f4_desc": "Nhóm và kênh với vai trò, bình luận, biểu cảm và đăng ký trả phí. Phát trực tiếp xem ngay trong ứng dụng.",
   "f5_title": "Mã hoá đầu cuối",
-  "f5_desc": "Cuộc gọi, văn bản và tệp đính kèm trong trò chuyện riêng được mã hoá đầu cuối: khoá nằm trên thiết bị của bạn và máy chủ chỉ thấy bản mã. Nhóm và kênh thì chưa — chúng tôi nói thẳng điều đó.",
+  "f5_desc": "Cuộc gọi, văn bản và tệp đính kèm trong trò chuyện riêng được mã hoá đầu cuối: khoá nằm trên thiết bị của bạn và máy chủ chỉ thấy bản mã. Nhóm và kênh thì chưa — chúng tôi nói thẳng điều đó. Và ứng dụng không tải bất cứ thứ gì từ trang của người khác: người gửi liên kết không biết được địa chỉ IP của bạn.",
   "f6_title": "Xu",
   "f6_desc": "Đơn vị tiền trong ứng dụng dùng cho gói cao cấp, bộ nhãn dán và kênh trả phí. Bao gồm chuyển khoản giữa người dùng.",
   "dl_label": "Tải ứng dụng",

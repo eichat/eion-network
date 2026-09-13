@@ -19,7 +19,7 @@
   "f4_title": "Groupes",
   "f4_desc": "Groupes et canaux avec rôles, commentaires, réactions et abonnements payants. Les directs se lisent dans l’application.",
   "f5_title": "Chiffrement de bout en bout",
-  "f5_desc": "Les appels, le texte et les pièces jointes des discussions privées sont chiffrés de bout en bout : la clé reste sur votre appareil et le serveur ne voit que du texte chiffré. Les groupes et les canaux pas encore — nous le disons franchement.",
+  "f5_desc": "Les appels, le texte et les pièces jointes des discussions privées sont chiffrés de bout en bout : la clé reste sur votre appareil et le serveur ne voit que du texte chiffré. Les groupes et les canaux pas encore — nous le disons franchement. Et l’application ne charge rien depuis des sites tiers : celui qui vous envoie un lien n’apprend pas votre adresse IP.",
   "f6_title": "Pièces",
   "f6_desc": "Une monnaie interne pour le premium, les packs d’autocollants et les canaux payants. Transferts entre utilisateurs inclus.",
   "dl_label": "Obtenir l'app",

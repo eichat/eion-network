@@ -19,7 +19,7 @@
   "f4_title": "Grupos",
   "f4_desc": "Grupos y canales con roles, comentarios, reacciones y suscripciones de pago. Las transmisiones se ven dentro de la app.",
   "f5_title": "Cifrado de extremo a extremo",
-  "f5_desc": "Las llamadas, el texto y los archivos adjuntos de los chats privados están cifrados de extremo a extremo: la clave permanece en tu dispositivo y el servidor solo ve texto cifrado. Los grupos y canales aún no, y lo decimos claramente.",
+  "f5_desc": "Las llamadas, el texto y los archivos adjuntos de los chats privados están cifrados de extremo a extremo: la clave permanece en tu dispositivo y el servidor solo ve texto cifrado. Los grupos y canales aún no, y lo decimos claramente. Y la app no carga nada desde sitios ajenos: quien te envía un enlace no conoce tu dirección IP.",
   "f6_title": "Monedas",
   "f6_desc": "Una moneda interna para premium, packs de pegatinas y canales de pago. Incluye transferencias entre usuarios.",
   "dl_label": "Obtener la app",

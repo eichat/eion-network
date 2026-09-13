@@ -19,7 +19,7 @@
   "f4_title": "Gruppi",
   "f4_desc": "Gruppi e canali con ruoli, commenti, reazioni e abbonamenti a pagamento. Le dirette si guardano nell’app.",
   "f5_title": "Crittografia end-to-end",
-  "f5_desc": "Chiamate, testo e allegati delle chat private sono cifrati end-to-end: la chiave resta sul dispositivo e il server vede solo testo cifrato. Gruppi e canali non ancora — lo diciamo apertamente.",
+  "f5_desc": "Chiamate, testo e allegati delle chat private sono cifrati end-to-end: la chiave resta sul dispositivo e il server vede solo testo cifrato. Gruppi e canali non ancora — lo diciamo apertamente. E l’app non carica nulla da siti altrui: chi ti manda un link non scopre il tuo indirizzo IP.",
   "f6_title": "Monete",
   "f6_desc": "Una valuta interna per premium, pacchetti di adesivi e canali a pagamento. Inclusi i trasferimenti tra utenti.",
   "dl_label": "Scarica l'app",

@@ -19,7 +19,7 @@
   "f4_title": "Mga Grupo",
   "f4_desc": "Mga grupo at channel na may roles, komento, reaksyon at bayad na subscription. Ang live stream ay nanonood sa loob mismo ng app.",
   "f5_title": "End-to-end na pag-encrypt",
-  "f5_desc": "Ang mga tawag, teksto at attachment sa personal na chat ay end-to-end encrypted: nananatili sa device mo ang susi at ciphertext lang ang nakikita ng server. Hindi pa ang mga grupo at channel — sinasabi namin ito nang tapat.",
+  "f5_desc": "Ang mga tawag, teksto at attachment sa personal na chat ay end-to-end encrypted: nananatili sa device mo ang susi at ciphertext lang ang nakikita ng server. Hindi pa ang mga grupo at channel — sinasabi namin ito nang tapat. At walang kinukuha ang app mula sa mga site ng iba: hindi malalaman ng nagpadala ng link ang IP address mo.",
   "f6_title": "Coins",
   "f6_desc": "Panloob na pera para sa premium, sticker pack at bayad na channel. Kasama ang paglilipat sa pagitan ng mga user.",
   "dl_label": "Kunin ang App",
