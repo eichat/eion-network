@@ -1,0 +1,10 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "network.eion.app",
+    "sha256_cert_fingerprints": [
+      "20:E3:4D:45:1F:92:D4:C0:E9:32:98:B3:14:24:51:88:CF:57:CB:ED:AA:89:2E:C1:59:D7:2F:B7:2B:95:96:60"
+    ]
+  }
+}]
