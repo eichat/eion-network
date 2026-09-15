@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EION — Профіль</title>
+<meta name="description" content="Write to this person in EION.">
+<meta property="og:title" content="EION">
+<meta property="og:description" content="Write to this person in EION">
+<meta property="og:image" content="https://eion.network/EION-256.png">
+<meta property="og:url" content="https://eion.network/u/">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--neon:#00d4ff;--bg:#020c14;--text:#e8f4f8;--text2:#7ab8cc;--line:rgba(0,212,255,.16);--card:rgba(10,22,40,.5)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:'Syne',system-ui,-apple-system,sans-serif;
+  line-height:1.7;font-size:16px;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+.glow{position:fixed;top:-40vh;left:50%;transform:translateX(-50%);width:120vw;height:80vh;pointer-events:none;z-index:0;
+  background:radial-gradient(ellipse at center,rgba(0,212,255,.08),transparent 62%)}
+.card{position:relative;z-index:1;max-width:420px;width:100%;text-align:center}
+.logo{width:88px;height:88px;border-radius:20px;margin:0 auto 22px;display:block}
+h1{font-family:'Orbitron',monospace;font-size:clamp(22px,5.5vw,28px);font-weight:700;letter-spacing:.05em;margin-bottom:10px}
+p{color:var(--text2);margin-bottom:28px}
+.btn{display:block;width:100%;padding:15px 20px;border-radius:12px;font:inherit;font-weight:600;
+  text-decoration:none;cursor:pointer;border:1px solid var(--neon);transition:.2s;margin-bottom:12px}
+.btn.primary{background:var(--neon);color:#02121c}
+.btn.primary:hover{filter:brightness(1.12)}
+.btn.ghost{background:var(--card);color:var(--text2);border-color:var(--line)}
+.btn.ghost:hover{color:var(--neon);border-color:var(--neon)}
+.hint{font-size:13.5px;color:var(--text2);opacity:.7;margin:18px 0 0}
+.brand{display:inline-flex;align-items:center;gap:8px;margin-top:34px;font-family:'Orbitron',monospace;
+  font-size:13px;letter-spacing:.14em;color:var(--text2);text-decoration:none;opacity:.7}
+.brand:hover{color:var(--neon);opacity:1}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<div class="glow"></div>
+<div class="card">
+  <img class="logo" src="/EION-mark.png" onerror="this.src='/EION-256.png'" alt="EION">
+  <h1 id="ttl">Написати в EION</h1>
+  <p id="sub"></p>
+
+  <a class="btn primary" id="open" href="#">Відкрити в EION</a>
+  <a class="btn ghost" id="get" href="/">Немає застосунку — про EION</a>
+
+  <p class="hint" id="hint">Якщо застосунок установлено, посилання відкриється в ньому автоматично.</p>
+  <a class="brand" href="/">EION</a>
+</div>
+
+<script>
+// Токен живе у ФРАГМЕНТІ (#…): браузер його на сервер не надсилає, тож він не
+// осідає ні в логах GitHub Pages, ні в Referer, ні в аналітиці. Сторінка з ним
+// нічого не робить — лише передає застосунку. Так само влаштовано signal.group.
+var T = {
+  uk:{t:"Написати в EION",s:"Напишіть {n} у захищеному месенджері.",o:"Відкрити в EION",g:"Немає застосунку — про EION",h:"Якщо застосунок установлено, посилання відкриється в ньому автоматично.",b:"Посилання неповне. Попросіть надіслати його ще раз."},
+  en:{t:"Message on EION",s:"Write to {n} in a private messenger.",o:"Open in EION",g:"No app yet — about EION",h:"If the app is installed, the link opens in it automatically.",b:"The link is incomplete. Ask for it to be sent again."},
+  ru:{t:"Написать в EION",s:"Напишите {n} в защищённом мессенджере.",o:"Открыть в EION",g:"Нет приложения — об EION",h:"Если приложение установлено, ссылка откроется в нём автоматически.",b:"Ссылка неполная. Попросите прислать её ещё раз."},
+  de:{t:"Auf EION schreiben",s:"Schreiben Sie {n} in einem privaten Messenger.",o:"In EION öffnen",g:"Keine App — über EION",h:"Ist die App installiert, öffnet sich der Link automatisch darin.",b:"Der Link ist unvollständig. Bitten Sie um erneutes Senden."},
+  es:{t:"Escribir en EION",s:"Escribe a {n} en un mensajero privado.",o:"Abrir en EION",g:"Sin aplicación — sobre EION",h:"Si la aplicación está instalada, el enlace se abrirá en ella automáticamente.",b:"El enlace está incompleto. Pide que te lo envíen de nuevo."},
+  fr:{t:"Écrire sur EION",s:"Écrivez à {n} dans une messagerie privée.",o:"Ouvrir dans EION",g:"Pas d'application — à propos d'EION",h:"Si l'application est installée, le lien s'y ouvrira automatiquement.",b:"Le lien est incomplet. Demandez qu’on vous le renvoie."},
+  it:{t:"Scrivi su EION",s:"Scrivi a {n} in un messenger privato.",o:"Apri in EION",g:"Nessuna app — informazioni su EION",h:"Se l'app è installata, il link si aprirà automaticamente in essa.",b:"Il link è incompleto. Chiedi di rinviarlo."},
+  pt:{t:"Escrever no EION",s:"Escreva para {n} num mensageiro privado.",o:"Abrir no EION",g:"Sem aplicativo — sobre o EION",h:"Se o aplicativo estiver instalado, o link abrirá nele automaticamente.",b:"O link está incompleto. Peça para enviarem novamente."},
+  nl:{t:"Bericht op EION",s:"Schrijf {n} in een privéberichtendienst.",o:"Openen in EION",g:"Geen app — over EION",h:"Als de app is geïnstalleerd, opent de link daar automatisch.",b:"De link is onvolledig. Vraag om hem opnieuw te sturen."},
+  pl:{t:"Napisz w EION",s:"Napisz do {n} w prywatnym komunikatorze.",o:"Otwórz w EION",g:"Brak aplikacji — o EION",h:"Jeśli aplikacja jest zainstalowana, link otworzy się w niej automatycznie.",b:"Link jest niepełny. Poproś o ponowne wysłanie."},
+  tr:{t:"EION’da yaz",s:"{n} kişisine özel bir mesajlaşma uygulamasında yazın.",o:"EION’da aç",g:"Uygulama yok — EION hakkında",h:"Uygulama yüklüyse bağlantı otomatik olarak onda açılır.",b:"Bağlantı eksik. Tekrar gönderilmesini isteyin."},
+  id:{t:"Kirim pesan di EION",s:"Tulis pesan ke {n} di messenger privat.",o:"Buka di EION",g:"Belum ada aplikasi — tentang EION",h:"Jika aplikasi terpasang, tautan akan terbuka di dalamnya secara otomatis.",b:"Tautan tidak lengkap. Minta dikirim ulang."},
+  vi:{t:"Nhắn tin trên EION",s:"Nhắn cho {n} trong một ứng dụng riêng tư.",o:"Mở trong EION",g:"Chưa có ứng dụng — về EION",h:"Nếu đã cài ứng dụng, liên kết sẽ tự động mở trong đó.",b:"Liên kết không đầy đủ. Hãy yêu cầu gửi lại."},
+  th:{t:"ส่งข้อความใน EION",s:"เขียนถึง {n} ในแอปแชทที่เป็นส่วนตัว",o:"เปิดใน EION",g:"ยังไม่มีแอป — เกี่ยวกับ EION",h:"หากติดตั้งแอปแล้ว ลิงก์จะเปิดในแอปโดยอัตโนมัติ",b:"ลิงก์ไม่สมบูรณ์ โปรดขอให้ส่งใหม่"},
+  tl:{t:"Mag-message sa EION",s:"Sumulat kay {n} sa pribadong messenger.",o:"Buksan sa EION",g:"Walang app — tungkol sa EION",h:"Kung naka-install ang app, awtomatikong magbubukas doon ang link.",b:"Hindi kumpleto ang link. Hilingin na ipadala itong muli."},
+  hi:{t:"EION पर संदेश भेजें",s:"{n} को निजी मैसेंजर में लिखें।",o:"EION में खोलें",g:"ऐप नहीं है — EION के बारे में",h:"यदि ऐप इंस्टॉल है, तो लिंक उसमें अपने आप खुल जाएगा।",b:"लिंक अधूरा है। इसे दोबारा भेजने के लिए कहें।"},
+  bn:{t:"EION-এ বার্তা পাঠান",s:"ব্যক্তিগত মেসেঞ্জারে {n}-কে লিখুন।",o:"EION-এ খুলুন",g:"অ্যাপ নেই — EION সম্পর্কে",h:"অ্যাপ ইনস্টল থাকলে লিঙ্কটি স্বয়ংক্রিয়ভাবে সেখানে খুলবে।",b:"লিঙ্কটি অসম্পূর্ণ। আবার পাঠাতে বলুন।"},
+  ja:{t:"EION でメッセージ",s:"{n} さんにプライベートなメッセンジャーで送りましょう。",o:"EION で開く",g:"アプリ未導入 — EION について",h:"アプリがインストールされていれば、リンクは自動的にアプリで開きます。",b:"リンクが不完全です。もう一度送ってもらってください。"},
+  ko:{t:"EION에서 메시지",s:"{n}님에게 프라이빗 메신저로 보내세요.",o:"EION에서 열기",g:"앱이 없습니다 — EION 소개",h:"앱이 설치되어 있으면 링크가 자동으로 앱에서 열립니다.",b:"링크가 불완전합니다. 다시 보내 달라고 요청하세요."},
+  zh:{t:"在 EION 发消息",s:"在私密通讯工具里给 {n} 发消息。",o:"在 EION 中打开",g:"还没有应用 — 了解 EION",h:"如果已安装应用，链接会自动在应用中打开。",b:"链接不完整，请对方重新发送。"},
+  ar:{t:"راسِل عبر EION",s:"راسِل {n} في تطبيق مراسلة خاص.",o:"فتح في EION",g:"لا يوجد تطبيق — عن EION",h:"إذا كان التطبيق مثبتًا، فسيُفتح الرابط فيه تلقائيًا.",b:"الرابط غير مكتمل. اطلب إرساله مرة أخرى."}
+};
+var RTL = {ar:1};
+
+function pickLang(){
+  try { var saved = localStorage.getItem('eion_lang'); if (saved && T[saved]) return saved; } catch(e){}
+  var l = (navigator.language || 'en').slice(0,2).toLowerCase();
+  return T[l] ? l : 'en';
+}
+
+var lang = pickLang(), t = T[lang];
+document.documentElement.lang = lang;
+if (RTL[lang]) document.documentElement.dir = 'rtl';
+document.getElementById('ttl').textContent = t.t;
+document.getElementById('sub').textContent = t.s;
+document.getElementById('open').textContent = t.o;
+document.getElementById('get').textContent  = t.g;
+document.getElementById('hint').textContent = t.h;
+
+// Нік беремо з hash — так само, як токен запрошення: на сервер сайту він не
+// йде, тож сторінка нікому не повідомляє, чий профіль відкривали.
+var nick = '';
+try { nick = decodeURIComponent((location.hash || '').replace(/^#/, '')).trim(); } catch (e) { nick = ''; }
+// Ті самі символи, що заборонені при реєстрації: нік підставляється в текст.
+var ok = nick.length >= 2 && nick.length <= 32 && !/[,()"'\\\/<>&]/.test(nick);
+var openBtn = document.getElementById('open');
+
+if (!ok) {
+  openBtn.hidden = true;
+  document.getElementById('sub').textContent = t.b;
+  document.getElementById('hint').hidden = true;
+} else {
+  document.getElementById('sub').textContent = t.s.replace('{n}', nick);
+  document.title = nick + ' — EION';
+  var isAndroid = /android/i.test(navigator.userAgent);
+  // На Android intent:// надійніший за власну схему: у вбудованих браузерах
+  // месенджерів eion:// часто просто нічого не робить, а intent уміє відкотитись
+  // на сторінку завантаження.
+  var enc = encodeURIComponent(nick);
+  openBtn.href = isAndroid
+    ? 'intent://user/' + enc + '#Intent;scheme=eion;package=network.eion.app;S.browser_fallback_url=' +
+      encodeURIComponent('https://eion.network/') + ';end'
+    : 'eion://user/' + enc;
+}
+</script>
+</body>
+</html>
