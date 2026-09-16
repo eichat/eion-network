@@ -8,7 +8,6 @@
 <meta property="og:title" content="EION">
 <meta property="og:description" content="Write to this person in EION">
 <meta property="og:image" content="https://eion.network/EION-256.png">
-<meta property="og:url" content="https://eion.network/u/">
 <meta name="twitter:card" content="summary">
 <style>
 :root{--neon:#00d4ff;--bg:#020c14;--text:#e8f4f8;--text2:#7ab8cc;--line:rgba(0,212,255,.16);--card:rgba(10,22,40,.5)}
@@ -95,7 +94,13 @@ document.getElementById('hint').textContent = t.h;
 // Нік беремо з hash — так само, як токен запрошення: на сервер сайту він не
 // йде, тож сторінка нікому не повідомляє, чий профіль відкривали.
 var nick = '';
-try { nick = decodeURIComponent((location.hash || '').replace(/^#/, '')).trim(); } catch (e) { nick = ''; }
+// Нік із query (?n=…); hash лишається підтриманим для раніше розісланих
+// посилань. Чому не hash: його не бачить сервер месенджера, який будує картку
+// превʼю, тож тап по картці вів на /u без ніка.
+try { nick = (new URLSearchParams(location.search).get('n') || '').trim(); } catch (e) { nick = ''; }
+if (!nick) {
+  try { nick = decodeURIComponent((location.hash || '').replace(/^#/, '')).trim(); } catch (e) { nick = ''; }
+}
 // Ті самі символи, що заборонені при реєстрації: нік підставляється в текст.
 var ok = nick.length >= 2 && nick.length <= 32 && !/[,()"'\\\/<>&]/.test(nick);
 var openBtn = document.getElementById('open');

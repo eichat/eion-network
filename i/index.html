@@ -8,7 +8,6 @@
 <meta property="og:title" content="EION">
 <meta property="og:description" content="Invitation to a group or channel in EION">
 <meta property="og:image" content="https://eion.network/EION-256.png">
-<meta property="og:url" content="https://eion.network/i/">
 <meta name="twitter:card" content="summary">
 <style>
 :root{--neon:#00d4ff;--bg:#020c14;--text:#e8f4f8;--text2:#7ab8cc;--line:rgba(0,212,255,.16);--card:rgba(10,22,40,.5)}
@@ -92,8 +91,15 @@ document.getElementById('open').textContent = t.o;
 document.getElementById('get').textContent  = t.g;
 document.getElementById('hint').textContent = t.h;
 
-// Токен беремо саме з hash — у шлях чи query він не потрапляє за задумом.
-var token = (location.hash || '').replace(/^#/, '').trim();
+// Токен беремо з query (?t=…). Раніше він жив у hash — так його не бачить
+// веб-сервер, — але hash не бачить і сервер месенджера, який будує картку
+// превʼю: тап по картці вів на /i без токена. Hash лишається підтриманим, щоб
+// уже розіслані посилання працювали далі.
+var token = '';
+try {
+  token = (new URLSearchParams(location.search).get('t') || '').trim();
+} catch (e) { token = ''; }
+if (!token) token = (location.hash || '').replace(/^#/, '').trim();
 var ok = /^[A-Za-z0-9]{6,64}$/.test(token);
 var openBtn = document.getElementById('open');
 
