@@ -152,7 +152,7 @@
   "tok_translate": "Auto-translate",
   "tok_translate_v": "200 a day, then 🪙 1",
   "prem_f8": "Auto-translate: 1000 a day instead of 200",
-  "prem_f9": "2 free channel boosts",
+  "prem_f9": "Opening a wallet is free",
   "rm_done": "works now",
   "rm_wip": "in progress",
   "rm_todo": "planned",
@@ -160,5 +160,7 @@
   "f7_title": "Multiple devices",
   "f7_desc": "One account on your phone and computer at once. Messages, read state, deletions, stickers and muted chats stay the same everywhere.",
   "f8_title": "Games",
-  "f8_desc": "Board games right inside the chat — against a friend or the computer on three levels, and some seat three or four players. No betting: coins here are only for looks."
+  "f8_desc": "Board games right inside the chat — against a friend or the computer on three levels, and some seat three or four players. No betting: coins here are only for looks.",
+  "prem_f10": "2 free channel boosts",
+  "prem_f11": "No ads in channels"
 }

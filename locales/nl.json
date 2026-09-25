@@ -152,7 +152,7 @@
   "tok_translate": "Automatisch vertalen",
   "tok_translate_v": "200 per dag, daarna 🪙 1",
   "prem_f8": "Automatisch vertalen: 1000 per dag in plaats van 200",
-  "prem_f9": "2 gratis kanaalboosts",
+  "prem_f9": "Portemonnee openen is gratis",
   "rm_done": "werkt",
   "rm_wip": "in uitvoering",
   "rm_todo": "gepland",
@@ -160,5 +160,7 @@
   "f7_title": "Meerdere apparaten",
   "f7_desc": "Eén account op je telefoon en computer tegelijk. Berichten, gelezen, verwijderd, stickers en gedempte chats blijven overal hetzelfde.",
   "f8_title": "Spellen",
-  "f8_desc": "Bordspellen direct in de chat — tegen een vriend of tegen de computer op drie niveaus, en sommige met drie of vier spelers. Zonder gokken: munten zijn hier alleen voor het uiterlijk."
+  "f8_desc": "Bordspellen direct in de chat — tegen een vriend of tegen de computer op drie niveaus, en sommige met drie of vier spelers. Zonder gokken: munten zijn hier alleen voor het uiterlijk.",
+  "prem_f10": "2 gratis kanaalboosts",
+  "prem_f11": "Geen advertenties in kanalen"
 }

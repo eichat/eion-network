@@ -152,7 +152,7 @@
   "tok_translate": "Traduzione automatica",
   "tok_translate_v": "200 al giorno, poi 🪙 1",
   "prem_f8": "Traduzione automatica: 1000 al giorno invece di 200",
-  "prem_f9": "2 potenziamenti di canale gratuiti",
+  "prem_f9": "Apertura del portafoglio gratuita",
   "rm_done": "funziona",
   "rm_wip": "in corso",
   "rm_todo": "previsto",
@@ -160,5 +160,7 @@
   "f7_title": "Più dispositivi",
   "f7_desc": "Un account su telefono e computer allo stesso tempo. Messaggi, letture, eliminazioni, sticker e chat silenziate restano uguali ovunque.",
   "f8_title": "Giochi",
-  "f8_desc": "Giochi da tavolo dentro la chat: contro un amico o contro il computer su tre livelli, e alcuni anche in tre o quattro. Senza scommesse: qui le monete servono solo per l’aspetto."
+  "f8_desc": "Giochi da tavolo dentro la chat: contro un amico o contro il computer su tre livelli, e alcuni anche in tre o quattro. Senza scommesse: qui le monete servono solo per l’aspetto.",
+  "prem_f10": "2 potenziamenti di canale gratuiti",
+  "prem_f11": "Nessuna pubblicità nei canali"
 }

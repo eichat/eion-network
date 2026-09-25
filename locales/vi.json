@@ -152,7 +152,7 @@
   "tok_translate": "Dịch tự động",
   "tok_translate_v": "200 mỗi ngày, sau đó 🪙 1",
   "prem_f8": "Dịch tự động: 1000 mỗi ngày thay vì 200",
-  "prem_f9": "2 lượt tăng kênh miễn phí",
+  "prem_f9": "Mở ví miễn phí",
   "rm_done": "đã chạy",
   "rm_wip": "đang làm",
   "rm_todo": "dự kiến",
@@ -160,5 +160,7 @@
   "f7_title": "Nhiều thiết bị",
   "f7_desc": "Một tài khoản trên điện thoại và máy tính cùng lúc. Tin nhắn, trạng thái đã đọc, mục đã xoá, nhãn dán và cuộc trò chuyện tắt tiếng đều giống nhau ở mọi nơi.",
   "f8_title": "Trò chơi",
-  "f8_desc": "Các trò chơi bàn ngay trong cuộc trò chuyện — với bạn bè hoặc với máy tính ở ba mức độ, và một số dành cho ba đến bốn người. Không cá cược: ở đây xu chỉ để thay đổi giao diện."
+  "f8_desc": "Các trò chơi bàn ngay trong cuộc trò chuyện — với bạn bè hoặc với máy tính ở ba mức độ, và một số dành cho ba đến bốn người. Không cá cược: ở đây xu chỉ để thay đổi giao diện.",
+  "prem_f10": "2 lượt tăng kênh miễn phí",
+  "prem_f11": "Không quảng cáo trong kênh"
 }

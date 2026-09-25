@@ -152,7 +152,7 @@
   "tok_translate": "Traduction auto",
   "tok_translate_v": "200 par jour, puis 🪙 1",
   "prem_f8": "Traduction auto : 1000 par jour au lieu de 200",
-  "prem_f9": "2 boosts de chaîne gratuits",
+  "prem_f9": "Ouverture du portefeuille gratuite",
   "rm_done": "fonctionne",
   "rm_wip": "en cours",
   "rm_todo": "prévu",
@@ -160,5 +160,7 @@
   "f7_title": "Plusieurs appareils",
   "f7_desc": "Un compte sur votre téléphone et votre ordinateur en même temps. Messages, lectures, suppressions, stickers et discussions en sourdine restent identiques partout.",
   "f8_title": "Jeux",
-  "f8_desc": "Des jeux de plateau directement dans la discussion — contre un ami ou l'ordinateur sur trois niveaux, et certains à trois ou quatre joueurs. Sans paris : ici les pièces ne servent qu'à l'apparence."
+  "f8_desc": "Des jeux de plateau directement dans la discussion — contre un ami ou l'ordinateur sur trois niveaux, et certains à trois ou quatre joueurs. Sans paris : ici les pièces ne servent qu'à l'apparence.",
+  "prem_f10": "2 boosts de chaîne gratuits",
+  "prem_f11": "Pas de publicité dans les chaînes"
 }

@@ -152,7 +152,7 @@
   "tok_translate": "Auto-Übersetzung",
   "tok_translate_v": "200 pro Tag, danach 🪙 1",
   "prem_f8": "Auto-Übersetzung: 1000 pro Tag statt 200",
-  "prem_f9": "2 kostenlose Kanal-Boosts",
+  "prem_f9": "Wallet-Eröffnung kostenlos",
   "rm_done": "funktioniert",
   "rm_wip": "in Arbeit",
   "rm_todo": "geplant",
@@ -160,5 +160,7 @@
   "f7_title": "Mehrere Geräte",
   "f7_desc": "Ein Konto gleichzeitig auf Handy und Computer. Nachrichten, Gelesenes, Gelöschtes, Sticker und stummgeschaltete Chats bleiben überall gleich.",
   "f8_title": "Spiele",
-  "f8_desc": "Brettspiele direkt im Chat – gegen Freunde oder den Computer in drei Stufen, einige auch zu drei oder vier. Ohne Wetten: Münzen sind hier nur fürs Aussehen."
+  "f8_desc": "Brettspiele direkt im Chat – gegen Freunde oder den Computer in drei Stufen, einige auch zu drei oder vier. Ohne Wetten: Münzen sind hier nur fürs Aussehen.",
+  "prem_f10": "2 kostenlose Kanal-Boosts",
+  "prem_f11": "Keine Werbung in Kanälen"
 }
