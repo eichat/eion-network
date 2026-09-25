@@ -152,7 +152,7 @@
   "tok_translate": "Terjemahan otomatis",
   "tok_translate_v": "200 per hari, lalu 🪙 1",
   "prem_f8": "Terjemahan otomatis: 1000 per hari, bukan 200",
-  "prem_f9": "2 boost kanal gratis",
+  "prem_f9": "Membuka dompet gratis",
   "rm_done": "sudah jalan",
   "rm_wip": "sedang dikerjakan",
   "rm_todo": "direncanakan",
@@ -160,5 +160,7 @@
   "f7_title": "Beberapa perangkat",
   "f7_desc": "Satu akun di ponsel dan komputer sekaligus. Pesan, status dibaca, penghapusan, stiker, dan obrolan senyap tetap sama di mana saja.",
   "f8_title": "Permainan",
-  "f8_desc": "Permainan papan langsung di dalam chat — melawan teman atau komputer dengan tiga tingkat, dan beberapa untuk tiga atau empat pemain. Tanpa taruhan: koin di sini hanya untuk tampilan."
+  "f8_desc": "Permainan papan langsung di dalam chat — melawan teman atau komputer dengan tiga tingkat, dan beberapa untuk tiga atau empat pemain. Tanpa taruhan: koin di sini hanya untuk tampilan.",
+  "prem_f10": "2 boost kanal gratis",
+  "prem_f11": "Tanpa iklan di kanal"
 }

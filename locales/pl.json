@@ -152,7 +152,7 @@
   "tok_translate": "Autotłumaczenie",
   "tok_translate_v": "200 dziennie, potem 🪙 1",
   "prem_f8": "Autotłumaczenie: 1000 dziennie zamiast 200",
-  "prem_f9": "2 darmowe wzmocnienia kanałów",
+  "prem_f9": "Otwarcie portfela za darmo",
   "rm_done": "działa",
   "rm_wip": "w toku",
   "rm_todo": "zaplanowane",
@@ -160,5 +160,7 @@
   "f7_title": "Wiele urządzeń",
   "f7_desc": "Jedno konto na telefonie i komputerze jednocześnie. Wiadomości, przeczytane, usunięte, naklejki i wyciszone czaty są wszędzie takie same.",
   "f8_title": "Gry",
-  "f8_desc": "Gry planszowe wprost w czacie — z przyjacielem albo z komputerem na trzech poziomach, a niektóre na trzech lub czterech graczy. Bez zakładów: monety służą tu tylko do wyglądu."
+  "f8_desc": "Gry planszowe wprost w czacie — z przyjacielem albo z komputerem na trzech poziomach, a niektóre na trzech lub czterech graczy. Bez zakładów: monety służą tu tylko do wyglądu.",
+  "prem_f10": "2 darmowe wzmocnienia kanałów",
+  "prem_f11": "Bez reklam w kanałach"
 }

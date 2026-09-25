@@ -152,7 +152,7 @@
   "tok_translate": "Awtomatikong pagsasalin",
   "tok_translate_v": "200 kada araw, tapos 🪙 1",
   "prem_f8": "Awtomatikong pagsasalin: 1000 kada araw sa halip na 200",
-  "prem_f9": "2 libreng boost ng channel",
+  "prem_f9": "Libre ang pagbubukas ng wallet",
   "rm_done": "gumagana na",
   "rm_wip": "ginagawa",
   "rm_todo": "nakaplano",
@@ -160,5 +160,7 @@
   "f7_title": "Maraming device",
   "f7_desc": "Isang account sa telepono at computer nang sabay. Pareho sa lahat ng device ang mga mensahe, nabasa na, nabura, sticker at naka-mute na chat.",
   "f8_title": "Mga laro",
-  "f8_desc": "Mga board game sa loob mismo ng chat — kalaban ang kaibigan o ang computer sa tatlong antas, at may ilang para sa tatlo o apat na manlalaro. Walang pustahan: ang mga barya dito ay para sa itsura lang."
+  "f8_desc": "Mga board game sa loob mismo ng chat — kalaban ang kaibigan o ang computer sa tatlong antas, at may ilang para sa tatlo o apat na manlalaro. Walang pustahan: ang mga barya dito ay para sa itsura lang.",
+  "prem_f10": "2 libreng boost ng channel",
+  "prem_f11": "Walang ads sa mga channel"
 }

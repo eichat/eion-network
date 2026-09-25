@@ -152,7 +152,7 @@
   "tok_translate": "Otomatik çeviri",
   "tok_translate_v": "günde 200, sonra 🪙 1",
   "prem_f8": "Otomatik çeviri: 200 yerine günde 1000",
-  "prem_f9": "2 ücretsiz kanal takviyesi",
+  "prem_f9": "Cüzdan açmak ücretsiz",
   "rm_done": "çalışıyor",
   "rm_wip": "devam ediyor",
   "rm_todo": "planlandı",
@@ -160,5 +160,7 @@
   "f7_title": "Birden fazla cihaz",
   "f7_desc": "Telefonunuzda ve bilgisayarınızda aynı anda tek hesap. Mesajlar, okunanlar, silinenler, çıkartmalar ve sessize alınan sohbetler her yerde aynı kalır.",
   "f8_title": "Oyunlar",
-  "f8_desc": "Sohbetin içinde masa oyunları — bir arkadaşa ya da üç seviyeli bilgisayara karşı; bazıları üç ya da dört kişilik. Bahis yok: buradaki jetonlar yalnızca görünüm için."
+  "f8_desc": "Sohbetin içinde masa oyunları — bir arkadaşa ya da üç seviyeli bilgisayara karşı; bazıları üç ya da dört kişilik. Bahis yok: buradaki jetonlar yalnızca görünüm için.",
+  "prem_f10": "2 ücretsiz kanal takviyesi",
+  "prem_f11": "Kanallarda reklam yok"
 }
