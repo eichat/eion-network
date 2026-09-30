@@ -92,7 +92,7 @@
     },
     {
       "q": "Welke platforms worden ondersteund?",
-      "a": "Android en Linux — downloads zijn open. De app draait in testmodus: we werken er nog aan, dus fouten zijn mogelijk en gegevens uit de testperiode kunnen worden gewist. iOS en Windows staan gepland."
+      "a": "Android en Linux — downloads zijn tijdelijk gesloten terwijl we de volgende versie voorbereiden; nieuws in ons Telegram-kanaal. iOS en Windows staan gepland."
     }
   ],
   "footer_tagline": "Praat. Deel. Jouw data blijft van jou.",
@@ -102,7 +102,7 @@
   "dl_ready": "✓ Testversie",
   "dl_get": "APK downloaden",
   "dl_get_linux": "AppImage downloaden",
-  "dl_note": "Android vraagt toestemming om een app uit een onbekende bron te installeren — buiten Google Play is dat normaal. Maak het bestand op Linux uitvoerbaar en start het. De app draait in testmodus: fouten zijn mogelijk en gegevens uit de testperiode kunnen worden gewist.",
+  "dl_note": "Downloads zijn tijdelijk gesloten terwijl we de volgende versie voorbereiden. Nieuws vind je in ons Telegram-kanaal.",
   "tok_today": "Vandaag, in de app",
   "tok_use1": "Premium",
   "tok_use1v": "hogere limieten, grotere bestanden",
