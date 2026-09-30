@@ -92,7 +92,7 @@
     },
     {
       "q": "支持哪些平台？",
-      "a": "Android 和 Linux —— 已开放下载。应用处于测试模式：我们仍在完善，可能出现故障，测试期间的数据可能会被重置。iOS 和 Windows 在计划中。"
+      "a": "Android 和 Linux——我们正在准备下一个版本，下载暂时关闭；最新消息请关注我们的 Telegram 频道。iOS 和 Windows 在计划中。"
     }
   ],
   "footer_tagline": "交流。分享。数据属于你自己。",
@@ -102,7 +102,7 @@
   "dl_ready": "✓ 测试版本",
   "dl_get": "下载 APK",
   "dl_get_linux": "下载 AppImage",
-  "dl_note": "Android 会请求安装未知来源应用的权限——在 Google Play 之外这是正常的。在 Linux 上，将文件设为可执行后运行。应用处于测试模式：可能出现故障，测试期间的数据可能会被重置。",
+  "dl_note": "我们正在准备下一个版本，下载暂时关闭。最新消息请关注我们的 Telegram 频道。",
   "tok_today": "目前，在应用之内",
   "tok_use1": "会员",
   "tok_use1v": "额度更高，文件更大",

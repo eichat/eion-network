@@ -92,7 +92,7 @@
     },
     {
       "q": "¿Qué plataformas son compatibles?",
-      "a": "Android y Linux: las descargas están abiertas. La app está en modo de prueba: aún la estamos puliendo, así que puede haber errores y los datos del período de prueba pueden restablecerse. iOS y Windows están planeados."
+      "a": "Android y Linux: las descargas están cerradas temporalmente mientras preparamos la próxima versión; novedades en nuestro canal de Telegram. iOS y Windows están en los planes."
     }
   ],
   "footer_tagline": "Habla. Comparte. Tus datos son tuyos.",
@@ -102,7 +102,7 @@
   "dl_ready": "✓ Versión de prueba",
   "dl_get": "Descargar APK",
   "dl_get_linux": "Descargar AppImage",
-  "dl_note": "Android pedirá permiso para instalar una app de origen desconocido: fuera de Google Play es normal. En Linux, haz el archivo ejecutable y ejecútalo. La app está en modo de prueba: puede haber errores y los datos del período de prueba pueden restablecerse.",
+  "dl_note": "Las descargas están cerradas temporalmente mientras preparamos la próxima versión. Las novedades, en nuestro canal de Telegram.",
   "tok_today": "Hoy, dentro de la app",
   "tok_use1": "Premium",
   "tok_use1v": "límites más altos, archivos más grandes",

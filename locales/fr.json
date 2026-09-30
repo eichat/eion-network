@@ -92,7 +92,7 @@
     },
     {
       "q": "Quelles plateformes sont prises en charge ?",
-      "a": "Android et Linux — les téléchargements sont ouverts. L’application est en mode test : nous la peaufinons encore, des bugs sont donc possibles et les données de la période de test peuvent être réinitialisées. iOS et Windows sont prévus."
+      "a": "Android et Linux : les téléchargements sont temporairement fermés pendant que nous préparons la prochaine version ; les nouvelles sont sur notre canal Telegram. iOS et Windows sont prévus."
     }
   ],
   "footer_tagline": "Parlez. Partagez. Vos données restent à vous.",
@@ -102,7 +102,7 @@
   "dl_ready": "✓ Version de test",
   "dl_get": "Télécharger l’APK",
   "dl_get_linux": "Télécharger l’AppImage",
-  "dl_note": "Android demandera l’autorisation d’installer une application de source inconnue — c’est normal hors Google Play. Sous Linux, rendez le fichier exécutable et lancez-le. L’application est en mode test : des bugs sont possibles et les données de la période de test peuvent être réinitialisées.",
+  "dl_note": "Les téléchargements sont temporairement fermés pendant que nous préparons la prochaine version. Les nouvelles sont sur notre canal Telegram.",
   "tok_today": "Aujourd’hui, dans l’application",
   "tok_use1": "Premium",
   "tok_use1v": "quotas plus élevés, fichiers plus gros",
