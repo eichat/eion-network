@@ -30,7 +30,7 @@
   "tok_free": "Gratis daglimiet",
   "tok_free_v": "AI 15 · 200 MB · 10 gesprekken",
   "tok_over": "Boven het daglimiet",
-  "tok_over_v": "3 · 1 / MB · 2 munten",
+  "tok_over_v": "1 · 1 / 10 MB · 1 🪙",
   "tok_register": "Registratiebonus",
   "prem_label": "Premium",
   "prem_title": "<span>Premium</span> Ontgrendelen",
@@ -44,7 +44,7 @@
   "prem_f4": "Gesprekken via relay: 50 per dag in plaats van 10",
   "prem_f5": "Gekleurde nickname en avatarring",
   "prem_f6": "Een krachtiger AI-model",
-  "prem_f7": "Bespaart 5400 munten — ruim drie maanden gratis",
+  "prem_f7": "Bespaart 1080 munten — ruim drie maanden gratis",
   "rm_label": "Routekaart",
   "rm_title": "Wat komt er <span>volgende</span>",
   "rm_ph1": "Fase 1 — afgerond",
@@ -80,7 +80,7 @@
     },
     {
       "q": "Is EION gratis?",
-      "a": "Ja. De messenger is volledig gratis. Elke dag geldt een gratis limiet: 15 AI-verzoeken, 200 MB uploads, 10 doorgeschakelde gesprekken en 200 automatische vertalingen; daarboven betaal je met munten. Premium verruimt de limiet en verhoogt de bestandslimiet naar 20 MB: 🪙 1500 per maand of 🪙 12600 per jaar."
+      "a": "Ja. De messenger is volledig gratis. Elke dag geldt een gratis limiet: 15 AI-verzoeken, 200 MB uploads, 10 doorgeschakelde gesprekken en 200 automatische vertalingen; daarboven betaal je met munten. Premium verruimt de limiet en verhoogt de bestandslimiet naar 20 MB: 🪙 300 per maand of 🪙 2520 per jaar."
     },
     {
       "q": "Zijn mijn berichten versleuteld?",
@@ -88,7 +88,7 @@
     },
     {
       "q": "Wat zijn munten?",
-      "a": "Een interne valuta van de app: premium, stickerpakketten, betaalde kanaalabonnementen, overboekingen tussen gebruikers en alles boven de gratis daglimiet — AI-verzoeken, uploads, doorgeschakelde gesprekken, automatisch vertalen. Registratie geeft 🪙 200. Het is geen geld en geen cryptovaluta en het is niet inwisselbaar voor geld."
+      "a": "Een interne valuta van de app: premium, stickerpakketten, betaalde kanaalabonnementen, overboekingen tussen gebruikers en alles boven de gratis daglimiet — AI-verzoeken, uploads, doorgeschakelde gesprekken, automatisch vertalen. Registratie geeft 🪙 50. Het is geen geld en geen cryptovaluta en het is niet inwisselbaar voor geld."
     },
     {
       "q": "Welke platforms worden ondersteund?",
@@ -148,7 +148,7 @@
   "tok_protect": "Beveiliging",
   "tok_protect_v": "munten verplaatsen vereist het accountwachtwoord",
   "tok_translate": "Automatisch vertalen",
-  "tok_translate_v": "200 per dag, daarna 🪙 1",
+  "tok_translate_v": "200 per dag, daarna 🪙 1 / 10",
   "prem_f8": "Automatisch vertalen: 1000 per dag in plaats van 200",
   "rm_done": "werkt",
   "rm_wip": "in uitvoering",
@@ -159,5 +159,7 @@
   "f8_title": "Spellen",
   "f8_desc": "Bordspellen direct in de chat — tegen een vriend of tegen de computer op drie niveaus, en sommige met drie of vier spelers. Zonder gokken: munten zijn hier alleen voor het uiterlijk.",
   "prem_f10": "2 gratis kanaalboosts",
-  "prem_f11": "Geen advertenties in kanalen"
+  "prem_f11": "Geen advertenties in kanalen",
+  "tok_price": "Prijs",
+  "tok_price_v": "100 🪙 = $1"
 }

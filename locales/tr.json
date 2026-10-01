@@ -30,7 +30,7 @@
   "tok_free": "Günlük ücretsiz hak",
   "tok_free_v": "YZ 15 · 200 MB · 10 arama",
   "tok_over": "Hakkın üzerinde",
-  "tok_over_v": "3 · 1 / MB · 2 coin",
+  "tok_over_v": "1 · 1 / 10 MB · 1 🪙",
   "tok_register": "Kayıt bonusu",
   "prem_label": "Premium",
   "prem_title": "<span>Premium</span>'u Aç",
@@ -44,7 +44,7 @@
   "prem_f4": "Relay üzerinden arama: günde 10 yerine 50",
   "prem_f5": "Renkli takma ad ve avatar halkası",
   "prem_f6": "Daha güçlü yapay zekâ modeli",
-  "prem_f7": "5400 coin tasarruf — üç aydan fazlası bedava",
+  "prem_f7": "1080 coin tasarruf — üç aydan fazlası bedava",
   "rm_label": "Yol Haritası",
   "rm_title": "<span>Sırada</span> Ne Var",
   "rm_ph1": "Aşama 1 — tamamlandı",
@@ -80,7 +80,7 @@
     },
     {
       "q": "EION ücretsiz mi?",
-      "a": "Evet. Mesajlaşma uygulaması tamamen ücretsiz. Her gün ücretsiz bir hak tanınır: 15 yapay zekâ isteği, 200 MB yükleme, 10 aktarmalı arama ve 200 otomatik çeviri; bunun üstü jetonla ödenir. Premium hakkı genişletir ve dosya sınırını 20 MB’a çıkarır: ayda 🪙 1500 veya yılda 🪙 12600."
+      "a": "Evet. Mesajlaşma uygulaması tamamen ücretsiz. Her gün ücretsiz bir hak tanınır: 15 yapay zekâ isteği, 200 MB yükleme, 10 aktarmalı arama ve 200 otomatik çeviri; bunun üstü jetonla ödenir. Premium hakkı genişletir ve dosya sınırını 20 MB’a çıkarır: ayda 🪙 300 veya yılda 🪙 2520."
     },
     {
       "q": "Mesajlarım şifreli mi?",
@@ -88,7 +88,7 @@
     },
     {
       "q": "Jeton nedir?",
-      "a": "Uygulamanın iç para birimi: premium, çıkartma paketleri, ücretli kanal abonelikleri, kullanıcılar arası transferler ve günlük ücretsiz hakkın üstündeki her şey — yapay zekâ istekleri, yüklemeler, aktarmalı aramalar, otomatik çeviri. Kayıt olunca 🪙 200 verilir. Bunlar para da kripto para da değildir ve paraya çevrilmez."
+      "a": "Uygulamanın iç para birimi: premium, çıkartma paketleri, ücretli kanal abonelikleri, kullanıcılar arası transferler ve günlük ücretsiz hakkın üstündeki her şey — yapay zekâ istekleri, yüklemeler, aktarmalı aramalar, otomatik çeviri. Kayıt olunca 🪙 50 verilir. Bunlar para da kripto para da değildir ve paraya çevrilmez."
     },
     {
       "q": "Hangi platformlar destekleniyor?",
@@ -148,7 +148,7 @@
   "tok_protect": "Koruma",
   "tok_protect_v": "jeton taşımak hesap şifresi ister",
   "tok_translate": "Otomatik çeviri",
-  "tok_translate_v": "günde 200, sonra 🪙 1",
+  "tok_translate_v": "günde 200, sonra 🪙 1 / 10",
   "prem_f8": "Otomatik çeviri: 200 yerine günde 1000",
   "rm_done": "çalışıyor",
   "rm_wip": "devam ediyor",
@@ -159,5 +159,7 @@
   "f8_title": "Oyunlar",
   "f8_desc": "Sohbetin içinde masa oyunları — bir arkadaşa ya da üç seviyeli bilgisayara karşı; bazıları üç ya da dört kişilik. Bahis yok: buradaki jetonlar yalnızca görünüm için.",
   "prem_f10": "2 ücretsiz kanal takviyesi",
-  "prem_f11": "Kanallarda reklam yok"
+  "prem_f11": "Kanallarda reklam yok",
+  "tok_price": "Fiyat",
+  "tok_price_v": "100 🪙 = $1"
 }

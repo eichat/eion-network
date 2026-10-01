@@ -30,7 +30,7 @@
   "tok_free": "Bezpłatny limit dzienny",
   "tok_free_v": "AI 15 · 200 MB · 10 połączeń",
   "tok_over": "Powyżej limitu",
-  "tok_over_v": "3 · 1 / MB · 2 monety",
+  "tok_over_v": "1 · 1 / 10 MB · 1 🪙",
   "tok_register": "Bonus za rejestrację",
   "prem_label": "Premium",
   "prem_title": "Odblokuj <span>Premium</span>",
@@ -44,7 +44,7 @@
   "prem_f4": "Połączenia przez relay: 50 dziennie zamiast 10",
   "prem_f5": "Kolorowy nick i obwódka awatara",
   "prem_f6": "Mocniejszy model AI",
-  "prem_f7": "Oszczędność 5400 monet — ponad trzy miesiące gratis",
+  "prem_f7": "Oszczędność 1080 monet — ponad trzy miesiące gratis",
   "rm_label": "Plan działania",
   "rm_title": "Co <span>dalej</span>",
   "rm_ph1": "Etap 1 — ukończony",
@@ -80,7 +80,7 @@
     },
     {
       "q": "Czy EION jest darmowy?",
-      "a": "Tak. Komunikator jest w pełni bezpłatny. Codziennie obowiązuje bezpłatny limit: 15 zapytań do AI, 200 MB wysyłek, 10 połączeń przez przekaźnik i 200 automatycznych tłumaczeń; powyżej płacisz monetami. Premium poszerza limit i podnosi limit pliku do 20 MB: 🪙 1500 miesięcznie lub 🪙 12600 rocznie."
+      "a": "Tak. Komunikator jest w pełni bezpłatny. Codziennie obowiązuje bezpłatny limit: 15 zapytań do AI, 200 MB wysyłek, 10 połączeń przez przekaźnik i 200 automatycznych tłumaczeń; powyżej płacisz monetami. Premium poszerza limit i podnosi limit pliku do 20 MB: 🪙 300 miesięcznie lub 🪙 2520 rocznie."
     },
     {
       "q": "Czy moje wiadomości są szyfrowane?",
@@ -88,7 +88,7 @@
     },
     {
       "q": "Czym są monety EION?",
-      "a": "Wewnętrzna waluta aplikacji: premium, paczki naklejek, płatne subskrypcje kanałów, przelewy między użytkownikami i wszystko powyżej bezpłatnego limitu dziennego — zapytania do AI, wysyłki, połączenia przez przekaźnik, autotłumaczenie. Za rejestrację otrzymujesz 🪙 200. To nie są pieniądze ani kryptowaluta i nie wymienia się ich na pieniądze."
+      "a": "Wewnętrzna waluta aplikacji: premium, paczki naklejek, płatne subskrypcje kanałów, przelewy między użytkownikami i wszystko powyżej bezpłatnego limitu dziennego — zapytania do AI, wysyłki, połączenia przez przekaźnik, autotłumaczenie. Za rejestrację otrzymujesz 🪙 50. To nie są pieniądze ani kryptowaluta i nie wymienia się ich na pieniądze."
     },
     {
       "q": "Jakie platformy są wspierane?",
@@ -148,7 +148,7 @@
   "tok_protect": "Ochrona",
   "tok_protect_v": "przenoszenie monet wymaga hasła konta",
   "tok_translate": "Autotłumaczenie",
-  "tok_translate_v": "200 dziennie, potem 🪙 1",
+  "tok_translate_v": "200 dziennie, potem 🪙 1 / 10",
   "prem_f8": "Autotłumaczenie: 1000 dziennie zamiast 200",
   "rm_done": "działa",
   "rm_wip": "w toku",
@@ -159,5 +159,7 @@
   "f8_title": "Gry",
   "f8_desc": "Gry planszowe wprost w czacie — z przyjacielem albo z komputerem na trzech poziomach, a niektóre na trzech lub czterech graczy. Bez zakładów: monety służą tu tylko do wyglądu.",
   "prem_f10": "2 darmowe wzmocnienia kanałów",
-  "prem_f11": "Bez reklam w kanałach"
+  "prem_f11": "Bez reklam w kanałach",
+  "tok_price": "Cena",
+  "tok_price_v": "100 🪙 = $1"
 }

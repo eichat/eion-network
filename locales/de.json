@@ -30,7 +30,7 @@
   "tok_free": "Kostenloses Tageskontingent",
   "tok_free_v": "KI 15 · 200 MB · 10 Anrufe",
   "tok_over": "Über dem Kontingent",
-  "tok_over_v": "3 · 1 / MB · 2 Coins",
+  "tok_over_v": "1 · 1 / 10 MB · 1 🪙",
   "tok_register": "Registrierungsbonus",
   "prem_label": "Premium",
   "prem_title": "<span>Premium</span> freischalten",
@@ -44,7 +44,7 @@
   "prem_f4": "Anrufe über Relay: 50 pro Tag statt 10",
   "prem_f5": "Farbiger Nickname und Avatar-Ring",
   "prem_f6": "Stärkeres KI-Modell",
-  "prem_f7": "Spart 5400 Coins — über drei Monate gratis",
+  "prem_f7": "Spart 1080 Coins — über drei Monate gratis",
   "rm_label": "Roadmap",
   "rm_title": "Was kommt <span>als Nächstes</span>",
   "rm_ph1": "Phase 1 — abgeschlossen",
@@ -80,7 +80,7 @@
     },
     {
       "q": "Ist EION kostenlos?",
-      "a": "Ja. Der Messenger ist vollständig kostenlos. Täglich gibt es ein kostenloses Kontingent — 15 KI-Anfragen, 200 MB Uploads, 10 weitergeleitete Anrufe und 200 Auto-Übersetzungen; darüber hinaus zahlen Sie mit Coins. Premium erweitert das Kontingent und hebt das Dateilimit auf 20 MB: 🪙 1500 pro Monat oder 🪙 12600 pro Jahr."
+      "a": "Ja. Der Messenger ist vollständig kostenlos. Täglich gibt es ein kostenloses Kontingent — 15 KI-Anfragen, 200 MB Uploads, 10 weitergeleitete Anrufe und 200 Auto-Übersetzungen; darüber hinaus zahlen Sie mit Coins. Premium erweitert das Kontingent und hebt das Dateilimit auf 20 MB: 🪙 300 pro Monat oder 🪙 2520 pro Jahr."
     },
     {
       "q": "Sind meine Nachrichten verschlüsselt?",
@@ -88,7 +88,7 @@
     },
     {
       "q": "Was sind Coins?",
-      "a": "Eine interne Währung der App: Premium, Sticker-Pakete, kostenpflichtige Kanal-Abos, Überweisungen zwischen Nutzern und alles über dem kostenlosen Tageskontingent — KI-Anfragen, Uploads, weitergeleitete Anrufe, Auto-Übersetzung. Für die Registrierung gibt es 🪙 200. Sie sind kein Geld und keine Kryptowährung und lassen sich nicht in Geld tauschen."
+      "a": "Eine interne Währung der App: Premium, Sticker-Pakete, kostenpflichtige Kanal-Abos, Überweisungen zwischen Nutzern und alles über dem kostenlosen Tageskontingent — KI-Anfragen, Uploads, weitergeleitete Anrufe, Auto-Übersetzung. Für die Registrierung gibt es 🪙 50. Sie sind kein Geld und keine Kryptowährung und lassen sich nicht in Geld tauschen."
     },
     {
       "q": "Welche Plattformen werden unterstützt?",
@@ -148,7 +148,7 @@
   "tok_protect": "Schutz",
   "tok_protect_v": "Coins bewegen verlangt das Konto-Passwort",
   "tok_translate": "Auto-Übersetzung",
-  "tok_translate_v": "200 pro Tag, danach 🪙 1",
+  "tok_translate_v": "200 pro Tag, danach 🪙 1 / 10",
   "prem_f8": "Auto-Übersetzung: 1000 pro Tag statt 200",
   "rm_done": "funktioniert",
   "rm_wip": "in Arbeit",
@@ -159,5 +159,7 @@
   "f8_title": "Spiele",
   "f8_desc": "Brettspiele direkt im Chat – gegen Freunde oder den Computer in drei Stufen, einige auch zu drei oder vier. Ohne Wetten: Münzen sind hier nur fürs Aussehen.",
   "prem_f10": "2 kostenlose Kanal-Boosts",
-  "prem_f11": "Keine Werbung in Kanälen"
+  "prem_f11": "Keine Werbung in Kanälen",
+  "tok_price": "Preis",
+  "tok_price_v": "100 🪙 = $1"
 }
