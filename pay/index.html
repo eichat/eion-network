@@ -79,8 +79,10 @@ p{color:var(--text2)}
       Paddle.Initialize({
         token: c.clientToken,
         eventCallback: function (e) {
-          if (e && e.name === 'checkout.completed') { done = true; show('done', 'doneT', 'ok'); }
-          if (e && e.name === 'checkout.closed' && !done) show('closed', 'closedT', 'warn');
+          // document.title з префіксом «eion:» читає застосунок, коли сторінка
+          // відкрита в його вбудованому вікні (Linux); у браузері це нешкідливо.
+          if (e && e.name === 'checkout.completed') { done = true; show('done', 'doneT', 'ok'); document.title = 'eion:paid:' + Date.now(); }
+          if (e && e.name === 'checkout.closed' && !done) { show('closed', 'closedT', 'warn'); document.title = 'eion:closed:' + Date.now(); }
         }
       });
     };
