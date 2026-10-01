@@ -30,7 +30,7 @@
   "tok_free": "Quota quotidien gratuit",
   "tok_free_v": "IA 15 · 200 Mo · 10 appels",
   "tok_over": "Au-delà du quota",
-  "tok_over_v": "3 · 1 / Mo · 2 pièces",
+  "tok_over_v": "1 · 1 / 10 Mo · 1 🪙",
   "tok_register": "Bonus d’inscription",
   "prem_label": "Premium",
   "prem_title": "Débloquer <span>Premium</span>",
@@ -44,7 +44,7 @@
   "prem_f4": "Appels via relais : 50 par jour au lieu de 10",
   "prem_f5": "Pseudo en couleur et anneau d'avatar",
   "prem_f6": "Un modèle d'IA plus puissant",
-  "prem_f7": "Économise 5400 pièces — plus de trois mois offerts",
+  "prem_f7": "Économise 1080 pièces — plus de trois mois offerts",
   "rm_label": "Feuille de route",
   "rm_title": "Ce qui vient <span>ensuite</span>",
   "rm_ph1": "Phase 1 — terminée",
@@ -80,7 +80,7 @@
     },
     {
       "q": "EION est-il gratuit ?",
-      "a": "Oui. La messagerie est entièrement gratuite. Chaque jour, un quota gratuit s’applique : 15 requêtes IA, 200 Mo d’envois, 10 appels relayés et 200 traductions automatiques ; au-delà, vous payez en pièces. Premium élargit le quota et porte la limite de fichier à 20 Mo : 🪙 1500 par mois ou 🪙 12600 par an."
+      "a": "Oui. La messagerie est entièrement gratuite. Chaque jour, un quota gratuit s’applique : 15 requêtes IA, 200 Mo d’envois, 10 appels relayés et 200 traductions automatiques ; au-delà, vous payez en pièces. Premium élargit le quota et porte la limite de fichier à 20 Mo : 🪙 300 par mois ou 🪙 2520 par an."
     },
     {
       "q": "Mes messages sont-ils chiffrés ?",
@@ -88,7 +88,7 @@
     },
     {
       "q": "Que sont les pièces EION ?",
-      "a": "Une monnaie interne de l’application : premium, packs d’autocollants, abonnements payants aux canaux, transferts entre utilisateurs et tout ce qui dépasse le quota gratuit quotidien — requêtes IA, envois, appels relayés, traduction automatique. L’inscription donne 🪙 200. Ce n’est ni de l’argent ni une cryptomonnaie, et cela ne s’échange pas contre de l’argent."
+      "a": "Une monnaie interne de l’application : premium, packs d’autocollants, abonnements payants aux canaux, transferts entre utilisateurs et tout ce qui dépasse le quota gratuit quotidien — requêtes IA, envois, appels relayés, traduction automatique. L’inscription donne 🪙 50. Ce n’est ni de l’argent ni une cryptomonnaie, et cela ne s’échange pas contre de l’argent."
     },
     {
       "q": "Quelles plateformes sont prises en charge ?",
@@ -148,7 +148,7 @@
   "tok_protect": "Protection",
   "tok_protect_v": "déplacer des pièces exige le mot de passe du compte",
   "tok_translate": "Traduction auto",
-  "tok_translate_v": "200 par jour, puis 🪙 1",
+  "tok_translate_v": "200 par jour, puis 🪙 1 / 10",
   "prem_f8": "Traduction auto : 1000 par jour au lieu de 200",
   "rm_done": "fonctionne",
   "rm_wip": "en cours",
@@ -159,5 +159,7 @@
   "f8_title": "Jeux",
   "f8_desc": "Des jeux de plateau directement dans la discussion — contre un ami ou l'ordinateur sur trois niveaux, et certains à trois ou quatre joueurs. Sans paris : ici les pièces ne servent qu'à l'apparence.",
   "prem_f10": "2 boosts de chaîne gratuits",
-  "prem_f11": "Pas de publicité dans les chaînes"
+  "prem_f11": "Pas de publicité dans les chaînes",
+  "tok_price": "Prix",
+  "tok_price_v": "100 🪙 = $1"
 }

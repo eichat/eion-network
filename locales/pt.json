@@ -30,7 +30,7 @@
   "tok_free": "Quota diária gratuita",
   "tok_free_v": "IA 15 · 200 MB · 10 chamadas",
   "tok_over": "Acima da quota",
-  "tok_over_v": "3 · 1 / MB · 2 moedas",
+  "tok_over_v": "1 · 1 / 10 MB · 1 🪙",
   "tok_register": "Bônus de registro",
   "prem_label": "Premium",
   "prem_title": "Desbloquear <span>Premium</span>",
@@ -44,7 +44,7 @@
   "prem_f4": "Chamadas por relay: 50 por dia em vez de 10",
   "prem_f5": "Nome colorido e anel do avatar",
   "prem_f6": "Um modelo de IA mais potente",
-  "prem_f7": "Poupa 5400 moedas — mais de três meses grátis",
+  "prem_f7": "Poupa 1080 moedas — mais de três meses grátis",
   "rm_label": "Roteiro",
   "rm_title": "O que vem <span>a seguir</span>",
   "rm_ph1": "Fase 1 — concluída",
@@ -80,7 +80,7 @@
     },
     {
       "q": "O EION é gratuito?",
-      "a": "Sim. O mensageiro é totalmente gratuito. Todos os dias há uma quota gratuita: 15 pedidos de IA, 200 MB de envios, 10 chamadas por relé e 200 traduções automáticas; acima dela paga com moedas. O premium amplia a quota e sobe o limite de ficheiro para 20 MB: 🪙 1500 por mês ou 🪙 12600 por ano."
+      "a": "Sim. O mensageiro é totalmente gratuito. Todos os dias há uma quota gratuita: 15 pedidos de IA, 200 MB de envios, 10 chamadas por relé e 200 traduções automáticas; acima dela paga com moedas. O premium amplia a quota e sobe o limite de ficheiro para 20 MB: 🪙 300 por mês ou 🪙 2520 por ano."
     },
     {
       "q": "Minhas mensagens são criptografadas?",
@@ -88,7 +88,7 @@
     },
     {
       "q": "O que são as moedas EION?",
-      "a": "Uma moeda interna da aplicação: premium, pacotes de autocolantes, subscrições pagas de canais, transferências entre utilizadores e tudo acima da quota diária gratuita — pedidos de IA, envios, chamadas por relé, tradução automática. O registo concede 🪙 200. Não são dinheiro nem criptomoeda e não se trocam por dinheiro."
+      "a": "Uma moeda interna da aplicação: premium, pacotes de autocolantes, subscrições pagas de canais, transferências entre utilizadores e tudo acima da quota diária gratuita — pedidos de IA, envios, chamadas por relé, tradução automática. O registo concede 🪙 50. Não são dinheiro nem criptomoeda e não se trocam por dinheiro."
     },
     {
       "q": "Quais plataformas são suportadas?",
@@ -148,7 +148,7 @@
   "tok_protect": "Proteção",
   "tok_protect_v": "mover moedas exige a senha da conta",
   "tok_translate": "Tradução automática",
-  "tok_translate_v": "200 por dia, depois 🪙 1",
+  "tok_translate_v": "200 por dia, depois 🪙 1 / 10",
   "prem_f8": "Tradução automática: 1000 por dia em vez de 200",
   "rm_done": "já funciona",
   "rm_wip": "em andamento",
@@ -159,5 +159,7 @@
   "f8_title": "Jogos",
   "f8_desc": "Jogos de tabuleiro dentro do próprio chat — contra um amigo ou contra o computador em três níveis, e alguns para três ou quatro jogadores. Sem apostas: aqui as moedas são só para a aparência.",
   "prem_f10": "2 impulsos de canal grátis",
-  "prem_f11": "Sem anúncios nos canais"
+  "prem_f11": "Sem anúncios nos canais",
+  "tok_price": "Preço",
+  "tok_price_v": "100 🪙 = $1"
 }

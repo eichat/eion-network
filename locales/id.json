@@ -30,7 +30,7 @@
   "tok_free": "Jatah gratis harian",
   "tok_free_v": "AI 15 · 200 MB · 10 panggilan",
   "tok_over": "Di atas jatah",
-  "tok_over_v": "3 · 1 / MB · 2 koin",
+  "tok_over_v": "1 · 1 / 10 MB · 1 🪙",
   "tok_register": "Bonus pendaftaran",
   "prem_label": "Premium",
   "prem_title": "Buka <span>Premium</span>",
@@ -44,7 +44,7 @@
   "prem_f4": "Panggilan lewat relay: 50 per hari, bukan 10",
   "prem_f5": "Nama berwarna dan cincin avatar",
   "prem_f6": "Model AI yang lebih kuat",
-  "prem_f7": "Hemat 5400 koin — lebih dari tiga bulan gratis",
+  "prem_f7": "Hemat 1080 koin — lebih dari tiga bulan gratis",
   "rm_label": "Peta Jalan",
   "rm_title": "Apa <span>selanjutnya</span>",
   "rm_ph1": "Fase 1 — selesai",
@@ -80,7 +80,7 @@
     },
     {
       "q": "Apakah EION gratis?",
-      "a": "Ya. Aplikasi pesan ini sepenuhnya gratis. Setiap hari ada jatah gratis: 15 permintaan AI, 200 MB unggahan, 10 panggilan lewat relay, dan 200 terjemahan otomatis; di atas itu Anda membayar dengan koin. Premium memperluas jatah dan menaikkan batas berkas ke 20 MB: 🪙 1500 per bulan atau 🪙 12600 per tahun."
+      "a": "Ya. Aplikasi pesan ini sepenuhnya gratis. Setiap hari ada jatah gratis: 15 permintaan AI, 200 MB unggahan, 10 panggilan lewat relay, dan 200 terjemahan otomatis; di atas itu Anda membayar dengan koin. Premium memperluas jatah dan menaikkan batas berkas ke 20 MB: 🪙 300 per bulan atau 🪙 2520 per tahun."
     },
     {
       "q": "Apakah pesan saya terenkripsi?",
@@ -88,7 +88,7 @@
     },
     {
       "q": "Apa itu koin EION?",
-      "a": "Mata uang internal aplikasi: premium, paket stiker, langganan kanal berbayar, transfer antar pengguna, dan segala sesuatu di atas jatah gratis harian — permintaan AI, unggahan, panggilan lewat relay, terjemahan otomatis. Pendaftaran memberi 🪙 200. Ini bukan uang dan bukan mata uang kripto, serta tidak dapat ditukar dengan uang."
+      "a": "Mata uang internal aplikasi: premium, paket stiker, langganan kanal berbayar, transfer antar pengguna, dan segala sesuatu di atas jatah gratis harian — permintaan AI, unggahan, panggilan lewat relay, terjemahan otomatis. Pendaftaran memberi 🪙 50. Ini bukan uang dan bukan mata uang kripto, serta tidak dapat ditukar dengan uang."
     },
     {
       "q": "Platform apa saja yang didukung?",
@@ -148,7 +148,7 @@
   "tok_protect": "Perlindungan",
   "tok_protect_v": "memindahkan koin butuh kata sandi akun",
   "tok_translate": "Terjemahan otomatis",
-  "tok_translate_v": "200 per hari, lalu 🪙 1",
+  "tok_translate_v": "200 per hari, lalu 🪙 1 / 10",
   "prem_f8": "Terjemahan otomatis: 1000 per hari, bukan 200",
   "rm_done": "sudah jalan",
   "rm_wip": "sedang dikerjakan",
@@ -159,5 +159,7 @@
   "f8_title": "Permainan",
   "f8_desc": "Permainan papan langsung di dalam chat — melawan teman atau komputer dengan tiga tingkat, dan beberapa untuk tiga atau empat pemain. Tanpa taruhan: koin di sini hanya untuk tampilan.",
   "prem_f10": "2 boost kanal gratis",
-  "prem_f11": "Tanpa iklan di kanal"
+  "prem_f11": "Tanpa iklan di kanal",
+  "tok_price": "Harga",
+  "tok_price_v": "100 🪙 = $1"
 }

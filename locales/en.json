@@ -30,7 +30,7 @@
   "tok_free": "Free daily allowance",
   "tok_free_v": "AI 15 · 200 MB · 10 calls",
   "tok_over": "Beyond the allowance",
-  "tok_over_v": "3 · 1 / MB · 2 coins",
+  "tok_over_v": "1 · 1 / 10 MB · 1 🪙",
   "tok_register": "Registration bonus",
   "prem_label": "Premium",
   "prem_title": "Unlock <span>Premium</span>",
@@ -44,7 +44,7 @@
   "prem_f4": "Relayed calls: 50 a day instead of 10",
   "prem_f5": "Coloured nickname and avatar ring",
   "prem_f6": "A stronger AI model",
-  "prem_f7": "Saves 5400 coins — over three months free",
+  "prem_f7": "Saves 1080 coins — over three months free",
   "rm_label": "Roadmap",
   "rm_title": "What's <span>next</span>",
   "rm_ph1": "Phase 1 — done",
@@ -80,7 +80,7 @@
     },
     {
       "q": "Is EION free?",
-      "a": "Yes. The full messenger is free. Every day you get a free allowance — 15 AI requests, 200 MB of uploads, 10 relayed calls and 200 auto-translations; beyond it you pay in coins. Premium widens the allowance and raises the file limit to 20 MB: 🪙 1500 a month or 🪙 12600 a year."
+      "a": "Yes. The full messenger is free. Every day you get a free allowance — 15 AI requests, 200 MB of uploads, 10 relayed calls and 200 auto-translations; beyond it you pay in coins. Premium widens the allowance and raises the file limit to 20 MB: 🪙 300 a month or 🪙 2520 a year."
     },
     {
       "q": "Are my messages encrypted?",
@@ -88,7 +88,7 @@
     },
     {
       "q": "What are coins?",
-      "a": "An internal currency of the app: premium, sticker packs, paid channel subscriptions, transfers between users, and everything beyond the free daily allowance — AI requests, uploads, relayed calls, auto-translation. Registration grants 🪙 200. They are not money and not cryptocurrency, and cannot be exchanged for money."
+      "a": "An internal currency of the app: premium, sticker packs, paid channel subscriptions, transfers between users, and everything beyond the free daily allowance — AI requests, uploads, relayed calls, auto-translation. Registration grants 🪙 50. They are not money and not cryptocurrency, and cannot be exchanged for money."
     },
     {
       "q": "Which platforms are supported?",
@@ -148,7 +148,7 @@
   "tok_protect": "Protection",
   "tok_protect_v": "moving coins requires the account password",
   "tok_translate": "Auto-translate",
-  "tok_translate_v": "200 a day, then 🪙 1",
+  "tok_translate_v": "200 a day, then 🪙 1 / 10",
   "prem_f8": "Auto-translate: 1000 a day instead of 200",
   "rm_done": "works now",
   "rm_wip": "in progress",
@@ -159,5 +159,7 @@
   "f8_title": "Games",
   "f8_desc": "Board games right inside the chat — against a friend or the computer on three levels, and some seat three or four players. No betting: coins here are only for looks.",
   "prem_f10": "2 free channel boosts",
-  "prem_f11": "No ads in channels"
+  "prem_f11": "No ads in channels",
+  "tok_price": "Price",
+  "tok_price_v": "100 🪙 = $1"
 }

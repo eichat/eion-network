@@ -30,7 +30,7 @@
   "tok_free": "Cuota diaria gratuita",
   "tok_free_v": "IA 15 · 200 MB · 10 llamadas",
   "tok_over": "Por encima de la cuota",
-  "tok_over_v": "3 · 1 / MB · 2 monedas",
+  "tok_over_v": "1 · 1 / 10 MB · 1 🪙",
   "tok_register": "Bono de registro",
   "prem_label": "Premium",
   "prem_title": "Desbloquear <span>Premium</span>",
@@ -44,7 +44,7 @@
   "prem_f4": "Llamadas por relay: 50 al día en vez de 10",
   "prem_f5": "Apodo en color y anillo de avatar",
   "prem_f6": "Un modelo de IA más potente",
-  "prem_f7": "Ahorra 5400 monedas — más de tres meses gratis",
+  "prem_f7": "Ahorra 1080 monedas — más de tres meses gratis",
   "rm_label": "Hoja de ruta",
   "rm_title": "¿Qué viene <span>después</span>?",
   "rm_ph1": "Fase 1 — completada",
@@ -80,7 +80,7 @@
     },
     {
       "q": "¿EION es gratis?",
-      "a": "Sí. El mensajero es totalmente gratuito. Cada día hay una cuota gratuita: 15 consultas de IA, 200 MB de subidas, 10 llamadas por relé y 200 traducciones automáticas; por encima de ella pagas con monedas. Premium amplía la cuota y sube el límite de archivo a 20 MB: 🪙 1500 al mes o 🪙 12600 al año."
+      "a": "Sí. El mensajero es totalmente gratuito. Cada día hay una cuota gratuita: 15 consultas de IA, 200 MB de subidas, 10 llamadas por relé y 200 traducciones automáticas; por encima de ella pagas con monedas. Premium amplía la cuota y sube el límite de archivo a 20 MB: 🪙 300 al mes o 🪙 2520 al año."
     },
     {
       "q": "¿Están cifrados mis mensajes?",
@@ -88,7 +88,7 @@
     },
     {
       "q": "¿Qué son las monedas EION?",
-      "a": "Una moneda interna de la aplicación: premium, packs de stickers, suscripciones de pago a canales, transferencias entre usuarios y todo lo que supere la cuota diaria gratuita: consultas de IA, subidas, llamadas por relé, traducción automática. Por registrarte recibes 🪙 200. No son dinero ni criptomoneda y no se cambian por dinero."
+      "a": "Una moneda interna de la aplicación: premium, packs de stickers, suscripciones de pago a canales, transferencias entre usuarios y todo lo que supere la cuota diaria gratuita: consultas de IA, subidas, llamadas por relé, traducción automática. Por registrarte recibes 🪙 50. No son dinero ni criptomoneda y no se cambian por dinero."
     },
     {
       "q": "¿Qué plataformas son compatibles?",
@@ -148,7 +148,7 @@
   "tok_protect": "Protección",
   "tok_protect_v": "mover monedas exige la contraseña de la cuenta",
   "tok_translate": "Traducción automática",
-  "tok_translate_v": "200 al día, luego 🪙 1",
+  "tok_translate_v": "200 al día, luego 🪙 1 / 10",
   "prem_f8": "Traducción automática: 1000 al día en lugar de 200",
   "rm_done": "ya funciona",
   "rm_wip": "en curso",
@@ -159,5 +159,7 @@
   "f8_title": "Juegos",
   "f8_desc": "Juegos de mesa dentro del propio chat: contra un amigo o contra el ordenador en tres niveles, y algunos para tres o cuatro jugadores. Sin apuestas: aquí las monedas solo cambian el aspecto.",
   "prem_f10": "2 impulsos de canal gratis",
-  "prem_f11": "Sin anuncios en los canales"
+  "prem_f11": "Sin anuncios en los canales",
+  "tok_price": "Precio",
+  "tok_price_v": "100 🪙 = $1"
 }

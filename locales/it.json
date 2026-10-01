@@ -30,7 +30,7 @@
   "tok_free": "Quota giornaliera gratuita",
   "tok_free_v": "IA 15 · 200 MB · 10 chiamate",
   "tok_over": "Oltre la quota",
-  "tok_over_v": "3 · 1 / MB · 2 monete",
+  "tok_over_v": "1 · 1 / 10 MB · 1 🪙",
   "tok_register": "Bonus di registrazione",
   "prem_label": "Premium",
   "prem_title": "Sblocca <span>Premium</span>",
@@ -44,7 +44,7 @@
   "prem_f4": "Chiamate tramite relay: 50 al giorno invece di 10",
   "prem_f5": "Nickname colorato e anello dell'avatar",
   "prem_f6": "Un modello IA più potente",
-  "prem_f7": "Risparmi 5400 monete — oltre tre mesi gratis",
+  "prem_f7": "Risparmi 1080 monete — oltre tre mesi gratis",
   "rm_label": "Roadmap",
   "rm_title": "Cosa viene <span>dopo</span>",
   "rm_ph1": "Fase 1 — completata",
@@ -80,7 +80,7 @@
     },
     {
       "q": "EION è gratuito?",
-      "a": "Sì. Il messenger è completamente gratuito. Ogni giorno c’è una quota gratuita: 15 richieste IA, 200 MB di caricamenti, 10 chiamate via relay e 200 traduzioni automatiche; oltre questa paghi in monete. Premium amplia la quota e alza il limite dei file a 20 MB: 🪙 1500 al mese o 🪙 12600 all’anno."
+      "a": "Sì. Il messenger è completamente gratuito. Ogni giorno c’è una quota gratuita: 15 richieste IA, 200 MB di caricamenti, 10 chiamate via relay e 200 traduzioni automatiche; oltre questa paghi in monete. Premium amplia la quota e alza il limite dei file a 20 MB: 🪙 300 al mese o 🪙 2520 all’anno."
     },
     {
       "q": "I miei messaggi sono cifrati?",
@@ -88,7 +88,7 @@
     },
     {
       "q": "Che cosa sono le monete EION?",
-      "a": "Una valuta interna dell’app: premium, pacchetti di adesivi, abbonamenti a pagamento ai canali, trasferimenti tra utenti e tutto ciò che supera la quota giornaliera gratuita — richieste IA, caricamenti, chiamate via relay, traduzione automatica. La registrazione dà 🪙 200. Non sono denaro né criptovaluta e non si cambiano in denaro."
+      "a": "Una valuta interna dell’app: premium, pacchetti di adesivi, abbonamenti a pagamento ai canali, trasferimenti tra utenti e tutto ciò che supera la quota giornaliera gratuita — richieste IA, caricamenti, chiamate via relay, traduzione automatica. La registrazione dà 🪙 50. Non sono denaro né criptovaluta e non si cambiano in denaro."
     },
     {
       "q": "Quali piattaforme sono supportate?",
@@ -148,7 +148,7 @@
   "tok_protect": "Protezione",
   "tok_protect_v": "spostare monete richiede la password dell’account",
   "tok_translate": "Traduzione automatica",
-  "tok_translate_v": "200 al giorno, poi 🪙 1",
+  "tok_translate_v": "200 al giorno, poi 🪙 1 / 10",
   "prem_f8": "Traduzione automatica: 1000 al giorno invece di 200",
   "rm_done": "funziona",
   "rm_wip": "in corso",
@@ -159,5 +159,7 @@
   "f8_title": "Giochi",
   "f8_desc": "Giochi da tavolo dentro la chat: contro un amico o contro il computer su tre livelli, e alcuni anche in tre o quattro. Senza scommesse: qui le monete servono solo per l’aspetto.",
   "prem_f10": "2 potenziamenti di canale gratuiti",
-  "prem_f11": "Nessuna pubblicità nei canali"
+  "prem_f11": "Nessuna pubblicità nei canali",
+  "tok_price": "Prezzo",
+  "tok_price_v": "100 🪙 = $1"
 }
