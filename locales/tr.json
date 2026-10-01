@@ -114,7 +114,6 @@
   "tok_use4v": "kullanıcılar arası, %1 komisyon",
   "tok_plan": "Plan",
   "tok_plan_text": "EION token’ı gelecek için bir plan — uygulamada şu an ne cüzdan ne de token’a çevirme var. Sıradaki plan: kazanılan jetonları paraya çevirmek. Hazır olduğunda ayrıntıları duyuracağız.",
-  "tok_burn_text": "Platforma yapılan her ödemenin bir kısmı kalıcı olarak yakılır — aramalar ve yüklemelerde %30, yapay zekâ asistanı ve çıkartma paketlerinde %40, premiumda %50. Yakılan coinler dolaşımdan çıkar ve hiçbir hesaba geçmez.",
   "tok_disclaimer": "Bugün jetonlar hizmetin dâhilî hesap birimidir. Para, menkul kıymet veya kripto para değildir, paraya çevrilemez ve bu sayfa bir yatırım teklifi değildir.",
   "tok_live_title": "Coinler şu anda",
   "tok_live_minted": "Fonlardan verildi",
