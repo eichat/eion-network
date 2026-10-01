@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EION — Повернення коштів / Refund Policy</title>
+<style>
+:root{--neon:#00d4ff;--bg:#020c14;--bg2:#0a1628;--text:#e8f4f8;--text2:#7ab8cc;--line:rgba(0,212,255,.16);--card:rgba(10,22,40,.5)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Syne',system-ui,-apple-system,sans-serif;line-height:1.72;font-size:16px}
+.glow{position:fixed;top:-40vh;left:50%;transform:translateX(-50%);width:120vw;height:80vh;pointer-events:none;z-index:0;
+  background:radial-gradient(ellipse at center,rgba(0,212,255,.08),transparent 62%)}
+.wrap{position:relative;z-index:1;max-width:780px;margin:0 auto;padding:0 22px 90px}
+nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0;gap:14px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:11px;font-family:'Orbitron',monospace;font-weight:900;font-size:20px;
+  letter-spacing:.14em;color:var(--text);text-decoration:none}
+.brand img{width:30px;height:30px;border-radius:7px}
+.brand:hover{color:var(--neon)}
+.lang{display:flex;gap:8px}
+.lang button{font:inherit;font-size:13px;padding:7px 15px;border:1px solid var(--line);background:var(--card);
+  color:var(--text2);border-radius:9px;cursor:pointer;transition:.2s}
+.lang button:hover{color:var(--neon);border-color:var(--neon)}
+.lang button[aria-pressed="true"]{background:var(--neon);border-color:var(--neon);color:#02121c;font-weight:600}
+h1{font-family:'Orbitron',monospace;font-size:clamp(24px,4.6vw,34px);font-weight:700;letter-spacing:.04em;
+  margin:26px 0 6px;line-height:1.25}
+h2{font-family:'Orbitron',monospace;font-size:clamp(15px,2.4vw,18px);font-weight:700;letter-spacing:.05em;
+  margin:40px 0 12px;color:var(--neon)}
+h3{font-size:16px;font-weight:600;margin:26px 0 7px;color:var(--text)}
+p,li{color:var(--text2)}
+p{margin-bottom:12px}
+ul,ol{padding-left:22px;margin-bottom:12px}
+li{margin:5px 0}
+b,strong{color:var(--text);font-weight:600}
+.meta{color:var(--text2);font-size:14px;opacity:.75;margin-bottom:30px}
+.box{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--neon);
+  border-radius:12px;padding:18px 22px;margin:22px 0}
+.box p:last-child{margin-bottom:0}
+a{color:var(--neon);text-decoration:none;border-bottom:1px solid rgba(0,212,255,.3)}
+a:hover{border-bottom-color:var(--neon)}
+table{border-collapse:collapse;width:100%;margin:18px 0;font-size:14.5px;display:block;overflow-x:auto;white-space:nowrap}
+th,td{border:1px solid var(--line);padding:10px 13px;text-align:left;vertical-align:top;white-space:normal}
+th{background:var(--card);color:var(--text);font-weight:600;font-size:13px;letter-spacing:.03em}
+footer{border-top:1px solid var(--line);margin-top:52px;padding-top:24px;color:var(--text2);font-size:14px;text-align:center}
+footer a{margin:0 9px;border-bottom:none;color:var(--text2)}
+footer a:hover{color:var(--neon)}
+[hidden]{display:none!important}
+@media(max-width:600px){body{font-size:15px}.wrap{padding-bottom:60px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="glow"></div>
+<nav><a class="brand" href="/"><img src="/EION-256.png" alt="">EION</a>
+  <div class="lang">
+  <button id="b-uk" aria-pressed="true" onclick="setLang('uk')">Українська</button>
+  <button id="b-en" aria-pressed="false" onclick="setLang('en')">English</button>
+</div>
+</nav>
+
+<section id="uk">
+<h1>Повернення коштів</h1>
+<p class="meta">Чинна з 1 жовтня 2026 року. Застосунок: EION. Розробник: ФОП, support@eion.network</p>
+
+<h2>1. Хто продає</h2>
+<p>На Linux і Windows покупки в EION оформлює <b>Paddle.com Market Ltd</b> — продавець запису (Merchant of Record): він приймає оплату, видає квитанцію й сплачує податки. На Android покупки йдуть через <b>Google Play</b>, на iPhone — через <b>App Store</b>. Повернення оформлюються через того, хто прийняв оплату; ми допомагаємо з будь-яким способом.</p>
+
+<h2>2. Монети</h2>
+<ul>
+  <li>Ви можете попросити <b>повне повернення протягом 14 днів</b> від покупки, якщо монети з цієї покупки ще не витрачені.</li>
+  <li>Якщо частину вже витрачено, повертаємо суму за невитрачену частину.</li>
+  <li>Після повернення куплені монети <b>знімаються з балансу</b> автоматично.</li>
+  <li>Повернення стосується лише сум, які ви сплатили. Бонусні й зароблені монети на гроші не обмінюються.</li>
+</ul>
+
+<h2>3. Підписка Premium</h2>
+<ul>
+  <li>Скасувати підписку можна будь-коли: <b>Гаманець → Premium → «Керувати підпискою»</b>. Premium діє до кінця вже оплаченого періоду, наступного списання не буде.</li>
+  <li>За <b>перший платіж</b> підписки можна попросити повернення протягом 14 днів. За неповні періоди пропорційно не повертаємо, крім випадків, передбачених законом.</li>
+  <li>Після повернення Premium вимикається.</li>
+</ul>
+
+<h2>4. Покупки в Google Play і App Store</h2>
+<p>Повернення за покупки на Android і iPhone відбуваються за правилами магазину: у Google Play — через сторінку замовлення в Google Play, у App Store — через reportaproblem.apple.com. Ми теж можемо допомогти: напишіть нам. Повернені магазином покупки автоматично знімаються з балансу.</p>
+
+<h2>5. Як попросити повернення</h2>
+<p>Напишіть на <a href="mailto:support@eion.network">support@eion.network</a> і вкажіть ваш нік у EION та номер замовлення з листа-квитанції (або дату й суму). Відповідаємо протягом 3 робочих днів. Повернення за покупки на Linux і Windows можна також оформити за посиланням у квитанції Paddle.</p>
+
+<h2>6. Помилкові списання</h2>
+<p>Якщо оплату списано двічі або помилково, повертаємо її повністю.</p>
+
+<h2>7. Оскарження в банку (chargeback)</h2>
+<p>Якщо оплату оскаржено через банк, куплені монети знімаються з балансу, а Premium вимикається й підписка скасовується. Повторювані зловживання можуть призвести до обмеження акаунта. Будь ласка, спершу напишіть нам — так повернення швидше.</p>
+
+<h2>8. Ваші права</h2>
+<p>Ця політика не обмежує прав, які дає вам закон про захист прав споживачів у вашій країні. Якщо ви в ЄС чи Великій Британії: щодо цифрового вмісту право на відмову від договору припиняється, коли монети чи Premium надано з вашої згоди, — але це не обмежує повернень, описаних вище.</p>
+
+<p><a href="/terms">Умови використання</a> · <a href="/privacy">Політика конфіденційності</a></p>
+</section>
+
+<section id="en" hidden>
+<h1>Refund Policy</h1>
+<p class="meta">Effective 1 October 2026. App: EION. Developer: individual entrepreneur (FOP), support@eion.network</p>
+
+<h2>1. Who sells</h2>
+<p>On Linux and Windows, purchases in EION are handled by <b>Paddle.com Market Ltd</b>, the Merchant of Record: it takes the payment, issues the receipt and handles taxes. On Android purchases go through <b>Google Play</b>, on iPhone through the <b>App Store</b>. Refunds are processed by whoever took the payment; we can help in every case.</p>
+
+<h2>2. Coins</h2>
+<ul>
+  <li>You can request a <b>full refund within 14 days</b> of purchase if the coins from that purchase have not been spent.</li>
+  <li>If part of them has been spent, we refund the unspent part.</li>
+  <li>After a refund, the purchased coins are <b>removed from your balance</b> automatically.</li>
+  <li>Refunds cover only the amounts you paid. Bonus and earned coins cannot be exchanged for money.</li>
+</ul>
+
+<h2>3. Premium subscription</h2>
+<ul>
+  <li>You can cancel at any time: <b>Wallet → Premium → Manage subscription</b>. Premium stays active until the end of the paid period, and you won't be charged again.</li>
+  <li>You can request a refund of the <b>first payment</b> of a subscription within 14 days. Partial periods are not refunded pro rata, except where the law requires it.</li>
+  <li>After a refund, Premium is turned off.</li>
+</ul>
+
+<h2>4. Google Play and App Store purchases</h2>
+<p>Refunds for purchases on Android and iPhone follow the store's rules: in Google Play, from the order page in Google Play; in the App Store, at reportaproblem.apple.com. We can help too — just write to us. Purchases refunded by a store are removed from your balance automatically.</p>
+
+<h2>5. How to request a refund</h2>
+<p>Email <a href="mailto:support@eion.network">support@eion.network</a> with your EION nickname and the order number from your receipt email (or the date and amount). We reply within 3 business days. Refunds for purchases on Linux and Windows can also be requested through the link in your Paddle receipt.</p>
+
+<h2>6. Mistaken charges</h2>
+<p>If you were charged twice or by mistake, we refund that payment in full.</p>
+
+<h2>7. Chargebacks</h2>
+<p>If a payment is disputed with your bank, the purchased coins are removed from your balance, Premium is turned off and the subscription is cancelled. Repeated abuse may lead to account restrictions. Please write to us first — refunds are faster that way.</p>
+
+<h2>8. Your rights</h2>
+<p>This policy does not limit your rights under the consumer protection law of your country. If you are in the EU or the UK: for digital content, the right of withdrawal ends once coins or Premium are provided with your consent — this does not limit the refunds described above.</p>
+
+<p><a href="/terms">Terms of Service</a> · <a href="/privacy">Privacy Policy</a></p>
+</section>
+
+
+<footer>
+  <a href="/">eion.network</a>·<a href="/privacy" data-uk="Політика конфіденційності" data-en="Privacy">Privacy</a>·<a href="/terms" data-uk="Умови використання" data-en="Terms">Terms</a>·<a href="/refunds" data-uk="Повернення коштів" data-en="Refunds">Refunds</a>·<a href="/delete-account" data-uk="Видалити акаунт" data-en="Delete account">Delete account</a>·<a href="mailto:support@eion.network">support@eion.network</a>
+  <p style="margin-top:14px;opacity:.6">© 2026 EION</p>
+</footer>
+</div>
+
+<script>
+function setLang(l){
+  document.getElementById('uk').hidden = (l!=='uk');
+  document.getElementById('en').hidden = (l!=='en');
+  document.getElementById('b-uk').setAttribute('aria-pressed', l==='uk');
+  document.getElementById('b-en').setAttribute('aria-pressed', l==='en');
+  document.documentElement.lang = l;
+  // Написи навколо тексту мають бути тією ж мовою, що й сам текст: раніше
+  // підвал лишався англійським навіть під українською політикою.
+  document.querySelectorAll('[data-uk][data-en]').forEach(function(el){
+    el.textContent = el.getAttribute('data-' + l);
+  });
+  try{ localStorage.setItem('eion-legal-lang', l); }catch(e){}
+}
+try{
+  var saved = localStorage.getItem('eion-legal-lang');
+  // Мова головного сайту (eion_lang) має перевагу над мовою браузера: людина
+  // прийшла сюди з уже обраної мови, і кидати її в англійську — несподіванка.
+  // Документи двомовні, тож усе, крім української, лишається англійським.
+  if(!saved){
+    var site = null;
+    try{ site = localStorage.getItem('eion_lang'); }catch(e){}
+    var pick = site || (navigator.language||'').slice(0,2);
+    saved = (pick === 'uk') ? 'uk' : 'en';
+  }
+  setLang(saved);
+}catch(e){}
+</script>
+</body>
+</html>
