@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>EION — Оплата / Payment</title>
+<style>
+:root{--neon:#00d4ff;--bg:#020c14;--text:#e8f4f8;--text2:#7ab8cc;--line:rgba(0,212,255,.16);--card:rgba(10,22,40,.5);--ok:#3ddc97;--warn:#ffb347}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,sans-serif;line-height:1.6;font-size:16px;min-height:100vh}
+.glow{position:fixed;top:-40vh;left:50%;transform:translateX(-50%);width:120vw;height:80vh;pointer-events:none;
+  background:radial-gradient(ellipse at center,rgba(0,212,255,.08),transparent 62%)}
+.wrap{position:relative;max-width:560px;margin:0 auto;padding:28px 16px 60px}
+.brand{display:inline-flex;align-items:center;gap:10px;font-family:'Orbitron',monospace;font-weight:900;font-size:20px;
+  letter-spacing:.14em;color:var(--text);text-decoration:none}
+.brand img{width:30px;height:30px;border-radius:7px}
+.card{margin-top:28px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+h1{font-size:22px;margin-bottom:8px}
+p{color:var(--text2)}
+.ok{color:var(--ok)} .warn{color:var(--warn)}
+.sandbox{display:inline-block;margin-top:14px;font-size:13px;padding:4px 10px;border-radius:8px;border:1px solid var(--warn);color:var(--warn)}
+</style>
+</head>
+<body>
+<div class="glow"></div>
+<div class="wrap">
+  <a class="brand" href="/"><img src="/EION-mark.png" alt="" onerror="this.src='/EION-256.png'">EION</a>
+  <div class="card">
+    <h1 id="title">…</h1>
+    <p id="text"></p>
+    <span id="sandbox" class="sandbox" hidden></span>
+  </div>
+</div>
+<script>
+// Сторінка, на яку Paddle веде після створення транзакції (Default payment link).
+// Сама нічого не продає: Paddle.js бачить ?_ptxn=… і відкриває оплату саме цієї
+// транзакції; монети зараховує СЕРВЕР за вебхуком, а не ця сторінка.
+// Ключ сторінки (client-side token) публічний за задумом, тож береться з сервера.
+(function () {
+  var L = 'en';
+  try { var s = localStorage.getItem('eion_lang'); if (s) L = s; } catch (e) {}
+  if (L === 'en' && /^uk|^ru/.test(navigator.language || '')) L = 'uk';
+  var uk = L === 'uk' || L === 'ru';
+  var T = uk ? {
+    load: 'Відкриваємо оплату…', loadT: 'Зачекайте кілька секунд.',
+    none: 'Оплата відкривається з застосунку', noneT: 'Купуйте монети в EION: Гаманець → «Купити».',
+    off: 'Оплата зараз недоступна', offT: 'Спробуйте пізніше.',
+    done: 'Оплату прийнято', doneT: 'Монети зараховуються автоматично — поверніться в EION. Цю вкладку можна закрити.',
+    closed: 'Оплату скасовано', closedT: 'Гроші не списано. Можна повернутися в EION.',
+    sb: 'Тестовий режим: справжні гроші не списуються'
+  } : {
+    load: 'Opening payment…', loadT: 'Please wait a few seconds.',
+    none: 'Payment opens from the app', noneT: 'Buy coins in EION: Wallet → Buy.',
+    off: 'Payment is unavailable right now', offT: 'Please try again later.',
+    done: 'Payment received', doneT: 'Your coins are being added automatically — go back to EION. You can close this tab.',
+    closed: 'Payment cancelled', closedT: 'You were not charged. You can go back to EION.',
+    sb: 'Test mode: no real money is charged'
+  };
+  document.documentElement.lang = uk ? 'uk' : 'en';
+  function show(a, b, cls) {
+    var t = document.getElementById('title');
+    t.textContent = T[a]; t.className = cls || '';
+    document.getElementById('text').textContent = T[b];
+  }
+  var txn = new URLSearchParams(location.search).get('_ptxn');
+  if (!txn) { show('none', 'noneT'); return; }
+  show('load', 'loadT');
+  var done = false;
+  fetch('https://ei-server.onrender.com/paddle/config').then(function (r) { return r.json(); }).then(function (c) {
+    if (!c || !c.ready || !c.clientToken) { show('off', 'offT', 'warn'); return; }
+    if (c.env !== 'production') {
+      var sb = document.getElementById('sandbox'); sb.textContent = T.sb; sb.hidden = false;
+    }
+    var js = document.createElement('script');
+    js.src = 'https://cdn.paddle.com/paddle/v2/paddle.js';
+    js.onload = function () {
+      if (c.env !== 'production') Paddle.Environment.set('sandbox');
+      Paddle.Initialize({
+        token: c.clientToken,
+        eventCallback: function (e) {
+          if (e && e.name === 'checkout.completed') { done = true; show('done', 'doneT', 'ok'); }
+          if (e && e.name === 'checkout.closed' && !done) show('closed', 'closedT', 'warn');
+        }
+      });
+    };
+    js.onerror = function () { show('off', 'offT', 'warn'); };
+    document.head.appendChild(js);
+  }).catch(function () { show('off', 'offT', 'warn'); });
+})();
+</script>
+</body>
+</html>
