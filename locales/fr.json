@@ -17,7 +17,7 @@
   "f3_title": "Appels vidéo HD",
   "f3_desc": "Appels audio et vidéo via WebRTC — directement entre appareils quand c’est possible, sinon par relais.",
   "f4_title": "Groupes",
-  "f4_desc": "Groupes et canaux avec rôles, commentaires, réactions et abonnements payants. Les directs se regardent dans l'application, on invite par un lien, et le propriétaire du canal a ses statistiques.",
+  "f4_desc": "Groupes et canaux avec rôles, commentaires, réactions et abonnements payants. Les directs YouTube et Twitch se regardent dans l'application, on invite par un lien, et le propriétaire du canal a ses statistiques.",
   "f5_title": "Chiffrement de bout en bout",
   "f5_desc": "Les appels, les discussions privées et les groupes sont chiffrés de bout en bout — texte comme pièces jointes : la clé reste sur votre appareil et le serveur ne voit que du texte chiffré. Les chaînes restent volontairement ouvertes, car elles sont publiques. Et l’application ne charge rien depuis des sites tiers : l’expéditeur d’un lien n’apprend pas votre adresse IP.",
   "f6_title": "Pièces",
@@ -32,6 +32,8 @@
   "tok_over": "Au-delà du quota",
   "tok_over_v": "1 · 1 / 10 Mo · 1 🪙",
   "tok_register": "Bonus d’inscription",
+  "tok_invite": "Inviter un ami",
+  "tok_invite_v": "+50 🪙 quand votre ami devient actif",
   "prem_label": "Premium",
   "prem_title": "Débloquer <span>Premium</span>",
   "prem_monthly_tag": "Mensuel",
@@ -88,7 +90,7 @@
     },
     {
       "q": "Que sont les pièces EION ?",
-      "a": "Une monnaie interne de l’application : premium, packs d’autocollants, abonnements payants aux canaux, transferts entre utilisateurs et tout ce qui dépasse le quota gratuit quotidien — requêtes IA, envois, appels relayés, traduction automatique. L’inscription donne 🪙 50. Ce n’est ni de l’argent ni une cryptomonnaie, et cela ne s’échange pas contre de l’argent."
+      "a": "Une monnaie interne de l’application : premium, packs d’autocollants, abonnements payants aux canaux, transferts entre utilisateurs et tout ce qui dépasse le quota gratuit quotidien — requêtes IA, envois, appels relayés, traduction automatique. L’inscription donne 🪙 50. Ce n’est ni de l’argent ni une cryptomonnaie, et pour l’instant cela ne s’échange pas contre de l’argent ; le retrait des pièces gagnées est prévu. Pour chaque ami invité qui devient actif, vous recevez 🪙 50."
     },
     {
       "q": "Quelles plateformes sont prises en charge ?",

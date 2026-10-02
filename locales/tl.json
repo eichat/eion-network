@@ -17,7 +17,7 @@
   "f3_title": "Mga HD video call",
   "f3_desc": "Audio at video na tawag sa WebRTC — direkta sa pagitan ng mga device kung kaya, kung hindi ay sa pamamagitan ng relay.",
   "f4_title": "Mga Grupo",
-  "f4_desc": "Mga grupo at channel na may role, komento, reaction at bayad na subscription. Ang live stream ay pumapatugtog sa loob ng app, nag-iimbita sa pamamagitan ng link, at may statistics ang may-ari ng channel.",
+  "f4_desc": "Mga grupo at channel na may role, komento, reaction at bayad na subscription. Ang live stream mula sa YouTube at Twitch ay pumapatugtog sa loob ng app, nag-iimbita sa pamamagitan ng link, at may statistics ang may-ari ng channel.",
   "f5_title": "End-to-end na pag-encrypt",
   "f5_desc": "Ang mga tawag, pribadong chat at grupo ay end-to-end encrypted — ang text at mga attachment: ang susi ay nananatili sa iyong device at ang server ay nakakakita lamang ng naka-encrypt na text. Ang mga channel ay bukas nang kusa dahil pampubliko ang mga ito. At ang app ay walang kinukuha mula sa site ng ibang tao: ang nagpadala ng link ay hindi nakakaalam ng iyong IP address.",
   "f6_title": "Coins",
@@ -32,6 +32,8 @@
   "tok_over": "Lampas sa alawans",
   "tok_over_v": "1 · 1 / 10 MB · 1 🪙",
   "tok_register": "Bonus sa pagpaparehistro",
+  "tok_invite": "Pag-imbita ng kaibigan",
+  "tok_invite_v": "+50 🪙 kapag aktibo na ang kaibigan",
   "prem_label": "Premium",
   "prem_title": "I-unlock ang <span>Premium</span>",
   "prem_monthly_tag": "Buwanan",
@@ -88,7 +90,7 @@
     },
     {
       "q": "Ano ang coins?",
-      "a": "Panloob na pera ng app: premium, mga sticker pack, bayad na subscription sa channel, paglilipat sa pagitan ng mga user, at lahat ng lampas sa libreng pang-araw-araw na alawans — kahilingan sa AI, upload, tawag sa relay, awtomatikong pagsasalin. Sa pagpaparehistro ay 🪙 50. Hindi ito pera ni cryptocurrency, at hindi ito mapapalitan ng pera."
+      "a": "Panloob na pera ng app: premium, mga sticker pack, bayad na subscription sa channel, paglilipat sa pagitan ng mga user, at lahat ng lampas sa libreng pang-araw-araw na alawans — kahilingan sa AI, upload, tawag sa relay, awtomatikong pagsasalin. Sa pagpaparehistro ay 🪙 50. Hindi ito pera ni cryptocurrency, at sa ngayon ay hindi ito mapapalitan ng pera; nakaplano ang pag-withdraw ng kinitang coin. Sa bawat kaibigang inimbitahan mo na naging aktibo, makakakuha ka ng 🪙 50."
     },
     {
       "q": "Anong mga platform ang suportado?",

@@ -17,7 +17,7 @@
   "f3_title": "HD Video Calls",
   "f3_desc": "Audio and video calls over WebRTC — directly between devices when possible, otherwise via a relay.",
   "f4_title": "Groups",
-  "f4_desc": "Groups and channels with roles, comments, reactions and paid subscriptions. Live streams play inside the app, invitations go out as a link, and channel owners get statistics.",
+  "f4_desc": "Groups and channels with roles, comments, reactions and paid subscriptions. Live streams from YouTube and Twitch play inside the app, invitations go out as a link, and channel owners get statistics.",
   "f5_title": "End-to-end encryption",
   "f5_desc": "Calls, direct chats and groups are end-to-end encrypted — text and attachments alike: the key stays on your device and the server sees only ciphertext. Channels are deliberately open, since they are public. And the app fetches nothing from other people’s sites: whoever sent you a link does not learn your IP address.",
   "f6_title": "Coins",
@@ -32,6 +32,8 @@
   "tok_over": "Beyond the allowance",
   "tok_over_v": "1 · 1 / 10 MB · 1 🪙",
   "tok_register": "Registration bonus",
+  "tok_invite": "Inviting a friend",
+  "tok_invite_v": "+50 🪙 once your friend is active",
   "prem_label": "Premium",
   "prem_title": "Unlock <span>Premium</span>",
   "prem_monthly_tag": "Monthly",
@@ -88,7 +90,7 @@
     },
     {
       "q": "What are coins?",
-      "a": "An internal currency of the app: premium, sticker packs, paid channel subscriptions, transfers between users, and everything beyond the free daily allowance — AI requests, uploads, relayed calls, auto-translation. Registration grants 🪙 50. They are not money and not cryptocurrency, and cannot be exchanged for money."
+      "a": "An internal currency of the app: premium, sticker packs, paid channel subscriptions, transfers between users, and everything beyond the free daily allowance — AI requests, uploads, relayed calls, auto-translation. Registration grants 🪙 50. They are not money and not cryptocurrency, and right now they cannot be exchanged for money; cashing out earned coins is planned. For each friend you invite who becomes active, you get 🪙 50."
     },
     {
       "q": "Which platforms are supported?",

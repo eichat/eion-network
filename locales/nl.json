@@ -17,7 +17,7 @@
   "f3_title": "HD-videogesprekken",
   "f3_desc": "Audio- en videogesprekken via WebRTC — rechtstreeks tussen apparaten waar het kan, anders via een relay.",
   "f4_title": "Groepen",
-  "f4_desc": "Groepen en kanalen met rollen, reacties, comments en betaalde abonnementen. Livestreams spelen in de app, uitnodigen gaat via een link en kanaaleigenaren zien statistieken.",
+  "f4_desc": "Groepen en kanalen met rollen, reacties, comments en betaalde abonnementen. Livestreams van YouTube en Twitch spelen in de app, uitnodigen gaat via een link en kanaaleigenaren zien statistieken.",
   "f5_title": "End-to-end-versleuteling",
   "f5_desc": "Gesprekken, privéchats en groepen zijn end-to-end versleuteld — tekst en bijlagen: de sleutel blijft op je apparaat en de server ziet alleen versleutelde tekst. Kanalen zijn bewust open, omdat ze openbaar zijn. En de app laadt niets van andermans sites: wie je een link stuurt, komt je IP-adres niet te weten.",
   "f6_title": "Munten",
@@ -32,6 +32,8 @@
   "tok_over": "Boven het daglimiet",
   "tok_over_v": "1 · 1 / 10 MB · 1 🪙",
   "tok_register": "Registratiebonus",
+  "tok_invite": "Een vriend uitnodigen",
+  "tok_invite_v": "+50 🪙 zodra je vriend actief is",
   "prem_label": "Premium",
   "prem_title": "<span>Premium</span> Ontgrendelen",
   "prem_monthly_tag": "Maandelijks",
@@ -88,7 +90,7 @@
     },
     {
       "q": "Wat zijn munten?",
-      "a": "Een interne valuta van de app: premium, stickerpakketten, betaalde kanaalabonnementen, overboekingen tussen gebruikers en alles boven de gratis daglimiet — AI-verzoeken, uploads, doorgeschakelde gesprekken, automatisch vertalen. Registratie geeft 🪙 50. Het is geen geld en geen cryptovaluta en het is niet inwisselbaar voor geld."
+      "a": "Een interne valuta van de app: premium, stickerpakketten, betaalde kanaalabonnementen, overboekingen tussen gebruikers en alles boven de gratis daglimiet — AI-verzoeken, uploads, doorgeschakelde gesprekken, automatisch vertalen. Registratie geeft 🪙 50. Het is geen geld en geen cryptovaluta en is op dit moment niet inwisselbaar voor geld; uitbetaling van verdiende munten is gepland. Voor elke uitgenodigde vriend die actief wordt, krijg je 🪙 50."
     },
     {
       "q": "Welke platforms worden ondersteund?",

@@ -62,7 +62,7 @@ footer a:hover{color:var(--neon)}
 <!-- ======================= УКРАЇНСЬКА ======================= -->
 <section id="uk">
 <h1>Політика конфіденційності</h1>
-<p class="meta">Чинна з 1 жовтня 2026 року. Стосується застосунку EION для Android і Linux та сервісу eion.network.</p>
+<p class="meta">Чинна з 2 жовтня 2026 року. Стосується застосунку EION для Android і Linux та сервісу eion.network.</p>
 
 <p>EION — месенджер. Ця політика описує, які дані ми отримуємо, навіщо, кому передаємо і як ви можете їх видалити. Ми намагались писати простою мовою і без обіцянок, яких не виконуємо.</p>
 
@@ -80,6 +80,8 @@ footer a:hover{color:var(--neon)}
   <li><b>Аватар, колір, статус</b> — якщо ви їх задали; видимі іншим.</li>
   <li><b>Баланс монет і статус преміуму</b>, а також журнал операцій з монетами.</li>
   <li><b>Публічна адреса гаманця Solana</b> — лише якщо ви створили гаманець, поки ця можливість була в застосунку (вимкнено 1 жовтня 2026 року; нові адреси не збираються). Це лише адреса: приватний ключ і резервна фраза залишаються на вашому пристрої й до нас не потрапляють. Адреса та операції з нею видимі в публічному блокчейні.</li>
+  <li><b>Запрошення</b> — хто вас запросив (якщо ви вказали це при реєстрації) і кого запросили ви. Щоб нагорода за запрошення не видавалася за підставні акаунти, ми рахуємо дні активності запрошеного в перші 14 днів і порівнюємо ідентифікатори пристроїв запрошеного й запрошувача. Ідентифікатор — це випадкове число, яке застосунок створює сам; IMEI, серійний номер чи рекламний ідентифікатор ми не збираємо.</li>
+  <li><b>Заявки на виведення монет</b> — сума, спосіб (Wise або Payoneer), адреса електронної пошти рахунку, на який ви просите виплату, і стан заявки. Ця пошта потрібна лише для виплати.</li>
   <li><b>Дата створення акаунта й час останнього входу</b> — службові поля.</li>
 </ul>
 
@@ -110,7 +112,7 @@ footer a:hover{color:var(--neon)}
   <li>Не передаємо ваші повідомлення, контакти й дані профілю рекламним мережам.</li>
   <li>Не продаємо дані третім особам.</li>
   <li>Не читаємо ваші повідомлення для добору реклами й не будуємо рекламних профілів.</li>
-  <li>Не змушуємо ваш застосунок ходити на чужі сайти. Вкладення, аватари й зображення для прев'ю посилань завантажуються лише з нашого сховища, а саме прев'ю збирає наш сервер. Тому той, хто надіслав вам посилання чи поставив собі аватар, не дізнається вашої IP-адреси й не побачить, коли ви відкрили чат. Єдиний виняток — YouTube: мініатюри трансляцій і відео з посилань YouTube можуть завантажуватися з YouTube, а коли ви запускаєте відтворення, відео грає офіційний плеєр YouTube усередині застосунку. Відправник посилання вашої IP-адреси при цьому не бачить.</li>
+  <li>Не змушуємо ваш застосунок ходити на чужі сайти. Вкладення, аватари й зображення для прев'ю посилань завантажуються лише з нашого сховища, а саме прев'ю збирає наш сервер. Тому той, хто надіслав вам посилання чи поставив собі аватар, не дізнається вашої IP-адреси й не побачить, коли ви відкрили чат. Винятки — YouTube і Twitch: мініатюри трансляцій і відео з їхніх посилань можуть завантажуватися з YouTube чи Twitch, а коли ви запускаєте відтворення, відео грає офіційний плеєр YouTube чи Twitch усередині застосунку. Тоді YouTube чи Twitch бачить вашу IP-адресу, як і при перегляді на їхньому сайті; відправник посилання її не бачить.</li>
 </ul>
 
 <h3>2.7. Сайт eion.network</h3>
@@ -151,7 +153,10 @@ footer a:hover{color:var(--neon)}
 <tr><td>Google (Gemini)</td><td>Запасний постачальник AI, коли основний недоступний; пошук по довідці асистента</td><td>Те саме, що отримує Groq</td></tr>
 <tr><td>Публічний вузол мережі Solana</td><td>Показ балансу токена й перекази (зараз вимкнено)</td><td>Публічну адресу вашого гаманця</td></tr>
 <tr><td>Paddle (Paddle.com Market Ltd)</td><td>Купівля монет на Linux і Windows; Paddle — продавець запису (Merchant of Record), він приймає оплату й сплачує податки</td><td>Ваш нік (щоб зарахувати монети), а також пошта, країна й платіжні дані, які ви вводите на сторінці оплати Paddle; дані картки до нас не потрапляють</td></tr>
-<tr><td>YouTube</td><td>Перегляд трансляцій у каналах і відео з посилань YouTube</td><td>Стандартні дані відтворення відео</td></tr>
+<tr><td>Google Play</td><td>Покупки в застосунку, встановленому з Google Play; Google — продавець і приймає оплату</td><td>Від нас — хеш ніка (за ним нік не відновити), щоб покупку можна було перевірити; дані картки й рахунку Google до нас не потрапляють, ми отримуємо лише номер замовлення й товар</td></tr>
+<tr><td>Wise, Payoneer</td><td>Виплата за заявкою на виведення монет</td><td>Адреса пошти рахунку отримувача й сума виплати</td></tr>
+<tr><td>YouTube</td><td>Перегляд трансляцій у каналах і відео з посилань YouTube</td><td>Вашу IP-адресу й стандартні дані відтворення відео</td></tr>
+<tr><td>Twitch</td><td>Перегляд трансляцій і записів Twitch у каналах і за посиланнями</td><td>Вашу IP-адресу й стандартні дані відтворення відео; назви трансляцій і кадри наш сервер отримує з Twitch сам, без ваших даних</td></tr>
 <tr><td>Google Analytics</td><td>Статистика відвідувань <b>сайту</b> (не застосунку)</td><td>Знеособлені дані відвідування</td></tr>
 </table>
 <p>Ми також можемо розкрити дані на законну вимогу компетентного органу — у межах, які вимагає закон.</p>
@@ -160,7 +165,9 @@ footer a:hover{color:var(--neon)}
 <ul>
   <li><b>Обліковий запис</b> — доки ви його не видалите.</li>
   <li><b>Переписка на сервері</b> — доставлені повідомлення в діалогах видаляються через 7 днів, у групах через 30; недоставлені чекають на отримувача. Копія переписки залишається на ваших пристроях і від нас не залежить. Пости й коментарі в каналах зберігаються, доки їх не видалить автор або власник каналу.</li>
-  <li><b>Файли й медіа</b> — прибираються зі сховища, коли на них більше немає посилань у переписці, але не раніше ніж через 7 днів після завантаження.</li>
+  <li><b>Файли й медіа</b> — прибираються зі сховища, коли на них більше немає посилань у переписці, але не раніше ніж через 7 днів після завантаження (у групах — 30 днів, стільки ж, скільки живе саме повідомлення).</li>
+  <li><b>Заявки на виведення й журнал операцій з монетами</b> — зберігаються для бухгалтерського й податкового обліку. Після видалення акаунта нік у них прибирається.</li>
+  <li><b>Запрошення</b> — після видалення акаунта ваш нік із них прибирається.</li>
   <li><b>Коди підтвердження</b> — 15 хвилин для пошти, 5 хвилин для телефону.</li>
   <li><b>Звіти про збої</b> — за політикою зберігання Sentry, зазвичай до 90 днів.</li>
 </ul>
@@ -191,7 +198,7 @@ footer a:hover{color:var(--neon)}
 <!-- ======================= ENGLISH ======================= -->
 <section id="en" hidden>
 <h1>Privacy Policy</h1>
-<p class="meta">Effective 1 October 2026. Applies to the EION app for Android and Linux and to the eion.network service.</p>
+<p class="meta">Effective 2 October 2026. Applies to the EION app for Android and Linux and to the eion.network service.</p>
 
 <p>EION is a messenger. This policy explains what data we receive, why, who we share it with, and how you can delete it. We have tried to write plainly and to avoid promises we do not keep.</p>
 
@@ -209,6 +216,8 @@ footer a:hover{color:var(--neon)}
   <li><b>Avatar, colour, status</b> — if you set them; visible to others.</li>
   <li><b>Coin balance and premium status</b>, along with a log of coin operations.</li>
   <li><b>The public address of your Solana wallet</b> — only if you created a wallet while the app offered it (turned off on 1 October 2026; new addresses are not collected). Only the address: the private key and the recovery phrase stay on your device and never reach us. The address and its transactions are visible on the public blockchain.</li>
+  <li><b>Invitations</b> — who invited you (if you entered it at sign-up) and whom you invited. So that the invitation reward is not paid for fake accounts, we count the invited person's active days during their first 14 days and compare the device identifiers of the invited person and the inviter. The identifier is a random number generated by the app itself; we do not collect IMEI, serial numbers or advertising IDs.</li>
+  <li><b>Coin withdrawal requests</b> — the amount, the method (Wise or Payoneer), the email address of the account you ask to be paid to, and the status of the request. That email is used only for the payout.</li>
   <li><b>Account creation date and last sign-in time</b> — service fields.</li>
 </ul>
 
@@ -241,7 +250,7 @@ footer a:hover{color:var(--neon)}
   <li>No sharing of your messages, contacts or profile data with ad networks.</li>
   <li>No selling data to third parties.</li>
   <li>No reading your messages to select ads and no ad profiles.</li>
-  <li>Your app is not made to fetch anything from other people's sites. Attachments, avatars and link-preview images are loaded only from our own storage, and the preview itself is assembled by our server. So whoever sent you a link, or set their own avatar, learns neither your IP address nor the moment you opened the chat. The one exception is YouTube: thumbnails of streams and of YouTube links may be loaded from YouTube, and when you start playback the video is played by the official YouTube player inside the app. The person who sent the link still does not see your IP address.</li>
+  <li>Your app is not made to fetch anything from other people's sites. Attachments, avatars and link-preview images are loaded only from our own storage, and the preview itself is assembled by our server. So whoever sent you a link, or set their own avatar, learns neither your IP address nor the moment you opened the chat. The exceptions are YouTube and Twitch: thumbnails of streams and of their links may be loaded from YouTube or Twitch, and when you start playback the video is played by the official YouTube or Twitch player inside the app. YouTube or Twitch then sees your IP address, just as when you watch on their site; the person who sent the link does not.</li>
 </ul>
 
 <h3>2.7. The eion.network website</h3>
@@ -281,7 +290,10 @@ footer a:hover{color:var(--neon)}
 <tr><td>Google (Gemini)</td><td>Fallback AI provider when the main one is unavailable; search across the assistant's knowledge base</td><td>The same as Groq receives</td></tr>
 <tr><td>A public Solana network node</td><td>Showing the token balance and making transfers (currently off)</td><td>The public address of your wallet</td></tr>
 <tr><td>Paddle (Paddle.com Market Ltd)</td><td>Buying coins on Linux and Windows; Paddle is the Merchant of Record — it takes the payment and handles taxes</td><td>Your nickname (to credit the coins), plus the email, country and payment details you enter on the Paddle checkout page; card details never reach us</td></tr>
-<tr><td>YouTube</td><td>Watching streams in channels and videos from YouTube links</td><td>Standard video playback data</td></tr>
+<tr><td>Google Play</td><td>In-app purchases in the app installed from Google Play; Google is the seller and takes the payment</td><td>From us — a hash of your nickname (the nickname cannot be recovered from it), so the purchase can be verified; card and Google account details never reach us, we receive only the order number and the product</td></tr>
+<tr><td>Wise, Payoneer</td><td>Paying out a coin withdrawal request</td><td>The email address of the recipient account and the payout amount</td></tr>
+<tr><td>YouTube</td><td>Watching streams in channels and videos from YouTube links</td><td>Your IP address and standard video playback data</td></tr>
+<tr><td>Twitch</td><td>Watching Twitch streams and recordings in channels and from links</td><td>Your IP address and standard video playback data; our server fetches stream titles and frames from Twitch itself, without your data</td></tr>
 <tr><td>Google Analytics</td><td>Visit statistics for the <b>website</b> (not the app)</td><td>De-identified visit data</td></tr>
 </table>
 <p>We may also disclose data upon a lawful request from a competent authority, to the extent required by law.</p>
@@ -290,7 +302,9 @@ footer a:hover{color:var(--neon)}
 <ul>
   <li><b>Account</b> — until you delete it.</li>
   <li><b>Correspondence on the server</b> — delivered direct messages are removed after 7 days, group messages after 30; undelivered ones wait for the recipient. A copy of your correspondence stays on your devices and does not depend on us. Channel posts and comments are kept until the author or the channel owner deletes them.</li>
-  <li><b>Files and media</b> — removed from storage once no message references them, but no sooner than 7 days after upload.</li>
+  <li><b>Files and media</b> — removed from storage once no message references them, but no sooner than 7 days after upload (30 days in groups, as long as the message itself lives).</li>
+  <li><b>Withdrawal requests and the coin operations log</b> — kept for accounting and tax records. After you delete your account, your nickname is removed from them.</li>
+  <li><b>Invitations</b> — after you delete your account, your nickname is removed from them.</li>
   <li><b>Verification codes</b> — 15 minutes for email, 5 minutes for phone.</li>
   <li><b>Crash reports</b> — per Sentry retention, typically up to 90 days.</li>
 </ul>

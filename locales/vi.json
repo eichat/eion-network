@@ -17,7 +17,7 @@
   "f3_title": "Cuộc gọi video HD",
   "f3_desc": "Cuộc gọi thoại và video qua WebRTC — trực tiếp giữa các thiết bị khi có thể, nếu không thì qua relay.",
   "f4_title": "Nhóm",
-  "f4_desc": "Nhóm và kênh có vai trò, bình luận, biểu cảm và đăng ký trả phí. Buổi phát trực tiếp phát trong ứng dụng, mời bằng liên kết, còn chủ kênh có thống kê.",
+  "f4_desc": "Nhóm và kênh có vai trò, bình luận, biểu cảm và đăng ký trả phí. Buổi phát trực tiếp từ YouTube và Twitch phát trong ứng dụng, mời bằng liên kết, còn chủ kênh có thống kê.",
   "f5_title": "Mã hoá đầu cuối",
   "f5_desc": "Cuộc gọi, trò chuyện riêng và nhóm được mã hóa đầu cuối — cả văn bản lẫn tệp đính kèm: khóa ở lại trên thiết bị của bạn, máy chủ chỉ thấy bản mã. Kênh được để mở có chủ ý vì chúng công khai. Ứng dụng cũng không tải gì từ trang của người khác: người gửi liên kết không biết địa chỉ IP của bạn.",
   "f6_title": "Xu",
@@ -32,6 +32,8 @@
   "tok_over": "Vượt hạn mức",
   "tok_over_v": "1 · 1 / 10 MB · 1 🪙",
   "tok_register": "Thưởng đăng ký",
+  "tok_invite": "Mời bạn bè",
+  "tok_invite_v": "+50 🪙 khi bạn bè hoạt động",
   "prem_label": "Premium",
   "prem_title": "Mở khóa <span>Premium</span>",
   "prem_monthly_tag": "Hàng tháng",
@@ -88,7 +90,7 @@
     },
     {
       "q": "Xu EION là gì?",
-      "a": "Tiền tệ nội bộ của ứng dụng: premium, gói nhãn dán, đăng ký kênh trả phí, chuyển khoản giữa người dùng và mọi thứ vượt hạn mức miễn phí hằng ngày — yêu cầu AI, tải lên, cuộc gọi qua relay, dịch tự động. Đăng ký được tặng 🪙 50. Đây không phải tiền và không phải tiền mã hoá, không đổi được ra tiền."
+      "a": "Tiền tệ nội bộ của ứng dụng: premium, gói nhãn dán, đăng ký kênh trả phí, chuyển khoản giữa người dùng và mọi thứ vượt hạn mức miễn phí hằng ngày — yêu cầu AI, tải lên, cuộc gọi qua relay, dịch tự động. Đăng ký được tặng 🪙 50. Đây không phải tiền và không phải tiền mã hoá, hiện chưa đổi được ra tiền; việc rút xu kiếm được đang được lên kế hoạch. Mỗi người bạn bạn mời trở nên tích cực, bạn nhận 🪙 50."
     },
     {
       "q": "Hỗ trợ những nền tảng nào?",

@@ -17,7 +17,7 @@
   "f3_title": "Panggilan Video HD",
   "f3_desc": "Panggilan suara dan video lewat WebRTC — langsung antar perangkat bila memungkinkan, jika tidak lewat relay.",
   "f4_title": "Grup",
-  "f4_desc": "Grup dan kanal dengan peran, komentar, reaksi, dan langganan berbayar. Siaran langsung diputar di dalam aplikasi, undangan dikirim lewat tautan, dan pemilik kanal punya statistik.",
+  "f4_desc": "Grup dan kanal dengan peran, komentar, reaksi, dan langganan berbayar. Siaran langsung dari YouTube dan Twitch diputar di dalam aplikasi, undangan dikirim lewat tautan, dan pemilik kanal punya statistik.",
   "f5_title": "Enkripsi ujung ke ujung",
   "f5_desc": "Panggilan, obrolan pribadi, dan grup dienkripsi end-to-end — teks maupun lampiran: kunci tetap di perangkat Anda dan server hanya melihat teks terenkripsi. Kanal sengaja dibiarkan terbuka karena bersifat publik. Aplikasi juga tidak memuat apa pun dari situs orang lain: pengirim tautan tidak mengetahui alamat IP Anda.",
   "f6_title": "Koin",
@@ -32,6 +32,8 @@
   "tok_over": "Di atas jatah",
   "tok_over_v": "1 · 1 / 10 MB · 1 🪙",
   "tok_register": "Bonus pendaftaran",
+  "tok_invite": "Mengundang teman",
+  "tok_invite_v": "+50 🪙 saat teman Anda aktif",
   "prem_label": "Premium",
   "prem_title": "Buka <span>Premium</span>",
   "prem_monthly_tag": "Bulanan",
@@ -88,7 +90,7 @@
     },
     {
       "q": "Apa itu koin EION?",
-      "a": "Mata uang internal aplikasi: premium, paket stiker, langganan kanal berbayar, transfer antar pengguna, dan segala sesuatu di atas jatah gratis harian — permintaan AI, unggahan, panggilan lewat relay, terjemahan otomatis. Pendaftaran memberi 🪙 50. Ini bukan uang dan bukan mata uang kripto, serta tidak dapat ditukar dengan uang."
+      "a": "Mata uang internal aplikasi: premium, paket stiker, langganan kanal berbayar, transfer antar pengguna, dan segala sesuatu di atas jatah gratis harian — permintaan AI, unggahan, panggilan lewat relay, terjemahan otomatis. Pendaftaran memberi 🪙 50. Ini bukan uang dan bukan mata uang kripto, dan saat ini belum dapat ditukar dengan uang; pencairan koin yang diperoleh sedang direncanakan. Untuk setiap teman yang Anda undang dan menjadi aktif, Anda mendapat 🪙 50."
     },
     {
       "q": "Platform apa saja yang didukung?",

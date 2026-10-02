@@ -17,7 +17,7 @@
   "f3_title": "Połączenia wideo HD",
   "f3_desc": "Połączenia audio i wideo przez WebRTC — bezpośrednio między urządzeniami, gdy to możliwe, w innym razie przez przekaźnik.",
   "f4_title": "Grupy",
-  "f4_desc": "Grupy i kanały z rolami, komentarzami, reakcjami i płatnymi subskrypcjami. Transmisje odtwarzają się w aplikacji, zaprasza się linkiem, a właściciel kanału ma statystyki.",
+  "f4_desc": "Grupy i kanały z rolami, komentarzami, reakcjami i płatnymi subskrypcjami. Transmisje z YouTube i Twitch odtwarzają się w aplikacji, zaprasza się linkiem, a właściciel kanału ma statystyki.",
   "f5_title": "Szyfrowanie end-to-end",
   "f5_desc": "Połączenia, czaty prywatne i grupy są szyfrowane end-to-end — zarówno tekst, jak i załączniki: klucz zostaje na urządzeniu, a serwer widzi tylko szyfrogram. Kanały celowo są otwarte, bo są publiczne. Aplikacja nie pobiera niczego z cudzych stron: nadawca linku nie pozna Twojego adresu IP.",
   "f6_title": "Monety",
@@ -32,6 +32,8 @@
   "tok_over": "Powyżej limitu",
   "tok_over_v": "1 · 1 / 10 MB · 1 🪙",
   "tok_register": "Bonus za rejestrację",
+  "tok_invite": "Zaproszenie znajomego",
+  "tok_invite_v": "+50 🪙, gdy znajomy będzie aktywny",
   "prem_label": "Premium",
   "prem_title": "Odblokuj <span>Premium</span>",
   "prem_monthly_tag": "Miesięcznie",
@@ -88,7 +90,7 @@
     },
     {
       "q": "Czym są monety EION?",
-      "a": "Wewnętrzna waluta aplikacji: premium, paczki naklejek, płatne subskrypcje kanałów, przelewy między użytkownikami i wszystko powyżej bezpłatnego limitu dziennego — zapytania do AI, wysyłki, połączenia przez przekaźnik, autotłumaczenie. Za rejestrację otrzymujesz 🪙 50. To nie są pieniądze ani kryptowaluta i nie wymienia się ich na pieniądze."
+      "a": "Wewnętrzna waluta aplikacji: premium, paczki naklejek, płatne subskrypcje kanałów, przelewy między użytkownikami i wszystko powyżej bezpłatnego limitu dziennego — zapytania do AI, wysyłki, połączenia przez przekaźnik, autotłumaczenie. Za rejestrację otrzymujesz 🪙 50. To nie są pieniądze ani kryptowaluta i obecnie nie można ich wymienić na pieniądze; wypłata zarobionych monet jest w planach. Za każdego zaproszonego znajomego, który stanie się aktywny, otrzymujesz 🪙 50."
     },
     {
       "q": "Jakie platformy są wspierane?",

@@ -17,7 +17,7 @@
   "f3_title": "HD Görüntülü Aramalar",
   "f3_desc": "WebRTC üzerinden sesli ve görüntülü aramalar — mümkün olduğunda cihazlar arasında doğrudan, aksi hâlde aktarma üzerinden.",
   "f4_title": "Gruplar",
-  "f4_desc": "Roller, yorumlar, tepkiler ve ücretli aboneliklerle gruplar ve kanallar. Canlı yayınlar uygulamanın içinde oynar, davet bağlantıyla gider ve kanal sahibi istatistikleri görür.",
+  "f4_desc": "Roller, yorumlar, tepkiler ve ücretli aboneliklerle gruplar ve kanallar. YouTube ve Twitch canlı yayınları uygulamanın içinde oynar, davet bağlantıyla gider ve kanal sahibi istatistikleri görür.",
   "f5_title": "Uçtan uca şifreleme",
   "f5_desc": "Aramalar, özel sohbetler ve gruplar uçtan uca şifrelenir — metin de ekler de: anahtar cihazınızda kalır, sunucu yalnızca şifreli metni görür. Kanallar herkese açık olduğu için bilerek şifrelenmez. Uygulama başka sitelerden hiçbir şey yüklemez: size bağlantı gönderen kişi IP adresinizi öğrenemez.",
   "f6_title": "Jeton",
@@ -32,6 +32,8 @@
   "tok_over": "Hakkın üzerinde",
   "tok_over_v": "1 · 1 / 10 MB · 1 🪙",
   "tok_register": "Kayıt bonusu",
+  "tok_invite": "Arkadaş daveti",
+  "tok_invite_v": "Arkadaşınız aktif olunca +50 🪙",
   "prem_label": "Premium",
   "prem_title": "<span>Premium</span>'u Aç",
   "prem_monthly_tag": "Aylık",
@@ -88,7 +90,7 @@
     },
     {
       "q": "Jeton nedir?",
-      "a": "Uygulamanın iç para birimi: premium, çıkartma paketleri, ücretli kanal abonelikleri, kullanıcılar arası transferler ve günlük ücretsiz hakkın üstündeki her şey — yapay zekâ istekleri, yüklemeler, aktarmalı aramalar, otomatik çeviri. Kayıt olunca 🪙 50 verilir. Bunlar para da kripto para da değildir ve paraya çevrilmez."
+      "a": "Uygulamanın iç para birimi: premium, çıkartma paketleri, ücretli kanal abonelikleri, kullanıcılar arası transferler ve günlük ücretsiz hakkın üstündeki her şey — yapay zekâ istekleri, yüklemeler, aktarmalı aramalar, otomatik çeviri. Kayıt olunca 🪙 50 verilir. Bunlar para da kripto para da değildir ve şu an paraya çevrilemez; kazanılan coinlerin çekilmesi planlanıyor. Davet ettiğiniz ve aktif hale gelen her arkadaş için 🪙 50 alırsınız."
     },
     {
       "q": "Hangi platformlar destekleniyor?",
