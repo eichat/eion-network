@@ -43,7 +43,6 @@
   "prem_f1": "Tệp tới 20 MB thay vì 5",
   "prem_f2": "Trợ lý AI: 100 yêu cầu mỗi ngày thay vì 15",
   "prem_f3": "Tải lên: 1 GB mỗi ngày thay vì 200 MB",
-  "prem_f4": "Cuộc gọi qua relay: 50 mỗi ngày thay vì 10",
   "prem_f5": "Biệt danh màu và viền ảnh đại diện",
   "prem_f6": "Mô hình AI mạnh hơn",
   "prem_f7": "Tiết kiệm 1080 xu — hơn ba tháng miễn phí",
@@ -82,7 +81,7 @@
     },
     {
       "q": "EION có miễn phí không?",
-      "a": "Có. Ứng dụng nhắn tin hoàn toàn miễn phí. Mỗi ngày có một hạn mức miễn phí: 15 yêu cầu AI, 200 MB tải lên, 10 cuộc gọi qua relay và 200 lần dịch tự động; vượt quá thì bạn trả bằng xu. Premium mở rộng hạn mức và nâng giới hạn tệp lên 20 MB: 🪙 300 mỗi tháng hoặc 🪙 2520 mỗi năm."
+      "a": "Có. Ứng dụng nhắn tin hoàn toàn miễn phí. Mỗi ngày có một hạn mức miễn phí: 15 yêu cầu AI, 200 MB tải lên và 200 lần dịch tự động; vượt quá thì bạn trả bằng xu. Premium mở rộng hạn mức và nâng giới hạn tệp lên 20 MB: 🪙 300 mỗi tháng hoặc 🪙 2520 mỗi năm."
     },
     {
       "q": "Tin nhắn của tôi có được mã hóa không?",
@@ -90,7 +89,7 @@
     },
     {
       "q": "Xu EION là gì?",
-      "a": "Tiền tệ nội bộ của ứng dụng: premium, gói nhãn dán, đăng ký kênh trả phí, chuyển khoản giữa người dùng và mọi thứ vượt hạn mức miễn phí hằng ngày — yêu cầu AI, tải lên, cuộc gọi qua relay, dịch tự động. Đăng ký được tặng 🪙 50. Đây không phải tiền và không phải tiền mã hoá, hiện chưa đổi được ra tiền; việc rút xu kiếm được đang được lên kế hoạch. Mỗi người bạn bạn mời trở nên tích cực, bạn nhận 🪙 50."
+      "a": "Tiền tệ nội bộ của ứng dụng: premium, gói nhãn dán, đăng ký kênh trả phí, chuyển khoản giữa người dùng và mọi thứ vượt hạn mức miễn phí hằng ngày — yêu cầu AI, tải lên, dịch tự động. Đăng ký được tặng 🪙 50. Đây không phải tiền và không phải tiền mã hoá, hiện chưa đổi được ra tiền; việc rút xu kiếm được đang được lên kế hoạch. Mỗi người bạn bạn mời trở nên tích cực, bạn nhận 🪙 50."
     },
     {
       "q": "Hỗ trợ những nền tảng nào?",

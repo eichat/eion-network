@@ -43,7 +43,6 @@
   "prem_f1": "Bestanden tot 20 MB in plaats van 5",
   "prem_f2": "AI-assistent: 100 verzoeken per dag in plaats van 15",
   "prem_f3": "Uploads: 1 GB per dag in plaats van 200 MB",
-  "prem_f4": "Gesprekken via relay: 50 per dag in plaats van 10",
   "prem_f5": "Gekleurde nickname en avatarring",
   "prem_f6": "Een krachtiger AI-model",
   "prem_f7": "Bespaart 1080 munten — ruim drie maanden gratis",
@@ -82,7 +81,7 @@
     },
     {
       "q": "Is EION gratis?",
-      "a": "Ja. De messenger is volledig gratis. Elke dag geldt een gratis limiet: 15 AI-verzoeken, 200 MB uploads, 10 doorgeschakelde gesprekken en 200 automatische vertalingen; daarboven betaal je met munten. Premium verruimt de limiet en verhoogt de bestandslimiet naar 20 MB: 🪙 300 per maand of 🪙 2520 per jaar."
+      "a": "Ja. De messenger is volledig gratis. Elke dag geldt een gratis limiet: 15 AI-verzoeken, 200 MB uploads en 200 automatische vertalingen; daarboven betaal je met munten. Premium verruimt de limiet en verhoogt de bestandslimiet naar 20 MB: 🪙 300 per maand of 🪙 2520 per jaar."
     },
     {
       "q": "Zijn mijn berichten versleuteld?",
@@ -90,7 +89,7 @@
     },
     {
       "q": "Wat zijn munten?",
-      "a": "Een interne valuta van de app: premium, stickerpakketten, betaalde kanaalabonnementen, overboekingen tussen gebruikers en alles boven de gratis daglimiet — AI-verzoeken, uploads, doorgeschakelde gesprekken, automatisch vertalen. Registratie geeft 🪙 50. Het is geen geld en geen cryptovaluta en is op dit moment niet inwisselbaar voor geld; uitbetaling van verdiende munten is gepland. Voor elke uitgenodigde vriend die actief wordt, krijg je 🪙 50."
+      "a": "Een interne valuta van de app: premium, stickerpakketten, betaalde kanaalabonnementen, overboekingen tussen gebruikers en alles boven de gratis daglimiet — AI-verzoeken, uploads, automatisch vertalen. Registratie geeft 🪙 50. Het is geen geld en geen cryptovaluta en is op dit moment niet inwisselbaar voor geld; uitbetaling van verdiende munten is gepland. Voor elke uitgenodigde vriend die actief wordt, krijg je 🪙 50."
     },
     {
       "q": "Welke platforms worden ondersteund?",

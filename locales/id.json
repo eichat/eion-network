@@ -43,7 +43,6 @@
   "prem_f1": "File hingga 20 MB, bukan 5",
   "prem_f2": "Asisten AI: 100 permintaan per hari, bukan 15",
   "prem_f3": "Unggahan: 1 GB per hari, bukan 200 MB",
-  "prem_f4": "Panggilan lewat relay: 50 per hari, bukan 10",
   "prem_f5": "Nama berwarna dan cincin avatar",
   "prem_f6": "Model AI yang lebih kuat",
   "prem_f7": "Hemat 1080 koin — lebih dari tiga bulan gratis",
@@ -82,7 +81,7 @@
     },
     {
       "q": "Apakah EION gratis?",
-      "a": "Ya. Aplikasi pesan ini sepenuhnya gratis. Setiap hari ada jatah gratis: 15 permintaan AI, 200 MB unggahan, 10 panggilan lewat relay, dan 200 terjemahan otomatis; di atas itu Anda membayar dengan koin. Premium memperluas jatah dan menaikkan batas berkas ke 20 MB: 🪙 300 per bulan atau 🪙 2520 per tahun."
+      "a": "Ya. Aplikasi pesan ini sepenuhnya gratis. Setiap hari ada jatah gratis: 15 permintaan AI, 200 MB unggahan, dan 200 terjemahan otomatis; di atas itu Anda membayar dengan koin. Premium memperluas jatah dan menaikkan batas berkas ke 20 MB: 🪙 300 per bulan atau 🪙 2520 per tahun."
     },
     {
       "q": "Apakah pesan saya terenkripsi?",
@@ -90,7 +89,7 @@
     },
     {
       "q": "Apa itu koin EION?",
-      "a": "Mata uang internal aplikasi: premium, paket stiker, langganan kanal berbayar, transfer antar pengguna, dan segala sesuatu di atas jatah gratis harian — permintaan AI, unggahan, panggilan lewat relay, terjemahan otomatis. Pendaftaran memberi 🪙 50. Ini bukan uang dan bukan mata uang kripto, dan saat ini belum dapat ditukar dengan uang; pencairan koin yang diperoleh sedang direncanakan. Untuk setiap teman yang Anda undang dan menjadi aktif, Anda mendapat 🪙 50."
+      "a": "Mata uang internal aplikasi: premium, paket stiker, langganan kanal berbayar, transfer antar pengguna, dan segala sesuatu di atas jatah gratis harian — permintaan AI, unggahan, terjemahan otomatis. Pendaftaran memberi 🪙 50. Ini bukan uang dan bukan mata uang kripto, dan saat ini belum dapat ditukar dengan uang; pencairan koin yang diperoleh sedang direncanakan. Untuk setiap teman yang Anda undang dan menjadi aktif, Anda mendapat 🪙 50."
     },
     {
       "q": "Platform apa saja yang didukung?",

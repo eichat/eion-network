@@ -43,7 +43,6 @@
   "prem_f1": "Ficheiros até 20 MB em vez de 5",
   "prem_f2": "Assistente de IA: 100 pedidos por dia em vez de 15",
   "prem_f3": "Envios: 1 GB por dia em vez de 200 MB",
-  "prem_f4": "Chamadas por relay: 50 por dia em vez de 10",
   "prem_f5": "Nome colorido e anel do avatar",
   "prem_f6": "Um modelo de IA mais potente",
   "prem_f7": "Poupa 1080 moedas — mais de três meses grátis",
@@ -82,7 +81,7 @@
     },
     {
       "q": "O EION é gratuito?",
-      "a": "Sim. O mensageiro é totalmente gratuito. Todos os dias há uma quota gratuita: 15 pedidos de IA, 200 MB de envios, 10 chamadas por relé e 200 traduções automáticas; acima dela paga com moedas. O premium amplia a quota e sobe o limite de ficheiro para 20 MB: 🪙 300 por mês ou 🪙 2520 por ano."
+      "a": "Sim. O mensageiro é totalmente gratuito. Todos os dias há uma quota gratuita: 15 pedidos de IA, 200 MB de envios e 200 traduções automáticas; acima dela paga com moedas. O premium amplia a quota e sobe o limite de ficheiro para 20 MB: 🪙 300 por mês ou 🪙 2520 por ano."
     },
     {
       "q": "Minhas mensagens são criptografadas?",
@@ -90,7 +89,7 @@
     },
     {
       "q": "O que são as moedas EION?",
-      "a": "Uma moeda interna da aplicação: premium, pacotes de autocolantes, subscrições pagas de canais, transferências entre utilizadores e tudo acima da quota diária gratuita — pedidos de IA, envios, chamadas por relé, tradução automática. O registo concede 🪙 50. Não são dinheiro nem criptomoeda e, por agora, não se trocam por dinheiro; o levantamento das moedas ganhas está previsto. Por cada amigo convidado que fique ativo, recebe 🪙 50."
+      "a": "Uma moeda interna da aplicação: premium, pacotes de autocolantes, subscrições pagas de canais, transferências entre utilizadores e tudo acima da quota diária gratuita — pedidos de IA, envios, tradução automática. O registo concede 🪙 50. Não são dinheiro nem criptomoeda e, por agora, não se trocam por dinheiro; o levantamento das moedas ganhas está previsto. Por cada amigo convidado que fique ativo, recebe 🪙 50."
     },
     {
       "q": "Quais plataformas são suportadas?",

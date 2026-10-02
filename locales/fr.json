@@ -43,7 +43,6 @@
   "prem_f1": "Fichiers jusqu'à 20 Mo au lieu de 5",
   "prem_f2": "Assistant IA : 100 requêtes par jour au lieu de 15",
   "prem_f3": "Envois : 1 Go par jour au lieu de 200 Mo",
-  "prem_f4": "Appels via relais : 50 par jour au lieu de 10",
   "prem_f5": "Pseudo en couleur et anneau d'avatar",
   "prem_f6": "Un modèle d'IA plus puissant",
   "prem_f7": "Économise 1080 pièces — plus de trois mois offerts",
@@ -82,7 +81,7 @@
     },
     {
       "q": "EION est-il gratuit ?",
-      "a": "Oui. La messagerie est entièrement gratuite. Chaque jour, un quota gratuit s’applique : 15 requêtes IA, 200 Mo d’envois, 10 appels relayés et 200 traductions automatiques ; au-delà, vous payez en pièces. Premium élargit le quota et porte la limite de fichier à 20 Mo : 🪙 300 par mois ou 🪙 2520 par an."
+      "a": "Oui. La messagerie est entièrement gratuite. Chaque jour, un quota gratuit s’applique : 15 requêtes IA, 200 Mo d’envois et 200 traductions automatiques ; au-delà, vous payez en pièces. Premium élargit le quota et porte la limite de fichier à 20 Mo : 🪙 300 par mois ou 🪙 2520 par an."
     },
     {
       "q": "Mes messages sont-ils chiffrés ?",
@@ -90,7 +89,7 @@
     },
     {
       "q": "Que sont les pièces EION ?",
-      "a": "Une monnaie interne de l’application : premium, packs d’autocollants, abonnements payants aux canaux, transferts entre utilisateurs et tout ce qui dépasse le quota gratuit quotidien — requêtes IA, envois, appels relayés, traduction automatique. L’inscription donne 🪙 50. Ce n’est ni de l’argent ni une cryptomonnaie, et pour l’instant cela ne s’échange pas contre de l’argent ; le retrait des pièces gagnées est prévu. Pour chaque ami invité qui devient actif, vous recevez 🪙 50."
+      "a": "Une monnaie interne de l’application : premium, packs d’autocollants, abonnements payants aux canaux, transferts entre utilisateurs et tout ce qui dépasse le quota gratuit quotidien — requêtes IA, envois, traduction automatique. L’inscription donne 🪙 50. Ce n’est ni de l’argent ni une cryptomonnaie, et pour l’instant cela ne s’échange pas contre de l’argent ; le retrait des pièces gagnées est prévu. Pour chaque ami invité qui devient actif, vous recevez 🪙 50."
     },
     {
       "q": "Quelles plateformes sont prises en charge ?",
