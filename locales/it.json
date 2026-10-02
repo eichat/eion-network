@@ -17,7 +17,7 @@
   "f3_title": "Videochiamate HD",
   "f3_desc": "Chiamate audio e video via WebRTC — dirette tra i dispositivi quando è possibile, altrimenti tramite relay.",
   "f4_title": "Gruppi",
-  "f4_desc": "Gruppi e canali con ruoli, commenti, reazioni e abbonamenti a pagamento. Le dirette si guardano nell’app, si invita con un link e il proprietario del canale ha le statistiche.",
+  "f4_desc": "Gruppi e canali con ruoli, commenti, reazioni e abbonamenti a pagamento. Le dirette da YouTube e Twitch si guardano nell’app, si invita con un link e il proprietario del canale ha le statistiche.",
   "f5_title": "Crittografia end-to-end",
   "f5_desc": "Chiamate, chat private e gruppi sono cifrati end-to-end, sia il testo sia gli allegati: la chiave resta sul tuo dispositivo e il server vede solo testo cifrato. I canali sono volutamente aperti, perché sono pubblici. E l’app non carica nulla da siti altrui: chi ti invia un link non scopre il tuo indirizzo IP.",
   "f6_title": "Monete",
@@ -32,6 +32,8 @@
   "tok_over": "Oltre la quota",
   "tok_over_v": "1 · 1 / 10 MB · 1 🪙",
   "tok_register": "Bonus di registrazione",
+  "tok_invite": "Invitare un amico",
+  "tok_invite_v": "+50 🪙 quando l’amico diventa attivo",
   "prem_label": "Premium",
   "prem_title": "Sblocca <span>Premium</span>",
   "prem_monthly_tag": "Mensile",
@@ -88,7 +90,7 @@
     },
     {
       "q": "Che cosa sono le monete EION?",
-      "a": "Una valuta interna dell’app: premium, pacchetti di adesivi, abbonamenti a pagamento ai canali, trasferimenti tra utenti e tutto ciò che supera la quota giornaliera gratuita — richieste IA, caricamenti, chiamate via relay, traduzione automatica. La registrazione dà 🪙 50. Non sono denaro né criptovaluta e non si cambiano in denaro."
+      "a": "Una valuta interna dell’app: premium, pacchetti di adesivi, abbonamenti a pagamento ai canali, trasferimenti tra utenti e tutto ciò che supera la quota giornaliera gratuita — richieste IA, caricamenti, chiamate via relay, traduzione automatica. La registrazione dà 🪙 50. Non sono denaro né criptovaluta e al momento non si possono cambiare in denaro; il prelievo delle monete guadagnate è previsto. Per ogni amico invitato che diventa attivo ricevi 🪙 50."
     },
     {
       "q": "Quali piattaforme sono supportate?",

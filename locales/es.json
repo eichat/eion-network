@@ -17,7 +17,7 @@
   "f3_title": "Videollamadas HD",
   "f3_desc": "Llamadas de audio y vídeo por WebRTC: directas entre dispositivos cuando es posible, si no, por relé.",
   "f4_title": "Grupos",
-  "f4_desc": "Grupos y canales con roles, comentarios, reacciones y suscripciones de pago. Las transmisiones se ven dentro de la app, se invita con un enlace y el dueño del canal tiene estadísticas.",
+  "f4_desc": "Grupos y canales con roles, comentarios, reacciones y suscripciones de pago. Las transmisiones de YouTube y Twitch se ven dentro de la app, se invita con un enlace y el dueño del canal tiene estadísticas.",
   "f5_title": "Cifrado de extremo a extremo",
   "f5_desc": "Las llamadas, los chats privados y los grupos están cifrados de extremo a extremo, tanto el texto como los adjuntos: la clave se queda en tu dispositivo y el servidor solo ve texto cifrado. Los canales son abiertos a propósito, porque son públicos. Y la app no carga nada de sitios ajenos: quien te envía un enlace no conoce tu dirección IP.",
   "f6_title": "Monedas",
@@ -32,6 +32,8 @@
   "tok_over": "Por encima de la cuota",
   "tok_over_v": "1 · 1 / 10 MB · 1 🪙",
   "tok_register": "Bono de registro",
+  "tok_invite": "Invitar a un amigo",
+  "tok_invite_v": "+50 🪙 cuando tu amigo esté activo",
   "prem_label": "Premium",
   "prem_title": "Desbloquear <span>Premium</span>",
   "prem_monthly_tag": "Mensual",
@@ -88,7 +90,7 @@
     },
     {
       "q": "¿Qué son las monedas EION?",
-      "a": "Una moneda interna de la aplicación: premium, packs de stickers, suscripciones de pago a canales, transferencias entre usuarios y todo lo que supere la cuota diaria gratuita: consultas de IA, subidas, llamadas por relé, traducción automática. Por registrarte recibes 🪙 50. No son dinero ni criptomoneda y no se cambian por dinero."
+      "a": "Una moneda interna de la aplicación: premium, packs de stickers, suscripciones de pago a canales, transferencias entre usuarios y todo lo que supere la cuota diaria gratuita: consultas de IA, subidas, llamadas por relé, traducción automática. Por registrarte recibes 🪙 50. No son dinero ni criptomoneda y por ahora no se pueden cambiar por dinero; el retiro de las monedas ganadas está previsto. Por cada amigo que invites y se vuelva activo recibes 🪙 50."
     },
     {
       "q": "¿Qué plataformas son compatibles?",

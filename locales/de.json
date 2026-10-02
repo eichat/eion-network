@@ -17,7 +17,7 @@
   "f3_title": "HD-Videoanrufe",
   "f3_desc": "Audio- und Videoanrufe über WebRTC — direkt zwischen den Geräten, wenn möglich, sonst über einen Relay.",
   "f4_title": "Gruppen",
-  "f4_desc": "Gruppen und Kanäle mit Rollen, Kommentaren, Reaktionen und bezahlten Abos. Livestreams laufen in der App, eingeladen wird per Link, und Kanalinhaber sehen ihre Statistik.",
+  "f4_desc": "Gruppen und Kanäle mit Rollen, Kommentaren, Reaktionen und bezahlten Abos. Livestreams von YouTube und Twitch laufen in der App, eingeladen wird per Link, und Kanalinhaber sehen ihre Statistik.",
   "f5_title": "Ende-zu-Ende-Verschlüsselung",
   "f5_desc": "Anrufe, Einzelchats und Gruppen sind Ende-zu-Ende-verschlüsselt — Text und Anhänge gleichermaßen: Der Schlüssel bleibt auf deinem Gerät, der Server sieht nur Chiffretext. Kanäle sind bewusst offen, da sie öffentlich sind. Und die App lädt nichts von fremden Seiten: Wer dir einen Link schickt, erfährt deine IP-Adresse nicht.",
   "f6_title": "Coins",
@@ -32,6 +32,8 @@
   "tok_over": "Über dem Kontingent",
   "tok_over_v": "1 · 1 / 10 MB · 1 🪙",
   "tok_register": "Registrierungsbonus",
+  "tok_invite": "Freund einladen",
+  "tok_invite_v": "+50 🪙, sobald dein Freund aktiv ist",
   "prem_label": "Premium",
   "prem_title": "<span>Premium</span> freischalten",
   "prem_monthly_tag": "Monatlich",
@@ -88,7 +90,7 @@
     },
     {
       "q": "Was sind Coins?",
-      "a": "Eine interne Währung der App: Premium, Sticker-Pakete, kostenpflichtige Kanal-Abos, Überweisungen zwischen Nutzern und alles über dem kostenlosen Tageskontingent — KI-Anfragen, Uploads, weitergeleitete Anrufe, Auto-Übersetzung. Für die Registrierung gibt es 🪙 50. Sie sind kein Geld und keine Kryptowährung und lassen sich nicht in Geld tauschen."
+      "a": "Eine interne Währung der App: Premium, Sticker-Pakete, kostenpflichtige Kanal-Abos, Überweisungen zwischen Nutzern und alles über dem kostenlosen Tageskontingent — KI-Anfragen, Uploads, weitergeleitete Anrufe, Auto-Übersetzung. Für die Registrierung gibt es 🪙 50. Sie sind kein Geld und keine Kryptowährung und lassen sich derzeit nicht in Geld tauschen; eine Auszahlung verdienter Münzen ist geplant. Für jeden eingeladenen Freund, der aktiv wird, erhältst du 🪙 50."
     },
     {
       "q": "Welche Plattformen werden unterstützt?",
