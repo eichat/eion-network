@@ -92,7 +92,7 @@
     },
     {
       "q": "Which platforms are supported?",
-      "a": "Android and Linux — downloads are temporarily closed while we prepare the next version; news is in our Telegram channel. iOS and Windows are planned."
+      "a": "Android — downloads are open (test build: expect bugs, and data from the test period may be reset). Linux is coming soon. iOS and Windows are planned."
     }
   ],
   "footer_tagline": "Talk. Share. Own your data.",
@@ -102,7 +102,7 @@
   "dl_ready": "✓ Test build",
   "dl_get": "Download APK",
   "dl_get_linux": "Download AppImage",
-  "dl_note": "Downloads are temporarily closed while we prepare the next version. News is in our Telegram channel.",
+  "dl_note": "Android will ask for permission to install an app from an unknown source — that is normal outside Google Play. The app is in test mode: expect bugs, and data from the test period may be reset. The Linux version is coming soon.",
   "tok_today": "Today, inside the app",
   "tok_use1": "Premium",
   "tok_use1v": "higher allowances, bigger files",

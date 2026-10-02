@@ -92,7 +92,7 @@
     },
     {
       "q": "Hỗ trợ những nền tảng nào?",
-      "a": "Android và Linux — tạm đóng tải xuống trong lúc chuẩn bị phiên bản tiếp theo; tin tức trên kênh Telegram của chúng tôi. iOS và Windows đang trong kế hoạch."
+      "a": "Android — đã mở tải xuống (bản thử nghiệm: có thể có lỗi, dữ liệu giai đoạn thử nghiệm có thể bị đặt lại). Linux sắp ra mắt. iOS và Windows đang trong kế hoạch."
     }
   ],
   "footer_tagline": "Trò chuyện. Chia sẻ. Dữ liệu là của bạn.",
@@ -102,7 +102,7 @@
   "dl_ready": "✓ Bản thử nghiệm",
   "dl_get": "Tải APK",
   "dl_get_linux": "Tải AppImage",
-  "dl_note": "Tạm đóng tải xuống trong lúc chúng tôi chuẩn bị phiên bản tiếp theo. Tin tức có trên kênh Telegram của chúng tôi.",
+  "dl_note": "Android sẽ xin quyền cài ứng dụng từ nguồn không xác định — ngoài Google Play điều này là bình thường. Ứng dụng đang ở chế độ thử nghiệm: có thể có lỗi và dữ liệu trong giai đoạn thử nghiệm có thể bị đặt lại. Phiên bản Linux sắp ra mắt.",
   "tok_today": "Hiện tại, trong ứng dụng",
   "tok_use1": "Gói cao cấp",
   "tok_use1v": "hạn mức cao hơn, tệp lớn hơn",

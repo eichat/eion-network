@@ -92,7 +92,7 @@
     },
     {
       "q": "Quali piattaforme sono supportate?",
-      "a": "Android e Linux: i download sono temporaneamente chiusi mentre prepariamo la prossima versione; le novità sul nostro canale Telegram. iOS e Windows sono in programma."
+      "a": "Android: il download è aperto (versione di prova: possono esserci errori e i dati del periodo di prova potrebbero essere azzerati). Linux arriverà presto. iOS e Windows sono in programma."
     }
   ],
   "footer_tagline": "Parla. Condividi. I tuoi dati restano tuoi.",
@@ -102,7 +102,7 @@
   "dl_ready": "✓ Versione di prova",
   "dl_get": "Scarica APK",
   "dl_get_linux": "Scarica AppImage",
-  "dl_note": "I download sono temporaneamente chiusi mentre prepariamo la prossima versione. Le novità sono sul nostro canale Telegram.",
+  "dl_note": "Android chiederà il permesso di installare un’app da origine sconosciuta: fuori da Google Play è normale. L’app è in modalità test: possono esserci errori e i dati del periodo di prova potrebbero essere azzerati. La versione per Linux arriverà presto.",
   "tok_today": "Oggi, nell’app",
   "tok_use1": "Premium",
   "tok_use1v": "limiti più alti, file più grandi",
