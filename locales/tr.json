@@ -92,7 +92,7 @@
     },
     {
       "q": "Hangi platformlar destekleniyor?",
-      "a": "Android ve Linux — bir sonraki sürümü hazırlarken indirmeler geçici olarak kapalı; haberler Telegram kanalımızda. iOS ve Windows planlarımızda."
+      "a": "Android — indirme açık (test sürümü: hatalar olabilir, test dönemine ait veriler sıfırlanabilir). Linux yakında. iOS ve Windows planlanıyor."
     }
   ],
   "footer_tagline": "Konuşun. Paylaşın. Verileriniz sizin.",
@@ -102,7 +102,7 @@
   "dl_ready": "✓ Test sürümü",
   "dl_get": "APK indir",
   "dl_get_linux": "AppImage indir",
-  "dl_note": "Bir sonraki sürümü hazırlarken indirmeler geçici olarak kapalı. Haberler Telegram kanalımızda.",
+  "dl_note": "Android, bilinmeyen kaynaktan uygulama yükleme izni isteyecek — Google Play dışında bu normaldir. Uygulama test modunda: hatalar olabilir ve test dönemine ait veriler sıfırlanabilir. Linux sürümü yakında.",
   "tok_today": "Bugün, uygulama içinde",
   "tok_use1": "Premium",
   "tok_use1v": "daha yüksek kotalar, daha büyük dosyalar",

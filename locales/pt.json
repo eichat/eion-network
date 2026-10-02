@@ -92,7 +92,7 @@
     },
     {
       "q": "Quais plataformas são suportadas?",
-      "a": "Android e Linux — as transferências estão temporariamente fechadas enquanto preparamos a próxima versão; novidades no nosso canal do Telegram. iOS e Windows estão nos planos."
+      "a": "Android — o download está aberto (versão de teste: podem surgir erros e os dados do período de teste podem ser repostos). Linux chega em breve. iOS e Windows estão nos planos."
     }
   ],
   "footer_tagline": "Converse. Compartilhe. Seus dados são seus.",
@@ -102,7 +102,7 @@
   "dl_ready": "✓ Versão de teste",
   "dl_get": "Baixar APK",
   "dl_get_linux": "Baixar AppImage",
-  "dl_note": "As transferências estão temporariamente fechadas enquanto preparamos a próxima versão. As novidades estão no nosso canal do Telegram.",
+  "dl_note": "O Android vai pedir permissão para instalar uma app de origem desconhecida — fora do Google Play isso é normal. A app está em modo de teste: podem surgir erros e os dados do período de teste podem ser repostos. A versão para Linux chega em breve.",
   "tok_today": "Hoje, dentro do aplicativo",
   "tok_use1": "Premium",
   "tok_use1v": "limites maiores, arquivos maiores",

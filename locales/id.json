@@ -92,7 +92,7 @@
     },
     {
       "q": "Platform apa saja yang didukung?",
-      "a": "Android dan Linux — unduhan ditutup sementara selagi kami menyiapkan versi berikutnya; kabar terbaru di kanal Telegram kami. iOS dan Windows sudah direncanakan."
+      "a": "Android — unduhan dibuka (versi uji: bisa ada galat, data masa uji dapat diatur ulang). Linux segera hadir. iOS dan Windows direncanakan."
     }
   ],
   "footer_tagline": "Bicara. Berbagi. Datamu milikmu.",
@@ -102,7 +102,7 @@
   "dl_ready": "✓ Versi uji",
   "dl_get": "Unduh APK",
   "dl_get_linux": "Unduh AppImage",
-  "dl_note": "Unduhan ditutup sementara selagi kami menyiapkan versi berikutnya. Kabar terbaru ada di kanal Telegram kami.",
+  "dl_note": "Android akan meminta izin memasang aplikasi dari sumber tidak dikenal — di luar Google Play hal ini wajar. Aplikasi dalam mode uji: bisa ada galat, dan data masa uji dapat diatur ulang. Versi Linux segera hadir.",
   "tok_today": "Hari ini, di dalam aplikasi",
   "tok_use1": "Premium",
   "tok_use1v": "kuota lebih besar, file lebih besar",
