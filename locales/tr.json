@@ -43,7 +43,6 @@
   "prem_f1": "5 MB yerine 20 MB'a kadar dosya",
   "prem_f2": "Yapay zekâ asistanı: günde 15 yerine 100 istek",
   "prem_f3": "Yükleme: günde 200 MB yerine 1 GB",
-  "prem_f4": "Relay üzerinden arama: günde 10 yerine 50",
   "prem_f5": "Renkli takma ad ve avatar halkası",
   "prem_f6": "Daha güçlü yapay zekâ modeli",
   "prem_f7": "1080 coin tasarruf — üç aydan fazlası bedava",
@@ -82,7 +81,7 @@
     },
     {
       "q": "EION ücretsiz mi?",
-      "a": "Evet. Mesajlaşma uygulaması tamamen ücretsiz. Her gün ücretsiz bir hak tanınır: 15 yapay zekâ isteği, 200 MB yükleme, 10 aktarmalı arama ve 200 otomatik çeviri; bunun üstü jetonla ödenir. Premium hakkı genişletir ve dosya sınırını 20 MB’a çıkarır: ayda 🪙 300 veya yılda 🪙 2520."
+      "a": "Evet. Mesajlaşma uygulaması tamamen ücretsiz. Her gün ücretsiz bir hak tanınır: 15 yapay zekâ isteği, 200 MB yükleme ve 200 otomatik çeviri; bunun üstü jetonla ödenir. Premium hakkı genişletir ve dosya sınırını 20 MB’a çıkarır: ayda 🪙 300 veya yılda 🪙 2520."
     },
     {
       "q": "Mesajlarım şifreli mi?",
@@ -90,7 +89,7 @@
     },
     {
       "q": "Jeton nedir?",
-      "a": "Uygulamanın iç para birimi: premium, çıkartma paketleri, ücretli kanal abonelikleri, kullanıcılar arası transferler ve günlük ücretsiz hakkın üstündeki her şey — yapay zekâ istekleri, yüklemeler, aktarmalı aramalar, otomatik çeviri. Kayıt olunca 🪙 50 verilir. Bunlar para da kripto para da değildir ve şu an paraya çevrilemez; kazanılan coinlerin çekilmesi planlanıyor. Davet ettiğiniz ve aktif hale gelen her arkadaş için 🪙 50 alırsınız."
+      "a": "Uygulamanın iç para birimi: premium, çıkartma paketleri, ücretli kanal abonelikleri, kullanıcılar arası transferler ve günlük ücretsiz hakkın üstündeki her şey — yapay zekâ istekleri, yüklemeler, otomatik çeviri. Kayıt olunca 🪙 50 verilir. Bunlar para da kripto para da değildir ve şu an paraya çevrilemez; kazanılan coinlerin çekilmesi planlanıyor. Davet ettiğiniz ve aktif hale gelen her arkadaş için 🪙 50 alırsınız."
     },
     {
       "q": "Hangi platformlar destekleniyor?",

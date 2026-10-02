@@ -43,7 +43,6 @@
   "prem_f1": "File fino a 20 MB invece di 5",
   "prem_f2": "Assistente IA: 100 richieste al giorno invece di 15",
   "prem_f3": "Caricamenti: 1 GB al giorno invece di 200 MB",
-  "prem_f4": "Chiamate tramite relay: 50 al giorno invece di 10",
   "prem_f5": "Nickname colorato e anello dell'avatar",
   "prem_f6": "Un modello IA più potente",
   "prem_f7": "Risparmi 1080 monete — oltre tre mesi gratis",
@@ -82,7 +81,7 @@
     },
     {
       "q": "EION è gratuito?",
-      "a": "Sì. Il messenger è completamente gratuito. Ogni giorno c’è una quota gratuita: 15 richieste IA, 200 MB di caricamenti, 10 chiamate via relay e 200 traduzioni automatiche; oltre questa paghi in monete. Premium amplia la quota e alza il limite dei file a 20 MB: 🪙 300 al mese o 🪙 2520 all’anno."
+      "a": "Sì. Il messenger è completamente gratuito. Ogni giorno c’è una quota gratuita: 15 richieste IA, 200 MB di caricamenti e 200 traduzioni automatiche; oltre questa paghi in monete. Premium amplia la quota e alza il limite dei file a 20 MB: 🪙 300 al mese o 🪙 2520 all’anno."
     },
     {
       "q": "I miei messaggi sono cifrati?",
@@ -90,7 +89,7 @@
     },
     {
       "q": "Che cosa sono le monete EION?",
-      "a": "Una valuta interna dell’app: premium, pacchetti di adesivi, abbonamenti a pagamento ai canali, trasferimenti tra utenti e tutto ciò che supera la quota giornaliera gratuita — richieste IA, caricamenti, chiamate via relay, traduzione automatica. La registrazione dà 🪙 50. Non sono denaro né criptovaluta e al momento non si possono cambiare in denaro; il prelievo delle monete guadagnate è previsto. Per ogni amico invitato che diventa attivo ricevi 🪙 50."
+      "a": "Una valuta interna dell’app: premium, pacchetti di adesivi, abbonamenti a pagamento ai canali, trasferimenti tra utenti e tutto ciò che supera la quota giornaliera gratuita — richieste IA, caricamenti, traduzione automatica. La registrazione dà 🪙 50. Non sono denaro né criptovaluta e al momento non si possono cambiare in denaro; il prelievo delle monete guadagnate è previsto. Per ogni amico invitato che diventa attivo ricevi 🪙 50."
     },
     {
       "q": "Quali piattaforme sono supportate?",

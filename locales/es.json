@@ -43,7 +43,6 @@
   "prem_f1": "Archivos de hasta 20 MB en vez de 5",
   "prem_f2": "Asistente de IA: 100 consultas al día en vez de 15",
   "prem_f3": "Subidas: 1 GB al día en vez de 200 MB",
-  "prem_f4": "Llamadas por relay: 50 al día en vez de 10",
   "prem_f5": "Apodo en color y anillo de avatar",
   "prem_f6": "Un modelo de IA más potente",
   "prem_f7": "Ahorra 1080 monedas — más de tres meses gratis",
@@ -82,7 +81,7 @@
     },
     {
       "q": "¿EION es gratis?",
-      "a": "Sí. El mensajero es totalmente gratuito. Cada día hay una cuota gratuita: 15 consultas de IA, 200 MB de subidas, 10 llamadas por relé y 200 traducciones automáticas; por encima de ella pagas con monedas. Premium amplía la cuota y sube el límite de archivo a 20 MB: 🪙 300 al mes o 🪙 2520 al año."
+      "a": "Sí. El mensajero es totalmente gratuito. Cada día hay una cuota gratuita: 15 consultas de IA, 200 MB de subidas y 200 traducciones automáticas; por encima de ella pagas con monedas. Premium amplía la cuota y sube el límite de archivo a 20 MB: 🪙 300 al mes o 🪙 2520 al año."
     },
     {
       "q": "¿Están cifrados mis mensajes?",
@@ -90,7 +89,7 @@
     },
     {
       "q": "¿Qué son las monedas EION?",
-      "a": "Una moneda interna de la aplicación: premium, packs de stickers, suscripciones de pago a canales, transferencias entre usuarios y todo lo que supere la cuota diaria gratuita: consultas de IA, subidas, llamadas por relé, traducción automática. Por registrarte recibes 🪙 50. No son dinero ni criptomoneda y por ahora no se pueden cambiar por dinero; el retiro de las monedas ganadas está previsto. Por cada amigo que invites y se vuelva activo recibes 🪙 50."
+      "a": "Una moneda interna de la aplicación: premium, packs de stickers, suscripciones de pago a canales, transferencias entre usuarios y todo lo que supere la cuota diaria gratuita: consultas de IA, subidas, traducción automática. Por registrarte recibes 🪙 50. No son dinero ni criptomoneda y por ahora no se pueden cambiar por dinero; el retiro de las monedas ganadas está previsto. Por cada amigo que invites y se vuelva activo recibes 🪙 50."
     },
     {
       "q": "¿Qué plataformas son compatibles?",
