@@ -76,7 +76,7 @@ footer a:hover{color:var(--neon)}
   <li><b>Нік</b> — обов'язковий, публічний.</li>
   <li><b>Пароль</b> — зберігається лише як необоротний хеш (bcrypt). Ми не бачимо ваш пароль і не можемо його відновити.</li>
   <li><b>Адреса електронної пошти</b> — необов'язкова, потрібна лише для відновлення доступу.</li>
-  <li><b>Номер телефону</b> — необов'язковий, потрібен лише щоб вас могли знайти знайомі з вашої адресної книги.</li>
+  <li><b>Номер телефону</b> — потрібен при реєстрації: його підтверджують кодом, і це захищає EION від фейкових акаунтів. Якщо на номері немає Telegram, через який приходить код, реєстрація можлива без номера. Номер не показується іншим людям; за ним вас можуть знайти лише знайомі, у чиїй адресній книзі він є. Зберігаємо його в міжнародному форматі (з кодом країни).</li>
   <li><b>Аватар, колір, статус</b> — якщо ви їх задали; видимі іншим.</li>
   <li><b>Баланс монет і статус преміуму</b>, а також журнал операцій з монетами.</li>
   <li><b>Публічна адреса гаманця Solana</b> — лише якщо ви створили гаманець, поки ця можливість була в застосунку (вимкнено 1 жовтня 2026 року; нові адреси не збираються). Це лише адреса: приватний ключ і резервна фраза залишаються на вашому пристрої й до нас не потрапляють. Адреса та операції з нею видимі в публічному блокчейні.</li>
@@ -149,6 +149,7 @@ footer a:hover{color:var(--neon)}
 <tr><td>Google Firebase (FCM)</td><td>Push-сповіщення</td><td>Токен пристрою; нік відправника або назву групи; тип події (повідомлення, дзвінок). Текст повідомлення НЕ передається</td></tr>
 <tr><td>Sentry (регіон ЄС)</td><td>Звіти про збої</td><td>Технічний опис помилки, модель пристрою, версія застосунку й випадковий ідентифікатор пристрою (без ніка, номера чи пошти; за ним ми, але не Sentry, можемо зрозуміти, з якого акаунта звіт)</td></tr>
 <tr><td>Brevo</td><td>Службові листи (відновлення пароля)</td><td>Адреса пошти й текст листа</td></tr>
+<tr><td>Telegram (Telegram Gateway)</td><td>Доставка коду підтвердження номера в застосунок Telegram</td><td>Номер телефону й одноразовий код</td></tr>
 <tr><td>Groq</td><td>Вбудований AI-асистент і автопереклад</td><td>Ваші запити до асистента, а якщо ви ввімкнули автопереклад — текст повідомлень, які перекладаються (зокрема надісланих вам)</td></tr>
 <tr><td>Google (Gemini)</td><td>Запасний постачальник AI, коли основний недоступний; пошук по довідці асистента</td><td>Те саме, що отримує Groq</td></tr>
 <tr><td>Публічний вузол мережі Solana</td><td>Показ балансу токена й перекази (зараз вимкнено)</td><td>Публічну адресу вашого гаманця</td></tr>
@@ -212,7 +213,7 @@ footer a:hover{color:var(--neon)}
   <li><b>Nickname</b> — required, public.</li>
   <li><b>Password</b> — stored only as an irreversible hash (bcrypt). We cannot see or recover it.</li>
   <li><b>Email address</b> — optional, used only for account recovery.</li>
-  <li><b>Phone number</b> — optional, used only so people in your address book can find you.</li>
+  <li><b>Phone number</b> — required at sign-up: it is confirmed with a code, which protects EION from fake accounts. If the number has no Telegram account (the code is delivered through Telegram), you can register without a number. Your number is never shown to other people; only contacts who already have it in their address book can find you by it. We store it in international format (with the country code).</li>
   <li><b>Avatar, colour, status</b> — if you set them; visible to others.</li>
   <li><b>Coin balance and premium status</b>, along with a log of coin operations.</li>
   <li><b>The public address of your Solana wallet</b> — only if you created a wallet while the app offered it (turned off on 1 October 2026; new addresses are not collected). Only the address: the private key and the recovery phrase stay on your device and never reach us. The address and its transactions are visible on the public blockchain.</li>
@@ -286,6 +287,7 @@ footer a:hover{color:var(--neon)}
 <tr><td>Google Firebase (FCM)</td><td>Push notifications</td><td>Device token; sender's nickname or group name; event type (message, call). Message text is NOT transmitted</td></tr>
 <tr><td>Sentry (EU region)</td><td>Crash reports</td><td>Technical error description, device model, app version and a random device identifier (no nickname, phone or email; we, but not Sentry, can use it to tell which account a report came from)</td></tr>
 <tr><td>Brevo</td><td>Service emails (password recovery)</td><td>Email address and message text</td></tr>
+<tr><td>Telegram (Telegram Gateway)</td><td>Delivering the phone verification code to the Telegram app</td><td>Phone number and the one-time code</td></tr>
 <tr><td>Groq</td><td>Built-in AI assistant and auto-translation</td><td>Your requests to the assistant and, if you enabled auto-translation, the text of the messages being translated (including those sent to you)</td></tr>
 <tr><td>Google (Gemini)</td><td>Fallback AI provider when the main one is unavailable; search across the assistant's knowledge base</td><td>The same as Groq receives</td></tr>
 <tr><td>A public Solana network node</td><td>Showing the token balance and making transfers (currently off)</td><td>The public address of your wallet</td></tr>
