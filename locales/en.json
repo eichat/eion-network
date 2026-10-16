@@ -11,11 +11,11 @@
   "feat_label": "Application",
   "feat_title": "Everything you need <span>in one app</span>",
   "f1_title": "Live Chat",
-  "f1_desc": "Text, photos, videos and documents with captions, plus voice messages. Replies, forwarding, reactions and delivery status. Videos — your own and from links — play inside the app.",
+  "f1_desc": "Text, photos, videos and documents with captions, plus voice messages. Replies, forwarding, reactions and delivery status. Videos — your own and from links — play inside the app. Albums of several photos. Search like WhatsApp — across chats, your phone contacts and all of EION.",
   "f2_title": "AI Assistant",
-  "f2_desc": "A built-in helper for questions, drafts and translation — without leaving the chat. It knows how EION works and can show your balance and daily limits.",
+  "f2_desc": "A built-in helper for questions, drafts and translation — without leaving the chat. It knows how EION works and can show your balance and daily limits. It reads photos and text files, and conversations are kept in a searchable history.",
   "f3_title": "HD Video Calls",
-  "f3_desc": "Audio and video calls over WebRTC — directly between devices when possible, otherwise via a relay.",
+  "f3_desc": "Audio and video calls over WebRTC — directly between devices when possible, otherwise via a relay. No limits and no charge.",
   "f4_title": "Groups",
   "f4_desc": "Groups and channels with roles, comments, reactions and paid subscriptions. Live streams from YouTube and Twitch play inside the app, invitations go out as a link, and channel owners get statistics.",
   "f5_title": "End-to-end encryption",
@@ -28,9 +28,9 @@
   "tok_label": "Coins",
   "tok_title": "<span>Coins</span>",
   "tok_free": "Free daily allowance",
-  "tok_free_v": "AI 15 · 200 MB · 10 calls",
+  "tok_free_v": "AI 15 · 200 MB",
   "tok_over": "Beyond the allowance",
-  "tok_over_v": "1 · 1 / 10 MB · 1 🪙",
+  "tok_over_v": "🪙 1 · 🪙 1 / 10 MB",
   "tok_register": "Registration bonus",
   "tok_invite": "Inviting a friend",
   "tok_invite_v": "+50 🪙 once your friend is active",
@@ -81,7 +81,7 @@
     },
     {
       "q": "Is EION free?",
-      "a": "Yes. The full messenger is free. Every day you get a free allowance — 15 AI requests, 200 MB of uploads and 200 auto-translations; beyond it you pay in coins. Premium widens the allowance and raises the file limit to 20 MB: 🪙 300 a month or 🪙 2520 a year."
+      "a": "Yes. The full messenger is free. Every day you get a free allowance — 15 AI requests, 200 MB of uploads and 200 auto-translations; beyond it you pay in coins. Premium widens the allowance and raises the file limit to 20 MB: 🪙 300 a month or 🪙 2520 a year. Calls have no limits."
     },
     {
       "q": "Are my messages encrypted?",

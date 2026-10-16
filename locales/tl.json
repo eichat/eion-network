@@ -11,11 +11,11 @@
   "feat_label": "Aplikasyon",
   "feat_title": "Lahat ng kailangan mo <span>sa isang app</span>",
   "f1_title": "Mga chat",
-  "f1_desc": "Teksto, litrato, video at dokumento na may caption, at mga voice message. Reply, pagpapasa, reaction at status ng paghahatid. Ang mga video — sarili mo man o galing sa link — pumapatugtog sa loob ng app.",
+  "f1_desc": "Teksto, litrato, video at dokumento na may caption, at mga voice message. Reply, pagpapasa, reaction at status ng paghahatid. Ang mga video — sarili mo man o galing sa link — pumapatugtog sa loob ng app. Mga album ng ilang larawan. Paghahanap gaya ng WhatsApp — sa mga chat, contact sa telepono at buong EION.",
   "f2_title": "Katulong na AI",
-  "f2_desc": "Isang built-in na katulong para sa mga tanong, draft at pagsasalin — hindi kailangang umalis sa chat. Alam niya kung paano gumagana ang EION at maipapakita niya ang balanse at mga pang-araw-araw na limitasyon mo.",
+  "f2_desc": "Isang built-in na katulong para sa mga tanong, draft at pagsasalin — hindi kailangang umalis sa chat. Alam niya kung paano gumagana ang EION at maipapakita niya ang balanse at mga pang-araw-araw na limitasyon mo. Nababasa nito ang mga larawan at text file, at nasa kasaysayang may paghahanap ang mga usapan.",
   "f3_title": "Mga HD video call",
-  "f3_desc": "Audio at video na tawag sa WebRTC — direkta sa pagitan ng mga device kung kaya, kung hindi ay sa pamamagitan ng relay.",
+  "f3_desc": "Audio at video na tawag sa WebRTC — direkta sa pagitan ng mga device kung kaya, kung hindi ay sa pamamagitan ng relay. Walang limitasyon at walang bayad.",
   "f4_title": "Mga Grupo",
   "f4_desc": "Mga grupo at channel na may role, komento, reaction at bayad na subscription. Ang live stream mula sa YouTube at Twitch ay pumapatugtog sa loob ng app, nag-iimbita sa pamamagitan ng link, at may statistics ang may-ari ng channel.",
   "f5_title": "End-to-end na pag-encrypt",
@@ -28,9 +28,9 @@
   "tok_label": "Coins",
   "tok_title": "<span>Coins</span>",
   "tok_free": "Libreng arawang alawans",
-  "tok_free_v": "AI 15 · 200 MB · 10 tawag",
+  "tok_free_v": "AI 15 · 200 MB",
   "tok_over": "Lampas sa alawans",
-  "tok_over_v": "1 · 1 / 10 MB · 1 🪙",
+  "tok_over_v": "🪙 1 · 🪙 1 / 10 MB",
   "tok_register": "Bonus sa pagpaparehistro",
   "tok_invite": "Pag-imbita ng kaibigan",
   "tok_invite_v": "+50 🪙 kapag aktibo na ang kaibigan",
@@ -81,7 +81,7 @@
     },
     {
       "q": "Libre ba ang EION?",
-      "a": "Oo. Libre ang buong messenger. Araw-araw may libreng alawans: 15 kahilingan sa AI, 200 MB na upload at 200 awtomatikong pagsasalin; lampas doon ay babayaran mo sa coins. Pinapalawak ng premium ang alawans at itinataas ang limitasyon ng file sa 20 MB: 🪙 300 kada buwan o 🪙 2520 kada taon."
+      "a": "Oo. Libre ang buong messenger. Araw-araw may libreng alawans: 15 kahilingan sa AI, 200 MB na upload at 200 awtomatikong pagsasalin; lampas doon ay babayaran mo sa coins. Pinapalawak ng premium ang alawans at itinataas ang limitasyon ng file sa 20 MB: 🪙 300 kada buwan o 🪙 2520 kada taon. Walang limitasyon ang mga tawag."
     },
     {
       "q": "Naka-encrypt ba ang mga mensahe ko?",

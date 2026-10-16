@@ -11,11 +11,11 @@
   "feat_label": "Application",
   "feat_title": "Tout ce qu'il vous faut <span>dans une seule app</span>",
   "f1_title": "Chat en direct",
-  "f1_desc": "Texte, photos, vidéos et documents avec légendes, ainsi que messages vocaux. Réponses, transferts, réactions et statuts de livraison. Les vidéos — les vôtres comme celles des liens — se lisent dans l'application.",
+  "f1_desc": "Texte, photos, vidéos et documents avec légendes, ainsi que messages vocaux. Réponses, transferts, réactions et statuts de livraison. Les vidéos — les vôtres comme celles des liens — se lisent dans l'application. Albums de plusieurs photos. Recherche comme WhatsApp : discussions, contacts du téléphone et tout EION.",
   "f2_title": "Assistant IA",
-  "f2_desc": "Un assistant intégré pour les questions, les brouillons et la traduction, sans quitter la discussion. Il sait comment fonctionne EION et peut afficher votre solde et vos limites quotidiennes.",
+  "f2_desc": "Un assistant intégré pour les questions, les brouillons et la traduction, sans quitter la discussion. Il sait comment fonctionne EION et peut afficher votre solde et vos limites quotidiennes. Il lit les photos et les fichiers texte, et les conversations restent dans un historique avec recherche.",
   "f3_title": "Appels vidéo HD",
-  "f3_desc": "Appels audio et vidéo via WebRTC — directement entre appareils quand c’est possible, sinon par relais.",
+  "f3_desc": "Appels audio et vidéo via WebRTC — directement entre appareils quand c’est possible, sinon par relais. Sans limite et sans frais.",
   "f4_title": "Groupes",
   "f4_desc": "Groupes et canaux avec rôles, commentaires, réactions et abonnements payants. Les directs YouTube et Twitch se regardent dans l'application, on invite par un lien, et le propriétaire du canal a ses statistiques.",
   "f5_title": "Chiffrement de bout en bout",
@@ -28,9 +28,9 @@
   "tok_label": "Pièces",
   "tok_title": "<span>Pièces</span>",
   "tok_free": "Quota quotidien gratuit",
-  "tok_free_v": "IA 15 · 200 Mo · 10 appels",
+  "tok_free_v": "IA 15 · 200 Mo",
   "tok_over": "Au-delà du quota",
-  "tok_over_v": "1 · 1 / 10 Mo · 1 🪙",
+  "tok_over_v": "🪙 1 · 🪙 1 / 10 Mo",
   "tok_register": "Bonus d’inscription",
   "tok_invite": "Inviter un ami",
   "tok_invite_v": "+50 🪙 quand votre ami devient actif",
@@ -81,7 +81,7 @@
     },
     {
       "q": "EION est-il gratuit ?",
-      "a": "Oui. La messagerie est entièrement gratuite. Chaque jour, un quota gratuit s’applique : 15 requêtes IA, 200 Mo d’envois et 200 traductions automatiques ; au-delà, vous payez en pièces. Premium élargit le quota et porte la limite de fichier à 20 Mo : 🪙 300 par mois ou 🪙 2520 par an."
+      "a": "Oui. La messagerie est entièrement gratuite. Chaque jour, un quota gratuit s’applique : 15 requêtes IA, 200 Mo d’envois et 200 traductions automatiques ; au-delà, vous payez en pièces. Premium élargit le quota et porte la limite de fichier à 20 Mo : 🪙 300 par mois ou 🪙 2520 par an. Les appels sont illimités."
     },
     {
       "q": "Mes messages sont-ils chiffrés ?",

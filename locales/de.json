@@ -11,11 +11,11 @@
   "feat_label": "Anwendung",
   "feat_title": "Alles, was Sie brauchen <span>in einer App</span>",
   "f1_title": "Live-Chat",
-  "f1_desc": "Text, Fotos, Videos und Dokumente mit Bildunterschriften sowie Sprachnachrichten. Antworten, Weiterleiten, Reaktionen und Zustellstatus. Videos – eigene wie auch aus Links – laufen direkt in der App.",
+  "f1_desc": "Text, Fotos, Videos und Dokumente mit Bildunterschriften sowie Sprachnachrichten. Antworten, Weiterleiten, Reaktionen und Zustellstatus. Videos – eigene wie auch aus Links – laufen direkt in der App. Alben aus mehreren Fotos. Suche wie bei WhatsApp — in Chats, Telefonkontakten und ganz EION.",
   "f2_title": "KI-Assistent",
-  "f2_desc": "Ein eingebauter Helfer für Fragen, Entwürfe und Übersetzungen – ohne den Chat zu verlassen. Er weiß, wie EION funktioniert, und kann dein Guthaben und deine Tageslimits zeigen.",
+  "f2_desc": "Ein eingebauter Helfer für Fragen, Entwürfe und Übersetzungen – ohne den Chat zu verlassen. Er weiß, wie EION funktioniert, und kann dein Guthaben und deine Tageslimits zeigen. Er liest Fotos und Textdateien, und Gespräche bleiben in einem durchsuchbaren Verlauf.",
   "f3_title": "HD-Videoanrufe",
-  "f3_desc": "Audio- und Videoanrufe über WebRTC — direkt zwischen den Geräten, wenn möglich, sonst über einen Relay.",
+  "f3_desc": "Audio- und Videoanrufe über WebRTC — direkt zwischen den Geräten, wenn möglich, sonst über einen Relay. Ohne Limits und kostenlos.",
   "f4_title": "Gruppen",
   "f4_desc": "Gruppen und Kanäle mit Rollen, Kommentaren, Reaktionen und bezahlten Abos. Livestreams von YouTube und Twitch laufen in der App, eingeladen wird per Link, und Kanalinhaber sehen ihre Statistik.",
   "f5_title": "Ende-zu-Ende-Verschlüsselung",
@@ -28,9 +28,9 @@
   "tok_label": "Coins",
   "tok_title": "<span>Coins</span>",
   "tok_free": "Kostenloses Tageskontingent",
-  "tok_free_v": "KI 15 · 200 MB · 10 Anrufe",
+  "tok_free_v": "KI 15 · 200 MB",
   "tok_over": "Über dem Kontingent",
-  "tok_over_v": "1 · 1 / 10 MB · 1 🪙",
+  "tok_over_v": "🪙 1 · 🪙 1 / 10 MB",
   "tok_register": "Registrierungsbonus",
   "tok_invite": "Freund einladen",
   "tok_invite_v": "+50 🪙, sobald dein Freund aktiv ist",
@@ -81,7 +81,7 @@
     },
     {
       "q": "Ist EION kostenlos?",
-      "a": "Ja. Der Messenger ist vollständig kostenlos. Täglich gibt es ein kostenloses Kontingent — 15 KI-Anfragen, 200 MB Uploads und 200 Auto-Übersetzungen; darüber hinaus zahlen Sie mit Coins. Premium erweitert das Kontingent und hebt das Dateilimit auf 20 MB: 🪙 300 pro Monat oder 🪙 2520 pro Jahr."
+      "a": "Ja. Der Messenger ist vollständig kostenlos. Täglich gibt es ein kostenloses Kontingent — 15 KI-Anfragen, 200 MB Uploads und 200 Auto-Übersetzungen; darüber hinaus zahlen Sie mit Coins. Premium erweitert das Kontingent und hebt das Dateilimit auf 20 MB: 🪙 300 pro Monat oder 🪙 2520 pro Jahr. Anrufe sind unbegrenzt."
     },
     {
       "q": "Sind meine Nachrichten verschlüsselt?",

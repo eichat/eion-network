@@ -11,11 +11,11 @@
   "feat_label": "Applicatie",
   "feat_title": "Alles wat je nodig hebt <span>in één app</span>",
   "f1_title": "Live chat",
-  "f1_desc": "Tekst, foto’s, video’s en documenten met bijschriften, plus spraakberichten. Antwoorden, doorsturen, reacties en bezorgstatus. Video’s — eigen en uit links — spelen in de app zelf.",
+  "f1_desc": "Tekst, foto’s, video’s en documenten met bijschriften, plus spraakberichten. Antwoorden, doorsturen, reacties en bezorgstatus. Video’s — eigen en uit links — spelen in de app zelf. Albums van meerdere foto's. Zoeken zoals in WhatsApp — in chats, telefooncontacten en heel EION.",
   "f2_title": "AI-assistent",
-  "f2_desc": "Een ingebouwde helper voor vragen, concepten en vertaling — zonder de chat te verlaten. Hij weet hoe EION werkt en kan je saldo en daglimieten laten zien.",
+  "f2_desc": "Een ingebouwde helper voor vragen, concepten en vertaling — zonder de chat te verlaten. Hij weet hoe EION werkt en kan je saldo en daglimieten laten zien. Leest foto's en tekstbestanden, en gesprekken blijven in een doorzoekbare geschiedenis.",
   "f3_title": "HD-videogesprekken",
-  "f3_desc": "Audio- en videogesprekken via WebRTC — rechtstreeks tussen apparaten waar het kan, anders via een relay.",
+  "f3_desc": "Audio- en videogesprekken via WebRTC — rechtstreeks tussen apparaten waar het kan, anders via een relay. Zonder limieten en gratis.",
   "f4_title": "Groepen",
   "f4_desc": "Groepen en kanalen met rollen, reacties, comments en betaalde abonnementen. Livestreams van YouTube en Twitch spelen in de app, uitnodigen gaat via een link en kanaaleigenaren zien statistieken.",
   "f5_title": "End-to-end-versleuteling",
@@ -28,9 +28,9 @@
   "tok_label": "Munten",
   "tok_title": "<span>Munten</span>",
   "tok_free": "Gratis daglimiet",
-  "tok_free_v": "AI 15 · 200 MB · 10 gesprekken",
+  "tok_free_v": "AI 15 · 200 MB",
   "tok_over": "Boven het daglimiet",
-  "tok_over_v": "1 · 1 / 10 MB · 1 🪙",
+  "tok_over_v": "🪙 1 · 🪙 1 / 10 MB",
   "tok_register": "Registratiebonus",
   "tok_invite": "Een vriend uitnodigen",
   "tok_invite_v": "+50 🪙 zodra je vriend actief is",
@@ -81,7 +81,7 @@
     },
     {
       "q": "Is EION gratis?",
-      "a": "Ja. De messenger is volledig gratis. Elke dag geldt een gratis limiet: 15 AI-verzoeken, 200 MB uploads en 200 automatische vertalingen; daarboven betaal je met munten. Premium verruimt de limiet en verhoogt de bestandslimiet naar 20 MB: 🪙 300 per maand of 🪙 2520 per jaar."
+      "a": "Ja. De messenger is volledig gratis. Elke dag geldt een gratis limiet: 15 AI-verzoeken, 200 MB uploads en 200 automatische vertalingen; daarboven betaal je met munten. Premium verruimt de limiet en verhoogt de bestandslimiet naar 20 MB: 🪙 300 per maand of 🪙 2520 per jaar. Bellen is onbeperkt."
     },
     {
       "q": "Zijn mijn berichten versleuteld?",

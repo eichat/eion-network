@@ -11,11 +11,11 @@
   "feat_label": "Applicazione",
   "feat_title": "Tutto ciò di cui hai bisogno <span>in una sola app</span>",
   "f1_title": "Chat dal vivo",
-  "f1_desc": "Testo, foto, video e documenti con didascalie, oltre ai messaggi vocali. Risposte, inoltri, reazioni e stati di consegna. I video, sia i tuoi sia quelli dai link, si aprono dentro l’app.",
+  "f1_desc": "Testo, foto, video e documenti con didascalie, oltre ai messaggi vocali. Risposte, inoltri, reazioni e stati di consegna. I video, sia i tuoi sia quelli dai link, si aprono dentro l’app. Album di più foto. Ricerca come WhatsApp: nelle chat, nei contatti del telefono e in tutto EION.",
   "f2_title": "Assistente IA",
-  "f2_desc": "Un assistente integrato per domande, bozze e traduzioni, senza uscire dalla chat. Sa come funziona EION e può mostrarti saldo e limiti giornalieri.",
+  "f2_desc": "Un assistente integrato per domande, bozze e traduzioni, senza uscire dalla chat. Sa come funziona EION e può mostrarti saldo e limiti giornalieri. Legge foto e file di testo, e le conversazioni restano in una cronologia con ricerca.",
   "f3_title": "Videochiamate HD",
-  "f3_desc": "Chiamate audio e video via WebRTC — dirette tra i dispositivi quando è possibile, altrimenti tramite relay.",
+  "f3_desc": "Chiamate audio e video via WebRTC — dirette tra i dispositivi quando è possibile, altrimenti tramite relay. Senza limiti e senza costi.",
   "f4_title": "Gruppi",
   "f4_desc": "Gruppi e canali con ruoli, commenti, reazioni e abbonamenti a pagamento. Le dirette da YouTube e Twitch si guardano nell’app, si invita con un link e il proprietario del canale ha le statistiche.",
   "f5_title": "Crittografia end-to-end",
@@ -28,9 +28,9 @@
   "tok_label": "Monete",
   "tok_title": "<span>Monete</span>",
   "tok_free": "Quota giornaliera gratuita",
-  "tok_free_v": "IA 15 · 200 MB · 10 chiamate",
+  "tok_free_v": "IA 15 · 200 MB",
   "tok_over": "Oltre la quota",
-  "tok_over_v": "1 · 1 / 10 MB · 1 🪙",
+  "tok_over_v": "🪙 1 · 🪙 1 / 10 MB",
   "tok_register": "Bonus di registrazione",
   "tok_invite": "Invitare un amico",
   "tok_invite_v": "+50 🪙 quando l’amico diventa attivo",
@@ -81,7 +81,7 @@
     },
     {
       "q": "EION è gratuito?",
-      "a": "Sì. Il messenger è completamente gratuito. Ogni giorno c’è una quota gratuita: 15 richieste IA, 200 MB di caricamenti e 200 traduzioni automatiche; oltre questa paghi in monete. Premium amplia la quota e alza il limite dei file a 20 MB: 🪙 300 al mese o 🪙 2520 all’anno."
+      "a": "Sì. Il messenger è completamente gratuito. Ogni giorno c’è una quota gratuita: 15 richieste IA, 200 MB di caricamenti e 200 traduzioni automatiche; oltre questa paghi in monete. Premium amplia la quota e alza il limite dei file a 20 MB: 🪙 300 al mese o 🪙 2520 all’anno. Le chiamate sono illimitate."
     },
     {
       "q": "I miei messaggi sono cifrati?",

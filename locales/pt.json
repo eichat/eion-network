@@ -11,11 +11,11 @@
   "feat_label": "Aplicação",
   "feat_title": "Tudo o que precisa <span>num só app</span>",
   "f1_title": "Chat ao vivo",
-  "f1_desc": "Texto, fotos, vídeos e documentos com legendas, além de mensagens de voz. Respostas, encaminhamentos, reações e status de entrega. Os vídeos, seus e de links, tocam dentro do app.",
+  "f1_desc": "Texto, fotos, vídeos e documentos com legendas, além de mensagens de voz. Respostas, encaminhamentos, reações e status de entrega. Os vídeos, seus e de links, tocam dentro do app. Álbuns de várias fotos. Busca como no WhatsApp — nas conversas, nos contatos do telefone e em todo o EION.",
   "f2_title": "Assistente IA",
-  "f2_desc": "Um assistente integrado para perguntas, rascunhos e tradução, sem sair do chat. Ele sabe como o EION funciona e pode mostrar seu saldo e limites diários.",
+  "f2_desc": "Um assistente integrado para perguntas, rascunhos e tradução, sem sair do chat. Ele sabe como o EION funciona e pode mostrar seu saldo e limites diários. Lê fotos e arquivos de texto, e as conversas ficam num histórico com busca.",
   "f3_title": "Videochamadas HD",
-  "f3_desc": "Chamadas de áudio e vídeo por WebRTC — diretas entre dispositivos quando possível, caso contrário por relé.",
+  "f3_desc": "Chamadas de áudio e vídeo por WebRTC — diretas entre dispositivos quando possível, caso contrário por relé. Sem limites e sem custo.",
   "f4_title": "Grupos",
   "f4_desc": "Grupos e canais com papéis, comentários, reações e assinaturas pagas. As transmissões do YouTube e da Twitch tocam dentro do app, o convite vai por link e o dono do canal tem estatísticas.",
   "f5_title": "Encriptação ponta a ponta",
@@ -28,9 +28,9 @@
   "tok_label": "Moedas",
   "tok_title": "<span>Moedas</span>",
   "tok_free": "Quota diária gratuita",
-  "tok_free_v": "IA 15 · 200 MB · 10 chamadas",
+  "tok_free_v": "IA 15 · 200 MB",
   "tok_over": "Acima da quota",
-  "tok_over_v": "1 · 1 / 10 MB · 1 🪙",
+  "tok_over_v": "🪙 1 · 🪙 1 / 10 MB",
   "tok_register": "Bônus de registro",
   "tok_invite": "Convidar um amigo",
   "tok_invite_v": "+50 🪙 quando o amigo ficar ativo",
@@ -81,7 +81,7 @@
     },
     {
       "q": "O EION é gratuito?",
-      "a": "Sim. O mensageiro é totalmente gratuito. Todos os dias há uma quota gratuita: 15 pedidos de IA, 200 MB de envios e 200 traduções automáticas; acima dela paga com moedas. O premium amplia a quota e sobe o limite de ficheiro para 20 MB: 🪙 300 por mês ou 🪙 2520 por ano."
+      "a": "Sim. O mensageiro é totalmente gratuito. Todos os dias há uma quota gratuita: 15 pedidos de IA, 200 MB de envios e 200 traduções automáticas; acima dela paga com moedas. O premium amplia a quota e sobe o limite de ficheiro para 20 MB: 🪙 300 por mês ou 🪙 2520 por ano. As chamadas não têm limite."
     },
     {
       "q": "Minhas mensagens são criptografadas?",

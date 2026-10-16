@@ -11,11 +11,11 @@
   "feat_label": "Aplikasi",
   "feat_title": "Semua yang Anda butuhkan <span>dalam satu aplikasi</span>",
   "f1_title": "Obrolan langsung",
-  "f1_desc": "Teks, foto, video, dan dokumen dengan keterangan, plus pesan suara. Balasan, penerusan, reaksi, dan status pengiriman. Video — milik sendiri maupun dari tautan — diputar di dalam aplikasi.",
+  "f1_desc": "Teks, foto, video, dan dokumen dengan keterangan, plus pesan suara. Balasan, penerusan, reaksi, dan status pengiriman. Video — milik sendiri maupun dari tautan — diputar di dalam aplikasi. Album beberapa foto. Pencarian seperti WhatsApp — di chat, kontak ponsel, dan seluruh EION.",
   "f2_title": "Asisten AI",
-  "f2_desc": "Asisten bawaan untuk pertanyaan, draf, dan terjemahan — tanpa keluar dari chat. Ia tahu cara kerja EION dan bisa menunjukkan saldo serta batas harian Anda.",
+  "f2_desc": "Asisten bawaan untuk pertanyaan, draf, dan terjemahan — tanpa keluar dari chat. Ia tahu cara kerja EION dan bisa menunjukkan saldo serta batas harian Anda. Membaca foto dan file teks, dan percakapan tersimpan dalam riwayat yang bisa dicari.",
   "f3_title": "Panggilan Video HD",
-  "f3_desc": "Panggilan suara dan video lewat WebRTC — langsung antar perangkat bila memungkinkan, jika tidak lewat relay.",
+  "f3_desc": "Panggilan suara dan video lewat WebRTC — langsung antar perangkat bila memungkinkan, jika tidak lewat relay. Tanpa batas dan tanpa biaya.",
   "f4_title": "Grup",
   "f4_desc": "Grup dan kanal dengan peran, komentar, reaksi, dan langganan berbayar. Siaran langsung dari YouTube dan Twitch diputar di dalam aplikasi, undangan dikirim lewat tautan, dan pemilik kanal punya statistik.",
   "f5_title": "Enkripsi ujung ke ujung",
@@ -28,9 +28,9 @@
   "tok_label": "Koin",
   "tok_title": "<span>Koin</span>",
   "tok_free": "Jatah gratis harian",
-  "tok_free_v": "AI 15 · 200 MB · 10 panggilan",
+  "tok_free_v": "AI 15 · 200 MB",
   "tok_over": "Di atas jatah",
-  "tok_over_v": "1 · 1 / 10 MB · 1 🪙",
+  "tok_over_v": "🪙 1 · 🪙 1 / 10 MB",
   "tok_register": "Bonus pendaftaran",
   "tok_invite": "Mengundang teman",
   "tok_invite_v": "+50 🪙 saat teman Anda aktif",
@@ -81,7 +81,7 @@
     },
     {
       "q": "Apakah EION gratis?",
-      "a": "Ya. Aplikasi pesan ini sepenuhnya gratis. Setiap hari ada jatah gratis: 15 permintaan AI, 200 MB unggahan, dan 200 terjemahan otomatis; di atas itu Anda membayar dengan koin. Premium memperluas jatah dan menaikkan batas berkas ke 20 MB: 🪙 300 per bulan atau 🪙 2520 per tahun."
+      "a": "Ya. Aplikasi pesan ini sepenuhnya gratis. Setiap hari ada jatah gratis: 15 permintaan AI, 200 MB unggahan, dan 200 terjemahan otomatis; di atas itu Anda membayar dengan koin. Premium memperluas jatah dan menaikkan batas berkas ke 20 MB: 🪙 300 per bulan atau 🪙 2520 per tahun. Panggilan tanpa batas."
     },
     {
       "q": "Apakah pesan saya terenkripsi?",

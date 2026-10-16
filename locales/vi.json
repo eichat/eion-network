@@ -11,11 +11,11 @@
   "feat_label": "Ứng dụng",
   "feat_title": "Tất cả những gì bạn cần <span>trong một ứng dụng</span>",
   "f1_title": "Trò chuyện trực tiếp",
-  "f1_desc": "Văn bản, ảnh, video và tài liệu kèm chú thích, cùng tin nhắn thoại. Trả lời, chuyển tiếp, biểu cảm và trạng thái gửi. Video — của bạn và từ liên kết — phát ngay trong ứng dụng.",
+  "f1_desc": "Văn bản, ảnh, video và tài liệu kèm chú thích, cùng tin nhắn thoại. Trả lời, chuyển tiếp, biểu cảm và trạng thái gửi. Video — của bạn và từ liên kết — phát ngay trong ứng dụng. Album nhiều ảnh. Tìm kiếm như WhatsApp — trong cuộc trò chuyện, danh bạ điện thoại và toàn EION.",
   "f2_title": "Trợ lý AI",
-  "f2_desc": "Một trợ lý tích hợp cho câu hỏi, bản nháp và dịch thuật — không cần rời khỏi cuộc trò chuyện. Nó biết EION hoạt động thế nào và có thể cho bạn xem số dư cùng hạn mức mỗi ngày.",
+  "f2_desc": "Một trợ lý tích hợp cho câu hỏi, bản nháp và dịch thuật — không cần rời khỏi cuộc trò chuyện. Nó biết EION hoạt động thế nào và có thể cho bạn xem số dư cùng hạn mức mỗi ngày. Đọc được ảnh và tệp văn bản, các cuộc trò chuyện được lưu trong lịch sử có tìm kiếm.",
   "f3_title": "Cuộc gọi video HD",
-  "f3_desc": "Cuộc gọi thoại và video qua WebRTC — trực tiếp giữa các thiết bị khi có thể, nếu không thì qua relay.",
+  "f3_desc": "Cuộc gọi thoại và video qua WebRTC — trực tiếp giữa các thiết bị khi có thể, nếu không thì qua relay. Không giới hạn, không mất phí.",
   "f4_title": "Nhóm",
   "f4_desc": "Nhóm và kênh có vai trò, bình luận, biểu cảm và đăng ký trả phí. Buổi phát trực tiếp từ YouTube và Twitch phát trong ứng dụng, mời bằng liên kết, còn chủ kênh có thống kê.",
   "f5_title": "Mã hoá đầu cuối",
@@ -28,9 +28,9 @@
   "tok_label": "Xu",
   "tok_title": "<span>Xu</span>",
   "tok_free": "Hạn mức miễn phí mỗi ngày",
-  "tok_free_v": "AI 15 · 200 MB · 10 cuộc gọi",
+  "tok_free_v": "AI 15 · 200 MB",
   "tok_over": "Vượt hạn mức",
-  "tok_over_v": "1 · 1 / 10 MB · 1 🪙",
+  "tok_over_v": "🪙 1 · 🪙 1 / 10 MB",
   "tok_register": "Thưởng đăng ký",
   "tok_invite": "Mời bạn bè",
   "tok_invite_v": "+50 🪙 khi bạn bè hoạt động",
@@ -81,7 +81,7 @@
     },
     {
       "q": "EION có miễn phí không?",
-      "a": "Có. Ứng dụng nhắn tin hoàn toàn miễn phí. Mỗi ngày có một hạn mức miễn phí: 15 yêu cầu AI, 200 MB tải lên và 200 lần dịch tự động; vượt quá thì bạn trả bằng xu. Premium mở rộng hạn mức và nâng giới hạn tệp lên 20 MB: 🪙 300 mỗi tháng hoặc 🪙 2520 mỗi năm."
+      "a": "Có. Ứng dụng nhắn tin hoàn toàn miễn phí. Mỗi ngày có một hạn mức miễn phí: 15 yêu cầu AI, 200 MB tải lên và 200 lần dịch tự động; vượt quá thì bạn trả bằng xu. Premium mở rộng hạn mức và nâng giới hạn tệp lên 20 MB: 🪙 300 mỗi tháng hoặc 🪙 2520 mỗi năm. Gọi điện không giới hạn."
     },
     {
       "q": "Tin nhắn của tôi có được mã hóa không?",

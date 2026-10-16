@@ -11,11 +11,11 @@
   "feat_label": "Uygulama",
   "feat_title": "İhtiyacınız olan her şey <span>tek uygulamada</span>",
   "f1_title": "Canlı Sohbet",
-  "f1_desc": "Altyazılı metin, fotoğraf, video ve belgeler, ayrıca sesli mesajlar. Yanıtlar, iletme, tepkiler ve iletim durumları. Videolar — kendi videolarınız da bağlantılardan gelenler de — uygulamanın içinde oynar.",
+  "f1_desc": "Altyazılı metin, fotoğraf, video ve belgeler, ayrıca sesli mesajlar. Yanıtlar, iletme, tepkiler ve iletim durumları. Videolar — kendi videolarınız da bağlantılardan gelenler de — uygulamanın içinde oynar. Birden çok fotoğraftan albümler. WhatsApp gibi arama — sohbetlerde, rehberde ve tüm EION'da.",
   "f2_title": "Yapay Zeka Asistanı",
-  "f2_desc": "Sorular, taslaklar ve çeviri için sohbetten çıkmadan çalışan yerleşik bir yardımcı. EION’un nasıl çalıştığını bilir; bakiyenizi ve günlük limitlerinizi gösterebilir.",
+  "f2_desc": "Sorular, taslaklar ve çeviri için sohbetten çıkmadan çalışan yerleşik bir yardımcı. EION’un nasıl çalıştığını bilir; bakiyenizi ve günlük limitlerinizi gösterebilir. Fotoğrafları ve metin dosyalarını okur; sohbetler aranabilir bir geçmişte kalır.",
   "f3_title": "HD Görüntülü Aramalar",
-  "f3_desc": "WebRTC üzerinden sesli ve görüntülü aramalar — mümkün olduğunda cihazlar arasında doğrudan, aksi hâlde aktarma üzerinden.",
+  "f3_desc": "WebRTC üzerinden sesli ve görüntülü aramalar — mümkün olduğunda cihazlar arasında doğrudan, aksi hâlde aktarma üzerinden. Sınırsız ve ücretsiz.",
   "f4_title": "Gruplar",
   "f4_desc": "Roller, yorumlar, tepkiler ve ücretli aboneliklerle gruplar ve kanallar. YouTube ve Twitch canlı yayınları uygulamanın içinde oynar, davet bağlantıyla gider ve kanal sahibi istatistikleri görür.",
   "f5_title": "Uçtan uca şifreleme",
@@ -28,9 +28,9 @@
   "tok_label": "Jeton",
   "tok_title": "<span>Jeton</span>",
   "tok_free": "Günlük ücretsiz hak",
-  "tok_free_v": "YZ 15 · 200 MB · 10 arama",
+  "tok_free_v": "YZ 15 · 200 MB",
   "tok_over": "Hakkın üzerinde",
-  "tok_over_v": "1 · 1 / 10 MB · 1 🪙",
+  "tok_over_v": "🪙 1 · 🪙 1 / 10 MB",
   "tok_register": "Kayıt bonusu",
   "tok_invite": "Arkadaş daveti",
   "tok_invite_v": "Arkadaşınız aktif olunca +50 🪙",
@@ -81,7 +81,7 @@
     },
     {
       "q": "EION ücretsiz mi?",
-      "a": "Evet. Mesajlaşma uygulaması tamamen ücretsiz. Her gün ücretsiz bir hak tanınır: 15 yapay zekâ isteği, 200 MB yükleme ve 200 otomatik çeviri; bunun üstü jetonla ödenir. Premium hakkı genişletir ve dosya sınırını 20 MB’a çıkarır: ayda 🪙 300 veya yılda 🪙 2520."
+      "a": "Evet. Mesajlaşma uygulaması tamamen ücretsiz. Her gün ücretsiz bir hak tanınır: 15 yapay zekâ isteği, 200 MB yükleme ve 200 otomatik çeviri; bunun üstü jetonla ödenir. Premium hakkı genişletir ve dosya sınırını 20 MB’a çıkarır: ayda 🪙 300 veya yılda 🪙 2520. Aramalar sınırsızdır."
     },
     {
       "q": "Mesajlarım şifreli mi?",
