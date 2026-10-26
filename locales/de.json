@@ -93,7 +93,7 @@
     },
     {
       "q": "Welche Plattformen werden unterstützt?",
-      "a": "Android — Download ist offen (Testversion: Fehler sind möglich, Daten aus der Testphase können zurückgesetzt werden). Linux folgt bald. iOS und Windows sind geplant."
+      "a": "Android — Download ist offen (Testversion: Fehler sind möglich, Daten aus der Testphase können zurückgesetzt werden). Linux ebenfalls (AppImage). iOS und Windows sind geplant."
     }
   ],
   "footer_tagline": "Reden. Teilen. Ihre Daten gehören Ihnen.",
@@ -103,7 +103,7 @@
   "dl_ready": "✓ Testversion",
   "dl_get": "APK herunterladen",
   "dl_get_linux": "AppImage herunterladen",
-  "dl_note": "Android fragt nach der Erlaubnis, eine App aus unbekannter Quelle zu installieren — außerhalb von Google Play ist das normal. Die App ist im Testmodus: Fehler sind möglich, und Daten aus der Testphase können zurückgesetzt werden. Die Linux-Version folgt bald.",
+  "dl_note": "Android fragt nach der Erlaubnis, eine App aus unbekannter Quelle zu installieren — außerhalb von Google Play ist das normal. Die App ist im Testmodus: Fehler sind möglich, und Daten aus der Testphase können zurückgesetzt werden.",
   "tok_today": "Heute, in der App",
   "tok_use1": "Premium",
   "tok_use1v": "höhere Limits, größere Dateien",

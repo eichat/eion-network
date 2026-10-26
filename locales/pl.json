@@ -93,7 +93,7 @@
     },
     {
       "q": "Jakie platformy są wspierane?",
-      "a": "Android — pobieranie jest otwarte (wersja testowa: możliwe błędy, dane z okresu testów mogą zostać zresetowane). Linux — wkrótce. iOS i Windows są w planach."
+      "a": "Android — pobieranie jest otwarte (wersja testowa: możliwe błędy, dane z okresu testów mogą zostać zresetowane). Linux — również (AppImage). iOS i Windows są w planach."
     }
   ],
   "footer_tagline": "Rozmawiaj. Dziel się. Twoje dane należą do ciebie.",
@@ -103,7 +103,7 @@
   "dl_ready": "✓ Wersja testowa",
   "dl_get": "Pobierz APK",
   "dl_get_linux": "Pobierz AppImage",
-  "dl_note": "Android poprosi o zgodę na instalację aplikacji z nieznanego źródła — poza Google Play to normalne. Aplikacja działa w trybie testowym: możliwe są błędy, a dane z okresu testów mogą zostać zresetowane. Wersja na Linuksa — wkrótce.",
+  "dl_note": "Android poprosi o zgodę na instalację aplikacji z nieznanego źródła — poza Google Play to normalne. Aplikacja działa w trybie testowym: możliwe są błędy, a dane z okresu testów mogą zostać zresetowane.",
   "tok_today": "Dziś, w aplikacji",
   "tok_use1": "Premium",
   "tok_use1v": "wyższe limity, większe pliki",

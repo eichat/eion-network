@@ -93,7 +93,7 @@
     },
     {
       "q": "Quali piattaforme sono supportate?",
-      "a": "Android: il download è aperto (versione di prova: possono esserci errori e i dati del periodo di prova potrebbero essere azzerati). Linux arriverà presto. iOS e Windows sono in programma."
+      "a": "Android: il download è aperto (versione di prova: possono esserci errori e i dati del periodo di prova potrebbero essere azzerati). Anche Linux (AppImage). iOS e Windows sono in programma."
     }
   ],
   "footer_tagline": "Parla. Condividi. I tuoi dati restano tuoi.",
@@ -103,7 +103,7 @@
   "dl_ready": "✓ Versione di prova",
   "dl_get": "Scarica APK",
   "dl_get_linux": "Scarica AppImage",
-  "dl_note": "Android chiederà il permesso di installare un’app da origine sconosciuta: fuori da Google Play è normale. L’app è in modalità test: possono esserci errori e i dati del periodo di prova potrebbero essere azzerati. La versione per Linux arriverà presto.",
+  "dl_note": "Android chiederà il permesso di installare un’app da origine sconosciuta: fuori da Google Play è normale. L’app è in modalità test: possono esserci errori e i dati del periodo di prova potrebbero essere azzerati.",
   "tok_today": "Oggi, nell’app",
   "tok_use1": "Premium",
   "tok_use1v": "limiti più alti, file più grandi",

@@ -93,7 +93,7 @@
     },
     {
       "q": "Anong mga platform ang suportado?",
-      "a": "Android — bukas na ang pag-download (test build: maaaring may mga bug, at puwedeng ma-reset ang data mula sa panahon ng pagsubok). Malapit na ang Linux. Nakaplano ang iOS at Windows."
+      "a": "Android — bukas na ang pag-download (test build: maaaring may mga bug, at puwedeng ma-reset ang data mula sa panahon ng pagsubok). Ganoon din ang Linux (AppImage). Nakaplano ang iOS at Windows."
     }
   ],
   "footer_tagline": "Mag-usap. Magbahagi. Sa iyo ang datos mo.",
@@ -103,7 +103,7 @@
   "dl_ready": "✓ Test build",
   "dl_get": "I-download ang APK",
   "dl_get_linux": "I-download ang AppImage",
-  "dl_note": "Hihingi ang Android ng pahintulot na mag-install ng app mula sa hindi kilalang pinagmulan — normal ito sa labas ng Google Play. Nasa test mode ang app: maaaring may mga bug, at puwedeng ma-reset ang data mula sa panahon ng pagsubok. Malapit na ang bersyon para sa Linux.",
+  "dl_note": "Hihingi ang Android ng pahintulot na mag-install ng app mula sa hindi kilalang pinagmulan — normal ito sa labas ng Google Play. Nasa test mode ang app: maaaring may mga bug, at puwedeng ma-reset ang data mula sa panahon ng pagsubok.",
   "tok_today": "Ngayon, sa loob ng app",
   "tok_use1": "Premium",
   "tok_use1v": "mas mataas na limitasyon, mas malaking file",
