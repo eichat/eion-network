@@ -147,5 +147,6 @@
   "prem_f11": "Keine Werbung in Kanälen",
   "tok_price": "Preis",
   "tok_price_v": "100 🪙 = $1",
-  "footer_refunds": "Rückerstattung"
+  "footer_refunds": "Rückerstattung",
+  "footer_pricing": "Preise"
 }
