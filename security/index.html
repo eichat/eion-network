@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EION — Безпека / Security</title>
+<style>
+:root{--neon:#00d4ff;--bg:#020c14;--bg2:#0a1628;--text:#e8f4f8;--text2:#7ab8cc;--line:rgba(0,212,255,.16);--card:rgba(10,22,40,.5)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Syne',system-ui,-apple-system,sans-serif;line-height:1.72;font-size:16px}
+.glow{position:fixed;top:-40vh;left:50%;transform:translateX(-50%);width:120vw;height:80vh;pointer-events:none;z-index:0;
+  background:radial-gradient(ellipse at center,rgba(0,212,255,.08),transparent 62%)}
+.wrap{position:relative;z-index:1;max-width:780px;margin:0 auto;padding:0 22px 90px}
+nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0;gap:14px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:11px;font-family:'Orbitron',monospace;font-weight:900;font-size:20px;
+  letter-spacing:.14em;color:var(--text);text-decoration:none}
+.brand img{width:30px;height:30px;border-radius:7px}
+.brand:hover{color:var(--neon)}
+.lang{display:flex;gap:8px}
+.lang button{font:inherit;font-size:13px;padding:7px 15px;border:1px solid var(--line);background:var(--card);
+  color:var(--text2);border-radius:9px;cursor:pointer;transition:.2s}
+.lang button:hover{color:var(--neon);border-color:var(--neon)}
+.lang button[aria-pressed="true"]{background:var(--neon);border-color:var(--neon);color:#02121c;font-weight:600}
+h1{font-family:'Orbitron',monospace;font-size:clamp(24px,4.6vw,34px);font-weight:700;letter-spacing:.04em;
+  margin:26px 0 6px;line-height:1.25}
+h2{font-family:'Orbitron',monospace;font-size:clamp(15px,2.4vw,18px);font-weight:700;letter-spacing:.05em;
+  margin:40px 0 12px;color:var(--neon)}
+h3{font-size:16px;font-weight:600;margin:26px 0 7px;color:var(--text)}
+p,li{color:var(--text2)}
+p{margin-bottom:12px}
+ul,ol{padding-left:22px;margin-bottom:12px}
+li{margin:5px 0}
+b,strong{color:var(--text);font-weight:600}
+.meta{color:var(--text2);font-size:14px;opacity:.75;margin-bottom:30px}
+.testnote{border:1px solid #d99a2b;border-radius:10px;padding:14px 16px;margin:0 0 28px;background:rgba(217,154,43,.08);font-size:15px;line-height:1.55}
+.box{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--neon);
+  border-radius:12px;padding:18px 22px;margin:22px 0}
+.box p:last-child{margin-bottom:0}
+a{color:var(--neon);text-decoration:none;border-bottom:1px solid rgba(0,212,255,.3)}
+a:hover{border-bottom-color:var(--neon)}
+table{border-collapse:collapse;width:100%;margin:18px 0;font-size:14.5px;display:block;overflow-x:auto;white-space:nowrap}
+th,td{border:1px solid var(--line);padding:10px 13px;text-align:left;vertical-align:top;white-space:normal}
+th{background:var(--card);color:var(--text);font-weight:600;font-size:13px;letter-spacing:.03em}
+footer{border-top:1px solid var(--line);margin-top:52px;padding-top:24px;color:var(--text2);font-size:14px;text-align:center}
+footer a{margin:0 9px;border-bottom:none;color:var(--text2)}
+footer a:hover{color:var(--neon)}
+[hidden]{display:none!important}
+@media(max-width:600px){body{font-size:15px}.wrap{padding-bottom:60px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="glow"></div>
+<nav><a class="brand" href="/"><img src="/EION-256.png" alt="">EION</a>
+  <div class="lang">
+  <button id="b-uk" aria-pressed="true" onclick="setLang('uk')">Українська</button>
+  <button id="b-en" aria-pressed="false" onclick="setLang('en')">English</button>
+</div>
+</nav>
+<!-- ======================= УКРАЇНСЬКА ======================= -->
+<section id="uk">
+<h1>Безпека й шифрування</h1>
+<p class="meta">Оновлено 6 листопада 2026 року.</p>
+<p>Тут описано, як EION захищає ваше листування: що саме шифрується, якими алгоритмами, що бачить наш сервер і де пролягають межі захисту. Ми пишемо й про те, чого ще немає, — щоб ви могли судити самі.</p>
+
+<div class="box">
+<p><b>Коротко.</b> Наскрізно шифруються особисті чати, групи (текст і вкладення) та дзвінки. Ключі створюються на вашому пристрої й не передаються на сервер. Канали навмисно відкриті. Розмови з асистентом на сервері не шифруються наскрізно. Незалежного аудиту безпеки ще не було — ми плануємо його.</p>
+</div>
+
+<h2>1. Ключі</h2>
+<ul>
+  <li>Кожен пристрій має власну пару ключів <b>X25519</b>. Вона створюється на пристрої під час першого використання.</li>
+  <li>Закритий ключ зберігається в захищеному сховищі операційної системи (Android Keystore, на Linux — Secret Service) і, як запасна копія на випадок, коли системне сховище втрачає записи, у приватних налаштуваннях застосунку. На сервер закритий ключ не передається ніколи.</li>
+  <li>Резервне копіювання даних застосунку в хмару на Android вимкнено, тож ключ не потрапляє й у копії Google.</li>
+  <li>На сервер передається лише відкритий ключ пристрою — щоб інші могли шифрувати для нього.</li>
+  <li>Ключ не відновлюється: якщо видалити застосунок, повідомлення, зашифровані для старого ключа й ще не доставлені, прочитати не вийде. Копії ключа ніде, крім пристрою, немає — це свідомий вибір.</li>
+</ul>
+
+<h2>2. Як шифрується повідомлення</h2>
+<ol>
+  <li>Для кожного повідомлення застосунок створює нову випадкову пару X25519.</li>
+  <li>Спільний секрет із ключем кожного пристрою-одержувача обчислюється за X25519 (ECDH) і перетворюється на ключ шифрування функцією <b>HKDF-SHA256</b> (сіль — одноразовий відкритий ключ, тож кожне повідомлення має власний ключ).</li>
+  <li>Вміст шифрується <b>AES-256-GCM</b> — алгоритмом, що водночас перевіряє цілісність: змінений по дорозі шифротекст не розшифрується.</li>
+  <li>Якщо в одержувача кілька пристроїв (і ваші власні інші пристрої), ключ повідомлення окремо «загортається» для кожного з них — до 255 пристроїв.</li>
+</ol>
+<p><b>Вкладення</b> (фото, відео, голосові, документи) шифруються на пристрої до вивантаження: файл — одним випадковим ключем AES-256-GCM, а цей ключ — для кожного пристрою-одержувача так само, як вище. У сховище потрапляє лише шифротекст.</p>
+<p><b>Групи</b> не мають спільного ключа: кожне повідомлення шифрується для всіх пристроїв усіх, хто є в групі на момент надсилання. Тому вилучений учасник не прочитає нових повідомлень, а новий бачить лише надіслане після вступу (це додатково перевіряє сервер). Якщо в групі понад 255 пристроїв або хтось користується версією застосунку без ключа шифрування, повідомлення в такій групі надсилаються відкрито.</p>
+<p><b>Дзвінки</b> йдуть через WebRTC з обов'язковим шифруванням <b>DTLS-SRTP</b>. Проміжні сервери, які допомагають з'єднатися, передають лише зашифрований потік.</p>
+
+<h2>3. Що бачить наш сервер</h2>
+<p>Навіть у зашифрованих чатах серверу потрібні деякі дані, щоб доставляти повідомлення:</p>
+<ul>
+  <li>хто кому пише й коли (метадані);</li>
+  <li>склад груп;</li>
+  <li>ім'я файла, його розмір, тривалість голосового й форму звукової хвилі;</li>
+  <li>нік відправника або назву групи в push-сповіщенні, яке доставляє Google (Firebase), коли ви офлайн. Тексту повідомлення в сповіщенні немає.</li>
+</ul>
+<p>Відкритими зберігаються <b>канали</b> (вони публічні — шифрування нічого б не сховало, але зламало б пошук і прев'ю), <b>наліпки</b> (передається лише код наліпки з магазину) і <b>розмови з асистентом</b>, коли він працює на сервері. Асистент, завантажений на телефон, працює на самому телефоні; лише довідки на кшталт погоди чи курсу валют він запитує в сервера.</p>
+
+<h2>4. Межі, які варто знати</h2>
+<ul>
+  <li><b>Немає кодів звірки ключів.</b> Відкриті ключі роздає наш сервер. Шифрування захищає від крадіжки бази даних і стороннього доступу, але поки ви не можете самі переконатися, що ключ співрозмовника не підмінено.</li>
+  <li><b>Немає прямої секретності (forward secrecy).</b> Ключ пристрою сталий: якщо його викрадуть, ним можна розшифрувати те, що сервер ще зберігає (до 7 днів для особистих чатів і до 30 — для груп).</li>
+  <li><b>Пристрій — найслабше місце.</b> На пристрої повідомлення зберігаються розшифрованими. Хто має доступ до розблокованого телефона чи облікового запису комп'ютера, той може їх прочитати.</li>
+</ul>
+
+<h2>5. Сервер і дані</h2>
+<ul>
+  <li>Доступ до бази даних має лише наш сервер; запити застосунку до ваших даних вимагають токена сесії.</li>
+  <li>Паролі зберігаються лише як хеш bcrypt.</li>
+  <li>Файли лежать у приватному сховищі й видаються за посиланнями з обмеженим строком дії.</li>
+  <li>Щоденна резервна копія бази шифрується нашим ключем ще до відправлення в сховище копій.</li>
+  <li>Дії з монетами (переказ, платна підписка тощо) додатково вимагають пароль акаунта, який не зберігається на пристрої.</li>
+</ul>
+
+<h2>6. Незалежний аудит</h2>
+<p>Незалежного аудиту безпеки EION ще не проходив. Ми готуємося до нього й опублікуємо висновок тут, коли він буде. До того цей опис — наш власний, і ми відповідаємо за його точність.</p>
+
+<h2>7. Як повідомити про вразливість</h2>
+<p>Якщо ви знайшли ваду безпеки в застосунку, сервері чи сайті, напишіть на <a href="mailto:support@eion.network?subject=Security">support@eion.network</a> з темою «Security». Можна українською або англійською.</p>
+<ul>
+  <li>Опишіть, що саме вразливе, як це відтворити й до чого це може призвести. Версія застосунку й пристрій допоможуть.</li>
+  <li>Ми підтвердимо отримання протягом 7 днів і повідомимо, коли вада буде виправлена.</li>
+  <li>Будь ласка, не публікуйте подробиці, доки виправлення не вийде й користувачі не встигнуть оновитися.</li>
+  <li>Під час дослідження не відкривайте й не змінюйте чужі дані, не перевантажуйте сервіс і не розсилайте спам. Перевіряйте на власних акаунтах.</li>
+</ul>
+<p>Проти тих, хто досліджує сумлінно й дотримується цих правил, ми не вживатимемо юридичних заходів. Платної програми винагород поки немає, але, з вашої згоди, ми подякуємо вам публічно.</p>
+<p>Машиночитний контакт: <a href="/.well-known/security.txt">/.well-known/security.txt</a>.</p>
+</section>
+
+<!-- ======================= ENGLISH ======================= -->
+<section id="en" hidden>
+<h1>Security and encryption</h1>
+<p class="meta">Updated 6 November 2026.</p>
+<p>This page explains how EION protects your conversations: what is encrypted, with which algorithms, what our server can see and where the protection ends. We also list what is not there yet, so you can judge for yourself.</p>
+
+<div class="box">
+<p><b>In short.</b> Direct chats, groups (text and attachments) and calls are end-to-end encrypted. Keys are created on your device and are never sent to the server. Channels are public by design. Conversations with the assistant on our server are not end-to-end encrypted. EION has not had an independent security audit yet — we are planning one.</p>
+</div>
+
+<h2>1. Keys</h2>
+<ul>
+  <li>Every device has its own <b>X25519</b> key pair, generated on the device the first time it is needed.</li>
+  <li>The private key is kept in the operating system's secure storage (Android Keystore; Secret Service on Linux) and, as a fallback for when system storage loses entries, in the app's private settings. The private key is never sent to the server.</li>
+  <li>Cloud backup of app data is disabled on Android, so the key does not end up in Google backups either.</li>
+  <li>Only the device's public key is uploaded, so that others can encrypt for it.</li>
+  <li>The key cannot be recovered: if you uninstall the app, messages encrypted for the old key that were not yet delivered cannot be read. No copy of the key exists anywhere but on the device — by design.</li>
+</ul>
+
+<h2>2. How a message is encrypted</h2>
+<ol>
+  <li>For every message the app creates a fresh random X25519 key pair.</li>
+  <li>A shared secret with each recipient device's key is computed with X25519 (ECDH) and turned into an encryption key with <b>HKDF-SHA256</b> (salted with the one-time public key, so every message has its own key).</li>
+  <li>The content is encrypted with <b>AES-256-GCM</b>, which also checks integrity: ciphertext altered in transit will not decrypt.</li>
+  <li>If the recipient has several devices (and for your own other devices), the message key is wrapped separately for each of them — up to 255 devices.</li>
+</ol>
+<p><b>Attachments</b> (photos, videos, voice messages, documents) are encrypted on the device before upload: the file with one random AES-256-GCM key, and that key for each recipient device as above. Only ciphertext reaches storage.</p>
+<p><b>Groups</b> have no shared key: every message is encrypted for all devices of everyone in the group at the moment of sending. A removed member cannot read new messages, and a new member sees only what was sent after joining (the server enforces this as well). If a group has more than 255 devices, or someone uses an app version without an encryption key, messages in that group are sent unencrypted.</p>
+<p><b>Calls</b> use WebRTC with mandatory <b>DTLS-SRTP</b> encryption. Relay servers that help connect a call only pass the encrypted stream.</p>
+
+<h2>3. What our server can see</h2>
+<p>Even in encrypted chats the server needs some data to deliver messages:</p>
+<ul>
+  <li>who writes to whom and when (metadata);</li>
+  <li>group membership;</li>
+  <li>a file's name, size, a voice message's length and waveform;</li>
+  <li>the sender's nickname or group name in the push notification Google (Firebase) delivers while you are offline. The message text is not in the notification.</li>
+</ul>
+<p>Stored unencrypted are <b>channels</b> (they are public — encryption would hide nothing but would break search and previews), <b>stickers</b> (only the sticker's store code is sent) and <b>conversations with the assistant</b> when it runs on our server. An assistant downloaded to your phone runs on the phone itself; only lookups such as weather or exchange rates go to our server.</p>
+
+<h2>4. Limits you should know about</h2>
+<ul>
+  <li><b>No key verification codes yet.</b> Public keys are distributed by our server. Encryption protects against database theft and outside access, but for now you cannot check for yourself that your contact's key has not been swapped.</li>
+  <li><b>No forward secrecy.</b> A device key is long-term: if it is stolen, it can decrypt what the server still stores (up to 7 days for direct chats and 30 for groups).</li>
+  <li><b>The device is the weakest point.</b> Messages are stored decrypted on the device. Anyone with access to your unlocked phone or computer account can read them.</li>
+</ul>
+
+<h2>5. Server and data</h2>
+<ul>
+  <li>Only our server has access to the database; app requests for your data require a session token.</li>
+  <li>Passwords are stored only as bcrypt hashes.</li>
+  <li>Files are kept in private storage and served via links that expire.</li>
+  <li>The daily database backup is encrypted with our key before it is sent to backup storage.</li>
+  <li>Coin actions (transfers, paid subscriptions and so on) also require your account password, which is not stored on the device.</li>
+</ul>
+
+<h2>6. Independent audit</h2>
+<p>EION has not had an independent security audit yet. We are preparing for one and will publish the findings here. Until then this description is our own, and we stand behind its accuracy.</p>
+
+<h2>7. Reporting a vulnerability</h2>
+<p>If you have found a security issue in the app, the server or this website, write to <a href="mailto:support@eion.network?subject=Security">support@eion.network</a> with the subject “Security”. English or Ukrainian is fine.</p>
+<ul>
+  <li>Describe what is vulnerable, how to reproduce it and what it could lead to. The app version and device help.</li>
+  <li>We will acknowledge your report within 7 days and let you know when it is fixed.</li>
+  <li>Please do not publish details until the fix is out and users have had time to update.</li>
+  <li>While testing, do not access or change other people's data, do not overload the service and do not send spam. Use your own accounts.</li>
+</ul>
+<p>We will not take legal action against anyone who researches in good faith and follows these rules. There is no paid bounty programme yet, but with your permission we will thank you publicly.</p>
+<p>Machine-readable contact: <a href="/.well-known/security.txt">/.well-known/security.txt</a>.</p>
+</section>
+
+<footer>
+  <a href="/">eion.network</a>·<a href="/privacy" data-uk="Політика конфіденційності" data-en="Privacy">Privacy</a>·<a href="/terms" data-uk="Умови використання" data-en="Terms">Terms</a>·<a href="/pricing" data-uk="Ціни" data-en="Pricing">Pricing</a>·<a href="/refunds" data-uk="Повернення коштів" data-en="Refunds">Refunds</a>·<a href="/delete-account" data-uk="Видалити акаунт" data-en="Delete account">Delete account</a>·<a href="/security" data-uk="Безпека" data-en="Security">Security</a>·<a href="mailto:support@eion.network">support@eion.network</a>
+  <p style="margin-top:14px;opacity:.6">© 2026 EION</p>
+</footer>
+</div>
+
+<script>
+function setLang(l){
+  document.getElementById('uk').hidden = (l!=='uk');
+  document.getElementById('en').hidden = (l!=='en');
+  document.getElementById('b-uk').setAttribute('aria-pressed', l==='uk');
+  document.getElementById('b-en').setAttribute('aria-pressed', l==='en');
+  document.documentElement.lang = l;
+  // Написи навколо тексту мають бути тією ж мовою, що й сам текст: раніше
+  // підвал лишався англійським навіть під українською політикою.
+  document.querySelectorAll('[data-uk][data-en]').forEach(function(el){
+    el.textContent = el.getAttribute('data-' + l);
+  });
+  try{ localStorage.setItem('eion-legal-lang', l); }catch(e){}
+}
+try{
+  var saved = localStorage.getItem('eion-legal-lang');
+  // Мова головного сайту (eion_lang) має перевагу над мовою браузера: людина
+  // прийшла сюди з уже обраної мови, і кидати її в англійську — несподіванка.
+  // Документи двомовні, тож усе, крім української, лишається англійським.
+  if(!saved){
+    var site = null;
+    try{ site = localStorage.getItem('eion_lang'); }catch(e){}
+    var pick = site || (navigator.language||'').slice(0,2);
+    saved = (pick === 'uk') ? 'uk' : 'en';
+  }
+  setLang(saved);
+}catch(e){}
+</script>
+</body>
+</html>
