@@ -81,7 +81,7 @@
     },
     {
       "q": "EION est-il gratuit ?",
-      "a": "Oui. La messagerie est entièrement gratuite. Chaque jour, un quota gratuit s’applique : 15 requêtes IA, 200 Mo d’envois et 200 traductions automatiques ; au-delà, vous payez en pièces. Premium élargit le quota et porte la limite de fichier à 20 Mo : 🪙 300 par mois ou 🪙 2520 par an. Les appels sont illimités."
+      "a": "Oui. La messagerie est entièrement gratuite. Chaque jour, un quota gratuit s’applique : 15 requêtes IA, 200 Mo d’envois et 200 traductions automatiques ; au-delà, vous payez en pièces. Premium élargit le quota et porte la limite de fichier à 20 Mo : 🪙 300 par mois ou 🪙 2520 par an. Les appels sont illimités. Un nouveau compte sans numéro de téléphone confirmé dispose de 5 requêtes IA par jour pendant les 3 premiers jours."
     },
     {
       "q": "Mes messages sont-ils chiffrés ?",
@@ -125,7 +125,7 @@
   "footer_privacy": "Politique de confidentialité",
   "footer_terms": "Conditions d’utilisation",
   "footer_delete": "Supprimer le compte",
-"footer_security": "Sécurité",
+  "footer_security": "Sécurité",
   "cookie_text": "Nous utilisons Google Analytics pour compter les visites de ce site. L’application elle-même ne contient aucune analytique.",
   "cookie_ok": "Accepter",
   "cookie_no": "Refuser",
@@ -143,7 +143,7 @@
   "f7_title": "Plusieurs appareils",
   "f7_desc": "Un compte sur votre téléphone et votre ordinateur en même temps. Messages, lectures, suppressions, stickers et discussions en sourdine restent identiques partout.",
   "f8_title": "Jeux",
-  "f8_desc": "Des jeux de plateau directement dans la discussion — contre un ami ou l'ordinateur sur trois niveaux, et certains à trois ou quatre joueurs. Sans paris : ici les pièces ne servent qu'à l'apparence.",
+  "f8_desc": "Des jeux de plateau directement dans la discussion — contre un ami ou l'ordinateur sur trois niveaux, certains à trois ou quatre joueurs, et Mafia de 5 à 12. Sans paris : les pièces ne paient que l'apparence et l'annulation d'un coup.",
   "prem_f10": "2 boosts de chaîne gratuits",
   "prem_f11": "Pas de publicité dans les chaînes",
   "tok_price": "Prix",

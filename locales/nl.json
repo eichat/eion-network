@@ -81,7 +81,7 @@
     },
     {
       "q": "Is EION gratis?",
-      "a": "Ja. De messenger is volledig gratis. Elke dag geldt een gratis limiet: 15 AI-verzoeken, 200 MB uploads en 200 automatische vertalingen; daarboven betaal je met munten. Premium verruimt de limiet en verhoogt de bestandslimiet naar 20 MB: 🪙 300 per maand of 🪙 2520 per jaar. Bellen is onbeperkt."
+      "a": "Ja. De messenger is volledig gratis. Elke dag geldt een gratis limiet: 15 AI-verzoeken, 200 MB uploads en 200 automatische vertalingen; daarboven betaal je met munten. Premium verruimt de limiet en verhoogt de bestandslimiet naar 20 MB: 🪙 300 per maand of 🪙 2520 per jaar. Bellen is onbeperkt. Een nieuw account zonder bevestigd telefoonnummer heeft de eerste 3 dagen 5 AI-vragen per dag."
     },
     {
       "q": "Zijn mijn berichten versleuteld?",
@@ -125,7 +125,7 @@
   "footer_privacy": "Privacybeleid",
   "footer_terms": "Gebruiksvoorwaarden",
   "footer_delete": "Account verwijderen",
-"footer_security": "Beveiliging",
+  "footer_security": "Beveiliging",
   "cookie_text": "We gebruiken Google Analytics om bezoeken aan deze site te tellen. De app zelf bevat geen analytics.",
   "cookie_ok": "Accepteren",
   "cookie_no": "Weigeren",
@@ -143,7 +143,7 @@
   "f7_title": "Meerdere apparaten",
   "f7_desc": "Eén account op je telefoon en computer tegelijk. Berichten, gelezen, verwijderd, stickers en gedempte chats blijven overal hetzelfde.",
   "f8_title": "Spellen",
-  "f8_desc": "Bordspellen direct in de chat — tegen een vriend of tegen de computer op drie niveaus, en sommige met drie of vier spelers. Zonder gokken: munten zijn hier alleen voor het uiterlijk.",
+  "f8_desc": "Bordspellen direct in de chat — tegen een vriend of tegen de computer op drie niveaus, sommige met drie of vier spelers en Maffia met 5–12. Zonder gokken: munten betalen alleen voor het uiterlijk en het terugnemen van een zet.",
   "prem_f10": "2 gratis kanaalboosts",
   "prem_f11": "Geen advertenties in kanalen",
   "tok_price": "Prijs",

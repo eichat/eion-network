@@ -81,7 +81,7 @@
     },
     {
       "q": "Ist EION kostenlos?",
-      "a": "Ja. Der Messenger ist vollständig kostenlos. Täglich gibt es ein kostenloses Kontingent — 15 KI-Anfragen, 200 MB Uploads und 200 Auto-Übersetzungen; darüber hinaus zahlen Sie mit Coins. Premium erweitert das Kontingent und hebt das Dateilimit auf 20 MB: 🪙 300 pro Monat oder 🪙 2520 pro Jahr. Anrufe sind unbegrenzt."
+      "a": "Ja. Der Messenger ist vollständig kostenlos. Täglich gibt es ein kostenloses Kontingent — 15 KI-Anfragen, 200 MB Uploads und 200 Auto-Übersetzungen; darüber hinaus zahlen Sie mit Coins. Premium erweitert das Kontingent und hebt das Dateilimit auf 20 MB: 🪙 300 pro Monat oder 🪙 2520 pro Jahr. Anrufe sind unbegrenzt. Ein neues Konto ohne bestätigte Telefonnummer hat in den ersten 3 Tagen 5 KI-Anfragen pro Tag."
     },
     {
       "q": "Sind meine Nachrichten verschlüsselt?",
@@ -125,7 +125,7 @@
   "footer_privacy": "Datenschutzerklärung",
   "footer_terms": "Nutzungsbedingungen",
   "footer_delete": "Konto löschen",
-"footer_security": "Sicherheit",
+  "footer_security": "Sicherheit",
   "cookie_text": "Wir nutzen Google Analytics, um Besuche dieser Website zu zählen. Die App selbst enthält keine Analytik.",
   "cookie_ok": "Akzeptieren",
   "cookie_no": "Ablehnen",
@@ -143,7 +143,7 @@
   "f7_title": "Mehrere Geräte",
   "f7_desc": "Ein Konto gleichzeitig auf Handy und Computer. Nachrichten, Gelesenes, Gelöschtes, Sticker und stummgeschaltete Chats bleiben überall gleich.",
   "f8_title": "Spiele",
-  "f8_desc": "Brettspiele direkt im Chat – gegen Freunde oder den Computer in drei Stufen, einige auch zu drei oder vier. Ohne Wetten: Münzen sind hier nur fürs Aussehen.",
+  "f8_desc": "Brettspiele direkt im Chat – gegen Freunde oder den Computer in drei Stufen, einige zu dritt oder viert, Mafia mit 5–12 Spielern. Ohne Wetten: Münzen zahlen nur für das Aussehen und das Zurücknehmen eines Zugs.",
   "prem_f10": "2 kostenlose Kanal-Boosts",
   "prem_f11": "Keine Werbung in Kanälen",
   "tok_price": "Preis",

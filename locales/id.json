@@ -81,7 +81,7 @@
     },
     {
       "q": "Apakah EION gratis?",
-      "a": "Ya. Aplikasi pesan ini sepenuhnya gratis. Setiap hari ada jatah gratis: 15 permintaan AI, 200 MB unggahan, dan 200 terjemahan otomatis; di atas itu Anda membayar dengan koin. Premium memperluas jatah dan menaikkan batas berkas ke 20 MB: 🪙 300 per bulan atau 🪙 2520 per tahun. Panggilan tanpa batas."
+      "a": "Ya. Aplikasi pesan ini sepenuhnya gratis. Setiap hari ada jatah gratis: 15 permintaan AI, 200 MB unggahan, dan 200 terjemahan otomatis; di atas itu Anda membayar dengan koin. Premium memperluas jatah dan menaikkan batas berkas ke 20 MB: 🪙 300 per bulan atau 🪙 2520 per tahun. Panggilan tanpa batas. Akun baru tanpa nomor telepon terkonfirmasi mendapat 5 permintaan AI per hari selama 3 hari pertama."
     },
     {
       "q": "Apakah pesan saya terenkripsi?",
@@ -125,7 +125,7 @@
   "footer_privacy": "Kebijakan Privasi",
   "footer_terms": "Ketentuan Penggunaan",
   "footer_delete": "Hapus akun",
-"footer_security": "Keamanan",
+  "footer_security": "Keamanan",
   "cookie_text": "Kami memakai Google Analytics untuk menghitung kunjungan situs ini. Aplikasinya sendiri tidak memuat analitik.",
   "cookie_ok": "Terima",
   "cookie_no": "Tolak",
@@ -143,7 +143,7 @@
   "f7_title": "Beberapa perangkat",
   "f7_desc": "Satu akun di ponsel dan komputer sekaligus. Pesan, status dibaca, penghapusan, stiker, dan obrolan senyap tetap sama di mana saja.",
   "f8_title": "Permainan",
-  "f8_desc": "Permainan papan langsung di dalam chat — melawan teman atau komputer dengan tiga tingkat, dan beberapa untuk tiga atau empat pemain. Tanpa taruhan: koin di sini hanya untuk tampilan.",
+  "f8_desc": "Permainan papan langsung di dalam chat — melawan teman atau komputer dengan tiga tingkat, beberapa untuk tiga atau empat pemain, dan Mafia untuk 5–12. Tanpa taruhan: koin hanya untuk tampilan dan membatalkan langkah.",
   "prem_f10": "2 boost kanal gratis",
   "prem_f11": "Tanpa iklan di kanal",
   "tok_price": "Harga",

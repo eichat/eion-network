@@ -81,7 +81,7 @@
     },
     {
       "q": "O EION é gratuito?",
-      "a": "Sim. O mensageiro é totalmente gratuito. Todos os dias há uma quota gratuita: 15 pedidos de IA, 200 MB de envios e 200 traduções automáticas; acima dela paga com moedas. O premium amplia a quota e sobe o limite de ficheiro para 20 MB: 🪙 300 por mês ou 🪙 2520 por ano. As chamadas não têm limite."
+      "a": "Sim. O mensageiro é totalmente gratuito. Todos os dias há uma quota gratuita: 15 pedidos de IA, 200 MB de envios e 200 traduções automáticas; acima dela paga com moedas. O premium amplia a quota e sobe o limite de ficheiro para 20 MB: 🪙 300 por mês ou 🪙 2520 por ano. As chamadas não têm limite. Uma conta nova sem número de telefone confirmado tem 5 pedidos à IA por dia nos primeiros 3 dias."
     },
     {
       "q": "Minhas mensagens são criptografadas?",
@@ -125,7 +125,7 @@
   "footer_privacy": "Política de Privacidade",
   "footer_terms": "Termos de Uso",
   "footer_delete": "Excluir conta",
-"footer_security": "Segurança",
+  "footer_security": "Segurança",
   "cookie_text": "Usamos o Google Analytics para contar as visitas a este site. O aplicativo em si não contém analytics.",
   "cookie_ok": "Aceitar",
   "cookie_no": "Recusar",
@@ -143,7 +143,7 @@
   "f7_title": "Vários dispositivos",
   "f7_desc": "Uma conta no telemóvel e no computador ao mesmo tempo. Mensagens, lidas, eliminadas, stickers e conversas silenciadas ficam iguais em todo o lado.",
   "f8_title": "Jogos",
-  "f8_desc": "Jogos de tabuleiro dentro do próprio chat — contra um amigo ou contra o computador em três níveis, e alguns para três ou quatro jogadores. Sem apostas: aqui as moedas são só para a aparência.",
+  "f8_desc": "Jogos de tabuleiro dentro do próprio chat — contra um amigo ou contra o computador em três níveis, alguns para três ou quatro jogadores e Máfia para 5–12. Sem apostas: as moedas só pagam a aparência e desfazer uma jogada.",
   "prem_f10": "2 impulsos de canal grátis",
   "prem_f11": "Sem anúncios nos canais",
   "tok_price": "Preço",

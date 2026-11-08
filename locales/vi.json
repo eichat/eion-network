@@ -81,7 +81,7 @@
     },
     {
       "q": "EION có miễn phí không?",
-      "a": "Có. Ứng dụng nhắn tin hoàn toàn miễn phí. Mỗi ngày có một hạn mức miễn phí: 15 yêu cầu AI, 200 MB tải lên và 200 lần dịch tự động; vượt quá thì bạn trả bằng xu. Premium mở rộng hạn mức và nâng giới hạn tệp lên 20 MB: 🪙 300 mỗi tháng hoặc 🪙 2520 mỗi năm. Gọi điện không giới hạn."
+      "a": "Có. Ứng dụng nhắn tin hoàn toàn miễn phí. Mỗi ngày có một hạn mức miễn phí: 15 yêu cầu AI, 200 MB tải lên và 200 lần dịch tự động; vượt quá thì bạn trả bằng xu. Premium mở rộng hạn mức và nâng giới hạn tệp lên 20 MB: 🪙 300 mỗi tháng hoặc 🪙 2520 mỗi năm. Gọi điện không giới hạn. Tài khoản mới chưa xác nhận số điện thoại có 5 yêu cầu AI mỗi ngày trong 3 ngày đầu."
     },
     {
       "q": "Tin nhắn của tôi có được mã hóa không?",
@@ -125,7 +125,7 @@
   "footer_privacy": "Chính sách quyền riêng tư",
   "footer_terms": "Điều khoản sử dụng",
   "footer_delete": "Xóa tài khoản",
-"footer_security": "Bảo mật",
+  "footer_security": "Bảo mật",
   "cookie_text": "Chúng tôi dùng Google Analytics để đếm lượt truy cập trang này. Bản thân ứng dụng không có công cụ phân tích nào.",
   "cookie_ok": "Chấp nhận",
   "cookie_no": "Từ chối",
@@ -143,7 +143,7 @@
   "f7_title": "Nhiều thiết bị",
   "f7_desc": "Một tài khoản trên điện thoại và máy tính cùng lúc. Tin nhắn, trạng thái đã đọc, mục đã xoá, nhãn dán và cuộc trò chuyện tắt tiếng đều giống nhau ở mọi nơi.",
   "f8_title": "Trò chơi",
-  "f8_desc": "Các trò chơi bàn ngay trong cuộc trò chuyện — với bạn bè hoặc với máy tính ở ba mức độ, và một số dành cho ba đến bốn người. Không cá cược: ở đây xu chỉ để thay đổi giao diện.",
+  "f8_desc": "Các trò chơi bàn ngay trong cuộc trò chuyện — với bạn bè hoặc với máy tính ở ba mức độ, một số cho ba đến bốn người, còn «Ma sói» cho 5–12 người. Không cá cược: xu chỉ dùng cho giao diện và đi lại nước cờ.",
   "prem_f10": "2 lượt tăng kênh miễn phí",
   "prem_f11": "Không quảng cáo trong kênh",
   "tok_price": "Giá",

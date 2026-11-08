@@ -81,7 +81,7 @@
     },
     {
       "q": "Czy EION jest darmowy?",
-      "a": "Tak. Komunikator jest w pełni bezpłatny. Codziennie obowiązuje bezpłatny limit: 15 zapytań do AI, 200 MB wysyłek i 200 automatycznych tłumaczeń; powyżej płacisz monetami. Premium poszerza limit i podnosi limit pliku do 20 MB: 🪙 300 miesięcznie lub 🪙 2520 rocznie. Połączenia są bez limitu."
+      "a": "Tak. Komunikator jest w pełni bezpłatny. Codziennie obowiązuje bezpłatny limit: 15 zapytań do AI, 200 MB wysyłek i 200 automatycznych tłumaczeń; powyżej płacisz monetami. Premium poszerza limit i podnosi limit pliku do 20 MB: 🪙 300 miesięcznie lub 🪙 2520 rocznie. Połączenia są bez limitu. Nowe konto bez potwierdzonego numeru telefonu ma przez pierwsze 3 dni 5 zapytań do AI na dobę."
     },
     {
       "q": "Czy moje wiadomości są szyfrowane?",
@@ -125,7 +125,7 @@
   "footer_privacy": "Polityka prywatności",
   "footer_terms": "Warunki korzystania",
   "footer_delete": "Usuń konto",
-"footer_security": "Bezpieczeństwo",
+  "footer_security": "Bezpieczeństwo",
   "cookie_text": "Używamy Google Analytics do liczenia odwiedzin tej strony. Sama aplikacja nie zawiera analityki.",
   "cookie_ok": "Akceptuję",
   "cookie_no": "Odrzuć",
@@ -143,7 +143,7 @@
   "f7_title": "Wiele urządzeń",
   "f7_desc": "Jedno konto na telefonie i komputerze jednocześnie. Wiadomości, przeczytane, usunięte, naklejki i wyciszone czaty są wszędzie takie same.",
   "f8_title": "Gry",
-  "f8_desc": "Gry planszowe wprost w czacie — z przyjacielem albo z komputerem na trzech poziomach, a niektóre na trzech lub czterech graczy. Bez zakładów: monety służą tu tylko do wyglądu.",
+  "f8_desc": "Gry planszowe wprost w czacie — z przyjacielem albo z komputerem na trzech poziomach, niektóre na trzech lub czterech graczy, a Mafia na 5–12. Bez zakładów: monetami płaci się tylko za wygląd i cofnięcie ruchu.",
   "prem_f10": "2 darmowe wzmocnienia kanałów",
   "prem_f11": "Bez reklam w kanałach",
   "tok_price": "Cena",

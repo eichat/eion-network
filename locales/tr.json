@@ -81,7 +81,7 @@
     },
     {
       "q": "EION ücretsiz mi?",
-      "a": "Evet. Mesajlaşma uygulaması tamamen ücretsiz. Her gün ücretsiz bir hak tanınır: 15 yapay zekâ isteği, 200 MB yükleme ve 200 otomatik çeviri; bunun üstü jetonla ödenir. Premium hakkı genişletir ve dosya sınırını 20 MB’a çıkarır: ayda 🪙 300 veya yılda 🪙 2520. Aramalar sınırsızdır."
+      "a": "Evet. Mesajlaşma uygulaması tamamen ücretsiz. Her gün ücretsiz bir hak tanınır: 15 yapay zekâ isteği, 200 MB yükleme ve 200 otomatik çeviri; bunun üstü jetonla ödenir. Premium hakkı genişletir ve dosya sınırını 20 MB’a çıkarır: ayda 🪙 300 veya yılda 🪙 2520. Aramalar sınırsızdır. Telefon numarası doğrulanmamış yeni bir hesap ilk 3 gün günde 5 AI isteği alır."
     },
     {
       "q": "Mesajlarım şifreli mi?",
@@ -125,7 +125,7 @@
   "footer_privacy": "Gizlilik Politikası",
   "footer_terms": "Kullanım Şartları",
   "footer_delete": "Hesabı sil",
-"footer_security": "Güvenlik",
+  "footer_security": "Güvenlik",
   "cookie_text": "Bu sitenin ziyaretlerini saymak için Google Analytics kullanıyoruz. Uygulamanın kendisinde analitik yoktur.",
   "cookie_ok": "Kabul et",
   "cookie_no": "Reddet",
@@ -143,7 +143,7 @@
   "f7_title": "Birden fazla cihaz",
   "f7_desc": "Telefonunuzda ve bilgisayarınızda aynı anda tek hesap. Mesajlar, okunanlar, silinenler, çıkartmalar ve sessize alınan sohbetler her yerde aynı kalır.",
   "f8_title": "Oyunlar",
-  "f8_desc": "Sohbetin içinde masa oyunları — bir arkadaşa ya da üç seviyeli bilgisayara karşı; bazıları üç ya da dört kişilik. Bahis yok: buradaki jetonlar yalnızca görünüm için.",
+  "f8_desc": "Sohbetin içinde masa oyunları — bir arkadaşa ya da üç seviyeli bilgisayara karşı; bazıları üç ya da dört kişilik, Mafya ise 5–12 kişilik. Bahis yok: jetonlar yalnızca görünüm ve hamle geri alma için.",
   "prem_f10": "2 ücretsiz kanal takviyesi",
   "prem_f11": "Kanallarda reklam yok",
   "tok_price": "Fiyat",

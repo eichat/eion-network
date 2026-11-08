@@ -81,7 +81,7 @@
     },
     {
       "q": "Is EION free?",
-      "a": "Yes. The full messenger is free. Every day you get a free allowance — 15 AI requests, 200 MB of uploads and 200 auto-translations; beyond it you pay in coins. Premium widens the allowance and raises the file limit to 20 MB: 🪙 300 a month or 🪙 2520 a year. Calls have no limits."
+      "a": "Yes. The full messenger is free. Every day you get a free allowance — 15 AI requests, 200 MB of uploads and 200 auto-translations; beyond it you pay in coins. Premium widens the allowance and raises the file limit to 20 MB: 🪙 300 a month or 🪙 2520 a year. Calls have no limits. A new account without a confirmed phone number gets 5 AI requests a day for the first 3 days."
     },
     {
       "q": "Are my messages encrypted?",
@@ -125,7 +125,7 @@
   "footer_privacy": "Privacy Policy",
   "footer_terms": "Terms of Service",
   "footer_delete": "Delete account",
-"footer_security": "Security",
+  "footer_security": "Security",
   "cookie_text": "We use Google Analytics to count visits to this site. The app itself contains no analytics.",
   "cookie_ok": "Accept",
   "cookie_no": "Decline",
@@ -143,7 +143,7 @@
   "f7_title": "Multiple devices",
   "f7_desc": "One account on your phone and computer at once. Messages, read state, deletions, stickers and muted chats stay the same everywhere.",
   "f8_title": "Games",
-  "f8_desc": "Board games right inside the chat — against a friend or the computer on three levels, and some seat three or four players. No betting: coins here are only for looks.",
+  "f8_desc": "Board games right inside the chat — against a friend or the computer on three levels; some seat three or four players, and Mafia takes 5–12. No betting: coins only pay for looks and for undoing a move.",
   "prem_f10": "2 free channel boosts",
   "prem_f11": "No ads in channels",
   "tok_price": "Price",

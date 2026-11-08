@@ -81,7 +81,7 @@
     },
     {
       "q": "Libre ba ang EION?",
-      "a": "Oo. Libre ang buong messenger. Araw-araw may libreng alawans: 15 kahilingan sa AI, 200 MB na upload at 200 awtomatikong pagsasalin; lampas doon ay babayaran mo sa coins. Pinapalawak ng premium ang alawans at itinataas ang limitasyon ng file sa 20 MB: 🪙 300 kada buwan o 🪙 2520 kada taon. Walang limitasyon ang mga tawag."
+      "a": "Oo. Libre ang buong messenger. Araw-araw may libreng alawans: 15 kahilingan sa AI, 200 MB na upload at 200 awtomatikong pagsasalin; lampas doon ay babayaran mo sa coins. Pinapalawak ng premium ang alawans at itinataas ang limitasyon ng file sa 20 MB: 🪙 300 kada buwan o 🪙 2520 kada taon. Walang limitasyon ang mga tawag. Ang bagong account na walang nakumpirmang numero ng telepono ay may 5 AI request bawat araw sa unang 3 araw."
     },
     {
       "q": "Naka-encrypt ba ang mga mensahe ko?",
@@ -125,7 +125,7 @@
   "footer_privacy": "Patakaran sa Privacy",
   "footer_terms": "Mga Tuntunin ng Paggamit",
   "footer_delete": "Burahin ang account",
-"footer_security": "Seguridad",
+  "footer_security": "Seguridad",
   "cookie_text": "Gumagamit kami ng Google Analytics para bilangin ang mga pagbisita sa site na ito. Ang app mismo ay walang analytics.",
   "cookie_ok": "Tanggapin",
   "cookie_no": "Tanggihan",
@@ -143,7 +143,7 @@
   "f7_title": "Maraming device",
   "f7_desc": "Isang account sa telepono at computer nang sabay. Pareho sa lahat ng device ang mga mensahe, nabasa na, nabura, sticker at naka-mute na chat.",
   "f8_title": "Mga laro",
-  "f8_desc": "Mga board game sa loob mismo ng chat — kalaban ang kaibigan o ang computer sa tatlong antas, at may ilang para sa tatlo o apat na manlalaro. Walang pustahan: ang mga barya dito ay para sa itsura lang.",
+  "f8_desc": "Mga board game sa loob mismo ng chat — kalaban ang kaibigan o ang computer sa tatlong antas, may ilang para sa tatlo o apat na manlalaro, at ang Mafia ay para sa 5–12. Walang pustahan: ang mga barya ay para lang sa itsura at sa pag-undo ng tira.",
   "prem_f10": "2 libreng boost ng channel",
   "prem_f11": "Walang ads sa mga channel",
   "tok_price": "Presyo",

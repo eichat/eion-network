@@ -81,7 +81,7 @@
     },
     {
       "q": "EION è gratuito?",
-      "a": "Sì. Il messenger è completamente gratuito. Ogni giorno c’è una quota gratuita: 15 richieste IA, 200 MB di caricamenti e 200 traduzioni automatiche; oltre questa paghi in monete. Premium amplia la quota e alza il limite dei file a 20 MB: 🪙 300 al mese o 🪙 2520 all’anno. Le chiamate sono illimitate."
+      "a": "Sì. Il messenger è completamente gratuito. Ogni giorno c’è una quota gratuita: 15 richieste IA, 200 MB di caricamenti e 200 traduzioni automatiche; oltre questa paghi in monete. Premium amplia la quota e alza il limite dei file a 20 MB: 🪙 300 al mese o 🪙 2520 all’anno. Le chiamate sono illimitate. Un nuovo account senza numero di telefono confermato ha 5 richieste all’IA al giorno per i primi 3 giorni."
     },
     {
       "q": "I miei messaggi sono cifrati?",
@@ -125,7 +125,7 @@
   "footer_privacy": "Informativa sulla privacy",
   "footer_terms": "Termini di servizio",
   "footer_delete": "Elimina account",
-"footer_security": "Sicurezza",
+  "footer_security": "Sicurezza",
   "cookie_text": "Usiamo Google Analytics per contare le visite a questo sito. L’app in sé non contiene analitica.",
   "cookie_ok": "Accetta",
   "cookie_no": "Rifiuta",
@@ -143,7 +143,7 @@
   "f7_title": "Più dispositivi",
   "f7_desc": "Un account su telefono e computer allo stesso tempo. Messaggi, letture, eliminazioni, sticker e chat silenziate restano uguali ovunque.",
   "f8_title": "Giochi",
-  "f8_desc": "Giochi da tavolo dentro la chat: contro un amico o contro il computer su tre livelli, e alcuni anche in tre o quattro. Senza scommesse: qui le monete servono solo per l’aspetto.",
+  "f8_desc": "Giochi da tavolo dentro la chat: contro un amico o contro il computer su tre livelli, alcuni in tre o quattro e Mafia da 5 a 12. Senza scommesse: le monete pagano solo l’aspetto e l’annullamento di una mossa.",
   "prem_f10": "2 potenziamenti di canale gratuiti",
   "prem_f11": "Nessuna pubblicità nei canali",
   "tok_price": "Prezzo",
