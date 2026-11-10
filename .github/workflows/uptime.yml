@@ -1,0 +1,20 @@
+name: Uptime
+# Сторож сервера EION: якщо api.eion.network не відповідає — запуск червоний,
+# і GitHub шле лист власнику акаунта.
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+permissions: {}
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: api.eion.network/health
+        run: |
+          for i in 1 2 3; do
+            if curl -fsS -m 15 https://api.eion.network/health | grep -q '"ok":true'; then echo OK; exit 0; fi
+            sleep 20
+          done
+          echo "::error::Сервер EION не відповідає (3 спроби)"; exit 1
