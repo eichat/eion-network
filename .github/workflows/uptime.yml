@@ -11,10 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 3
     steps:
-      - name: api.eion.network/health
+      - name: api.eion.network/keepalive (сервер + база)
         run: |
           for i in 1 2 3; do
-            if curl -fsS -m 15 https://api.eion.network/health | grep -q '"ok":true'; then echo OK; exit 0; fi
+            if curl -fsS -m 15 https://api.eion.network/keepalive | grep -q '"db":true'; then echo OK; exit 0; fi
             sleep 20
           done
           echo "::error::Сервер EION не відповідає (3 спроби)"; exit 1
