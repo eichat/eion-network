@@ -67,7 +67,7 @@ p{color:var(--text2)}
   if (!txn) { show('none', 'noneT'); return; }
   show('load', 'loadT');
   var done = false;
-  fetch('https://ei-server.onrender.com/paddle/config').then(function (r) { return r.json(); }).then(function (c) {
+  fetch('https://api.eion.network/paddle/config').then(function (r) { return r.json(); }).then(function (c) {
     if (!c || !c.ready || !c.clientToken) { show('off', 'offT', 'warn'); return; }
     if (c.env !== 'production') {
       var sb = document.getElementById('sandbox'); sb.textContent = T.sb; sb.hidden = false;

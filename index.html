@@ -726,7 +726,7 @@ document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 // в них до того ж сидять сліди наших власних перевірок. Щоб увімкнути назад:
 // SUPPLY_ENABLED = true, більше нічого міняти не треба.
 const SUPPLY_ENABLED = false;
-const SUPPLY_URL = 'https://ei-server.onrender.com/coin/supply';
+const SUPPLY_URL = 'https://api.eion.network/coin/supply';
 let supplyData = null;
 
 function renderSupply() {
@@ -1119,7 +1119,7 @@ function cookieChoice(ok){
    GitHub-лічильник тут не помічник: ми замінюємо файли в релізі при кожній
    збірці, і разом зі старим файлом зникає його число. */
 (function(){
-  var EP='https://ei-server.onrender.com/download-ping?kind=';
+  var EP='https://api.eion.network/download-ping?kind=';
   document.querySelectorAll('a[data-dl]').forEach(function(a){
     a.addEventListener('click', function(){
       var u=EP+encodeURIComponent(a.dataset.dl);
