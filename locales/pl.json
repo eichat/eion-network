@@ -81,7 +81,7 @@
     },
     {
       "q": "Czy EION jest darmowy?",
-      "a": "Tak. Komunikator jest w pełni bezpłatny. Codziennie obowiązuje bezpłatny limit: 15 zapytań do AI, 200 MB wysyłek i 200 automatycznych tłumaczeń; powyżej płacisz monetami. Premium poszerza limit i podnosi limit pliku do 20 MB: 🪙 300 miesięcznie lub 🪙 2520 rocznie. Połączenia są bez limitu. Nowe konto bez potwierdzonego numeru telefonu ma przez pierwsze 3 dni 5 zapytań do AI na dobę."
+      "a": "Tak. Komunikator jest w pełni darmowy. Codziennie masz darmowy limit — 15 zapytań do AI i 200 MB przesyłania; powyżej płacisz monetami. Na Androidzie wiadomości tłumaczy sam telefon — za darmo i bez limitu; na Linuksie — 200 tłumaczeń dziennie. Premium zwiększa limit, dodaje automatyczne tłumaczenie czatów i podnosi limit pliku do 20 MB: 🪙 300 miesięcznie lub 🪙 2520 rocznie. Połączenia bez limitów. Nowe konto bez potwierdzonego numeru przez pierwsze 3 dni ma 5 zapytań do AI dziennie."
     },
     {
       "q": "Czy moje wiadomości są szyfrowane?",
@@ -93,17 +93,17 @@
     },
     {
       "q": "Jakie platformy są wspierane?",
-      "a": "Android — pobieranie jest otwarte (wersja testowa: możliwe błędy, dane z okresu testów mogą zostać zresetowane). Linux — również (AppImage). iOS i Windows są w planach."
+      "a": "Android — APK z tej strony, wkrótce także w Google Play. Linux — AppImage. iOS i Windows — w planach."
     }
   ],
   "footer_tagline": "Rozmawiaj. Dziel się. Twoje dane należą do ciebie.",
   "footer_support": "Wsparcie",
   "intro_sub": "sieć, która łączy",
   "intro_skip": "pomiń ↓",
-  "dl_ready": "✓ Wersja testowa",
+  "dl_ready": "✓ Dostępne",
   "dl_get": "Pobierz APK",
   "dl_get_linux": "Pobierz AppImage",
-  "dl_note": "Android poprosi o zgodę na instalację aplikacji z nieznanego źródła — poza Google Play to normalne. Aplikacja działa w trybie testowym: możliwe są błędy, a dane z okresu testów mogą zostać zresetowane.",
+  "dl_note": "Android poprosi o zgodę na instalację aplikacji z nieznanego źródła — poza Google Play to normalne.",
   "tok_today": "Dziś, w aplikacji",
   "tok_use1": "Premium",
   "tok_use1v": "wyższe limity, większe pliki",
@@ -133,13 +133,12 @@
   "tok_withdraw_v": "później, w pieniądzach — tylko monety, które ktoś ci zapłacił",
   "tok_protect": "Ochrona",
   "tok_protect_v": "przenoszenie monet wymaga hasła konta",
-  "tok_translate": "Autotłumaczenie",
-  "tok_translate_v": "200 dziennie, potem 🪙 1 / 10",
-  "prem_f8": "Autotłumaczenie: 1000 dziennie zamiast 200",
+  "tok_translate": "Tłumaczenie",
+  "tok_translate_v": "Android — na telefonie, bez limitu · Linux — 200 dziennie, potem 🪙 1 / 10",
+  "prem_f8": "Automatyczne tłumaczenie czatów; na Linuksie — 1000 tłumaczeń dziennie zamiast 200",
   "rm_done": "działa",
   "rm_wip": "w toku",
   "rm_todo": "zaplanowane",
-  "test_banner": "EION działa w trybie testowym. Możliwe są błędy i przerwy, a dane oraz salda z okresu testowego mogą zostać wyzerowane.",
   "f7_title": "Wiele urządzeń",
   "f7_desc": "Jedno konto na telefonie i komputerze jednocześnie. Wiadomości, przeczytane, usunięte, naklejki i wyciszone czaty są wszędzie takie same.",
   "f8_title": "Gry",

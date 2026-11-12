@@ -81,7 +81,7 @@
     },
     {
       "q": "EION è gratuito?",
-      "a": "Sì. Il messenger è completamente gratuito. Ogni giorno c’è una quota gratuita: 15 richieste IA, 200 MB di caricamenti e 200 traduzioni automatiche; oltre questa paghi in monete. Premium amplia la quota e alza il limite dei file a 20 MB: 🪙 300 al mese o 🪙 2520 all’anno. Le chiamate sono illimitate. Un nuovo account senza numero di telefono confermato ha 5 richieste all’IA al giorno per i primi 3 giorni."
+      "a": "Sì. Il messenger è completamente gratuito. Ogni giorno hai una quota gratuita: 15 richieste all’IA e 200 MB di caricamenti; oltre paghi con le monete. Su Android i messaggi li traduce il telefono stesso, gratis e senza limite; su Linux 200 traduzioni al giorno. Premium amplia la quota, aggiunge la traduzione automatica delle chat e alza il limite dei file a 20 MB: 🪙 300 al mese o 🪙 2520 all’anno. Le chiamate sono illimitate. Un nuovo account senza numero confermato ha 5 richieste all’IA al giorno per i primi 3 giorni."
     },
     {
       "q": "I miei messaggi sono cifrati?",
@@ -93,17 +93,17 @@
     },
     {
       "q": "Quali piattaforme sono supportate?",
-      "a": "Android: il download è aperto (versione di prova: possono esserci errori e i dati del periodo di prova potrebbero essere azzerati). Anche Linux (AppImage). iOS e Windows sono in programma."
+      "a": "Android — APK da questo sito, presto anche su Google Play. Linux — AppImage. iOS e Windows sono in programma."
     }
   ],
   "footer_tagline": "Parla. Condividi. I tuoi dati restano tuoi.",
   "footer_support": "Supporto",
   "intro_sub": "la rete che collega",
   "intro_skip": "salta ↓",
-  "dl_ready": "✓ Versione di prova",
+  "dl_ready": "✓ Disponibile",
   "dl_get": "Scarica APK",
   "dl_get_linux": "Scarica AppImage",
-  "dl_note": "Android chiederà il permesso di installare un’app da origine sconosciuta: fuori da Google Play è normale. L’app è in modalità test: possono esserci errori e i dati del periodo di prova potrebbero essere azzerati.",
+  "dl_note": "Android chiederà il permesso di installare un’app da fonte sconosciuta: fuori da Google Play è normale.",
   "tok_today": "Oggi, nell’app",
   "tok_use1": "Premium",
   "tok_use1v": "limiti più alti, file più grandi",
@@ -133,13 +133,12 @@
   "tok_withdraw_v": "più avanti, in denaro — solo le monete che qualcuno ti ha pagato",
   "tok_protect": "Protezione",
   "tok_protect_v": "spostare monete richiede la password dell’account",
-  "tok_translate": "Traduzione automatica",
-  "tok_translate_v": "200 al giorno, poi 🪙 1 / 10",
-  "prem_f8": "Traduzione automatica: 1000 al giorno invece di 200",
+  "tok_translate": "Traduzione",
+  "tok_translate_v": "Android — sul telefono, senza limite · Linux — 200 al giorno, poi 🪙 1 / 10",
+  "prem_f8": "Traduzione automatica delle chat; su Linux 1000 traduzioni al giorno invece di 200",
   "rm_done": "funziona",
   "rm_wip": "in corso",
   "rm_todo": "previsto",
-  "test_banner": "EION è in modalità di prova. Sono possibili errori e interruzioni; i dati e i saldi del periodo di prova possono essere azzerati.",
   "f7_title": "Più dispositivi",
   "f7_desc": "Un account su telefono e computer allo stesso tempo. Messaggi, letture, eliminazioni, sticker e chat silenziate restano uguali ovunque.",
   "f8_title": "Giochi",

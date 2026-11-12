@@ -81,7 +81,7 @@
     },
     {
       "q": "Apakah EION gratis?",
-      "a": "Ya. Aplikasi pesan ini sepenuhnya gratis. Setiap hari ada jatah gratis: 15 permintaan AI, 200 MB unggahan, dan 200 terjemahan otomatis; di atas itu Anda membayar dengan koin. Premium memperluas jatah dan menaikkan batas berkas ke 20 MB: 🪙 300 per bulan atau 🪙 2520 per tahun. Panggilan tanpa batas. Akun baru tanpa nomor telepon terkonfirmasi mendapat 5 permintaan AI per hari selama 3 hari pertama."
+      "a": "Ya. Messenger ini sepenuhnya gratis. Setiap hari ada kuota gratis — 15 permintaan AI dan unggahan 200 MB; di atas itu Anda membayar dengan koin. Di Android, pesan diterjemahkan oleh ponsel itu sendiri — gratis dan tanpa batas; di Linux 200 terjemahan per hari. Premium memperluas kuota, menambah terjemahan otomatis chat, dan menaikkan batas berkas menjadi 20 MB: 🪙 300 per bulan atau 🪙 2520 per tahun. Panggilan tanpa batas. Akun baru tanpa nomor terkonfirmasi mendapat 5 permintaan AI per hari selama 3 hari pertama."
     },
     {
       "q": "Apakah pesan saya terenkripsi?",
@@ -93,17 +93,17 @@
     },
     {
       "q": "Platform apa saja yang didukung?",
-      "a": "Android — unduhan dibuka (versi uji: bisa ada galat, data masa uji dapat diatur ulang). Linux juga (AppImage). iOS dan Windows direncanakan."
+      "a": "Android — APK dari situs ini, segera juga di Google Play. Linux — AppImage. iOS dan Windows direncanakan."
     }
   ],
   "footer_tagline": "Bicara. Berbagi. Datamu milikmu.",
   "footer_support": "Dukungan",
   "intro_sub": "jaringan yang menghubungkan",
   "intro_skip": "lewati ↓",
-  "dl_ready": "✓ Versi uji",
+  "dl_ready": "✓ Tersedia",
   "dl_get": "Unduh APK",
   "dl_get_linux": "Unduh AppImage",
-  "dl_note": "Android akan meminta izin memasang aplikasi dari sumber tidak dikenal — di luar Google Play hal ini wajar. Aplikasi dalam mode uji: bisa ada galat, dan data masa uji dapat diatur ulang.",
+  "dl_note": "Android akan meminta izin memasang aplikasi dari sumber tak dikenal — di luar Google Play itu wajar.",
   "tok_today": "Hari ini, di dalam aplikasi",
   "tok_use1": "Premium",
   "tok_use1v": "kuota lebih besar, file lebih besar",
@@ -133,13 +133,12 @@
   "tok_withdraw_v": "nanti, menjadi uang — hanya koin yang dibayarkan orang kepada Anda",
   "tok_protect": "Perlindungan",
   "tok_protect_v": "memindahkan koin butuh kata sandi akun",
-  "tok_translate": "Terjemahan otomatis",
-  "tok_translate_v": "200 per hari, lalu 🪙 1 / 10",
-  "prem_f8": "Terjemahan otomatis: 1000 per hari, bukan 200",
+  "tok_translate": "Terjemahan",
+  "tok_translate_v": "Android — di ponsel, tanpa batas · Linux — 200 per hari, lalu 🪙 1 / 10",
+  "prem_f8": "Terjemahan otomatis chat; di Linux 1000 terjemahan per hari, bukan 200",
   "rm_done": "sudah jalan",
   "rm_wip": "sedang dikerjakan",
   "rm_todo": "direncanakan",
-  "test_banner": "EION berjalan dalam mode uji. Kesalahan dan gangguan mungkin terjadi; data dan saldo dari periode uji dapat direset.",
   "f7_title": "Beberapa perangkat",
   "f7_desc": "Satu akun di ponsel dan komputer sekaligus. Pesan, status dibaca, penghapusan, stiker, dan obrolan senyap tetap sama di mana saja.",
   "f8_title": "Permainan",

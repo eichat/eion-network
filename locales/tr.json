@@ -81,7 +81,7 @@
     },
     {
       "q": "EION ücretsiz mi?",
-      "a": "Evet. Mesajlaşma uygulaması tamamen ücretsiz. Her gün ücretsiz bir hak tanınır: 15 yapay zekâ isteği, 200 MB yükleme ve 200 otomatik çeviri; bunun üstü jetonla ödenir. Premium hakkı genişletir ve dosya sınırını 20 MB’a çıkarır: ayda 🪙 300 veya yılda 🪙 2520. Aramalar sınırsızdır. Telefon numarası doğrulanmamış yeni bir hesap ilk 3 gün günde 5 AI isteği alır."
+      "a": "Evet. Mesajlaşma tamamen ücretsiz. Her gün ücretsiz bir kotanız var — 15 yapay zekâ isteği ve 200 MB yükleme; fazlası için jetonla ödersiniz. Android’de mesajları telefonun kendisi çevirir — ücretsiz ve sınırsız; Linux’ta günde 200 çeviri. Premium kotayı genişletir, sohbetlerde otomatik çeviri ekler ve dosya sınırını 20 MB’a çıkarır: ayda 🪙 300 veya yılda 🪙 2520. Aramalar sınırsız. Telefon numarası onaylanmamış yeni bir hesap ilk 3 gün günde 5 yapay zekâ isteği alır."
     },
     {
       "q": "Mesajlarım şifreli mi?",
@@ -93,17 +93,17 @@
     },
     {
       "q": "Hangi platformlar destekleniyor?",
-      "a": "Android — indirme açık (test sürümü: hatalar olabilir, test dönemine ait veriler sıfırlanabilir). Linux da (AppImage). iOS ve Windows planlanıyor."
+      "a": "Android — bu siteden APK, yakında Google Play’de de. Linux — AppImage. iOS ve Windows planlanıyor."
     }
   ],
   "footer_tagline": "Konuşun. Paylaşın. Verileriniz sizin.",
   "footer_support": "Destek",
   "intro_sub": "bağlayan ağ",
   "intro_skip": "atla ↓",
-  "dl_ready": "✓ Test sürümü",
+  "dl_ready": "✓ Mevcut",
   "dl_get": "APK indir",
   "dl_get_linux": "AppImage indir",
-  "dl_note": "Android, bilinmeyen kaynaktan uygulama yükleme izni isteyecek — Google Play dışında bu normaldir. Uygulama test modunda: hatalar olabilir ve test dönemine ait veriler sıfırlanabilir.",
+  "dl_note": "Android, bilinmeyen kaynaktan uygulama yüklemek için izin isteyecek — Google Play dışında bu normaldir.",
   "tok_today": "Bugün, uygulama içinde",
   "tok_use1": "Premium",
   "tok_use1v": "daha yüksek kotalar, daha büyük dosyalar",
@@ -133,13 +133,12 @@
   "tok_withdraw_v": "daha sonra, paraya — yalnızca size ödenmiş jetonlar",
   "tok_protect": "Koruma",
   "tok_protect_v": "jeton taşımak hesap şifresi ister",
-  "tok_translate": "Otomatik çeviri",
-  "tok_translate_v": "günde 200, sonra 🪙 1 / 10",
-  "prem_f8": "Otomatik çeviri: 200 yerine günde 1000",
+  "tok_translate": "Çeviri",
+  "tok_translate_v": "Android — telefonda, sınırsız · Linux — günde 200, sonra 🪙 1 / 10",
+  "prem_f8": "Sohbetlerde otomatik çeviri; Linux’ta günde 200 yerine 1000 çeviri",
   "rm_done": "çalışıyor",
   "rm_wip": "devam ediyor",
   "rm_todo": "planlandı",
-  "test_banner": "EION test modunda çalışıyor. Hatalar ve kesintiler olabilir; test dönemindeki veriler ve bakiyeler sıfırlanabilir.",
   "f7_title": "Birden fazla cihaz",
   "f7_desc": "Telefonunuzda ve bilgisayarınızda aynı anda tek hesap. Mesajlar, okunanlar, silinenler, çıkartmalar ve sessize alınan sohbetler her yerde aynı kalır.",
   "f8_title": "Oyunlar",

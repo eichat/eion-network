@@ -81,7 +81,7 @@
     },
     {
       "q": "O EION é gratuito?",
-      "a": "Sim. O mensageiro é totalmente gratuito. Todos os dias há uma quota gratuita: 15 pedidos de IA, 200 MB de envios e 200 traduções automáticas; acima dela paga com moedas. O premium amplia a quota e sobe o limite de ficheiro para 20 MB: 🪙 300 por mês ou 🪙 2520 por ano. As chamadas não têm limite. Uma conta nova sem número de telefone confirmado tem 5 pedidos à IA por dia nos primeiros 3 dias."
+      "a": "Sim. O mensageiro é totalmente gratuito. Todo dia há uma cota gratuita — 15 pedidos à IA e 200 MB de envios; acima disso você paga com moedas. No Android, as mensagens são traduzidas pelo próprio celular — de graça e sem limite; no Linux, 200 traduções por dia. O Premium amplia a cota, adiciona a tradução automática dos chats e aumenta o limite de arquivo para 20 MB: 🪙 300 por mês ou 🪙 2520 por ano. Chamadas sem limites. Uma conta nova sem número confirmado tem 5 pedidos à IA por dia nos primeiros 3 dias."
     },
     {
       "q": "Minhas mensagens são criptografadas?",
@@ -93,17 +93,17 @@
     },
     {
       "q": "Quais plataformas são suportadas?",
-      "a": "Android — o download está aberto (versão de teste: podem surgir erros e os dados do período de teste podem ser repostos). Linux também (AppImage). iOS e Windows estão nos planos."
+      "a": "Android — APK deste site, e em breve no Google Play. Linux — AppImage. iOS e Windows estão nos planos."
     }
   ],
   "footer_tagline": "Converse. Compartilhe. Seus dados são seus.",
   "footer_support": "Suporte",
   "intro_sub": "a rede que conecta",
   "intro_skip": "pular ↓",
-  "dl_ready": "✓ Versão de teste",
+  "dl_ready": "✓ Disponível",
   "dl_get": "Baixar APK",
   "dl_get_linux": "Baixar AppImage",
-  "dl_note": "O Android vai pedir permissão para instalar uma app de origem desconhecida — fora do Google Play isso é normal. A app está em modo de teste: podem surgir erros e os dados do período de teste podem ser repostos.",
+  "dl_note": "O Android vai pedir permissão para instalar um app de fonte desconhecida — fora do Google Play isso é normal.",
   "tok_today": "Hoje, dentro do aplicativo",
   "tok_use1": "Premium",
   "tok_use1v": "limites maiores, arquivos maiores",
@@ -133,13 +133,12 @@
   "tok_withdraw_v": "mais tarde, em dinheiro — só moedas que alguém lhe pagou",
   "tok_protect": "Proteção",
   "tok_protect_v": "mover moedas exige a senha da conta",
-  "tok_translate": "Tradução automática",
-  "tok_translate_v": "200 por dia, depois 🪙 1 / 10",
-  "prem_f8": "Tradução automática: 1000 por dia em vez de 200",
+  "tok_translate": "Tradução",
+  "tok_translate_v": "Android — no celular, sem limite · Linux — 200 por dia, depois 🪙 1 / 10",
+  "prem_f8": "Tradução automática dos chats; no Linux, 1000 traduções por dia em vez de 200",
   "rm_done": "já funciona",
   "rm_wip": "em andamento",
   "rm_todo": "planeado",
-  "test_banner": "O EION está em modo de teste. Podem ocorrer erros e interrupções, e os dados e saldos do período de teste podem ser repostos.",
   "f7_title": "Vários dispositivos",
   "f7_desc": "Uma conta no telemóvel e no computador ao mesmo tempo. Mensagens, lidas, eliminadas, stickers e conversas silenciadas ficam iguais em todo o lado.",
   "f8_title": "Jogos",

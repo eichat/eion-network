@@ -81,7 +81,7 @@
     },
     {
       "q": "EION có miễn phí không?",
-      "a": "Có. Ứng dụng nhắn tin hoàn toàn miễn phí. Mỗi ngày có một hạn mức miễn phí: 15 yêu cầu AI, 200 MB tải lên và 200 lần dịch tự động; vượt quá thì bạn trả bằng xu. Premium mở rộng hạn mức và nâng giới hạn tệp lên 20 MB: 🪙 300 mỗi tháng hoặc 🪙 2520 mỗi năm. Gọi điện không giới hạn. Tài khoản mới chưa xác nhận số điện thoại có 5 yêu cầu AI mỗi ngày trong 3 ngày đầu."
+      "a": "Có. Ứng dụng nhắn tin hoàn toàn miễn phí. Mỗi ngày bạn có hạn mức miễn phí — 15 yêu cầu AI và 200 MB tải lên; vượt quá thì trả bằng xu. Trên Android, chính điện thoại dịch tin nhắn — miễn phí và không giới hạn; trên Linux là 200 lượt dịch mỗi ngày. Premium mở rộng hạn mức, thêm tự động dịch trò chuyện và nâng giới hạn tệp lên 20 MB: 🪙 300 mỗi tháng hoặc 🪙 2520 mỗi năm. Cuộc gọi không giới hạn. Tài khoản mới chưa xác nhận số điện thoại có 5 yêu cầu AI mỗi ngày trong 3 ngày đầu."
     },
     {
       "q": "Tin nhắn của tôi có được mã hóa không?",
@@ -93,17 +93,17 @@
     },
     {
       "q": "Hỗ trợ những nền tảng nào?",
-      "a": "Android — đã mở tải xuống (bản thử nghiệm: có thể có lỗi, dữ liệu giai đoạn thử nghiệm có thể bị đặt lại). Linux cũng vậy (AppImage). iOS và Windows đang trong kế hoạch."
+      "a": "Android — APK từ trang này, sắp có trên Google Play. Linux — AppImage. iOS và Windows đang được lên kế hoạch."
     }
   ],
   "footer_tagline": "Trò chuyện. Chia sẻ. Dữ liệu là của bạn.",
   "footer_support": "Hỗ trợ",
   "intro_sub": "mạng lưới kết nối",
   "intro_skip": "bỏ qua ↓",
-  "dl_ready": "✓ Bản thử nghiệm",
+  "dl_ready": "✓ Đã có",
   "dl_get": "Tải APK",
   "dl_get_linux": "Tải AppImage",
-  "dl_note": "Android sẽ xin quyền cài ứng dụng từ nguồn không xác định — ngoài Google Play điều này là bình thường. Ứng dụng đang ở chế độ thử nghiệm: có thể có lỗi và dữ liệu trong giai đoạn thử nghiệm có thể bị đặt lại.",
+  "dl_note": "Android sẽ xin quyền cài ứng dụng từ nguồn không xác định — ngoài Google Play thì điều này là bình thường.",
   "tok_today": "Hiện tại, trong ứng dụng",
   "tok_use1": "Gói cao cấp",
   "tok_use1v": "hạn mức cao hơn, tệp lớn hơn",
@@ -133,13 +133,12 @@
   "tok_withdraw_v": "sau này, thành tiền — chỉ xu người khác trả cho bạn",
   "tok_protect": "Bảo vệ",
   "tok_protect_v": "chuyển xu cần mật khẩu tài khoản",
-  "tok_translate": "Dịch tự động",
-  "tok_translate_v": "200 mỗi ngày, sau đó 🪙 1 / 10",
-  "prem_f8": "Dịch tự động: 1000 mỗi ngày thay vì 200",
+  "tok_translate": "Dịch",
+  "tok_translate_v": "Android — ngay trên điện thoại, không giới hạn · Linux — 200 mỗi ngày, sau đó 🪙 1 / 10",
+  "prem_f8": "Tự động dịch trò chuyện; trên Linux 1000 lượt dịch mỗi ngày thay vì 200",
   "rm_done": "đã chạy",
   "rm_wip": "đang làm",
   "rm_todo": "dự kiến",
-  "test_banner": "EION đang chạy ở chế độ thử nghiệm. Có thể xảy ra lỗi và gián đoạn; dữ liệu và số dư trong giai đoạn thử nghiệm có thể bị đặt lại.",
   "f7_title": "Nhiều thiết bị",
   "f7_desc": "Một tài khoản trên điện thoại và máy tính cùng lúc. Tin nhắn, trạng thái đã đọc, mục đã xoá, nhãn dán và cuộc trò chuyện tắt tiếng đều giống nhau ở mọi nơi.",
   "f8_title": "Trò chơi",

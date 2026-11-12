@@ -81,7 +81,7 @@
     },
     {
       "q": "Is EION free?",
-      "a": "Yes. The full messenger is free. Every day you get a free allowance — 15 AI requests, 200 MB of uploads and 200 auto-translations; beyond it you pay in coins. Premium widens the allowance and raises the file limit to 20 MB: 🪙 300 a month or 🪙 2520 a year. Calls have no limits. A new account without a confirmed phone number gets 5 AI requests a day for the first 3 days."
+      "a": "Yes. The full messenger is free. Every day you get a free allowance — 15 AI requests and 200 MB of uploads; beyond it you pay in coins. On Android, messages are translated by your phone itself — free and with no limit; on Linux you get 200 translations a day. Premium widens the allowance, adds chat auto-translate and raises the file limit to 20 MB: 🪙 300 a month or 🪙 2520 a year. Calls have no limits. A new account without a confirmed phone number gets 5 AI requests a day for the first 3 days."
     },
     {
       "q": "Are my messages encrypted?",
@@ -93,17 +93,17 @@
     },
     {
       "q": "Which platforms are supported?",
-      "a": "Android — downloads are open (test build: expect bugs, and data from the test period may be reset). Linux too (AppImage). iOS and Windows are planned."
+      "a": "Android — APK from this site, and soon on Google Play. Linux — AppImage. iOS and Windows are planned."
     }
   ],
   "footer_tagline": "Talk. Share. Own your data.",
   "footer_support": "Support",
   "intro_sub": "the network that connects",
   "intro_skip": "skip ↓",
-  "dl_ready": "✓ Test build",
+  "dl_ready": "✓ Available",
   "dl_get": "Download APK",
   "dl_get_linux": "Download AppImage",
-  "dl_note": "Android will ask for permission to install an app from an unknown source — that is normal outside Google Play. The app is in test mode: expect bugs, and data from the test period may be reset.",
+  "dl_note": "Android will ask for permission to install an app from an unknown source — that is normal outside Google Play.",
   "tok_today": "Today, inside the app",
   "tok_use1": "Premium",
   "tok_use1v": "higher allowances, bigger files",
@@ -133,13 +133,12 @@
   "tok_withdraw_v": "later, into money — only coins someone paid you",
   "tok_protect": "Protection",
   "tok_protect_v": "moving coins requires the account password",
-  "tok_translate": "Auto-translate",
-  "tok_translate_v": "200 a day, then 🪙 1 / 10",
-  "prem_f8": "Auto-translate: 1000 a day instead of 200",
+  "tok_translate": "Translation",
+  "tok_translate_v": "Android — on your phone, no limit · Linux — 200 a day, then 🪙 1 / 10",
+  "prem_f8": "Chat auto-translate; on Linux — 1000 translations a day instead of 200",
   "rm_done": "works now",
   "rm_wip": "in progress",
   "rm_todo": "planned",
-  "test_banner": "EION is running in test mode. Expect bugs and downtime; data and balances from the test period may be reset.",
   "f7_title": "Multiple devices",
   "f7_desc": "One account on your phone and computer at once. Messages, read state, deletions, stickers and muted chats stay the same everywhere.",
   "f8_title": "Games",

@@ -81,7 +81,7 @@
     },
     {
       "q": "Is EION gratis?",
-      "a": "Ja. De messenger is volledig gratis. Elke dag geldt een gratis limiet: 15 AI-verzoeken, 200 MB uploads en 200 automatische vertalingen; daarboven betaal je met munten. Premium verruimt de limiet en verhoogt de bestandslimiet naar 20 MB: 🪙 300 per maand of 🪙 2520 per jaar. Bellen is onbeperkt. Een nieuw account zonder bevestigd telefoonnummer heeft de eerste 3 dagen 5 AI-vragen per dag."
+      "a": "Ja. De messenger is volledig gratis. Elke dag krijg je een gratis tegoed — 15 AI-verzoeken en 200 MB uploads; daarboven betaal je met munten. Op Android vertaalt je telefoon berichten zelf — gratis en zonder limiet; op Linux krijg je 200 vertalingen per dag. Premium vergroot het tegoed, voegt automatisch vertalen van chats toe en verhoogt de bestandslimiet naar 20 MB: 🪙 300 per maand of 🪙 2520 per jaar. Bellen is onbeperkt. Een nieuw account zonder bevestigd telefoonnummer heeft de eerste 3 dagen 5 AI-verzoeken per dag."
     },
     {
       "q": "Zijn mijn berichten versleuteld?",
@@ -93,17 +93,17 @@
     },
     {
       "q": "Welke platforms worden ondersteund?",
-      "a": "Android — downloaden is mogelijk (testversie: fouten zijn mogelijk en gegevens uit de testperiode kunnen worden gewist). Linux ook (AppImage). iOS en Windows staan gepland."
+      "a": "Android — APK van deze site, binnenkort ook in Google Play. Linux — AppImage. iOS en Windows zijn gepland."
     }
   ],
   "footer_tagline": "Praat. Deel. Jouw data blijft van jou.",
   "footer_support": "Ondersteuning",
   "intro_sub": "het netwerk dat verbindt",
   "intro_skip": "overslaan ↓",
-  "dl_ready": "✓ Testversie",
+  "dl_ready": "✓ Beschikbaar",
   "dl_get": "APK downloaden",
   "dl_get_linux": "AppImage downloaden",
-  "dl_note": "Android vraagt toestemming om een app van een onbekende bron te installeren — buiten Google Play is dat normaal. De app staat in testmodus: fouten zijn mogelijk en gegevens uit de testperiode kunnen worden gewist.",
+  "dl_note": "Android vraagt toestemming om een app van een onbekende bron te installeren — buiten Google Play is dat normaal.",
   "tok_today": "Vandaag, in de app",
   "tok_use1": "Premium",
   "tok_use1v": "hogere limieten, grotere bestanden",
@@ -133,13 +133,12 @@
   "tok_withdraw_v": "later, in geld — alleen munten die iemand je betaalde",
   "tok_protect": "Beveiliging",
   "tok_protect_v": "munten verplaatsen vereist het accountwachtwoord",
-  "tok_translate": "Automatisch vertalen",
-  "tok_translate_v": "200 per dag, daarna 🪙 1 / 10",
-  "prem_f8": "Automatisch vertalen: 1000 per dag in plaats van 200",
+  "tok_translate": "Vertaling",
+  "tok_translate_v": "Android — op je telefoon, zonder limiet · Linux — 200 per dag, daarna 🪙 1 / 10",
+  "prem_f8": "Automatisch vertalen van chats; op Linux 1000 vertalingen per dag in plaats van 200",
   "rm_done": "werkt",
   "rm_wip": "in uitvoering",
   "rm_todo": "gepland",
-  "test_banner": "EION draait in testmodus. Fouten en storingen zijn mogelijk; gegevens en saldi uit de testperiode kunnen worden gewist.",
   "f7_title": "Meerdere apparaten",
   "f7_desc": "Eén account op je telefoon en computer tegelijk. Berichten, gelezen, verwijderd, stickers en gedempte chats blijven overal hetzelfde.",
   "f8_title": "Spellen",

@@ -81,7 +81,7 @@
     },
     {
       "q": "Ist EION kostenlos?",
-      "a": "Ja. Der Messenger ist vollständig kostenlos. Täglich gibt es ein kostenloses Kontingent — 15 KI-Anfragen, 200 MB Uploads und 200 Auto-Übersetzungen; darüber hinaus zahlen Sie mit Coins. Premium erweitert das Kontingent und hebt das Dateilimit auf 20 MB: 🪙 300 pro Monat oder 🪙 2520 pro Jahr. Anrufe sind unbegrenzt. Ein neues Konto ohne bestätigte Telefonnummer hat in den ersten 3 Tagen 5 KI-Anfragen pro Tag."
+      "a": "Ja. Der Messenger ist vollständig kostenlos. Jeden Tag gibt es ein Gratiskontingent — 15 KI-Anfragen und 200 MB Uploads; darüber hinaus zahlst du mit Münzen. Unter Android übersetzt dein Telefon Nachrichten selbst — kostenlos und ohne Limit; unter Linux gibt es 200 Übersetzungen pro Tag. Premium erweitert das Kontingent, bringt die automatische Chat-Übersetzung und hebt das Dateilimit auf 20 MB: 🪙 300 im Monat oder 🪙 2520 im Jahr. Anrufe sind unbegrenzt. Ein neues Konto ohne bestätigte Telefonnummer hat in den ersten 3 Tagen 5 KI-Anfragen pro Tag."
     },
     {
       "q": "Sind meine Nachrichten verschlüsselt?",
@@ -93,17 +93,17 @@
     },
     {
       "q": "Welche Plattformen werden unterstützt?",
-      "a": "Android — Download ist offen (Testversion: Fehler sind möglich, Daten aus der Testphase können zurückgesetzt werden). Linux ebenfalls (AppImage). iOS und Windows sind geplant."
+      "a": "Android — APK von dieser Seite, bald auch bei Google Play. Linux — AppImage. iOS und Windows sind geplant."
     }
   ],
   "footer_tagline": "Reden. Teilen. Ihre Daten gehören Ihnen.",
   "footer_support": "Support",
   "intro_sub": "das Netzwerk, das verbindet",
   "intro_skip": "überspringen ↓",
-  "dl_ready": "✓ Testversion",
+  "dl_ready": "✓ Verfügbar",
   "dl_get": "APK herunterladen",
   "dl_get_linux": "AppImage herunterladen",
-  "dl_note": "Android fragt nach der Erlaubnis, eine App aus unbekannter Quelle zu installieren — außerhalb von Google Play ist das normal. Die App ist im Testmodus: Fehler sind möglich, und Daten aus der Testphase können zurückgesetzt werden.",
+  "dl_note": "Android fragt nach der Erlaubnis, eine App aus unbekannter Quelle zu installieren — außerhalb von Google Play ist das normal.",
   "tok_today": "Heute, in der App",
   "tok_use1": "Premium",
   "tok_use1v": "höhere Limits, größere Dateien",
@@ -133,13 +133,12 @@
   "tok_withdraw_v": "später, in Geld — nur Münzen, die man Ihnen gezahlt hat",
   "tok_protect": "Schutz",
   "tok_protect_v": "Coins bewegen verlangt das Konto-Passwort",
-  "tok_translate": "Auto-Übersetzung",
-  "tok_translate_v": "200 pro Tag, danach 🪙 1 / 10",
-  "prem_f8": "Auto-Übersetzung: 1000 pro Tag statt 200",
+  "tok_translate": "Übersetzung",
+  "tok_translate_v": "Android — auf dem Telefon, ohne Limit · Linux — 200 pro Tag, danach 🪙 1 / 10",
+  "prem_f8": "Automatische Chat-Übersetzung; unter Linux 1000 Übersetzungen pro Tag statt 200",
   "rm_done": "funktioniert",
   "rm_wip": "in Arbeit",
   "rm_todo": "geplant",
-  "test_banner": "EION läuft im Testmodus. Fehler und Ausfälle sind möglich; Daten und Guthaben aus der Testphase können zurückgesetzt werden.",
   "f7_title": "Mehrere Geräte",
   "f7_desc": "Ein Konto gleichzeitig auf Handy und Computer. Nachrichten, Gelesenes, Gelöschtes, Sticker und stummgeschaltete Chats bleiben überall gleich.",
   "f8_title": "Spiele",

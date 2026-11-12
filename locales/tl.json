@@ -81,7 +81,7 @@
     },
     {
       "q": "Libre ba ang EION?",
-      "a": "Oo. Libre ang buong messenger. Araw-araw may libreng alawans: 15 kahilingan sa AI, 200 MB na upload at 200 awtomatikong pagsasalin; lampas doon ay babayaran mo sa coins. Pinapalawak ng premium ang alawans at itinataas ang limitasyon ng file sa 20 MB: 🪙 300 kada buwan o 🪙 2520 kada taon. Walang limitasyon ang mga tawag. Ang bagong account na walang nakumpirmang numero ng telepono ay may 5 AI request bawat araw sa unang 3 araw."
+      "a": "Oo. Libre ang buong messenger. Bawat araw may libreng allowance — 15 tanong sa AI at 200 MB na upload; lampas doon, nagbabayad ka ng coins. Sa Android, ang phone mismo ang nagsasalin ng mga mensahe — libre at walang limitasyon; sa Linux, 200 pagsasalin bawat araw. Pinalalawak ng Premium ang allowance, nagdadagdag ng awtomatikong pagsasalin ng chat at itinataas ang limitasyon ng file sa 20 MB: 🪙 300 bawat buwan o 🪙 2520 bawat taon. Walang limitasyon ang tawag. Ang bagong account na walang kumpirmadong numero ay may 5 tanong sa AI bawat araw sa unang 3 araw."
     },
     {
       "q": "Naka-encrypt ba ang mga mensahe ko?",
@@ -93,17 +93,17 @@
     },
     {
       "q": "Anong mga platform ang suportado?",
-      "a": "Android — bukas na ang pag-download (test build: maaaring may mga bug, at puwedeng ma-reset ang data mula sa panahon ng pagsubok). Ganoon din ang Linux (AppImage). Nakaplano ang iOS at Windows."
+      "a": "Android — APK mula sa site na ito, at malapit na sa Google Play. Linux — AppImage. Nakaplano ang iOS at Windows."
     }
   ],
   "footer_tagline": "Mag-usap. Magbahagi. Sa iyo ang datos mo.",
   "footer_support": "Suporta",
   "intro_sub": "ang network na nag-uugnay",
   "intro_skip": "laktawan ↓",
-  "dl_ready": "✓ Test build",
+  "dl_ready": "✓ Available na",
   "dl_get": "I-download ang APK",
   "dl_get_linux": "I-download ang AppImage",
-  "dl_note": "Hihingi ang Android ng pahintulot na mag-install ng app mula sa hindi kilalang pinagmulan — normal ito sa labas ng Google Play. Nasa test mode ang app: maaaring may mga bug, at puwedeng ma-reset ang data mula sa panahon ng pagsubok.",
+  "dl_note": "Hihingi ang Android ng pahintulot na mag-install ng app mula sa hindi kilalang source — normal ito sa labas ng Google Play.",
   "tok_today": "Ngayon, sa loob ng app",
   "tok_use1": "Premium",
   "tok_use1v": "mas mataas na limitasyon, mas malaking file",
@@ -133,13 +133,12 @@
   "tok_withdraw_v": "sa ibang pagkakataon, bilang pera — tanging coins na ibinayad sa iyo",
   "tok_protect": "Proteksyon",
   "tok_protect_v": "ang paglilipat ng coins ay nangangailangan ng password ng account",
-  "tok_translate": "Awtomatikong pagsasalin",
-  "tok_translate_v": "200 kada araw, tapos 🪙 1 / 10",
-  "prem_f8": "Awtomatikong pagsasalin: 1000 kada araw sa halip na 200",
+  "tok_translate": "Pagsasalin",
+  "tok_translate_v": "Android — sa phone mismo, walang limitasyon · Linux — 200 bawat araw, pagkatapos 🪙 1 / 10",
+  "prem_f8": "Awtomatikong pagsasalin ng chat; sa Linux, 1000 pagsasalin bawat araw sa halip na 200",
   "rm_done": "gumagana na",
   "rm_wip": "ginagawa",
   "rm_todo": "nakaplano",
-  "test_banner": "Tumatakbo ang EION sa test mode. Posibleng magkaroon ng bug at downtime; maaaring i-reset ang data at balanse mula sa test period.",
   "f7_title": "Maraming device",
   "f7_desc": "Isang account sa telepono at computer nang sabay. Pareho sa lahat ng device ang mga mensahe, nabasa na, nabura, sticker at naka-mute na chat.",
   "f8_title": "Mga laro",
