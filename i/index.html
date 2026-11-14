@@ -41,7 +41,7 @@ p{color:var(--text2);margin-bottom:28px}
   <p id="sub">Вас запросили до групи або каналу.</p>
 
   <a class="btn primary" id="open" href="#">Відкрити в EION</a>
-  <a class="btn ghost" id="get" href="/">Немає застосунку — про EION</a>
+  <a class="btn ghost" id="get" href="/">Немає застосунку — завантажити EION</a>
 
   <p class="hint" id="hint">Якщо застосунок установлено, посилання відкриється в ньому автоматично.</p>
   <a class="brand" href="/">EION</a>
@@ -52,27 +52,27 @@ p{color:var(--text2);margin-bottom:28px}
 // осідає ні в логах GitHub Pages, ні в Referer, ні в аналітиці. Сторінка з ним
 // нічого не робить — лише передає застосунку. Так само влаштовано signal.group.
 var T = {
-  uk:{t:"Запрошення в EION",s:"Вас запросили до групи або каналу.",o:"Відкрити в EION",g:"Немає застосунку — про EION",h:"Якщо застосунок установлено, посилання відкриється в ньому автоматично.",b:"Посилання неповне. Попросіть надіслати його ще раз."},
-  en:{t:"EION invitation",s:"You have been invited to a group or channel.",o:"Open in EION",g:"No app yet — about EION",h:"If the app is installed, the link opens in it automatically.",b:"The link is incomplete. Ask for it to be sent again."},
-  ru:{t:"Приглашение в EION",s:"Вас пригласили в группу или канал.",o:"Открыть в EION",g:"Нет приложения — об EION",h:"Если приложение установлено, ссылка откроется в нём автоматически.",b:"Ссылка неполная. Попросите прислать её ещё раз."},
-  de:{t:"EION-Einladung",s:"Sie wurden in eine Gruppe oder einen Kanal eingeladen.",o:"In EION öffnen",g:"Keine App — über EION",h:"Ist die App installiert, öffnet sich der Link automatisch darin.",b:"Der Link ist unvollständig. Bitten Sie um erneutes Senden."},
-  es:{t:"Invitación a EION",s:"Te han invitado a un grupo o canal.",o:"Abrir en EION",g:"Sin aplicación — sobre EION",h:"Si la aplicación está instalada, el enlace se abrirá en ella automáticamente.",b:"El enlace está incompleto. Pide que te lo envíen de nuevo."},
-  fr:{t:"Invitation EION",s:"Vous avez été invité dans un groupe ou un canal.",o:"Ouvrir dans EION",g:"Pas d'application — à propos d'EION",h:"Si l'application est installée, le lien s'y ouvrira automatiquement.",b:"Le lien est incomplet. Demandez qu'on vous le renvoie."},
-  it:{t:"Invito a EION",s:"Sei stato invitato in un gruppo o canale.",o:"Apri in EION",g:"Nessuna app — informazioni su EION",h:"Se l'app è installata, il link si aprirà automaticamente in essa.",b:"Il link è incompleto. Chiedi di rinviarlo."},
-  pt:{t:"Convite para o EION",s:"Você foi convidado para um grupo ou canal.",o:"Abrir no EION",g:"Sem aplicativo — sobre o EION",h:"Se o aplicativo estiver instalado, o link abrirá nele automaticamente.",b:"O link está incompleto. Peça para enviarem novamente."},
-  nl:{t:"EION-uitnodiging",s:"Je bent uitgenodigd voor een groep of kanaal.",o:"Openen in EION",g:"Geen app — over EION",h:"Als de app is geïnstalleerd, opent de link daar automatisch.",b:"De link is onvolledig. Vraag om hem opnieuw te sturen."},
-  pl:{t:"Zaproszenie do EION",s:"Zaproszono Cię do grupy lub kanału.",o:"Otwórz w EION",g:"Brak aplikacji — o EION",h:"Jeśli aplikacja jest zainstalowana, link otworzy się w niej automatycznie.",b:"Link jest niepełny. Poproś o ponowne wysłanie."},
-  tr:{t:"EION daveti",s:"Bir gruba veya kanala davet edildiniz.",o:"EION'da aç",g:"Uygulama yok — EION hakkında",h:"Uygulama yüklüyse bağlantı otomatik olarak onda açılır.",b:"Bağlantı eksik. Tekrar gönderilmesini isteyin."},
-  id:{t:"Undangan EION",s:"Anda diundang ke grup atau saluran.",o:"Buka di EION",g:"Belum ada aplikasi — tentang EION",h:"Jika aplikasi terpasang, tautan akan terbuka di dalamnya secara otomatis.",b:"Tautan tidak lengkap. Minta dikirim ulang."},
-  vi:{t:"Lời mời EION",s:"Bạn được mời vào một nhóm hoặc kênh.",o:"Mở trong EION",g:"Chưa có ứng dụng — về EION",h:"Nếu đã cài ứng dụng, liên kết sẽ tự động mở trong đó.",b:"Liên kết không đầy đủ. Hãy yêu cầu gửi lại."},
-  th:{t:"คำเชิญ EION",s:"คุณได้รับเชิญเข้ากลุ่มหรือช่อง",o:"เปิดใน EION",g:"ยังไม่มีแอป — เกี่ยวกับ EION",h:"หากติดตั้งแอปแล้ว ลิงก์จะเปิดในแอปโดยอัตโนมัติ",b:"ลิงก์ไม่สมบูรณ์ โปรดขอให้ส่งใหม่"},
-  tl:{t:"Imbitasyon sa EION",s:"Inimbitahan ka sa isang grupo o channel.",o:"Buksan sa EION",g:"Walang app — tungkol sa EION",h:"Kung naka-install ang app, awtomatikong magbubukas doon ang link.",b:"Hindi kumpleto ang link. Hilingin na ipadala itong muli."},
-  hi:{t:"EION आमंत्रण",s:"आपको एक समूह या चैनल में आमंत्रित किया गया है।",o:"EION में खोलें",g:"ऐप नहीं है — EION के बारे में",h:"यदि ऐप इंस्टॉल है, तो लिंक उसमें अपने आप खुल जाएगा।",b:"लिंक अधूरा है। इसे दोबारा भेजने के लिए कहें।"},
-  bn:{t:"EION আমন্ত্রণ",s:"আপনাকে একটি গ্রুপ বা চ্যানেলে আমন্ত্রণ জানানো হয়েছে।",o:"EION-এ খুলুন",g:"অ্যাপ নেই — EION সম্পর্কে",h:"অ্যাপ ইনস্টল থাকলে লিঙ্কটি স্বয়ংক্রিয়ভাবে সেখানে খুলবে।",b:"লিঙ্কটি অসম্পূর্ণ। আবার পাঠাতে বলুন।"},
-  ja:{t:"EION への招待",s:"グループまたはチャンネルに招待されました。",o:"EION で開く",g:"アプリ未導入 — EION について",h:"アプリがインストールされていれば、リンクは自動的にアプリで開きます。",b:"リンクが不完全です。もう一度送ってもらってください。"},
-  ko:{t:"EION 초대",s:"그룹 또는 채널에 초대되었습니다.",o:"EION에서 열기",g:"앱이 없습니다 — EION 소개",h:"앱이 설치되어 있으면 링크가 자동으로 앱에서 열립니다.",b:"링크가 불완전합니다. 다시 보내 달라고 요청하세요."},
-  zh:{t:"EION 邀请",s:"有人邀请你加入群组或频道。",o:"在 EION 中打开",g:"还没有应用 — 了解 EION",h:"如果已安装应用，链接会自动在应用中打开。",b:"链接不完整，请对方重新发送。"},
-  ar:{t:"دعوة إلى EION",s:"تمت دعوتك إلى مجموعة أو قناة.",o:"فتح في EION",g:"لا يوجد تطبيق — عن EION",h:"إذا كان التطبيق مثبتًا، فسيُفتح الرابط فيه تلقائيًا.",b:"الرابط غير مكتمل. اطلب إرساله مرة أخرى."}
+  uk:{t:"Запрошення в EION",s:"Вас запросили до групи або каналу.",o:"Відкрити в EION",g:"Немає застосунку — завантажити EION",h:"Якщо застосунок установлено, посилання відкриється в ньому автоматично.",b:"Посилання неповне. Попросіть надіслати його ще раз."},
+  en:{t:"EION invitation",s:"You have been invited to a group or channel.",o:"Open in EION",g:"No app yet — get EION",h:"If the app is installed, the link opens in it automatically.",b:"The link is incomplete. Ask for it to be sent again."},
+  ru:{t:"Приглашение в EION",s:"Вас пригласили в группу или канал.",o:"Открыть в EION",g:"Нет приложения — скачать EION",h:"Если приложение установлено, ссылка откроется в нём автоматически.",b:"Ссылка неполная. Попросите прислать её ещё раз."},
+  de:{t:"EION-Einladung",s:"Sie wurden in eine Gruppe oder einen Kanal eingeladen.",o:"In EION öffnen",g:"Keine App — EION holen",h:"Ist die App installiert, öffnet sich der Link automatisch darin.",b:"Der Link ist unvollständig. Bitten Sie um erneutes Senden."},
+  es:{t:"Invitación a EION",s:"Te han invitado a un grupo o canal.",o:"Abrir en EION",g:"Sin aplicación — descargar EION",h:"Si la aplicación está instalada, el enlace se abrirá en ella automáticamente.",b:"El enlace está incompleto. Pide que te lo envíen de nuevo."},
+  fr:{t:"Invitation EION",s:"Vous avez été invité dans un groupe ou un canal.",o:"Ouvrir dans EION",g:"Pas d'application — télécharger EION",h:"Si l'application est installée, le lien s'y ouvrira automatiquement.",b:"Le lien est incomplet. Demandez qu'on vous le renvoie."},
+  it:{t:"Invito a EION",s:"Sei stato invitato in un gruppo o canale.",o:"Apri in EION",g:"Nessuna app — scarica EION",h:"Se l'app è installata, il link si aprirà automaticamente in essa.",b:"Il link è incompleto. Chiedi di rinviarlo."},
+  pt:{t:"Convite para o EION",s:"Você foi convidado para um grupo ou canal.",o:"Abrir no EION",g:"Sem aplicativo — baixar o EION",h:"Se o aplicativo estiver instalado, o link abrirá nele automaticamente.",b:"O link está incompleto. Peça para enviarem novamente."},
+  nl:{t:"EION-uitnodiging",s:"Je bent uitgenodigd voor een groep of kanaal.",o:"Openen in EION",g:"Geen app — download EION",h:"Als de app is geïnstalleerd, opent de link daar automatisch.",b:"De link is onvolledig. Vraag om hem opnieuw te sturen."},
+  pl:{t:"Zaproszenie do EION",s:"Zaproszono Cię do grupy lub kanału.",o:"Otwórz w EION",g:"Brak aplikacji — pobierz EION",h:"Jeśli aplikacja jest zainstalowana, link otworzy się w niej automatycznie.",b:"Link jest niepełny. Poproś o ponowne wysłanie."},
+  tr:{t:"EION daveti",s:"Bir gruba veya kanala davet edildiniz.",o:"EION'da aç",g:"Uygulama yok — EION'u indir",h:"Uygulama yüklüyse bağlantı otomatik olarak onda açılır.",b:"Bağlantı eksik. Tekrar gönderilmesini isteyin."},
+  id:{t:"Undangan EION",s:"Anda diundang ke grup atau saluran.",o:"Buka di EION",g:"Belum ada aplikasi — unduh EION",h:"Jika aplikasi terpasang, tautan akan terbuka di dalamnya secara otomatis.",b:"Tautan tidak lengkap. Minta dikirim ulang."},
+  vi:{t:"Lời mời EION",s:"Bạn được mời vào một nhóm hoặc kênh.",o:"Mở trong EION",g:"Chưa có ứng dụng — tải EION",h:"Nếu đã cài ứng dụng, liên kết sẽ tự động mở trong đó.",b:"Liên kết không đầy đủ. Hãy yêu cầu gửi lại."},
+  th:{t:"คำเชิญ EION",s:"คุณได้รับเชิญเข้ากลุ่มหรือช่อง",o:"เปิดใน EION",g:"ยังไม่มีแอป — ดาวน์โหลด EION",h:"หากติดตั้งแอปแล้ว ลิงก์จะเปิดในแอปโดยอัตโนมัติ",b:"ลิงก์ไม่สมบูรณ์ โปรดขอให้ส่งใหม่"},
+  tl:{t:"Imbitasyon sa EION",s:"Inimbitahan ka sa isang grupo o channel.",o:"Buksan sa EION",g:"Walang app — i-download ang EION",h:"Kung naka-install ang app, awtomatikong magbubukas doon ang link.",b:"Hindi kumpleto ang link. Hilingin na ipadala itong muli."},
+  hi:{t:"EION आमंत्रण",s:"आपको एक समूह या चैनल में आमंत्रित किया गया है।",o:"EION में खोलें",g:"ऐप नहीं है — EION डाउनलोड करें",h:"यदि ऐप इंस्टॉल है, तो लिंक उसमें अपने आप खुल जाएगा।",b:"लिंक अधूरा है। इसे दोबारा भेजने के लिए कहें।"},
+  bn:{t:"EION আমন্ত্রণ",s:"আপনাকে একটি গ্রুপ বা চ্যানেলে আমন্ত্রণ জানানো হয়েছে।",o:"EION-এ খুলুন",g:"অ্যাপ নেই — EION ডাউনলোড করুন",h:"অ্যাপ ইনস্টল থাকলে লিঙ্কটি স্বয়ংক্রিয়ভাবে সেখানে খুলবে।",b:"লিঙ্কটি অসম্পূর্ণ। আবার পাঠাতে বলুন।"},
+  ja:{t:"EION への招待",s:"グループまたはチャンネルに招待されました。",o:"EION で開く",g:"アプリ未導入 — EION を入手",h:"アプリがインストールされていれば、リンクは自動的にアプリで開きます。",b:"リンクが不完全です。もう一度送ってもらってください。"},
+  ko:{t:"EION 초대",s:"그룹 또는 채널에 초대되었습니다.",o:"EION에서 열기",g:"앱이 없습니다 — EION 받기",h:"앱이 설치되어 있으면 링크가 자동으로 앱에서 열립니다.",b:"링크가 불완전합니다. 다시 보내 달라고 요청하세요."},
+  zh:{t:"EION 邀请",s:"有人邀请你加入群组或频道。",o:"在 EION 中打开",g:"还没有应用 — 获取 EION",h:"如果已安装应用，链接会自动在应用中打开。",b:"链接不完整，请对方重新发送。"},
+  ar:{t:"دعوة إلى EION",s:"تمت دعوتك إلى مجموعة أو قناة.",o:"فتح في EION",g:"لا يوجد تطبيق — نزّل EION",h:"إذا كان التطبيق مثبتًا، فسيُفتح الرابط فيه تلقائيًا.",b:"الرابط غير مكتمل. اطلب إرساله مرة أخرى."}
 };
 var RTL = {ar:1};
 
@@ -83,6 +83,9 @@ function pickLang(){
 }
 
 var lang = pickLang(), t = T[lang];
+// Android: застосунок у Google Play (з 14.11.2026) — туди й кнопка, і запасний шлях intent.
+var PLAY_URL = 'https://play.google.com/store/apps/details?id=network.eion.app&referrer=utm_source%3Dinvite';
+if (/android/i.test(navigator.userAgent)) document.getElementById('get').href = PLAY_URL;
 document.documentElement.lang = lang;
 if (RTL[lang]) document.documentElement.dir = 'rtl';
 document.getElementById('ttl').textContent = t.t;
@@ -114,7 +117,7 @@ if (!ok) {
   // на сторінку завантаження.
   openBtn.href = isAndroid
     ? 'intent://invite/' + token + '#Intent;scheme=eion;package=network.eion.app;S.browser_fallback_url=' +
-      encodeURIComponent('https://eion.network/') + ';end'
+      encodeURIComponent(PLAY_URL) + ';end'
     : 'eion://invite/' + token;
 }
 </script>
