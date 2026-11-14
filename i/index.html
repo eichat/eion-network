@@ -84,7 +84,10 @@ function pickLang(){
 
 var lang = pickLang(), t = T[lang];
 // Android: застосунок у Google Play (з 14.11.2026) — туди й кнопка, і запасний шлях intent.
-var PLAY_URL = 'https://play.google.com/store/apps/details?id=network.eion.app&referrer=utm_source%3Dinvite';
+// referrer=…&link=<ця адреса>: застосунок після встановлення з Play прочитає її
+// (Install Referrer) — і «хто запросив» / запрошення підставиться само.
+var PLAY_URL = 'https://play.google.com/store/apps/details?id=network.eion.app&referrer=' +
+  encodeURIComponent('utm_source=invite&link=' + encodeURIComponent(location.href));
 if (/android/i.test(navigator.userAgent)) document.getElementById('get').href = PLAY_URL;
 document.documentElement.lang = lang;
 if (RTL[lang]) document.documentElement.dir = 'rtl';
