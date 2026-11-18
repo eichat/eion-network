@@ -104,6 +104,7 @@
   "dl_ready": "✓ Dostępne",
   "dl_get": "Pobierz APK",
   "dl_get_linux": "Pobierz AppImage",
+  "dl_apk_q": "Nie masz Google Play w telefonie?",
   "dl_note": "Android poprosi o zgodę na instalację aplikacji z nieznanego źródła — poza Google Play to normalne.",
   "tok_today": "Dziś, w aplikacji",
   "tok_use1": "Premium",

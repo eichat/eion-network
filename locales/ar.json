@@ -104,6 +104,7 @@
   "dl_ready": "✓ متاح",
   "dl_get": "تنزيل APK",
   "dl_get_linux": "تنزيل AppImage",
+  "dl_apk_q": "لا يوجد Google Play على هاتفك؟",
   "dl_note": "سيطلب Android إذنًا لتثبيت تطبيق من مصدر غير معروف — هذا طبيعي خارج Google Play.",
   "tok_today": "اليوم، داخل التطبيق",
   "tok_use1": "الاشتراك المميّز",

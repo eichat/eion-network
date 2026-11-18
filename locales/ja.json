@@ -104,6 +104,7 @@
   "dl_ready": "✓ 配信中",
   "dl_get": "APK をダウンロード",
   "dl_get_linux": "AppImage をダウンロード",
+  "dl_apk_q": "スマートフォンに Google Play がありませんか？",
   "dl_note": "Android は提供元不明のアプリのインストール許可を求めます — Google Play 以外では通常のことです。",
   "tok_today": "現在、アプリの中で",
   "tok_use1": "プレミアム",

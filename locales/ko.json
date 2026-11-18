@@ -104,6 +104,7 @@
   "dl_ready": "✓ 이용 가능",
   "dl_get": "APK 내려받기",
   "dl_get_linux": "AppImage 내려받기",
+  "dl_apk_q": "휴대폰에 Google Play가 없나요?",
   "dl_note": "Android에서 출처를 알 수 없는 앱 설치 권한을 묻습니다 — Google Play 밖에서는 정상입니다.",
   "tok_today": "현재, 앱 안에서",
   "tok_use1": "프리미엄",

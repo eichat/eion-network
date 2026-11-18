@@ -104,6 +104,7 @@
   "dl_ready": "✓ Mevcut",
   "dl_get": "APK indir",
   "dl_get_linux": "AppImage indir",
+  "dl_apk_q": "Telefonunuzda Google Play yok mu?",
   "dl_note": "Android, bilinmeyen kaynaktan uygulama yüklemek için izin isteyecek — Google Play dışında bu normaldir.",
   "tok_today": "Bugün, uygulama içinde",
   "tok_use1": "Premium",

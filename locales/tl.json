@@ -104,6 +104,7 @@
   "dl_ready": "✓ Available na",
   "dl_get": "I-download ang APK",
   "dl_get_linux": "I-download ang AppImage",
+  "dl_apk_q": "Walang Google Play sa phone mo?",
   "dl_note": "Hihingi ang Android ng pahintulot na mag-install ng app mula sa hindi kilalang source — normal ito sa labas ng Google Play.",
   "tok_today": "Ngayon, sa loob ng app",
   "tok_use1": "Premium",

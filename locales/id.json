@@ -104,6 +104,7 @@
   "dl_ready": "✓ Tersedia",
   "dl_get": "Unduh APK",
   "dl_get_linux": "Unduh AppImage",
+  "dl_apk_q": "Tidak ada Google Play di ponsel Anda?",
   "dl_note": "Android akan meminta izin memasang aplikasi dari sumber tak dikenal — di luar Google Play itu wajar.",
   "tok_today": "Hari ini, di dalam aplikasi",
   "tok_use1": "Premium",

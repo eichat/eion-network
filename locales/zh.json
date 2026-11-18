@@ -104,6 +104,7 @@
   "dl_ready": "✓ 已上线",
   "dl_get": "下载 APK",
   "dl_get_linux": "下载 AppImage",
+  "dl_apk_q": "手机上没有 Google Play？",
   "dl_note": "Android 会请求允许安装来自未知来源的应用——在 Google Play 之外这很正常。",
   "tok_today": "目前，在应用之内",
   "tok_use1": "会员",

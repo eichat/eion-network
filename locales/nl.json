@@ -104,6 +104,7 @@
   "dl_ready": "✓ Beschikbaar",
   "dl_get": "APK downloaden",
   "dl_get_linux": "AppImage downloaden",
+  "dl_apk_q": "Geen Google Play op je telefoon?",
   "dl_note": "Android vraagt toestemming om een app van een onbekende bron te installeren — buiten Google Play is dat normaal.",
   "tok_today": "Vandaag, in de app",
   "tok_use1": "Premium",

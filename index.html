@@ -302,6 +302,7 @@ a.dl-card{text-decoration:none;color:inherit;display:block}
 .testbanner{position:fixed;top:0;left:0;right:0;z-index:101;display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap;padding:9px 18px;background:rgba(217,154,43,.14);backdrop-filter:blur(20px);border-bottom:1px solid rgba(217,154,43,.35);color:#e0ae4e;font-size:.82rem;line-height:1.45;text-align:center}
 @media(max-width:600px){.testbanner{font-size:.75rem;padding:8px 12px}}
 .dl-note{max-width:640px;margin:26px auto 0;text-align:center;color:var(--text2,#7ab8cc);font-size:.85rem;line-height:1.6}
+.dl-note a.dl-apk{color:var(--neon);text-decoration:underline;cursor:pointer}
 
 
 
@@ -421,12 +422,12 @@ a.dl-card{text-decoration:none;color:inherit;display:block}
     <div class="section-label" data-i18n="dl_label">Get the App</div>
     <h2 class="section-title" data-i18n="dl_title">Download <span>EION</span></h2>
     <div class="download-grid">
-      <a class="dl-card reveal" data-dl="apk" href="https://github.com/eichat/eion-network/releases/latest/download/EION.apk" rel="noopener"><span class="platform-icon">🤖</span><h3>Android</h3><div class="status ready" data-i18n="dl_ready">✓ Available</div><span class="dl-go" data-i18n="dl_get">Download APK</span></a>
+      <a class="dl-card reveal" data-dl="play" href="https://play.google.com/store/apps/details?id=network.eion.app&amp;referrer=utm_source%3Deion.network%26utm_medium%3Dsite" target="_blank" rel="noopener"><span class="platform-icon">🤖</span><h3>Android</h3><div class="status ready" data-i18n="dl_ready">✓ Available</div><span class="dl-go">Google Play</span></a>
       <a class="dl-card reveal" data-dl="appimage" href="https://github.com/eichat/eion-network/releases/latest/download/EION-x86_64.AppImage" rel="noopener"><span class="platform-icon">🐧</span><h3>Linux</h3><div class="status ready" data-i18n="dl_ready">✓ Available</div><span class="dl-go" data-i18n="dl_get_linux">Download AppImage</span></a>
       <div class="dl-card reveal"><span class="platform-icon">🍎</span><h3>iOS</h3><div class="status soon" data-i18n="dl_soon">⏳ Coming soon</div></div>
       <div class="dl-card reveal"><span class="platform-icon">🪟</span><h3>Windows</h3><div class="status soon" data-i18n="dl_soon">⏳ Coming soon</div></div>
     </div>
-    <p class="dl-note reveal" data-i18n="dl_note">Android will ask for permission to install an app from an unknown source — that is normal outside Google Play.</p>
+    <p class="dl-note reveal"><span data-i18n="dl_apk_q">No Google Play on your phone?</span> <a class="dl-apk" data-dl="apk" href="https://github.com/eichat/eion-network/releases/latest/download/EION.apk" rel="noopener" data-i18n="dl_get">Download APK</a><br><span data-i18n="dl_note">Android will ask for permission to install an app from an unknown source — that is normal outside Google Play.</span></p>
   </div>
 </section>
 
@@ -1125,17 +1126,20 @@ function cookieChoice(ok){
    збірці, і разом зі старим файлом зникає його число. */
 (function(){
   var EP='https://api.eion.network/download-ping?kind=';
-  document.querySelectorAll('a[data-dl]').forEach(function(a){
-    a.addEventListener('click', function(){
+  /* Делегування: переклад перезаписує innerHTML, і власні слухачі посилань губились би. */
+  document.addEventListener('click', function(ev){
+    var a=ev.target.closest && ev.target.closest('a[data-dl]'); if(!a) return;
+    {
       var u=EP+encodeURIComponent(a.dataset.dl);
-      try{
+      /* Встановлення з Play рахує сама Play Console — лічильник сервера лише для файлів. */
+      if(a.dataset.dl!=='play') try{
         if(navigator.sendBeacon){ navigator.sendBeacon(u); }
         else{ fetch(u,{method:'POST',mode:'no-cors',keepalive:true}); }
       }catch(e){}
       /* Аналітика бачить подію лише в тих, хто дав згоду — тому свій лічильник
          і лишається основним джерелом. */
       try{ if(window.gtag) gtag('event','download',{platform:a.dataset.dl}); }catch(e){}
-    });
+    }
   });
 })();
 

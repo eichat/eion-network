@@ -104,6 +104,7 @@
   "dl_ready": "✓ Đã có",
   "dl_get": "Tải APK",
   "dl_get_linux": "Tải AppImage",
+  "dl_apk_q": "Điện thoại của bạn không có Google Play?",
   "dl_note": "Android sẽ xin quyền cài ứng dụng từ nguồn không xác định — ngoài Google Play thì điều này là bình thường.",
   "tok_today": "Hiện tại, trong ứng dụng",
   "tok_use1": "Gói cao cấp",
