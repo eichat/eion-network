@@ -1149,6 +1149,8 @@ function cookieChoice(ok){
   var EP='https://api.eion.network/download-ping?kind=';
   /* Віконце APK: пояснення + кнопка завантаження. */
   var m=document.getElementById('apkModal');
+  /* Поза секцією: її transform/overflow ламали position:fixed — віконце з'їжджало вниз. */
+  document.body.appendChild(m);
   document.getElementById('apkOpen').addEventListener('click',function(){ m.classList.add('open'); });
   document.getElementById('apkClose').addEventListener('click',function(){ m.classList.remove('open'); });
   m.addEventListener('click',function(e){ if(e.target===m || (e.target.closest && e.target.closest('a[data-dl]'))) setTimeout(function(){ m.classList.remove('open'); },0); });
