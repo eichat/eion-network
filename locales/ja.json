@@ -94,7 +94,7 @@
     },
     {
       "q": "対応プラットフォームは？",
-      "a": "Android — このサイトから APK、まもなく Google Play でも。Linux — AppImage。iOS と Windows は予定しています。"
+      "a": "Android — Google Play で。Google Play のないスマートフォン向けに、このサイトから APK も。Linux — AppImage。iOS と Windows は予定しています。"
     }
   ],
   "footer_tagline": "話す。共有する。データはあなたのもの。",

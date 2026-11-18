@@ -94,7 +94,7 @@
     },
     {
       "q": "Anong mga platform ang suportado?",
-      "a": "Android — APK mula sa site na ito, at malapit na sa Google Play. Linux — AppImage. Nakaplano ang iOS at Windows."
+      "a": "Android — sa Google Play, o APK mula sa site na ito para sa mga phone na walang Google Play. Linux — AppImage. Nakaplano ang iOS at Windows."
     }
   ],
   "footer_tagline": "Mag-usap. Magbahagi. Sa iyo ang datos mo.",

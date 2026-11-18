@@ -94,7 +94,7 @@
     },
     {
       "q": "รองรับแพลตฟอร์มใดบ้าง?",
-      "a": "Android — APK จากเว็บไซต์นี้ และเร็ว ๆ นี้บน Google Play Linux — AppImage ส่วน iOS และ Windows อยู่ในแผน"
+      "a": "Android — บน Google Play หรือ APK จากเว็บไซต์นี้สำหรับโทรศัพท์ที่ไม่มี Google Play Linux — AppImage ส่วน iOS และ Windows อยู่ในแผน"
     }
   ],
   "footer_tagline": "พูดคุย แบ่งปัน ข้อมูลเป็นของคุณ",

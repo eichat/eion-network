@@ -94,7 +94,7 @@
     },
     {
       "q": "Які платформи підтримуються?",
-      "a": "Android — APK із цього сайту, незабаром і в Google Play. Linux — AppImage. iOS та Windows — у планах."
+      "a": "Android — у Google Play або APK із цього сайту для телефонів без Google Play. Linux — AppImage. iOS та Windows — у планах."
     }
   ],
   "footer_tagline": "Спілкуйтесь. Діліться. Володійте своїми даними.",

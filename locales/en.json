@@ -94,7 +94,7 @@
     },
     {
       "q": "Which platforms are supported?",
-      "a": "Android — APK from this site, and soon on Google Play. Linux — AppImage. iOS and Windows are planned."
+      "a": "Android — on Google Play, or as an APK from this site for phones without Google Play. Linux — AppImage. iOS and Windows are planned."
     }
   ],
   "footer_tagline": "Talk. Share. Own your data.",

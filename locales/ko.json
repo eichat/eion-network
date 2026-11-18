@@ -94,7 +94,7 @@
     },
     {
       "q": "어떤 플랫폼을 지원하나요?",
-      "a": "Android — 이 사이트에서 APK, 곧 Google Play에서도. Linux — AppImage. iOS와 Windows는 계획 중입니다."
+      "a": "Android — Google Play에서, 또는 Google Play가 없는 휴대폰은 이 사이트에서 APK로. Linux — AppImage. iOS와 Windows는 계획 중입니다."
     }
   ],
   "footer_tagline": "이야기하세요. 나누세요. 데이터는 당신의 것입니다.",

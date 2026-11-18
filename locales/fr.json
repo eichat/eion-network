@@ -94,7 +94,7 @@
     },
     {
       "q": "Quelles plateformes sont prises en charge ?",
-      "a": "Android — APK depuis ce site, bientôt aussi sur Google Play. Linux — AppImage. iOS et Windows sont prévus."
+      "a": "Android — sur Google Play, ou en APK depuis ce site pour les téléphones sans Google Play. Linux — AppImage. iOS et Windows sont prévus."
     }
   ],
   "footer_tagline": "Parlez. Partagez. Vos données restent à vous.",

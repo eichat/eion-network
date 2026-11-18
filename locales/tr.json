@@ -94,7 +94,7 @@
     },
     {
       "q": "Hangi platformlar destekleniyor?",
-      "a": "Android — bu siteden APK, yakında Google Play’de de. Linux — AppImage. iOS ve Windows planlanıyor."
+      "a": "Android — Google Play’de ya da Google Play olmayan telefonlar için bu siteden APK olarak. Linux — AppImage. iOS ve Windows planlanıyor."
     }
   ],
   "footer_tagline": "Konuşun. Paylaşın. Verileriniz sizin.",

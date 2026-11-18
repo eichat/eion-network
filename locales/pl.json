@@ -94,7 +94,7 @@
     },
     {
       "q": "Jakie platformy są wspierane?",
-      "a": "Android — APK z tej strony, wkrótce także w Google Play. Linux — AppImage. iOS i Windows — w planach."
+      "a": "Android — w Google Play lub jako APK z tej strony dla telefonów bez Google Play. Linux — AppImage. iOS i Windows — w planach."
     }
   ],
   "footer_tagline": "Rozmawiaj. Dziel się. Twoje dane należą do ciebie.",

@@ -94,7 +94,7 @@
     },
     {
       "q": "कौन-से प्लेटफ़ॉर्म समर्थित हैं?",
-      "a": "Android — इस साइट से APK, जल्द ही Google Play पर भी। Linux — AppImage। iOS और Windows योजना में हैं।"
+      "a": "Android — Google Play पर, या बिना Google Play वाले फ़ोन के लिए इस साइट से APK। Linux — AppImage। iOS और Windows योजना में हैं।"
     }
   ],
   "footer_tagline": "बात करें। साझा करें। डेटा आपका अपना।",
