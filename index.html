@@ -302,7 +302,22 @@ a.dl-card{text-decoration:none;color:inherit;display:block}
 .testbanner{position:fixed;top:0;left:0;right:0;z-index:101;display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap;padding:9px 18px;background:rgba(217,154,43,.14);backdrop-filter:blur(20px);border-bottom:1px solid rgba(217,154,43,.35);color:#e0ae4e;font-size:.82rem;line-height:1.45;text-align:center}
 @media(max-width:600px){.testbanner{font-size:.75rem;padding:8px 12px}}
 .dl-note{max-width:640px;margin:26px auto 0;text-align:center;color:var(--text2,#7ab8cc);font-size:.85rem;line-height:1.6}
-.dl-note a.dl-apk{color:var(--neon);text-decoration:underline;cursor:pointer}
+.dl-card a.dl-go{text-decoration:none}
+.dl-card a.dl-go:hover{background:var(--neon);color:var(--bg)}
+div.dl-card:hover .dl-go{background:transparent;color:var(--neon)}
+div.dl-card:hover a.dl-go:hover{background:var(--neon);color:var(--bg)}
+.dl-apk-btn{margin-top:12px;background:none;border:none;color:var(--text2);font:inherit;font-size:.78rem;text-decoration:underline;cursor:none;padding:4px}
+.dl-apk-btn:hover{color:var(--neon)}
+#apkModal{position:fixed;inset:0;background:rgba(0,6,14,.78);z-index:9990;display:none;align-items:center;justify-content:center;padding:16px}
+#apkModal.open{display:flex}
+#apkModal .apk-box{position:relative;max-width:420px;width:100%;background:#08131f;border:1px solid rgba(0,212,255,.3);border-radius:12px;padding:30px 26px;text-align:center;box-shadow:0 0 40px rgba(0,212,255,.15)}
+#apkModal .platform-icon{font-size:2.2rem;display:block;margin-bottom:8px}
+#apkModal h3{font-family:'Orbitron',monospace;font-size:.9rem;letter-spacing:2px;color:var(--text);margin-bottom:14px}
+#apkModal p{color:var(--text2);font-size:.88rem;line-height:1.6;margin-bottom:12px}
+#apkModal p b{color:var(--text)}
+#apkModal .btn-primary{margin-top:8px}
+#apkModal .apk-x{position:absolute;top:10px;right:12px;background:none;border:none;color:var(--text2);font-size:1.1rem;cursor:none;padding:6px}
+#apkModal .apk-x:hover{color:var(--neon)}
 
 
 
@@ -422,12 +437,18 @@ a.dl-card{text-decoration:none;color:inherit;display:block}
     <div class="section-label" data-i18n="dl_label">Get the App</div>
     <h2 class="section-title" data-i18n="dl_title">Download <span>EION</span></h2>
     <div class="download-grid">
-      <a class="dl-card reveal" data-dl="play" href="https://play.google.com/store/apps/details?id=network.eion.app&amp;referrer=utm_source%3Deion.network%26utm_medium%3Dsite" target="_blank" rel="noopener"><span class="platform-icon">🤖</span><h3>Android</h3><div class="status ready" data-i18n="dl_ready">✓ Available</div><span class="dl-go">Google Play</span></a>
+      <div class="dl-card reveal"><span class="platform-icon">🤖</span><h3>Android</h3><div class="status ready" data-i18n="dl_ready">✓ Available</div><a class="dl-go" data-dl="play" href="https://play.google.com/store/apps/details?id=network.eion.app&amp;referrer=utm_source%3Deion.network%26utm_medium%3Dsite" target="_blank" rel="noopener">Google Play</a><br><button type="button" class="dl-apk-btn" id="apkOpen" data-i18n="dl_get">Download APK</button></div>
       <a class="dl-card reveal" data-dl="appimage" href="https://github.com/eichat/eion-network/releases/latest/download/EION-x86_64.AppImage" rel="noopener"><span class="platform-icon">🐧</span><h3>Linux</h3><div class="status ready" data-i18n="dl_ready">✓ Available</div><span class="dl-go" data-i18n="dl_get_linux">Download AppImage</span></a>
       <div class="dl-card reveal"><span class="platform-icon">🍎</span><h3>iOS</h3><div class="status soon" data-i18n="dl_soon">⏳ Coming soon</div></div>
       <div class="dl-card reveal"><span class="platform-icon">🪟</span><h3>Windows</h3><div class="status soon" data-i18n="dl_soon">⏳ Coming soon</div></div>
     </div>
-    <p class="dl-note reveal"><span data-i18n="dl_apk_q">No Google Play on your phone?</span> <a class="dl-apk" data-dl="apk" href="https://github.com/eichat/eion-network/releases/latest/download/EION.apk" rel="noopener" data-i18n="dl_get">Download APK</a><br><span data-i18n="dl_note">Android will ask for permission to install an app from an unknown source — that is normal outside Google Play.</span></p>
+    <div id="apkModal" role="dialog" aria-modal="true" aria-labelledby="apkTitle"><div class="apk-box">
+      <button type="button" class="apk-x" id="apkClose" aria-label="×">✕</button>
+      <span class="platform-icon">🤖</span><h3 id="apkTitle">Android APK</h3>
+      <p><b data-i18n="dl_apk_q">No Google Play on your phone?</b></p>
+      <p data-i18n="dl_note">Android will ask for permission to install an app from an unknown source — that is normal outside Google Play.</p>
+      <a class="btn-primary" data-dl="apk" href="https://github.com/eichat/eion-network/releases/latest/download/EION.apk" rel="noopener" data-i18n="dl_get">Download APK</a>
+    </div></div>
   </div>
 </section>
 
@@ -1126,6 +1147,12 @@ function cookieChoice(ok){
    збірці, і разом зі старим файлом зникає його число. */
 (function(){
   var EP='https://api.eion.network/download-ping?kind=';
+  /* Віконце APK: пояснення + кнопка завантаження. */
+  var m=document.getElementById('apkModal');
+  document.getElementById('apkOpen').addEventListener('click',function(){ m.classList.add('open'); });
+  document.getElementById('apkClose').addEventListener('click',function(){ m.classList.remove('open'); });
+  m.addEventListener('click',function(e){ if(e.target===m || (e.target.closest && e.target.closest('a[data-dl]'))) setTimeout(function(){ m.classList.remove('open'); },0); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') m.classList.remove('open'); });
   /* Делегування: переклад перезаписує innerHTML, і власні слухачі посилань губились би. */
   document.addEventListener('click', function(ev){
     var a=ev.target.closest && ev.target.closest('a[data-dl]'); if(!a) return;
